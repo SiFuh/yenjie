@@ -1,0 +1,25 @@
+# Description: 	log4ccp is a simple to use C++ logging API.
+# URL: 		http://log4cpp.sourceforge.net/
+# Packager:	
+# Maintainer:	Lin SiFuh, #crux at freenode dot net 		
+# Depends on:
+
+name=log4cpp
+version=1.1.3
+release=1
+source=(https://sourceforge.net/projects/$name/files/$name-${version//3/x}%20%28new%29/$name-${version//.3/}/$name-$version.tar.gz	\
+	config.h)
+
+build() {
+
+	cd $name
+	./configure --prefix=/usr
+
+	# Very ugly since the output of configure kills it
+	# Maybe look into it at a later date
+	cp $SRC/config.h include/log4cpp/config.h
+
+	make 
+	make DESTDIR=$PKG install
+
+}
