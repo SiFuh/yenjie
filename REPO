@@ -200,6 +200,9 @@ d:.git/objects/cf
 d:.git/objects/d6
 d:.git/objects/31
 d:.git/objects/6a
+d:.git/objects/8b
+d:.git/objects/81
+d:.git/objects/5a
 d:.git/logs
 d:.git/logs/refs
 d:.git/logs/refs/remotes
@@ -251,6 +254,7 @@ d:openshot-qt
 d:par2cmdline
 d:pdmenu
 d:pidgin-skypeweb
+d:pidgin-telegram
 f:ce562e08d8098926a3862fc6e7905199:.git/hooks/applypatch-msg.sample
 f:579a3c1e12a1e74a98169175fb913012:.git/hooks/commit-msg.sample
 f:ea587b0fae70333bce92257152996e70:.git/hooks/fsmonitor-watchman.sample
@@ -265,9 +269,9 @@ f:2b5c047bdb474555e1787db32b2d2fc5:.git/hooks/prepare-commit-msg.sample
 f:647ae13c682f7827c22f5fc08a03674e:.git/hooks/update.sample
 f:036208b4a1ab4a235d75c181e685e5a3:.git/info/exclude
 f:a0a7c3fff21f2aea3cfa1d0316dd816c:.git/description
-f:10b476901b0d513a592914e296141d33:.git/refs/heads/main
+f:690dc8e3b1cc67d91f4d9760e2778d7b:.git/refs/heads/main
 f:98b16e0b650190870f1b40bc8f4aec4e:.git/refs/remotes/origin/HEAD
-f:10b476901b0d513a592914e296141d33:.git/refs/remotes/origin/main
+f:690dc8e3b1cc67d91f4d9760e2778d7b:.git/refs/remotes/origin/main
 f:b7a8b317ec8becc1ad00c26e0a3ef261:.git/objects/pack/pack-816a4660cd669211bf4515b1638d55652f05d077.pack
 f:202b7d072049e4a80ac8a221b8d90e34:.git/objects/pack/pack-816a4660cd669211bf4515b1638d55652f05d077.idx
 f:f08d1924d26706e8269e701beefb505d:.git/objects/90/d8907d42c0f4849da1d6e40cb1fd779a292d42
@@ -317,6 +321,7 @@ f:50ff31bb97f09e142880f17eb40067d4:.git/objects/48/644ec85d651c825a839bb27f9943f
 f:517b9bb28684b75f8e47407a977c8e5a:.git/objects/48/0e0ae285b3ee42711173357b427b2173d081e7
 f:ba2fd30e6d0364a613a8985c43fe0fee:.git/objects/eb/c9f567bacbd4be8c6f0409ee3f57b0e776b209
 f:2df112e560572005c0090ea83330a1f7:.git/objects/83/981562f4882848de20e854ce3fb3afce2576b1
+f:efe2b2768bc2f57325fb5d64eb5f034d:.git/objects/83/a6f77b1b1469e8cc4332374d83c2687703ac55
 f:7fb5f87c02020cdd5a1db7d5a5ba3828:.git/objects/84/f3d3bf1656d97b0411ae434591e5dfeb549880
 f:1b75179ea6c406fc50f92baae744fda6:.git/objects/84/22f6f41e04af294a322fb50405f849c0585ad6
 f:666e83d25a77c639cc42a2810ab3e152:.git/objects/84/076bb2c3c698c4a47c1a0daf58ff499585c1b2
@@ -407,6 +412,7 @@ f:5de8ce8a7adccd2f25d6fa73245698b2:.git/objects/b8/a3829e0d13436a5b0f6a13eb08d9c
 f:6762688732221ee4debc00d8bd52ce96:.git/objects/27/3dc98e21f3a1846a92dc6bc276d8ca0487c56d
 f:b6ac45c26bb7d20a7238a92cf34c07eb:.git/objects/27/d5aa4164832ac2b1b596e25a09e08375dd5481
 f:1fc29a7ea5d83a4613de3d202b69bfef:.git/objects/27/a24051ba9117f3fbefbb4fb896592354161f92
+f:eec0a4c361c0654f29e35f9310f2a37b:.git/objects/27/efb7a0f0b43dbe250e2aada3fe694e3857475a
 f:a9c8b8903d3bb32fe5add92bc721f381:.git/objects/d4/7b68c5e2db77af9b614ad2e7a485f0143f3071
 f:066935ee0d15507e12326215cde1dc60:.git/objects/d4/6284554c6c1a608ab0358dcbcc5537a0a28200
 f:1b5ba0cd98659341232166e21e5381fd:.git/objects/94/be0efd814839dd0477fab1772e2b39cbc3a451
@@ -512,6 +518,7 @@ f:6e0a9144354ea167300dd9187fd755f3:.git/objects/58/abd4058cc556a112d9b8985199358
 f:ea922c20374df29a7d506e79f55dbd2d:.git/objects/86/ede2ef406911182b1cc32cb42a08cc3f1720fc
 f:601ba6d9a23958ac21f527101dc9ae5c:.git/objects/15/df9624c6535487c1034ebdd4dd8a45eb105b26
 f:f6438f7cd6ee61178528291a0665617a:.git/objects/15/e4b90cfca82240f00135f12697936e4712c80b
+f:a679ed024748fcab3ffd28aec8b7c7aa:.git/objects/15/24f2a8d1b5bd1be7f0a9e6000858d8c996dfac
 f:1abb06dd975d7e7e89010e32fa65d420:.git/objects/44/956c1c3a67d95489a06da35db742466294e839
 f:2ad30c4f2e9956b7b79a7c69c0de7916:.git/objects/44/4b935fd2a3a6fafe1f6cf1c9c014a4c4e84524
 f:9f01cd5871fd40d927948159bec4b658:.git/objects/cb/b656bf8d2c111423b90ee9e1d9f5a51e35c86e
@@ -577,6 +584,7 @@ f:b67d7b734557a2fb96be4445d562aeed:.git/objects/36/9f349938e7540726b9275afcb2df2
 f:ceb25f52a0340105165ca0dd97d78dac:.git/objects/62/a96dbbe1224fc9eb9307f4bae7bbbe867863b9
 f:f1b9837ec61a00b12427afa24291d5ed:.git/objects/62/0315fe4eaafccd3796ab2234a68ebc771f7d63
 f:7c303d159c47743d4566062c3b6ad6bd:.git/objects/54/ae8539e43f8a18f617382a57b0e5fa031dab2b
+f:1357be7315ecb32c867f2fe0e6a387a1:.git/objects/54/415a38f7c83d7f06a1efae54b79b8163c4bfac
 f:c0105b179414d30009f8bcb0f05cf837:.git/objects/46/9f5492d1791ab04927616affee670b769df37a
 f:fdff1bf8463b8135941aeaf294d763bc:.git/objects/4e/32eddeb3a47b44a9e8da2a7e12a99531724ff5
 f:fddb5fd34fbcf95287739d301ca41925:.git/objects/4e/46f8d2b19b3dbe1c6180d6cf5b8a0b8a71585e
@@ -627,14 +635,17 @@ f:6524687a9c03a38a93f90df05a0400d3:.git/objects/cf/1190327924439653c31fa937b4417
 f:f3175bb247bcd5506dc0e6ac6cbccf9f:.git/objects/d6/de9d9c932fa67467367650ede6865cd2a3ef9b
 f:e1dc3037ee90abea36cc1e1620c9c2a5:.git/objects/31/7bfe0b1d06a50c7a4a54d08ba1c033e5bedb48
 f:effe514d1949fab07b6a134aa44c8f99:.git/objects/6a/553bbd3960a38e8c93d55041f95997f22a3d86
+f:9916b9c608d8d477b783db67cdcebabe:.git/objects/8b/cabd89d8271dad0148e69d3959e75c19206b50
+f:3a4db1684a629c9792bad8c5e7f0e4a8:.git/objects/81/81dc2f434fe0c258c29ce41d39458b8c4d7b89
+f:9d515f33e9024ab7e46c3a57bf2a10dd:.git/objects/5a/a0b58fb2cf5adbe799496b39fe09556ec46895
 f:e165ece0f4ac287b67c8aea95cfcfb75:.git/logs/refs/remotes/origin/HEAD
-f:649eb09561b39abacdc347a6578ca507:.git/logs/refs/remotes/origin/main
-f:523ed2ec665161ab9a9796d32e32ac02:.git/logs/refs/heads/main
-f:523ed2ec665161ab9a9796d32e32ac02:.git/logs/HEAD
+f:2e349dd6b30e76a5ec28bf25c4638901:.git/logs/refs/remotes/origin/main
+f:78867b07a1a0a0c6248205361c72befa:.git/logs/refs/heads/main
+f:78867b07a1a0a0c6248205361c72befa:.git/logs/HEAD
 f:cf7dd3ce51958c5f13fece957cc417fb:.git/HEAD
 f:6d68a9ac80e105edd00a6ab1bbb96419:.git/config
-f:62a2baff8426913a89078bd38dbbc463:.git/COMMIT_EDITMSG
-f:3a6414549dc872311676048f5b0df9f3:.git/index
+f:c41e7d59d787b15318bfa77f782a6b2f:.git/COMMIT_EDITMSG
+f:85363e79c3c8be76a5d50c1257ab3719:.git/index
 f:61bd2a9265e578b27b84312ee625bc51:.git/packed-refs
 f:ccf3ddecf796af9117daac6b58ce74da:README.md
 f:6bbec22c453cce2269312934c1e2fbb5:alizams-bin/alizams_sh.patch
@@ -817,4 +828,7 @@ f:426a81ec37afa1c196fab9e3b2261245:pdmenu/Pkgfile
 f:e522a5207022e12a412ff1420b446750:pidgin-skypeweb/Pkgfile
 f:7f3d33fc119ffbcd8e20709c9c119461:pidgin-skypeweb/.signature
 f:54aaa5f3c9e5ed8990ff0c3d581bb699:pidgin-skypeweb/.footprint
+f:2711cf9b28bcd937454cc5500fb75af7:pidgin-telegram/Pkgfile
+f:bf5aa2b58c1ff27aef9f1b1a7f33788d:pidgin-telegram/.footprint
+f:2f196c9198175d8e5326b6217a33922e:pidgin-telegram/.signature
 f:365c168edf622d05211d92a382f55032:yenjie.httpup

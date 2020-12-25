@@ -1,0 +1,23 @@
+# Description:  Telegram for Pidgin
+# URL:          https://github.com/majn/telegram-purple
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   glib libgcrypt libwebp pidgin
+
+name=pidgin-telegram
+_name=telegram-purple
+version=1.4.4
+release=1
+source=(https://github.com/majn/${_name}/releases/download/v${version}/${_name}_${version}.orig.tar.gz)
+
+build() {
+
+  cd "${_name}"
+
+  ./configure --prefix=/usr CFLAGS="$CFLAGS -w"
+
+  make
+  make DESTDIR="${PKG}" install
+
+  rm -r "${PKG}"/usr/share/locale
+
+}
