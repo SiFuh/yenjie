@@ -1,0 +1,20 @@
+# Description: 	Virtualisation software for x86 hardware (binary version, non-GPL)
+# URL:         	http://www.virtualbox.org
+# Packager:    
+# Maintainer:	Lin SiFuh, #crux at freenode dot net 	  
+# Depends on:  	virtualbox-bin
+
+name=virtualbox-extpack
+version=6.1.16
+sversion=140961
+release=1
+source=(https://download.virtualbox.org/virtualbox/$version/Oracle_VM_VirtualBox_Extension_Pack-$version-$sversion.vbox-extpack)
+
+build () {
+
+	mkdir -p $PKG/opt/VirtualBox/ExtensionPacks
+
+	cp Oracle_VM_VirtualBox_Extension_Pack-$version-${sversion}.vbox-extpack  \
+	   $PKG/opt/VirtualBox/ExtensionPacks/Oracle_VM_VirtualBox_Extension_Pack.vbox-extpack
+
+}

@@ -1,0 +1,4 @@
+drwxr-xr-x	root/root	opt/
+drwxr-xr-x	root/root	opt/VirtualBox/
+drwxr-xr-x	root/root	opt/VirtualBox/ExtensionPacks/
+-rw-r--r--	root/root	opt/VirtualBox/ExtensionPacks/Oracle_VM_VirtualBox_Extension_Pack.vbox-extpack

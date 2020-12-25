@@ -1,0 +1,39 @@
+README for virtualbox-extpack
+
+REQUIREMENTS virtualbox-bin
+
+POST-INSTALL
+
+This port only installs the Extension Pack into the appropriate 
+directory.  '/opt/VirtualBox/ExtensionPacks'. 
+
+If you wish to use this port you will need to install it using 
+the tools Virtual Box provides. 
+
+# VBoxManage extpack install PATH_TO/EXT_PACK
+
+
+NOTES
+
+If you wish to remove this port and have used Virtual Box to 
+install the Extension Pack. Then you will need to use Virtual 
+Box to remove uninstall the package first.
+
+The best way to do this is to find out what the package name 
+is first and then remove it.
+
+# VBoxManage list extpacks
+	
+	Extension Packs: 1
+	Pack no. 0:   Oracle VM VirtualBox Extension Pack
+	Version:      6.0.12
+	Revision:     133076
+	Edition:      
+	Description:  USB 2.0 and USB 3.0 Host Controller, Host 
+	Webcam, VirtualBox RDP, PXE ROM, Disk Encryption, NVMe.
+	VRDE Module:  VBoxVRDP
+	Usable:       true 
+	Why unusable:
+
+# VBoxManage extpack uninstall "Oracle VM VirtualBox Extension Pack"
+
