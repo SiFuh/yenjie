@@ -1,0 +1,68 @@
+#!/bin/bash
+#
+#    dkms-remove - a simple shell script for uninstalling and removing
+#    unwanted dkms modules for CRUX linux. 
+#
+#    Copyright (c) 2020 by Lin SiFuh
+#
+#    *************************************************************************
+#    *                                                                       *
+#    * This program is free software; you can redistribute it and/or modify  *
+#    * it under the terms of the GNU General Public License as published by  *
+#    * the Free Software Foundation; either version 2 of the License, or     *
+#    * (at your option) any later version.                                   *
+#    *                                                                       *
+#    *************************************************************************
+#
+#   **** USE AT YOUR OWN RISK ****
+#
+
+#VERSION=0.3
+
+#BLACK=$(tput setaf 0)
+RED=$(tput setaf 1)
+GREEN=$(tput setaf 2)
+YELLOW=$(tput setaf 3)
+#BLUE=$(tput setaf 4)
+MAGENTA=$(tput setaf 5)
+CYAN=$(tput setaf 6)
+WHITE=$(tput setaf 7)
+
+BOLD=$(tput bold)
+RESET=$(tput sgr0)
+
+if [ "root" != "${USER}" ]; then
+  echo "Error! You must be root to use this command."
+  exit 0
+fi
+
+/usr/sbin/dkms status
+
+echo "${GREEN}${BOLD}Ignoring the current running kernel ${CYAN}${BOLD}$(uname -r)${RESET}"
+
+dkms status | grep -v "$(uname -r)" | while read -r j ; do
+  DKMS=$(echo "$j" | sed -e 's\,\\g' | awk '{print "-m "$1" -v "$2" -k "$3 }')
+  read -r -p "dkms ${YELLOW}${BOLD}uninstall${RESET} ${DKMS} ${MAGENTA}${BOLD}[y/N]?${RESET} " PROMPT 0</dev/tty
+  if [[ ! ${PROMPT} =~ ^([yY][eE][sS]|[yY])$ ]] ; then
+   :
+  else
+   /usr/sbin/dkms uninstall ${DKMS} | grep -v "$(uname -r)" > /dev/null 2>&1
+    read -r -p "dkms ${RED}${BOLD}remove${RESET} ${DKMS} [y/N]? " PROMPT 0</dev/tty
+    if [[ ! ${PROMPT} =~ ^([yY][eE][sS]|[yY])$ ]] ; then
+      :
+    else  
+      /usr/sbin/dkms remove ${DKMS}  > /dev/null 2>&1
+      echo -n "${WHITE}${BOLD}Removing unused files in ${RESET}" 
+      echo "${DKMS}" | awk '{print "/var/lib/dkms/"$2"/kernel-"$6"-x86_64/"}'
+      echo "${DKMS}" | awk '{print "/var/lib/dkms/"$2"/kernel-"$6"-x86_64/"}' | xargs rm -rf 
+    fi
+  fi
+done
+
+read -r -p "${WHITE}${BOLD}Would you like to list dkms status before exiting ${MAGENTA}[y/N]? ${RESET}" PROMPT
+if [[ ! ${PROMPT} =~ ^([yY][eE][sS]|[yY])$ ]] ; then
+  :
+else
+  /usr/sbin/dkms status
+fi
+

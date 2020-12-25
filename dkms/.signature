@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uPlpurLgj6fLsee2ZW5UtBpWYABm60qvCpOOp8RaYVYlYceH5pKgYrjpvh6tYDqSYRuoUGI3xf+4LgFG4Ir+pwU=
+SHA256 (Pkgfile) = c4949a382a1764e20e38c5e0fbf44263a26e1c8aa092b693c7f9468d8937f4cc
+SHA256 (.footprint) = f8a2014c2e7f6041054a1f03d67e5d175f762a2a0f9b265f9ea1ceccc161ace6
+SHA256 (dkms-2.8.3.tar.gz) = 0fcbb2691aa8231927b000edf3594d2798211c3944fd4a2a8b1864aa1c06eaaf
+SHA256 (dkms-remove) = be382b2817b3531535717d07bf9a72ea693c5118377bbb7de5659712d7ddf788
