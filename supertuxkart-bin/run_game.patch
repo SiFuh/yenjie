@@ -1,0 +1,24 @@
+--- run_game.sh.orig	2020-04-25 17:51:45.377747539 +0800
++++ run_game.sh	2020-04-25 17:55:28.437922443 +0800
+@@ -1,7 +1,6 @@
+ #!/bin/sh
+ 
+-export DIRNAME="$(dirname "$(readlink -f "$0")")"
+-export MACHINE_TYPE=`uname -m`
++export DIRNAME="/opt/supertuxkart/"
+ export SYSTEM_LD_LIBRARY_PATH="$LD_LIBRARY_PATH"
+ 
+ export SUPERTUXKART_DATADIR="$DIRNAME"
+@@ -9,12 +8,5 @@
+ 
+ cd "$DIRNAME"
+ 
+-if [ $MACHINE_TYPE = "x86_64" ]; then
+-	echo "Running 64-bit version..."
+-	export LD_LIBRARY_PATH="$DIRNAME/lib-64:$LD_LIBRARY_PATH"
+-	"$DIRNAME/bin-64/supertuxkart" "$@"
+-else
+-	echo "Running 32-bit version..."
+ 	export LD_LIBRARY_PATH="$DIRNAME/lib:$LD_LIBRARY_PATH"
+ 	"$DIRNAME/bin/supertuxkart" "$@"
+-fi
