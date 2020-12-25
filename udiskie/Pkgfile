@@ -1,0 +1,26 @@
+# Description:  Removable disk automounter using udisks
+# URL:          https://pypi.python.org/pypi/udiskie
+# Packager:
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   udisks2 python3 keyutils python3-setuptools libnotify gtk3 python3-gobject python3-docopt asciidoc
+
+name=udiskie
+version=2.2.0
+release=1
+source=(https://github.com/coldfix/${name}/archive/${version}/${name}-${version}.tar.gz)
+
+build() {
+
+  cd "${name}"-"${version}"
+  python3 setup.py build
+
+  make -C doc
+
+  python3 setup.py install --root="${PKG}" --optimize=1 --skip-build
+  install -m 0644 -D doc/"${name}".8 "${PKG}"/usr/share/man/man8/"${name}.8"
+  install -d m755 "${PKG}"/usr/share/zsh/site-functions
+  install -m644 completions/zsh/* "${PKG}"/usr/share/zsh/site-functions
+
+  rm -rf "${PKG}"/usr/share/locale
+
+}
