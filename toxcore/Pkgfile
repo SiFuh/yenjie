@@ -1,0 +1,36 @@
+# Description: Encrypted peer to peer messenger, distributed network library
+# URL:         https://github.com/TokTok/c-toxcore
+# Maintainer:  Lin SiFuh, #crux at freenode dot net
+# Depends on:  libsodium opus libvpx libconfig cmake
+
+name=toxcore
+version=0.2.12
+release=1
+source=(https://github.com/TokTok/c-${name}/archive/v${version}/${name}-${version}.tar.gz)
+
+build() {
+
+  sed -i "/Rpath/d;/RPATH/d" c-"${name}"-"${version}"/CMakeLists.txt
+
+  [[ -e '/usr/bin/ninja' ]] && NINJA=' -G Ninja'
+
+  cmake -S c-"${name}"-"${version}" -B build ${NINJA}  \
+        -D BUILD_TOXAV=on                              \
+        -D DHT_BOOTSTRAP=on                            \
+        -D BOOTSTRAP_DAEMON=on                         \
+        -D BUILD_TOXENCRYPTSAVE=on                     \
+        -D CMAKE_BUILD_TYPE=Release                    \
+        -D CMAKE_INSTALL_PREFIX=/usr                   \
+        -D CMAKE_INSTALL_LIBDIR=/usr/lib               \
+        -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"    \
+        -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -DNDEBUG"
+
+  cmake --build build
+
+  DESTDIR="${PKG}" cmake --install build
+
+  install -Dm644 c-"${name}"-"${version}"/other/bootstrap_daemon/tox-bootstrapd.conf \
+                 "${PKG}"/etc/tox-bootstrapd.conf
+
+}
+
