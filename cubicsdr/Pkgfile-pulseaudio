@@ -1,0 +1,42 @@
+# Description:  Cross-Platform and Opensource Software-Defined Radio Application
+# URL:          https://cubicsdr.com/
+# Packager:	
+# Maintainer:   Lin SiFuh, #crux at freenode dot net 	
+# Depends on:   git cmake libglvnd rtaudio liquid-dsp soapy-sdr wxgtk3-dev pulseaudio hamlib fftw
+
+name=cubicsdr
+version=0.2.5
+sversion=9c32b9791097044938fc4aa6976a3c7526520ce4
+release=1
+source=()
+
+build() {
+
+  cd ${PKGMK_SOURCE_DIR}
+  if [ ! -d "${name}" ]; then
+    git clone -b ${version} https://github.com/cjcliffe/CubicSDR ${name}
+    cd ${name}
+    if [ `git rev-parse HEAD` != ${sversion} ]; then
+      git checkout ${sversion}
+    fi
+  else
+    cd ${name}
+    if [ `git rev-parse HEAD` != ${sversion} ]; then
+      git checkout ${sversion}
+    fi
+  fi
+
+  cp -rf ${PKGMK_SOURCE_DIR}/${name} ${SRC}
+
+  cd ${SRC}/${name}
+
+  mkdir build
+  cd build
+
+  cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr .. \
+        -DwxWidgets_CONFIG_EXECUTABLE=/usr/bin/wx-config-3.1
+
+  make
+  make DESTDIR=${PKG} install
+
+}

@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uIQ21xaRkGHBSY+11dCfHQ+2JT/+V6qSHygd2xp/8gflKRgOBqFiD3ogpOHaE1FU0ffOY4WpRtzZc+ePvXfy1AA=
+SHA256 (Pkgfile) = 0eb94eec3c052cccab8457aa53091b156db1e533b0848db6371809f5d3cfbeb2
+SHA256 (.footprint) = 3626760925c6d0a06fe865c954444a72a274f22ecb585963c01f18a98df068fe
+SHA256 (cubicsdr-0.2.5.tar.gz) = 1a161e4efc06e29993eeec893812131ba8673fb237bcb124ffecfb927f670707
