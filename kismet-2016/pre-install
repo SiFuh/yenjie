@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# Add your users to the kismet group and allow them to capture network data
+# as non-root users.
+#
+
+getent group kismet >/dev/null || groupadd -r kismet

@@ -1,0 +1,12 @@
+--- ipc_remote.cc.orig	2020-12-14 20:20:39.104549440 +0800
++++ ipc_remote.cc	2020-12-14 20:22:19.647584897 +0800
+@@ -941,8 +941,8 @@
+ }
+ 
+ typedef struct {
+-	struct cmsghdr header;
+ 	int            fd;
++	struct cmsghdr header;
+ } __attribute__((packed)) cmsg_fd;
+ 
+ int RootIPCRemote::SendDescriptor(int in_fd) {

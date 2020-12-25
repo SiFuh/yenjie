@@ -1,0 +1,16 @@
+NOTE:
+
+	This is the final Ncurses version of Kismet that was realsed in
+	2016. Afterwhich they changed to a web based version. 
+
+	To use kismet, you will need to copy the kismet.conf.example and 
+  the kismet_drone.conf.example to kismet.conf and kismet_drone.conf. 
+  The configuration directory is located at /usr/etc. You must edit 
+  the configuration files if you wish for kismet to operate.
+
+	This is a suid install, so it can be launched as a normal user. 
+	Running kismet as root is highly discouraged. 
+
+	If you wish for the audio chimes, then optionally you can install
+	sox.
+
