@@ -1,0 +1,334 @@
+diff -u -r a/gqrx/src/dsp/correct_iq_cc.h b/gqrx/src/dsp/correct_iq_cc.h
+--- a/gqrx/src/dsp/correct_iq_cc.h	2020-05-26 08:30:39.583336271 +0000
++++ b/gqrx/src/dsp/correct_iq_cc.h	2020-05-26 08:31:26.010002946 +0000
+@@ -38,8 +38,8 @@
+ class dc_corr_cc;
+ class iq_swap_cc;
+ 
+-typedef boost::shared_ptr<dc_corr_cc> dc_corr_cc_sptr;
+-typedef boost::shared_ptr<iq_swap_cc> iq_swap_cc_sptr;
++typedef std::shared_ptr<dc_corr_cc> dc_corr_cc_sptr;
++typedef std::shared_ptr<iq_swap_cc> iq_swap_cc_sptr;
+ 
+ /*! \brief Return a shared_ptr to a new instance of dc_corr_cc.
+  *  \param sample_rate The sample rate
+diff -u -r a/gqrx/src/dsp/filter/fir_decim.h b/gqrx/src/dsp/filter/fir_decim.h
+--- a/gqrx/src/dsp/filter/fir_decim.h	2020-05-26 08:30:39.583336271 +0000
++++ b/gqrx/src/dsp/filter/fir_decim.h	2020-05-26 08:31:25.996669612 +0000
+@@ -32,7 +32,7 @@
+ 
+ class fir_decim_cc;
+ 
+-typedef boost::shared_ptr<fir_decim_cc> fir_decim_cc_sptr;
++typedef std::shared_ptr<fir_decim_cc> fir_decim_cc_sptr;
+ fir_decim_cc_sptr make_fir_decim_cc(unsigned int decim);
+ 
+ class fir_decim_cc : public gr::hier_block2
+diff -u -r a/gqrx/src/dsp/hbf_decim.h b/gqrx/src/dsp/hbf_decim.h
+--- a/gqrx/src/dsp/hbf_decim.h	2020-05-26 08:30:39.583336271 +0000
++++ b/gqrx/src/dsp/hbf_decim.h	2020-05-26 08:31:26.023336279 +0000
+@@ -25,7 +25,7 @@
+ #include "filter/decimator.h"
+ 
+ class hbf_decim;
+-typedef boost::shared_ptr<hbf_decim> hbf_decim_sptr;
++typedef std::shared_ptr<hbf_decim> hbf_decim_sptr;
+ hbf_decim_sptr make_hbf_decim(unsigned int decim);
+ 
+ /**
+diff -u -r a/gqrx/src/dsp/lpf.h b/gqrx/src/dsp/lpf.h
+--- a/gqrx/src/dsp/lpf.h	2020-05-26 08:30:39.583336271 +0000
++++ b/gqrx/src/dsp/lpf.h	2020-05-26 08:31:26.010002946 +0000
+@@ -35,7 +35,7 @@
+ 
+ class lpf_ff;
+ 
+-typedef boost::shared_ptr<lpf_ff> lpf_ff_sptr;
++typedef std::shared_ptr<lpf_ff> lpf_ff_sptr;
+ 
+ 
+ /*! \brief Return a shared_ptr to a new instance of lpf.
+diff -u -r a/gqrx/src/dsp/rds/decoder.h b/gqrx/src/dsp/rds/decoder.h
+--- a/gqrx/src/dsp/rds/decoder.h	2020-05-26 08:30:39.583336271 +0000
++++ b/gqrx/src/dsp/rds/decoder.h	2020-05-26 08:31:26.013336279 +0000
+@@ -26,7 +26,7 @@
+ class RDS_API decoder : virtual public gr::sync_block
+ {
+ public:
+-	typedef boost::shared_ptr<decoder> sptr;
++	typedef std::shared_ptr<decoder> sptr;
+ 	static sptr make(bool log, bool debug);
+ };
+ 
+diff -u -r a/gqrx/src/dsp/rds/parser.h b/gqrx/src/dsp/rds/parser.h
+--- a/gqrx/src/dsp/rds/parser.h	2020-05-26 08:30:39.583336271 +0000
++++ b/gqrx/src/dsp/rds/parser.h	2020-05-26 08:31:26.016669612 +0000
+@@ -26,7 +26,7 @@
+ class RDS_API parser : virtual public gr::block
+ {
+ public:
+-	typedef boost::shared_ptr<parser> sptr;
++	typedef std::shared_ptr<parser> sptr;
+ 	static sptr make(bool log, bool debug);
+ 
+ 	virtual void reset() = 0;
+diff -u -r a/gqrx/src/dsp/rds/parser_impl.cc b/gqrx/src/dsp/rds/parser_impl.cc
+--- a/gqrx/src/dsp/rds/parser_impl.cc	2020-05-26 08:30:39.583336271 +0000
++++ b/gqrx/src/dsp/rds/parser_impl.cc	2020-05-26 08:37:06.240002959 +0000
+@@ -39,7 +39,7 @@
+ 	debug(debug)
+ {
+ 	message_port_register_in(pmt::mp("in"));
+-	set_msg_handler(pmt::mp("in"), boost::bind(&parser_impl::parse, this, _1));
++	set_msg_handler(pmt::mp("in"), boost::bind(&parser_impl::parse, this, boost::placeholders::_1));
+ 	message_port_register_out(pmt::mp("out"));
+ 	reset();
+ }
+diff -u -r a/gqrx/src/dsp/resampler_ff_old.h b/gqrx/src/dsp/resampler_ff_old.h
+--- a/gqrx/src/dsp/resampler_ff_old.h	2020-05-26 08:30:39.583336271 +0000
++++ b/gqrx/src/dsp/resampler_ff_old.h	2020-05-26 08:31:26.026669613 +0000
+@@ -27,7 +27,7 @@
+ class resampler_ffo;
+ 
+ 
+-typedef boost::shared_ptr<resampler_ffo> resampler_ffo_sptr;
++typedef std::shared_ptr<resampler_ffo> resampler_ffo_sptr;
+ 
+ 
+ /*! \brief Return a shared_ptr to a new instance of resampler_ff.
+diff -u -r a/gqrx/src/dsp/resampler_xx.h b/gqrx/src/dsp/resampler_xx.h
+--- a/gqrx/src/dsp/resampler_xx.h	2020-05-26 08:30:39.583336271 +0000
++++ b/gqrx/src/dsp/resampler_xx.h	2020-05-26 08:31:26.013336279 +0000
+@@ -31,8 +31,8 @@
+ class resampler_cc;
+ class resampler_ff;
+ 
+-typedef boost::shared_ptr<resampler_cc> resampler_cc_sptr;
+-typedef boost::shared_ptr<resampler_ff> resampler_ff_sptr;
++typedef std::shared_ptr<resampler_cc> resampler_cc_sptr;
++typedef std::shared_ptr<resampler_ff> resampler_ff_sptr;
+ 
+ 
+ /*! \brief Return a shared_ptr to a new instance of resampler_cc.
+diff -u -r a/gqrx/src/dsp/rx_agc_xx.h b/gqrx/src/dsp/rx_agc_xx.h
+--- a/gqrx/src/dsp/rx_agc_xx.h	2020-05-26 08:30:39.583336271 +0000
++++ b/gqrx/src/dsp/rx_agc_xx.h	2020-05-26 08:31:25.990002945 +0000
+@@ -30,7 +30,7 @@
+ 
+ class rx_agc_cc;
+ 
+-typedef boost::shared_ptr<rx_agc_cc> rx_agc_cc_sptr;
++typedef std::shared_ptr<rx_agc_cc> rx_agc_cc_sptr;
+ 
+ 
+ /**
+diff -u -r a/gqrx/src/dsp/rx_demod_am.h b/gqrx/src/dsp/rx_demod_am.h
+--- a/gqrx/src/dsp/rx_demod_am.h	2020-05-26 08:30:39.583336271 +0000
++++ b/gqrx/src/dsp/rx_demod_am.h	2020-05-26 08:31:25.983336278 +0000
+@@ -32,7 +32,7 @@
+ 
+ class rx_demod_am;
+ 
+-typedef boost::shared_ptr<rx_demod_am> rx_demod_am_sptr;
++typedef std::shared_ptr<rx_demod_am> rx_demod_am_sptr;
+ 
+ /*! \brief Return a shared_ptr to a new instance of rx_demod_am.
+  *  \param quad_rate The input sample rate.
+diff -u -r a/gqrx/src/dsp/rx_demod_fm.h b/gqrx/src/dsp/rx_demod_fm.h
+--- a/gqrx/src/dsp/rx_demod_fm.h	2020-05-26 08:30:39.583336271 +0000
++++ b/gqrx/src/dsp/rx_demod_fm.h	2020-05-26 08:31:25.990002945 +0000
+@@ -28,7 +28,7 @@
+ #include <vector>
+ 
+ class rx_demod_fm;
+-typedef boost::shared_ptr<rx_demod_fm> rx_demod_fm_sptr;
++typedef std::shared_ptr<rx_demod_fm> rx_demod_fm_sptr;
+ 
+ /*! \brief Return a shared_ptr to a new instance of rx_demod_fm.
+  *  \param quad_rate The input sample rate.
+diff -u -r a/gqrx/src/dsp/rx_fft.h b/gqrx/src/dsp/rx_fft.h
+--- a/gqrx/src/dsp/rx_fft.h	2020-05-26 08:30:39.583336271 +0000
++++ b/gqrx/src/dsp/rx_fft.h	2020-05-26 08:31:25.986669612 +0000
+@@ -36,8 +36,8 @@
+ class rx_fft_c;
+ class rx_fft_f;
+ 
+-typedef boost::shared_ptr<rx_fft_c> rx_fft_c_sptr;
+-typedef boost::shared_ptr<rx_fft_f> rx_fft_f_sptr;
++typedef std::shared_ptr<rx_fft_c> rx_fft_c_sptr;
++typedef std::shared_ptr<rx_fft_f> rx_fft_f_sptr;
+ 
+ 
+ /*! \brief Return a shared_ptr to a new instance of rx_fft_c.
+diff -u -r a/gqrx/src/dsp/rx_filter.h b/gqrx/src/dsp/rx_filter.h
+--- a/gqrx/src/dsp/rx_filter.h	2020-05-26 08:30:39.583336271 +0000
++++ b/gqrx/src/dsp/rx_filter.h	2020-05-26 08:31:26.010002946 +0000
+@@ -39,8 +39,8 @@
+ class rx_filter;
+ class rx_xlating_filter;
+ 
+-typedef boost::shared_ptr<rx_filter> rx_filter_sptr;
+-typedef boost::shared_ptr<rx_xlating_filter> rx_xlating_filter_sptr;
++typedef std::shared_ptr<rx_filter> rx_filter_sptr;
++typedef std::shared_ptr<rx_xlating_filter> rx_xlating_filter_sptr;
+ 
+ 
+ /*! \brief Return a shared_ptr to a new instance of rx_filter.
+diff -u -r a/gqrx/src/dsp/rx_meter.h b/gqrx/src/dsp/rx_meter.h
+--- a/gqrx/src/dsp/rx_meter.h	2020-05-26 08:30:39.583336271 +0000
++++ b/gqrx/src/dsp/rx_meter.h	2020-05-26 08:31:26.026669613 +0000
+@@ -37,7 +37,7 @@
+ 
+ class rx_meter_c;
+ 
+-typedef boost::shared_ptr<rx_meter_c> rx_meter_c_sptr;
++typedef std::shared_ptr<rx_meter_c> rx_meter_c_sptr;
+ 
+ 
+ /*! \brief Return a shared_ptr to a new instance of rx_meter_c.
+diff -u -r a/gqrx/src/dsp/rx_noise_blanker_cc.h b/gqrx/src/dsp/rx_noise_blanker_cc.h
+--- a/gqrx/src/dsp/rx_noise_blanker_cc.h	2020-05-26 08:30:39.583336271 +0000
++++ b/gqrx/src/dsp/rx_noise_blanker_cc.h	2020-05-26 08:31:26.003336279 +0000
+@@ -29,7 +29,7 @@
+ 
+ class rx_nb_cc;
+ 
+-typedef boost::shared_ptr<rx_nb_cc> rx_nb_cc_sptr;
++typedef std::shared_ptr<rx_nb_cc> rx_nb_cc_sptr;
+ 
+ 
+ /*! \brief Return a shared_ptr to a new instance of rx_nb_cc.
+diff -u -r a/gqrx/src/dsp/rx_rds.cpp b/gqrx/src/dsp/rx_rds.cpp
+--- a/gqrx/src/dsp/rx_rds.cpp	2020-05-26 08:30:39.583336271 +0000
++++ b/gqrx/src/dsp/rx_rds.cpp	2020-05-26 08:35:45.743336292 +0000
+@@ -94,7 +94,7 @@
+                                 gr::io_signature::make (0, 0, 0))
+ {
+         message_port_register_in(pmt::mp("store"));
+-        set_msg_handler(pmt::mp("store"), boost::bind(&rx_rds_store::store, this, _1));
++        set_msg_handler(pmt::mp("store"), boost::bind(&rx_rds_store::store, this, boost::placeholders::_1));
+         d_messages.set_capacity(100);
+ }
+ 
+diff -u -r a/gqrx/src/dsp/rx_rds.h b/gqrx/src/dsp/rx_rds.h
+--- a/gqrx/src/dsp/rx_rds.h	2020-05-26 08:30:39.583336271 +0000
++++ b/gqrx/src/dsp/rx_rds.h	2020-05-26 08:31:25.990002945 +0000
+@@ -49,8 +49,8 @@
+ class rx_rds;
+ class rx_rds_store;
+ 
+-typedef boost::shared_ptr<rx_rds> rx_rds_sptr;
+-typedef boost::shared_ptr<rx_rds_store> rx_rds_store_sptr;
++typedef std::shared_ptr<rx_rds> rx_rds_sptr;
++typedef std::shared_ptr<rx_rds_store> rx_rds_store_sptr;
+ 
+ 
+ rx_rds_sptr make_rx_rds(double sample_rate);
+diff -u -r a/gqrx/src/dsp/sniffer_f.h b/gqrx/src/dsp/sniffer_f.h
+--- a/gqrx/src/dsp/sniffer_f.h	2020-05-26 08:30:39.583336271 +0000
++++ b/gqrx/src/dsp/sniffer_f.h	2020-05-26 08:31:25.986669612 +0000
+@@ -30,7 +30,7 @@
+ 
+ class sniffer_f;
+ 
+-typedef boost::shared_ptr<sniffer_f> sniffer_f_sptr;
++typedef std::shared_ptr<sniffer_f> sniffer_f_sptr;
+ 
+ 
+ /*! \brief Return a shared_ptr to a new instance of sniffer_f.
+diff -u -r a/gqrx/src/dsp/stereo_demod.h b/gqrx/src/dsp/stereo_demod.h
+--- a/gqrx/src/dsp/stereo_demod.h	2020-05-26 08:30:39.583336271 +0000
++++ b/gqrx/src/dsp/stereo_demod.h	2020-05-26 08:31:25.983336278 +0000
+@@ -50,7 +50,7 @@
+  
+ class stereo_demod;
+ 
+-typedef boost::shared_ptr<stereo_demod> stereo_demod_sptr;
++typedef std::shared_ptr<stereo_demod> stereo_demod_sptr;
+ 
+ 
+ /*! \brief Return a shared_ptr to a new instance of stere_demod.
+diff -u -r a/gqrx/src/interfaces/udp_sink_f.h b/gqrx/src/interfaces/udp_sink_f.h
+--- a/gqrx/src/interfaces/udp_sink_f.h	2020-05-26 08:30:39.583336271 +0000
++++ b/gqrx/src/interfaces/udp_sink_f.h	2020-05-26 08:31:25.913336277 +0000
+@@ -30,7 +30,7 @@
+ 
+ class udp_sink_f;
+ 
+-typedef boost::shared_ptr<udp_sink_f> udp_sink_f_sptr;
++typedef std::shared_ptr<udp_sink_f> udp_sink_f_sptr;
+ 
+ udp_sink_f_sptr make_udp_sink_f(void);
+ 
+diff -u -r a/gqrx/src/portaudio/portaudio_sink.h b/gqrx/src/portaudio/portaudio_sink.h
+--- a/gqrx/src/portaudio/portaudio_sink.h	2020-05-26 08:30:39.583336271 +0000
++++ b/gqrx/src/portaudio/portaudio_sink.h	2020-05-26 08:31:25.910002944 +0000
+@@ -30,7 +30,7 @@
+ 
+ class portaudio_sink;
+ 
+-typedef boost::shared_ptr<portaudio_sink> portaudio_sink_sptr;
++typedef std::shared_ptr<portaudio_sink> portaudio_sink_sptr;
+ 
+ portaudio_sink_sptr make_portaudio_sink(const string device_name, int audio_rate,
+                                         const string app_name,
+diff -u -r a/gqrx/src/pulseaudio/pa_sink.h b/gqrx/src/pulseaudio/pa_sink.h
+--- a/gqrx/src/pulseaudio/pa_sink.h	2020-05-26 08:30:39.583336271 +0000
++++ b/gqrx/src/pulseaudio/pa_sink.h	2020-05-26 08:31:25.920002944 +0000
+@@ -31,7 +31,7 @@
+ 
+ class pa_sink;
+ 
+-typedef boost::shared_ptr<pa_sink> pa_sink_sptr;
++typedef std::shared_ptr<pa_sink> pa_sink_sptr;
+ 
+ pa_sink_sptr make_pa_sink(const string device_name, int audio_rate,
+                           const string app_name,
+diff -u -r a/gqrx/src/pulseaudio/pa_source.h b/gqrx/src/pulseaudio/pa_source.h
+--- a/gqrx/src/pulseaudio/pa_source.h	2020-05-26 08:30:39.583336271 +0000
++++ b/gqrx/src/pulseaudio/pa_source.h	2020-05-26 08:31:25.920002944 +0000
+@@ -31,7 +31,7 @@
+ 
+ class pa_source;
+ 
+-typedef boost::shared_ptr<pa_source> pa_source_sptr;
++typedef std::shared_ptr<pa_source> pa_source_sptr;
+ 
+ pa_source_sptr make_pa_source(const string device_name,
+                               int sample_rate,
+diff -u -r a/gqrx/src/receivers/nbrx.h b/gqrx/src/receivers/nbrx.h
+--- a/gqrx/src/receivers/nbrx.h	2020-05-26 08:30:39.583336271 +0000
++++ b/gqrx/src/receivers/nbrx.h	2020-05-26 08:31:25.903336277 +0000
+@@ -39,7 +39,7 @@
+ 
+ class nbrx;
+ 
+-typedef boost::shared_ptr<nbrx> nbrx_sptr;
++typedef std::shared_ptr<nbrx> nbrx_sptr;
+ 
+ /*! \brief Public constructor of nbrx_sptr. */
+ nbrx_sptr make_nbrx(float quad_rate, float audio_rate);
+diff -u -r a/gqrx/src/receivers/receiver_base.h b/gqrx/src/receivers/receiver_base.h
+--- a/gqrx/src/receivers/receiver_base.h	2020-05-26 08:30:39.583336271 +0000
++++ b/gqrx/src/receivers/receiver_base.h	2020-05-26 08:31:25.903336277 +0000
+@@ -28,7 +28,7 @@
+ 
+ class receiver_base_cf;
+ 
+-typedef boost::shared_ptr<receiver_base_cf> receiver_base_cf_sptr;
++typedef std::shared_ptr<receiver_base_cf> receiver_base_cf_sptr;
+ 
+ 
+ /*! \brief Base class for receivers that output audio.
+diff -u -r a/gqrx/src/receivers/wfmrx.h b/gqrx/src/receivers/wfmrx.h
+--- a/gqrx/src/receivers/wfmrx.h	2020-05-26 08:30:39.583336271 +0000
++++ b/gqrx/src/receivers/wfmrx.h	2020-05-26 08:31:25.906669610 +0000
+@@ -38,7 +38,7 @@
+ 
+ class wfmrx;
+ 
+-typedef boost::shared_ptr<wfmrx> wfmrx_sptr;
++typedef std::shared_ptr<wfmrx> wfmrx_sptr;
+ 
+ /*! \brief Public constructor of wfm_rx. */
+ wfmrx_sptr make_wfmrx(float quad_rate, float audio_rate);

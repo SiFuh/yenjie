@@ -1,0 +1,30 @@
+# Description:  An open source software defined radio receiver (SDR)
+# URL:          http://gqrx.dk/
+# Packager:
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   gnuradio gr-osmosdr 
+# Optional:     pulseaudio
+
+name=gqrx
+version=2.11.5
+sversion=490ee3be4f1c5e0319b7610912104e2d0a47fd4e
+release=2
+source=(https://github.com/csete/${name}/archive/${sversion}/${name}-${version}.tar.gz
+        gqrx_boost.patch)
+
+build() {
+
+  patch -p2 -d "${name}"-"${sversion}" -i "${SRC}"/gqrx_boost.patch
+
+  cmake -S "${name}"-"${sversion}" -B build -G Ninja   \
+        -D LINUX_AUDIO_BACKEND=Gr-audio                \
+        -D CMAKE_BUILD_TYPE=Release                    \
+        -D CMAKE_INSTALL_PREFIX:PATH=/usr ../          \
+        -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"    \
+        -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -DNDEBUG"
+
+  cmake --build build
+
+  DESTDIR="${PKG}" cmake --install build
+
+}
