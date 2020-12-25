@@ -1,0 +1,6 @@
+NOTE:
+
+    You may need to run 'pango-querymodules --update-cache' if
+    the font isn't being displayed correctly.
+
+    You should also add your user to the group dialout.

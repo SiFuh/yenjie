@@ -1,0 +1,21 @@
+# Description:  A free, open-source tool for programming your amateur radio.
+# URL:          https://chirp.danplanet.com/
+# Packager:
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   pyserial libxml2-python pygtk python-future
+
+name=chirp
+version=20200718
+release=1
+source=(https://trac.chirp.danplanet.com/${name}_daily/daily-${version}/${name}-daily-${version}.tar.gz)
+
+build() {
+
+  cd ${name}-daily-${version}
+
+  python setup.py install --prefix=/usr --root="${PKG}/"
+ 
+  rm -rf ${PKG}/usr/share/chirp/locale
+  rm -rf ${PKG}/usr/share/doc
+
+}
