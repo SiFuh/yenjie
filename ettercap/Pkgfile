@@ -1,0 +1,31 @@
+# Description:  Ettercap is a comprehensive suite for man in the middle attacks
+# URL:          https://www.ettercap-project.org/
+# Packager:
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   libnet libgeoip geoip-database cmake ghostscript libpcap
+
+name=ettercap
+version=0.8.3.1
+release=1
+source=(https://github.com/Ettercap/${name}/archive/v${version}/${name}-${version}.tar.gz)
+
+build() {
+
+  [[ -e '/usr/bin/ninja' ]] && NINJA=' -G Ninja'
+
+  cmake -S "${name}"-"${version}" -B build ${NINJA}    \
+        -D ENABLE_IPV6=ON                              \
+        -D ENABLE_GTK=OFF                              \
+        -D CMAKE_BUILD_TYPE=Release                    \
+        -D CMAKE_INSTALL_PREFIX:PATH=/usr              \
+        -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"    \
+        -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -DNDEBUG"
+
+  cmake --build build
+
+  DESTDIR="${PKG}" cmake --install build
+
+  rm "${PKG}"/usr/share/ettercap/AUTHORS \
+     "${PKG}"/usr/share/ettercap/LICENSE
+
+}
