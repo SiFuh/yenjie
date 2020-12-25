@@ -1,0 +1,28 @@
+# Description:  Ntop is a network watcher (OLD VERSION)
+# URL:          https://www.ntop.org/
+# Packager:	
+# Maintainer:	  Lin SiFuh, #crux at freenode dot net
+# Depends on:	  libpcap
+
+name=ntop
+version=1.2a2
+release=1
+source=(https://raw.githubusercontent.com/SiFuh/yenjie/master/$name/$name-$version.tar.gz)
+
+build() {
+
+	cd $name-$version
+  mkdir -p $PKG/usr/sbin
+
+  ./configure --prefix=/usr     \
+              --enable-threads  \
+              --enable-lsof     \
+              --enable-queso    \
+              --enable-neped
+
+  make
+  make DESTDIR=$PKG install
+
+ chmod 4755 $PKG/usr/sbin/ntop
+
+}
