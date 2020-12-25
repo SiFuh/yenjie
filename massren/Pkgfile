@@ -1,0 +1,21 @@
+# Description:   Easily rename multiple files using your text editor
+# URL:           https://github.com/laurent22/massren
+# Maintainer:    Lin SiFuh, #crux at freenode dot net
+# Depends on:    go
+
+name=massren
+version=1.4.0
+release=1
+source=(https://github.com/laurent22/${name}/archive/v${version}/${name}-${version}.tar.gz)
+
+build() {
+
+  export GOPATH="${SRC}"
+  export GOBIN="${SRC}"
+  export PATH=$PATH:$GOPATH/bin
+
+  go get github.com/laurent22/massren
+
+  install -Dm755 "massren" "${PKG}"/usr/bin/massren 
+
+}
