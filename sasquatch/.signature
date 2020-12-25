@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uN8dYLvTxA4PjUbonPFs228eeMxcdVNkQcMQXa6MZ6UtMCRTxVXC4fVJzjHbrsdbllm6Gh2E6nFrP0v8aZm25AY=
+SHA256 (Pkgfile) = c386eab581dd1f445f7826408fd104e7a524774aaddf90533ad66af7f994b94e
+SHA256 (.footprint) = 2787459ef6782c4030fc7f0cc39fa9e84994a68340f8b0745b203355d787446f
+SHA256 (squashfs4.3.tar.gz) = 0d605512437b1eb800b4736791559295ee5f60177e102e4d4ccd0ee241a5f3f6
+SHA256 (read_fragment_table_n_stack_overflow-fix.patch) = 120c2d208085129235bf998b1c22abee19db26120a98174b9beb5edd7b9c84e9
