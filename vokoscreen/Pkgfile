@@ -6,13 +6,14 @@
 
 name=vokoscreen
 version=2.5.8
-release=2
+release=3
 source=(https://raw.githubusercontent.com/SiFuh/yenjie/master/${name}/${name}-${version}.zip)
 
 build () {
 
   cd ${name}-master
 
+  export LDFLAGS="-Wl,--allow-multiple-definition"
   export INSTALL_ROOT=${PKG}
 
   qmake-qt5 
