@@ -1,0 +1,32 @@
+# Description:  Osmocom Gnu Radio Blocks
+# URL:          http://osmocom.org/projects/osmosdr
+# Packager:
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   gnuradio volk rtl-sdr cmake boost swig
+
+name=gr-osmosdr
+version=0.2.0
+sversion=af2fda22b3b3745520ef38e9aaa757484871ee0c
+release=3
+source=(https://github.com/osmocom/${name}/archive/${sversion}/${name}-${version}.tar.gz
+        gr-osmosdr_boost.patch)
+
+build () {
+
+  patch -p2 -d "${name}"-"${sversion}" -i "${SRC}"/gr-osmosdr_boost.patch
+
+  cmake -S "${name}"-"${sversion}" -B build -G Ninja   \
+        -D Boost_NO_BOOST_CMAKE=ON                     \
+        -D CMAKE_BUILD_TYPE=Release                    \
+        -D CMAKE_INSTALL_PREFIX:PATH=/usr              \
+        -D PYTHON_EXECUTABLE=/usr/bin/python3          \
+        -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"    \
+        -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -DNDEBUG"
+
+  cmake --build build
+
+  DESTDIR="${PKG}" cmake --install build
+
+  rm -rf "${PKG}"/usr/share/doc
+
+}

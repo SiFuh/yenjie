@@ -1,0 +1,560 @@
+diff -u -r a/gr-osmosdr/include/osmosdr/pimpl.h b/gr-osmosdr/include/osmosdr/pimpl.h
+--- a/gr-osmosdr/include/osmosdr/pimpl.h	2020-05-26 07:13:40.890002781 +0000
++++ b/gr-osmosdr/include/osmosdr/pimpl.h	2020-05-26 08:12:26.763336205 +0000
+@@ -39,7 +39,7 @@
+  * \param _name the name of the pimpl class
+  */
+ #define OSMOSDR_PIMPL_DECL(_name) \
+-    struct _name; boost::shared_ptr<_name>
++    struct _name; std::shared_ptr<_name>
+ 
+ /*!
+  * Make an instance of a pimpl in a source file.
+@@ -49,6 +49,6 @@
+  * \param _args the constructor args for the pimpl
+  */
+ #define OSMOSDR_PIMPL_MAKE(_name, _args) \
+-    boost::shared_ptr<_name>(new _name _args)
++    std::shared_ptr<_name>(new _name _args)
+ 
+ #endif /* INCLUDED_OSMOSDR_PIMPL_H */
+diff -u -r a/gr-osmosdr/include/osmosdr/sink.h b/gr-osmosdr/include/osmosdr/sink.h
+--- a/gr-osmosdr/include/osmosdr/sink.h	2020-05-26 07:13:40.890002781 +0000
++++ b/gr-osmosdr/include/osmosdr/sink.h	2020-05-26 08:12:26.770002872 +0000
+@@ -38,7 +38,7 @@
+ class OSMOSDR_API sink : virtual public gr::hier_block2
+ {
+ public:
+-  typedef boost::shared_ptr< sink > sptr;
++  typedef std::shared_ptr< sink > sptr;
+ 
+   /*!
+    * \brief Return a shared_ptr to a new instance of sink.
+diff -u -r a/gr-osmosdr/include/osmosdr/source.h b/gr-osmosdr/include/osmosdr/source.h
+--- a/gr-osmosdr/include/osmosdr/source.h	2020-05-26 07:13:40.890002781 +0000
++++ b/gr-osmosdr/include/osmosdr/source.h	2020-05-26 08:12:26.770002872 +0000
+@@ -38,7 +38,7 @@
+ class OSMOSDR_API source : virtual public gr::hier_block2
+ {
+ public:
+-  typedef boost::shared_ptr< source > sptr;
++  typedef std::shared_ptr< source > sptr;
+ 
+   /*!
+    * \brief Return a shared_ptr to a new instance of source.
+diff -u -r a/gr-osmosdr/lib/airspy/airspy_source_c.h b/gr-osmosdr/lib/airspy/airspy_source_c.h
+--- a/gr-osmosdr/lib/airspy/airspy_source_c.h	2020-05-26 07:13:40.890002781 +0000
++++ b/gr-osmosdr/lib/airspy/airspy_source_c.h	2020-05-26 08:12:26.873336207 +0000
+@@ -35,7 +35,7 @@
+ class airspy_source_c;
+ 
+ /*
+- * We use boost::shared_ptr's instead of raw pointers for all access
++ * We use std::shared_ptr's instead of raw pointers for all access
+  * to gr::blocks (and many other data structures).  The shared_ptr gets
+  * us transparent reference counting, which greatly simplifies storage
+  * management issues.  This is especially helpful in our hybrid
+@@ -43,9 +43,9 @@
+  *
+  * See http://www.boost.org/libs/smart_ptr/smart_ptr.htm
+  *
+- * As a convention, the _sptr suffix indicates a boost::shared_ptr
++ * As a convention, the _sptr suffix indicates a std::shared_ptr
+  */
+-typedef boost::shared_ptr<airspy_source_c> airspy_source_c_sptr;
++typedef std::shared_ptr<airspy_source_c> airspy_source_c_sptr;
+ 
+ /*!
+  * \brief Return a shared_ptr to a new instance of airspy_source_c.
+diff -u -r a/gr-osmosdr/lib/airspyhf/airspyhf_source_c.h b/gr-osmosdr/lib/airspyhf/airspyhf_source_c.h
+--- a/gr-osmosdr/lib/airspyhf/airspyhf_source_c.h	2020-05-26 07:13:40.890002781 +0000
++++ b/gr-osmosdr/lib/airspyhf/airspyhf_source_c.h	2020-05-26 08:12:26.816669539 +0000
+@@ -34,7 +34,7 @@
+ 
+ class airspyhf_source_c;
+ 
+-typedef boost::shared_ptr<airspyhf_source_c> airspyhf_source_c_sptr;
++typedef std::shared_ptr<airspyhf_source_c> airspyhf_source_c_sptr;
+ 
+ /*!
+  * \brief Return a shared_ptr to a new instance of airspyhf_source_c.
+diff -u -r a/gr-osmosdr/lib/bladerf/bladerf_common.h b/gr-osmosdr/lib/bladerf/bladerf_common.h
+--- a/gr-osmosdr/lib/bladerf/bladerf_common.h	2020-05-26 07:13:40.890002781 +0000
++++ b/gr-osmosdr/lib/bladerf/bladerf_common.h	2020-05-26 08:12:26.843336207 +0000
+@@ -43,7 +43,7 @@
+ 
+ #define BLADERF_DEBUG_ENABLE
+ 
+-typedef boost::shared_ptr<struct bladerf> bladerf_sptr;
++typedef std::shared_ptr<struct bladerf> bladerf_sptr;
+ 
+ /* Identification of the bladeRF hardware in use */
+ typedef enum {
+diff -u -r a/gr-osmosdr/lib/bladerf/bladerf_sink_c.h b/gr-osmosdr/lib/bladerf/bladerf_sink_c.h
+--- a/gr-osmosdr/lib/bladerf/bladerf_sink_c.h	2020-05-26 07:13:40.890002781 +0000
++++ b/gr-osmosdr/lib/bladerf/bladerf_sink_c.h	2020-05-26 08:12:26.840002873 +0000
+@@ -30,7 +30,7 @@
+ class bladerf_sink_c;
+ 
+ /*
+- * We use boost::shared_ptr's instead of raw pointers for all access
++ * We use std::shared_ptr's instead of raw pointers for all access
+  * to gr_blocks (and many other data structures).  The shared_ptr gets
+  * us transparent reference counting, which greatly simplifies storage
+  * management issues.  This is especially helpful in our hybrid
+@@ -38,9 +38,9 @@
+  *
+  * See http://www.boost.org/libs/smart_ptr/smart_ptr.htm
+  *
+- * As a convention, the _sptr suffix indicates a boost::shared_ptr
++ * As a convention, the _sptr suffix indicates a std::shared_ptr
+  */
+-typedef boost::shared_ptr<bladerf_sink_c> bladerf_sink_c_sptr;
++typedef std::shared_ptr<bladerf_sink_c> bladerf_sink_c_sptr;
+ 
+ /*!
+  * \brief Return a shared_ptr to a new instance of bladerf_sink_c.
+diff -u -r a/gr-osmosdr/lib/bladerf/bladerf_source_c.h b/gr-osmosdr/lib/bladerf/bladerf_source_c.h
+--- a/gr-osmosdr/lib/bladerf/bladerf_source_c.h	2020-05-26 07:13:40.890002781 +0000
++++ b/gr-osmosdr/lib/bladerf/bladerf_source_c.h	2020-05-26 08:12:26.840002873 +0000
+@@ -30,7 +30,7 @@
+ class bladerf_source_c;
+ 
+ /*
+- * We use boost::shared_ptr's instead of raw pointers for all access
++ * We use std::shared_ptr's instead of raw pointers for all access
+  * to gr_blocks (and many other data structures).  The shared_ptr gets
+  * us transparent reference counting, which greatly simplifies storage
+  * management issues.  This is especially helpful in our hybrid
+@@ -38,9 +38,9 @@
+  *
+  * See http://www.boost.org/libs/smart_ptr/smart_ptr.htm
+  *
+- * As a convention, the _sptr suffix indicates a boost::shared_ptr
++ * As a convention, the _sptr suffix indicates a std::shared_ptr
+  */
+-typedef boost::shared_ptr<bladerf_source_c> bladerf_source_c_sptr;
++typedef std::shared_ptr<bladerf_source_c> bladerf_source_c_sptr;
+ 
+ /*!
+  * \brief Return a shared_ptr to a new instance of bladerf_source_c.
+diff -u -r a/gr-osmosdr/lib/fcd/fcd_source_c.h b/gr-osmosdr/lib/fcd/fcd_source_c.h
+--- a/gr-osmosdr/lib/fcd/fcd_source_c.h	2020-05-26 07:13:40.890002781 +0000
++++ b/gr-osmosdr/lib/fcd/fcd_source_c.h	2020-05-26 08:12:26.866669540 +0000
+@@ -34,7 +34,7 @@
+ 
+ class fcd_source_c;
+ 
+-typedef boost::shared_ptr< fcd_source_c > fcd_source_c_sptr;
++typedef std::shared_ptr< fcd_source_c > fcd_source_c_sptr;
+ 
+ fcd_source_c_sptr make_fcd_source_c( const std::string & args = "" );
+ 
+diff -u -r a/gr-osmosdr/lib/file/file_sink_c.h b/gr-osmosdr/lib/file/file_sink_c.h
+--- a/gr-osmosdr/lib/file/file_sink_c.h	2020-05-26 07:13:40.890002781 +0000
++++ b/gr-osmosdr/lib/file/file_sink_c.h	2020-05-26 08:12:26.793336206 +0000
+@@ -28,7 +28,7 @@
+ 
+ class file_sink_c;
+ 
+-typedef boost::shared_ptr< file_sink_c > file_sink_c_sptr;
++typedef std::shared_ptr< file_sink_c > file_sink_c_sptr;
+ 
+ file_sink_c_sptr make_file_sink_c( const std::string & args = "" );
+ 
+diff -u -r a/gr-osmosdr/lib/file/file_source_c.h b/gr-osmosdr/lib/file/file_source_c.h
+--- a/gr-osmosdr/lib/file/file_source_c.h	2020-05-26 07:13:40.890002781 +0000
++++ b/gr-osmosdr/lib/file/file_source_c.h	2020-05-26 08:12:26.790002872 +0000
+@@ -28,7 +28,7 @@
+ 
+ class file_source_c;
+ 
+-typedef boost::shared_ptr< file_source_c > file_source_c_sptr;
++typedef std::shared_ptr< file_source_c > file_source_c_sptr;
+ 
+ file_source_c_sptr make_file_source_c( const std::string & args = "" );
+ 
+diff -u -r a/gr-osmosdr/lib/freesrp/freesrp_common.cc b/gr-osmosdr/lib/freesrp/freesrp_common.cc
+--- a/gr-osmosdr/lib/freesrp/freesrp_common.cc	2020-05-26 07:13:40.890002781 +0000
++++ b/gr-osmosdr/lib/freesrp/freesrp_common.cc	2020-05-26 08:12:26.850002873 +0000
+@@ -11,7 +11,7 @@
+ using namespace std;
+ using namespace boost::assign;
+ 
+-boost::shared_ptr<::FreeSRP::FreeSRP> freesrp_common::_srp;
++std::shared_ptr<::FreeSRP::FreeSRP> freesrp_common::_srp;
+ 
+ freesrp_common::freesrp_common(const string &args)
+ {
+diff -u -r a/gr-osmosdr/lib/freesrp/freesrp_common.h b/gr-osmosdr/lib/freesrp/freesrp_common.h
+--- a/gr-osmosdr/lib/freesrp/freesrp_common.h	2020-05-26 07:13:40.890002781 +0000
++++ b/gr-osmosdr/lib/freesrp/freesrp_common.h	2020-05-26 08:12:26.850002873 +0000
+@@ -22,7 +22,7 @@
+     double set_freq_corr( double ppm, size_t chan = 0 );
+     double get_freq_corr( size_t chan = 0 );
+ protected:
+-    static boost::shared_ptr<::FreeSRP::FreeSRP> _srp;
++    static std::shared_ptr<::FreeSRP::FreeSRP> _srp;
+     bool _ignore_overflow = false;
+ };
+ 
+diff -u -r a/gr-osmosdr/lib/freesrp/freesrp_sink_c.h b/gr-osmosdr/lib/freesrp/freesrp_sink_c.h
+--- a/gr-osmosdr/lib/freesrp/freesrp_sink_c.h	2020-05-26 07:13:40.890002781 +0000
++++ b/gr-osmosdr/lib/freesrp/freesrp_sink_c.h	2020-05-26 08:12:26.850002873 +0000
+@@ -39,7 +39,7 @@
+ class freesrp_sink_c;
+ 
+ /*
+- * We use boost::shared_ptr's instead of raw pointers for all access
++ * We use std::shared_ptr's instead of raw pointers for all access
+  * to gr_blocks (and many other data structures).  The shared_ptr gets
+  * us transparent reference counting, which greatly simplifies storage
+  * management issues.  This is especially helpful in our hybrid
+@@ -47,9 +47,9 @@
+  *
+  * See http://www.boost.org/libs/smart_ptr/smart_ptr.htm
+  *
+- * As a convention, the _sptr suffix indicates a boost::shared_ptr
++ * As a convention, the _sptr suffix indicates a std::shared_ptr
+  */
+-typedef boost::shared_ptr<freesrp_sink_c> freesrp_sink_c_sptr;
++typedef std::shared_ptr<freesrp_sink_c> freesrp_sink_c_sptr;
+ 
+ /*!
+  * \brief Return a shared_ptr to a new instance of freesrp_sink_c.
+diff -u -r a/gr-osmosdr/lib/freesrp/freesrp_source_c.h b/gr-osmosdr/lib/freesrp/freesrp_source_c.h
+--- a/gr-osmosdr/lib/freesrp/freesrp_source_c.h	2020-05-26 07:13:40.890002781 +0000
++++ b/gr-osmosdr/lib/freesrp/freesrp_source_c.h	2020-05-26 08:12:26.856669540 +0000
+@@ -40,7 +40,7 @@
+ class freesrp_source_c;
+ 
+ /*
+- * We use boost::shared_ptr's instead of raw pointers for all access
++ * We use std::shared_ptr's instead of raw pointers for all access
+  * to gr_blocks (and many other data structures).  The shared_ptr gets
+  * us transparent reference counting, which greatly simplifies storage
+  * management issues.  This is especially helpful in our hybrid
+@@ -48,9 +48,9 @@
+  *
+  * See http://www.boost.org/libs/smart_ptr/smart_ptr.htm
+  *
+- * As a convention, the _sptr suffix indicates a boost::shared_ptr
++ * As a convention, the _sptr suffix indicates a std::shared_ptr
+  */
+-typedef boost::shared_ptr<freesrp_source_c> freesrp_source_c_sptr;
++typedef std::shared_ptr<freesrp_source_c> freesrp_source_c_sptr;
+ 
+ /*!
+  * \brief Return a shared_ptr to a new instance of freesrp_source_c.
+diff -u -r a/gr-osmosdr/lib/hackrf/hackrf_sink_c.h b/gr-osmosdr/lib/hackrf/hackrf_sink_c.h
+--- a/gr-osmosdr/lib/hackrf/hackrf_sink_c.h	2020-05-26 07:13:40.890002781 +0000
++++ b/gr-osmosdr/lib/hackrf/hackrf_sink_c.h	2020-05-26 08:12:26.816669539 +0000
+@@ -45,7 +45,7 @@
+ } circular_buffer_t;
+ 
+ /*
+- * We use boost::shared_ptr's instead of raw pointers for all access
++ * We use std::shared_ptr's instead of raw pointers for all access
+  * to gr::blocks (and many other data structures).  The shared_ptr gets
+  * us transparent reference counting, which greatly simplifies storage
+  * management issues.  This is especially helpful in our hybrid
+@@ -53,9 +53,9 @@
+  *
+  * See http://www.boost.org/libs/smart_ptr/smart_ptr.htm
+  *
+- * As a convention, the _sptr suffix indicates a boost::shared_ptr
++ * As a convention, the _sptr suffix indicates a std::shared_ptr
+  */
+-typedef boost::shared_ptr<hackrf_sink_c> hackrf_sink_c_sptr;
++typedef std::shared_ptr<hackrf_sink_c> hackrf_sink_c_sptr;
+ 
+ /*!
+  * \brief Return a shared_ptr to a new instance of hackrf_sink_c.
+diff -u -r a/gr-osmosdr/lib/hackrf/hackrf_source_c.h b/gr-osmosdr/lib/hackrf/hackrf_source_c.h
+--- a/gr-osmosdr/lib/hackrf/hackrf_source_c.h	2020-05-26 07:13:40.890002781 +0000
++++ b/gr-osmosdr/lib/hackrf/hackrf_source_c.h	2020-05-26 08:12:26.820002873 +0000
+@@ -34,7 +34,7 @@
+ class hackrf_source_c;
+ 
+ /*
+- * We use boost::shared_ptr's instead of raw pointers for all access
++ * We use std::shared_ptr's instead of raw pointers for all access
+  * to gr::blocks (and many other data structures).  The shared_ptr gets
+  * us transparent reference counting, which greatly simplifies storage
+  * management issues.  This is especially helpful in our hybrid
+@@ -42,9 +42,9 @@
+  *
+  * See http://www.boost.org/libs/smart_ptr/smart_ptr.htm
+  *
+- * As a convention, the _sptr suffix indicates a boost::shared_ptr
++ * As a convention, the _sptr suffix indicates a std::shared_ptr
+  */
+-typedef boost::shared_ptr<hackrf_source_c> hackrf_source_c_sptr;
++typedef std::shared_ptr<hackrf_source_c> hackrf_source_c_sptr;
+ 
+ /*!
+  * \brief Return a shared_ptr to a new instance of hackrf_source_c.
+diff -u -r a/gr-osmosdr/lib/miri/miri_source_c.h b/gr-osmosdr/lib/miri/miri_source_c.h
+--- a/gr-osmosdr/lib/miri/miri_source_c.h	2020-05-26 07:13:40.890002781 +0000
++++ b/gr-osmosdr/lib/miri/miri_source_c.h	2020-05-26 08:12:26.870002874 +0000
+@@ -32,7 +32,7 @@
+ typedef struct mirisdr_dev mirisdr_dev_t;
+ 
+ /*
+- * We use boost::shared_ptr's instead of raw pointers for all access
++ * We use std::shared_ptr's instead of raw pointers for all access
+  * to gr::blocks (and many other data structures).  The shared_ptr gets
+  * us transparent reference counting, which greatly simplifies storage
+  * management issues.  This is especially helpful in our hybrid
+@@ -40,9 +40,9 @@
+  *
+  * See http://www.boost.org/libs/smart_ptr/smart_ptr.htm
+  *
+- * As a convention, the _sptr suffix indicates a boost::shared_ptr
++ * As a convention, the _sptr suffix indicates a std::shared_ptr
+  */
+-typedef boost::shared_ptr<miri_source_c> miri_source_c_sptr;
++typedef std::shared_ptr<miri_source_c> miri_source_c_sptr;
+ 
+ /*!
+  * \brief Return a shared_ptr to a new instance of miri_source_c.
+diff -u -r a/gr-osmosdr/lib/osmosdr/osmosdr_src_c.h b/gr-osmosdr/lib/osmosdr/osmosdr_src_c.h
+--- a/gr-osmosdr/lib/osmosdr/osmosdr_src_c.h	2020-05-26 07:13:40.890002781 +0000
++++ b/gr-osmosdr/lib/osmosdr/osmosdr_src_c.h	2020-05-26 08:12:26.826669540 +0000
+@@ -32,7 +32,7 @@
+ typedef struct osmosdr_dev osmosdr_dev_t;
+ 
+ /*
+- * We use boost::shared_ptr's instead of raw pointers for all access
++ * We use std::shared_ptr's instead of raw pointers for all access
+  * to gr::blocks (and many other data structures).  The shared_ptr gets
+  * us transparent reference counting, which greatly simplifies storage
+  * management issues.  This is especially helpful in our hybrid
+@@ -40,9 +40,9 @@
+  *
+  * See http://www.boost.org/libs/smart_ptr/smart_ptr.htm
+  *
+- * As a convention, the _sptr suffix indicates a boost::shared_ptr
++ * As a convention, the _sptr suffix indicates a std::shared_ptr
+  */
+-typedef boost::shared_ptr<osmosdr_src_c> osmosdr_src_c_sptr;
++typedef std::shared_ptr<osmosdr_src_c> osmosdr_src_c_sptr;
+ 
+ /*!
+  * \brief Return a shared_ptr to a new instance of osmosdr_src_c.
+diff -u -r a/gr-osmosdr/lib/redpitaya/redpitaya_sink_c.h b/gr-osmosdr/lib/redpitaya/redpitaya_sink_c.h
+--- a/gr-osmosdr/lib/redpitaya/redpitaya_sink_c.h	2020-05-26 07:13:40.890002781 +0000
++++ b/gr-osmosdr/lib/redpitaya/redpitaya_sink_c.h	2020-05-26 08:12:26.786669539 +0000
+@@ -29,7 +29,7 @@
+ 
+ class redpitaya_sink_c;
+ 
+-typedef boost::shared_ptr< redpitaya_sink_c > redpitaya_sink_c_sptr;
++typedef std::shared_ptr< redpitaya_sink_c > redpitaya_sink_c_sptr;
+ 
+ redpitaya_sink_c_sptr make_redpitaya_sink_c( const std::string & args = "" );
+ 
+diff -u -r a/gr-osmosdr/lib/redpitaya/redpitaya_source_c.h b/gr-osmosdr/lib/redpitaya/redpitaya_source_c.h
+--- a/gr-osmosdr/lib/redpitaya/redpitaya_source_c.h	2020-05-26 07:13:40.890002781 +0000
++++ b/gr-osmosdr/lib/redpitaya/redpitaya_source_c.h	2020-05-26 08:12:26.783336205 +0000
+@@ -29,7 +29,7 @@
+ 
+ class redpitaya_source_c;
+ 
+-typedef boost::shared_ptr< redpitaya_source_c > redpitaya_source_c_sptr;
++typedef std::shared_ptr< redpitaya_source_c > redpitaya_source_c_sptr;
+ 
+ redpitaya_source_c_sptr make_redpitaya_source_c( const std::string & args = "" );
+ 
+diff -u -r a/gr-osmosdr/lib/rfspace/rfspace_source_c.h b/gr-osmosdr/lib/rfspace/rfspace_source_c.h
+--- a/gr-osmosdr/lib/rfspace/rfspace_source_c.h	2020-05-26 07:13:40.890002781 +0000
++++ b/gr-osmosdr/lib/rfspace/rfspace_source_c.h	2020-05-26 08:12:26.856669540 +0000
+@@ -46,7 +46,7 @@
+ #endif
+ 
+ /*
+- * We use boost::shared_ptr's instead of raw pointers for all access
++ * We use std::shared_ptr's instead of raw pointers for all access
+  * to gr_blocks (and many other data structures).  The shared_ptr gets
+  * us transparent reference counting, which greatly simplifies storage
+  * management issues.  This is especially helpful in our hybrid
+@@ -54,9 +54,9 @@
+  *
+  * See http://www.boost.org/libs/smart_ptr/smart_ptr.htm
+  *
+- * As a convention, the _sptr suffix indicates a boost::shared_ptr
++ * As a convention, the _sptr suffix indicates a std::shared_ptr
+  */
+-typedef boost::shared_ptr<rfspace_source_c> rfspace_source_c_sptr;
++typedef std::shared_ptr<rfspace_source_c> rfspace_source_c_sptr;
+ 
+ /*!
+  * \brief Return a shared_ptr to a new instance of rfspace_source_c.
+diff -u -r a/gr-osmosdr/lib/rtl/rtl_source_c.cc b/gr-osmosdr/lib/rtl/rtl_source_c.cc
+--- a/gr-osmosdr/lib/rtl/rtl_source_c.cc	2020-05-26 07:13:40.890002781 +0000
++++ b/gr-osmosdr/lib/rtl/rtl_source_c.cc	2020-05-26 08:15:20.603336234 +0000
+@@ -32,7 +32,7 @@
+ 
+ #include <boost/assign.hpp>
+ #include <boost/format.hpp>
+-#include <boost/detail/endian.hpp>
++#include <boost/endian.hpp>
+ #include <boost/algorithm/string.hpp>
+ 
+ #include <stdexcept>
+diff -u -r a/gr-osmosdr/lib/rtl/rtl_source_c.h b/gr-osmosdr/lib/rtl/rtl_source_c.h
+--- a/gr-osmosdr/lib/rtl/rtl_source_c.h	2020-05-26 07:13:40.890002781 +0000
++++ b/gr-osmosdr/lib/rtl/rtl_source_c.h	2020-05-26 08:12:26.830002873 +0000
+@@ -34,7 +34,7 @@
+ typedef struct rtlsdr_dev rtlsdr_dev_t;
+ 
+ /*
+- * We use boost::shared_ptr's instead of raw pointers for all access
++ * We use std::shared_ptr's instead of raw pointers for all access
+  * to gr::blocks (and many other data structures).  The shared_ptr gets
+  * us transparent reference counting, which greatly simplifies storage
+  * management issues.  This is especially helpful in our hybrid
+@@ -42,9 +42,9 @@
+  *
+  * See http://www.boost.org/libs/smart_ptr/smart_ptr.htm
+  *
+- * As a convention, the _sptr suffix indicates a boost::shared_ptr
++ * As a convention, the _sptr suffix indicates a std::shared_ptr
+  */
+-typedef boost::shared_ptr<rtl_source_c> rtl_source_c_sptr;
++typedef std::shared_ptr<rtl_source_c> rtl_source_c_sptr;
+ 
+ /*!
+  * \brief Return a shared_ptr to a new instance of rtl_source_c.
+diff -u -r a/gr-osmosdr/lib/rtl_tcp/rtl_tcp_source_c.h b/gr-osmosdr/lib/rtl_tcp/rtl_tcp_source_c.h
+--- a/gr-osmosdr/lib/rtl_tcp/rtl_tcp_source_c.h	2020-05-26 07:13:40.916669448 +0000
++++ b/gr-osmosdr/lib/rtl_tcp/rtl_tcp_source_c.h	2020-05-26 08:12:26.800002872 +0000
+@@ -26,7 +26,7 @@
+ 
+ class rtl_tcp_source_c;
+ 
+-typedef boost::shared_ptr< rtl_tcp_source_c > rtl_tcp_source_c_sptr;
++typedef std::shared_ptr< rtl_tcp_source_c > rtl_tcp_source_c_sptr;
+ 
+ rtl_tcp_source_c_sptr make_rtl_tcp_source_c( const std::string & args = "" );
+ 
+diff -u -r a/gr-osmosdr/lib/rtl_tcp/rtl_tcp_source_f.h b/gr-osmosdr/lib/rtl_tcp/rtl_tcp_source_f.h
+--- a/gr-osmosdr/lib/rtl_tcp/rtl_tcp_source_f.h	2020-05-26 07:13:40.916669448 +0000
++++ b/gr-osmosdr/lib/rtl_tcp/rtl_tcp_source_f.h	2020-05-26 08:12:26.800002872 +0000
+@@ -59,7 +59,7 @@
+ };
+ 
+ class rtl_tcp_source_f;
+-typedef boost::shared_ptr<rtl_tcp_source_f> rtl_tcp_source_f_sptr;
++typedef std::shared_ptr<rtl_tcp_source_f> rtl_tcp_source_f_sptr;
+ 
+ rtl_tcp_source_f_sptr make_rtl_tcp_source_f (
+     size_t itemsize,
+diff -u -r a/gr-osmosdr/lib/sdrplay/sdrplay_source_c.h b/gr-osmosdr/lib/sdrplay/sdrplay_source_c.h
+--- a/gr-osmosdr/lib/sdrplay/sdrplay_source_c.h	2020-05-26 07:13:40.916669448 +0000
++++ b/gr-osmosdr/lib/sdrplay/sdrplay_source_c.h	2020-05-26 08:12:26.833336206 +0000
+@@ -35,7 +35,7 @@
+ typedef struct sdrplay_dev sdrplay_dev_t;
+ 
+ /*
+- * We use boost::shared_ptr's instead of raw pointers for all access
++ * We use std::shared_ptr's instead of raw pointers for all access
+  * to gr::blocks (and many other data structures).  The shared_ptr gets
+  * us transparent reference counting, which greatly simplifies storage
+  * management issues.  This is especially helpful in our hybrid
+@@ -43,9 +43,9 @@
+  *
+  * See http://www.boost.org/libs/smart_ptr/smart_ptr.htm
+  *
+- * As a convention, the _sptr suffix indicates a boost::shared_ptr
++ * As a convention, the _sptr suffix indicates a std::shared_ptr
+  */
+-typedef boost::shared_ptr<sdrplay_source_c> sdrplay_source_c_sptr;
++typedef std::shared_ptr<sdrplay_source_c> sdrplay_source_c_sptr;
+ 
+ /*!
+  * \brief Return a shared_ptr to a new instance of sdrplay_source_c.
+diff -u -r a/gr-osmosdr/lib/soapy/soapy_sink_c.h b/gr-osmosdr/lib/soapy/soapy_sink_c.h
+--- a/gr-osmosdr/lib/soapy/soapy_sink_c.h	2020-05-26 07:13:40.916669448 +0000
++++ b/gr-osmosdr/lib/soapy/soapy_sink_c.h	2020-05-26 08:12:26.806669539 +0000
+@@ -36,7 +36,7 @@
+ }
+ 
+ /*
+- * We use boost::shared_ptr's instead of raw pointers for all access
++ * We use std::shared_ptr's instead of raw pointers for all access
+  * to gr_blocks (and many other data structures).  The shared_ptr gets
+  * us transparent reference counting, which greatly simplifies storage
+  * management issues.  This is especially helpful in our hybrid
+@@ -44,9 +44,9 @@
+  *
+  * See http://www.boost.org/libs/smart_ptr/smart_ptr.htm
+  *
+- * As a convention, the _sptr suffix indicates a boost::shared_ptr
++ * As a convention, the _sptr suffix indicates a std::shared_ptr
+  */
+-typedef boost::shared_ptr<soapy_sink_c> soapy_sink_c_sptr;
++typedef std::shared_ptr<soapy_sink_c> soapy_sink_c_sptr;
+ 
+ /*!
+  * \brief Return a shared_ptr to a new instance of soapy_sink_c.
+diff -u -r a/gr-osmosdr/lib/soapy/soapy_source_c.h b/gr-osmosdr/lib/soapy/soapy_source_c.h
+--- a/gr-osmosdr/lib/soapy/soapy_source_c.h	2020-05-26 07:13:40.916669448 +0000
++++ b/gr-osmosdr/lib/soapy/soapy_source_c.h	2020-05-26 08:12:26.803336206 +0000
+@@ -36,7 +36,7 @@
+ }
+ 
+ /*
+- * We use boost::shared_ptr's instead of raw pointers for all access
++ * We use std::shared_ptr's instead of raw pointers for all access
+  * to gr_blocks (and many other data structures).  The shared_ptr gets
+  * us transparent reference counting, which greatly simplifies storage
+  * management issues.  This is especially helpful in our hybrid
+@@ -44,9 +44,9 @@
+  *
+  * See http://www.boost.org/libs/smart_ptr/smart_ptr.htm
+  *
+- * As a convention, the _sptr suffix indicates a boost::shared_ptr
++ * As a convention, the _sptr suffix indicates a std::shared_ptr
+  */
+-typedef boost::shared_ptr<soapy_source_c> soapy_source_c_sptr;
++typedef std::shared_ptr<soapy_source_c> soapy_source_c_sptr;
+ 
+ /*!
+  * \brief Return a shared_ptr to a new instance of soapy_source_c.
+diff -u -r a/gr-osmosdr/lib/uhd/uhd_sink_c.h b/gr-osmosdr/lib/uhd/uhd_sink_c.h
+--- a/gr-osmosdr/lib/uhd/uhd_sink_c.h	2020-05-26 07:13:40.916669448 +0000
++++ b/gr-osmosdr/lib/uhd/uhd_sink_c.h	2020-05-26 08:12:26.863336207 +0000
+@@ -27,7 +27,7 @@
+ 
+ class uhd_sink_c;
+ 
+-typedef boost::shared_ptr< uhd_sink_c > uhd_sink_c_sptr;
++typedef std::shared_ptr< uhd_sink_c > uhd_sink_c_sptr;
+ 
+ uhd_sink_c_sptr make_uhd_sink_c(const std::string &args = "");
+ 
+diff -u -r a/gr-osmosdr/lib/uhd/uhd_source_c.h b/gr-osmosdr/lib/uhd/uhd_source_c.h
+--- a/gr-osmosdr/lib/uhd/uhd_source_c.h	2020-05-26 07:13:40.916669448 +0000
++++ b/gr-osmosdr/lib/uhd/uhd_source_c.h	2020-05-26 08:12:26.863336207 +0000
+@@ -27,7 +27,7 @@
+ 
+ class uhd_source_c;
+ 
+-typedef boost::shared_ptr< uhd_source_c > uhd_source_c_sptr;
++typedef std::shared_ptr< uhd_source_c > uhd_source_c_sptr;
+ 
+ uhd_source_c_sptr make_uhd_source_c(const std::string &args = "");
+ 
+diff -u -r a/gr-osmosdr/swig/osmosdr_swig.i b/gr-osmosdr/swig/osmosdr_swig.i
+--- a/gr-osmosdr/swig/osmosdr_swig.i	2020-05-26 07:13:40.916669448 +0000
++++ b/gr-osmosdr/swig/osmosdr_swig.i	2020-05-26 08:12:26.900002874 +0000
+@@ -63,7 +63,7 @@
+ };
+ 
+ %define OSMOSDR_SWIG_BLOCK_MAGIC2(PKG, BASE_NAME)
+-%template(BASE_NAME ## _sptr) boost::shared_ptr<PKG ## :: ## BASE_NAME>;
++%template(BASE_NAME ## _sptr) std::shared_ptr<PKG ## :: ## BASE_NAME>;
+ %pythoncode %{
+ BASE_NAME ## _sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.unique_id())
+ BASE_NAME = BASE_NAME.make;
