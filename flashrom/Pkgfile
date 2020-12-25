@@ -1,0 +1,18 @@
+# Description:  A utility for programming flash chips.
+# URL:          https://www.flashrom.org/Flashrom
+# Packager:
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:
+
+name=flashrom
+version=1.2
+release=1
+source=(https://download.flashrom.org/releases/${name}-v${version}.tar.bz2)
+
+build() {
+
+  cd ${name}-v${version}
+
+  make PREFIX=/usr DESTDIR=${PKG} install
+
+}
