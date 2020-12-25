@@ -1,0 +1,21 @@
+# Description:  Parchive: Parity Archive Volume Set
+# URL:          https://github.com/Parchive
+# Packager:    
+# Maintainer:   Lin SiFuh, #crux at freenode dot net 	  
+# Depends on:  
+
+name=par2cmdline
+version=0.8.1
+release=1
+source=(https://github.com/Parchive/${name}/archive/v${version}/${name}-${version}.tar.gz)
+
+build () {
+	
+  cd ${name}-${version}
+  sh automake.sh
+  ./configure --prefix=/usr
+
+  make
+  make DESTDIR=${PKG} install
+
+}
