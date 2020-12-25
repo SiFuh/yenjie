@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uOA6pUthgTVd4M1N+0YlwFQSf8o1FuVK+vyft8NTlZZIFpnffbGDhFLTBNc1yfJ4sIA7Qshf293ntkSMETmvoA4=
+SHA256 (Pkgfile) = 7a6221024e01d35e8eccb00af78ea826e877b6192d479794626e6dc041b272b7
+SHA256 (.footprint) = 6ab91e0ceeff690bae34381b34244cb9a02c5d4db617d94993be24d155dc8e9b
+SHA256 (fping-5.0.tar.gz) = ed38c0b9b64686a05d1b3bc1d66066114a492e04e44eef1821d43b1263cd57b8

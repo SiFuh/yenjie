@@ -1,0 +1,23 @@
+# Description:  A program to send ICMP echo probes to network hosts
+# URL:          https://fping.org/
+# Packager:	
+# Maintainer:   Lin SiFuh, #crux at freenode dot net 	
+# Depends on:
+
+name=fping
+version=5.0
+release=1
+source=(https://fping.org/dist/${name}-${version}.tar.gz)
+
+build() {
+
+  cd ${name}-${version}
+	
+  ./configure --prefix=/usr
+	
+  make
+  make DESTDIR=${PKG} install
+
+  chmod 4755 ${PKG}/usr/sbin/fping
+
+}
