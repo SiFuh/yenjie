@@ -1,0 +1,14 @@
+drwxr-xr-x	root/root	etc/
+-rw-r--r--	root/root	etc/pdmenurc
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/pdmenu
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/pdmenu.1.gz
+drwxr-xr-x	root/root	usr/share/man/man5/
+-rw-r--r--	root/root	usr/share/man/man5/pdmenurc.5.gz
+drwxr-xr-x	root/root	usr/share/pdmenu/
+lrwxrwxrwx	root/root	usr/share/pdmenu/editdir.pl -> showdir.pl
+-rwxr-xr-x	root/root	usr/share/pdmenu/showdir.pl
