@@ -1,0 +1,24 @@
+# Description:  Library for communicating with USB and Bluetooth HID devices
+# URL:          https://github.com/libusb/hidapi
+# Packager:
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   libusb
+
+name=hidapi
+version=0.10.0
+release=1
+source=(https://github.com/libusb/${name}/archive/${name}-${version}/${name}-${version}.tar.gz)
+
+build() {
+
+  cd ${name}-${name}-${version}
+
+  ./bootstrap
+  ./configure --prefix=/usr
+
+  make
+  make DESTDIR=${PKG} install
+
+  rm -rf ${PKG}/usr/share/doc
+
+}

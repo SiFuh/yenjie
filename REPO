@@ -136,6 +136,10 @@ d:.git/objects/c5
 d:.git/objects/28
 d:.git/objects/f5
 d:.git/objects/0c
+d:.git/objects/87
+d:.git/objects/93
+d:.git/objects/1f
+d:.git/objects/23
 d:.git/logs
 d:.git/logs/refs
 d:.git/logs/refs/remotes
@@ -165,6 +169,7 @@ d:fping
 d:gnuradio
 d:gqrx
 d:gr-osmosdr
+d:hidapi
 f:ce562e08d8098926a3862fc6e7905199:.git/hooks/applypatch-msg.sample
 f:579a3c1e12a1e74a98169175fb913012:.git/hooks/commit-msg.sample
 f:ea587b0fae70333bce92257152996e70:.git/hooks/fsmonitor-watchman.sample
@@ -179,9 +184,9 @@ f:2b5c047bdb474555e1787db32b2d2fc5:.git/hooks/prepare-commit-msg.sample
 f:647ae13c682f7827c22f5fc08a03674e:.git/hooks/update.sample
 f:036208b4a1ab4a235d75c181e685e5a3:.git/info/exclude
 f:a0a7c3fff21f2aea3cfa1d0316dd816c:.git/description
-f:5588b3b42e0fb584b35c965e440767cd:.git/refs/heads/main
+f:22b97129978d4cbfca9157d2201a73b7:.git/refs/heads/main
 f:98b16e0b650190870f1b40bc8f4aec4e:.git/refs/remotes/origin/HEAD
-f:5588b3b42e0fb584b35c965e440767cd:.git/refs/remotes/origin/main
+f:22b97129978d4cbfca9157d2201a73b7:.git/refs/remotes/origin/main
 f:b7a8b317ec8becc1ad00c26e0a3ef261:.git/objects/pack/pack-816a4660cd669211bf4515b1638d55652f05d077.pack
 f:202b7d072049e4a80ac8a221b8d90e34:.git/objects/pack/pack-816a4660cd669211bf4515b1638d55652f05d077.idx
 f:f08d1924d26706e8269e701beefb505d:.git/objects/90/d8907d42c0f4849da1d6e40cb1fd779a292d42
@@ -246,6 +251,7 @@ f:c0fed4043046c5edfe0267644b159540:.git/objects/05/fcde35bb28547b3955ce0433a5c76
 f:3e63d062f5dbef44ba96a83f55b43a1d:.git/objects/f6/459f9d5e8fed5adc16ac3738140e61daf3af79
 f:ef8fac36332ebbdbf6ea395642ab94cf:.git/objects/f6/a9c53ea16377860f491ea56c71ebe33994e611
 f:d4df398f8e669405c8a85d3a639ac967:.git/objects/f6/a139cda2f461b71b73030984d66818d5b7ce0d
+f:778b192940b71177cc147b987c8d64f9:.git/objects/f6/9d71cd4afe6adeee4dd9b7fbeb9e5a21e854a1
 f:1f7501c4388126e0b1ba4aab01fc417d:.git/objects/c6/c19e11eaec7f111cf9bf56de3fcbdd15a4939e
 f:6b45624de148289567cfcafa4cb894cc:.git/objects/29/efc852291e8e7fbe17308b24f3045e81cb2a98
 f:213e7a5f03c9257d54ae64aea1c5f5a8:.git/objects/7b/e9d37754c5c2d2344dd0f0c336b621e1947d12
@@ -253,6 +259,7 @@ f:873fea033d025f337dfc2c359165f7db:.git/objects/16/b3c53e8437bfb87f7506eeb21f460
 f:caded932b255128eea2c1b15c92395a2:.git/objects/3b/96d1c264d1665a4161e9e5d82b134304360d3d
 f:59d8089d426a6ed61f4673099490cb77:.git/objects/3b/ada87cd68d1dfbdf221309bf8ed0a6297fb3c5
 f:4a1ecebc820c46b76359484840049d4c:.git/objects/3b/3298b1c2e12790d10a229960dfb77eb7750227
+f:22f927f4b95d7e8f23a4be828f634f05:.git/objects/3b/a7467a493441965644b037381303f24d5054d4
 f:f3254aa0c3d46ac98fadcb4625b1a454:.git/objects/98/1fe8bcc3d29403376ac274dee2b4ab80891a93
 f:02b1e22703ffd75b1c131e2095f012a7:.git/objects/95/564baf9ab33aa06bcd8634fc165ec3743c2777
 f:b5c4b905e1b3acfcceb10a496c725286:.git/objects/95/8ab68c721de2c46d0ee20e268e534117fcf557
@@ -291,6 +298,7 @@ f:f3fdbc00430ab52dd3eecdf7bab38428:.git/objects/99/b991079ba1257486abb05def5ac05
 f:a6f35e2ed432b26b0b415e5f3f591cec:.git/objects/a0/809ca26fc3a5efaabbf43523c83218017695ba
 f:1d6379c09c83376dc60d3da5b9fd4ab5:.git/objects/26/f7a7a1b103c10755f5e27c69869c099f590a6c
 f:360db99fdb2a27832611ba7d191afba4:.git/objects/9a/332e84ce22ef70d0c40b807e197cfc5b166de7
+f:3e823b9295e09918ba837b8313df039a:.git/objects/9a/1d16627ab275d0700ea2a431bad5c824d63b16
 f:09306f6ebc2e67bf97d9f21773443658:.git/objects/b7/e1ae9c6e5655be744ba852f577560beff8e29a
 f:28a54db557223b56ce87d49ad96c3afa:.git/objects/b7/322fe331ae2893d28665752f4876353bd52c09
 f:7fdf7b67c46fb4af4c8ef99cc0dbace4:.git/objects/db/b916bfee0d2a4deec4db6e38be4b915ab8d884
@@ -339,6 +347,7 @@ f:e6de4b6df05b5b51b2cc1406c1bb9aae:.git/objects/7e/98bd6cf0ce71b2cd7e0c5e4a63e61
 f:aa780a35e48d17b8a0949f5f961c7df2:.git/objects/c7/9cb138c60e6e01ca70db57aa1ae0b18b0d4757
 f:c8d53faab16142bc0ae83b1231945677:.git/objects/c7/99a35a4e2364bdc0a3f2b09f3bb1d86a6f732f
 f:29b9ac08cb32ded99065c02ad1a90995:.git/objects/d5/dfc191743a0d2102f931756e8a51a30fbae839
+f:aa2264a0708b63e0c7bf878fd6c318f5:.git/objects/d5/7dcca52e262b7d14c0d3a3aaf30ff7ff028da2
 f:6bf804603dd078d025c81e02e7443def:.git/objects/55/5f774343e062be33a5eca356a3e0642c3d9669
 f:c473d264f2c5122d08928eaa2d833d8c:.git/objects/60/3a13fa197e72645373f8c6cfffda733df8474b
 f:405d09c7c941dad5aa45cc73d0ea4a59:.git/objects/60/088da642d5969c0ea72a608b7653ab7af681c8
@@ -367,14 +376,18 @@ f:bb99c3b174456d1a2342ce3b9d11c47b:.git/objects/c5/819ed46bb0530e2daf427360c0576
 f:c25574be63d04f34bee69a1c66271635:.git/objects/28/5432875b819011cb0fef3890cccfcf210ba122
 f:f6b6d0b761ffcd3ab3d49c9a9d3898fd:.git/objects/f5/545c580b97a0cf8249373fac2860d71c9c51f5
 f:fff24f083479326a1065d6396f800600:.git/objects/0c/3d3e725c73377db28f39b516965ea30ed02649
+f:0c3b4d95814740a0d561e2c2f7f0cd7d:.git/objects/87/9d883715dd05496add4d5a971b8b944f6ea4d5
+f:fda85268907dd83b117b7299723189d8:.git/objects/93/9e58d68d240c1f87c24c99dac2875890c0dac9
+f:af6d52bae3b6fddbe7ef5efc9c5a5254:.git/objects/1f/2c46bd184763848f7096cf856275b668938d97
+f:3cd3cd1c1a4e36ada8603ec69f041459:.git/objects/23/60ec697a6319db0f5c6bcb2a7fab7080aa01b0
 f:e165ece0f4ac287b67c8aea95cfcfb75:.git/logs/refs/remotes/origin/HEAD
-f:cc1ec863cc7615bd11b4592ed4d21960:.git/logs/refs/remotes/origin/main
-f:dc193a6fa2abf7ece313c69dda67b1c9:.git/logs/refs/heads/main
-f:dc193a6fa2abf7ece313c69dda67b1c9:.git/logs/HEAD
+f:4568584333d14c0a67d82617667554f7:.git/logs/refs/remotes/origin/main
+f:329bde1113b0b07d639985896496d54f:.git/logs/refs/heads/main
+f:329bde1113b0b07d639985896496d54f:.git/logs/HEAD
 f:cf7dd3ce51958c5f13fece957cc417fb:.git/HEAD
 f:6d68a9ac80e105edd00a6ab1bbb96419:.git/config
-f:39e1f30d7129f7639a77a1876052a0ce:.git/COMMIT_EDITMSG
-f:2908956f4db198e29d1d173d27be7ecc:.git/index
+f:fa567469d14478d7a614721a8bd7db94:.git/COMMIT_EDITMSG
+f:7a2700f7cd99759ae06d6445feb40131:.git/index
 f:61bd2a9265e578b27b84312ee625bc51:.git/packed-refs
 f:ccf3ddecf796af9117daac6b58ce74da:README.md
 f:6bbec22c453cce2269312934c1e2fbb5:alizams-bin/alizams_sh.patch
@@ -469,4 +482,7 @@ f:d03166fc76630b014bae5a9623f461a1:gr-osmosdr/.footprint
 f:d631b0e2935f17b2c5bf7883cb73001f:gr-osmosdr/.signature
 f:7a98e850b9fb79d5a345397f1e827498:gr-osmosdr/Pkgfile
 f:c8281bae3db700b1b06df9381419b651:gr-osmosdr/gr-osmosdr_boost.patch
+f:90417dd3b0cd3e7c2152de7639ecae56:hidapi/.footprint
+f:38f8b3d8f04576419114a59571624ccd:hidapi/Pkgfile
+f:ac145b9803caf8813c9416fb5c4c5988:hidapi/.signature
 f:365c168edf622d05211d92a382f55032:yenjie.httpup
