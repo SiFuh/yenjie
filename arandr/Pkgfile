@@ -1,0 +1,18 @@
+# Description: 	Python GUI for xrandr
+# URL: 		https://christian.amsuess.com/tools/arandr/
+# Packager: 
+# Maintainer:	Lin SiFuh, #crux at freenode dot net 	 
+# Depends on: xorg-xrandr python3 python3-cairo python3-gobject pygtk docutils
+
+name=arandr
+version=0.1.10
+release=1
+source=(http://christian.amsuess.com/tools/$name/files/$name-$version.tar.gz)
+
+build() {
+	
+	cd $name-$version
+  	python3 setup.py install --prefix=/usr --root=$PKG
+  	rm -fr $PKG/usr/share/locale
+
+}
