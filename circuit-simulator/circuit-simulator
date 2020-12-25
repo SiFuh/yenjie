@@ -1,0 +1,71 @@
+#!/bin/bash
+
+# Note: for HiDPI screens you should use jdk > 9
+# You can uncomment the line below or set it your 
+# ~/.profile or ~/.bashrc
+#export GDK_SCALE=2.5
+
+JAVA_EXEC=""
+
+
+launch_program(){
+
+  cd /opt/circuit-simulator || exit
+  echo $JAVA_EXEC
+  exec "${JAVA_EXEC}" -jar circuit.jar
+
+}
+
+
+error_message(){
+
+  echo "Error cannot find a valid java executable"
+  echo "Have you installed JDK?"
+  echo "Otherwise try setting the JAVA_EXEC environment variable"
+  exit 0
+
+}
+
+
+java_check() {
+
+  # Check to see if the JAVA_EXEC variable has been configured
+  if [ -n "${JAVA_EXEC}" ] && [ -x "${JAVA_EXEC}" ]; then
+    launch_program
+  else
+
+  # Now we look for any JDK installation and choose the latest version
+    JAVA_CHCK=$(prt-get listinst |grep "jdk" | sort -r)
+    JAVA_FOUND=$(echo ${JAVA_CHCK} | cut -d " " -f1)
+    if [ -n "${JAVA_FOUND}" ]; then
+      if [ -x "/usr/lib/java/${JAVA_FOUND}/bin/java" ]; then
+        JAVA_EXEC="/usr/lib/java/${JAVA_FOUND}/bin/java"
+        launch_program
+      else
+        if [ -x "/${JAVA_FOUND}/bin/java" ]; then
+          JAVA_EXEC="/${JAVA_FOUND}/bin/java"
+          launch_program
+        else
+          
+          # Last of all we check in the default JDK locations
+          # I put this last since High Definition Displays require
+          # a JDK version > 9
+          if [ -x "/usr/bin/java" ]; then
+            JAVA_EXEC="/usr/bin/java"
+            launch_program
+          else
+            if [ -x "/usr/lib/jdk/bin/java" ]; then
+              JAVA_EXEC="/usr/lib/jdk/bin/java"
+              launch_program
+            else
+              error_message
+            fi
+          fi
+        fi
+      fi
+    fi
+  fi
+
+}
+
+java_check
