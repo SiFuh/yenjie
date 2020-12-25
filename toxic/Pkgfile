@@ -1,0 +1,17 @@
+# Description:   Ncurses client for tox
+# URL:           https://github.com/JFreegman/toxic
+# Maintainer:    Lin SiFuh, #crux at freenode dot net
+# Depends on:    desktop-file-utils freealut libnotify qrencode toxcore
+
+name=toxic
+version=0.9.0
+release=1
+source=(https://github.com/JFreegman/${name}/archive/v${version}/${name}-${version}.tar.gz)
+
+build() {
+
+  cd "${name}"-"${version}"
+
+  make PREFIX=/usr DESTDIR="${PKG}" install
+
+}
