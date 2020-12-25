@@ -1,0 +1,24 @@
+# Description:  Xdialog is designed to be a replacement for dialog or cdialog
+# URL:          http://xdialog.free.fr/
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   gtk
+
+name=xdialog
+version=2.3.1
+release=1
+source=(http://xdialog.free.fr/Xdialog-$version.tar.bz2)
+
+build () {
+
+  cd "${name^}"-"${version}"
+
+  ./configure --with-gtk2       \
+              --prefix=/usr     \
+              --disable-nls     \
+              --disable-gtktest
+  make
+  make DESTDIR="${PKG}" install
+
+  rm -rf "${PKG}"/usr/share
+
+}
