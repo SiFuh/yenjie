@@ -1,0 +1,47 @@
+# Description:  Realtek 88192au USB Wireless Driver (Aircrack Mod)
+# URL:          https://github.com/aircrack-ng/rtl8812au/
+# Packager:
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   dkms
+
+name=rtl8812au-dkms
+_name=${name//-dkms}
+version=5.7.0
+sversion="cc4c64deef8090515a3dea8b709bfff0a1007d8b"
+release=1
+source=(https://github.com/aircrack-ng/${_name}/archive/${sversion}/${_name}-${version}.tar.gz \
+        dkms.conf)
+
+build() {
+
+  cd "${_name}"-"${sversion}"
+
+  mkdir -p "${PKG}"/usr/src/"${_name}"-"${version}"
+  cp -pr * "${PKG}"/usr/src/"${_name}"-"${version}"
+
+  cp "${SRC}"/dkms.conf "${PKG}"/usr/src/"${_name}"-"${version}"
+
+  mkdir -p "${PKG}"/var/lib/dkms/"${_name}"/"${version}"/build
+  ln -s /usr/src/"${_name}"-"${version}" \
+        "${PKG}"/var/lib/dkms/"${_name}"/"${version}"/source
+ 
+  sed -e "s/@_PKGBASE@/${_name}/" \
+      -e "s/@PKGVER@/${version}/" \
+      -i "${PKG}"/usr/src/"${_name}"-"${version}"/dkms.conf
+
+  mv "${PKG}"/usr/src/"${_name}"-"${version}"/platform \
+     "${PKG}"/usr/src/"${_name}"-"${version}"/platform.old
+
+  mkdir -p "${PKG}"/usr/src/"${_name}"-"${version}"/platform
+
+  mv "${PKG}"/usr/src/"${_name}"-"${version}"/platform.old/*ops* \
+     "${PKG}"/usr/src/"${_name}"-"${version}"/platform
+
+  find "${PKG}" -name '*.txt' -delete
+
+  rm -rf "${PKG}"/usr/src/"${_name}"-"${version}"/platform.old
+  rm -rf "${PKG}"/usr/src/"${_name}"-"${version}"/{docs,android,tools}
+  rm "${PKG}"/usr/src/"${_name}"-"${version}"/{README.md,ReleaseNotes.pdf,LICENSE}
+  rm "${PKG}"/usr/src/"${_name}"-"${version}"/{dkms-install.sh,dkms-remove.sh}
+
+}
