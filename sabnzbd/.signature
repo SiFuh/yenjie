@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uGhguNrw26s1jf9nKIlqrwXp0qwv9x+ICKh/wZz3MIYvkkXbnFiQejELFL8sH82ofv1eNboPPHF0AFbU6fwJiAc=
+SHA256 (Pkgfile) = 6f1e5ca7f8738abf5421ae1e15d0b4859bc657cf8cb21a17c9b7ad56952d432b
+SHA256 (.footprint) = 594ae26506479d53724dec60136daf2b47629fe6d2c99bb562164f917d6760c6
+SHA256 (sabnzbd-2.3.9.tar.gz) = e5071e66e06e9d10f5d04695cb63aba3e77b0c89deb6dd0f80246218d7940b3c
+SHA256 (sabnzbd) = bb791f7b76e78e6a6912ded9db52547df7078dbaabcfc47e206354b6c948a48f
