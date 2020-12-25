@@ -1,9 +1,0 @@
---- alizams.sh.orig	2020-12-10 20:07:58.099006798 +0800
-+++ alizams.sh	2020-12-10 20:08:59.459442391 +0800
-@@ -1,5 +1,5 @@
- #!/bin/bash
--ALIZAMS_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)
-+ALIZAMS_DIR=/opt/alizams
- export LD_LIBRARY_PATH="${ALIZAMS_DIR}"/lib:"${LD_LIBRARY_PATH}"
- export QT_PLUGIN_PATH="${ALIZAMS_DIR}"/plugins
- export PATH="${ALIZAMS_DIR}"/bin:"${PATH}"
