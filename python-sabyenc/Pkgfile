@@ -1,0 +1,20 @@
+# Description:  Python2 yEnc package optimized for use within SABnzbd
+# URL:          https://github.com/sabnzbd/sabyenc
+# Packager:
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   python python-setuptools
+
+name=python-sabyenc
+_name=${name//python-}
+version=3.3.5
+release=1
+source=(https://github.com/sabnzbd/${_name}/archive/v${version}/${name}-${version}.tar.gz)
+
+build() {
+
+	cd ${name//python-}-${version}
+  python2 setup.py build
+
+  python2 setup.py install --root="${PKG}" --optimize=1
+
+}

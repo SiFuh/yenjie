@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uJI8DjdjabkjiHk7Tz4ruOVX1k379dqoh1maLarz+v5Yt7DS/5knZ1NkxtacJx0cETCmPZmg3+33J9XEfL5p6QA=
+SHA256 (Pkgfile) = 7b1097bcca2f46a592994a575e44749c5cff10fb3b365ef8a709563a8ec92391
+SHA256 (.footprint) = 793eaa2657fcb9ca7eb786c9e5916d62e195ddaed9afbb5f836eaf449c5b7489
+SHA256 (python-sabyenc-3.3.5.tar.gz) = fb528da45e2c66bbdf1c3edf57c047e29037e8951daba5f972db26b284d39537
