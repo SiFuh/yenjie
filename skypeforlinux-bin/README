@@ -1,0 +1,9 @@
+NOTE:
+
+  On some computers skypeforlinux won't launch unless chrome-sandbox
+  is set suid. I do not like the idea of this and therefore I have not
+  allowed it in the Pkgfile. If skype for linux doesn't launch then 
+  you should do the following after installation. 
+
+  sudo chmod 4755 /opt/share/skypeforlinux/chrome-sandbox
+
