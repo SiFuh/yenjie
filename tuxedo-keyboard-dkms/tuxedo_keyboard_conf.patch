@@ -1,0 +1,6 @@
+--- tuxedo_keyboard.conf.orig	2020-02-26 21:03:19.801947703 +0800
++++ tuxedo_keyboard.conf	2020-02-26 21:03:59.271947157 +0800
+@@ -1 +1,2 @@
+-options tuxedo-keyboard mode=0 brightness=75 color_left=0xFFFFFF color_center=0xFFFFFF color_right=0xFFFFFF
++# black=0x000000 blue=0x0000FF green=0x00FF00 cyan=0x00FFFF red=0xFF0000 magenta=0xFF00FF yellow=0xFFFF00 white=0x000000
++options tuxedo-keyboard mode=0 brightness=30 color_left=0x00FF00 color_center=0x00FF00 color_right=0x00FF00

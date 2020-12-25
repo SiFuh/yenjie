@@ -1,0 +1,22 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/modprobe.d/
+-rw-r--r--	root/root	etc/modprobe.d/tuxedo_keyboard.conf
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/tuxedo-keys
+drwxr-xr-x	root/root	usr/src/
+drwxr-xr-x	root/root	usr/src/tuxedo-keyboard-2.0.6/
+-rw-rw-r--	root/root	usr/src/tuxedo-keyboard-2.0.6/Makefile
+-rw-rw-r--	root/root	usr/src/tuxedo-keyboard-2.0.6/dkms.conf
+drwxrwxr-x	root/root	usr/src/tuxedo-keyboard-2.0.6/src/
+-rw-rw-r--	root/root	usr/src/tuxedo-keyboard-2.0.6/src/clevo_keyboard.h
+-rw-rw-r--	root/root	usr/src/tuxedo-keyboard-2.0.6/src/tuxedo_keyboard.c
+-rw-rw-r--	root/root	usr/src/tuxedo-keyboard-2.0.6/src/tuxedo_keyboard_common.h
+-rw-rw-r--	root/root	usr/src/tuxedo-keyboard-2.0.6/src/uniwill_keyboard.h
+drwxr-xr-x	root/root	var/
+drwxr-xr-x	root/root	var/lib/
+drwxr-xr-x	root/root	var/lib/dkms/
+drwxr-xr-x	root/root	var/lib/dkms/tuxedo-keyboard/
+drwxr-xr-x	root/root	var/lib/dkms/tuxedo-keyboard/2.0.6/
+drwxr-xr-x	root/root	var/lib/dkms/tuxedo-keyboard/2.0.6/build/
+lrwxrwxrwx	root/root	var/lib/dkms/tuxedo-keyboard/2.0.6/source -> /usr/src/tuxedo-keyboard-2.0.6
