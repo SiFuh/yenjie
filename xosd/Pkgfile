@@ -1,0 +1,23 @@
+# Description: 	X11 Onscreen Display
+# URL: 		http://sourceforge.net/projects/libxosd/files/libxosd
+# Packager:	
+# Maintainer:	Lin SiFuh, #crux at freenode dot net 	 
+# Depends on: 	xorg-libx11 xorg-libxext
+
+name=xosd
+version=2.2.14
+release=1
+source=(http://downloads.sourceforge.net/project/libxosd/libxosd/$name-$version/$name-$version.tar.gz	\
+	libxosd_m4.patch)
+
+build() {
+
+	cd $name-$version
+
+	patch -p1 -i $SRC/libxosd_m4.patch
+	./configure --prefix=/usr --mandir=/usr/share/man --disable-nls
+
+	make
+	make DESTDIR=$PKG install
+
+}

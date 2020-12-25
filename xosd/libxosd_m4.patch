@@ -1,0 +1,16 @@
+--- xosd-2.2.14/libxosd.m4.orig	2020-02-13 15:08:48.744057735 +0800
++++ xosd-2.2.14/libxosd.m4	2020-02-13 15:09:21.442057283 +0800
+@@ -6,7 +6,7 @@
+ dnl AM_PATH_LIBXOSD([ACTION-IF-FOUND [, ACTION-IF-NOT-FOUND]])
+ dnl Test to see if libxosd is installed, and define LIBXOSD_CFLAGS, LIBXOSDLIBS
+ dnl
+-AC_DEFUN(AM_PATH_LIBXOSD,
++AC_DEFUN([AM_PATH_LIBXOSD],
+ [dnl
+ dnl Get the cflags and libraries from the xosd-config script
+ dnl
+@@ -28,3 +28,4 @@
+ AC_SUBST(LIBXOSD_CFLAGS)
+ AC_SUBST(LIBXOSD_LIBS)
+ ])
++
