@@ -1,0 +1,9 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uKJmslxZKFGAIJeHpHgDUBtETE0ej7UHCXpu+1CRjKALlqexxllqZNDW1j4GZijXrdCR7BDojCdI9avaW2HV+w8=
+SHA256 (Pkgfile) = ffdc48620d163d8e60cf138a21d8c8d59cc0ad28180968bdb30250759f7d2567
+SHA256 (.footprint) = 71c88f54021229020e672beb689f4136a772c5cc8e0f6c76a7688a99e00a03c5
+SHA256 (warmux-11.04.1.tar.bz2) = 789c4f353e4c5ce0a2aba2e82861d3fd0e5218bc76d8da1a332f2c7b1b27e4ee
+SHA256 (warmux.patch) = 3d80c8a8951e8fe716c7531fb3e44c01ebacf8d1ae4bda0be01f35199d80f772
+SHA256 (curl-ptr.patch) = de232b7f2264f9d576ba77f43f79dc698f6ba987d059468f5b2bb5f40cf644d3
+SHA256 (return-null.patch) = 0e0692fb2acc5697c3083deeff41dcdb055f3330cbac146ebab4aa0f021ad03c
+SHA256 (include-zlib.patch) = 665c4a64e54478491284f6cb6251bd58f96ba81671a7c439cffe175b86462852

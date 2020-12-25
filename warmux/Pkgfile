@@ -1,0 +1,33 @@
+# Description:  Clone of turn-based artillery games like Scorched Earth or Worms (formerly known as Wormux)
+# URL:          http://gna.org/projects/warmux/
+# Packager:
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   git libsdl libpng sdl_gfx sdl_image sdl_net sdl_mixer sdl_ttf curl libxml2
+
+name=warmux
+version=11.04.1
+release=1
+source=(http://ponce.cc/slackware/sources/repo/warmux-11.04.1.tar.bz2\
+        warmux.patch      \
+        curl-ptr.patch    \  
+        return-null.patch \
+        include-zlib.patch)
+
+build() {
+
+  cd ${name}-${version//.1}
+
+  patch -p1 -i ../warmux.patch
+  patch -Np1 < ../include-zlib.patch
+  patch -Np0 < ../return-null.patch
+  patch -Np1 < ../curl-ptr.patch
+
+  ./configure --prefix=/usr
+  make
+
+  make DESTDIR=${PKG} install
+
+  rm -rf ${PKG}/usr/share/locale \
+         ${PKG}/usr/share/warmux/.nomedia
+
+}

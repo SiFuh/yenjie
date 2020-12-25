@@ -1,0 +1,23 @@
+Only in warmux-e0dc503: .git
+diff -r -u warmux-11.04/lib/warmux/action/action.cpp warmux-e0dc503/lib/warmux/action/action.cpp
+--- warmux-11.04/lib/warmux/action/action.cpp	2011-04-28 19:03:14.000000000 +0000
++++ warmux-e0dc503/lib/warmux/action/action.cpp	2020-06-10 03:38:22.256986893 +0000
+@@ -85,7 +85,8 @@
+ {
+   m_creator = _creator;
+ 
+-  m_header.len = SDLNet_Read32(buffer);
++  // XXX: unsafe cast repaired dirty
++  m_header.len = SDLNet_Read32((Uint32*)buffer);
+   ASSERT(m_header.len >= sizeof(Header));
+   buffer += 4;
+   // All of the following could be skipped for the actions we now,
+diff -r -u warmux-11.04/tools/list_games/main.cpp warmux-e0dc503/tools/list_games/main.cpp
+--- warmux-11.04/tools/list_games/main.cpp	2011-04-28 19:03:12.000000000 +0000
++++ warmux-e0dc503/tools/list_games/main.cpp	2020-06-10 03:38:22.290320229 +0000
+@@ -1,4 +1,5 @@
+ #include <stdio.h>
++#include <getopt.h>
+ #include <WARMUX_types.h>
+ #include <WARMUX_network.h>
+ #include <WARMUX_index_server.h>
