@@ -12,13 +12,15 @@ build () {
 
   cd "${name^}"-"${version}"
 
-  ./configure --with-gtk2       \
-              --prefix=/usr     \
-              --disable-nls     \
-              --disable-gtktest
-  make
-  make DESTDIR="${PKG}" install
+  ./configure --with-gtk2            \
+              --prefix=/usr          \
+              --disable-nls          \
+              --disable-gtktest      \
+              --mandir=/usr/share/man
 
-  rm -rf "${PKG}"/usr/share
+  make
+  make DESTDIR="${PKG}" install 
+
+  rm -rf "${PKG}"/usr/share/doc
 
 }
