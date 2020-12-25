@@ -1,0 +1,30 @@
+# Description:  SciPy is open-source software for mathematics, science, and engineering.
+# URL:          http://www.scipy.org/
+# Maintainer:   Lin SiFuh, #crux at freenode dot net 	 	
+# Depends on:   gcc-fortran python3-numpy python3-setuptools openblas 
+
+name=python3-scipy
+_name=${name//python3-}
+version=1.5.3
+release=2
+source=(https://github.com/${_name}/${_name}/archive/v${version}/${name}-${version}.tar.gz)
+
+build() {
+
+  export LDFLAGS="-Wall -shared"
+
+  cd ${_name}-${version}
+
+  python3 ./setup.py config_fc --fcompiler=gnu95 install --prefix=/usr --root=${PKG} --optimize=1
+
+  find $PKG \(\
+       -name  'INSTALL*' -o \
+       -iname 'LICENSE*' -o \
+       -name  'THANKS*'  -o \
+       -name  'README*'  -o \
+       -name  'COPYING*'    \
+       \) -exec rm -rf '{}' \; || true
+
+  find ${PKG} -type d -empty -delete
+
+}
