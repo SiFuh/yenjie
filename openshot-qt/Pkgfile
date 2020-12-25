@@ -1,0 +1,20 @@
+# Description:  Free, simple, open-source video editor for Linux
+# URL:          https://www.openshot.org/
+# Packager:    
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   libopenshot-audio libopenshot python3-pyqt5 python3-pyzmq
+
+name=openshot-qt
+version=2.5.1
+release=1
+source=(https://launchpad.net/${name//-qt}/2.4/${version}/+download/${name}-${version}.tar.gz)
+
+build() {
+
+  python3 setup.py install --root="${PKG}/" --optimize=1
+
+  find ${PKG} -name README -delete
+  find ${PKG} -name AUTHORS -delete
+  find ${PKG} -name COPYING -delete
+  find ${PKG} -name CONTRIBUTORS -delete
+}
