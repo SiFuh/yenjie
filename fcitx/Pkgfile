@@ -1,0 +1,29 @@
+# Description:  A lightweight input method framework
+# URL:          http://fcitx-im.org/
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   xorg dbus cairo iso-codes extra-cmake-modules libxkbcommon json-c gobject-introspection gtk gtk3
+# Optional:     icu libxml2 opencc pango qt4 pinyin presage snooper
+
+name=fcitx
+version=4.2.9.8
+release=1
+source=(http://download.fcitx-im.org/${name}/${name}-${version}_dict.tar.xz)
+
+build() {
+
+  cmake -S "${name}"-"${version}" -B build -G Ninja    \
+        -D ENABLE_GTK2_IM_MODULE=ON                    \
+        -D ENABLE_GTK3_IM_MODULE=ON                    \
+        -D ENABLE_QT=OFF                               \
+        -D CMAKE_BUILD_TYPE=Release                    \
+        -D CMAKE_INSTALL_PREFIX:PATH=/usr              \
+        -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"    \
+        -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -DNDEBUG"
+
+  cmake --build build
+
+  DESTDIR="${PKG}" cmake --install build
+
+  rm -rf "${PKG}"/usr/share/{doc,locale}
+
+}

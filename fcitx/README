@@ -1,0 +1,53 @@
+NOTE:
+
+  This port enables both GTK2 and GTK3. Qt has been disabled as it uses Qt3 
+  and Qt4. For Qt5 support you will need to build fcitx-qt5 port separately.
+
+  You will also need to add the following lines to your profile.
+
+  GTK_IM_MODULE=xim
+  QT_IM_MODULE=xim
+  XMODIFIERS="@im=fcitx"
+
+EXTRA:
+
+  This is not a howto. It is purely my notes on what I did to enable 
+  Chinese input. Who knows, it may end up being helpful for anyone who is 
+  having difficulties with it.
+
+    - Installed fcitx.
+    - Installed fcitx-qt5 input module for Qt5 applications.
+    - Installed fcitx-configtool-gtk3 since I have both GTK2 and GTK3.
+      I decided to go with the GTK3 version as it looks nicer.
+    - Since the window login manager is slim on one machine I edited 
+      ~/.xinitrc. On the other machine I edited ~/.xsession as it uses xdm 
+      as its login manager. I added the following lines. 
+        
+        export GTK_IM_MODULE=xim
+        export QT_IM_MODULE=xim
+        export XMODIFIERS="@im=fcitx"
+
+    - To get fcitx daemon to start automatically when I log in. I added 
+      this extra line to ~/.xinitrc on the slim machine and to ~/.xsession 
+      on the xdm machine.
+        
+        /usr/bin/fcitx-autostart
+
+    - The rc startup script for dbus was already enabled.
+    - I had already installed all the fonts in the xorg repository as well 
+      as the fonts from romster's and alan's repository. The reason is that 
+      I do a lot of work abroad and I need to be able to read documents and 
+      websites in foreign languages. So I am not entirely sure which fonts 
+      are needed for Chinese characters to display correctly.
+    - After logging in to the desktop environment, in my case fluxbox I 
+      then right clicked on the fcitx tray icon and selected configure. Under 
+      the 'Input Method' tab I clicked the + and then unticked the box that 
+      says 'Only Show Current Language'. I typed in the search box 'Pinyin' 
+      and selected 'Pinyin' only. I then went to the 'Global Config' tab and
+      under 'Extra key for trigger input method' I selected 'ALT_L_SHIFT'.
+    - I then opened up a GTK2, GTK3 and a Qt5 application and tested it on
+      each of them. The input method worked fine using the left 'Alt+Shift' 
+      keys to change from English to Chinese. I didn't change any other 
+      settings.
+
+  
