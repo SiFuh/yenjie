@@ -1,0 +1,30 @@
+# Description:  Nftables Linux firewall
+# URL:          http://www.nftables.org
+# Packager:    
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   libmnl libnftnl asciidoc
+
+name=nftables
+version=0.9.7
+release=1
+source=(https://www.netfilter.org/pub/${name}/${name}-${version}.tar.bz2 \
+        nft ${name}.conf.example)
+
+build () {
+
+  mkdir -p "${PKG}"/etc/rc.d/
+  cp nft "${PKG}"/etc/rc.d/
+  chmod 0755 "${PKG}"/etc/rc.d/nft
+
+  cp "${name}".conf.example "${PKG}"/etc/
+#  chmod 0400 "${PKG}"/etc/"${name}".conf.example
+
+  cd  "${name}"-"${version}"
+  ./configure --prefix=/usr
+
+  make
+  make DESTDIR="${PKG}" install
+
+  rm -rf "${PKG}"/usr/share/doc
+
+}

@@ -1,0 +1,35 @@
+#!/bin/sh
+#
+# /etc/rc.d/nft: start/stop nftables firewall
+#
+
+case $1 in
+start)
+	if [ -f /etc/nftables.conf ]; then
+		/usr/sbin/nft -f /etc/nftables.conf
+	else
+		echo "No configuration found"
+	fi
+	;;
+stop)
+	/usr/sbin/nft flush ruleset
+	;;
+restart)
+	/usr/sbin/nft flush ruleset
+	if [ -f /etc/nftables.conf ]; then
+		/usr/sbin/nft -f /etc/nftables.conf
+	else
+		echo "No configuration found"
+	fi
+	;;
+status)
+ 	/usr/sbin/nft list ruleset
+	;;
+*)
+	echo "usage: $0 [start|stop|restart|status]"
+	;;
+esac
+
+# End of file
+
+
