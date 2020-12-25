@@ -2,7 +2,7 @@
 # URL:          http://gqrx.dk/
 # Packager:
 # Maintainer:   Lin SiFuh, #crux at freenode dot net
-# Depends on:   gnuradio gr-osmosdr 
+# Depends on:   gnuradio gr-osmosdr alsa-plugins
 # Optional:     pulseaudio
 
 name=gqrx
