@@ -1,0 +1,25 @@
+# Description:  The Vector Optimized Library of Kernels
+# URL:          www.libvolk.org
+# Packager:
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   neon git python3 python3-mako orc python3-six cmake
+
+name=volk
+version=2.2.0
+release=1
+source=(https://github.com/gnuradio/${name}/archive/v${version}/${name}-${version}.tar.gz)
+
+build () {
+
+  cmake -S "${name}"-"${version}" -B build -G Ninja     \
+        -D ENABLE_DOXYGEN=OFF                           \
+        -D CMAKE_BUILD_TYPE=Release                     \
+        -D CMAKE_INSTALL_PREFIX:PATH=/usr               \
+        -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"     \
+        -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -DNDEBUG"
+
+  cmake --build build
+
+  DESTDIR="${PKG}" cmake --install build
+
+}

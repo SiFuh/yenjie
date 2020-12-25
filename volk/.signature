@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uI9PzBJ7h2i8/pGoOIdFerOqCsz20lK6hA9SuAW5NWQJPpCxkdUEP1+0AriQQ8cm++RufIX13rLKnHvo5RNeAQg=
+SHA256 (Pkgfile) = 6743befd0d26d329deeade01da6406d0c545ec468b4fca1be68c56bfe3a635b6
+SHA256 (.footprint) = 17948244a13700e3f8a95d96550aa5f549078c242eac2db0cc1331df6443b7a0
+SHA256 (volk-2.2.0.tar.gz) = 9745d60c16e7af61b58d3ae0e53e8d4464fd932bb56ae8fd143f6db2e3aa0217
