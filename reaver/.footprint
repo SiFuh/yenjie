@@ -1,0 +1,7 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/reaver
+-rwxr-xr-x	root/root	usr/bin/wash
+drwxr-xr-x	root/root	usr/etc/
+drwxr-xr-x	root/root	usr/etc/reaver/
+-rw-r--r--	root/root	usr/etc/reaver/reaver.db
