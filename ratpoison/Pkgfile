@@ -1,0 +1,37 @@
+# Description:   A simple keystroke-driven window manager
+# URL:           https://www.nongnu.org/ratpoison/
+# Maintainer:    Lin SiFuh, #crux at freenode dot net
+# Depends on:    xorg-libxft xorg-libxinerama xorg-libxrandr xorg-libxtst texinfo
+
+name=ratpoison
+version=1.4.9
+release=1
+source=(https://savannah.nongnu.org/download/${name}/${name}-${version}.tar.xz)
+
+build() {
+
+  cd "${name}"-"${version}"
+
+  sed -i 's|PRINT_ERROR (("XGetWMName|PRINT_DEBUG (("XGetWMName|' src/manage.c
+
+  ./configure --prefix=/usr
+
+  make CFLAGS="$CFLAGS -DHAVE_GETLINE"
+
+  make DESTDIR="${PKG}" install
+
+  chmod a+x "${PKG}/usr/share/ratpoison/"{allwindows.sh,clickframe.pl,rpshowall.sh,rpws,split.sh}
+
+  rm "${PKG}/usr/share/ratpoison/genrpbindings"
+  rm -r "${PKG}/usr/share/doc"
+  rm -r "${PKG}/usr/share/info"
+
+  cd contrib
+
+    ./genrpbindings
+
+  install -dm755 "${PKG}/usr/share/ratpoison/bindings"
+  install -m644 {Ratpoison.pm,ratpoison-cmd.el,ratpoison.rb,ratpoison.lisp,ratpoison.py} \
+                "${PKG}/usr/share/ratpoison/bindings/"
+
+}
