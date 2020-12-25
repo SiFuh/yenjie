@@ -1,0 +1,30 @@
+# Description:  An open source Microchip PIC programmer for the USB port
+# URL:          http://usbpicprog.org/
+# Packager:
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   libusb wxgtk3
+
+name=usbpicprog
+version=0.6.0
+release=1
+source=(https://sourceforge.net/projects/${name}/files/${name}-software/${name}-${version}-software/${name}-${version}.tar.gz
+https://sourceforge.net/projects/${name}/files/${name}-firmware/firmware-${version}.zip)
+
+build() {
+
+  cd "${name}"-"${version}"
+
+  sed -i 's/if (fp==NULL)/if (!fp.is_open())/' src/hexfile.cpp
+
+  ./configure --prefix=/usr
+
+  make 
+  make DESTDIR="${PKG}" install
+
+  cp "${SRC}"/*.hex  "${PKG}"/usr/share/usbpicprog/
+
+  rm -rf "${PKG}"/usr/share/locale
+  rm -rf "${PKG}"/usr/doc
+  rm "${PKG}"/usr/share/usbpicprog/examples/readme.txt
+
+}

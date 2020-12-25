@@ -321,6 +321,7 @@ d:toxic
 d:tuxedo-keyboard-dkms
 d:udiskie
 d:uhd
+d:usbpicprog
 f:ce562e08d8098926a3862fc6e7905199:.git/hooks/applypatch-msg.sample
 f:579a3c1e12a1e74a98169175fb913012:.git/hooks/commit-msg.sample
 f:ea587b0fae70333bce92257152996e70:.git/hooks/fsmonitor-watchman.sample
@@ -335,9 +336,9 @@ f:2b5c047bdb474555e1787db32b2d2fc5:.git/hooks/prepare-commit-msg.sample
 f:647ae13c682f7827c22f5fc08a03674e:.git/hooks/update.sample
 f:036208b4a1ab4a235d75c181e685e5a3:.git/info/exclude
 f:a0a7c3fff21f2aea3cfa1d0316dd816c:.git/description
-f:b3f8409f5c3fd2e6ca38c351979dd825:.git/refs/heads/main
+f:48debe83ee3d45edfc594c5ff397d653:.git/refs/heads/main
 f:98b16e0b650190870f1b40bc8f4aec4e:.git/refs/remotes/origin/HEAD
-f:b3f8409f5c3fd2e6ca38c351979dd825:.git/refs/remotes/origin/main
+f:48debe83ee3d45edfc594c5ff397d653:.git/refs/remotes/origin/main
 f:b7a8b317ec8becc1ad00c26e0a3ef261:.git/objects/pack/pack-816a4660cd669211bf4515b1638d55652f05d077.pack
 f:202b7d072049e4a80ac8a221b8d90e34:.git/objects/pack/pack-816a4660cd669211bf4515b1638d55652f05d077.idx
 f:f08d1924d26706e8269e701beefb505d:.git/objects/90/d8907d42c0f4849da1d6e40cb1fd779a292d42
@@ -393,6 +394,7 @@ f:f775023498a3b1c8e23323722176c009:.git/objects/08/60773cd9e1aaac70a3d9489ccb27a
 f:4a5a597d80fe607e6993d476a7a87ba6:.git/objects/08/f65e02670fb76ba1c5d5c3a5c1041992941017
 f:3431cc2c76ff47d82be6ed2c40ba4299:.git/objects/08/159e006bdb470d07b1cd67b12ef0f05749dfef
 f:ae561d53a97249ec883617fa358a7058:.git/objects/08/910959cde8868363a1c61770e4e14c5ab2967f
+f:e781402251bd3fe485fcccdd9c527a95:.git/objects/08/1bb81b7f2a0faaf5bf8c44f1ffd506c5200e2d
 f:b57402b93b19eb0232e7cdfdacacf188:.git/objects/48/9e560d121a22d9d991d025502a14245d75db2c
 f:d5751ea86e9a6f613916cc42fb811c76:.git/objects/48/eec0540f5244b3ec922001bb032e35002e7946
 f:50ff31bb97f09e142880f17eb40067d4:.git/objects/48/644ec85d651c825a839bb27f9943f7fc24b52c
@@ -526,6 +528,7 @@ f:1fc29a7ea5d83a4613de3d202b69bfef:.git/objects/27/a24051ba9117f3fbefbb4fb896592
 f:eec0a4c361c0654f29e35f9310f2a37b:.git/objects/27/efb7a0f0b43dbe250e2aada3fe694e3857475a
 f:a9c8b8903d3bb32fe5add92bc721f381:.git/objects/d4/7b68c5e2db77af9b614ad2e7a485f0143f3071
 f:066935ee0d15507e12326215cde1dc60:.git/objects/d4/6284554c6c1a608ab0358dcbcc5537a0a28200
+f:19f95d9eb04a789e28ad759eed782c89:.git/objects/d4/a72cc95aad91c67b57321d8e99e5e9d8c3a7ef
 f:1b5ba0cd98659341232166e21e5381fd:.git/objects/94/be0efd814839dd0477fab1772e2b39cbc3a451
 f:e5002a938f983cab3395314bae9b279c:.git/objects/94/a595fd342698e12609fb5176fe92814d269890
 f:4e2ebcb05b32229d8de1e2c1bc288aad:.git/objects/b6/5827d11e52f09070f8c9fb377c8dca20171666
@@ -793,6 +796,8 @@ f:5ad2bf72e4af527125b7167d39c93559:.git/objects/ee/23af23043fe255b70a2fdbb4a5ade
 f:713c4479b9731d10305c41c7e2f42c0f:.git/objects/82/0b0a4b9b47d9a3d0a85cee8949b025e90453aa
 f:a5e097360a9e63202cde48ce6e486b8a:.git/objects/82/9075d3a807f829169f963ed38a0d2b62fff8f7
 f:256ef4066e5b54c8e1fee15a5b9c233c:.git/objects/34/4a861914c8af9a4a0b85cb1ee425ac3eb2f58e
+f:7686463e08d1c416507f6ef6c51fb0aa:.git/objects/34/42e6ae88564c875b5dc295f98d0deaefd3d539
+f:0c8e3858bec0ccd24f75dbc4bc5afc84:.git/objects/34/5c30078d2a5a2122dde6a429adfe3ccc78e6a6
 f:c234e42dca8299b636dbff29dc1939b8:.git/objects/59/f72d6f03611ef9110dadb4d000190ff13ec03e
 f:00ee4ffecdbae8596fb47b0adc12cc54:.git/objects/59/1d02f2cd4b69b0e9330eb2de78f1d9d5506371
 f:52ee19d00f80112e6a8054682fe4765b:.git/objects/0a/1648f685bff6c3bf1f4d897f889ac7f200f6e9
@@ -802,6 +807,7 @@ f:a6c7e7010d928eed20ad308bdc8b8fb8:.git/objects/02/e170d1e85748a8d67b3397c7a4ccd
 f:4ff428569b9194aac43356dfdadc8a23:.git/objects/02/46808d7ef1a5f89a351ee6e34759f4b6dc8bad
 f:5bd75f1bce1953eaf647e33d58517530:.git/objects/67/33483f3f78689f3d7e5448563bbcb74833cd9b
 f:63a84fd2dedc30fe89a20d0bab4eee93:.git/objects/67/7bb1ef1152fabfa5243b21a6517a0a13e89fcc
+f:61e24c48930c066adeb77aea42965361:.git/objects/67/913fe40d214ea12cca131b91d287a16107993f
 f:0835b4b547e6d49bd1d6334ba0a7312f:.git/objects/8d/2f78efefaf975e3125b1e4547451c4d2d101fb
 f:7a087d03f0eed429b87820adec577632:.git/objects/8d/73c01e9548f4b260837a139d50e477424bd19b
 f:8ed78b55acfe03e0ec789d233545bc8d:.git/objects/8d/fc0d60e02dda4e0cfb068f18d01e78cd39c9ce
@@ -828,6 +834,7 @@ f:982a408f89304d9e77b68c0d76ac46fb:.git/objects/da/7f2a609f9d014388157f6436a758f
 f:f9406aef7261189a3c811b3365095c8f:.git/objects/13/6de54e319e1b0a2b0692e5d5d079830f369466
 f:9f2a82a5680bd421ce2ec36be37b420b:.git/objects/51/c475c4657e19a271095fc1fc33dfb85a481e42
 f:6d4c6acef77343f08546c5f8ea5d4cee:.git/objects/51/9308b43d5a8f56a1aefea746d60e266b95a741
+f:2f8c640c8d6e2f299757e4174a92496b:.git/objects/51/738893db07fc27466e5c897c7800f7eb2c864e
 f:8782e50fa107e0dbdc321d1fe128b3a7:.git/objects/9c/2958287a002438a6f21231ee3b985a54fada23
 f:f2c0c7f1ddff21d7b05e29c921773de7:.git/objects/9c/0d385d880af6653305537112cc2b781e6a1286
 f:411b1ecf2e5cb45966de3b3b85ba1f90:.git/objects/14/a3bab550707b509972ae72301d3849c68e49c1
@@ -893,6 +900,7 @@ f:958e4032629fc3e0f886cdf6d0b10183:.git/objects/f8/f23b7be717a937221ffa33fc8562a
 f:5e101b1b5f5296400ea66d9698dbaa80:.git/objects/75/5697b1eb882c151a2bb4f6f5a95c7a060515ee
 f:75d0d3d3ed876ad99229cb547462018d:.git/objects/74/ef9a36af9a95782911547f886e70aab70cdd77
 f:7b9217e4372032a8b79de4746f4d1516:.git/objects/3e/ceb8cc24d267cc14cba378bc7da27f41bce6a8
+f:c1b38e981c723f41ada3a2847964fd86:.git/objects/3e/42219d2d2972ba318293d27997ddaac53a8967
 f:d69f7ea64c928fa21892b4e883a2bc3e:.git/objects/ac/01278076f60a4fe8877a206d3f73b7b3b291b4
 f:67994e58dbe27b6d685eb9abd3a407dd:.git/objects/e6/67c7489f99d86f3dc6b6ec3576fe8e168b8106
 f:c203a7d0c787766ee08b850e28e1832c:.git/objects/e6/5a5880ae8891762ca70179b0401b058ebf4bb8
@@ -904,13 +912,13 @@ f:1a4663b6f2d74724c60930fab2813aed:.git/objects/8c/5b0d3ddaa18df19d914214e23c48d
 f:f822ba12185034b7c44bd009b5cf5c80:.git/objects/49/1723d48417daf910b5c4308e9b71d6e412b42a
 f:2aaeebdfc7f9277a9b142673c6795dbb:.git/objects/e3/d33ac1db6a74f16090ffce8f7465dda1fc0ae8
 f:e165ece0f4ac287b67c8aea95cfcfb75:.git/logs/refs/remotes/origin/HEAD
-f:21d2d86c8779ead492f0fba8d2c7a028:.git/logs/refs/remotes/origin/main
-f:5c636ae211f9d92a8cf1a34e4b5a7700:.git/logs/refs/heads/main
-f:5c636ae211f9d92a8cf1a34e4b5a7700:.git/logs/HEAD
+f:c55716a5b9ba2aaa8b97b11cdda45b53:.git/logs/refs/remotes/origin/main
+f:b81dbdade257367c7e60b926fd2ecb6b:.git/logs/refs/heads/main
+f:b81dbdade257367c7e60b926fd2ecb6b:.git/logs/HEAD
 f:cf7dd3ce51958c5f13fece957cc417fb:.git/HEAD
 f:6d68a9ac80e105edd00a6ab1bbb96419:.git/config
-f:4df1c6ece67abafb1027ac811a5b996d:.git/COMMIT_EDITMSG
-f:9df18fb91e65410f396f4fd7734a5c5c:.git/index
+f:abe5abe387ed250144b11fa265ab48d7:.git/COMMIT_EDITMSG
+f:da86ad1395a9866e30c7be17f47bc08d:.git/index
 f:61bd2a9265e578b27b84312ee625bc51:.git/packed-refs
 f:ccf3ddecf796af9117daac6b58ce74da:README.md
 f:6bbec22c453cce2269312934c1e2fbb5:alizams-bin/alizams_sh.patch
@@ -1189,4 +1197,7 @@ f:dd3c87126409fa02f4aa2640311ca270:udiskie/.footprint
 f:22bb7b4b1bb1aa7497c9521364bb3b5a:uhd/.signature
 f:959bfba04c457632c559ac888e3ee4dd:uhd/Pkgfile
 f:3aee3322970228b6201806f0f8cebbdd:uhd/.footprint
+f:4552250f6475de2962b35715fe5d877f:usbpicprog/.footprint
+f:450435c093bbb101013b688714ae3734:usbpicprog/Pkgfile
+f:2bc55f84db0cc96670b44cf58b3150ae:usbpicprog/.signature
 f:365c168edf622d05211d92a382f55032:yenjie.httpup
