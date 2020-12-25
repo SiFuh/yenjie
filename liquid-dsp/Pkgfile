@@ -1,0 +1,22 @@
+# Description: 	Opensource signal processing library for software-defined radios
+# URL:		http://liquidsdr.org/
+# Packager:	
+# Maintainer:	Lin SiFuh, #crux at freenode dot net 	
+# Depends on:
+
+name=liquid-dsp
+version=1.3.2
+release=1
+source=(https://github.com/jgaeddert/${name}/archive/v${version}/${name}-${version}.tar.gz)
+
+build() {
+
+	cd ${name}-${version}
+	
+	./bootstrap.sh
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=${PKG} install
+
+}
