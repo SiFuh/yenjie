@@ -281,9 +281,9 @@ f:9f0454d457c4e3e67b4629250d680ed0:python3-pyserial/.signature
 f:e9d2e3fc358caa8d94b984012469bee5:python3-pyzmq/.signature
 f:00792f947d75cbdea64ca12f2938df1e:python3-pyzmq/.footprint
 f:743d0f146ddc03c6a9aacdb53ab26aaa:python3-pyzmq/Pkgfile
-f:87fa90ef9bf56d99aa29cd3af00f446b:python3-scipy/.signature
+f:c1f2b7bd41b9d6f23893d116c63f8a75:python3-scipy/.signature
 f:1b0ac23e149bb0a5ed899301ce110864:python3-scipy/Pkgfile
-f:5d92f5f7d80f634c8093688cbd794dd4:python3-scipy/.footprint
+f:30a365cdd379cea8232ceb9cbd105c77:python3-scipy/.footprint
 f:739f7cde6843be07c3de57d843c4449b:python-future/.signature
 f:95ed21a024388f2bb057e504b11263e2:python-future/.footprint
 f:14deef595098716c598ed419d3897d1a:python-future/Pkgfile
