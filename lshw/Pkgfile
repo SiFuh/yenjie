@@ -1,0 +1,24 @@
+# Description:  A small tool to provide detailed hardware information
+# URL:          https://ezix.org/project/wiki/HardwareLiSter
+# Packager:
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   git gtk xorg-libxdamage
+
+name=lshw
+version=B.02.19
+release=1
+source=(https://github.com/lyonel/${name}/archive/${version}/${name}-${version}.tar.gz)
+
+build() {
+
+  cd ${name}-${version}
+  
+  make 
+  make gui
+
+  make DESTDIR=$PKG install
+  make DESTDIR=$PKG install-gui
+
+  rm -rf $PKG/usr/share/locale
+
+}
