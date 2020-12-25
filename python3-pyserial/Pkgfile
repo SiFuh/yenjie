@@ -1,0 +1,20 @@
+# Description:  Multiplatform Serial Port Module for Python
+# URL:          https://pypi.org/project/pyserial/
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   python3
+
+name=python3-pyserial
+_name=${name//python3-}
+version=3.4
+release=1
+source=(https://github.com/${_name}/${_name}/archive/v${version}/${name}-${version}.tar.gz)
+
+build() {
+
+  cd ${name//python3-}-${version}
+
+  python3 setup.py install --prefix=/usr --root=${PKG}
+
+  find ${PKG} -name '*.txt' -delete 
+
+}

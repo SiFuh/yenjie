@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uFSoVrVmExihn95QTYJar8pF+JdoORJ8WR709IcxIhbnPlM914WMz641XY0hxbzOz7+poRApMCyjJf7SEw+MAAg=
+SHA256 (Pkgfile) = e9907f5ea230ac6078a3f6eb58ff8776e95900d5bde125a114ed94af67b0012a
+SHA256 (.footprint) = 8c0f684d272368fc32dfd71e68a811244a0de82fe5a32a23634d945f056403c6
+SHA256 (python3-pyserial-3.4.tar.gz) = ca25c777d06ad0b4b129910642aaa75f724157c80e2898a8e3219adc5599a2a1

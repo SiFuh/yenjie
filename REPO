@@ -209,6 +209,9 @@ d:.git/objects/70
 d:.git/objects/6d
 d:.git/objects/d8
 d:.git/objects/33
+d:.git/objects/7a
+d:.git/objects/2a
+d:.git/objects/69
 d:.git/logs
 d:.git/logs/refs
 d:.git/logs/refs/remotes
@@ -263,6 +266,7 @@ d:pidgin-skypeweb
 d:pidgin-telegram
 d:pulseaudio-alsa
 d:python3-future
+d:python3-pyserial
 f:ce562e08d8098926a3862fc6e7905199:.git/hooks/applypatch-msg.sample
 f:579a3c1e12a1e74a98169175fb913012:.git/hooks/commit-msg.sample
 f:ea587b0fae70333bce92257152996e70:.git/hooks/fsmonitor-watchman.sample
@@ -277,9 +281,9 @@ f:2b5c047bdb474555e1787db32b2d2fc5:.git/hooks/prepare-commit-msg.sample
 f:647ae13c682f7827c22f5fc08a03674e:.git/hooks/update.sample
 f:036208b4a1ab4a235d75c181e685e5a3:.git/info/exclude
 f:a0a7c3fff21f2aea3cfa1d0316dd816c:.git/description
-f:88374c9b9cae90075d385b1d0f0bb762:.git/refs/heads/main
+f:3a52f747d99201a1698e8dd3ba6353bc:.git/refs/heads/main
 f:98b16e0b650190870f1b40bc8f4aec4e:.git/refs/remotes/origin/HEAD
-f:88374c9b9cae90075d385b1d0f0bb762:.git/refs/remotes/origin/main
+f:3a52f747d99201a1698e8dd3ba6353bc:.git/refs/remotes/origin/main
 f:b7a8b317ec8becc1ad00c26e0a3ef261:.git/objects/pack/pack-816a4660cd669211bf4515b1638d55652f05d077.pack
 f:202b7d072049e4a80ac8a221b8d90e34:.git/objects/pack/pack-816a4660cd669211bf4515b1638d55652f05d077.idx
 f:f08d1924d26706e8269e701beefb505d:.git/objects/90/d8907d42c0f4849da1d6e40cb1fd779a292d42
@@ -346,6 +350,7 @@ f:9c43fc4a55faf917ad2a9cbcccfbfabf:.git/objects/3c/ea47290f845740e1c748d43cb71e2
 f:95c182aba4b64ee900048ced05d83823:.git/objects/91/41e0d56d471bea8b18c693bbb49b26f2843e1b
 f:81b546b48fdb7d70ef4059c2111d0a00:.git/objects/91/e26b389b52bd51e58d305fcc262e5f002c534a
 f:3e069b7c552005d0ee44b7be57b28646:.git/objects/a4/a52e7208aadd2235dec7fe3da5e2cccc60d526
+f:4e57858c041c8cc5ae74946726879c56:.git/objects/a4/12b490d6737b1dce8d1c143a102aff5e421f63
 f:d5ec272fd67c6e231bdfc2ed268e4e23:.git/objects/53/635c377feb7e0579f35de5649a041b32ca62b3
 f:6502172b213391620899ee7225ed43a3:.git/objects/53/4569484193caee7b1ef8dd956ac31c7d641f5f
 f:d754184466e0f15193e7e0b2ab81e806:.git/objects/53/7be74b7d472ac253daf77bff0a4acddd0f564d
@@ -366,6 +371,7 @@ f:73ed89e954eb2bb562801cfdc904de10:.git/objects/05/ee17ca02007a8477fa380590db49d
 f:efbe06733de21501b425a99992a2252e:.git/objects/05/38a1a63ff9db97e634cd36cf144c41553cbe87
 f:e2d9fa442141f35d7f7cbdcc76cf07e9:.git/objects/05/deadeb35210edd0b7e30a6beccd5e5eee88afd
 f:c0fed4043046c5edfe0267644b159540:.git/objects/05/fcde35bb28547b3955ce0433a5c7640704e4ef
+f:c01277d3d86ddf65686c916677235c70:.git/objects/05/86006f25f47d8ad805531c8be155c202d48bda
 f:3e63d062f5dbef44ba96a83f55b43a1d:.git/objects/f6/459f9d5e8fed5adc16ac3738140e61daf3af79
 f:ef8fac36332ebbdbf6ea395642ab94cf:.git/objects/f6/a9c53ea16377860f491ea56c71ebe33994e611
 f:d4df398f8e669405c8a85d3a639ac967:.git/objects/f6/a139cda2f461b71b73030984d66818d5b7ce0d
@@ -474,6 +480,7 @@ f:00dcfa07d1de80d294a647854d3ad98c:.git/objects/ae/aaddc102ec97692c79acaca805e2c
 f:37ce46ddc248c6633ef7dd95dbb64265:.git/objects/ae/138f7840366153536f705d236ca36bcd8361ac
 f:792be653ce83029e17bff7de82f73e84:.git/objects/ae/1bc9c26386adee8b4290fea7a0371f5587d77f
 f:d538efaecd990306903df62b715ad3a8:.git/objects/af/91dfb714ba545958c0cbb3d63af3b46649e8ec
+f:fe04f13b77ea6178bc464973bb6cb0bd:.git/objects/af/efb9a54471a327acf8d20345804f4455f863cf
 f:7812a72157ccf326f04ff7b2466815a5:.git/objects/77/9e21993ae1ad2c1c863f73ccb5484ab3d0652b
 f:88a43e5f67208e4ece52ecc7225abc3c:.git/objects/77/2cdfeb46f0bfdabe192bbaf2dbfd912fb46f69
 f:82146b2348bb011da048f74f3fb56264:.git/objects/19/3fe9ec1482c91dbb83376e8dd920dc77f7d236
@@ -529,6 +536,7 @@ f:50308a3827e7f24d08ceb7a417610211:.git/objects/37/be0908f52f83c4d122daf30abeefe
 f:03aa913b098ef634bf8d18c3b87b5a0f:.git/objects/a6/cf46fa897e141648814c3ba5803ccb380caa40
 f:7e9da6611beea75e2567ce6e63f87b46:.git/objects/f0/24912c1f2acd2eb44b7a01546378b0b267f8b8
 f:6e0a9144354ea167300dd9187fd755f3:.git/objects/58/abd4058cc556a112d9b8985199358e0c14b079
+f:cea416ab7a2be48397ddf4264ac2f4b5:.git/objects/58/65399f592bef38a6d677287dd22761b2b1f992
 f:ea922c20374df29a7d506e79f55dbd2d:.git/objects/86/ede2ef406911182b1cc32cb42a08cc3f1720fc
 f:601ba6d9a23958ac21f527101dc9ae5c:.git/objects/15/df9624c6535487c1034ebdd4dd8a45eb105b26
 f:f6438f7cd6ee61178528291a0665617a:.git/objects/15/e4b90cfca82240f00135f12697936e4712c80b
@@ -661,14 +669,17 @@ f:3415be837fd286b1e3d9e9a25b255fde:.git/objects/6d/096b2ac366a73702ab858ad1a208e
 f:793aab7bdd5b75c29e1ef582ced3bde4:.git/objects/d8/eb4cf315944de969c39ef7d8de3b20159638cd
 f:65a1cd6e2c359608e00cbe584fc31360:.git/objects/33/3f396b11964672ef63c062dea098fb927de9db
 f:fc51a4914ddca2a818a03768e6f4c0b6:.git/objects/33/222d210e6292fb5bd7a796a68828a04c2139fe
+f:45717558a8612cace777c5bca0e59fa7:.git/objects/7a/b9e7833833f07b9df4d76c6eb87a6203c8e122
+f:1dfba924b0b865f0ba27603f8b333824:.git/objects/2a/e8796e968fd34d424ccfd625523d5975bad62e
+f:dad49d64de3bc64c80d91fd131a05035:.git/objects/69/366fb69aebc954b10ac2df6032cc2a4922aaf4
 f:e165ece0f4ac287b67c8aea95cfcfb75:.git/logs/refs/remotes/origin/HEAD
-f:fe0d3ae7b17167310a970c6f704d74ab:.git/logs/refs/remotes/origin/main
-f:30e350537bedb83bf0feaaa80bb5bdc4:.git/logs/refs/heads/main
-f:30e350537bedb83bf0feaaa80bb5bdc4:.git/logs/HEAD
+f:909f8412046f4ee555b57f99198568c7:.git/logs/refs/remotes/origin/main
+f:2cef6318969f135b8d6190264966ca0d:.git/logs/refs/heads/main
+f:2cef6318969f135b8d6190264966ca0d:.git/logs/HEAD
 f:cf7dd3ce51958c5f13fece957cc417fb:.git/HEAD
 f:6d68a9ac80e105edd00a6ab1bbb96419:.git/config
-f:90d089a0eca121b68729869bf9f1d143:.git/COMMIT_EDITMSG
-f:b5aad57fcd7b5f6c581557a4d410e486:.git/index
+f:4796a10dbf0806d9358a010709190f32:.git/COMMIT_EDITMSG
+f:00d6c2c94e4fbb8050adda966ec7aba2:.git/index
 f:61bd2a9265e578b27b84312ee625bc51:.git/packed-refs
 f:ccf3ddecf796af9117daac6b58ce74da:README.md
 f:6bbec22c453cce2269312934c1e2fbb5:alizams-bin/alizams_sh.patch
@@ -861,4 +872,7 @@ f:3a6f88d78e7363125761f5facc3fff2a:pulseaudio-alsa/.footprint
 f:4e9ce99587cd4b4b109df81073010b33:python3-future/.footprint
 f:373482c433b859a6f0893e10023b2ab0:python3-future/.signature
 f:3f26747d84e3da26d6397fa209446c81:python3-future/Pkgfile
+f:7e9d2c7df4218f072b3e7bde459b102b:python3-pyserial/Pkgfile
+f:1e873782cc80f02153c35d59dc648195:python3-pyserial/.footprint
+f:9f0454d457c4e3e67b4629250d680ed0:python3-pyserial/.signature
 f:365c168edf622d05211d92a382f55032:yenjie.httpup
