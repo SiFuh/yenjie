@@ -1,0 +1,35 @@
+# Description:  Android SDK Platform-Tools
+# URL:          https://developer.android.com/studio/releases/platform-tools
+# Packager:
+# Maintainer:	Lin SiFuh, #crux at freenode dot net 	   
+#
+# Depends on:
+
+name=android-tools
+version=r30.0.2
+release=1
+source=(http://dl-ssl.google.com/android/repository/platform-tools_$version-linux.zip)
+
+build() {
+
+	mkdir -p $PKG/opt/{$name,bin}
+	
+	cp -a $SRC/platform-tools/* \
+	      $PKG/opt/$name
+
+	chmod +Xr -R $PKG/opt/$name
+	
+	ln -sf /opt/$name/adb 		$PKG/opt/bin/adb
+	ln -sf /opt/$name/dmtracedump 	$PKG/opt/bin/dmtracedump
+	ln -sf /opt/$name/e2fsdroid 	$PKG/opt/bin/e2fsdroid
+	ln -sf /opt/$name/etc1tool 	$PKG/opt/bin/etc1tool
+	ln -sf /opt/$name/fastboot 	$PKG/opt/bin/fastboot
+	ln -sf /opt/$name/hprof-conv 	$PKG/opt/bin/hprof-conv
+	ln -sf /opt/$name/make_f2fs	$PKG/opt/bin/make_f2fs
+	ln -sf /opt/$name/mke2fs	$PKG/opt/bin/mke2fs
+	ln -sf /opt/$name/sload_f2fs	$PKG/opt/bin/sload_f2fs
+	ln -sf /opt/$name/sqlite3 	$PKG/opt/bin/sqlite3
+
+	rm -rf $PKG/opt/$name/{NOTICE.txt,api,systrace,source.properties}
+
+}

@@ -1,0 +1,26 @@
+drwxr-xr-x	root/root	opt/
+drwxr-xr-x	root/root	opt/android-tools/
+-rwxrwxr-x	root/root	opt/android-tools/adb
+-rwxrwxr-x	root/root	opt/android-tools/dmtracedump
+-rwxrwxr-x	root/root	opt/android-tools/e2fsdroid
+-rwxrwxr-x	root/root	opt/android-tools/etc1tool
+-rwxrwxr-x	root/root	opt/android-tools/fastboot
+-rwxrwxr-x	root/root	opt/android-tools/hprof-conv
+drwxrwxr-x	root/root	opt/android-tools/lib64/
+-rwxrwxr-x	root/root	opt/android-tools/lib64/libc++.so
+-rwxrwxr-x	root/root	opt/android-tools/make_f2fs
+-rwxrwxr-x	root/root	opt/android-tools/mke2fs
+-rwxrwxr-x	root/root	opt/android-tools/mke2fs.conf
+-rwxrwxr-x	root/root	opt/android-tools/sload_f2fs
+-rwxrwxr-x	root/root	opt/android-tools/sqlite3
+drwxr-xr-x	root/root	opt/bin/
+lrwxrwxrwx	root/root	opt/bin/adb -> /opt/android-tools/adb
+lrwxrwxrwx	root/root	opt/bin/dmtracedump -> /opt/android-tools/dmtracedump
+lrwxrwxrwx	root/root	opt/bin/e2fsdroid -> /opt/android-tools/e2fsdroid
+lrwxrwxrwx	root/root	opt/bin/etc1tool -> /opt/android-tools/etc1tool
+lrwxrwxrwx	root/root	opt/bin/fastboot -> /opt/android-tools/fastboot
+lrwxrwxrwx	root/root	opt/bin/hprof-conv -> /opt/android-tools/hprof-conv
+lrwxrwxrwx	root/root	opt/bin/make_f2fs -> /opt/android-tools/make_f2fs
+lrwxrwxrwx	root/root	opt/bin/mke2fs -> /opt/android-tools/mke2fs
+lrwxrwxrwx	root/root	opt/bin/sload_f2fs -> /opt/android-tools/sload_f2fs
+lrwxrwxrwx	root/root	opt/bin/sqlite3 -> /opt/android-tools/sqlite3
