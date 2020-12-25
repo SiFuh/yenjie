@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uE3cyp+VTkldZFZ1cFeDSY8GyTg6EVykKKscQL10P+CRsFBXPQl492VUxBvRH7U4p+9ZR1jcWZ7snurxJ2orSA8=
+SHA256 (Pkgfile) = ba4a7da9d1dda1564c7036f90400327ee656c25758901940c02e8f3ec04901bc
+SHA256 (.footprint) = 802a84be48f70ce21adcaacb07f0f206b579007770e461545314ec98d53ad57d
+SHA256 (whowatch-1.8.6.tar.gz) = 9bdf0338850fd66036cb4db1f7a61b35f502158c315981f7176d8f834a0b5a02
