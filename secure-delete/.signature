@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uBQ2KE3sJpxr9B8vXZqPqaIi4QwpU5lThg9Vq7/BNREZ3m0NVLJY9ZmTynBMGlOGA8kDiMD0x29J38FUoXQaRQY=
+SHA256 (Pkgfile) = d40ed694aea7fc8613352b282b1f6ba408389086924c950d3f6bd5192f3e4f48
+SHA256 (.footprint) = 691397ab764e090cd9175548c1437cf6cfe9e5c5bee5eb2ce1fc313c0367ecdf
+SHA256 (secure-delete-3.1a.tar.gz) = 2bb8d1f9dbfd2e14f194ee88c730ef8abb8737bf183f715f45b9ca17d59bcebf

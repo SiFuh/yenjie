@@ -1,0 +1,36 @@
+# Description:  Secure file, disk, swap, memory erasure utilities(Fork of THC util)
+# URL:          https://github.com/GIJack/secure_delete
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:
+
+name=secure-delete
+_name=${name//-/_}
+version=3.1a
+_version=${version//a/-a}
+release=1
+source=(https://github.com/GIJack/${_name}/archive/${_version}/${name}-${version}.tar.gz)
+
+build() {
+
+  cd "${_name}"-"${_version}"
+
+  sed -i -e 's/mktemp/mkstemp/g' sfill.c
+  sed -i -e '/test.*sdel-mod/d'                   \
+         -e "s/^srm: /srm: sdel-lib.o /"          \
+         -e "s/^smem: /smem: sdel-lib.o /"        \
+         -e "s/^sfill: /sfill: sdel-lib.o /"      \
+         -e "s/^sswap: /sswap: sdel-lib.o /"      \
+         -e "s/sswap smem sdel-mod.o/sswap smem/" \
+         Makefile
+
+  make
+
+  make INSTALL_DIR="${PKG}/usr/bin" \
+       MAN_DIR="${PKG}/usr/share/man" \
+       install
+
+  chmod a+r "${PKG}/usr/bin"/*
+
+  rm "${PKG}"/usr/bin/the_cleaner.sh
+
+}
