@@ -1,0 +1,20 @@
+# Description:  Clean single-source support for Python 3
+# URL:          https://python-future.org/
+# Packager:
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   python3 python3-setuptools
+
+name=python3-future
+version=0.18.2
+release=1
+source=(https://pypi.io/packages/source/f/${name//python3-}/${name//python3-}-${version}.tar.gz)
+
+build() {
+
+  cd ${name//python3-}-${version}
+
+  python3 setup.py build
+
+  python3 setup.py install --root=${PKG} --optimize=1
+
+}
