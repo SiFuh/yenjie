@@ -1,0 +1,15 @@
+NOTE:
+
+  To verify the build you should uncomment the line make test located in the 
+  Pkgfile. 
+
+  QTGUI will fail. This is because root does not have access to the Xdisplay. 
+  This is completely normal. If you wish to see if qtgui does pass the test 
+  then you can either try running the command 'xhost +' before compiling this 
+  port to allow root to access the Xdisplay or run the command 'ctest -V -R 
+  qa_qtgui' as a normal user in the $SRC/gnuradio/build folder, provided that 
+  you used the -kw flag when building this port to keep your working 
+  directory.
+
+        # qa_qtgui                              (Failed)
+

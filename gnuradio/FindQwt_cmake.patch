@@ -1,0 +1,18 @@
+--- cmake/Modules/FindQwt.cmake.orig    2020-02-13 16:53:06.228971205 +0800
++++ cmake/Modules/FindQwt.cmake 2020-02-13 16:53:15.463971077 +0800
+@@ -15,6 +15,7 @@
+   ${CMAKE_INSTALL_PREFIX}/include/qwt
+   ${CMAKE_PREFIX_PATH}/include/qwt
+   PATHS
++  /usr/qwt/include
+   /usr/local/include/qwt-${QWT_QT_VERSION}
+   /usr/local/include/qwt
+   /usr/include/qwt6
+@@ -36,6 +37,7 @@
+   ${CMAKE_INSTALL_PREFIX}/lib64
+   ${CMAKE_PREFIX_PATH}/lib
+   PATHS
++  /usr/qwt/lib
+   /usr/local/lib
+   /usr/lib
+   /opt/local/lib

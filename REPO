@@ -127,6 +127,9 @@ d:.git/objects/03
 d:.git/objects/97
 d:.git/objects/de
 d:.git/objects/cd
+d:.git/objects/f2
+d:.git/objects/e9
+d:.git/objects/f9
 d:.git/logs
 d:.git/logs/refs
 d:.git/logs/refs/remotes
@@ -153,6 +156,7 @@ d:fcitx-configtool-gtk3
 d:fcitx-qt5
 d:flashrom
 d:fping
+d:gnuradio
 f:ce562e08d8098926a3862fc6e7905199:.git/hooks/applypatch-msg.sample
 f:579a3c1e12a1e74a98169175fb913012:.git/hooks/commit-msg.sample
 f:ea587b0fae70333bce92257152996e70:.git/hooks/fsmonitor-watchman.sample
@@ -167,9 +171,9 @@ f:2b5c047bdb474555e1787db32b2d2fc5:.git/hooks/prepare-commit-msg.sample
 f:647ae13c682f7827c22f5fc08a03674e:.git/hooks/update.sample
 f:036208b4a1ab4a235d75c181e685e5a3:.git/info/exclude
 f:a0a7c3fff21f2aea3cfa1d0316dd816c:.git/description
-f:4f1ca83dd1cbeef4bf86af8c6961c36b:.git/refs/heads/main
+f:250781d6e7240f83827c28d4d44bccb1:.git/refs/heads/main
 f:98b16e0b650190870f1b40bc8f4aec4e:.git/refs/remotes/origin/HEAD
-f:4f1ca83dd1cbeef4bf86af8c6961c36b:.git/refs/remotes/origin/main
+f:250781d6e7240f83827c28d4d44bccb1:.git/refs/remotes/origin/main
 f:b7a8b317ec8becc1ad00c26e0a3ef261:.git/objects/pack/pack-816a4660cd669211bf4515b1638d55652f05d077.pack
 f:202b7d072049e4a80ac8a221b8d90e34:.git/objects/pack/pack-816a4660cd669211bf4515b1638d55652f05d077.idx
 f:f08d1924d26706e8269e701beefb505d:.git/objects/90/d8907d42c0f4849da1d6e40cb1fd779a292d42
@@ -188,6 +192,7 @@ f:dfd230817946bf95ac2dbe776bc4e09a:.git/objects/b3/f51125fcd9a83d3ad03ea93c4f813
 f:4667e7faac10c2bf4c0cdf1434afafee:.git/objects/b3/15e6c0ad9043cb214dacc58dd544c1fc6a6f50
 f:78f1074702845803afaa78368534be71:.git/objects/b5/8e14227ba4235d3c02c8fc9ce7d5ea79c8ce00
 f:2190f65b834ff814521d76753b3f6d32:.git/objects/b5/780ad635e1e81f9d54943cc97074a59e4c39f4
+f:3b350fc6d4794017d586cd964ef66811:.git/objects/b5/51b262c1ee915a7043424cd1bb4b272d04dde5
 f:89c396b14be1532f8a027dbd7bab3187:.git/objects/43/6b6bd331e9b7b98824c6a3c3dbe56803212e18
 f:ea0e52c6ec8f9eebfe6623e9af800d45:.git/objects/43/e87924eccdbbfa46bd217c75f7d623d74ea91a
 f:e5619d6a14b41d805cd51d5d913ce6be:.git/objects/11/216e162f441e30483b041ad833d6b77feae6ff
@@ -205,6 +210,7 @@ f:ba2fd30e6d0364a613a8985c43fe0fee:.git/objects/eb/c9f567bacbd4be8c6f0409ee3f57b
 f:2df112e560572005c0090ea83330a1f7:.git/objects/83/981562f4882848de20e854ce3fb3afce2576b1
 f:7fb5f87c02020cdd5a1db7d5a5ba3828:.git/objects/84/f3d3bf1656d97b0411ae434591e5dfeb549880
 f:1b75179ea6c406fc50f92baae744fda6:.git/objects/84/22f6f41e04af294a322fb50405f849c0585ad6
+f:666e83d25a77c639cc42a2810ab3e152:.git/objects/84/076bb2c3c698c4a47c1a0daf58ff499585c1b2
 f:3954a1a646cedf716f55a41b969d8430:.git/objects/39/c2d11988f5cae3bdaf2c5da61588a73313a89e
 f:bef7004b21d7c8c663ec2e055f5e72f4:.git/objects/e2/5357044b36036b48920eb65f914a60dbf23805
 f:dae06daa23ddd1b801ce7e235ab58d9f:.git/objects/e2/1ba907825b2950daa30617810d32f0e7a2a446
@@ -245,6 +251,7 @@ f:231c11ded15bfcaa335b2ecf1eb9c252:.git/objects/65/79232593f59db92614c7da8d08f0f
 f:4013a9ae630ae3f201f06a600d9f9317:.git/objects/1b/006dc63acd4e587b50e3be8c441a0073473d9c
 f:b90230691246794c6f24ceff1d3259a5:.git/objects/1b/dddbbeb717077f184bbd3538b3d931441bb8b4
 f:128af86f248528cb3360aa854a7d08a8:.git/objects/1b/46bd711ccc9a833479ad6d2ee8bb473916611e
+f:ddb878bf2e9d085924abdd7a83939249:.git/objects/1b/f6e1c392f98c9198430a5e8222cb25e0a3028c
 f:6c8d7e61542bf95ab5cdc123a167846a:.git/objects/b4/6d091f3b0feaf3f1216b31b2a689fbdcf186da
 f:15d6c7515250c9399e11875365e7e748:.git/objects/df/7f4a1f31671df25a62a45c8cea2134b120d7be
 f:cb65f4f04f1f2219111ea109e0d73fd4:.git/objects/df/090783482cb7f0e2129b6e7c1b0d1a5b1e6b13
@@ -300,6 +307,7 @@ f:30123885c89f9ad6aa2fb97149dcb367:.git/objects/61/5da3103456a00ac11ca6965ecbcc0
 f:2d8efde3443c074b660b219b46eeda7c:.git/objects/1c/063d21ec05171806ab14b96954e6da7e090f55
 f:0ead94e26587a127110c74065e815db4:.git/objects/85/c29c34dfa4ee004af4f7b5c79a5f7d35fb0374
 f:ec673052f5772088ea37990148ac0d45:.git/objects/6f/8b71280e455cb5183bd5122776f0c2b2bcea35
+f:04c33eb508e42586fa79fd05ca16ba6a:.git/objects/6f/2c52d7cbbf46181ccae2ee43f234e35f7e1b62
 f:8355a26a65e53147a10a84664e6e9503:.git/objects/4d/dbfa51f573d2d41100d611184895b13b1f8c6b
 f:d6474363ac542b60f74428f0f0aa3f4c:.git/objects/4d/a7ba155e48dc139d004793002826c860fc09ed
 f:8526692aa4a3bf13cad87b9828ffb1e9:.git/objects/5f/aa07d94b855d41850dee66209834afdbc07772
@@ -329,14 +337,17 @@ f:098d229d8577d97b7ede620f8717a4fc:.git/objects/03/dff89826d843336571c79414614bd
 f:bd2425f57e1440cb88d806ce588bda09:.git/objects/97/caec0c83f388daab1124514d0c4374f8fc2c56
 f:baf479ff91cfc18d75cb3bce6940bde2:.git/objects/de/21c782b64b5bec4fc6e3a910d274059923170e
 f:8da97e45b479c7ef56c1c977f4086866:.git/objects/cd/c36305b4eff147255c50e0f5f1e1de62b786cb
+f:e2eeb87c4fc3549d3348eeb28e6145a2:.git/objects/f2/b63cf00609e353fd256500d1482c60fe32eaf2
+f:e9df126044d7bfd1d9b5153bc0a6ed6c:.git/objects/e9/6b792f5aea6a86c469e87529bd71be38f98b6c
+f:34c012f223bdb331afec999314f9b975:.git/objects/f9/9cf2200bc964f8da3b94ffe04a1533f7c4d245
 f:e165ece0f4ac287b67c8aea95cfcfb75:.git/logs/refs/remotes/origin/HEAD
-f:0e359b1db58abeeb333fe96d1400d7a8:.git/logs/refs/remotes/origin/main
-f:40413473f401ff6b881949e80a7ad009:.git/logs/refs/heads/main
-f:40413473f401ff6b881949e80a7ad009:.git/logs/HEAD
+f:eb634ee6fffe5d395cdbdbdf1dcf060d:.git/logs/refs/remotes/origin/main
+f:6453fd3ebc17f544f9140d37515d7766:.git/logs/refs/heads/main
+f:6453fd3ebc17f544f9140d37515d7766:.git/logs/HEAD
 f:cf7dd3ce51958c5f13fece957cc417fb:.git/HEAD
 f:6d68a9ac80e105edd00a6ab1bbb96419:.git/config
-f:4f452bc3fef3dbc4e480f99cd328e7ba:.git/COMMIT_EDITMSG
-f:8704939c7f89cb0cb24f5eac76828426:.git/index
+f:00cb676f11a5e164e9b007ca1fb6b66a:.git/COMMIT_EDITMSG
+f:65f78cd865c2f37b9ab2a2ef3bc34417:.git/index
 f:61bd2a9265e578b27b84312ee625bc51:.git/packed-refs
 f:ccf3ddecf796af9117daac6b58ce74da:README.md
 f:6bbec22c453cce2269312934c1e2fbb5:alizams-bin/alizams_sh.patch
@@ -416,4 +427,10 @@ f:6be6d5bca974a155f989a3fe94828042:flashrom/.footprint
 f:73135f6768c7f5aa13fb0e2cbdeadc08:fping/.signature
 f:2a540487658c78f914aae1b16588269d:fping/.footprint
 f:38c5d660debec634552b0a4ad3dcba4e:fping/Pkgfile
+f:0fc83c222264fff789d3d99b15440b80:gnuradio/FindQwt_cmake.patch
+f:0de3de8895d2b27f737f1d8c7a0bca9b:gnuradio/.signature
+f:1ee2801408f9e82adec34c6d1f6501ec:gnuradio/.footprint
+f:87ce7dc428ed7a028db5c7ec1ebfc95d:gnuradio/README
+f:d7dd136f670f4cdfd669df8d24ddbc2d:gnuradio/gnuradio_boost.patch
+f:785d47d75db4cdea0665564ff5bea19a:gnuradio/Pkgfile
 f:365c168edf622d05211d92a382f55032:yenjie.httpup
