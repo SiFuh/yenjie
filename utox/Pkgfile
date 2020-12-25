@@ -1,0 +1,26 @@
+# Description:   Lightweight client for Tox 
+# URL:           https://github.com/uTox/uTox
+# Maintainer:    Lin SiFuh, #crux at freenode dot net
+# Depends on:    dbus v4l-utils toxcore check
+
+name=utox
+_name=uTox
+version=0.17.2
+release=1
+source=(https://github.com/${_name}/${_name}/releases/download/v${version}/${_name}-${version}-full.tar.gz)
+
+build() {
+
+  cmake -S "${_name}" -B build                          \
+        -D ENABLE_ASAN=OFF                              \
+        -D CMAKE_BUILD_TYPE=Release                     \
+        -D ENABLE_FILTERAUDIO=OFF                       \
+        -D CMAKE_INSTALL_PREFIX:PATH=/usr               \
+        -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"     \
+        -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -DNDEBUG"
+
+  cmake --build build
+
+  DESTDIR="${PKG}" cmake --install build
+
+}
