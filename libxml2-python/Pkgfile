@@ -1,0 +1,26 @@
+# Description: Python bindings for the XML library version 2
+# URL:         http://xmlsoft.org/
+# Maintainer:  Lin SiFuh, #crux at freenode dot net
+# Depends on:  python libxml2
+
+name=libxml2-python
+version=2.9.10
+release=1
+source=(ftp://xmlsoft.org/${name//-python}/${name//-python}-${version}.tar.gz \
+        ${name}-config.patch)
+
+build () {
+    cd ${name//-python}-${version}
+    
+    patch -p1 -i ${SRC}/${name}-config.patch
+    
+    ./configure --prefix=/usr
+    cd python
+    make
+    make DESTDIR=${PKG} install
+
+    python -m compileall ${PKG}/usr/lib/python2.7/
+
+    rm ${PKG}/usr/lib/python2.7/site-packages/libxml2mod.{a,la}
+    rm -r ${PKG}/usr/share
+}
