@@ -11,6 +11,8 @@ source=(https://launchpad.net/${name}/${version//.5}/${version}/+download/${name
 
 build() {
 
+  export LDFLAGS="-Wl,--allow-multiple-definition"
+
   cmake -S . -B build -G Ninja                         \
         -D ENABLE_RUBY=OFF                             \
         -D CMAKE_BUILD_TYPE=Release                    \

@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uF3GQ8XnJawHJyWhulAkM3g1rCxl02cQg2JWjbKgx1L4MYmus5pP7ZXoU//Cx4VNgAiw9vTNIOzejZTplYRnzQ4=
-SHA256 (Pkgfile) = d5d0894462dc6984d7d95882dce5ddf3fb05e185a9ec7bf58e6bd95e07337a3e
-SHA256 (.footprint) = 267f569c81b0c987c0c483626a1c6b441da8e734e9f555344ba9bd00e88437d0
+RWQ0NN0w0eo0uGM3Tm7ModxeXYAIsMbVa7c1xrr/x5eyXXMB7+lyIy5LCFHuPOgkopXEXuVhVAOKqrX44sC22VigqFDeR/frKwg=
+SHA256 (Pkgfile) = 1c3a1908975474a4120d1663ecc5a95f0f1ba47d3fd83b3e7fdbf9f1ed93263b
+SHA256 (.footprint) = 0f2b58126328f782ea518b17278374ccbb39555997b535f504752eef1a528dd3
 SHA256 (libopenshot-0.2.5.tar.gz) = f0c432d3464e7c7f178ab641b3a7825dd9bf627a6b4304cc2c648959376ca7fc
