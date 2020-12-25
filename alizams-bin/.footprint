@@ -1,0 +1,45 @@
+drwxr-xr-x	root/root	opt/
+drwxr-xr-x	root/root	opt/alizams/
+drwxr-xr-x	root/root	opt/alizams/bin/
+-rwxr-xr-x	root/root	opt/alizams/bin/alizams
+drwxr-xr-x	root/root	opt/alizams/lib/
+lrwxrwxrwx	root/root	opt/alizams/lib/libQtCore.so -> libQtCore.so.4.8.7
+lrwxrwxrwx	root/root	opt/alizams/lib/libQtCore.so.4 -> libQtCore.so.4.8.7
+lrwxrwxrwx	root/root	opt/alizams/lib/libQtCore.so.4.8 -> libQtCore.so.4.8.7
+-rwxr-xr-x	root/root	opt/alizams/lib/libQtCore.so.4.8.7
+lrwxrwxrwx	root/root	opt/alizams/lib/libQtDBus.so -> libQtDBus.so.4.8.7
+lrwxrwxrwx	root/root	opt/alizams/lib/libQtDBus.so.4 -> libQtDBus.so.4.8.7
+lrwxrwxrwx	root/root	opt/alizams/lib/libQtDBus.so.4.8 -> libQtDBus.so.4.8.7
+-rwxr-xr-x	root/root	opt/alizams/lib/libQtDBus.so.4.8.7
+lrwxrwxrwx	root/root	opt/alizams/lib/libQtGui.so -> libQtGui.so.4.8.7
+lrwxrwxrwx	root/root	opt/alizams/lib/libQtGui.so.4 -> libQtGui.so.4.8.7
+lrwxrwxrwx	root/root	opt/alizams/lib/libQtGui.so.4.8 -> libQtGui.so.4.8.7
+-rwxr-xr-x	root/root	opt/alizams/lib/libQtGui.so.4.8.7
+lrwxrwxrwx	root/root	opt/alizams/lib/libQtOpenGL.so -> libQtOpenGL.so.4.8.7
+lrwxrwxrwx	root/root	opt/alizams/lib/libQtOpenGL.so.4 -> libQtOpenGL.so.4.8.7
+lrwxrwxrwx	root/root	opt/alizams/lib/libQtOpenGL.so.4.8 -> libQtOpenGL.so.4.8.7
+-rwxr-xr-x	root/root	opt/alizams/lib/libQtOpenGL.so.4.8.7
+lrwxrwxrwx	root/root	opt/alizams/lib/libQtSql.so -> libQtSql.so.4.8.7
+lrwxrwxrwx	root/root	opt/alizams/lib/libQtSql.so.4 -> libQtSql.so.4.8.7
+lrwxrwxrwx	root/root	opt/alizams/lib/libQtSql.so.4.8 -> libQtSql.so.4.8.7
+-rwxr-xr-x	root/root	opt/alizams/lib/libQtSql.so.4.8.7
+lrwxrwxrwx	root/root	opt/alizams/lib/libQtSvg.so -> libQtSvg.so.4.8.7
+lrwxrwxrwx	root/root	opt/alizams/lib/libQtSvg.so.4 -> libQtSvg.so.4.8.7
+lrwxrwxrwx	root/root	opt/alizams/lib/libQtSvg.so.4.8 -> libQtSvg.so.4.8.7
+-rwxr-xr-x	root/root	opt/alizams/lib/libQtSvg.so.4.8.7
+drwxr-xr-x	root/root	opt/alizams/plugins/
+drwxr-xr-x	root/root	opt/alizams/plugins/codecs/
+-rwxr-xr-x	root/root	opt/alizams/plugins/codecs/libqcncodecs.so
+-rwxr-xr-x	root/root	opt/alizams/plugins/codecs/libqjpcodecs.so
+-rwxr-xr-x	root/root	opt/alizams/plugins/codecs/libqkrcodecs.so
+-rwxr-xr-x	root/root	opt/alizams/plugins/codecs/libqtwcodecs.so
+drwxr-xr-x	root/root	opt/alizams/plugins/iconengines/
+-rwxr-xr-x	root/root	opt/alizams/plugins/iconengines/libqsvgicon.so
+drwxr-xr-x	root/root	opt/alizams/plugins/imageformats/
+-rwxr-xr-x	root/root	opt/alizams/plugins/imageformats/libqico.so
+-rwxr-xr-x	root/root	opt/alizams/plugins/imageformats/libqsvg.so
+-rwxr-xr-x	root/root	opt/alizams/plugins/imageformats/libqtga.so
+drwxr-xr-x	root/root	opt/alizams/plugins/inputmethods/
+-rwxr-xr-x	root/root	opt/alizams/plugins/inputmethods/libqimsw-multi.so
+drwxr-xr-x	root/root	opt/bin/
+-rwxr-xr-x	root/root	opt/bin/alizams
