@@ -1,0 +1,66 @@
+# Description: Free and Open On-Chip programming and debugging software
+# URL:         http://openocd.org/
+# Maintainer:  Lin SiFuh, #crux at freenode dot net
+# Depends on:  libusb-compat libftdi hidapi
+
+name=openocd
+version=0.10.0
+release=1
+source=(https://sourceforge.net/projects/${name}/files/${name}/${version}/${name}-${version}.tar.bz2)
+
+build() {
+
+  cd ${name}-${version}
+
+  libtoolize -vif
+  autoreconf -vif
+
+  ./configure --prefix=/usr               \
+              --disable-werror            \
+              --mandir=/usr/share/man     \
+              --enable-ftdi               \
+              --enable-aice               \
+              --enable-dummy              \
+              --enable-ulink              \
+              --enable-osbdm              \
+              --enable-rlink              \
+              --enable-jlink              \
+              --enable-stlink             \
+              --enable-ep93xx             \
+              --enable-presto             \
+              --enable-verbose            \
+              --enable-parport            \
+              --enable-ti-icdi            \
+              --enable-gw16012            \
+              --enable-vsllink            \
+              --enable-usbprog            \
+              --enable-jtag_vpi           \
+              --enable-openjtag           \
+              --enable-opendous           \
+              --enable-buspirate          \
+              --enable-sysfsgpio          \
+              --enable-cmsis-dap          \
+              --enable-armjtagew          \
+              --enable-at91rm9200         \
+              --enable-doxygen-pdf        \
+              --enable-bcm2835gpio        \
+              --enable-usb-blaster        \
+              --enable-amtjtagaccel       \
+              --enable-silent-rules       \
+              --enable-usb-blaster-2      \
+              --enable-zy1000-master      \
+              --enable-remote-bitbang     \
+              --enable-parport-giveio     \
+              --enable-malloc-logging     \
+              --enable-verbose-usb-io     \
+              --enable-verbose-jtag-io    \
+              --enable-verbose-usb-comms  \
+              --enable-dependency-tracking
+
+  make
+  make DESTDIR=${PKG} install
+
+  rm -rf ${PKG}/usr/share/info/
+  rm ${PKG}/usr/share/openocd/contrib/libdcc/README
+
+}
