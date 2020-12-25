@@ -1,0 +1,25 @@
+# Description:  Libraries for Openshot-qt
+# URL:          https://launchpad.net/libopenshot
+# Packager:
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   libopenshot-audio qt5 ffmpeg zeromq swig cppzmq zstd
+
+name=libopenshot
+version=0.2.5
+release=1
+source=(https://launchpad.net/${name}/${version//.5}/${version}/+download/${name}-${version}.tar.gz)
+
+build() {
+
+  cmake -S . -B build -G Ninja                         \
+        -D ENABLE_RUBY=OFF                             \
+        -D CMAKE_BUILD_TYPE=Release                    \
+        -D CMAKE_INSTALL_PREFIX:PATH=/usr              \
+        -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"    \
+        -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -DNDEBUG"
+
+  cmake --build build
+
+  DESTDIR="${PKG}" cmake --install build
+
+}
