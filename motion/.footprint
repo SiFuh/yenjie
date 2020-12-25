@@ -1,0 +1,16 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/motion/
+-rw-r--r--	root/root	etc/motion/camera1-dist.conf
+-rw-r--r--	root/root	etc/motion/camera2-dist.conf
+-rw-r--r--	root/root	etc/motion/camera3-dist.conf
+-rw-r--r--	root/root	etc/motion/camera4-dist.conf
+-rw-r--r--	root/root	etc/motion/motion-dist.conf
+drwxr-xr-x	root/root	etc/rc.d/
+-rwxr-xr-x	root/root	etc/rc.d/motion
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/motion
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/motion.1.gz

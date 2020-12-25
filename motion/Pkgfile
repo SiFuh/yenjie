@@ -1,0 +1,32 @@
+# Description:  Software that monitors video from many types of cameras.
+# URL:          https://motion-project.github.io/index.html
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   ffmpeg libjpeg-turbo v4l-utils libmicrohttpd
+
+name=motion
+version=4.3.2
+release=1
+source=(https://github.com/Motion-Project/${name}/archive/release-${version}/${name}-${version}.tar.gz \
+motion)
+
+build() {
+  
+  cd ${name}-release-${version}
+
+  autoreconf -fiv
+
+  CONFIG_SHELL=/bin/bash              \
+  ./configure --prefix=/usr           \
+              --with-ffmpeg           \
+              --without-mysql         \
+              --without-pgsql         \
+              --sysconfdir=/etc       \
+              --mandir=/usr/share/man
+
+  make
+  make DESTDIR=${PKG} install
+
+  rm -rf ${PKG}/usr/share/{doc,locale,${name}}
+  install -D -m 755 -o root -g root ${SRC}/${name} ${PKG}/etc/rc.d/${name}
+
+}
