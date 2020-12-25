@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uOKNPa2IykYw5jBRuAN6BXc11JH29yxzhzNhVI2sA0MIXMbnsXReWgTnI0pxBwWhywvJO/xN2jwBJzhgomhFLAw=
+SHA256 (Pkgfile) = 590714ff0cca853bd688b528ea3d3015ff850553296f44f944e0ba94ba3fb5bd
+SHA256 (.footprint) = 8905b76055a3cd271b02d3378d853fffbcb007c9a8824ace41ea84d1ed1db13e
+SHA256 (rtaudio-5.1.0.tar.gz) = ff138b2b6ed2b700b04b406be718df213052d4c952190280cf4e2fab4b61fe09
