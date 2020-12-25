@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uGh8XLWndm4HQmdDYiocyMlBsdmg8dZLMVOWRgj5pIq4p6KdeOxVARIdf/TtogmvO+6Vsk1zrApDTfCwePi16Q0=
+SHA256 (Pkgfile) = cc859e679c34cde8c3db26edaa851497ac8a77cc4c93dac712b01470f9b2c41d
+SHA256 (.footprint) = 24417d595846caff7a4c96a184f8a562ff554c398d8d1f32124a9aabc611bdc6
+SHA256 (wavemon-0.9.2.tar.gz) = 13334ff17720ba4d17f4658dd2b93a50a6b5bc0583dedd72b88fd0cb90db686a
+SHA256 (wavemon_h.patch) = 4cd654382feb572fc63b9f81bea77b350f4e15821d33969c27bb3a3db9c10dd2
