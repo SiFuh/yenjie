@@ -1,0 +1,23 @@
+#!/bin/sh
+# post-install script for virtualbox-bin
+
+# Check for and add vboxusers group if doesn't exist
+/usr/bin/getent group vboxusers || /usr/sbin/groupadd vboxusers
+
+# Reload udev rules
+udevadm control --reload
+
+# Start the vbox drivers. If not present it will build first
+if [ -f /sbin/rcvboxdrv ]; then
+    rcvboxdrv start
+fi
+# Update the mime database
+if [ -f /usr/bin/update-mime-database ]; then
+    update-mime-database /usr/share/mime
+fi
+# Update the desktop database
+if [ -f update-desktop-database ]; then
+    update-desktop-database -q
+fi
+
+# End of File

@@ -1,0 +1,107 @@
+# Description:  Virtualisation software for x86 hardware (binary version, non-GPL)
+# URL:          http://www.virtualbox.org
+# Packager:    
+# Maintainer:   Lin SiFuh, #crux at freenode dot net 	  
+# Depends on:   libidl libxslt xorg-libxinerama xorg-libxcursor
+
+name=virtualbox-bin
+version=6.1.16
+sversion=140961
+release=1
+source=(https://download.virtualbox.org/${name::-4}/$version/VirtualBox-${version}-${sversion}-Linux_amd64.run \
+        vbox_build_module 60-vboxdrv.rules)
+
+# https://download.virtualbox.org/virtualbox 
+
+build () {
+
+  VBOX_NAME=VirtualBox
+  VBOX_RUN="$VBOX_NAME-${version}-${sversion}-Linux_amd64.run"
+  VBOX_INSTALL="/opt/$VBOX_NAME"
+  VBOX_BIN="$PKG/opt/bin"
+  VBOX_ICONS="$PKG/opt/share/icons/hicolor"
+
+  sh $VBOX_RUN --keep --noexec --target $SRC
+
+  mkdir -p $PKG/sbin                                           \
+           $PKG/opt/bin                                        \
+           $PKG/opt/src/                                       \
+           $PKG/etc/vbox                                       \
+           $PKG/opt/VirtualBox                                 \
+           $PKG/etc/udev/rules.d/                              \
+           $PKG/opt/share/pixmaps/                             \
+           $PKG/opt/share/applications/                        \
+           $PKG/opt/share/mime/packages/                       \
+           $VBOX_ICONS/{16x16,20x20,24x24}/{mimetypes,apps}    \
+           $VBOX_ICONS/{32x32,48x48,64x64}/{mimetypes,apps}    \
+           $VBOX_ICONS/{72x72,96x96,128x128}/{mimetypes,apps}  \
+           $VBOX_ICONS/256x256/{mimetypes,apps}                \
+
+  cd $PKG/$VBOX_INSTALL
+  tar xfj $SRC/$VBOX_NAME.tar.bz2
+  install -m 755 $SRC/vbox_build_module $VBOX_BIN
+
+  # Create symlinks to start binaries
+  ln -sf $VBOX_INSTALL/VBox.sh $VBOX_BIN/$VBOX_NAME
+  if [ -f $PKG/$VBOX_INSTALL/${VBOX_NAME}VM ]; then
+    ln -sf $VBOX_INSTALL/VBox.sh $VBOX_BIN/${VBOX_NAME}VM
+  fi
+  ln -sf $VBOX_INSTALL/VBox.sh 	$VBOX_BIN/VBoxSDL
+  ln -sf $VBOX_INSTALL/vbox-img $VBOX_BIN/vbox-img
+  ln -sf $VBOX_INSTALL/VBox.sh 	$VBOX_BIN/VBoxVRDP
+  ln -sf $VBOX_INSTALL/VBox.sh 	$VBOX_BIN/VBoxManage
+  ln -sf $VBOX_INSTALL/VBox.sh 	$VBOX_BIN/vboxwebsrv
+  ln -sf $VBOX_INSTALL/VBox.sh 	$VBOX_BIN/VBoxHeadless
+  ln -sf $VBOX_INSTALL/VBox.sh 	$VBOX_BIN/VBoxBugReport
+  ln -sf $VBOX_INSTALL/VBox.sh 	$VBOX_BIN/VBoxBalloonCtrl
+  ln -sf $VBOX_INSTALL/VBox.png $PKG/opt/share/pixmaps/VBox.png
+  if [ -f $PKG/$VBOX_INSTALL/VBoxDTrace ]; then
+    ln -sf $VBOX_INSTALL/VBox.sh $VBOX_BIN/VBoxDTrace
+  fi
+  ln -sf $VBOX_INSTALL/vboxdrv.sh $PKG/sbin/rcvboxdrv
+
+  for n in VBoxVMM.so VBoxRT.so; do
+    ln -sf $VBOX_INSTALL/${n} components
+  done
+  chmod go-w .
+
+  # Icons
+  cur=`pwd`
+  cd $PKG/$VBOX_INSTALL/icons
+  for i in *; do
+    cd $i
+    if [ -d $VBOX_ICONS/$i ]; then
+      for j in *; do
+        if expr "$j" : "${name::-4}\..*" > /dev/null; then
+          dst=apps
+        else
+          dst=mimetypes
+        fi
+        if [ -d $VBOX_ICONS/$i/$dst ]; then
+          ln -s $VBOX_INSTALL/icons/$i/$j \
+                $VBOX_ICONS/$i/$dst/$j
+        fi
+      done
+    fi
+    cd -
+  done
+  cd $cur
+
+  # Fix python
+  mkdir -p ${PKG}/opt/lib
+  ln -s /usr/lib/libpython3.7m.so.1.0 ${PKG}/opt/lib/libpython3.4m.so.1.0
+  ln -s /usr/lib/libpython2.7.so.1.0 ${PKG}/opt/lib/libpython2.6.so.1.0
+
+  # Remove junk
+  find nls -type f ! -name '*en*' -exec rm -f {} \; 
+  rm -rf $PKG/$VBOX_INSTALL/sdk
+
+  # Install udev rules
+  install -m644 $SRC/60-vboxdrv.rules $PKG/etc/udev/rules.d/60-vboxdrv.rules
+
+  echo "# $VBOX_NAME installation directory" > $PKG/etc/vbox/vbox.cfg
+  echo "INSTALL_DIR="\"$VBOX_INSTALL\" >> $PKG/etc/vbox/vbox.cfg
+  chmod 4511 $PKG/opt/$VBOX_NAME/{VirtualBoxVM,VBoxSDL,VBoxHeadless}
+  chmod 4511 $PKG/opt/$VBOX_NAME/{VBoxNetAdpCtl,VBoxVolInfo,VBoxNetDHCP,VBoxNetNAT}
+
+}

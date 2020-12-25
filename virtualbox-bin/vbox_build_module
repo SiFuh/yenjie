@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "Building Virtualbox kernel modules for kernel $(uname -rv)"
+cd /opt/VirtualBox/src/vboxhost
+make clean && make && make install

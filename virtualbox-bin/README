@@ -1,0 +1,15 @@
+NOTE:
+
+	If you wish for the Virtual Box drivers to be loaded
+	on boot then edit /etc/rc.local config file and add
+	something similar to this.
+
+	if [ -f /sbin/rcvboxdrv ]; then
+		rcvboxdrv start
+	fi
+
+NOTE:
+    
+    If you have any machines in a saved state it is 
+    recommeneded that you shut them down before updating 
+    this port.
