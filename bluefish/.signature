@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uNsRSKlEAuBL72I/EdSPO0BOPA99ijhC+xqJwi/vPk+eZySO2i99ywrfAaNZcVUoJj8Rus7tTR/8x42uE4cYDgc=
+SHA256 (Pkgfile) = baf5f9f3c86d9b51035dd665139a235fb51fb690f6685291cc16362b569fb328
+SHA256 (.footprint) = 03b8f29bb6687d4ba978d4a8a0854c0400bd8d1868f4c20027c87ed26ee9845b
+SHA256 (bluefish-2.2.11.tar.gz) = 5d4c26365880debe7872c2139a755ee4e45ad74c7aca17c955423282d171f328
