@@ -1,0 +1,17 @@
+# Description:  A simple utility for updating the linux kernel
+# URL:          https://github.com/SiFuh/yenjie/ckut
+# Packager:
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   pv lynx dialog
+
+name=ckut
+version=1.3
+release=1
+source=(${name}-${version}.bash ${name}.conf)
+
+build() {
+
+  install -D -m 755 ${SRC}/${name}-${version}.bash ${PKG}/usr/sbin/${name}
+  install -D -m 644 ${SRC}/${name}.conf ${PKG}/etc/${name}.conf
+
+}

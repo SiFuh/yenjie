@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uGFlhrx6L/vG46ucSHDz74qzOcM+ZzLbkongEcofNu8pRxwUTiTla/+HpVFL2H39yfkTQ8TrSWcTF5ZFowdewwo=
+SHA256 (Pkgfile) = 93d5dbbaa9d730332640d5b24746d838c222ab36a52b905e5a989739322079f6
+SHA256 (.footprint) = 362027a72f3d2878a6686e643f2b3d76d22504b6e1b65a56d66d9db172aeb190
+SHA256 (ckut-1.3.bash) = 9c54101d091577245b367796d74388a0a3c01cc0d4565be2e9571be23e4d8432
+SHA256 (ckut.conf) = 6b43431467d2cedd632db425cf890910e6d071e1e3df66e6b18b1bb10903fc85
