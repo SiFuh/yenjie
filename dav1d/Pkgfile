@@ -1,0 +1,18 @@
+# Description:  AV1 cross-platform decoder
+# URL:          https://www.videolan.org/projects/dav1d.html
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   meson ninja
+
+name=dav1d
+version=0.7.0
+release=1
+source=(https://downloads.videolan.org/pub/videolan/${name}/${version}/${name}-${version}.tar.xz)
+
+build() {
+
+  cd ${name}-${version}
+
+  meson build --prefix=/usr
+  DESTDIR=${PKG} ninja -C build install
+
+}
