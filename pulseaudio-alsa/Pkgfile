@@ -1,0 +1,16 @@
+# Description:  ALSA Configuration for PulseAudio
+# URL:          http://www.pulseaudio.org
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   pulseaudio alsa-plugins
+
+name=pulseaudio-alsa
+version=2.0
+release=1
+source=(asound.conf)
+
+build() {
+
+        install -Dm644 asound.conf "${PKG}"/etc/asound.conf
+
+}
+

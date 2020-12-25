@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uDse8hp5J2Hd4RHENJ+f2eqjmWfH6CoeMrri3KHFCzF2954Y866v/T6yTcJ8GrCDcVzIotlS4+jbR7zVP7AzGAc=
+SHA256 (Pkgfile) = be0802b2a5fe86c8d55854c56a6d8770f8615b20777133a92873bb68e14ca2d6
+SHA256 (.footprint) = 33b9847a2289f264c2282efcd928688f1168f7ea56fc3208c47ab9ad36e6799a
+SHA256 (asound.conf) = c9ef23e348adac1e7bc378571f476deee0a5e4a38bf63ad9e010252296214c87
