@@ -1,0 +1,45 @@
+# Description:  A fully integrated 3D graphics creation suite.
+# URL:          http://blender.org/
+# Packager: 
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   boost cmake desktop-file-utils ffmpeg fftw glew glu python3 git openjpeg freetype intel-tbb opus libtheora alsa-lib python3-numpy icu
+
+name=blender
+version=2.90.1
+release=1
+source=(https://download.blender.org/source/${name}-${version}.tar.xz)
+
+build() {
+
+  cmake -S "${name}"-"${version}" -B build -G Ninja     \
+        -D WITH_CYCLES=OFF                              \
+        -D PYTHON_VERSION=3.7                           \
+        -D WITH_CYCLES_EMBREE=OFF                       \
+        -D WITH_INTERNATIONAL=OFF                       \
+        -D WITH_PYTHON_INSTALL=OFF                      \
+        -D PYTHON_LIBPATH=/usr/lib                      \
+        -D CMAKE_BUILD_TYPE=Release                     \
+        -D PYTHON_LIBRARY=python3.7m                    \
+        -D WITH_DOC_MANPAGE=ON                          \
+        -D CMAKE_INSTALL_PREFIX=/usr                    \
+        -D WITH_INSTALL_PORTABLE=OFF                    \
+        -D OPTIX_ROOT_DIR="${SRC}"/include              \
+        -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"     \
+        -D PYTHON_INCLUDE_DIRS=/usr/include/python3.7   \
+        -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -DNDEBUG"
+
+  cmake --build build
+
+  DESTDIR="${PKG}" cmake --install build
+
+  install -Dm755 "${name}"-"${version}"/release/bin/blender-softwaregl \
+                 "${PKG}/usr/bin/blender-softwaregl"
+
+  python3 -m compileall "${PKG}"/usr/share/blender
+  python3 -O -m compileall "${PKG}"/usr/share/blender
+
+  rm -rf "${PKG}"/usr/share/doc
+  find "${PKG}" -name README.md -delete
+  find "${PKG}" -name CHANGELOG.md -delete
+
+}
