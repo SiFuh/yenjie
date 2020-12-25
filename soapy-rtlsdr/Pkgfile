@@ -1,0 +1,29 @@
+# Description:  A plugin module to use the RTL-SDR dongle within the SoapySDR API
+# URL:          https://github.com/pothosware/SoapyRTLSDR/wiki
+# Packager:
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   rtl-sdr
+
+name=soapy-rtlsdr
+_name=SoapyRTLSDR
+version=0.3.1
+release=1
+source=(https://github.com/pothosware/${_name}/archive/soapy-rtl-sdr-${version}/${name}-${version}.tar.gz)
+#source=(https://github.com/pothosware/${_name}/archive/${name}-${version}/${name}-${version}.tar.gz)
+
+build() {
+
+  [[ -e '/usr/bin/ninja' ]] && NINJA=' -G Ninja'
+
+  cmake -S "${_name}"-soapy-rtl-sdr-"${version}"       \
+        -B build ${NINJA}                              \
+        -D CMAKE_BUILD_TYPE=Release                    \
+        -D CMAKE_INSTALL_PREFIX:PATH=/usr              \
+        -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"    \
+        -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -DNDEBUG"
+
+  cmake --build build
+
+  DESTDIR="${PKG}" cmake --install build
+
+}
