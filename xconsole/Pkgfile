@@ -1,0 +1,22 @@
+# Description: 	Xorg's xconsole
+# URL:         	https://www.x.org/
+# Packager:    
+# Maintainer:	Lin SiFuh, #crux at freenode dot net 	  
+# Depends on:  	xorg-libxaw xorg-libxmu xorg-libxt xorg-libx11 xorg-xorgproto
+
+name=xconsole
+version=1.0.7
+release=1
+source=(https://www.x.org/releases/individual/app/$name-$version.tar.gz)
+
+build () {
+
+	cd  $name-$version
+
+        ./configure --prefix=/usr
+
+        make
+        make DESTDIR=$PKG install
+
+	chmod +s $PKG/usr/bin/$name
+}
