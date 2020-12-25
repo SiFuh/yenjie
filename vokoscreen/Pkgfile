@@ -1,0 +1,22 @@
+# Description: Video Desktop Screen Recorder
+# URL:         http://linuxecke.volkoh.de/vokoscreen/vokoscreen.html
+# Packager:    
+# Maintainer:  Lin SiFuh, #crux at freenode dot net
+# Depends on:  git qt5 alsa-lib alsa-utils xorg-libx11 v4l-utils lame xdg-utils lsof ffmpeg pulseaudio
+
+name=vokoscreen
+version=2.5.8
+release=2
+source=(https://raw.githubusercontent.com/SiFuh/yenjie/master/${name}/${name}-${version}.zip)
+
+build () {
+
+  cd ${name}-master
+
+  export INSTALL_ROOT=${PKG}
+
+  qmake-qt5 
+  make
+  make DESTDIR=${PKG} install
+
+}
