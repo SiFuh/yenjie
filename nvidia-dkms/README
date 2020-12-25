@@ -1,0 +1,73 @@
+
+README for nvidia 1xx.xx+
+
+
+
+*** NOTE for nvidia with udev ***
+
+If using udev, add your user to the "video" group to be able to
+use the nvidia devices required for 3d to function properly.
+
+IMPORTANT:
+
+    If you have any previous versions of nvidia-dkms installed, it is recommended
+    that you run 'dkms' and remove the previous versions of nvidia's dkms modules
+    before you update to the current nvidia-dkms version. Also, you can take a 
+    look in the directory /var/lib/dkms/nvidia/ and remove any unnecessary build 
+    files for the previous nvidia version you may wish to replace. 
+
+    example:
+        dkms unbuild -m nvidia -v <VERSION> -k <KERNEL-VERSION>
+        prt-get update -fr nvidia-dkms 
+
+NOTE:
+
+    Dynamic Kernel Module Support (DKMS) is a program/framework that enables
+    generating Linux kernel modules whose sources generally reside outside the
+    kernel source tree.
+
+    To use this feature it is recommended to run dkms after compiling a new
+    kernel, specifying the new kernel version with the flag -k. To list which
+    modules you have that are in the dkms tree you can simply run the command
+    dkms status. Running the command dkms add -m <module> -v <version> will add
+    the module to the dkms tree. Likewise running the command dkms build -m
+    <module> -v <version> will build the module to the current kernel version,
+    or more specifically dkms build -m <module> -v <version> -k <kernelversion>
+    will build the module for a chosen kernel version.
+
+    If you'd like to build dkms modules on boot up then adding the lines below
+    to /etc/rc.modules should suffice. However, this should be added before any
+    modules that you wish to load with modprobe.
+
+        if [ -x /usr/sbin/dkms ]; then
+          /usr/sbin/dkms autoinstall
+        fi
+
+    An example of what an /etc/rc.modules file would look like would be
+    something like this.
+
+        #!/bin/bash
+        #
+        # /etc/rc.modules: module initialization script
+        #
+
+        /sbin/depmod -a
+
+        if [ -x /usr/sbin/dkms ]; then
+          /usr/sbin/dkms autoinstall
+        fi
+
+        modprobe 88XXau
+        modprobe tuxedo_keyboard
+
+    You will find the location of the dkms links to your modules under the
+    directory /var/lib/dkms/<modules>-<version>. There will be a source link
+    directly to the location of the module which should be located under
+    /usr/src/<module>-<version> unless the user specifies a different location.
+
+    If you wish to remove a specific module you can run the command dkms remove
+    -m <module> -v <version> -k <kernelversion>.
+
+    For further information it is highly recommended that you read the man pages.
+
+
