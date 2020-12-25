@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uNjEURFraWaHcWCufpLu9+/+oxePziOrGYVZ9LmQbam8tykVsCTGDj72SWYdYrMbVzMvnJW/J0iDNyZRoQePJQQ=
+SHA256 (Pkgfile) = 9c898f83189e575a6a1981fdb04a5cb1a982523b710da9a8fde5ff91888b5301
+SHA256 (.footprint) = 6763110dac9f2790a627a354fe0c462fd3adea7abb8f332a3d7fc1bdff217517
+SHA256 (binwalk-2.2.0.tar.gz) = f5495f0e4c5575023d593f7c087c367675df6aeb7f4d9a2966e49763924daa27
