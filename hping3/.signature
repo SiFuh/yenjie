@@ -1,0 +1,10 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uC171osjl3hmnAg2scycl7SIikJDOu4O/JjnB/4cSvyP8sbFzXXCbKbm5rSuDzT/Rwgba1KDSIQO5ZUW9gBk0gI=
+SHA256 (Pkgfile) = 72ffa670239f5e7367d6cf5b7ea625cbe748c53eb0f6ea3a99c28070a1637cd4
+SHA256 (.footprint) = 8dd6a59635220aa695d035fcac927ec89864069a282a0c70e474b38e737de86f
+SHA256 (hping3-20051105.tar.gz) = f5a671a62a11dc8114fa98eade19542ed1c3aa3c832b0e572ca0eb1a5a4faee8
+SHA256 (bytesex_h.patch) = 0dc8b1b5910099bddaddc29dd1fce874e4da217d5f10211b95fe7ae61cba6921
+SHA256 (libpcap_stuff_c.patch) = c88ddd7e5a3d92e07c41fc8e5e130c3e03807da7d430e1902a0433bc9edb04d5
+SHA256 (script_c.patch) = 07cdfab8bbfebdc895561fa0cbeb6ab9fa0bb1b2356e7179457fd1d7f03f3e36
+SHA256 (Makefile.patch) = 767322338c6202aad62a55912a8032465eed6f9c429e836682203e15c962550b
+SHA256 (hping2_h.patch) = f5664a04cec243957db8c8eef92a04ed22ae36cfaea7fc3f54e5896a0a0a9c4b

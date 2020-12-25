@@ -1,0 +1,11 @@
+--- script.c.orig	2020-02-18 13:55:18.129999876 +0000
++++ script.c	2020-02-18 13:55:37.443333209 +0000
+@@ -24,7 +24,7 @@
+ 
+ #include <sys/ioctl.h>
+ #include <pcap.h>
+-#include <net/bpf.h>
++#include <pcap/bpf.h>
+ 
+ #include "release.h"
+ #include "hping2.h"

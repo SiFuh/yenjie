@@ -1,0 +1,11 @@
+--- libpcap_stuff.c.orig	2020-02-18 13:31:03.763333246 +0000
++++ libpcap_stuff.c	2020-02-18 13:31:15.683333250 +0000
+@@ -17,7 +17,7 @@
+ #include <stdlib.h>
+ #include <sys/ioctl.h>
+ #include <pcap.h>
+-#include <net/bpf.h>
++#include <pcap/bpf.h>
+ 
+ #include "globals.h"
+ 

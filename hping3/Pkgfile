@@ -1,0 +1,34 @@
+# Description:  A command-line oriented TCP/IP packet assembler/analyzer
+# URL:          http://www.hping.org/
+# Packager:	
+# Maintainer:   Lin SiFuh, #crux at freenode dot net 	
+# Depends on:   libpcap tcl
+
+name=hping3
+version=20051105
+release=1
+source=(http://www.hping.org/${name}-${version}.tar.gz	\
+        bytesex_h.patch	libpcap_stuff_c.patch 		      \
+        script_c.patch Makefile.patch hping2_h.patch)
+
+build() {
+	
+  export MANPATH=${PKG}/usr/share/man
+  mkdir -p ${PKG}/usr/{sbin,share/man/man8}
+
+  cd ${name}-${version}
+	
+  patch -p0 -i ${SRC}/bytesex_h.patch
+  patch -p0 -i ${SRC}/libpcap_stuff_c.patch
+  patch -p0 -i ${SRC}/script_c.patch
+  patch -p0 -i ${SRC}/hping2_h.patch
+
+  ./configure --prefix=/usr 
+	
+  patch -p0 -i ${SRC}/Makefile.patch
+
+  make
+  make strip
+  make DESTDIR=${PKG} install
+
+}

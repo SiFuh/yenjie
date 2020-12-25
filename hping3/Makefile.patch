@@ -1,0 +1,22 @@
+--- Makefile.orig	2020-02-18 13:39:38.463333234 +0000
++++ Makefile	2020-02-18 13:53:33.823333215 +0000
+@@ -16,6 +16,7 @@
+ COMPILE_TIME=
+ INSTALL_MANPATH=/usr/share/man
+ PCAP=-lpcap
++DESTDIR= @DESTDIR@
+ 
+ ARSOBJ = ars.o apd.o split.o rapd.o
+ 
+@@ -72,10 +73,7 @@
+ 	rm -rf hping3 *.o byteorder byteorder.h systype.h Makefile libars.a .depend
+ 
+ install: hping3
+-	cp -f hping3 /usr/sbin/
+-	chmod 755 /usr/sbin/hping3
+-	ln -s /usr/sbin/hping3 /usr/sbin/hping
+-	ln -s /usr/sbin/hping3 /usr/sbin/hping2
++	install -c -m 755 hping3 $(DESTDIR)/usr/sbin/
+ 	@if [ -d ${INSTALL_MANPATH}/man8 ]; then \
+ 		cp ./docs/hping3.8 ${INSTALL_MANPATH}/man8; \
+ 		chmod 644 ${INSTALL_MANPATH}/man8/hping3.8; \

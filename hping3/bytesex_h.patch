@@ -1,0 +1,10 @@
+--- bytesex.h.orig	2020-02-18 13:28:10.433333252 +0000
++++ bytesex.h	2020-02-18 13:27:15.926666577 +0000
+@@ -9,6 +9,7 @@
+ 
+ #if 	defined(__i386__) \
+ 	|| defined(__alpha__) \
++	|| defined(__x86_64__) \
+ 	|| (defined(__mips__) && (defined(MIPSEL) || defined (__MIPSEL__)))
+ #define BYTE_ORDER_LITTLE_ENDIAN
+ #elif 	defined(__mc68000__) \
