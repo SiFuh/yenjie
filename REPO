@@ -206,9 +206,9 @@ f:4bc0e7288c60bce839799b14a76d47b8:libmp4v2/libmp4v2-c++11.patch
 f:0c1531f53c8bf908df833e033450c67f:libnftnl/.footprint
 f:de0f58605719878f53fe9d9e1deb1340:libnftnl/.signature
 f:af570592abe8ad0414d626a9b1ac6aee:libnftnl/Pkgfile
-f:a9169b9594041f76499c206995309404:libopenshot/Pkgfile
+f:161a06c5a60ef96c8d7536b2aafb31c6:libopenshot/Pkgfile
 f:a54fe8064ae0a259bfff308543f9aebe:libopenshot/.footprint
-f:0b3fa784c17b6b70c6e46b8482f2f7bb:libopenshot/.signature
+f:1f42fc0055e679c1e80a28a83c93a3f4:libopenshot/.signature
 f:bcc48facc866b4cb759ee408879c45f0:libopenshot-audio/Pkgfile
 f:04fa32f53b5f9e0d2f6e286d068625d3:libopenshot-audio/.signature
 f:fa9233e48b19cc571e24f0a83746bee1:libopenshot-audio/.footprint

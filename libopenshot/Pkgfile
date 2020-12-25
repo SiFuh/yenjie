@@ -6,7 +6,7 @@
 
 name=libopenshot
 version=0.2.5
-release=1
+release=2
 source=(https://launchpad.net/${name}/${version//.5}/${version}/+download/${name}-${version}.tar.gz)
 
 build() {
