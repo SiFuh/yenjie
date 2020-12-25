@@ -1,0 +1,7 @@
+drwxr-xr-x	root/root	opt/
+drwxr-xr-x	root/root	opt/bin/
+lrwxrwxrwx	root/root	opt/bin/qq -> /opt/tencent-qq/qq
+drwxr-xr-x	root/root	opt/tencent-qq/
+-rwxr-xr-x	root/root	opt/tencent-qq/qq
+-rw-r--r--	root/root	opt/tencent-qq/qq.png
+-rw-r--r--	root/root	opt/tencent-qq/res.db

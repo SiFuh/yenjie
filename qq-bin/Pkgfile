@@ -1,0 +1,22 @@
+# Description:  QQ Instant Messenger Client for Linux
+# URL:          https://im.qq.com/linuxqq/index.html
+# Packager:
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:
+
+name=qq-bin
+version=2.0.0
+release=1
+source=(http://down.qq.com/qqweb/LinuxQQ_1/linuxqq_${version}-b2-1082_x86_64.pkg.tar.xz)
+
+build() {
+
+  mkdir -p "${PKG}/opt/bin"
+  cp -r "${SRC}/usr/local/share/tencent-qq" "${PKG}/opt/"
+  cp "${SRC}/usr/local/bin/qq" "${PKG}/opt/tencent-qq/"
+
+  ln -s "/opt/tencent-qq/qq" "${PKG}/opt/bin/qq"
+
+  rm ${PKG}/opt/tencent-qq/{CHANGELOG.txt,credits.html}
+
+}
