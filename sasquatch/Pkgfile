@@ -13,6 +13,8 @@ gsource=(https://github.com/devttys0/sasquatch)
 
 build() {
 
+  export LDFLAGS="-Wl,--allow-multiple-definition"
+
   cd "${PKGMK_SOURCE_DIR}"
  
   if cd "${name}"; then

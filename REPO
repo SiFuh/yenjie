@@ -316,8 +316,8 @@ f:545093234d26e3efb38981491d751b2e:sabnzbd/.footprint
 f:f568a5dd87b6ff2900c52df5156e7f9e:sabnzbd/Pkgfile
 f:e27a5f0c41957c351aeded5d2be272e0:sabnzbd/.signature
 f:849eb44eacbe2605c7ee2f27d1d4c529:sasquatch/.footprint
-f:40b202298ab160d306fdcd6d371ba886:sasquatch/.signature
-f:1960f197423794691a639d1039787788:sasquatch/Pkgfile
+f:3e01aeaf357273f0068bb1e2d77ed176:sasquatch/.signature
+f:587864f3c1f4d8f23ed016aafa19e186:sasquatch/Pkgfile
 f:4610810b3c1fe09f942fd0d1f9e4ffdd:sasquatch/read_fragment_table_n_stack_overflow-fix.patch
 f:ceb74bd5e8ed08670dc31a0f08c780fa:secure-delete/Pkgfile
 f:0b8fb618edd01dda3d4e88d02da0571e:secure-delete/.signature
