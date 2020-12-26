@@ -2,7 +2,7 @@
 # URL:          https://www.openshot.org/
 # Packager:    
 # Maintainer:   Lin SiFuh, #crux at freenode dot net
-# Depends on:   libopenshot-audio libopenshot python3-pyqt5 python3-pyzmq
+# Depends on:   libopenshot-audio libopenshot qtwebkit python3-pyqt5 python3-pyzmq python3-requests
 
 name=openshot-qt
 version=2.5.1
@@ -13,8 +13,9 @@ build() {
 
   python3 setup.py install --root="${PKG}/" --optimize=1
 
-  find ${PKG} -name README -delete
-  find ${PKG} -name AUTHORS -delete
-  find ${PKG} -name COPYING -delete
-  find ${PKG} -name CONTRIBUTORS -delete
+  find "${PKG}" -name README -delete
+  find "${PKG}" -name AUTHORS -delete
+  find "${PKG}" -name COPYING -delete
+  find "${PKG}" -name CONTRIBUTORS -delete
+
 }

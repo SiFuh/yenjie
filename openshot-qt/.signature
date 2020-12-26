@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uKw3zmSGECO1XIFfAik9juEUrZQ7KqJV0fxRMkgPiavpfAg0PbTSccveNk2/nQVTK89NlYJNFOjN9WIgYp+7Uwo=
-SHA256 (Pkgfile) = 67a14b0b0d7867e695529b4625c8a135eafab97d287e2bb0529312bb66975d93
+RWQ0NN0w0eo0uOBC0kQvRqQ9FZTPNzrVONJ/aNq2r56rloO1XzCmhz8gWbzEj8mdaS5rVp1Th5npjY7lwGTK7gcaG64Bc38Gbw8=
+SHA256 (Pkgfile) = 26aed2aa2e6450a9e5663921f0b58c44f246b0a43ab1af8d1d49f57df6fd9e92
 SHA256 (.footprint) = 579a305eba079e33329b721944f9fa4db5fa158a178285407b02cfdeed2a27b3
 SHA256 (openshot-qt-2.5.1.tar.gz) = d1ff6958acd7a0e86c94516e0a6182926f4ed377c62eaa9187cb585c37133738
