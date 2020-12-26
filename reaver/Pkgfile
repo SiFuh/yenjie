@@ -11,6 +11,8 @@ source=(https://storage.googleapis.com/google-code-archive-downloads/v2/code.goo
 
 build() {
 
+  export LDFLAGS="-Wl,--allow-multiple-definition"
+
   if [ -n "$(pkginfo -i | grep '^ccache ')" ]; then
     export PATH="/sbin:/usr/sbin:/opt/sbin:/bin:/usr/bin:/opt/bin"
   fi
