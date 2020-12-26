@@ -91,6 +91,7 @@ d:xxhash
 d:zeromq
 d:alizams-bin
 d:libopenshot-audio-git
+d:libopenshot-git
 f:d534b5f4a03b31585ab5ff98b200b8e7:lshw/.signature
 f:143d2604bf77fb4c9de17df37d92ed29:lshw/.footprint
 f:235b26e6186eec19722944d68167ecd1:lshw/Pkgfile
@@ -443,3 +444,6 @@ f:d68aeb421bcb338e2d201fe34250438c:alizams-bin/Pkgfile
 f:fb1bed63121bdb6882f0e0ee62b0c8cb:libopenshot-audio-git/.footprint
 f:f24c43ccbb75345f3249bba5da80b93d:libopenshot-audio-git/Pkgfile
 f:92ec43cab6c68862bc5a26fa2757d9f4:libopenshot-audio-git/.signature
+f:1bab3fc030bfb9d4e6268b5822546f82:libopenshot-git/.footprint
+f:42c823d373dcfcbcb0bcd77d85e04fae:libopenshot-git/Pkgfile
+f:1c328bd5cdbc7cfd311071e1b58cd01b:libopenshot-git/.signature
