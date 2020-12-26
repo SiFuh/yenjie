@@ -108,8 +108,8 @@ f:86c3361a6284f5be956c2f8721097a33:artwiz-aleczapka-fonts/Pkgfile
 f:cc8ced517148927d00993eaff74cfecd:artwiz-aleczapka-fonts/post-install
 f:009a9a8dc936eef264415338b6f39316:artwiz-aleczapka-fonts/.footprint
 f:7ae8796432ac9bbb218706028fc5717a:binwalk/Pkgfile
-f:78cfeb87b0912dc2db3f858684a7e7ee:binwalk/.signature
-f:7c721375fd6a390daa187ddad4f5cd64:binwalk/.footprint
+f:392e5865624525f78b5328248b7a39ac:binwalk/.signature
+f:f493aa63155eac74dd8f9b7ad72c40ce:binwalk/.footprint
 f:ec7fa3f1242e09166b112b1647a660d6:blender/.signature
 f:268b21fb4f63796f53a12fb959040efb:blender/Pkgfile
 f:9c20f7f03dd846c6827f09b048744650:blender/.footprint
