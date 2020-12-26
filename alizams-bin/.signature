@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uKcPqPyBLobBbVU66prZCsKcyywsCqJWgeW9fz3CViuFVrR8hcVY0fvOd32RLCe2xfvi9iZic8tt00W4nucQzws=
-SHA256 (Pkgfile) = 7b29cdd903bf478f5992c8007e4c08ea4e6efa4360bb8ca3d345645e52319abe
-SHA256 (.footprint) = e442d606d8c84d5ae4f90fc9cf02fe4439f4be5028ce77a79a227b07085c9476
+RWQ0NN0w0eo0uGiI2FWkR+vP2vFaYv3zdiBSIBPL8Wh5aa60PdWgr0gVe5FdMmUjqonovQbcepzJrJrCR29Po0yn7V8aHhyQPAI=
+SHA256 (Pkgfile) = 6572f3ea54900a1f96ff502ff3131077790966dfbad7d6bb334a17b3734f7c49
+SHA256 (.footprint) = a254a9d58eb432e27d4a7d00b0527686c7af5e4e637ef4f3f30c941d4a97353c
 SHA256 (alizams-1.2.2_linux.tar.gz) = 154c4f98522b2f8e142746d0911346f0756b3c98904c1b8e6fefa31696a2d78d
 SHA256 (alizams_sh.patch) = a6eb972dc08d572f3fd6c019d2fe4bd6caf2180ed483667e97bfaa40844a567f

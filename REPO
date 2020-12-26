@@ -439,9 +439,9 @@ f:598692d2e9c29bf64608bc459f9e0b30:zeromq/.footprint
 f:355530426581474e5abfbd45c38dc851:zeromq/Pkgfile
 f:365c168edf622d05211d92a382f55032:yenjie.httpup
 f:6bbec22c453cce2269312934c1e2fbb5:alizams-bin/alizams_sh.patch
-f:dee45283e3272c653a552a3d146c9958:alizams-bin/.footprint
-f:a74e2942aff6b4181f3a1e176d583353:alizams-bin/.signature
-f:d68aeb421bcb338e2d201fe34250438c:alizams-bin/Pkgfile
+f:1ed99cac256d4291f06a0a57edce0896:alizams-bin/.footprint
+f:21a74fbb7351b833adef27034f972bce:alizams-bin/.signature
+f:0766c16fe50c3662b3538edf3688ff1d:alizams-bin/Pkgfile
 f:fb1bed63121bdb6882f0e0ee62b0c8cb:libopenshot-audio-git/.footprint
 f:f24c43ccbb75345f3249bba5da80b93d:libopenshot-audio-git/Pkgfile
 f:92ec43cab6c68862bc5a26fa2757d9f4:libopenshot-audio-git/.signature

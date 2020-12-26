@@ -1,3 +1,6 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/ld.so.conf.d/
+-rw-r--r--	root/root	etc/ld.so.conf.d/alizams.conf
 drwxr-xr-x	root/root	opt/
 drwxr-xr-x	root/root	opt/alizams/
 drwxr-xr-x	root/root	opt/alizams/bin/
@@ -27,6 +30,7 @@ lrwxrwxrwx	root/root	opt/alizams/lib/libQtSvg.so -> libQtSvg.so.4.8.7
 lrwxrwxrwx	root/root	opt/alizams/lib/libQtSvg.so.4 -> libQtSvg.so.4.8.7
 lrwxrwxrwx	root/root	opt/alizams/lib/libQtSvg.so.4.8 -> libQtSvg.so.4.8.7
 -rwxr-xr-x	root/root	opt/alizams/lib/libQtSvg.so.4.8.7
+lrwxrwxrwx	root/root	opt/alizams/lib/libQtXml.so.4 -> /usr/lib/libQt5Xml.so
 drwxr-xr-x	root/root	opt/alizams/plugins/
 drwxr-xr-x	root/root	opt/alizams/plugins/codecs/
 -rwxr-xr-x	root/root	opt/alizams/plugins/codecs/libqcncodecs.so

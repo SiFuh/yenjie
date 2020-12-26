@@ -21,4 +21,9 @@ build() {
   mkdir -p  "${PKG}"/opt/"${_name}"
   mv {bin,lib,plugins} "${PKG}"/opt/"${_name}"
 
+  mkdir -p "${PKG}"/etc/ld.so.conf.d
+  echo "/opt/alizams/lib/" > "${PKG}"/etc/ld.so.conf.d/"${_name}".conf
+
+  ln -s /usr/lib/libQt5Xml.so "${PKG}"/opt/"${_name}"/lib/libQtXml.so.4
+
 }
