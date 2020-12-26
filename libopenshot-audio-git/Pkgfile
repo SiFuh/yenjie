@@ -1,0 +1,44 @@
+# Description:  Audio library for openshot-qt
+# URL:          https://launchpad.net/libopenshot-audio
+# Packager:
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   cmake alsa-lib
+
+name=libopenshot-audio-git
+_name=libopenshot-audio
+version=0.2.0
+sversion=beec0d158206920afeefa60de87e473eaec609a6
+release=1
+source=()
+gsource=(https://github.com/OpenShot/${_name}/)
+
+build() {
+
+  cd "${PKGMK_SOURCE_DIR}"
+ 
+  if cd "${_name}"; then
+    git reset --hard
+    git pull "${gsource}"
+  else
+    git clone "${gsource}" "${_name}"
+    cd "${_name}"
+  fi
+
+  git checkout "${sversion}"
+
+  cd "${SRC}" 
+  rsync -a "${PKGMK_SOURCE_DIR}"/"${_name}" .
+
+  [[ -e '/usr/bin/ninja' ]] && NINJA=' -G Ninja'
+
+  cmake -S "${_name}" -B build ${NINJA}                \
+        -D CMAKE_BUILD_TYPE=Release                    \
+        -D CMAKE_INSTALL_PREFIX:PATH=/usr              \
+        -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"    \
+        -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -DNDEBUG"
+
+  cmake --build build
+
+  DESTDIR="${PKG}" cmake --install build
+
+}
