@@ -16,7 +16,7 @@
 #   **** USE AT YOUR OWN RISK ****
 #
 
-VERSION="v1.3"
+VERSION="v1.4"
 TITLE="CRUX Kernel Update Tool ${VERSION}    ${MESSAGE}"
 CONFIG="/etc/ckut.conf"
 KERNEL_OLD="$(uname -r)"
@@ -81,6 +81,13 @@ check_folder() {
     MESSAGE="Directory ${DOWNLOAD_LOCATION}/linux-${KERNEL} does not exist"
     error_message
   fi
+}
+
+# Have a look if CONFIG_LOCALVERSION is set in the kernel config
+check_localversion() {
+  unset LOCALVERSION
+  cd "/usr/src/linux-${KERNEL}" || return
+  LOCALVERSION=$(grep "CONFIG_LOCALVERSION=" .config | cut -d \" -f 2)
 }
 
 # First menu the main page
@@ -224,6 +231,7 @@ while true; do
             to create and configure a new .config\n\nContinuing without it"
           error_kernel
           unset error
+          check_localversion
         fi
       fi
       ;;
@@ -241,6 +249,7 @@ while true; do
         clear
         make "${MAKEFLAGS[@]}" menuconfig
         echo "make ${MAKEFLAGS[*]} menuconfig" >> "${TMPDIR}/ckut.log"
+        check_localversion
       fi
       ;;
 
@@ -257,6 +266,7 @@ while true; do
         make "${MAKEFLAGS[@]}" all 
         { echo -e "make ${MAKEFLAGS[*]} all"
         } >> "${TMPDIR}/ckut.log"
+        check_localversion
         read -n 1 -r -s -p $'Press enter to continue...'
       fi
       ;;
@@ -282,11 +292,11 @@ while true; do
           \"${KERNEL_LOCATION}/System.map-${KERNEL}${LOCALVERSION}\" ; \
           cp -v .config \
           \"${KERNEL_LOCATION}/config-${KERNEL}${LOCALVERSION}\"" 10 90
-       { echo -e "cp bzImage ${KERNEL_LOCATION}/vmlinuz-${KERNEL}${LOCALVERSION}"
-         echo -e "cp System.map ${KERNEL_LOCATION}/System.map-${KERNEL}${LOCALVERSION}"
-         echo -e "cp .config ${KERNEL_LOCATION}/config-${KERNEL}${LOCALVERSION}"
-       } >> "${TMPDIR}/ckut.log"
-
+        { echo -e "cp bzImage ${KERNEL_LOCATION}/vmlinuz-${KERNEL}${LOCALVERSION}"
+          echo -e "cp System.map ${KERNEL_LOCATION}/System.map-${KERNEL}${LOCALVERSION}"
+          echo -e "cp .config ${KERNEL_LOCATION}/config-${KERNEL}${LOCALVERSION}"
+        } >> "${TMPDIR}/ckut.log"
+        check_localversion
       fi
       ;;
 
@@ -410,6 +420,7 @@ while true; do
                 echo -e "make ${MAKEFLAGS[*]} modules_install"
               } >> "${TMPDIR}/ckut.log"
               read -n 1 -r -s -p $'Press enter to continue...'
+              check_localversion
               dialog --prgbox "cp -v arch/$(uname -m)/boot/bzImage \
                 \"${KERNEL_LOCATION}/vmlinuz-${KERNEL}${LOCALVERSION}\" ; \
                 cp -v System.map \
@@ -530,6 +541,7 @@ while true; do
 
                   d )
                     if [[ -x /usr/bin/dracut ]]; then
+                      check_localversion
                       clear
                       dracut --kver "${KERNEL}${LOCALVERSION}" \
                         "${KERNEL_LOCATION}/initramfs-${KERNEL}${LOCALVERSION}.img"
