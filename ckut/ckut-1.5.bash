@@ -90,7 +90,8 @@ check_localversion() {
   LOCALVERSION=$(grep "CONFIG_LOCALVERSION=" .config | cut -d \" -f 2)
 }
 
-
+# Have a look to see what programs the system may have installed
+# This way the menu informs the user if a program is not installed
 if [[ ! -x /usr/bin/dracut ]]; then
   DRACUT="(not installed)"
 fi
