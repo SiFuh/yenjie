@@ -117,17 +117,17 @@ while true; do
     --clear \
     --cancel-label "Exit" \
     --menu "\nKernel version selected is [${KERNEL}]" "${HEIGHT}" "${WIDTH}" 9 \
-      v "Kernel Version [${KERNEL}]"\
-      o "Enter a Kernel Version" \
-      d "Download" \
-      e "Extract" \
-      p "Prepare" \
-      m "Run Menuconfig" \
-      c "Compile" \
-      i "Install" \
-      l "Command Log" \
-      x "Expert Menu"\
-      q "Exit" \
+      v "┌ Kernel Version [${KERNEL}]"\
+      o "└ Manual Kernel Version" \
+      d "  Download" \
+      e "  Extract" \
+      p "  Prepare" \
+      m "  Run Menuconfig" \
+      c "  Compile" \
+      i "  Install" \
+      l "  Command Log" \
+      x "  Expert Menu"\
+      q "  Exit" \
       2>&1 1>&3)
   exit_status=$?
   exec 3>&-
