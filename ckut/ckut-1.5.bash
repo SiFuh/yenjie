@@ -16,7 +16,7 @@
 #   **** USE AT YOUR OWN RISK ****
 #
 
-VERSION="v1.4"
+VERSION="v1.5"
 TITLE="CRUX Kernel Update Tool ${VERSION}    ${MESSAGE}"
 CONFIG="/etc/ckut.conf"
 KERNEL_OLD="$(uname -r)"
@@ -90,6 +90,23 @@ check_localversion() {
   LOCALVERSION=$(grep "CONFIG_LOCALVERSION=" .config | cut -d \" -f 2)
 }
 
+
+if [[ ! -x /usr/bin/dracut ]]; then
+  DRACUT="(not installed)"
+fi
+
+if [[ ! -x /usr/sbin/grub-mkconfig ]]; then
+  GRUB="(not installed)"
+fi
+
+if [[ ! -x /sbin/lilo ]]; then
+  LILO="(not installed)"
+fi
+
+if [[ ! -x /usr/bin/syslinux ]]; then
+  SYSLINUX="(not installed)"
+fi
+
 # First menu the main page
 while true; do
   exec 3>&1
@@ -100,6 +117,7 @@ while true; do
     --cancel-label "Exit" \
     --menu "\nKernel version selected is [${KERNEL}]" "${HEIGHT}" "${WIDTH}" 9 \
       v "Kernel Version [${KERNEL}]"\
+      o "Enter a Kernel Version" \
       d "Download" \
       e "Extract" \
       p "Prepare" \
@@ -156,6 +174,21 @@ while true; do
       fi
       ;;
 
+# Just in case we wish to use an older version of the kernel we
+# can now manually input it in here
+    o )
+      KERNEL=$(dialog \
+        --stdout \
+        --backtitle "${TITLE}" \
+        --title "${KERNEL_OLD}" \
+        --inputbox "\nEnter a kernel version" "${HEIGHT}" "${WIDTH}")
+      if [ -z "${KERNEL}" ]; then
+        KERNEL="NONE"
+        unset manual
+      else
+        manual="1"
+      fi
+      ;;
 # This is where we download the actual kernel if it has been selected
     d )
       if check_kernel && [[ "${error}" -eq 1 ]]; then
@@ -231,7 +264,6 @@ while true; do
             to create and configure a new .config\n\nContinuing without it"
           error_kernel
           unset error
-          check_localversion
         fi
       fi
       ;;
@@ -249,7 +281,6 @@ while true; do
         clear
         make "${MAKEFLAGS[@]}" menuconfig
         echo "make ${MAKEFLAGS[*]} menuconfig" >> "${TMPDIR}/ckut.log"
-        check_localversion
       fi
       ;;
 
@@ -266,7 +297,6 @@ while true; do
         make "${MAKEFLAGS[@]}" all 
         { echo -e "make ${MAKEFLAGS[*]} all"
         } >> "${TMPDIR}/ckut.log"
-        check_localversion
         read -n 1 -r -s -p $'Press enter to continue...'
       fi
       ;;
@@ -286,6 +316,7 @@ while true; do
         { echo -e "make ${MAKEFLAGS[*]} modules_install"
         } >> "${TMPDIR}/ckut.log"
         read -n 1 -r -s -p $'Press enter to continue...'
+        check_localversion
         dialog --prgbox "cp -v arch/$(uname -m)/boot/bzImage \
           \"${KERNEL_LOCATION}/vmlinuz-${KERNEL}${LOCALVERSION}\" ; \
           cp -v System.map \
@@ -296,7 +327,6 @@ while true; do
           echo -e "cp System.map ${KERNEL_LOCATION}/System.map-${KERNEL}${LOCALVERSION}"
           echo -e "cp .config ${KERNEL_LOCATION}/config-${KERNEL}${LOCALVERSION}"
         } >> "${TMPDIR}/ckut.log"
-        check_localversion
       fi
       ;;
 
@@ -321,9 +351,9 @@ while true; do
           --title "${KERNEL_OLD} - Expert Menu" \
           --cancel-label "Exit" \
           --menu "\nKernel version selected is [${KERNEL}]" "${HEIGHT}" "${WIDTH}" 9 \
-          o "Enter a Kernel Version" \
           r "Run Everything" \
           b "Boot Loader Menu" \
+          d "Dracut ${DRACUT}" \
           w "Visit www.kernel.org" \
           2>&1 1>&3)
           exec 3>&-
@@ -335,22 +365,6 @@ while true; do
               export LYNX_SAVE_SPACE="${DOWNLOAD_LOCATION}"
               lynx "https://www.kernel.org/"
               unset LYNX_SAVE_SPACE
-              ;;
-
-# Just in case we wish to use an older version of the kernel we
-# can now manually input it in here
-            o )
-              KERNEL=$(dialog \
-                --stdout \
-                --backtitle "${TITLE}" \
-                --title "${KERNEL_OLD}" \
-                --inputbox "\nEnter a kernel version" "${HEIGHT}" "${WIDTH}")
-              if [ -z "${KERNEL}" ]; then
-                KERNEL="NONE"
-                unset manual
-              else
-                manual="1"
-              fi
               ;;
 
 # For the lazy who know exactly what they need. This will run most of the kernel
@@ -413,8 +427,8 @@ while true; do
               else
                 :
               fi
-              make "${MAKEFLAGS[@]}" menuconfig && \
-                make "${MAKEFLAGS[@]}" all && \
+              make "${MAKEFLAGS[@]}" menuconfig
+              make "${MAKEFLAGS[@]}" all && \
                 make "${MAKEFLAGS[@]}" modules_install
               { echo -e "make ${MAKEFLAGS[*]} all"
                 echo -e "make ${MAKEFLAGS[*]} modules_install"
@@ -434,6 +448,19 @@ while true; do
               fi
               ;;
 
+            d )
+              if [[ -x /usr/bin/dracut ]]; then
+                clear
+                check_localversion
+                dracut --kver "${KERNEL}${LOCALVERSION}" \
+                  "${KERNEL_LOCATION}/initramfs-${KERNEL}${LOCALVERSION}.img"
+                read -n 1 -r -s -p $'Press enter to continue...'
+                { echo -ne "dracut --kver ${KERNEL}${LOCALVERSION}"
+                  echo -e " ${KERNEL_LOCATION}/initramfs-${KERNEL}${LOCALVERSION}.img"
+                } >> "${TMPDIR}/ckut.log"
+              fi
+              ;;
+
 # I use syslinux and nothing else so I have added this feature for my own reasons.
 # However, the option to edit grub and lilo have also been added.
             b )
@@ -446,10 +473,9 @@ while true; do
                   --title "${KERNEL_OLD} - Boot Loader Menu" \
                   --cancel-label "Exit" \
                   --menu "\nKernel version selected is [${KERNEL}]" "${HEIGHT}" "${WIDTH}" 9 \
-                  g "Grub" \
-                  l "Lilo" \
-                  s "Syslinux" \
-                  d "Dracut" \
+                  g "Grub ${GRUB}" \
+                  l "Lilo ${LILO}" \
+                  s "Syslinux ${SYSLINUX}" \
                   2>&1 1>&3)
                 exec 3>&-
 
@@ -465,7 +491,7 @@ while true; do
                         --cancel-label "Exit" \
                         --menu "\nKernel version selected is [${KERNEL}]" "${HEIGHT}" "${WIDTH}" 9 \
                         b "Edit /boot/grub/grub.cfg" \
-                        g "Run grub-mkconfig" \
+                        g "Run grub-mkconfig ${GRUB}" \
                         2>&1 1>&3)
                         exec 3>&-
 
@@ -504,7 +530,7 @@ while true; do
                         --cancel-label "Exit" \
                         --menu "\nKernel version selected is [${KERNEL}]" "${HEIGHT}" "${WIDTH}" 9 \
                         e "Edit /etc/lilo.conf" \
-                        l "Run lilo" \
+                        l "Run lilo ${LILO}" \
                         2>&1 1>&3)
                         exec 3>&-
 
@@ -536,19 +562,6 @@ while true; do
                     if [[ -f ${SYSLINUX_LOCATION}/syslinux.cfg ]]; then
                       "${EDITOR}" ${SYSLINUX_LOCATION}/syslinux.cfg
                       echo "${EDITOR} ${SYSLINUX_LOCATION}/syslinux.cfg" >> "${TMPDIR}/ckut.log"
-                    fi
-                    ;;
-
-                  d )
-                    if [[ -x /usr/bin/dracut ]]; then
-                      check_localversion
-                      clear
-                      dracut --kver "${KERNEL}${LOCALVERSION}" \
-                        "${KERNEL_LOCATION}/initramfs-${KERNEL}${LOCALVERSION}.img"
-                      read -n 1 -r -s -p $'Press enter to continue...'
-                      { echo -ne "dracut --kver ${KERNEL}${LOCALVERSION}"
-                        echo -e " ${KERNEL_LOCATION}/initramfs-${KERNEL}${LOCALVERSION}.img"
-                      } >> "${TMPDIR}/ckut.log"
                     fi
                     ;;
 
