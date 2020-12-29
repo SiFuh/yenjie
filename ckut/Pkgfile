@@ -5,8 +5,8 @@
 # Depends on:   pv lynx dialog
 
 name=ckut
-version=1.5
-release=2
+version=1.6
+release=1
 source=(${name}-${version}.bash ${name}.conf)
 
 build() {
