@@ -6,7 +6,7 @@
 
 name=ckut
 version=1.6
-release=1
+release=2
 source=(${name}-${version}.bash ${name}.conf)
 
 build() {

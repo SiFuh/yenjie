@@ -42,7 +42,15 @@ fi
 touch "${TMPDIR}/ckut.log"
 
 # Load configuration file
-. ${CONFIG}
+if [ -f "${CONFIG}" ]; then
+  . ${CONFIG}
+else
+  echo ""
+  echo "No configuration file found!"
+  echo ""
+  read -n 1 -r -s -p $'Press any key to exit...'
+  exit 0
+fi
 
 # Convert MAKEFLAGS into an array
 eval MAKEFLAGS="($MAKEFLAGS)"
