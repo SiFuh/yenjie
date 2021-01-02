@@ -10,6 +10,9 @@ drwxr-xr-x	root/root	usr/include/dc1394/
 -rw-r--r--	root/root	usr/include/dc1394/dc1394.h
 -rw-r--r--	root/root	usr/include/dc1394/format7.h
 -rw-r--r--	root/root	usr/include/dc1394/iso.h
+drwxr-xr-x	root/root	usr/include/dc1394/linux/
+-rw-r--r--	root/root	usr/include/dc1394/linux/capture.h
+-rw-r--r--	root/root	usr/include/dc1394/linux/control.h
 -rw-r--r--	root/root	usr/include/dc1394/log.h
 -rw-r--r--	root/root	usr/include/dc1394/register.h
 -rw-r--r--	root/root	usr/include/dc1394/types.h
