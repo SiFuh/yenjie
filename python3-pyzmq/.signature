@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uArfYDH3Kt7E9faPkTXpKpIidzN+aHNP3B3ZDhTwdIIczqGSk9iolVXXPLeiWhvzVKoUIlWqsBrEZH8YhIeDRg0=
-SHA256 (Pkgfile) = c9d44e76a39c45c84363c5e92e08f321a0f20c6ecb494534515252dae726cbda
-SHA256 (.footprint) = 3c0cd17295ab43b101d4029e7bb95e1fe336fb03a9e737a7fdb1c3d74face990
-SHA256 (pyzmq-19.0.2.tar.gz) = 296540a065c8c21b26d63e3cea2d1d57902373b16e4256afe46422691903a438
+RWQ0NN0w0eo0uLuYxWO+V7KRmqaVolIKyBquCcoPX2DjCz6XeZzK6aBuHtlfWqchceh3m1rdpWG/uXLc5MR8kwipuHY3orSgBw0=
+SHA256 (Pkgfile) = 3011beb2f0dd4267b337329b7747bbf5d064cc80f10049cb558bbeb940f12026
+SHA256 (.footprint) = da4c3fc185bbe43cf4893de153ec66fada4e7248a635d1c25756faaafc8ff3be
+SHA256 (pyzmq-20.0.0.tar.gz) = 824ad5888331aadeac772bce27e1c2fbcab82fade92edbd234542c4e12f0dca9

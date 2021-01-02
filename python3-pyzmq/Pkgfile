@@ -5,7 +5,7 @@
 # Depends on:
 
 name=python3-pyzmq
-version=19.0.2
+version=20.0.0
 release=1
 source=(https://files.pythonhosted.org/packages/source/p/${name//python3-}/${name//python3-}-${version}.tar.gz)
 
