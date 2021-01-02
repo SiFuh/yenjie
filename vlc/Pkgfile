@@ -4,7 +4,7 @@
 # Depends on:   ffmpeg liba52 libdvdnav libgcrypt libmad qt5 opus libvorbis x264 libogg libmtp libtheora flac libvdpau libavc1394 libraw1394 freerdp2 dav1d libupnp lua libbluray samba libssh2 libnfs libshout libebml libmatroska libmodplug mpg123 libva libvpx twolame libdca libmpeg2 schroedinger x265 librsvg pulseaudio jack-audio-connection-kit libsoxr chromaprint protobuf freetype xorg-libxpm xorg-libxext xorg-libxinerama avahi libsecret libnotify gtk3 libplacebo
 
 name=vlc
-version=3.0.11
+version=3.0.11.1
 release=2
 source=(https://download.videolan.org/pub/videolan/${name}/${version}/${name}-${version}.tar.xz \
         lua53_compat.patch qt_5_15.patch)

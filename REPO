@@ -93,6 +93,7 @@ d:alizams-bin
 d:libopenshot-audio-git
 d:libopenshot-git
 d:openshot-qt-git
+d:libdc1394
 f:75f342e59b378d3bdbabf0e9edf3c653:lshw/.signature
 f:143d2604bf77fb4c9de17df37d92ed29:lshw/.footprint
 f:9863400b25b92424d5f3b0a88cdeab15:lshw/Pkgfile
@@ -393,7 +394,7 @@ f:def2f63fe48825f0a49d2631ffd58268:vlc/README
 f:e4124328869ca6ed1ce99def573be939:vlc/.footprint
 f:f20efed261d17b65848f18cd1094483e:vlc/qt_5_15.patch
 f:9f0055a3b9e456af7e0f2beb0d13b942:vlc/post-install
-f:c463877d603810dea942aebd7a160e78:vlc/Pkgfile
+f:e44ca3515a108dd46e02db871ec8c9e9:vlc/Pkgfile
 f:310893a59b5fe19b3ec5925728abaf1b:vlc/.signature
 f:756347dc2ef98647058a389dedb9cfd2:vlc/Pkgfile-alsa
 f:96d3b346d9149ffb1b430066dfb6249a:vlc/lua53_compat.patch
@@ -452,3 +453,6 @@ f:0a2eea68d5442eef3f8966896da112c2:openshot-qt-git/.footprint
 f:c692af40f01083c7811e5a8d08d2939b:openshot-qt-git/README
 f:0eed2f9f978f185b7f03e10ebccfe2a2:openshot-qt-git/Pkgfile
 f:07a6140f8701959aaefa8607e832c6ee:openshot-qt-git/.signature
+f:c9b582f1d46a2c71d0595d5d73cb0936:libdc1394/Pkgfile
+f:f34e90b016e3f0076ca36ad3112c78ce:libdc1394/.footprint
+f:2752edebdf99f096886e109dea26fd89:libdc1394/.signature
