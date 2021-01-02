@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uCmXTpSl8RlbsvSgnMGDuYZWWgA2ouVKGkR+18qwwPDcUesxFd5Qh+EJoKRBCyokAWcN6OFrR1i6ZH4GpzzjdwQ=
-SHA256 (Pkgfile) = 1a8dc65099101fe453115ffbf8b8b68fa6ee76f7a656fd7cd6134bae0e699d50
-SHA256 (.footprint) = 3fc0ce8f01cdee4f711ffc25240bef342ffc947d419850b1f22b723ac4d89a7d
-SHA256 (chirp-daily-20200718.tar.gz) = 5276d7c9f74a801ed7a9a0dd310c124217f22f66388f5ffec0bd947d9a2cc4a0
+RWQ0NN0w0eo0uFd8owZa4MTst0Gy+OUYZguWx1mX+QfAv8qqTPYyC/CIvXgAUoewCwyrLauFOj6ON7cQFtiFfcCUgjCA2YTXWgQ=
+SHA256 (Pkgfile) = 34cf548ed832154d32b541abfe1a72639b7423d5fc085a9064d9229bd06df915
+SHA256 (.footprint) = f892e3879a702df32b04c547a35a8f753dbefa1ae26dd7b634eb1eb7329d3147
+SHA256 (chirp-daily-20201221.tar.gz) = 9fc779ce9eb9d1830594cb76345966ad2e43717d65a0145601267e8b97d75e95

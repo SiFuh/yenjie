@@ -5,7 +5,7 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python2.7/
 drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/
--rw-r--r--	root/root	usr/lib/python2.7/site-packages/chirp-daily_20200718-py2.7.egg-info
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/chirp-daily_20201221-py2.7.egg-info
 drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/chirp/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/chirp/__init__.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/chirp/__init__.pyc
@@ -44,6 +44,8 @@ drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/chirp/drivers/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/chirp/drivers/anytone778uv.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/chirp/drivers/anytone_ht.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/chirp/drivers/anytone_ht.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/chirp/drivers/anytone_iii.py
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/chirp/drivers/anytone_iii.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/chirp/drivers/ap510.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/chirp/drivers/ap510.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/chirp/drivers/baofeng_common.py
@@ -244,6 +246,8 @@ drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/chirp/drivers/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/chirp/drivers/th_uv3r25.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/chirp/drivers/th_uv8000.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/chirp/drivers/th_uv8000.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/chirp/drivers/th_uv88.py
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/chirp/drivers/th_uv88.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/chirp/drivers/th_uvf8d.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/chirp/drivers/th_uvf8d.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/chirp/drivers/thd72.py
