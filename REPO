@@ -96,9 +96,9 @@ d:openshot-qt-git
 f:d534b5f4a03b31585ab5ff98b200b8e7:lshw/.signature
 f:143d2604bf77fb4c9de17df37d92ed29:lshw/.footprint
 f:235b26e6186eec19722944d68167ecd1:lshw/Pkgfile
-f:72a9ae5208b5ea56308c3f47a334a0db:android-tools/.footprint
-f:5f1aa92935b8bab2f2bae9b623197555:android-tools/Pkgfile
-f:9b2c27893854efa452954371c7b255e6:android-tools/.signature
+f:88fe8c197d6bf57699b27d4625a81e24:android-tools/.footprint
+f:2cd6f786165c38f518066cb05e53f4af:android-tools/Pkgfile
+f:4586da015139aeec92510dc9abe3f5c1:android-tools/.signature
 f:88ab5a807bf699df4d0ec87912b2c510:yenjie.pub
 f:1c2f8712c21f39a782846f06151c006d:arandr/Pkgfile
 f:69fc05cca27d4a17f5d7b824826f10d4:arandr/.footprint

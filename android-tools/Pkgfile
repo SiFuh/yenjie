@@ -6,7 +6,7 @@
 # Depends on:
 
 name=android-tools
-version=r30.0.2
+version=r30.0.5
 release=1
 source=(http://dl-ssl.google.com/android/repository/platform-tools_$version-linux.zip)
 

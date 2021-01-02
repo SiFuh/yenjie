@@ -9,6 +9,7 @@ drwxr-xr-x	root/root	opt/android-tools/
 drwxrwxr-x	root/root	opt/android-tools/lib64/
 -rwxrwxr-x	root/root	opt/android-tools/lib64/libc++.so
 -rwxrwxr-x	root/root	opt/android-tools/make_f2fs
+-rwxrwxr-x	root/root	opt/android-tools/make_f2fs_casefold
 -rwxrwxr-x	root/root	opt/android-tools/mke2fs
 -rwxrwxr-x	root/root	opt/android-tools/mke2fs.conf
 -rwxrwxr-x	root/root	opt/android-tools/sload_f2fs
