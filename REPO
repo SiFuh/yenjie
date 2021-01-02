@@ -348,9 +348,9 @@ f:7f345d911e9b932116eb24da3b26e16c:telegram-bin/.signature
 f:ee71f1ec7b16d90bdc6e8a283064f85d:toxcore/Pkgfile
 f:12e47885f52026a56b5c860afd88b559:toxcore/.signature
 f:93db4e1a4a5c006d3e50aa848cef2428:toxcore/.footprint
-f:da3f8ad78cac155b87f25a7c17e29c23:toxic/.signature
+f:c43803daadc9582a5472737968c2f906:toxic/.signature
 f:19604dea3ebb3f7ffff3cd4e22a8799a:toxic/.footprint
-f:4ea2288f3b59a4673e844651ce6a11f8:toxic/Pkgfile
+f:53aac723c54bc7c471a38a08ad7e6237:toxic/Pkgfile
 f:dae9c6c9a55b4bb613c4829246e09c53:tuxedo-keyboard-dkms/tuxedo_keyboard_conf.patch
 f:ab3e15de07f2a21dfd1c9a4b34af5b43:tuxedo-keyboard-dkms/dkms.conf
 f:ccae06ebf9c9e414be559fa686641c9c:tuxedo-keyboard-dkms/Pkgfile
