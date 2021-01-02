@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uAPoUDE4ir95w//3vbG8E3NrenYq/nIudr8jkz2MyOAG4p3mBDRlHwLokpSjmUPoSTTx7+v6ZAaqcYm4HA5rRAA=
-SHA256 (Pkgfile) = 02ee5ce09f206cad47f2781845295c73d92a2c3fee613d7b9796c87396aee573
-SHA256 (.footprint) = 2bacc7ffca5e755cef3589ceecc2fe8ec0a922f1bfa3aa013e4d13df37e0f6f2
-SHA256 (vlc-3.0.11.tar.xz) = 3e94a1acf33445e9da15d528aa48657aa26b912eaa2656b403d43860a8834919
+RWQ0NN0w0eo0uIrcWmR93Nh5oR/pq/3xYGAXxMri2AjXG629o90TmPAwCNKKzTAd+zaR0PmTealyx76jJ8vMCBa/iLLXzfzzSgM=
+SHA256 (Pkgfile) = 765c9c2170b61a758431bc234878623708bfc5fa9696885f033d4a40355b68ba
+SHA256 (.footprint) = 1c42a370a0b2f7370628ad659d257f8d73ba2b556066cb642ac93d2e3a26fd4d
+SHA256 (vlc-3.0.11.1.tar.xz) = 189311d28aa814f106a7b3645211ac52c0b3e2b9f4b348de2f63bab3218086b8
 SHA256 (lua53_compat.patch) = d1cb88a1037120ea83ef75b2a13039a16825516b776d71597d0e2eae5df2d8fa
 SHA256 (qt_5_15.patch) = 1155a7ab9add85e66b38eae2efbea7dfc4cee849c1fefaed9376f9e6e06917df

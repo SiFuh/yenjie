@@ -311,6 +311,8 @@ drwxr-xr-x	root/root	usr/lib/vlc/plugins/audio_filter/
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/audio_filter/libsoxr_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/audio_filter/libspatializer_plugin.la
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/audio_filter/libspatializer_plugin.so
+-rwxr-xr-x	root/root	usr/lib/vlc/plugins/audio_filter/libspeex_resampler_plugin.la
+-rwxr-xr-x	root/root	usr/lib/vlc/plugins/audio_filter/libspeex_resampler_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/audio_filter/libstereo_widen_plugin.la
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/audio_filter/libstereo_widen_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/audio_filter/libtospdif_plugin.la
@@ -364,6 +366,8 @@ drwxr-xr-x	root/root	usr/lib/vlc/plugins/codec/
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/codec/libdvbsub_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/codec/libedummy_plugin.la
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/codec/libedummy_plugin.so
+-rwxr-xr-x	root/root	usr/lib/vlc/plugins/codec/libfaad_plugin.la
+-rwxr-xr-x	root/root	usr/lib/vlc/plugins/codec/libfaad_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/codec/libflac_plugin.la
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/codec/libflac_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/codec/libg711_plugin.la
@@ -372,6 +376,8 @@ drwxr-xr-x	root/root	usr/lib/vlc/plugins/codec/
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/codec/libgstdecode_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/codec/libjpeg_plugin.la
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/codec/libjpeg_plugin.so
+-rwxr-xr-x	root/root	usr/lib/vlc/plugins/codec/liblibass_plugin.la
+-rwxr-xr-x	root/root	usr/lib/vlc/plugins/codec/liblibass_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/codec/liblibmpeg2_plugin.la
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/codec/liblibmpeg2_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/codec/liblpcm_plugin.la
@@ -394,6 +400,8 @@ drwxr-xr-x	root/root	usr/lib/vlc/plugins/codec/
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/codec/libscte18_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/codec/libscte27_plugin.la
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/codec/libscte27_plugin.so
+-rwxr-xr-x	root/root	usr/lib/vlc/plugins/codec/libsdl_image_plugin.la
+-rwxr-xr-x	root/root	usr/lib/vlc/plugins/codec/libsdl_image_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/codec/libspdif_plugin.la
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/codec/libspdif_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/codec/libspeex_plugin.la
@@ -500,6 +508,8 @@ drwxr-xr-x	root/root	usr/lib/vlc/plugins/demux/
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/demux/libmod_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/demux/libmp4_plugin.la
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/demux/libmp4_plugin.so
+-rwxr-xr-x	root/root	usr/lib/vlc/plugins/demux/libmpc_plugin.la
+-rwxr-xr-x	root/root	usr/lib/vlc/plugins/demux/libmpc_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/demux/libmpgv_plugin.la
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/demux/libmpgv_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/demux/libnoseek_plugin.la
@@ -571,6 +581,8 @@ drwxr-xr-x	root/root	usr/lib/vlc/plugins/lua/
 drwxr-xr-x	root/root	usr/lib/vlc/plugins/meta_engine/
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/meta_engine/libfolder_plugin.la
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/meta_engine/libfolder_plugin.so
+-rwxr-xr-x	root/root	usr/lib/vlc/plugins/meta_engine/libtaglib_plugin.la
+-rwxr-xr-x	root/root	usr/lib/vlc/plugins/meta_engine/libtaglib_plugin.so
 drwxr-xr-x	root/root	usr/lib/vlc/plugins/misc/
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/misc/libaddonsfsstorage_plugin.la
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/misc/libaddonsfsstorage_plugin.so
