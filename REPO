@@ -113,9 +113,9 @@ f:f493aa63155eac74dd8f9b7ad72c40ce:binwalk/.footprint
 f:ec7fa3f1242e09166b112b1647a660d6:blender/.signature
 f:268b21fb4f63796f53a12fb959040efb:blender/Pkgfile
 f:9c20f7f03dd846c6827f09b048744650:blender/.footprint
-f:5bb2fc2d6642b2d5af424568845b1056:bluefish/Pkgfile
-f:47cb98addd6464a42d2f690dad2ec1f5:bluefish/.footprint
-f:eb8e51a726387406514d588d000a3fa6:bluefish/.signature
+f:71792913244afc8c7bb6505875b3f5ec:bluefish/Pkgfile
+f:894f593b8b2dca89180e3b02caf52d11:bluefish/.footprint
+f:480495a621cb39690044d0732a057c4a:bluefish/.signature
 f:ca66e6c6e5761e745c3ce589cc7e606e:chirp/.signature
 f:9a5e24b3cddafffe7468c9485e647b7f:chirp/README
 f:348d76634b79265bf78825c0a36a85cb:chirp/.footprint

@@ -5,8 +5,8 @@
 # Depends on:   gtk3
 
 name=bluefish
-version=2.2.11
-release=2
+version=2.2.12
+release=1
 source=(https://www.bennewitz.com/$name/stable/source/$name-$version.tar.gz)
 
 build() {
