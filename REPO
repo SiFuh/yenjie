@@ -326,9 +326,9 @@ f:61a004a0758d693e87152722e4950047:skypeforlinux-bin/.footprint
 f:57ecb763cf0046e74d5269543a76565c:skypeforlinux-bin/.signature
 f:0d6e842c36166f895db48431bab8e47b:skypeforlinux-bin/Pkgfile
 f:ce166d5524eea83ef45ee64a3ee8e0d8:skypeforlinux-bin/README
-f:c752794bccdd44b1cf9838bfcdcb5e9b:smplayer/.signature
+f:424fb11deee6e50ad4189e5269b90cbf:smplayer/.signature
 f:90d93dd8ff85ffba45390a0dc09195ee:smplayer/.footprint
-f:9ddf83808cd5b49c9818cdaac23f0344:smplayer/Pkgfile
+f:c84fc124b94aa56f4b296a92e988feee:smplayer/Pkgfile
 f:c5b9d99af8150760ff896b625a186753:sntop/.footprint
 f:fec14f0abef4f76e0a3fc31fa01dd519:sntop/Pkgfile
 f:77e569fbd28d586b97f2fc3f4b41bf37:sntop/.signature
