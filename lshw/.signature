@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uJmWCYxG4vGAqmRNP1F6jTx/Bf8ZKtojK9WSqb4VHL7uIvYGN3o7VUbJs/N2eTS2E+gL+e7e0htvOZiAqdUw6gU=
-SHA256 (Pkgfile) = b5c8471e01c655a7ea33f2fede79312abee80e676f5c105e7a01ce2a2d4a9d4a
+RWQ0NN0w0eo0uGwLs+nMKn9kpvdBLQ5KdU56qzvXCCBCL42w0esxobTBSGF6QhlD4EJoT4DGu6+bWLP7NLjfDVHcu5WEKwdlUwA=
+SHA256 (Pkgfile) = 49817f2deb06d805b19754d9eecef1a0a84ede455a0b86c0ca64ba8b69bd58ef
 SHA256 (.footprint) = fa5fa282a0a53086ffa6f57dd6aec55728009b04b5acb767c66ab3895dc5b502
-SHA256 (lshw-B.02.19.tar.gz) = 9a2809b07ad2a2d1c4ee115682e31e7b3116ed536ea70bef962cef1ca3d1553e
+SHA256 (lshw-B.02.19.2.tar.gz) = 9bb347ac87142339a366a1759ac845e3dbb337ec000aa1b99b50ac6758a80f80

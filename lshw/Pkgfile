@@ -5,9 +5,10 @@
 # Depends on:   git gtk xorg-libxdamage
 
 name=lshw
-version=B.02.19
+version=B.02.19.2
 release=1
-source=(https://github.com/lyonel/${name}/archive/${version}/${name}-${version}.tar.gz)
+source=(https://ezix.org/software/files/${name}-${version}.tar.gz)
+#source=(https://github.com/lyonel/${name}/archive/${version}/${name}-${version}.tar.gz)
 
 build() {
 

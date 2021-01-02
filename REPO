@@ -93,9 +93,9 @@ d:alizams-bin
 d:libopenshot-audio-git
 d:libopenshot-git
 d:openshot-qt-git
-f:d534b5f4a03b31585ab5ff98b200b8e7:lshw/.signature
+f:75f342e59b378d3bdbabf0e9edf3c653:lshw/.signature
 f:143d2604bf77fb4c9de17df37d92ed29:lshw/.footprint
-f:235b26e6186eec19722944d68167ecd1:lshw/Pkgfile
+f:9863400b25b92424d5f3b0a88cdeab15:lshw/Pkgfile
 f:88fe8c197d6bf57699b27d4625a81e24:android-tools/.footprint
 f:2cd6f786165c38f518066cb05e53f4af:android-tools/Pkgfile
 f:4586da015139aeec92510dc9abe3f5c1:android-tools/.signature
