@@ -2,7 +2,6 @@ d:lshw
 d:android-tools
 d:arandr
 d:artwiz-aleczapka-fonts
-d:binwalk
 d:blender
 d:bluefish
 d:chirp
@@ -57,7 +56,6 @@ d:reaver
 d:rtaudio
 d:rtl8812au-dkms
 d:sabnzbd
-d:sasquatch
 d:secure-delete
 d:skypeforlinux-bin
 d:smplayer
@@ -87,7 +85,6 @@ d:wxgtk3-dev
 d:xconsole
 d:xdialog
 d:xosd
-d:xxhash
 d:zeromq
 d:alizams-bin
 d:libopenshot-audio-git
@@ -108,9 +105,6 @@ f:aec6b6217bce04bdf9847e5634223d9f:artwiz-aleczapka-fonts/.signature
 f:86c3361a6284f5be956c2f8721097a33:artwiz-aleczapka-fonts/Pkgfile
 f:cc8ced517148927d00993eaff74cfecd:artwiz-aleczapka-fonts/post-install
 f:009a9a8dc936eef264415338b6f39316:artwiz-aleczapka-fonts/.footprint
-f:7ae8796432ac9bbb218706028fc5717a:binwalk/Pkgfile
-f:392e5865624525f78b5328248b7a39ac:binwalk/.signature
-f:f493aa63155eac74dd8f9b7ad72c40ce:binwalk/.footprint
 f:ec7fa3f1242e09166b112b1647a660d6:blender/.signature
 f:268b21fb4f63796f53a12fb959040efb:blender/Pkgfile
 f:9c20f7f03dd846c6827f09b048744650:blender/.footprint
@@ -316,10 +310,6 @@ f:a12b54acd726669d30f1f7857ef11ab6:sabnzbd/sabnzbd
 f:545093234d26e3efb38981491d751b2e:sabnzbd/.footprint
 f:f568a5dd87b6ff2900c52df5156e7f9e:sabnzbd/Pkgfile
 f:e27a5f0c41957c351aeded5d2be272e0:sabnzbd/.signature
-f:849eb44eacbe2605c7ee2f27d1d4c529:sasquatch/.footprint
-f:3e01aeaf357273f0068bb1e2d77ed176:sasquatch/.signature
-f:587864f3c1f4d8f23ed016aafa19e186:sasquatch/Pkgfile
-f:4610810b3c1fe09f942fd0d1f9e4ffdd:sasquatch/read_fragment_table_n_stack_overflow-fix.patch
 f:ceb74bd5e8ed08670dc31a0f08c780fa:secure-delete/Pkgfile
 f:0b8fb618edd01dda3d4e88d02da0571e:secure-delete/.signature
 f:7efc27ea342b0fa44500967da1c6c986:secure-delete/.footprint
@@ -432,9 +422,6 @@ f:500a5905910148312d01e2359bc61403:xosd/.signature
 f:38f7650dd3f047175162534b62a4b392:xosd/Pkgfile
 f:c5a62ac33df10f862534fe6720a9757a:xosd/libxosd_m4.patch
 f:ab21db3891b932a6a5e3ad38ea65dd63:xosd/.footprint
-f:f7015dffa2ec002197a38ddc0400349d:xxhash/.signature
-f:c68e069988f6ce8c62f9c9900727f056:xxhash/.footprint
-f:3ba6b5f79d5c75c1f20733386c85ccb5:xxhash/Pkgfile
 f:09c1a8d46bf376e8600819cafefb0d9d:zeromq/.signature
 f:598692d2e9c29bf64608bc459f9e0b30:zeromq/.footprint
 f:355530426581474e5abfbd45c38dc851:zeromq/Pkgfile
