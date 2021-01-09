@@ -56,6 +56,7 @@ d:reaver
 d:rtaudio
 d:rtl8812au-dkms
 d:sabnzbd
+d:opera-bin
 d:secure-delete
 d:skypeforlinux-bin
 d:smplayer
@@ -310,6 +311,12 @@ f:a12b54acd726669d30f1f7857ef11ab6:sabnzbd/sabnzbd
 f:545093234d26e3efb38981491d751b2e:sabnzbd/.footprint
 f:f568a5dd87b6ff2900c52df5156e7f9e:sabnzbd/Pkgfile
 f:e27a5f0c41957c351aeded5d2be272e0:sabnzbd/.signature
+f:267a56579846feb293446f319f04efe8:opera-bin/.md5sum
+f:c5cdb5c0dc95cc75f25a4ac7f95df947:opera-bin/.footprint
+f:50c4f4ec845ad8629ec3f308ab8cd991:opera-bin/opera.default
+f:2385706be1f6f9adf6064e29d73203cf:opera-bin/Pkgfile
+f:da8ac1a5d21e1a2d42aa8b3fbdea3034:opera-bin/.signature
+f:d1fc6bb965a8e499abf885527c66a926:opera-bin/opera
 f:ceb74bd5e8ed08670dc31a0f08c780fa:secure-delete/Pkgfile
 f:0b8fb618edd01dda3d4e88d02da0571e:secure-delete/.signature
 f:7efc27ea342b0fa44500967da1c6c986:secure-delete/.footprint

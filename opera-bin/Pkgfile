@@ -1,0 +1,37 @@
+# Description:  A fast and secure web browser
+# URL:          https://www.opera.com/
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   gtk3 alsa-lib libnotify nss cups desktop-file-utils hicolor-icon-theme shared-mime-info
+
+name=opera-bin
+version=73.0.3856.329
+release=1
+source=(https://get.geo.opera.com/pub/${name%-bin}/desktop/$version/linux/${name%-bin}-stable_${version}_amd64.deb
+        opera
+        opera.default)
+
+build() {
+
+  sed -e "s/%name%/$name/g" -i "${SRC}/opera"
+  sed -e "s/%operabin%/$name\/$name/g" \
+      -i "$SRC/opera"
+
+  bsdtar -xf "${name%-bin}"-stable_"${version}"_amd64.deb
+  tar -xf data.tar.xz --exclude=usr/share/{lintian,menu} -C "${PKG}"
+
+  ( cd "${PKG}"/usr/lib/*-linux-gnu/ && mv "${name%-bin}" ../ )
+  rm -rf "${PKG}"/usr/lib/*-linux-gnu
+
+  mv "${PKG}"/usr/ "${PKG}"/opt/
+
+  chmod 4755 "${PKG}"/opt/lib/"${name%-bin}"/opera_sandbox
+
+  sed -e '/\[/a\ \ "/usr/lib/chromium/WidevineCdm",' \
+      -i "${PKG}"/opt/lib/opera/resources/widevine_config.json
+
+  rm "${PKG}"/opt/bin/"${name%-bin}"
+  install -Dm755 "${SRC}"/"${name%-bin}" "${PKG}"/opt/bin/"${name%-bin}"
+  install -Dm644 "${SRC}"/"${name%-bin}".default "${PKG}"/opt/etc/"${name%-bin}"/default
+
+}
+
