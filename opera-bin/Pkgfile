@@ -1,7 +1,7 @@
 # Description:  A fast and secure web browser
 # URL:          https://www.opera.com/
 # Maintainer:   Lin SiFuh, #crux at freenode dot net
-# Depends on:   gtk3 alsa-lib libnotify nss cups desktop-file-utils hicolor-icon-theme shared-mime-info
+# Depends on:   gtk3 alsa-lib libnotify nss cups desktop-file-utils hicolor-icon-theme shared-mime-info xorg-font-msttcorefonts
 
 name=opera-bin
 version=73.0.3856.329
@@ -34,4 +34,3 @@ build() {
   install -Dm644 "${SRC}"/"${name%-bin}".default "${PKG}"/opt/etc/"${name%-bin}"/default
 
 }
-
