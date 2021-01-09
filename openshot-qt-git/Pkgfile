@@ -8,7 +8,7 @@ name=openshot-qt-git
 _name=openshot-qt
 version=2.5.1
 sversion=09c30dc7e6db17a0e8782445be3e4c522ffd1ad7
-release=1
+release=2
 source=()
 gsource=(https://github.com/OpenShot/${_name}/)
 
@@ -33,7 +33,8 @@ build() {
 
   python3 setup.py install --root="${PKG}/" --optimize=1
 
-  find "${PKG}" -name README -delete
+  find "${PKG}" -name README  -delete
+  find "${PKG}" -name README* -delete
   find "${PKG}" -name AUTHORS -delete
   find "${PKG}" -name COPYING -delete
   find "${PKG}" -name CONTRIBUTORS -delete
