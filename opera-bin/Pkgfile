@@ -12,9 +12,9 @@ source=(https://get.geo.opera.com/pub/${name%-bin}/desktop/$version/linux/${name
 
 build() {
 
-  sed -e "s/%name%/$name/g" -i "${SRC}/opera"
+  sed -e "s/%name%/$name/g" -i "${SRC}"/"${name%-bin}"
   sed -e "s/%operabin%/$name\/$name/g" \
-      -i "$SRC/opera"
+      -i "$SRC"/"${name%-bin}"
 
   bsdtar -xf "${name%-bin}"-stable_"${version}"_amd64.deb
   tar -xf data.tar.xz --exclude=usr/share/{lintian,menu} -C "${PKG}"
@@ -24,10 +24,10 @@ build() {
 
   mv "${PKG}"/usr/ "${PKG}"/opt/
 
-  chmod 4755 "${PKG}"/opt/lib/"${name%-bin}"/opera_sandbox
+  chmod 4755 "${PKG}"/opt/lib/"${name%-bin}"/"${name%-bin}"_sandbox
 
   sed -e '/\[/a\ \ "/usr/lib/chromium/WidevineCdm",' \
-      -i "${PKG}"/opt/lib/opera/resources/widevine_config.json
+      -i "${PKG}"/opt/lib/"${name%-bin}"/resources/widevine_config.json
 
   rm "${PKG}"/opt/bin/"${name%-bin}"
   install -Dm755 "${SRC}"/"${name%-bin}" "${PKG}"/opt/bin/"${name%-bin}"
