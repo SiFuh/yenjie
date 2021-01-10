@@ -1,0 +1,21 @@
+# Description:   A fast, extensible, and customizable web browser.
+# URL:           http://aidanholm.github.io/luakit/
+# Maintainer:    Lin SiFuh, #crux at freenode dot net
+# Depends on:    vala lua51 lua51-filesystem luajit webkitgtk gst-libav
+
+name=luakit
+version=2.2
+release=1
+source=(https://github.com/${name}/${name}/archive/${version}/${name}-${version}.tar.gz)
+
+build() {
+
+  cd "${name}"-"${version}"
+
+  sed 's|PKGS += javascriptcoregtk-4.0|#PKGS += javascriptcoregtk-4.0|' config.mk
+
+  make DEVELOPMENT_PATHS=0 USE_LUAJIT=1 PREFIX=/usr all
+
+  make PREFIX=/usr DESTDIR="${PKG}" install
+
+}

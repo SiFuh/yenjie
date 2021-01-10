@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uINRTieqYqNIYRWbiUyfVQJWOiivcKzPtfp0I+9kqdzke2oI0ZmBJCAC6siHgO8HJEpj5K0ZWjCK/XOEXE6EewQ=
+SHA256 (Pkgfile) = 7b8986c303d56db4f4c3b047b1519ca7b71a573acf32e9e88932c173c3cdecd1
+SHA256 (.footprint) = 85133f482f7828ecadd28ff74499f95039aeacd303eb959ce08c123c5ef83618
+SHA256 (luakit-2.2.tar.gz) = 704929a324984afe246c63263667eb1d64c060b4f7f74ced59fec5d402c377dc
