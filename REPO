@@ -95,9 +95,9 @@ d:libdc1394
 f:75f342e59b378d3bdbabf0e9edf3c653:lshw/.signature
 f:143d2604bf77fb4c9de17df37d92ed29:lshw/.footprint
 f:9863400b25b92424d5f3b0a88cdeab15:lshw/Pkgfile
+f:b856d6359c617ad6f219cc1078b271fa:luakit/Pkgfile
 f:68f8ad5a1b3fae9e0ffe781f61074e4d:luakit/.footprint
-f:69d957662819f1dfe99bc4d732ea042a:luakit/Pkgfile
-f:f683eea074157a2a8e42fc1a8c94b0bd:luakit/.signature
+f:24080377f1d9efd727ad629fb1358e80:luakit/.signature
 f:88fe8c197d6bf57699b27d4625a81e24:android-tools/.footprint
 f:2cd6f786165c38f518066cb05e53f4af:android-tools/Pkgfile
 f:4586da015139aeec92510dc9abe3f5c1:android-tools/.signature

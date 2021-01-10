@@ -12,8 +12,6 @@ build() {
 
   cd "${name}"-"${version}"
 
-  sed 's|PKGS += javascriptcoregtk-4.0|#PKGS += javascriptcoregtk-4.0|' config.mk
-
   make DEVELOPMENT_PATHS=0 USE_LUAJIT=1 PREFIX=/usr all
 
   make PREFIX=/usr DESTDIR="${PKG}" install
