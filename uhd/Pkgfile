@@ -11,19 +11,20 @@ source=(https://github.com/EttusResearch/${name}/archive/v${version}/${name}-${v
 
 build() {
 
-  [[ -e '/usr/bin/ninja' ]] && NINJA=' -G Ninja'
+  [[ -e '/usr/bin/ninja' ]] && NINJA=" -G Ninja"
+  eval NINJA="($NINJA)"
 
-  cmake -S "${name}"-"${version}"/host -B build ${NINJA}   \
-        -D ENABLE_E100=ON                                  \
-        -D ENABLE_E300=ON                                  \
-        -D ENABLE_UTILS=ON                                 \
-        -D ENABLE_TESTS=OFF                                \
-        -D ENABLE_PYTHON3=ON                               \
-        -D ENABLE_EXAMPLES=OFF                             \
-        -D CMAKE_BUILD_TYPE=Release                        \
-        -D CMAKE_INSTALL_PREFIX:PATH=/usr                  \
-        -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"        \
-        -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -DNDEBUG"    \
+  cmake -S "${name}"-"${version}"/host -B build "${NINJA[@]}" \
+        -D ENABLE_E100=ON                                     \
+        -D ENABLE_E300=ON                                     \
+        -D ENABLE_UTILS=ON                                    \
+        -D ENABLE_TESTS=OFF                                   \
+        -D ENABLE_PYTHON3=ON                                  \
+        -D ENABLE_EXAMPLES=OFF                                \
+        -D CMAKE_BUILD_TYPE=Release                           \
+        -D CMAKE_INSTALL_PREFIX:PATH=/usr                     \
+        -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"           \
+        -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -DNDEBUG"       \
         -D PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python3 ../
 
   cmake --build build

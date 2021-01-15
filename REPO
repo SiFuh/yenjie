@@ -359,9 +359,9 @@ f:5d325e6d81213b0991fdb144221883d1:tuxedo-keyboard-dkms/README
 f:794382ed38be01476fb76e2296aadb59:udiskie/Pkgfile
 f:9aa59eb628c52020d4c8389526e0044a:udiskie/.signature
 f:dd3c87126409fa02f4aa2640311ca270:udiskie/.footprint
-f:22bb7b4b1bb1aa7497c9521364bb3b5a:uhd/.signature
-f:959bfba04c457632c559ac888e3ee4dd:uhd/Pkgfile
-f:3aee3322970228b6201806f0f8cebbdd:uhd/.footprint
+f:604dec70099e073b0552dcdd30baf271:uhd/.signature
+f:20bf491e73066810c6ea3f7e01ea11ba:uhd/Pkgfile
+f:4a98a4a3ec9c8bcf58af7ea6a0c03658:uhd/.footprint
 f:4552250f6475de2962b35715fe5d877f:usbpicprog/.footprint
 f:450435c093bbb101013b688714ae3734:usbpicprog/Pkgfile
 f:2bc55f84db0cc96670b44cf58b3150ae:usbpicprog/.signature
