@@ -29,9 +29,10 @@ build() {
   cd "${SRC}" 
   rsync -a "${PKGMK_SOURCE_DIR}"/"${_name}" .
 
-  [[ -e '/usr/bin/ninja' ]] && NINJA=' -G Ninja'
+  [[ -e '/usr/bin/ninja' ]] && NINJA=" -G Ninja"
+  eval NINJA="($NINJA)"
 
-  cmake -S "${_name}" -B build ${NINJA}                \
+  cmake -S "${_name}" -B build "${NINJA[@]}"           \
         -D CMAKE_BUILD_TYPE=Release                    \
         -D CMAKE_INSTALL_PREFIX:PATH=/usr              \
         -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"    \
