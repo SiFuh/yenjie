@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uMxmhIP7Rg2QA/TDCDD1KzudkXwdF97R9vK96XsgYg9xKN4AzqVpKVLTHyvWaNvWZ3VRVB0MP1pf3a5DB+qhpQY=
-SHA256 (Pkgfile) = 64c4f58e01dcd70f807ca459e0b244caca5ad58f2bbd9c6043c8170a548a6bba
+RWQ0NN0w0eo0uJbRHZn615NTM+aIRmYgNNod5ILCJAkAHueZlht4LOqh8ykjE4tBf2ySwfsZmqFVjpjHbcIZJ57gHvFHKOrt0wA=
+SHA256 (Pkgfile) = 26171923b2e96df332d092669e5fa0548d3efdcb9fff20b25a51dd252868693b
 SHA256 (.footprint) = 40653fc362ae9e531d5264785c4ebab29fdd6758d98c2b92f64770f79f162f2b
 SHA256 (libopenshot-audio-0.2.0.tar.gz) = 937ff4f1c2dfb8ab5d56ad85beacaa29dfd5a79af0d9cf647386034fe9882309

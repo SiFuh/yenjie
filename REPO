@@ -208,8 +208,8 @@ f:af570592abe8ad0414d626a9b1ac6aee:libnftnl/Pkgfile
 f:161a06c5a60ef96c8d7536b2aafb31c6:libopenshot/Pkgfile
 f:a54fe8064ae0a259bfff308543f9aebe:libopenshot/.footprint
 f:1f42fc0055e679c1e80a28a83c93a3f4:libopenshot/.signature
-f:bcc48facc866b4cb759ee408879c45f0:libopenshot-audio/Pkgfile
-f:04fa32f53b5f9e0d2f6e286d068625d3:libopenshot-audio/.signature
+f:069e818b6184cf10157d2c7a0a895af6:libopenshot-audio/Pkgfile
+f:2efd12a6249addc45e6908418ec2ae52:libopenshot-audio/.signature
 f:fa9233e48b19cc571e24f0a83746bee1:libopenshot-audio/.footprint
 f:041b34e1a4e510c29cb769a6be12e0bc:libressl/README
 f:c74258a008c83e005b92c289a331c640:libressl/.footprint
@@ -331,8 +331,8 @@ f:c5b9d99af8150760ff896b625a186753:sntop/.footprint
 f:fec14f0abef4f76e0a3fc31fa01dd519:sntop/Pkgfile
 f:77e569fbd28d586b97f2fc3f4b41bf37:sntop/.signature
 f:59955c221b94275facf2ede263d04412:soapy-rtlsdr/.footprint
-f:588d0fd90a6e93afd9a6ba3122df4272:soapy-rtlsdr/Pkgfile
-f:adce01803b87e1b5044025ef57d358ac:soapy-rtlsdr/.signature
+f:84b32910e09a349770c093e33ec1ff02:soapy-rtlsdr/Pkgfile
+f:40d80530f89cccf24b587be7d25232b9:soapy-rtlsdr/.signature
 f:662b008ae4af7370af9e3940999b61ea:soapy-sdr/.signature
 f:6761ba4afa2ae3bdf403774ea1ee152e:soapy-sdr/.footprint
 f:2251f9cc360d25a5149fbc3681b9926d:soapy-sdr/Pkgfile
