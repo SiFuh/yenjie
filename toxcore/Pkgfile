@@ -12,17 +12,18 @@ build() {
 
   sed -i "/Rpath/d;/RPATH/d" c-"${name}"-"${version}"/CMakeLists.txt
 
-  [[ -e '/usr/bin/ninja' ]] && NINJA=' -G Ninja'
+  [[ -e '/usr/bin/ninja' ]] && NINJA=" -G Ninja"
+  eval NINJA="($NINJA)"
 
-  cmake -S c-"${name}"-"${version}" -B build ${NINJA}  \
-        -D BUILD_TOXAV=on                              \
-        -D DHT_BOOTSTRAP=on                            \
-        -D BOOTSTRAP_DAEMON=on                         \
-        -D BUILD_TOXENCRYPTSAVE=on                     \
-        -D CMAKE_BUILD_TYPE=Release                    \
-        -D CMAKE_INSTALL_PREFIX=/usr                   \
-        -D CMAKE_INSTALL_LIBDIR=/usr/lib               \
-        -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"    \
+  cmake -S c-"${name}"-"${version}" -B build "${NINJA[@]}" \
+        -D BUILD_TOXAV=on                                  \
+        -D DHT_BOOTSTRAP=on                                \
+        -D BOOTSTRAP_DAEMON=on                             \
+        -D BUILD_TOXENCRYPTSAVE=on                         \
+        -D CMAKE_BUILD_TYPE=Release                        \
+        -D CMAKE_INSTALL_PREFIX=/usr                       \
+        -D CMAKE_INSTALL_LIBDIR=/usr/lib                   \
+        -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"        \
         -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -DNDEBUG"
 
   cmake --build build
