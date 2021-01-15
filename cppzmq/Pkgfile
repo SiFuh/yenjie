@@ -11,13 +11,14 @@ source=(https://github.com/zeromq/${name}/archive/v${version}/${name}-${version}
 
 build() {
 
-  [[ -e '/usr/bin/ninja' ]] && NINJA=' -G Ninja'
+  [[ -e '/usr/bin/ninja' ]] && NINJA=" -G Ninja"
+  eval NINJA="($NINJA)"
 
-  cmake -S "${name}"-"${version}" -B build ${NINJA}    \
-        -D CPPZMQ_BUILD_TESTS=OFF                      \
-        -D CMAKE_BUILD_TYPE=Release                    \
-        -D CMAKE_INSTALL_PREFIX=/usr                   \
-        -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"    \
+  cmake -S "${name}"-"${version}" -B build "${NINJA[@]}" \
+        -D CPPZMQ_BUILD_TESTS=OFF                        \
+        -D CMAKE_BUILD_TYPE=Release                      \
+        -D CMAKE_INSTALL_PREFIX=/usr                     \
+        -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"      \
         -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -DNDEBUG" 
 
   cmake --build build

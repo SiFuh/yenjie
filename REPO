@@ -128,8 +128,8 @@ f:5d89a7f8aa9a4ca20bdfc6cae372116e:ckut/ckut-1.6.bash
 f:15ae4f716f065adfcf345ae8038c1d47:ckut/.footprint
 f:75fc7dc138c661764ec0ddc7fcc4ae46:ckut/Pkgfile
 f:3a0315f7f4cb00f3e10352101cc5593b:cppzmq/.footprint
-f:b3a0b72344add56c4f0967e8474f45d3:cppzmq/Pkgfile
-f:6aa190d577fbd593ce488250971c1a69:cppzmq/.signature
+f:937c09f8e1efd8ef22dab11db22220f5:cppzmq/Pkgfile
+f:f8a814933a461f701c742993e6b7f58d:cppzmq/.signature
 f:a105eadff142cf08de0d520d44d73c00:cubicsdr/Pkgfile
 f:65a98ea106e5b50f62f81b893354cacc:cubicsdr/.footprint
 f:e8ff22ffae90a19e61e7aeab265dd51b:cubicsdr/Pkgfile-pulseaudio
