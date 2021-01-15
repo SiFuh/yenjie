@@ -11,14 +11,15 @@ source=(https://github.com/Ettercap/${name}/archive/v${version}/${name}-${versio
 
 build() {
 
-  [[ -e '/usr/bin/ninja' ]] && NINJA=' -G Ninja'
+  [[ -e '/usr/bin/ninja' ]] && NINJA=" -G Ninja"
+  eval NINJA="($NINJA)"
 
-  cmake -S "${name}"-"${version}" -B build ${NINJA}    \
-        -D ENABLE_IPV6=ON                              \
-        -D ENABLE_GTK=OFF                              \
-        -D CMAKE_BUILD_TYPE=Release                    \
-        -D CMAKE_INSTALL_PREFIX:PATH=/usr              \
-        -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"    \
+  cmake -S "${name}"-"${version}" -B build "${NINJA[@]}" \
+        -D ENABLE_IPV6=ON                                \
+        -D ENABLE_GTK=OFF                                \
+        -D CMAKE_BUILD_TYPE=Release                      \
+        -D CMAKE_INSTALL_PREFIX:PATH=/usr                \
+        -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"      \
         -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -DNDEBUG"
 
   cmake --build build
