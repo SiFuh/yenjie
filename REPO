@@ -333,9 +333,9 @@ f:77e569fbd28d586b97f2fc3f4b41bf37:sntop/.signature
 f:59955c221b94275facf2ede263d04412:soapy-rtlsdr/.footprint
 f:84b32910e09a349770c093e33ec1ff02:soapy-rtlsdr/Pkgfile
 f:40d80530f89cccf24b587be7d25232b9:soapy-rtlsdr/.signature
-f:662b008ae4af7370af9e3940999b61ea:soapy-sdr/.signature
+f:4d0cb08933e06166a71993a05a8b2ac9:soapy-sdr/.signature
 f:6761ba4afa2ae3bdf403774ea1ee152e:soapy-sdr/.footprint
-f:2251f9cc360d25a5149fbc3681b9926d:soapy-sdr/Pkgfile
+f:3382aefeaab471be737aba36ba7c8b9b:soapy-sdr/Pkgfile
 f:d8c70fa6026a7211f1a092e1e1379519:supertuxkart-bin/run_game.patch
 f:ffb40b51df7c8b2fa3b4db0bb006a1a8:supertuxkart-bin/.footprint
 f:3f6579543e4ec6c138bc155bc56203bf:supertuxkart-bin/Pkgfile

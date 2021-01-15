@@ -12,10 +12,11 @@ source=(https://github.com/pothosware/${_name}/archive/${name}-${version}/${name
 
 build() {
 
-  [[ -e '/usr/bin/ninja' ]] && NINJA=' -G Ninja'
+  [[ -e '/usr/bin/ninja' ]] && NINJA=" -G Ninja"
+  eval NINJA="($NINJA)"
 
   cmake -S "${_name}"-"${name}"-"${version}"           \
-        -B build ${NINJA}                              \
+        -B build "${NINJA[@]}"                         \
         -D CMAKE_BUILD_TYPE=Release                    \
         -D CMAKE_INSTALL_PREFIX:PATH=/usr              \
         -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"    \
