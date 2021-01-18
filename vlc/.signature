@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uP9uZEGP6kniZEh2b5RYF5igSTFYoC/ybb7ZCyVvjDh3PkwcSf1xxisvvsfE4axzSdkbs8B4v9VdVjmX8qi6Ogw=
-SHA256 (Pkgfile) = 410d9ed168550b3589b7b069d8efd3bc161927bfba857bd06eaf5a88d327bf67
+RWQ0NN0w0eo0uOnZz1eNpS9DXD8LTdR0f2wfk6TwKlPYTQEGuM+q0MxQNyKMJ1xj20129BY2QLbrzb4YWYKybIKNGxteqdPMuQA=
+SHA256 (Pkgfile) = 8385c1c250402183373982e8adeef1ac7fee03fb1fea1da7ab623dc68ea0f45c
 SHA256 (.footprint) = 411a4c5d31779dd02da6293cdaa95b9ea47a27438d140b76de419805e7363bdb
 SHA256 (vlc-3.0.12.tar.xz) = eff458f38a92126094f44f2263c2bf2c7cdef271b48192d0fe7b1726388cf879
