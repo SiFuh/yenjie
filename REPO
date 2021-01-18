@@ -388,11 +388,11 @@ f:d15e56a7d8f9d5e0d04ee5979c7372af:virtualbox-extpack/pre-install
 f:775e7ee8af02049ebeae35d4be08fef8:virtualbox-extpack/post-install
 f:d0a2840654b669e56808b3fbd1447ec8:virtualbox-extpack/README
 f:def2f63fe48825f0a49d2631ffd58268:vlc/README
-f:bb7a8de5fad8131b1208ef3ba03c9d72:vlc/.footprint
+f:2b350d14cb1e25f2bc12cc87824aed87:vlc/.footprint
 f:f20efed261d17b65848f18cd1094483e:vlc/qt_5_15.patch
 f:9f0055a3b9e456af7e0f2beb0d13b942:vlc/post-install
-f:1501e374d5ed1f8fc58c4067b1c3774b:vlc/Pkgfile
-f:0fa260f87906f3553f4fe49dfc335523:vlc/.signature
+f:35443c164d0c7c9bbc9e308f28687f87:vlc/Pkgfile
+f:6d14823cb96a3c04e8d8b260b0b85221:vlc/.signature
 f:756347dc2ef98647058a389dedb9cfd2:vlc/Pkgfile-alsa
 f:96d3b346d9149ffb1b430066dfb6249a:vlc/lua53_compat.patch
 f:e9a7fc048c528aa1783fb12d57a2d3a3:vokoscreen/.footprint

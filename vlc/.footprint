@@ -203,6 +203,8 @@ drwxr-xr-x	root/root	usr/lib/vlc/plugins/access/
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/libavio_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/libcdda_plugin.la
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/libcdda_plugin.so
+-rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/libdc1394_plugin.la
+-rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/libdc1394_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/libdtv_plugin.la
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/libdtv_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/libdv1394_plugin.la
@@ -231,6 +233,8 @@ drwxr-xr-x	root/root	usr/lib/vlc/plugins/access/
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/libnfs_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/libpulsesrc_plugin.la
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/libpulsesrc_plugin.so
+-rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/librist_plugin.la
+-rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/librist_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/librtp_plugin.la
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/librtp_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/libsatip_plugin.la
@@ -266,6 +270,8 @@ drwxr-xr-x	root/root	usr/lib/vlc/plugins/access_output/
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access_output/libaccess_output_http_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access_output/libaccess_output_livehttp_plugin.la
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access_output/libaccess_output_livehttp_plugin.so
+-rwxr-xr-x	root/root	usr/lib/vlc/plugins/access_output/libaccess_output_rist_plugin.la
+-rwxr-xr-x	root/root	usr/lib/vlc/plugins/access_output/libaccess_output_rist_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access_output/libaccess_output_shout_plugin.la
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access_output/libaccess_output_shout_plugin.so
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access_output/libaccess_output_udp_plugin.la
