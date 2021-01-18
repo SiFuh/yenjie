@@ -391,8 +391,8 @@ f:def2f63fe48825f0a49d2631ffd58268:vlc/README
 f:2b350d14cb1e25f2bc12cc87824aed87:vlc/.footprint
 f:894050e93dce0b74d23ff06ef3c4fb9f:vlc/Pkgfile-alsa
 f:9f0055a3b9e456af7e0f2beb0d13b942:vlc/post-install
-f:35443c164d0c7c9bbc9e308f28687f87:vlc/Pkgfile
-f:6d14823cb96a3c04e8d8b260b0b85221:vlc/.signature
+f:91d78ed22b6ed47d4ba154390b39b8c1:vlc/Pkgfile
+f:f0d9f4f8bc125184e146a9a068d6b7dd:vlc/.signature
 f:e9a7fc048c528aa1783fb12d57a2d3a3:vokoscreen/.footprint
 f:685eac732404efa084e1d6c7eedd7df2:vokoscreen/.signature
 f:f783cd318c03f6a0b917395e8deadec1:vokoscreen/Pkgfile
