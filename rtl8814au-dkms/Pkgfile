@@ -9,8 +9,7 @@ _name=${name//-dkms}
 version=5.8.5.1
 sversion="27d2344264f774dd2add19d4139dfc07985d6ada"
 release=1
-source=(https://github.com/aircrack-ng/${_name}/archive/${sversion}/${_name}-${version}.tar.gz \
-        dkms.conf)
+source=(https://github.com/aircrack-ng/${_name}/archive/${sversion}/${_name}-${version}.tar.gz)
 
 build() {
 
@@ -18,8 +17,6 @@ build() {
 
   mkdir -p "${PKG}"/usr/src/"${_name}"-"${version}"
   cp -pr * "${PKG}"/usr/src/"${_name}"-"${version}"
-
-  cp "${SRC}"/dkms.conf "${PKG}"/usr/src/"${_name}"-"${version}"
 
   mkdir -p "${PKG}"/var/lib/dkms/"${_name}"/"${version}"/build
   ln -s /usr/src/"${_name}"-"${version}" \
