@@ -16,4 +16,7 @@ build() {
 
   make PREFIX=/usr DESTDIR="${PKG}" install
 
+  rm -rf "${PKG}"/usr/share/luakit/doc/
+  rm "${PKG}"/usr/share/luakit/resources/icons/COPYING
+
 }

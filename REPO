@@ -54,7 +54,6 @@ d:qq-bin
 d:ratpoison
 d:reaver
 d:rtaudio
-d:rtl8812au-dkms
 d:sabnzbd
 d:opera-bin
 d:secure-delete
@@ -96,9 +95,9 @@ d:rtl8814au-dkms
 f:75f342e59b378d3bdbabf0e9edf3c653:lshw/.signature
 f:143d2604bf77fb4c9de17df37d92ed29:lshw/.footprint
 f:9863400b25b92424d5f3b0a88cdeab15:lshw/Pkgfile
-f:b856d6359c617ad6f219cc1078b271fa:luakit/Pkgfile
-f:68f8ad5a1b3fae9e0ffe781f61074e4d:luakit/.footprint
-f:24080377f1d9efd727ad629fb1358e80:luakit/.signature
+f:ba1b3279be1b261d92986f862d58f90a:luakit/Pkgfile
+f:2259230bb090ef0a44614e7f3dd577b7:luakit/.footprint
+f:744458d7be38a0ce1ce50bb329c9b4d8:luakit/.signature
 f:88fe8c197d6bf57699b27d4625a81e24:android-tools/.footprint
 f:2cd6f786165c38f518066cb05e53f4af:android-tools/Pkgfile
 f:4586da015139aeec92510dc9abe3f5c1:android-tools/.signature
@@ -302,12 +301,6 @@ f:55c1112985184f59debe0819478c4510:reaver/Pkgfile
 f:faafc7bc21530ff395449e6cc277f6eb:rtaudio/.signature
 f:9bd28e266271d48653d9414576ca6c49:rtaudio/.footprint
 f:2d8ee3d3de94a3f4a2dc0ed681edfad1:rtaudio/Pkgfile
-f:8d27d3056ee5abc1a6dd907359ba0bb0:rtl8812au-dkms/.signature
-f:657809584b57dc40be0ca4da67bed627:rtl8812au-dkms/.SRCINFO
-f:5d325e6d81213b0991fdb144221883d1:rtl8812au-dkms/README
-f:cb0cf7ddc475d4b1963b5312770acfd4:rtl8812au-dkms/.footprint
-f:72ecbc5055b3370852ed85a34e96ac26:rtl8812au-dkms/Pkgfile
-f:69cf3aea1739c0f18fd4684192b207ed:rtl8812au-dkms/dkms.conf
 f:a12b54acd726669d30f1f7857ef11ab6:sabnzbd/sabnzbd
 f:545093234d26e3efb38981491d751b2e:sabnzbd/.footprint
 f:f568a5dd87b6ff2900c52df5156e7f9e:sabnzbd/Pkgfile
