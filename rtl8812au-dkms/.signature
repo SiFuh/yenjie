@@ -1,6 +1,0 @@
-untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uJLVbpm0Rv4keMHimMypm2F5/d++ZwmqTUt5ixn/dgGSLr2k5EYGOvH4YgRexc+mgSLE1oEqK98qTksJ3Wvr3Qk=
-SHA256 (Pkgfile) = 25b5b0e1573f9b9cd8baebabf28cac1a367354c59a646a5dd0fa2efd26af609d
-SHA256 (.footprint) = 31a43a012e41cbed9fc79479ad05fc080b12eb5934a3f99a17a843e3c7d392fc
-SHA256 (rtl8812au-5.7.0.tar.gz) = b4dcbedfa9a1077d5071c29d67bd798d7246071a2b67606853f9db8af36da9c0
-SHA256 (dkms.conf) = 471ff9234cd177b12c5fa20cfe84e9e8b9040557e69429c5cbf0133374b7b181
