@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uM7g+eEjA3mT5fkkuffmtktzNg8M+uaouv/tOyWj3xVvLQgc45z5b43fFzQHeFDXAZ6XqhTFMV8lCA05UUrPxgc=
-SHA256 (Pkgfile) = d76a3dbbbd8e1e9584263754d22f5771ee83d196ac696d15a28959a33e363a2c
+RWQ0NN0w0eo0uKqNP1S3zMZstNSK2FyyMPvU6gbNHOAxvNQAJxAilsj5FznJ1a1y/Yr2182iEf3iWFDeAefW3+vV7WBI6ZqL9Qo=
+SHA256 (Pkgfile) = 239a34db075d9860d904ae371aa434116e66eada471911a47ab5fd2f24438f11
 SHA256 (.footprint) = 9c1cca27c205e6891977176f65cc1c945b5d5996747dede55524fa5b089cbced
-SHA256 (Oracle_VM_VirtualBox_Extension_Pack-6.1.16-140961.vbox-extpack) = 9802482b77b95a954cb5111793da10d009009a4e9a9c4eaa4bd1ae5dafe9db46
+SHA256 (Oracle_VM_VirtualBox_Extension_Pack-6.1.18-142142.vbox-extpack) = d609e35accff5c0819ca9be47de302abf094dc1b6d4c54da8fdda639671f267e
