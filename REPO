@@ -330,10 +330,10 @@ f:40d80530f89cccf24b587be7d25232b9:soapy-rtlsdr/.signature
 f:4d0cb08933e06166a71993a05a8b2ac9:soapy-sdr/.signature
 f:6761ba4afa2ae3bdf403774ea1ee152e:soapy-sdr/.footprint
 f:3382aefeaab471be737aba36ba7c8b9b:soapy-sdr/Pkgfile
-f:d8c70fa6026a7211f1a092e1e1379519:supertuxkart-bin/run_game.patch
+f:f17a39804d0c930b8060830ce5c1960a:supertuxkart-bin/run_game.patch
 f:ffb40b51df7c8b2fa3b4db0bb006a1a8:supertuxkart-bin/.footprint
-f:3f6579543e4ec6c138bc155bc56203bf:supertuxkart-bin/Pkgfile
-f:7af444f3825a583310d4f866186a80c6:supertuxkart-bin/.signature
+f:125e90e3958f1d14e8f73e78474b6bd8:supertuxkart-bin/Pkgfile
+f:1acfc2c9de32ba3614fd6db118d08533:supertuxkart-bin/.signature
 f:8efc34e9c2cc43b1bd174ee726cff51d:telegram-bin/Pkgfile
 f:51ee9b11b51467edc91f48f112312261:telegram-bin/.footprint
 f:7f345d911e9b932116eb24da3b26e16c:telegram-bin/.signature

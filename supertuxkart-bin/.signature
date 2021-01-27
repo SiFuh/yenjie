@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uCSBoqJETLyzgaKjtlRRsRcfa+gdPMIW2/az8yGONwFuqKcvWZYcNzxIz/gUF7iicWFsTfZJ2vciWaW4nWPuaQg=
-SHA256 (Pkgfile) = 073e5963b282bf55ca53b7e7d81429ea4e4995a5621449ccef8ee8e4a419d1e9
+RWQ0NN0w0eo0uCCLzXm0HfXGrrGPi8RLWn2bnMi6f82y7GurdnphK44FXztrZ8WGRXtUs2HUaY4wITHcqU4UrIxBjqh3xSBdogk=
+SHA256 (Pkgfile) = f01a09af4b7721ba20a166e7a883303459e2d4616458eefdc2f058ebee6c814d
 SHA256 (.footprint) = 5c70315b81b0a4cfaafb51114ed5bce462319170d9a6fb1ce84ea9d275e6e10f
 SHA256 (SuperTuxKart-1.2-linux.tar.xz) = c3064ae5d0cdf9cbd861ffc8944aa6b90a2fa8b134379614b8529f7f1a53ae2f
-SHA256 (run_game.patch) = d7bc9a4133af7e88dcba06133488991bfe27a6c2509023ef1f971fcf64c7d088
+SHA256 (run_game.patch) = a4979c236750ba6882f776151399dfdcfd0dd0efc9060a006db92921ea120823
