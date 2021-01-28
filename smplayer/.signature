@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uFB4UBaizpNpS+HpdN75rhUFP/4efTb7+MWks8IO4u4tDMgCGmctV5rB8rm9l7xtehia5wBCik2D58rDqQBnRAc=
-SHA256 (Pkgfile) = 277eb722317ca12c26b70bf9c91532fc2295600254670fbe302c2d807f0166ab
+RWQ0NN0w0eo0uCzw4TjQ/YH0YgO3coxen0TkW7S1+0y1L5hFJsPtqgNr4ngFr3RsUnw//wRoWQwk2pDGbU6haUHY2wSsftBvYAU=
+SHA256 (Pkgfile) = f5a8f8d1520d9fa199e3ed9b2ee667cd1db0bcdacd5a076102bda0e76018a1b5
 SHA256 (.footprint) = fe301b0342d8c76dd67b756ab68b29b13201db681f10864b6e425033c98cfd61
-SHA256 (smplayer-20.6.0.tar.bz2) = be76596b9a0b7079bc41be8f200c1024670bd80ffe9d6ec5f24879519f7ba930
+SHA256 (smplayer-21.1.0.tar.bz2) = 634baadf65e843c7e92090d27117c0ee9dd161deb1d4f5994ac63201860a7ff7

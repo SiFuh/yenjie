@@ -5,7 +5,7 @@
 # Depends on:   mplayer qt5
 
 name=smplayer
-version=20.6.0
+version=21.1.0
 release=1
 source=(http://prdownloads.sf.net/$name/$name-$version.tar.bz2)
 
