@@ -4,7 +4,7 @@
 # Depends on:   libdrm xorg-libice xorg-libsm fontconfig freetype xorg-libxcb xorg-libx11 glib dbus libpng expat xorg-libxau xorg-libxdmcp 
 
 name=telegram-bin
-version=2.5.7
+version=2.5.8
 release=1
 source=(https://updates.tdesktop.com/tlinux/tsetup.${version}.tar.xz)
 
