@@ -1,0 +1,18 @@
+# Description:  A lightweight header-only library that exposes C++ types in Python and vice versa
+# URL:          https://pybind11.readthedocs.org
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   cmake python3-setuptools
+
+name=python3-pybind11
+_name=${name//python3-}
+version=2.6.2
+release=1
+source=(https://github.com/${_name//11}/${_name}/archive/v${version}/${_name}-${version}.tar.gz)
+
+build() {
+
+	cd "${_name}"-"${version}"
+
+	/usr/bin/python3 setup.py install --root="${PKG}"
+
+}
