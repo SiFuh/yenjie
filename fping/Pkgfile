@@ -11,13 +11,13 @@ source=(https://fping.org/dist/${name}-${version}.tar.gz)
 
 build() {
 
-  cd ${name}-${version}
+  cd "${name}"-"${version}"
 	
   ./configure --prefix=/usr
 	
   make
-  make DESTDIR=${PKG} install
+  make DESTDIR="${PKG}" install
 
-  chmod 4755 ${PKG}/usr/sbin/fping
+  chmod 4755 "${PKG}"/usr/sbin/fping
 
 }

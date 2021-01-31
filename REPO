@@ -162,9 +162,9 @@ f:f72e913526824fde4446f648cef476fc:fcitx-qt5/.signature
 f:3b5afee4c4eaa20838f72d07dd5dc914:flashrom/.signature
 f:dc22af5e1d7186c84931c139f02030b8:flashrom/Pkgfile
 f:6be6d5bca974a155f989a3fe94828042:flashrom/.footprint
-f:73135f6768c7f5aa13fb0e2cbdeadc08:fping/.signature
+f:8e68bff996887cddd15f715b9bbfdc9a:fping/.signature
 f:2a540487658c78f914aae1b16588269d:fping/.footprint
-f:38c5d660debec634552b0a4ad3dcba4e:fping/Pkgfile
+f:9b1d9a9341cf15a79794d0d4747b6d02:fping/Pkgfile
 f:0fc83c222264fff789d3d99b15440b80:gnuradio/FindQwt_cmake.patch
 f:b236aed8275a9970ca9383316c327d7f:gnuradio/.signature
 f:5357cdc299522d7eb13caa6e54c874c9:gnuradio/.footprint
