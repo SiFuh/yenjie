@@ -280,9 +280,9 @@ f:05148fef4869a092398f47776da27654:python3-pyzmq/Pkgfile
 f:282c28d2ddb077f58496c353e5455c65:python3-scipy/.signature
 f:cc39a9075a5099518e329f17d3ff1347:python3-scipy/Pkgfile
 f:290281828cf739832478bcf6410d890a:python3-scipy/.footprint
-f:739f7cde6843be07c3de57d843c4449b:python-future/.signature
+f:6eede4dff2ce1dfaaa96bc930eb27f96:python-future/.signature
 f:95ed21a024388f2bb057e504b11263e2:python-future/.footprint
-f:14deef595098716c598ed419d3897d1a:python-future/Pkgfile
+f:80d7f008aa7574ff5237047e03bd483f:python-future/Pkgfile
 f:45bc8be85c0f710670be5f6106de3f65:python-sabyenc/.footprint
 f:5461ad71c707538d68995ef57ae2cb93:python-sabyenc/Pkgfile
 f:7cfef57f52f477b522ed54149739f8a6:python-sabyenc/.signature

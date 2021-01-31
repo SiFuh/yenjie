@@ -1,6 +1,5 @@
 # Description:  Clean single-source support for Python 3
 # URL:          https://python-future.org/
-# Packager:
 # Maintainer:   Lin SiFuh, #crux at freenode dot net
 # Depends on:   python python-setuptools
 
@@ -11,10 +10,10 @@ source=(https://pypi.io/packages/source/f/${name//python-}/${name//python-}-${ve
 
 build() {
 
-  cd ${name//python-}-${version}
+  cd "${name//python-}"-"${version}"
 
   python setup.py build
 
-  python setup.py install --root=${PKG} --optimize=1
+  python setup.py install --root="${PKG}" --optimize=1
 
 }
