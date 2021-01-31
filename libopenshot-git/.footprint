@@ -5,6 +5,9 @@ drwxr-xr-x	root/root	usr/include/libopenshot/
 -rw-r--r--	root/root	usr/include/libopenshot/AudioDeviceInfo.h
 -rw-r--r--	root/root	usr/include/libopenshot/AudioReaderSource.h
 -rw-r--r--	root/root	usr/include/libopenshot/AudioResampler.h
+-rw-r--r--	root/root	usr/include/libopenshot/CVObjectDetection.h
+-rw-r--r--	root/root	usr/include/libopenshot/CVStabilization.h
+-rw-r--r--	root/root	usr/include/libopenshot/CVTracker.h
 -rw-r--r--	root/root	usr/include/libopenshot/CacheBase.h
 -rw-r--r--	root/root	usr/include/libopenshot/CacheDisk.h
 -rw-r--r--	root/root	usr/include/libopenshot/CacheMemory.h
@@ -13,6 +16,7 @@ drwxr-xr-x	root/root	usr/include/libopenshot/
 -rw-r--r--	root/root	usr/include/libopenshot/ChunkWriter.h
 -rw-r--r--	root/root	usr/include/libopenshot/Clip.h
 -rw-r--r--	root/root	usr/include/libopenshot/ClipBase.h
+-rw-r--r--	root/root	usr/include/libopenshot/ClipProcessingJobs.h
 -rw-r--r--	root/root	usr/include/libopenshot/Color.h
 -rw-r--r--	root/root	usr/include/libopenshot/Coordinate.h
 -rw-r--r--	root/root	usr/include/libopenshot/CrashHandler.h
@@ -42,6 +46,7 @@ drwxr-xr-x	root/root	usr/include/libopenshot/
 -rw-r--r--	root/root	usr/include/libopenshot/OpenShotVersion.h
 -rw-r--r--	root/root	usr/include/libopenshot/PlayerBase.h
 -rw-r--r--	root/root	usr/include/libopenshot/Point.h
+-rw-r--r--	root/root	usr/include/libopenshot/ProcessingController.h
 -rw-r--r--	root/root	usr/include/libopenshot/Profiles.h
 drwxr-xr-x	root/root	usr/include/libopenshot/Qt/
 -rw-r--r--	root/root	usr/include/libopenshot/Qt/AudioPlaybackThread.h
@@ -76,10 +81,17 @@ drwxr-xr-x	root/root	usr/include/libopenshot/effects/
 -rw-r--r--	root/root	usr/include/libopenshot/effects/Hue.h
 -rw-r--r--	root/root	usr/include/libopenshot/effects/Mask.h
 -rw-r--r--	root/root	usr/include/libopenshot/effects/Negate.h
+-rw-r--r--	root/root	usr/include/libopenshot/effects/ObjectDetection.h
 -rw-r--r--	root/root	usr/include/libopenshot/effects/Pixelate.h
 -rw-r--r--	root/root	usr/include/libopenshot/effects/Saturation.h
 -rw-r--r--	root/root	usr/include/libopenshot/effects/Shift.h
+-rw-r--r--	root/root	usr/include/libopenshot/effects/Stabilizer.h
+-rw-r--r--	root/root	usr/include/libopenshot/effects/Tracker.h
 -rw-r--r--	root/root	usr/include/libopenshot/effects/Wave.h
+drwxr-xr-x	root/root	usr/include/libopenshot/protobuf_messages/
+drwxr-xr-x	root/root	usr/include/libopenshot/sort_filter/
+-rw-r--r--	root/root	usr/include/libopenshot/sort_filter/Hungarian.h
+-rw-r--r--	root/root	usr/include/libopenshot/sort_filter/KalmanTracker.h
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python3.9/
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/
