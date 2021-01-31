@@ -2,13 +2,13 @@
 # URL:          https://launchpad.net/libopenshot
 # Packager:
 # Maintainer:   Lin SiFuh, #crux at freenode dot net
-# Depends on:   libopenshot-audio-git qt5 ffmpeg zeromq swig cppzmq zstd graphicsmagick
+# Depends on:   libopenshot-audio-git qt5 ffmpeg zeromq swig cppzmq zstd
 
 name=libopenshot-git
 _name=libopenshot
 version=0.2.5
 sversion=bdb3eea92fdbf6f1c4c0ead2de65235ac435f2f7
-release=2
+release=1
 source=()
 gsource=(https://github.com/OpenShot/${_name}/)
 
