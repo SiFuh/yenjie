@@ -320,13 +320,13 @@ f:78e39cdc39bbb5e13e16c042da0de213:skypeforlinux-bin/Pkgfile
 f:ce166d5524eea83ef45ee64a3ee8e0d8:skypeforlinux-bin/README
 f:694788cf10f050574fb6c27f43738d80:smplayer/.signature
 f:90d93dd8ff85ffba45390a0dc09195ee:smplayer/.footprint
-f:f241e28563cb1df59a2852317b6df86f:smplayer/Pkgfile
+f:361e6d29e76cd001a83da46c5cd3f69f:smplayer/Pkgfile
 f:c5b9d99af8150760ff896b625a186753:sntop/.footprint
 f:fec14f0abef4f76e0a3fc31fa01dd519:sntop/Pkgfile
 f:77e569fbd28d586b97f2fc3f4b41bf37:sntop/.signature
 f:59955c221b94275facf2ede263d04412:soapy-rtlsdr/.footprint
-f:84b32910e09a349770c093e33ec1ff02:soapy-rtlsdr/Pkgfile
-f:40d80530f89cccf24b587be7d25232b9:soapy-rtlsdr/.signature
+f:cc02be37e4169d1478497b3a67509217:soapy-rtlsdr/Pkgfile
+f:0bd7eb9dcf5c29946adcbdc7449fc758:soapy-rtlsdr/.signature
 f:4d0cb08933e06166a71993a05a8b2ac9:soapy-sdr/.signature
 f:6761ba4afa2ae3bdf403774ea1ee152e:soapy-sdr/.footprint
 f:3382aefeaab471be737aba36ba7c8b9b:soapy-sdr/Pkgfile
