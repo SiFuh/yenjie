@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uB2k5Gn5/0xRXaLLw32gEdkgK8a/SXLc54ckZ+2j7k3KruHJMxmdEvj6ZWW9bkm8HipOmU8NJ8xIfnmQExxNUAs=
-SHA256 (Pkgfile) = f4d9064c9f16477435901101ea699cab4aee9571e531615959b6e1cb4cce07c9
-SHA256 (.footprint) = a4701f77dd63d3d0d94a81b8f49e182804d3c686d2cf0856b79fc24c7adfbb8e
-SHA256 (skypeforlinux_8.68.76.35_amd64.deb) = 701449b86ff1c10ee800cc017033c7c2e9b31023fcc1a9058590babf070ce3bb
+RWQ0NN0w0eo0uAZPdmNlKvE4GHtFv1pelPirfEoZVFEXseHDm7uTbftN4yybclJ/Ik83+PBIdm2TdjK5VFrgVG6E5uDWGDWcLg8=
+SHA256 (Pkgfile) = 70a0542a1a27b2c0b9237518764afaab5823ccd389c337e490ec7a27ba1254f0
+SHA256 (.footprint) = 7592154d6e62cae9825c69f27197688ff763a67d5fb268b82837226ddbafb27d
+SHA256 (skypeforlinux_8.69.76.21_amd64.deb) = ec8444f706ae293c0e9334daec17183dea361a156cc3d90e52d06a8d7c222265

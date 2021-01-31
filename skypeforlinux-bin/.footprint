@@ -28,12 +28,12 @@ drwxr-xr-x	root/root	opt/share/skypeforlinux/
 -rwxr-xr-x	root/root	opt/share/skypeforlinux/chrome-sandbox
 -rw-r--r--	root/root	opt/share/skypeforlinux/chrome_100_percent.pak
 -rw-r--r--	root/root	opt/share/skypeforlinux/chrome_200_percent.pak
--rwxr-xr-x	root/root	opt/share/skypeforlinux/crashpad_handler
 -rw-r--r--	root/root	opt/share/skypeforlinux/icudtl.dat
 -rwxr-xr-x	root/root	opt/share/skypeforlinux/libEGL.so
 -rwxr-xr-x	root/root	opt/share/skypeforlinux/libGLESv2.so
 -rwxr-xr-x	root/root	opt/share/skypeforlinux/libffmpeg.so
 -rwxr-xr-x	root/root	opt/share/skypeforlinux/libvk_swiftshader.so
+-rwxr-xr-x	root/root	opt/share/skypeforlinux/libvulkan.so
 -rw-r--r--	root/root	opt/share/skypeforlinux/resources.pak
 drwxr-xr-x	root/root	opt/share/skypeforlinux/resources/
 -rw-r--r--	root/root	opt/share/skypeforlinux/resources/app.asar

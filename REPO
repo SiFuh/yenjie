@@ -314,9 +314,9 @@ f:267a56579846feb293446f319f04efe8:opera-bin/.md5sum
 f:ceb74bd5e8ed08670dc31a0f08c780fa:secure-delete/Pkgfile
 f:0b8fb618edd01dda3d4e88d02da0571e:secure-delete/.signature
 f:7efc27ea342b0fa44500967da1c6c986:secure-delete/.footprint
-f:61a004a0758d693e87152722e4950047:skypeforlinux-bin/.footprint
-f:57ecb763cf0046e74d5269543a76565c:skypeforlinux-bin/.signature
-f:0d6e842c36166f895db48431bab8e47b:skypeforlinux-bin/Pkgfile
+f:3bdad15da3c00e5ff67e28788a46667a:skypeforlinux-bin/.footprint
+f:fe78a1c834eeba003d6229fe48c5d37f:skypeforlinux-bin/.signature
+f:78e39cdc39bbb5e13e16c042da0de213:skypeforlinux-bin/Pkgfile
 f:ce166d5524eea83ef45ee64a3ee8e0d8:skypeforlinux-bin/README
 f:694788cf10f050574fb6c27f43738d80:smplayer/.signature
 f:90d93dd8ff85ffba45390a0dc09195ee:smplayer/.footprint
