@@ -354,8 +354,8 @@ f:72dcb2202ecb847c1a676115171b67b0:v4l-utils/Pkgfile
 f:5a7eb80ffcccd3e262e9b3c564d6fe26:v4l-utils/.signature
 f:b04095dd33a0f4a02b5675a1838d535f:v4l-utils/.footprint
 f:97aeb1eb8e916473a27af61c91d7cd74:vanilla-dmz/.footprint
-f:2f024c9e9c20289c9fffd0101e2d22cb:vanilla-dmz/Pkgfile
-f:c7d80c7e6a3a20b7a9ec9ecb3fd5feea:vanilla-dmz/.signature
+f:ae21bdd786a7a839b42df2f27587ae66:vanilla-dmz/Pkgfile
+f:6d357e93c43d8c42884ab844f8562ec8:vanilla-dmz/.signature
 f:09af141f0e3ab08517637eccc86fcd84:virtualbox-bin/.footprint
 f:3ce33328d23bf16bf9589fa36aa010cd:virtualbox-bin/60-vboxdrv.rules
 f:277148c788f013eba2fdc32c24548fd1:virtualbox-bin/.signature
