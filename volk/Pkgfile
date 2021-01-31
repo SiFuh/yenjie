@@ -5,11 +5,20 @@
 # Depends on:   neon git python3 python3-mako orc python3-six cmake
 
 name=volk
-version=2.2.0
+version=2.4.1
+cversion=0.6.0
 release=1
-source=(https://github.com/gnuradio/${name}/archive/v${version}/${name}-${version}.tar.gz)
+source=(https://github.com/gnuradio/${name}/archive/v${version}/${name}-${version}.tar.gz
+        https://github.com/google/cpu_features/archive/v${cversion}/cpu_features-${cversion}.tar.gz)
 
 build () {
+
+  cd "${SRC}"/"${name}"-"${version}"
+
+  rmdir cpu_features
+  ln -sf "${SRC}"/cpu_features-"${cversion}" cpu_features
+
+  cd "${SRC}"
 
   cmake -S "${name}"-"${version}" -B build -G Ninja     \
         -D ENABLE_DOXYGEN=OFF                           \

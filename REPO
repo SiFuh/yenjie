@@ -378,9 +378,9 @@ f:2ca8b6c3e5a63e4e94a4dfbdcdc820ca:vlc/.signature
 f:e9a7fc048c528aa1783fb12d57a2d3a3:vokoscreen/.footprint
 f:685eac732404efa084e1d6c7eedd7df2:vokoscreen/.signature
 f:f783cd318c03f6a0b917395e8deadec1:vokoscreen/Pkgfile
-f:33808dc242e70d48ed09dc1baaf098d0:volk/Pkgfile
-f:c951d9aaa1e547eeae83263ba6c3c745:volk/.signature
-f:d17179343c30d69de27333727334aef9:volk/.footprint
+f:b05758904cb593a1a4c3df53897c39ed:volk/Pkgfile
+f:75a2cf235534d03b5681e3777113c29a:volk/.signature
+f:194a91cf6ebf40cdb623fc675bfe6656:volk/.footprint
 f:956b102ac91f009574b015b222a165a0:warmux/warmux.patch
 f:ebd73ca07f2bb95659ef643e9279e7ce:warmux/Pkgfile
 f:fb5309d98bbe59c973ae79450062b07d:warmux/.footprint
