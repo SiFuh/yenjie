@@ -1,7 +1,7 @@
-# Description:	Skype Web plugin for Pidgin Messenger
-# URL:		http://pidgin.im/
-# Maintainer:	Lin SiFuh, #crux at freenode dot net 		
-# Depends on:	pidgin 
+# Description:  Skype Web plugin for Pidgin Messenger
+# URL:          http://pidgin.im/
+# Maintainer:   Lin SiFuh, #crux at freenode dot net 		
+# Depends on:   pidgin 
 
 name=pidgin-skypeweb
 _name=skype4pidgin
@@ -11,9 +11,9 @@ source=(https://github.com/EionRobb/${_name}/archive/${version}/${name}-${versio
 
 build(){
 
-	cd skype4pidgin-${version}/skypeweb
+	cd skype4pidgin-"${version}"/"${name//pidgin-}"
 
-	make DESTDIR=${PKG}
-	make DESTDIR=${PKG} install
+	make DESTDIR="${PKG}"
+	make DESTDIR="${PKG}" install
 
 }
