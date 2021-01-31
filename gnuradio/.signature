@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uIUim2+TfOzEfwfoXXfAAeGOFwvomqE793zohBaYfKNLuUpMUia1I/P9NVpUcFYuR0+l2CdB/UxNtYMefLhzXQ8=
-SHA256 (Pkgfile) = fe20b1b2f8dcb2fa06b2ac2127f8197bb42d68538327241ecd71a49af89b1aa9
-SHA256 (.footprint) = e2c6ea72250a44561b4115b4629a84e7a8dbd2e96964eccc2edb4ed547272191
-SHA256 (gnuradio-3.9.0.0-ffe8c74.tar.gz) = dbf1dd56cf116dd00154113093d942fcc05b3fc1fdcc69a3c95f447a1f1ba6f0
+RWQ0NN0w0eo0uLf2JVUwJQh4Krfmadx8dfyf4HjCaUkbtLu9imhVbeUQlvg6UnzfT+lm8k5WOBXrjyQBxj8jR5wqlxL/DWP5ng0=
+SHA256 (Pkgfile) = 4e1c2562e2e50ab0e245a42b31c819ee7b056ba3d018c3d78f7037042e09713c
+SHA256 (.footprint) = f6315db03e07539c510fda0a11feefc900d94af9ee32e7877e6cdbb6e128ed49
+SHA256 (gnuradio-3.9.0.0-b3cf9da.tar.gz) = 97c46d167ae82fb2dfd5b47d9836ec486da2673b0723e16b84e95c4fd87f1f1c
 SHA256 (FindQwt_cmake.patch) = ea9dba8141e44fcd440f1bfc492f45162baa99cd431340063823ecfcd997ce01
 SHA256 (gnuradio_boost.patch) = b0ad72bcce1e80e3b75f0a9fecec95a7742f2ad43505f090da798c7105b18939
