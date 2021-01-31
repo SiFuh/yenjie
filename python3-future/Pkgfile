@@ -11,10 +11,10 @@ source=(https://pypi.io/packages/source/f/${name//python3-}/${name//python3-}-${
 
 build() {
 
-  cd ${name//python3-}-${version}
+  cd "${name//python3-}"-"${version}"
 
   python3 setup.py build
 
-  python3 setup.py install --root=${PKG} --optimize=1
+  python3 setup.py install --root="${PKG}" --optimize=1
 
 }

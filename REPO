@@ -267,9 +267,9 @@ f:4703dc0019932e442486942adb6c90a4:pulseaudio-alsa/asound.conf
 f:e07a973a8c0e5f97049eabcea405996c:pulseaudio-alsa/Pkgfile
 f:2dfa1b1ed7e60706cdeb4d7e573ba93f:pulseaudio-alsa/.signature
 f:3a6f88d78e7363125761f5facc3fff2a:pulseaudio-alsa/.footprint
-f:4e9ce99587cd4b4b109df81073010b33:python3-future/.footprint
-f:373482c433b859a6f0893e10023b2ab0:python3-future/.signature
-f:3f26747d84e3da26d6397fa209446c81:python3-future/Pkgfile
+f:a80097f0c6d2c71f43b009bfe22f3fcd:python3-future/.footprint
+f:22a45daad84e81ab180a7e2fd7507396:python3-future/.signature
+f:e23da3878fea1f2d8647f67b7979b8c0:python3-future/Pkgfile
 f:4859cca566c995dd297b49b8ee2a48df:python3-pyserial/Pkgfile
 f:1c73ca7337a0e4b962fdb0b0c274c8cd:python3-pyserial/.footprint
 f:040208bdc2ccadf4ee598ec3e70eb4fc:python3-pyserial/.signature
