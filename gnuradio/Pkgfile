@@ -2,11 +2,11 @@
 # URL:          http://www.gnuradio.org
 # Packager:
 # Maintainer:   Lin SiFuh, #crux at freenode dot net
-# Depends on:   git cmake boost cppunit python3-mako log4cpp python3 swig python3-numpy python3-scipy cheetah-template pygtk fftw gsl qt5 qwt python3-pyqt5 python3-lxml portaudio jack python3-yaml python3-gobject python3-cairo python3-click gsm libsdl gtk3 uhd volk zstd python3-pybind11
+# Depends on:   git cmake boost cppunit python3-mako log4cpp python3 swig python3-numpy python3-scipy cheetah-template pygtk fftw gsl qt5 qwt python3-pyqt5 python3-lxml portaudio jack python3-yaml python3-gobject python3-cairo python3-click gsm libsdl gtk3 uhd volk zstd
 
 name=gnuradio
-version=3.9.0.0-b3cf9da
-sversion=b3cf9da3957962733d3b4ec7979dde97f32e090b
+version=3.9.0.0-ffe8c74
+sversion=ffe8c748077b33d9dd908f487572c2cc08d46bcf
 release=1
 source=(https://github.com/${name}/${name}/archive/${sversion}/${name}-${version}.tar.gz
         FindQwt_cmake.patch
@@ -15,7 +15,7 @@ source=(https://github.com/${name}/${name}/archive/${sversion}/${name}-${version
 build() {
 
   patch -p0 -d "${name}"-"${sversion}" -i "${SRC}"/FindQwt_cmake.patch
-#  patch -p2 -d "${name}"-"${sversion}" -i "${SRC}"/"${name}"_boost.patch
+  patch -p2 -d "${name}"-"${sversion}" -i "${SRC}"/"${name}"_boost.patch
 
   cmake -S "${name}"-"${sversion}" -B build -G Ninja \
         -D ENABLE_GRC=ON                             \
@@ -29,8 +29,7 @@ build() {
         -D ENABLE_GR_CTRLPORT=OFF                    \
         -D CMAKE_INSTALL_PREFIX:PATH=/usr            \
         -D PYTHON_EXECUTABLE=/usr/bin/python3        \
-        -D GR_PKG_LIBEXEC_DIR=/usr/lib/"${name}"     \
-        -D pybind11_DIR=/usr/lib/python3.9/site-packages/pybind11/share/cmake/pybind11
+        -D GR_PKG_LIBEXEC_DIR=/usr/lib/"${name}" 
 
   cmake --build build
 
