@@ -1,6 +1,5 @@
 # Description:  An open source Microchip PIC programmer for the USB port
 # URL:          http://usbpicprog.org/
-# Packager:
 # Maintainer:   Lin SiFuh, #crux at freenode dot net
 # Depends on:   libusb wxgtk3
 
