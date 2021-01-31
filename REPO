@@ -163,8 +163,8 @@ f:8e68bff996887cddd15f715b9bbfdc9a:fping/.signature
 f:2a540487658c78f914aae1b16588269d:fping/.footprint
 f:9b1d9a9341cf15a79794d0d4747b6d02:fping/Pkgfile
 f:0fc83c222264fff789d3d99b15440b80:gnuradio/FindQwt_cmake.patch
-f:b0b09b1cbbbc8b00ef40080d05bd8655:gnuradio/.signature
-f:d1f904f8a70e1913c788d21cce2fe71e:gnuradio/.footprint
+f:e7a54b3346a7fdd8bd19bbfc1baed293:gnuradio/.signature
+f:5357cdc299522d7eb13caa6e54c874c9:gnuradio/.footprint
 f:87ce7dc428ed7a028db5c7ec1ebfc95d:gnuradio/README
 f:d7dd136f670f4cdfd669df8d24ddbc2d:gnuradio/gnuradio_boost.patch
 f:59a9ecbc754a587df0c95791bb38b131:gnuradio/Pkgfile

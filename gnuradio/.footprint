@@ -95,6 +95,7 @@ drwxr-xr-x	root/root	usr/include/gnuradio/blocks/
 -rw-r--r--	root/root	usr/include/gnuradio/blocks/annotator_raw.h
 -rw-r--r--	root/root	usr/include/gnuradio/blocks/api.h
 -rw-r--r--	root/root	usr/include/gnuradio/blocks/argmax.h
+-rw-r--r--	root/root	usr/include/gnuradio/blocks/bin_statistics_f.h
 -rw-r--r--	root/root	usr/include/gnuradio/blocks/burst_tagger.h
 -rw-r--r--	root/root	usr/include/gnuradio/blocks/char_to_float.h
 -rw-r--r--	root/root	usr/include/gnuradio/blocks/char_to_short.h
@@ -144,6 +145,7 @@ drwxr-xr-x	root/root	usr/include/gnuradio/blocks/
 -rw-r--r--	root/root	usr/include/gnuradio/blocks/lfsr_15_1_0.h
 -rw-r--r--	root/root	usr/include/gnuradio/blocks/lfsr_32k.h
 -rw-r--r--	root/root	usr/include/gnuradio/blocks/lfsr_32k_source_s.h
+-rw-r--r--	root/root	usr/include/gnuradio/blocks/log2_const.h
 -rw-r--r--	root/root	usr/include/gnuradio/blocks/magphase_to_complex.h
 -rw-r--r--	root/root	usr/include/gnuradio/blocks/max_blk.h
 -rw-r--r--	root/root	usr/include/gnuradio/blocks/message_debug.h
@@ -194,7 +196,6 @@ drwxr-xr-x	root/root	usr/include/gnuradio/blocks/
 -rw-r--r--	root/root	usr/include/gnuradio/blocks/short_to_float.h
 -rw-r--r--	root/root	usr/include/gnuradio/blocks/skiphead.h
 -rw-r--r--	root/root	usr/include/gnuradio/blocks/socket_pdu.h
--rw-r--r--	root/root	usr/include/gnuradio/blocks/stream_demux.h
 -rw-r--r--	root/root	usr/include/gnuradio/blocks/stream_mux.h
 -rw-r--r--	root/root	usr/include/gnuradio/blocks/stream_to_streams.h
 -rw-r--r--	root/root	usr/include/gnuradio/blocks/stream_to_tagged_stream.h
@@ -262,7 +263,6 @@ drwxr-xr-x	root/root	usr/include/gnuradio/digital/
 -rw-r--r--	root/root	usr/include/gnuradio/digital/cma_equalizer_cc.h
 -rw-r--r--	root/root	usr/include/gnuradio/digital/constellation.h
 -rw-r--r--	root/root	usr/include/gnuradio/digital/constellation_decoder_cb.h
--rw-r--r--	root/root	usr/include/gnuradio/digital/constellation_encoder_bc.h
 -rw-r--r--	root/root	usr/include/gnuradio/digital/constellation_receiver_cb.h
 -rw-r--r--	root/root	usr/include/gnuradio/digital/constellation_soft_decoder_cf.h
 -rw-r--r--	root/root	usr/include/gnuradio/digital/corr_est_cc.h
@@ -448,11 +448,13 @@ drwxr-xr-x	root/root	usr/include/gnuradio/fec/
 -rw-r--r--	root/root	usr/include/gnuradio/fec/tpc_decoder.h
 -rw-r--r--	root/root	usr/include/gnuradio/fec/tpc_encoder.h
 -rw-r--r--	root/root	usr/include/gnuradio/fec/viterbi.h
+-rw-r--r--	root/root	usr/include/gnuradio/feval.h
 drwxr-xr-x	root/root	usr/include/gnuradio/fft/
 -rw-r--r--	root/root	usr/include/gnuradio/fft/api.h
 -rw-r--r--	root/root	usr/include/gnuradio/fft/fft.h
 -rw-r--r--	root/root	usr/include/gnuradio/fft/fft_shift.h
--rw-r--r--	root/root	usr/include/gnuradio/fft/fft_v.h
+-rw-r--r--	root/root	usr/include/gnuradio/fft/fft_vcc.h
+-rw-r--r--	root/root	usr/include/gnuradio/fft/fft_vfc.h
 -rw-r--r--	root/root	usr/include/gnuradio/fft/goertzel.h
 -rw-r--r--	root/root	usr/include/gnuradio/fft/goertzel_fc.h
 -rw-r--r--	root/root	usr/include/gnuradio/fft/window.h
@@ -500,7 +502,7 @@ drwxr-xr-x	root/root	usr/include/gnuradio/filter/
 -rw-r--r--	root/root	usr/include/gnuradio/filter/pfb_synthesizer_ccf.h
 -rw-r--r--	root/root	usr/include/gnuradio/filter/pm_remez.h
 -rw-r--r--	root/root	usr/include/gnuradio/filter/polyphase_filterbank.h
--rw-r--r--	root/root	usr/include/gnuradio/filter/rational_resampler.h
+-rw-r--r--	root/root	usr/include/gnuradio/filter/rational_resampler_base.h
 -rw-r--r--	root/root	usr/include/gnuradio/filter/single_pole_iir.h
 -rw-r--r--	root/root	usr/include/gnuradio/filter/single_pole_iir_filter_cc.h
 -rw-r--r--	root/root	usr/include/gnuradio/filter/single_pole_iir_filter_ff.h
@@ -535,11 +537,11 @@ drwxr-xr-x	root/root	usr/include/gnuradio/network/
 -rw-r--r--	root/root	usr/include/gnuradio/network/udp_sink.h
 -rw-r--r--	root/root	usr/include/gnuradio/network/udp_source.h
 -rw-r--r--	root/root	usr/include/gnuradio/prefs.h
+-rw-r--r--	root/root	usr/include/gnuradio/py_feval.h
 -rw-r--r--	root/root	usr/include/gnuradio/pycallback_object.h
 drwxr-xr-x	root/root	usr/include/gnuradio/qtgui/
 -rw-r--r--	root/root	usr/include/gnuradio/qtgui/ConstellationDisplayPlot.h
 -rw-r--r--	root/root	usr/include/gnuradio/qtgui/DisplayPlot.h
--rw-r--r--	root/root	usr/include/gnuradio/qtgui/EyeDisplayPlot.h
 -rw-r--r--	root/root	usr/include/gnuradio/qtgui/FrequencyDisplayPlot.h
 -rw-r--r--	root/root	usr/include/gnuradio/qtgui/HistogramDisplayPlot.h
 -rw-r--r--	root/root	usr/include/gnuradio/qtgui/TimeDomainDisplayPlot.h
@@ -552,11 +554,6 @@ drwxr-xr-x	root/root	usr/include/gnuradio/qtgui/
 -rw-r--r--	root/root	usr/include/gnuradio/qtgui/constellationdisplayform.h
 -rw-r--r--	root/root	usr/include/gnuradio/qtgui/displayform.h
 -rw-r--r--	root/root	usr/include/gnuradio/qtgui/edit_box_msg.h
--rw-r--r--	root/root	usr/include/gnuradio/qtgui/eye_sink_c.h
--rw-r--r--	root/root	usr/include/gnuradio/qtgui/eye_sink_f.h
--rw-r--r--	root/root	usr/include/gnuradio/qtgui/eyecontrolpanel.h
--rw-r--r--	root/root	usr/include/gnuradio/qtgui/eyedisplayform.h
--rw-r--r--	root/root	usr/include/gnuradio/qtgui/eyedisplaysform.h
 -rw-r--r--	root/root	usr/include/gnuradio/qtgui/form_menus.h
 -rw-r--r--	root/root	usr/include/gnuradio/qtgui/freq_sink_c.h
 -rw-r--r--	root/root	usr/include/gnuradio/qtgui/freq_sink_f.h
@@ -603,6 +600,102 @@ drwxr-xr-x	root/root	usr/include/gnuradio/qtgui/
 -rw-r--r--	root/root	usr/include/gnuradio/runtime_types.h
 -rw-r--r--	root/root	usr/include/gnuradio/sincos.h
 -rw-r--r--	root/root	usr/include/gnuradio/sptr_magic.h
+drwxr-xr-x	root/root	usr/include/gnuradio/swig/
+-rw-r--r--	root/root	usr/include/gnuradio/swig/analog_swig.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/analog_swig_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/audio_swig.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/audio_swig_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/basic_block.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/block.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/block_detail.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/block_gateway.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/blocks_swig0.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/blocks_swig0_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/blocks_swig1.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/blocks_swig10.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/blocks_swig10_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/blocks_swig1_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/blocks_swig2.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/blocks_swig2_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/blocks_swig3.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/blocks_swig3_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/blocks_swig4.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/blocks_swig4_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/blocks_swig5.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/blocks_swig5_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/blocks_swig6.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/blocks_swig6_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/blocks_swig7.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/blocks_swig7_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/blocks_swig8.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/blocks_swig8_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/blocks_swig9.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/blocks_swig9_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/buffer.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/channels_swig.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/channels_swig_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/constants.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/constellation.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/digital_swig0.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/digital_swig0_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/digital_swig1.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/digital_swig1_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/digital_swig2.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/digital_swig2_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/dtv_swig0.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/dtv_swig0_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/dtv_swig1.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/dtv_swig1_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/dtv_swig2.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/dtv_swig2_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/equalizers.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/fec_swig.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/fec_swig_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/feval.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/fft_swig.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/fft_swig_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/filter_swig.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/gnuradio.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/gr_ctrlport.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/gr_extras.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/gr_filter_swig_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/gr_logger.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/gr_shared_ptr.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/gr_swig_block_magic.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/gr_types.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/hier_block2.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/io_signature.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/message.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/msg_handler.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/msg_queue.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/network_swig.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/network_swig_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/ofdm_equalizer.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/packet_header.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/pmt_swig.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/pmt_swig_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/prefs.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/qtgui_swig.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/qtgui_swig_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/realtime.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/runtime_swig.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/runtime_swig_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/sync_block.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/sync_decimator.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/sync_interpolator.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/tagged_stream_block.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/tags.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/top_block.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/uhd_swig.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/uhd_swig_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/video_sdl_swig.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/video_sdl_swig_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/vocoder_swig.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/vocoder_swig_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/wavelet_swig.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/wavelet_swig_doc.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/zeromq_swig.i
+-rw-r--r--	root/root	usr/include/gnuradio/swig/zeromq_swig_doc.i
 -rw-r--r--	root/root	usr/include/gnuradio/sync_block.h
 -rw-r--r--	root/root	usr/include/gnuradio/sync_decimator.h
 -rw-r--r--	root/root	usr/include/gnuradio/sync_interpolator.h
@@ -620,7 +713,6 @@ drwxr-xr-x	root/root	usr/include/gnuradio/thread/
 drwxr-xr-x	root/root	usr/include/gnuradio/uhd/
 -rw-r--r--	root/root	usr/include/gnuradio/uhd/amsg_source.h
 -rw-r--r--	root/root	usr/include/gnuradio/uhd/api.h
--rw-r--r--	root/root	usr/include/gnuradio/uhd/rfnoc_block.h
 -rw-r--r--	root/root	usr/include/gnuradio/uhd/rfnoc_block_generic.h
 -rw-r--r--	root/root	usr/include/gnuradio/uhd/rfnoc_ddc.h
 -rw-r--r--	root/root	usr/include/gnuradio/uhd/rfnoc_duc.h
@@ -695,15 +787,13 @@ drwxr-xr-x	root/root	usr/lib/cmake/gnuradio/
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/FindLOG4CPP.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/FindMPIR.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/FindMPLIB.cmake
--rw-r--r--	root/root	usr/lib/cmake/gnuradio/FindMathJax2.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/FindOSS.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/FindPORTAUDIO.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/FindQwt.cmake
--rw-r--r--	root/root	usr/lib/cmake/gnuradio/FindSNDFILE.cmake
+-rw-r--r--	root/root	usr/lib/cmake/gnuradio/FindSWIG.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/FindTHRIFT.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/FindUHD.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/FindZeroMQ.cmake
--rw-r--r--	root/root	usr/lib/cmake/gnuradio/Findlibunwind.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/GnuradioConfig.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/GnuradioConfigVersion.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/GrBoost.cmake
@@ -711,11 +801,12 @@ drwxr-xr-x	root/root	usr/lib/cmake/gnuradio/
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/GrComponent.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/GrMiscUtils.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/GrPlatform.cmake
--rw-r--r--	root/root	usr/lib/cmake/gnuradio/GrPybind.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/GrPython.cmake
+-rw-r--r--	root/root	usr/lib/cmake/gnuradio/GrSwig.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/GrTest.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/GrVersion.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/LibFindMacros.cmake
+-rw-r--r--	root/root	usr/lib/cmake/gnuradio/UseSWIG.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/gnuradio-analogConfig.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/gnuradio-analogTargets-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/gnuradio-analogTargets.cmake
@@ -770,62 +861,64 @@ drwxr-xr-x	root/root	usr/lib/cmake/gnuradio/
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/gnuradio-zeromqConfig.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/gnuradio-zeromqTargets-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/gnuradio-zeromqTargets.cmake
+-rw-r--r--	root/root	usr/lib/cmake/gnuradio/runtime_swigTargets-release.cmake
+-rw-r--r--	root/root	usr/lib/cmake/gnuradio/runtime_swigTargets.cmake
 drwxr-xr-x	root/root	usr/lib/gnuradio/
 -rwxr-xr-x	root/root	usr/lib/gnuradio/grc_setup_freedesktop
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-analog.so -> libgnuradio-analog.so.3.10.0git
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-analog.so.3.10.0git -> libgnuradio-analog.so.v3.10-compat-xxx-xunknown
--rwxr-xr-x	root/root	usr/lib/libgnuradio-analog.so.v3.10-compat-xxx-xunknown
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-audio.so -> libgnuradio-audio.so.3.10.0git
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-audio.so.3.10.0git -> libgnuradio-audio.so.v3.10-compat-xxx-xunknown
--rwxr-xr-x	root/root	usr/lib/libgnuradio-audio.so.v3.10-compat-xxx-xunknown
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-blocks.so -> libgnuradio-blocks.so.3.10.0git
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-blocks.so.3.10.0git -> libgnuradio-blocks.so.v3.10-compat-xxx-xunknown
--rwxr-xr-x	root/root	usr/lib/libgnuradio-blocks.so.v3.10-compat-xxx-xunknown
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-channels.so -> libgnuradio-channels.so.3.10.0git
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-channels.so.3.10.0git -> libgnuradio-channels.so.v3.10-compat-xxx-xunknown
--rwxr-xr-x	root/root	usr/lib/libgnuradio-channels.so.v3.10-compat-xxx-xunknown
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-digital.so -> libgnuradio-digital.so.3.10.0git
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-digital.so.3.10.0git -> libgnuradio-digital.so.v3.10-compat-xxx-xunknown
--rwxr-xr-x	root/root	usr/lib/libgnuradio-digital.so.v3.10-compat-xxx-xunknown
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-dtv.so -> libgnuradio-dtv.so.3.10.0git
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-dtv.so.3.10.0git -> libgnuradio-dtv.so.v3.10-compat-xxx-xunknown
--rwxr-xr-x	root/root	usr/lib/libgnuradio-dtv.so.v3.10-compat-xxx-xunknown
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-fec.so -> libgnuradio-fec.so.3.10.0git
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-fec.so.3.10.0git -> libgnuradio-fec.so.v3.10-compat-xxx-xunknown
--rwxr-xr-x	root/root	usr/lib/libgnuradio-fec.so.v3.10-compat-xxx-xunknown
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-fft.so -> libgnuradio-fft.so.3.10.0git
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-fft.so.3.10.0git -> libgnuradio-fft.so.v3.10-compat-xxx-xunknown
--rwxr-xr-x	root/root	usr/lib/libgnuradio-fft.so.v3.10-compat-xxx-xunknown
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-filter.so -> libgnuradio-filter.so.3.10.0git
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-filter.so.3.10.0git -> libgnuradio-filter.so.v3.10-compat-xxx-xunknown
--rwxr-xr-x	root/root	usr/lib/libgnuradio-filter.so.v3.10-compat-xxx-xunknown
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-network.so -> libgnuradio-network.so.3.10.0git
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-network.so.3.10.0git -> libgnuradio-network.so.v3.10-compat-xxx-xunknown
--rwxr-xr-x	root/root	usr/lib/libgnuradio-network.so.v3.10-compat-xxx-xunknown
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-pmt.so -> libgnuradio-pmt.so.3.10.0git
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-pmt.so.3.10.0git -> libgnuradio-pmt.so.v3.10-compat-xxx-xunknown
--rwxr-xr-x	root/root	usr/lib/libgnuradio-pmt.so.v3.10-compat-xxx-xunknown
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-qtgui.so -> libgnuradio-qtgui.so.3.10.0git
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-qtgui.so.3.10.0git -> libgnuradio-qtgui.so.v3.10-compat-xxx-xunknown
--rwxr-xr-x	root/root	usr/lib/libgnuradio-qtgui.so.v3.10-compat-xxx-xunknown
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-runtime.so -> libgnuradio-runtime.so.3.10.0git
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-runtime.so.3.10.0git -> libgnuradio-runtime.so.v3.10-compat-xxx-xunknown
--rwxr-xr-x	root/root	usr/lib/libgnuradio-runtime.so.v3.10-compat-xxx-xunknown
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-uhd.so -> libgnuradio-uhd.so.3.10.0git
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-uhd.so.3.10.0git -> libgnuradio-uhd.so.v3.10-compat-xxx-xunknown
--rwxr-xr-x	root/root	usr/lib/libgnuradio-uhd.so.v3.10-compat-xxx-xunknown
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-video-sdl.so -> libgnuradio-video-sdl.so.3.10.0git
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-video-sdl.so.3.10.0git -> libgnuradio-video-sdl.so.v3.10-compat-xxx-xunknown
--rwxr-xr-x	root/root	usr/lib/libgnuradio-video-sdl.so.v3.10-compat-xxx-xunknown
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-vocoder.so -> libgnuradio-vocoder.so.3.10.0git
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-vocoder.so.3.10.0git -> libgnuradio-vocoder.so.v3.10-compat-xxx-xunknown
--rwxr-xr-x	root/root	usr/lib/libgnuradio-vocoder.so.v3.10-compat-xxx-xunknown
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-wavelet.so -> libgnuradio-wavelet.so.3.10.0git
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-wavelet.so.3.10.0git -> libgnuradio-wavelet.so.v3.10-compat-xxx-xunknown
--rwxr-xr-x	root/root	usr/lib/libgnuradio-wavelet.so.v3.10-compat-xxx-xunknown
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-zeromq.so -> libgnuradio-zeromq.so.3.10.0git
-lrwxrwxrwx	root/root	usr/lib/libgnuradio-zeromq.so.3.10.0git -> libgnuradio-zeromq.so.v3.10-compat-xxx-xunknown
--rwxr-xr-x	root/root	usr/lib/libgnuradio-zeromq.so.v3.10-compat-xxx-xunknown
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-analog.so -> libgnuradio-analog.so.3.9.0
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-analog.so.3.9.0 -> libgnuradio-analog.so.3.9.0.0-git
+-rwxr-xr-x	root/root	usr/lib/libgnuradio-analog.so.3.9.0.0-git
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-audio.so -> libgnuradio-audio.so.3.9.0
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-audio.so.3.9.0 -> libgnuradio-audio.so.3.9.0.0-git
+-rwxr-xr-x	root/root	usr/lib/libgnuradio-audio.so.3.9.0.0-git
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-blocks.so -> libgnuradio-blocks.so.3.9.0
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-blocks.so.3.9.0 -> libgnuradio-blocks.so.3.9.0.0-git
+-rwxr-xr-x	root/root	usr/lib/libgnuradio-blocks.so.3.9.0.0-git
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-channels.so -> libgnuradio-channels.so.3.9.0
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-channels.so.3.9.0 -> libgnuradio-channels.so.3.9.0.0-git
+-rwxr-xr-x	root/root	usr/lib/libgnuradio-channels.so.3.9.0.0-git
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-digital.so -> libgnuradio-digital.so.3.9.0
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-digital.so.3.9.0 -> libgnuradio-digital.so.3.9.0.0-git
+-rwxr-xr-x	root/root	usr/lib/libgnuradio-digital.so.3.9.0.0-git
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-dtv.so -> libgnuradio-dtv.so.3.9.0
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-dtv.so.3.9.0 -> libgnuradio-dtv.so.3.9.0.0-git
+-rwxr-xr-x	root/root	usr/lib/libgnuradio-dtv.so.3.9.0.0-git
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-fec.so -> libgnuradio-fec.so.3.9.0
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-fec.so.3.9.0 -> libgnuradio-fec.so.3.9.0.0-git
+-rwxr-xr-x	root/root	usr/lib/libgnuradio-fec.so.3.9.0.0-git
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-fft.so -> libgnuradio-fft.so.3.9.0
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-fft.so.3.9.0 -> libgnuradio-fft.so.3.9.0.0-git
+-rwxr-xr-x	root/root	usr/lib/libgnuradio-fft.so.3.9.0.0-git
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-filter.so -> libgnuradio-filter.so.3.9.0
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-filter.so.3.9.0 -> libgnuradio-filter.so.3.9.0.0-git
+-rwxr-xr-x	root/root	usr/lib/libgnuradio-filter.so.3.9.0.0-git
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-network.so -> libgnuradio-network.so.3.9.0
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-network.so.3.9.0 -> libgnuradio-network.so.3.9.0.0-git
+-rwxr-xr-x	root/root	usr/lib/libgnuradio-network.so.3.9.0.0-git
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-pmt.so -> libgnuradio-pmt.so.3.9.0
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-pmt.so.3.9.0 -> libgnuradio-pmt.so.3.9.0.0-git
+-rwxr-xr-x	root/root	usr/lib/libgnuradio-pmt.so.3.9.0.0-git
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-qtgui.so -> libgnuradio-qtgui.so.3.9.0
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-qtgui.so.3.9.0 -> libgnuradio-qtgui.so.3.9.0.0-git
+-rwxr-xr-x	root/root	usr/lib/libgnuradio-qtgui.so.3.9.0.0-git
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-runtime.so -> libgnuradio-runtime.so.3.9.0
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-runtime.so.3.9.0 -> libgnuradio-runtime.so.3.9.0.0-git
+-rwxr-xr-x	root/root	usr/lib/libgnuradio-runtime.so.3.9.0.0-git
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-uhd.so -> libgnuradio-uhd.so.3.9.0
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-uhd.so.3.9.0 -> libgnuradio-uhd.so.3.9.0.0-git
+-rwxr-xr-x	root/root	usr/lib/libgnuradio-uhd.so.3.9.0.0-git
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-video-sdl.so -> libgnuradio-video-sdl.so.3.9.0
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-video-sdl.so.3.9.0 -> libgnuradio-video-sdl.so.3.9.0.0-git
+-rwxr-xr-x	root/root	usr/lib/libgnuradio-video-sdl.so.3.9.0.0-git
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-vocoder.so -> libgnuradio-vocoder.so.3.9.0
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-vocoder.so.3.9.0 -> libgnuradio-vocoder.so.3.9.0.0-git
+-rwxr-xr-x	root/root	usr/lib/libgnuradio-vocoder.so.3.9.0.0-git
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-wavelet.so -> libgnuradio-wavelet.so.3.9.0
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-wavelet.so.3.9.0 -> libgnuradio-wavelet.so.3.9.0.0-git
+-rwxr-xr-x	root/root	usr/lib/libgnuradio-wavelet.so.3.9.0.0-git
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-zeromq.so -> libgnuradio-zeromq.so.3.9.0
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-zeromq.so.3.9.0 -> libgnuradio-zeromq.so.3.9.0.0-git
+-rwxr-xr-x	root/root	usr/lib/libgnuradio-zeromq.so.3.9.0.0-git
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/gnuradio-analog.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/gnuradio-audio.pc
@@ -854,10 +947,13 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/analog/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/analog/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/analog/__init__.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/analog/__init__.pyo
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/analog/_analog_swig.so
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/analog/am_demod.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/analog/am_demod.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/analog/am_demod.pyo
--rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/analog/analog_python.cpython-39-x86_64-linux-gnu.so
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/analog/analog_swig.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/analog/analog_swig.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/analog/analog_swig.pyo
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/analog/fm_demod.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/analog/fm_demod.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/analog/fm_demod.pyo
@@ -889,12 +985,61 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/audio/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/audio/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/audio/__init__.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/audio/__init__.pyo
--rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/audio/audio_python.cpython-39-x86_64-linux-gnu.so
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/audio/_audio_swig.so
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/audio/audio_swig.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/audio/audio_swig.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/audio/audio_swig.pyo
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/__init__.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/__init__.pyo
--rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_python.cpython-39-x86_64-linux-gnu.so
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/_blocks_swig0.so
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/_blocks_swig1.so
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/_blocks_swig10.so
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/_blocks_swig2.so
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/_blocks_swig3.so
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/_blocks_swig4.so
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/_blocks_swig5.so
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/_blocks_swig6.so
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/_blocks_swig7.so
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/_blocks_swig8.so
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/_blocks_swig9.so
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig0.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig0.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig0.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig1.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig1.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig1.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig10.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig10.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig10.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig2.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig2.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig2.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig3.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig3.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig3.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig4.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig4.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig4.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig5.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig5.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig5.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig6.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig6.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig6.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig7.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig7.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig7.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig8.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig8.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig8.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig9.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig9.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/blocks_swig9.pyo
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/msg_meta_to_pair.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/msg_meta_to_pair.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/msg_meta_to_pair.pyo
@@ -910,49 +1055,17 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/var_to_msg.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/var_to_msg.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocks/var_to_msg.pyo
-drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/__init__.py
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/__init__.pyc
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/__init__.pyo
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/__main__.py
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/__main__.pyc
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/__main__.pyo
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/cli.py
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/cli.pyc
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/cli.pyo
-drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/core/
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/core/Constants.py
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/core/Constants.pyc
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/core/Constants.pyo
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/core/__init__.py (EMPTY)
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/core/__init__.pyc
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/core/__init__.pyo
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/core/base.py
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/core/base.pyc
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/core/base.pyo
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/core/comments.py
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/core/comments.pyc
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/core/comments.pyo
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/core/iosignature.py
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/core/iosignature.pyc
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/core/iosignature.pyo
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/core/outputschema.py
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/core/outputschema.pyc
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/core/outputschema.pyo
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/core/parseheader.py
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/core/parseheader.pyc
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/core/parseheader.pyo
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/core/parseheader_generic.py
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/core/parseheader_generic.pyc
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/blocktool/core/parseheader_generic.pyo
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/channels/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/channels/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/channels/__init__.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/channels/__init__.pyo
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/channels/_channels_swig.so
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/channels/amp_bal.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/channels/amp_bal.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/channels/amp_bal.pyo
--rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/channels/channels_python.cpython-39-x86_64-linux-gnu.so
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/channels/channels_swig.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/channels/channels_swig.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/channels/channels_swig.pyo
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/channels/conj_fs_iqcorr.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/channels/conj_fs_iqcorr.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/channels/conj_fs_iqcorr.pyo
@@ -981,6 +1094,9 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/__init__.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/__init__.pyo
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/_digital_swig0.so
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/_digital_swig1.so
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/_digital_swig2.so
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/bpsk.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/bpsk.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/bpsk.pyo
@@ -993,7 +1109,18 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/crc.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/crc.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/crc.pyo
--rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/digital_python.cpython-39-x86_64-linux-gnu.so
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/digital_swig.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/digital_swig.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/digital_swig.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/digital_swig0.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/digital_swig0.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/digital_swig0.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/digital_swig1.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/digital_swig1.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/digital_swig1.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/digital_swig2.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/digital_swig2.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/digital_swig2.pyo
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/generic_mod_demod.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/generic_mod_demod.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/generic_mod_demod.pyo
@@ -1043,9 +1170,6 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/utils/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/utils/gray_code.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/utils/gray_code.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/utils/gray_code.pyo
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/utils/lfsr.py
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/utils/lfsr.pyc
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/utils/lfsr.pyo
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/utils/mod_codes.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/utils/mod_codes.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/utils/mod_codes.pyo
@@ -1056,13 +1180,27 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/dtv/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/dtv/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/dtv/__init__.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/dtv/__init__.pyo
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/dtv/_dtv_swig0.so
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/dtv/_dtv_swig1.so
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/dtv/_dtv_swig2.so
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/dtv/atsc_rx.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/dtv/atsc_rx.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/dtv/atsc_rx.pyo
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/dtv/atsc_rx_filter.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/dtv/atsc_rx_filter.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/dtv/atsc_rx_filter.pyo
--rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/dtv/dtv_python.cpython-39-x86_64-linux-gnu.so
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/dtv/dtv_swig.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/dtv/dtv_swig.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/dtv/dtv_swig.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/dtv/dtv_swig0.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/dtv/dtv_swig0.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/dtv/dtv_swig0.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/dtv/dtv_swig1.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/dtv/dtv_swig1.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/dtv/dtv_swig1.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/dtv/dtv_swig2.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/dtv/dtv_swig2.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/dtv/dtv_swig2.pyo
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/eng_arg.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/eng_arg.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/eng_arg.pyo
@@ -1086,6 +1224,7 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/fec/LDPC/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/fec/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/fec/__init__.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/fec/__init__.pyo
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/fec/_fec_swig.so
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/fec/bercurve_generator.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/fec/bercurve_generator.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/fec/bercurve_generator.pyo
@@ -1113,7 +1252,9 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/fec/LDPC/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/fec/extended_tagged_encoder.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/fec/extended_tagged_encoder.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/fec/extended_tagged_encoder.pyo
--rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/fec/fec_python.cpython-39-x86_64-linux-gnu.so
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/fec/fec_swig.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/fec/fec_swig.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/fec/fec_swig.pyo
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/fec/fec_test.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/fec/fec_test.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/fec/fec_test.pyo
@@ -1152,13 +1293,10 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/fft/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/fft/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/fft/__init__.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/fft/__init__.pyo
--rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/fft/fft_python.cpython-39-x86_64-linux-gnu.so
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/fft/fft_vcc.py
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/fft/fft_vcc.pyc
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/fft/fft_vcc.pyo
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/fft/fft_vfc.py
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/fft/fft_vfc.pyc
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/fft/fft_vfc.pyo
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/fft/_fft_swig.so
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/fft/fft_swig.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/fft/fft_swig.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/fft/fft_swig.pyo
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/fft/logpwrfft.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/fft/logpwrfft.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/fft/logpwrfft.pyo
@@ -1172,6 +1310,7 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/filter/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/filter/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/filter/__init__.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/filter/__init__.pyo
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/filter/_filter_swig.so
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/filter/api_object.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/filter/api_object.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/filter/api_object.pyo
@@ -1187,7 +1326,9 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/filter/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/filter/filter_design.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/filter/filter_design.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/filter/filter_design.pyo
--rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/filter/filter_python.cpython-39-x86_64-linux-gnu.so
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/filter/filter_swig.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/filter/filter_swig.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/filter/filter_swig.pyo
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/filter/filterbank.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/filter/filterbank.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/filter/filterbank.pyo
@@ -1215,17 +1356,20 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/filter/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/filter/pyqt_filter_stacked.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/filter/pyqt_filter_stacked.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/filter/pyqt_filter_stacked.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/filter/rational_resampler.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/filter/rational_resampler.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/filter/rational_resampler.pyo
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/gr/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gr/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gr/__init__.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gr/__init__.pyo
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/gr/_runtime_swig.so
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gr/exceptions.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gr/exceptions.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gr/exceptions.pyo
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gr/gateway.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gr/gateway.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gr/gateway.pyo
--rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/gr/gr_python.cpython-39-x86_64-linux-gnu.so
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gr/hier_block2.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gr/hier_block2.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gr/hier_block2.pyo
@@ -1235,6 +1379,9 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/gr/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gr/pubsub.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gr/pubsub.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gr/pubsub.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gr/runtime_swig.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gr/runtime_swig.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gr/runtime_swig.pyo
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gr/tag_utils.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gr/tag_utils.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gr/tag_utils.pyo
@@ -1554,11 +1701,48 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/grc/gui/canvas/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/grc/main.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/grc/main.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/grc/main.pyo
+drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/__init__.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/__init__.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/__init__.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/daemon.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/daemon.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/daemon.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/freqz.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/freqz.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/freqz.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/gnuplot_freqz.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/gnuplot_freqz.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/gnuplot_freqz.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/hexint.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/hexint.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/hexint.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/listmisc.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/listmisc.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/listmisc.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/mathmisc.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/mathmisc.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/mathmisc.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/msgq_runner.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/msgq_runner.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/msgq_runner.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/os_read_exactly.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/os_read_exactly.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/os_read_exactly.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/seq_with_cursor.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/seq_with_cursor.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/seq_with_cursor.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/socket_stuff.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/socket_stuff.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/gru/socket_stuff.pyo
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/network/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/network/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/network/__init__.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/network/__init__.pyo
--rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/network/network_python.cpython-39-x86_64-linux-gnu.so
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/network/_network_swig.so
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/network/network_swig.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/network/network_swig.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/network/network_swig.pyo
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/network/tcp_source.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/network/tcp_source.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/network/tcp_source.pyo
@@ -1581,6 +1765,7 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/qtgui/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/qtgui/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/qtgui/__init__.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/qtgui/__init__.pyo
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/qtgui/_qtgui_swig.so
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/qtgui/auto_correlator_sink.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/qtgui/auto_correlator_sink.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/qtgui/auto_correlator_sink.pyo
@@ -1620,7 +1805,9 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/qtgui/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/qtgui/msgpushbutton.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/qtgui/msgpushbutton.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/qtgui/msgpushbutton.pyo
--rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/qtgui/qtgui_python.cpython-39-x86_64-linux-gnu.so
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/qtgui/qtgui_swig.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/qtgui/qtgui_swig.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/qtgui/qtgui_swig.pyo
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/qtgui/range.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/qtgui/range.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/qtgui/range.pyo
@@ -1637,50 +1824,65 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/__init__.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/__init__.pyo
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/msgq_runner.py
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/msgq_runner.pyc
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/msgq_runner.pyo
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/_uhd_swig.so
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/uhd_app.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/uhd_app.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/uhd_app.pyo
--rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/uhd_python.cpython-39-x86_64-linux-gnu.so
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/uhd_siggen_base.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/uhd_siggen_base.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/uhd_siggen_base.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/uhd_swig.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/uhd_swig.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/uhd_swig.pyo
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/video_sdl/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/video_sdl/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/video_sdl/__init__.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/video_sdl/__init__.pyo
--rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/video_sdl/video_sdl_python.cpython-39-x86_64-linux-gnu.so
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/video_sdl/_video_sdl_swig.so
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/video_sdl/video_sdl_swig.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/video_sdl/video_sdl_swig.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/video_sdl/video_sdl_swig.pyo
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/vocoder/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/vocoder/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/vocoder/__init__.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/vocoder/__init__.pyo
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/vocoder/_vocoder_swig.so
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/vocoder/cvsd.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/vocoder/cvsd.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/vocoder/cvsd.pyo
--rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/vocoder/vocoder_python.cpython-39-x86_64-linux-gnu.so
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/vocoder/vocoder_swig.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/vocoder/vocoder_swig.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/vocoder/vocoder_swig.pyo
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/wavelet/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/wavelet/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/wavelet/__init__.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/wavelet/__init__.pyo
--rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/wavelet/wavelet_python.cpython-39-x86_64-linux-gnu.so
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/wavelet/_wavelet_swig.so
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/wavelet/wavelet_swig.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/wavelet/wavelet_swig.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/wavelet/wavelet_swig.pyo
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/zeromq/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/zeromq/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/zeromq/__init__.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/zeromq/__init__.pyo
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/zeromq/_zeromq_swig.so
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/zeromq/probe_manager.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/zeromq/probe_manager.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/zeromq/probe_manager.pyo
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/zeromq/rpc_manager.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/zeromq/rpc_manager.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/zeromq/rpc_manager.pyo
--rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/zeromq/zeromq_python.cpython-39-x86_64-linux-gnu.so
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/zeromq/zeromq_swig.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/zeromq/zeromq_swig.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/zeromq/zeromq_swig.pyo
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/pmt/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/pmt/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/pmt/__init__.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/pmt/__init__.pyo
--rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/pmt/pmt_python.cpython-39-x86_64-linux-gnu.so
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/pmt/_pmt_swig.so
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/pmt/pmt_swig.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/pmt/pmt_swig.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/pmt/pmt_swig.pyo
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/pmt/pmt_to_python.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/pmt/pmt_to_python.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/pmt/pmt_to_python.pyo
@@ -1688,16 +1890,13 @@ drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/gnuradio-grc.desktop
 drwxr-xr-x	root/root	usr/share/gnuradio/
--rw-r--r--	root/root	usr/share/gnuradio/clang-format.conf
 drwxr-xr-x	root/root	usr/share/gnuradio/examples/
 drwxr-xr-x	root/root	usr/share/gnuradio/examples/analog/
--rw-r--r--	root/root	usr/share/gnuradio/examples/analog/USRP_FM_stereo.grc
 -rwxr-xr-x	root/root	usr/share/gnuradio/examples/analog/fm_demod.py
 -rw-r--r--	root/root	usr/share/gnuradio/examples/analog/fm_rx.grc
 -rw-r--r--	root/root	usr/share/gnuradio/examples/analog/fm_tx.grc
 -rwxr-xr-x	root/root	usr/share/gnuradio/examples/analog/fmtest.py
 -rw-r--r--	root/root	usr/share/gnuradio/examples/analog/noise_power.grc
--rw-r--r--	root/root	usr/share/gnuradio/examples/analog/sig_source_msg_ports.grc
 drwxr-xr-x	root/root	usr/share/gnuradio/examples/audio/
 -rwxr-xr-x	root/root	usr/share/gnuradio/examples/audio/audio_copy.py
 -rwxr-xr-x	root/root	usr/share/gnuradio/examples/audio/audio_play.py
@@ -1706,6 +1905,7 @@ drwxr-xr-x	root/root	usr/share/gnuradio/examples/audio/
 -rwxr-xr-x	root/root	usr/share/gnuradio/examples/audio/dial_tone
 -rw-r--r--	root/root	usr/share/gnuradio/examples/audio/dial_tone.grc
 -rwxr-xr-x	root/root	usr/share/gnuradio/examples/audio/dial_tone.py
+-rwxr-xr-x	root/root	usr/share/gnuradio/examples/audio/dial_tone_daemon.py
 -rwxr-xr-x	root/root	usr/share/gnuradio/examples/audio/dial_tone_wav.py
 -rwxr-xr-x	root/root	usr/share/gnuradio/examples/audio/mono_tone.py
 -rwxr-xr-x	root/root	usr/share/gnuradio/examples/audio/multi_tone.py
@@ -1718,8 +1918,7 @@ drwxr-xr-x	root/root	usr/share/gnuradio/examples/blocks/
 -rw-r--r--	root/root	usr/share/gnuradio/examples/blocks/peak_detector2.grc
 -rw-r--r--	root/root	usr/share/gnuradio/examples/blocks/py_snippets_demo.grc
 -rw-r--r--	root/root	usr/share/gnuradio/examples/blocks/selector.grc
--rw-r--r--	root/root	usr/share/gnuradio/examples/blocks/stream_demux_demo.grc
--rw-r--r--	root/root	usr/share/gnuradio/examples/blocks/stream_mux_demo.grc
+-rw-r--r--	root/root	usr/share/gnuradio/examples/blocks/test_stream_mux_tags.grc
 -rw-r--r--	root/root	usr/share/gnuradio/examples/blocks/var_to_msg.grc
 -rw-r--r--	root/root	usr/share/gnuradio/examples/blocks/vector_source_with_tags.grc
 drwxr-xr-x	root/root	usr/share/gnuradio/examples/channels/
@@ -2152,7 +2351,6 @@ drwxr-xr-x	root/root	usr/share/gnuradio/grc/blocks/
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/blocks_short_to_float.block.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/blocks_skiphead.block.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/blocks_socket_pdu.block.yml
--rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/blocks_stream_demux.block.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/blocks_stream_mux.block.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/blocks_stream_to_streams.block.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/blocks_stream_to_tagged_stream.block.yml
@@ -2222,7 +2420,6 @@ drwxr-xr-x	root/root	usr/share/gnuradio/grc/blocks/
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/digital_cma_equalizer_cc.block.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/digital_constellation.block.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/digital_constellation_decoder_cb.block.yml
--rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/digital_constellation_encoder_bc.block.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/digital_constellation_modulator.block.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/digital_constellation_receiver_cb.block.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/digital_constellation_rect.block.yml
@@ -2391,6 +2588,7 @@ drwxr-xr-x	root/root	usr/share/gnuradio/grc/blocks/
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/filter_pfb_decimator.block.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/filter_pfb_interpolator.block.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/filter_pfb_synthesizer.block.yml
+-rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/filter_rational_resampler_base_xxx.block.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/filter_rational_resampler_xxx.block.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/filter_root_raised_cosine_filter.block.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/filter_single_pole_iir_filter_xx.block.yml
@@ -2504,7 +2702,6 @@ drwxr-xr-x	root/root	usr/share/gnuradio/grc/blocks/
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/variable_struct.block.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/video.tree.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/video_sdl_sink.block.yml
--rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/vocoder.tree.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/vocoder_alaw_decode_bs.block.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/vocoder_alaw_encode_sb.block.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/vocoder_cvsd_decode.block.yml
@@ -2573,33 +2770,6 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/apps/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/64x64/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/64x64/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/64x64/apps/gnuradio-grc.png
-drwxr-xr-x	root/root	usr/share/man/
-drwxr-xr-x	root/root	usr/share/man/man1/
--rw-r--r--	root/root	usr/share/man/man1/dial_tone.1.gz
--rw-r--r--	root/root	usr/share/man/man1/display_qt.1.gz
--rw-r--r--	root/root	usr/share/man/man1/gnuradio-companion.1.gz
--rw-r--r--	root/root	usr/share/man/man1/gnuradio-config-info.1.gz
--rw-r--r--	root/root	usr/share/man/man1/gr-ctrlport-monitor.1.gz
--rw-r--r--	root/root	usr/share/man/man1/gr-perf-monitorx.1.gz
--rw-r--r--	root/root	usr/share/man/man1/gr_filter_design.1.gz
--rw-r--r--	root/root	usr/share/man/man1/gr_modtool.1.gz
--rw-r--r--	root/root	usr/share/man/man1/gr_plot_const.1.gz
--rw-r--r--	root/root	usr/share/man/man1/gr_plot_fft.1.gz
--rw-r--r--	root/root	usr/share/man/man1/gr_plot_iq.1.gz
--rw-r--r--	root/root	usr/share/man/man1/gr_plot_psd.1.gz
--rw-r--r--	root/root	usr/share/man/man1/gr_plot_qt.1.gz
--rw-r--r--	root/root	usr/share/man/man1/gr_plot_time.1.gz
--rw-r--r--	root/root	usr/share/man/man1/gr_read_file_metadata.1.gz
--rw-r--r--	root/root	usr/share/man/man1/grcc.1.gz
--rw-r--r--	root/root	usr/share/man/man1/polar_channel_construction.1.gz
--rw-r--r--	root/root	usr/share/man/man1/tags_demo.1.gz
--rw-r--r--	root/root	usr/share/man/man1/uhd_fft.1.gz
--rw-r--r--	root/root	usr/share/man/man1/uhd_rx_cfile.1.gz
--rw-r--r--	root/root	usr/share/man/man1/uhd_rx_nogui.1.gz
--rw-r--r--	root/root	usr/share/man/man1/uhd_siggen.1.gz
--rw-r--r--	root/root	usr/share/man/man1/uhd_siggen_gui.1.gz
-drwxr-xr-x	root/root	usr/share/metainfo/
--rw-r--r--	root/root	usr/share/metainfo/org.gnuradio.grc.metainfo.xml
 drwxr-xr-x	root/root	usr/share/mime/
 drwxr-xr-x	root/root	usr/share/mime/packages/
 -rw-r--r--	root/root	usr/share/mime/packages/gnuradio-grc.xml
