@@ -5,19 +5,19 @@
 
 name=python3-scipy
 _name=${name//python3-}
-version=1.5.4
-release=2
+version=1.6.0
+release=1
 source=(https://github.com/${_name}/${_name}/archive/v${version}/${name}-${version}.tar.gz)
 
 build() {
 
   export LDFLAGS="-Wall -shared"
 
-  cd ${_name}-${version}
+  cd "${_name}"-"${version}"
 
-  python3 ./setup.py config_fc --fcompiler=gnu95 install --prefix=/usr --root=${PKG} --optimize=1
+  python3 ./setup.py config_fc --fcompiler=gnu95 install --prefix=/usr --root="${PKG}" --optimize=1
 
-  find $PKG \(\
+  find "${PKG}" \(\
        -name  'INSTALL*' -o \
        -iname 'LICENSE*' -o \
        -name  'THANKS*'  -o \
@@ -25,6 +25,6 @@ build() {
        -name  'COPYING*'    \
        \) -exec rm -rf '{}' \; || true
 
-  find ${PKG} -type d -empty -delete
+  find "${PKG}" -type d -empty -delete
 
 }

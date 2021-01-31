@@ -53,6 +53,7 @@ d:qq-bin
 d:ratpoison
 d:reaver
 d:rtaudio
+d:python3-pybind11
 d:sabnzbd
 d:opera-bin
 d:secure-delete
@@ -276,9 +277,9 @@ f:fe1ad64822ea928d48bebdd021c86342:python3-pyserial/.signature
 f:ba30df9164f3ee9e8e6b14f0047e29df:python3-pyzmq/.signature
 f:4fb2ba63cd1ae356de2b53f8faecbc57:python3-pyzmq/.footprint
 f:05148fef4869a092398f47776da27654:python3-pyzmq/Pkgfile
-f:67723cd60b5b48da36bdee46bd6916e5:python3-scipy/.signature
-f:53119d5efda7d4b40c8c1830cbd77a1f:python3-scipy/Pkgfile
-f:0079ddf3f9e86e312cebc414acaa48c0:python3-scipy/.footprint
+f:282c28d2ddb077f58496c353e5455c65:python3-scipy/.signature
+f:cc39a9075a5099518e329f17d3ff1347:python3-scipy/Pkgfile
+f:290281828cf739832478bcf6410d890a:python3-scipy/.footprint
 f:739f7cde6843be07c3de57d843c4449b:python-future/.signature
 f:95ed21a024388f2bb057e504b11263e2:python-future/.footprint
 f:14deef595098716c598ed419d3897d1a:python-future/Pkgfile
@@ -297,6 +298,9 @@ f:55c1112985184f59debe0819478c4510:reaver/Pkgfile
 f:faafc7bc21530ff395449e6cc277f6eb:rtaudio/.signature
 f:9bd28e266271d48653d9414576ca6c49:rtaudio/.footprint
 f:2d8ee3d3de94a3f4a2dc0ed681edfad1:rtaudio/Pkgfile
+f:dd54f376b1b173b61c015ac026f020f1:python3-pybind11/Pkgfile
+f:5d6e24ac849cfb72fd5a7240ce3c9b45:python3-pybind11/.footprint
+f:09ca76ee49dbca03e943cd15a3d6be87:python3-pybind11/.signature
 f:a12b54acd726669d30f1f7857ef11ab6:sabnzbd/sabnzbd
 f:545093234d26e3efb38981491d751b2e:sabnzbd/.footprint
 f:f568a5dd87b6ff2900c52df5156e7f9e:sabnzbd/Pkgfile

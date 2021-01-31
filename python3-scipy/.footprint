@@ -2,11 +2,12 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python3.9/
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/
-drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy-1.5.4-py3.9.egg-info/
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy-1.5.4-py3.9.egg-info/PKG-INFO
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy-1.5.4-py3.9.egg-info/SOURCES.txt
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy-1.5.4-py3.9.egg-info/dependency_links.txt
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy-1.5.4-py3.9.egg-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy-1.6.0-py3.9.egg-info/
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy-1.6.0-py3.9.egg-info/PKG-INFO
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy-1.6.0-py3.9.egg-info/SOURCES.txt
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy-1.6.0-py3.9.egg-info/dependency_links.txt
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy-1.6.0-py3.9.egg-info/requires.txt
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy-1.6.0-py3.9.egg-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/HACKING.rst.txt
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/__config__.py
@@ -43,7 +44,6 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/_build_utils/__pycach
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/_build_utils/system_info.py
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/_build_utils/tests/
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/_build_utils/tests/__init__.py (EMPTY)
--rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/_build_utils/tests/test_circular_imports.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/_build_utils/tests/test_scipy_version.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/_distributor_init.py
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/_lib/
@@ -51,8 +51,12 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/_lib/
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/_lib/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/_lib/__pycache__/__init__.cpython-39.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/_lib/__pycache__/__init__.cpython-39.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/_lib/__pycache__/_bunch.cpython-39.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/_lib/__pycache__/_bunch.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/_lib/__pycache__/_ccallback.cpython-39.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/_lib/__pycache__/_ccallback.cpython-39.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/_lib/__pycache__/_disjoint_set.cpython-39.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/_lib/__pycache__/_disjoint_set.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/_lib/__pycache__/_gcutils.cpython-39.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/_lib/__pycache__/_gcutils.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/_lib/__pycache__/_pep440.cpython-39.opt-1.pyc
@@ -75,8 +79,10 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/_lib/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/_lib/__pycache__/setup.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/_lib/__pycache__/uarray.cpython-39.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/_lib/__pycache__/uarray.cpython-39.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/_lib/_bunch.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/_lib/_ccallback.py
 -rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/_lib/_ccallback_c.cpython-39-x86_64-linux-gnu.so
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/_lib/_disjoint_set.py
 -rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/_lib/_fpumode.cpython-39-x86_64-linux-gnu.so
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/_lib/_gcutils.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/_lib/_pep440.py
@@ -111,9 +117,11 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/_lib/tests/
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/_lib/tests/test__testutils.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/_lib/tests/test__threadsafety.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/_lib/tests/test__util.py
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/_lib/tests/test_bunch.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/_lib/tests/test_ccallback.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/_lib/tests/test_deprecation.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/_lib/tests/test_import_cycles.py
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/_lib/tests/test_linear_assignment.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/_lib/tests/test_tmpdirs.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/_lib/tests/test_warnings.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/_lib/uarray.py
@@ -136,6 +144,7 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/cluster/__pycache__/
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/cluster/tests/
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/cluster/tests/__init__.py (EMPTY)
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/cluster/tests/hierarchy_test_data.py
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/cluster/tests/test_disjoint_set.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/cluster/tests/test_hierarchy.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/cluster/tests/test_vq.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/cluster/vq.py
@@ -429,6 +438,7 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/io/arff/tests/data/
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/io/arff/tests/data/quoted_nominal_spaces.arff
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/io/arff/tests/data/test1.arff
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/io/arff/tests/data/test10.arff
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/io/arff/tests/data/test11.arff
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/io/arff/tests/data/test2.arff
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/io/arff/tests/data/test3.arff
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/io/arff/tests/data/test4.arff
@@ -688,8 +698,16 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/io/tests/data/
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/io/tests/data/test-44100Hz-le-1ch-4bytes-incomplete-chunk.wav
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/io/tests/data/test-44100Hz-le-1ch-4bytes.wav
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/io/tests/data/test-48000Hz-2ch-64bit-float-le-wavex.wav
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/io/tests/data/test-8000Hz-le-1ch-10S-20bit-extra.wav
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/io/tests/data/test-8000Hz-le-1ch-1byte-ulaw.wav
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/io/tests/data/test-8000Hz-le-2ch-1byteu.wav
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/io/tests/data/test-8000Hz-le-3ch-5S-24bit.wav
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/io/tests/data/test-8000Hz-le-3ch-5S-36bit.wav
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/io/tests/data/test-8000Hz-le-3ch-5S-45bit.wav
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/io/tests/data/test-8000Hz-le-3ch-5S-53bit.wav
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/io/tests/data/test-8000Hz-le-3ch-5S-64bit.wav
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/io/tests/data/test-8000Hz-le-4ch-9S-12bit.wav
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/io/tests/data/test-8000Hz-le-5ch-9S-5bit.wav
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/io/tests/data/various_compressed.sav
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/io/tests/test_fortran.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/io/tests/test_idl.py
@@ -777,6 +795,7 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/linalg/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/linalg/_interpolative_backend.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/linalg/_matfuncs_inv_ssq.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/linalg/_matfuncs_sqrtm.py
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/linalg/_matfuncs_sqrtm_triu.cpython-39-x86_64-linux-gnu.so
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/linalg/_procrustes.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/linalg/_sketches.py
 -rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/linalg/_solve_toeplitz.cpython-39-x86_64-linux-gnu.so
@@ -829,6 +848,7 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/linalg/tests/data/
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/linalg/tests/test_interpolative.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/linalg/tests/test_lapack.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/linalg/tests/test_matfuncs.py
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/linalg/tests/test_matmul_toeplitz.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/linalg/tests/test_procrustes.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/linalg/tests/test_sketches.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/linalg/tests/test_solve_toeplitz.py
@@ -878,7 +898,6 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/ndimage/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/ndimage/__pycache__/setup.cpython-39.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/ndimage/__pycache__/setup.cpython-39.pyc
 -rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/ndimage/_ctest.cpython-39-x86_64-linux-gnu.so
--rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/ndimage/_ctest_oldapi.cpython-39-x86_64-linux-gnu.so
 -rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/ndimage/_cytest.cpython-39-x86_64-linux-gnu.so
 -rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/ndimage/_nd_image.cpython-39-x86_64-linux-gnu.so
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/ndimage/_ni_docstrings.py
@@ -891,7 +910,7 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/ndimage/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/ndimage/morphology.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/ndimage/setup.py
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/ndimage/tests/
--rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/ndimage/tests/__init__.py (EMPTY)
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/ndimage/tests/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/ndimage/tests/data/
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/ndimage/tests/data/label_inputs.txt
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/ndimage/tests/data/label_results.txt
@@ -900,10 +919,10 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/ndimage/tests/data/
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/ndimage/tests/test_c_api.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/ndimage/tests/test_datatypes.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/ndimage/tests/test_filters.py
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/ndimage/tests/test_fourier.py
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/ndimage/tests/test_interpolation.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/ndimage/tests/test_measurements.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/ndimage/tests/test_morphology.py
--rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/ndimage/tests/test_ndimage.py
--rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/ndimage/tests/test_regression.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/ndimage/tests/test_splines.py
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/odr/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/odr/__init__.py
@@ -947,6 +966,10 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/optimize/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/__pycache__/_hessian_update_strategy.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/__pycache__/_linprog.cpython-39.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/__pycache__/_linprog.cpython-39.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/__pycache__/_linprog_doc.cpython-39.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/__pycache__/_linprog_doc.cpython-39.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/__pycache__/_linprog_highs.cpython-39.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/__pycache__/_linprog_highs.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/__pycache__/_linprog_ip.cpython-39.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/__pycache__/_linprog_ip.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/__pycache__/_linprog_rs.cpython-39.opt-1.pyc
@@ -963,6 +986,8 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/optimize/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/__pycache__/_nnls.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/__pycache__/_numdiff.cpython-39.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/__pycache__/_numdiff.cpython-39.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/__pycache__/_qap.cpython-39.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/__pycache__/_qap.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/__pycache__/_remove_redundancy.cpython-39.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/__pycache__/_remove_redundancy.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/__pycache__/_root.cpython-39.opt-1.pyc
@@ -1014,8 +1039,29 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/optimize/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_dual_annealing.py
 -rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_group_columns.cpython-39-x86_64-linux-gnu.so
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_hessian_update_strategy.py
+drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_highs/
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_highs/constants.cpython-39-x86_64-linux-gnu.so
+drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_highs/cython/
+drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_highs/cython/src/
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_highs/cython/src/HConst.pxd
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_highs/cython/src/Highs.pxd
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_highs/cython/src/HighsIO.pxd
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_highs/cython/src/HighsInfo.pxd
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_highs/cython/src/HighsLp.pxd
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_highs/cython/src/HighsLpUtils.pxd
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_highs/cython/src/HighsMipSolver.pxd
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_highs/cython/src/HighsModelUtils.pxd
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_highs/cython/src/HighsOptions.pxd
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_highs/cython/src/HighsRuntimeOptions.pxd
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_highs/cython/src/HighsStatus.pxd
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_highs/cython/src/SimplexConst.pxd
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_highs/cython/src/highs_c_api.pxd
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_highs/highs_wrapper.cpython-39-x86_64-linux-gnu.so
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_highs/mpswriter.cpython-39-x86_64-linux-gnu.so
 -rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_lbfgsb.cpython-39-x86_64-linux-gnu.so
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_linprog.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_linprog_doc.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_linprog_highs.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_linprog_ip.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_linprog_rs.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_linprog_simplex.py
@@ -1056,6 +1102,7 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_lsq/__pycac
 -rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_minpack.cpython-39-x86_64-linux-gnu.so
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_nnls.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_numdiff.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_qap.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_remove_redundancy.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_root.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/_root_scalar.py
@@ -1174,6 +1221,7 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/optimize/tests/
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/tests/test_nnls.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/tests/test_nonlin.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/tests/test_optimize.py
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/tests/test_quadratic_assignment.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/tests/test_regression.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/tests/test_slsqp.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/optimize/tests/test_tnc.py
@@ -1251,6 +1299,7 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/signal/tests/
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/signal/tests/test_ltisys.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/signal/tests/test_max_len_seq.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/signal/tests/test_peak_finding.py
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/signal/tests/test_result_type.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/signal/tests/test_savitzky_golay.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/signal/tests/test_signaltools.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/signal/tests/test_spectral.py
@@ -1591,13 +1640,11 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/spatial/transform/__p
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/spatial/transform/__pycache__/_rotation_groups.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/spatial/transform/__pycache__/_rotation_spline.cpython-39.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/spatial/transform/__pycache__/_rotation_spline.cpython-39.pyc
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/spatial/transform/__pycache__/rotation.cpython-39.opt-1.pyc
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/spatial/transform/__pycache__/rotation.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/spatial/transform/__pycache__/setup.cpython-39.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/spatial/transform/__pycache__/setup.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/spatial/transform/_rotation_groups.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/spatial/transform/_rotation_spline.py
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/spatial/transform/rotation.py
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/spatial/transform/rotation.cpython-39-x86_64-linux-gnu.so
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/scipy/spatial/transform/setup.py
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/spatial/transform/tests/
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/spatial/transform/tests/__init__.py (EMPTY)
@@ -1847,6 +1894,7 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/scipy/stats/tests/data/nist
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/stats/tests/test_discrete_distns.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/stats/tests/test_distributions.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/stats/tests/test_fit.py
+-rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/stats/tests/test_hypotests.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/stats/tests/test_kdeoth.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/stats/tests/test_morestats.py
 -rw-rw-r--	root/root	usr/lib/python3.9/site-packages/scipy/stats/tests/test_mstats_basic.py
