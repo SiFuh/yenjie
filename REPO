@@ -220,8 +220,8 @@ f:ba696062ae6dd73d105185d3789db8a7:liquid-dsp/.footprint
 f:786f5ce0727fa5f4b0acf59bd141cf2e:liquid-dsp/.signature
 f:3b818b24966ef06bd92f4e8e9cf2808e:log4cpp/.footprint
 f:5815be2f8df4d355c51a26bbe2196539:log4cpp/config.h
-f:55ef23d6c159891dfd482eae7f0eb578:log4cpp/Pkgfile
-f:10253c40c3f335339d3f5efd79c092ab:log4cpp/.signature
+f:56d61d789d31ce333629431bd93c7dbc:log4cpp/Pkgfile
+f:6ed550da38e21e5765d4bdd1a018633f:log4cpp/.signature
 f:c6bfb2373b48a4cbac2b420c4dd6e21f:massren/Pkgfile
 f:f2c2e5b961bf0c154d95fba759384096:massren/.footprint
 f:41a87a3dc11b7f39cfd2516ca3cfed7f:massren/.signature
