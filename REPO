@@ -181,8 +181,9 @@ f:9351845f94c81013fba912e3a65bb121:gr-osmosdr/.signature
 f:ed9d9c3fad46d5ad5c8c0be622d106e7:gr-osmosdr/Pkgfile
 f:c8281bae3db700b1b06df9381419b651:gr-osmosdr/gr-osmosdr_boost.patch
 f:90417dd3b0cd3e7c2152de7639ecae56:hidapi/.footprint
-f:38f8b3d8f04576419114a59571624ccd:hidapi/Pkgfile
-f:ac145b9803caf8813c9416fb5c4c5988:hidapi/.signature
+f:556ec7ef925f8c0e180f6cb26afbba40:hidapi/Pkgfile
+f:ada653921ff5b8cf38b34096232560ae:hidapi/.signature
+f:b4fe16c240d4883114f5158645491999:hidapi/configure_ac.patch
 f:9edf210d94b939848d53f889c771c8aa:hping3/Pkgfile
 f:83922f9f1b60fa015459c03b8ea7ca4c:hping3/Makefile.patch
 f:db928eb499315f6fb55a82358dafaf82:hping3/.signature

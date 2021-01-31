@@ -5,20 +5,24 @@
 # Depends on:   libusb
 
 name=hidapi
-version=0.10.0
+version=0.10.1
 release=1
-source=(https://github.com/libusb/${name}/archive/${name}-${version}/${name}-${version}.tar.gz)
+#source=(https://github.com/libusb/${name}/archive/${name}-${version}/${name}-${version}.tar.gz)
+source=(https://github.com/libusb/${name}/archive/${name}-${version}.tar.gz
+        configure_ac.patch)
 
 build() {
 
-  cd ${name}-${name}-${version}
+  cd "${name}"-"${name}"-"${version}"
+
+  patch -p0 -i "${SRC}"/configure_ac.patch
 
   ./bootstrap
   ./configure --prefix=/usr
 
   make
-  make DESTDIR=${PKG} install
+  make DESTDIR="${PKG}" install
 
-  rm -rf ${PKG}/usr/share/doc
+  rm -rf "${PKG}"/usr/share/doc
 
 }
