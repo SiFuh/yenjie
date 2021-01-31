@@ -11,8 +11,8 @@ source=(https://github.com/${_name//11}/${_name}/archive/v${version}/${_name}-${
 
 build() {
 
-	cd "${_name}"-"${version}"
+  cd "${_name}"-"${version}"
 
-	/usr/bin/python3 setup.py install --root="${PKG}"
+  /usr/bin/python3 setup.py install --root="${PKG}"
 
 }
