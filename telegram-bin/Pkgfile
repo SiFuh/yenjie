@@ -10,7 +10,8 @@ source=(https://updates.tdesktop.com/tlinux/tsetup.${version}.tar.xz)
 
 build () {
 
-  mkdir -p ${PKG}/opt/bin
-  cp Telegram/Telegram ${PKG}/opt/bin/
+  mkdir -p "${PKG}"/opt/bin
+
+  cp Telegram/Telegram "${PKG}"/opt/bin/
 
 }
