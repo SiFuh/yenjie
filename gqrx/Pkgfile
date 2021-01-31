@@ -6,7 +6,7 @@
 # Optional:     pulseaudio
 
 name=gqrx
-version=2.11.5
+version=2.11.5-490ee3b
 sversion=490ee3be4f1c5e0319b7610912104e2d0a47fd4e
 release=2
 source=(https://github.com/csete/${name}/archive/${sversion}/${name}-${version}.tar.gz
