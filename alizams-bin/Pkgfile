@@ -4,7 +4,7 @@
 # Depends on:    hicolor-icon-theme qt5
 
 name=alizams-bin
-version=1.2.2
+version=1.3.0
 _name=${name//-bin}
 _version=${version}_linux
 release=1
