@@ -1,6 +1,5 @@
 # Description:  Python bindings for zeromq
 # URL:          https://pypi.org/project/pyzmq/
-# Packager:
 # Maintainer:   Lin SiFuh, #crux at freenode dot net
 # Depends on:
 
@@ -11,7 +10,7 @@ source=(https://files.pythonhosted.org/packages/source/p/${name//python3-}/${nam
 
 build() {
 
-  cd ${name//python3-}-${version}
+  cd "${name//python3-}"-"${version}"
 
   python3 setup.py build_ext --inplace
   python3 setup.py install --root="${PKG}" --optimize=0
