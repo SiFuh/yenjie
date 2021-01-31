@@ -11,8 +11,8 @@ source=(https://download.flashrom.org/releases/${name}-v${version}.tar.bz2)
 
 build() {
 
-  cd ${name}-v${version}
+  cd "${name}"-v"${version}"
 
-  make PREFIX=/usr DESTDIR=${PKG} install
+  make PREFIX=/usr DESTDIR="${PKG}" install
 
 }
