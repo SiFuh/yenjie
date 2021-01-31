@@ -409,9 +409,9 @@ f:d94e4f0a1c67dda6593f1c3808b70cee:xosd/.signature
 f:dfc9a94063c045ee15b68aac04b71976:xosd/Pkgfile
 f:c5a62ac33df10f862534fe6720a9757a:xosd/libxosd_m4.patch
 f:ab21db3891b932a6a5e3ad38ea65dd63:xosd/.footprint
-f:09c1a8d46bf376e8600819cafefb0d9d:zeromq/.signature
-f:598692d2e9c29bf64608bc459f9e0b30:zeromq/.footprint
-f:355530426581474e5abfbd45c38dc851:zeromq/Pkgfile
+f:f560fad0aefc13f9e42ec01c51eafc58:zeromq/.signature
+f:cfd4597e9d9299e8918ada9dd8be78d0:zeromq/.footprint
+f:13ef7ee3c43b07a87c9fce2d1b745a11:zeromq/Pkgfile
 f:365c168edf622d05211d92a382f55032:yenjie.httpup
 f:6bbec22c453cce2269312934c1e2fbb5:alizams-bin/alizams_sh.patch
 f:1ed99cac256d4291f06a0a57edce0896:alizams-bin/.footprint

@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uNUxEe+kr+b5WsNkMBQxu/T8apywkVMlijlyZYySArO+ZFItwuIyiVsy18ReWbJcuE9TE9Gi2D0KPor/VNrRbA8=
-SHA256 (Pkgfile) = 82d946e03a1891ec997bb00bfdf3aba030b80e6ec7b45b5ba81bd3736ef8f44e
-SHA256 (.footprint) = d40f70509a1f69140f493826096b3c6770734c41ee64dc8a36ddbec952248433
-SHA256 (zeromq-4.3.3.tar.gz) = c4fd999d67cd12872a8604162f2b1cf5b5a02fb807a88215f0f96bd50331b166
+RWQ0NN0w0eo0uMf7e7SySZB7797YfVG5z3HLOqZB1aJw+xD7EZIYqbm+D7B2rjjkhuKB2yZeh8eVVR/jVpHhPqEv1hUKTparWwU=
+SHA256 (Pkgfile) = 36797c162cc924d2fa1cde8d984a5514b28687c4005131bf52d4548b58df7426
+SHA256 (.footprint) = d8d84aedd3d1ac175f3ac4f1fdca3c0a81834a21f4f3cf4add54151eace8e3cd
+SHA256 (zeromq-4.3.4.tar.gz) = 0ff5a531c9ffaf0dfdc7dc78d13d1383088f454896d252934c429b2554d10559

@@ -1,11 +1,10 @@
 # Description:  Fast messaging system built on sockets.
 # URL:          https://zeromq.org
-# Packager:
 # Maintainer:   Lin SiFuh, #crux at freenode dot net
 # Depends on:
 
 name=zeromq
-version=4.3.3
+version=4.3.4
 release=1
 source=(https://github.com/${name}/libzmq/archive/v${version}/${name}-${version}.tar.gz)
 
