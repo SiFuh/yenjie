@@ -1,6 +1,5 @@
 # Description:  Parchive: Parity Archive Volume Set
 # URL:          https://github.com/Parchive
-# Packager:    
 # Maintainer:   Lin SiFuh, #crux at freenode dot net 	  
 # Depends on:  
 
@@ -11,11 +10,11 @@ source=(https://github.com/Parchive/${name}/archive/v${version}/${name}-${versio
 
 build () {
 	
-  cd ${name}-${version}
+  cd "${name}"-"${version}"
   sh automake.sh
   ./configure --prefix=/usr
 
   make
-  make DESTDIR=${PKG} install
+  make DESTDIR="${PKG}" install
 
 }
