@@ -215,9 +215,9 @@ f:7264c44ee7011ae213c4acf0766127ef:libxml2-python/.footprint
 f:3b0f94acef66114a06cf52bc86ffc669:libxml2-python/Pkgfile
 f:ce60401deb8dd042020d2f56d068c9de:libxml2-python/libxml2-python-config.patch
 f:aca108f9d60bab1dc37f2e0e50958a30:libxml2-python/.signature
-f:00990c7f547368e142b0e99c4dcd1472:liquid-dsp/Pkgfile
+f:3cb57427d34c3a5dee6b4d3512cbd069:liquid-dsp/Pkgfile
 f:ba696062ae6dd73d105185d3789db8a7:liquid-dsp/.footprint
-f:51a54f61de4d092cbce371a7b17d88c9:liquid-dsp/.signature
+f:786f5ce0727fa5f4b0acf59bd141cf2e:liquid-dsp/.signature
 f:3b818b24966ef06bd92f4e8e9cf2808e:log4cpp/.footprint
 f:5815be2f8df4d355c51a26bbe2196539:log4cpp/config.h
 f:55ef23d6c159891dfd482eae7f0eb578:log4cpp/Pkgfile

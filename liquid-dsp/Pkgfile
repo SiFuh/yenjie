@@ -1,7 +1,6 @@
 # Description: 	Opensource signal processing library for software-defined radios
-# URL:		http://liquidsdr.org/
-# Packager:	
-# Maintainer:	Lin SiFuh, #crux at freenode dot net 	
+# URL:          http://liquidsdr.org/
+# Maintainer:   Lin SiFuh, #crux at freenode dot net 	
 # Depends on:
 
 name=liquid-dsp
@@ -11,12 +10,12 @@ source=(https://github.com/jgaeddert/${name}/archive/v${version}/${name}-${versi
 
 build() {
 
-	cd ${name}-${version}
+	cd "${name}"-"${version}"
 	
 	./bootstrap.sh
 	./configure --prefix=/usr
 
 	make
-	make DESTDIR=${PKG} install
+	make DESTDIR="${PKG}" install
 
 }
