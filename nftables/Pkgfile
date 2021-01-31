@@ -5,9 +5,9 @@
 # Depends on:   libmnl libnftnl asciidoc
 
 name=nftables
-version=0.9.7
+version=0.9.8
 release=1
-source=(https://www.netfilter.org/pub/${name}/${name}-${version}.tar.bz2 \
+source=(https://www.netfilter.org/pub/${name}/${name}-${version}.tar.bz2
         nft ${name}.conf.example)
 
 build () {

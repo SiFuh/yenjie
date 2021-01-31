@@ -230,10 +230,10 @@ f:c6d8434cb9031e2c7e6a1fab99cdd3f1:motion/motion
 f:78048d0e93c154e7a4643567852890c8:motion/.signature
 f:88e5b4b11c82a77a7491d63824e91a98:motion/.footprint
 f:9c214c815911b4fc3e747ed761ca9055:nftables/nft
-f:027ab51dd35d19a25495caf6201e31eb:nftables/.footprint
-f:7fa4fb28c81e1e95f25ac5a458259614:nftables/Pkgfile
+f:42bf03c0cbfdc99693563e3a8afcdf29:nftables/.footprint
+f:bfd67fb23f4066ae4b55403241565bc2:nftables/Pkgfile
 f:330dd7a3153b5884331157fe3bf119df:nftables/nftables.conf.example
-f:636b0b463405681b818c1c03a7ea5cc0:nftables/.signature
+f:4a28373ca2954d1607790a489c85f92b:nftables/.signature
 f:50420c3a4de10a8e3a7f1dc2f3bb2daa:ntop/.footprint
 f:942f61ee9eed41b4254a80518913196f:ntop/Pkgfile
 f:88b5800c851f0816686638ae68463abf:ntop/.signature
