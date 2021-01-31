@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uPWM7GyN/PYuJZVyZia2XOue80E9PNPEmdffWgs8A0wSMHUzvc20RKJDzh/LGA3xEDFgv4fO9uiolCQxUKqltQQ=
-SHA256 (Pkgfile) = 8eeaf837ab06f8da08d4d7acba04b3c9d89e6bfd2f5deef9a96302d3e1698c8a
+RWQ0NN0w0eo0uMw08ekskmoV2wMN6VOiHSUY6RI8gcenD6nHzPI1IF1WSkR5ESbo4rZRtcuUUp1dNcbnRVs7v9HmvrCFkthePwY=
+SHA256 (Pkgfile) = 2b27e5889d86612adf8a18a394660689fd8eb4bf1e5fcbdb9475e941c23cba68
 SHA256 (.footprint) = 9d76c19ff8069057e1c75039e76211fbe7f9bbd6f4295ada592b3fff049706f8
-SHA256 (gqrx-2.11.5-490ee3b.tar.gz) = 5e70561cd0ae207d022dbd0b8b815f8ea8ab2f0b5d2abe197600f5e20f3d4425
+SHA256 (gqrx-2.14.4-490ee3b.tar.gz) = 5e70561cd0ae207d022dbd0b8b815f8ea8ab2f0b5d2abe197600f5e20f3d4425
 SHA256 (gqrx_boost.patch) = a97b357f84abe62400bae62babf930d7edfc767174ab538e1a0e9b75bd616316
