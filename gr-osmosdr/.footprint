@@ -24,19 +24,19 @@ drwxr-xr-x	root/root	usr/lib/cmake/osmosdr/
 lrwxrwxrwx	root/root	usr/lib/libgnuradio-osmosdr.so -> libgnuradio-osmosdr.so.0.2.0
 lrwxrwxrwx	root/root	usr/lib/libgnuradio-osmosdr.so.0.2.0 -> libgnuradio-osmosdr.so.0.2.0.0
 -rwxr-xr-x	root/root	usr/lib/libgnuradio-osmosdr.so.0.2.0.0
-drwxr-xr-x	root/root	usr/lib/python3.7/
-drwxr-xr-x	root/root	usr/lib/python3.7/site-packages/
-drwxr-xr-x	root/root	usr/lib/python3.7/site-packages/osmosdr/
--rw-r--r--	root/root	usr/lib/python3.7/site-packages/osmosdr/__init__.py
--rw-r--r--	root/root	usr/lib/python3.7/site-packages/osmosdr/__init__.pyc
--rw-r--r--	root/root	usr/lib/python3.7/site-packages/osmosdr/__init__.pyo
--rwxr-xr-x	root/root	usr/lib/python3.7/site-packages/osmosdr/_osmosdr_swig.so
--rw-r--r--	root/root	usr/lib/python3.7/site-packages/osmosdr/osmocom_siggen_base.py
--rw-r--r--	root/root	usr/lib/python3.7/site-packages/osmosdr/osmocom_siggen_base.pyc
--rw-r--r--	root/root	usr/lib/python3.7/site-packages/osmosdr/osmocom_siggen_base.pyo
--rw-r--r--	root/root	usr/lib/python3.7/site-packages/osmosdr/osmosdr_swig.py
--rw-r--r--	root/root	usr/lib/python3.7/site-packages/osmosdr/osmosdr_swig.pyc
--rw-r--r--	root/root	usr/lib/python3.7/site-packages/osmosdr/osmosdr_swig.pyo
+drwxr-xr-x	root/root	usr/lib/python3.9/
+drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/
+drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/osmosdr/
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/osmosdr/__init__.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/osmosdr/__init__.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/osmosdr/__init__.pyo
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/osmosdr/_osmosdr_swig.so
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/osmosdr/osmocom_siggen_base.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/osmosdr/osmocom_siggen_base.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/osmosdr/osmocom_siggen_base.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/osmosdr/osmosdr_swig.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/osmosdr/osmosdr_swig.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/osmosdr/osmosdr_swig.pyo
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/gnuradio/
 drwxr-xr-x	root/root	usr/share/gnuradio/grc/

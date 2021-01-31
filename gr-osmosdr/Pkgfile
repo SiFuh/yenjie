@@ -5,7 +5,7 @@
 # Depends on:   gnuradio volk rtl-sdr cmake boost swig
 
 name=gr-osmosdr
-version=0.2.0
+version=0.2.0-af2fda2
 sversion=af2fda22b3b3745520ef38e9aaa757484871ee0c
 release=3
 source=(https://github.com/osmocom/${name}/archive/${sversion}/${name}-${version}.tar.gz

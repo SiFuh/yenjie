@@ -176,8 +176,8 @@ f:7b9ee4e08b2dee2d577a5c95ddb330bd:gqrx/.signature
 f:72d4acb2dfc4a12c7f008f6794dfab05:gqrx/Pkgfile-pulseaudio
 f:2322cd49f933c4e0588083b4d18b2566:gqrx/.footprint
 f:f457ef9a5f86b2bb559106b7e4f4be7c:gqrx/Pkgfile
-f:d03166fc76630b014bae5a9623f461a1:gr-osmosdr/.footprint
-f:d631b0e2935f17b2c5bf7883cb73001f:gr-osmosdr/.signature
+f:a98f4ddf448ac88544b6524839277e5d:gr-osmosdr/.footprint
+f:9351845f94c81013fba912e3a65bb121:gr-osmosdr/.signature
 f:ed9d9c3fad46d5ad5c8c0be622d106e7:gr-osmosdr/Pkgfile
 f:c8281bae3db700b1b06df9381419b651:gr-osmosdr/gr-osmosdr_boost.patch
 f:90417dd3b0cd3e7c2152de7639ecae56:hidapi/.footprint
