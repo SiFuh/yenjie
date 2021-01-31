@@ -270,9 +270,9 @@ f:3a6f88d78e7363125761f5facc3fff2a:pulseaudio-alsa/.footprint
 f:a80097f0c6d2c71f43b009bfe22f3fcd:python3-future/.footprint
 f:22a45daad84e81ab180a7e2fd7507396:python3-future/.signature
 f:e23da3878fea1f2d8647f67b7979b8c0:python3-future/Pkgfile
-f:4859cca566c995dd297b49b8ee2a48df:python3-pyserial/Pkgfile
+f:2db9edf8949d6cc4dec1cad7fe388a5f:python3-pyserial/Pkgfile
 f:1c73ca7337a0e4b962fdb0b0c274c8cd:python3-pyserial/.footprint
-f:040208bdc2ccadf4ee598ec3e70eb4fc:python3-pyserial/.signature
+f:fe1ad64822ea928d48bebdd021c86342:python3-pyserial/.signature
 f:dec3759363da7658e4cd3bf2d8d0b9ff:python3-pyzmq/.signature
 f:4fb2ba63cd1ae356de2b53f8faecbc57:python3-pyzmq/.footprint
 f:48bbeb423b3581139b03f12cb6295c6b:python3-pyzmq/Pkgfile

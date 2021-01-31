@@ -11,10 +11,10 @@ source=(https://github.com/${_name}/${_name}/archive/v${version}/${name}-${versi
 
 build() {
 
-  cd ${name//python3-}-${version}
+  cd "${name//python3-}"-"${version}"
 
-  python3 setup.py install --prefix=/usr --root=${PKG}
+  python3 setup.py install --prefix=/usr --root="${PKG}"
 
-  find ${PKG} -name '*.txt' -delete 
+  find "${PKG}" -name '*.txt' -delete 
 
 }
