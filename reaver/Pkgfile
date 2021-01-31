@@ -1,6 +1,5 @@
 # Description:  Brute force attack against Wifi Protected Setup (WPS) 
 # URL:          https://code.google.com/archive/p/reaver-wps/
-# Packager:
 # Maintainer:   Lin SiFuh, #crux at freenode dot net
 # Depends on:   libpcap sqlite3
 
@@ -17,14 +16,14 @@ build() {
     export PATH="/sbin:/usr/sbin:/opt/sbin:/bin:/usr/bin:/opt/bin"
   fi
 
-   cd $name-$version/src
+   cd "${name}"-"${version}"/src
   
   ./configure --prefix=/usr
 
   make
 
-  install -D -m 644 ${name}.db $PKG/usr/etc/${name}/${name}.db
-  install -D -m 755 ${name} $PKG/usr/bin/${name}
-  install -D -m 755 wash $PKG/usr/bin/wash
+  install -D -m 644 "${name}".db "${PKG}"/usr/etc/"${name}"/"${name}".db
+  install -D -m 755 "${name}" "${PKG}"/usr/bin/"${name}"
+  install -D -m 755 wash "${PKG}"/usr/bin/wash
 
 }
