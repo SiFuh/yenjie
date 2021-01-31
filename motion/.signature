@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uM750ifvOUNLQGRm17QGVB+gz49UXLGN+HjlmXZZDpqlBlx6ZlZhpl+7qXM9C2Eg61yd9FfiQZevmJ50fbxkfwU=
-SHA256 (Pkgfile) = ee533ea3f1523def604eedb9287c254c5c5852085451bb47c5ccf6afb422450a
+RWQ0NN0w0eo0uHcRrfgE8j+R8Bukn46eeL9i6EUGcS9eOj908HbgGoman+NlMzqfProVRlq8tqwldRN/tUHOGiM4cFGhDoBbOQo=
+SHA256 (Pkgfile) = 5d1479cb19719c009f573c79cf0cd45c53110a5ecd9bee45d59a4404d8336b1f
 SHA256 (.footprint) = e1f3bb6ede45c9e120aaecbd51dfb843dc573b4502ef9ec60ead4fecf7d75a80
 SHA256 (motion-4.3.2.tar.gz) = dafa4264b2d8e4778f8be5871f09b6c0ec710d5a836182c583469c18db944d70
 SHA256 (motion) = 06a9b4f2783b12dafa699395218a890a0a3e2c36b0f00dbdd690508ce80f303c

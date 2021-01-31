@@ -11,7 +11,7 @@ motion)
 
 build() {
   
-  cd ${name}-release-${version}
+  cd "${name}"-release-"${version}"
 
   autoreconf -fiv
 
@@ -24,9 +24,9 @@ build() {
               --mandir=/usr/share/man
 
   make
-  make DESTDIR=${PKG} install
+  make DESTDIR="${PKG}" install
 
-  rm -rf ${PKG}/usr/share/{doc,locale,${name}}
-  install -D -m 755 -o root -g root ${SRC}/${name} ${PKG}/etc/rc.d/${name}
+  rm -rf "${PKG}"/usr/share/{doc,locale,"${name}"}
+  install -D -m 755 -o root -g root "${SRC}"/"${name}" "${PKG}"/etc/rc.d/"${name}"
 
 }

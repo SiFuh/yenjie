@@ -222,12 +222,12 @@ f:3b818b24966ef06bd92f4e8e9cf2808e:log4cpp/.footprint
 f:5815be2f8df4d355c51a26bbe2196539:log4cpp/config.h
 f:56d61d789d31ce333629431bd93c7dbc:log4cpp/Pkgfile
 f:6ed550da38e21e5765d4bdd1a018633f:log4cpp/.signature
-f:c6bfb2373b48a4cbac2b420c4dd6e21f:massren/Pkgfile
+f:31e28fdba8d411bcee07459351c8b544:massren/Pkgfile
 f:f2c2e5b961bf0c154d95fba759384096:massren/.footprint
 f:41a87a3dc11b7f39cfd2516ca3cfed7f:massren/.signature
-f:6763041ee72286ec49e30a063a30a870:motion/Pkgfile
+f:ffaa6825a6009d5e1b6e259025c84a0a:motion/Pkgfile
 f:c6d8434cb9031e2c7e6a1fab99cdd3f1:motion/motion
-f:78048d0e93c154e7a4643567852890c8:motion/.signature
+f:fd46e3cc2d3aafca518a0d61815d5f89:motion/.signature
 f:88e5b4b11c82a77a7491d63824e91a98:motion/.footprint
 f:9c214c815911b4fc3e747ed761ca9055:nftables/nft
 f:42bf03c0cbfdc99693563e3a8afcdf29:nftables/.footprint

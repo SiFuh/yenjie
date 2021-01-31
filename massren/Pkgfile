@@ -12,7 +12,7 @@ build() {
 
   export GOPATH="${SRC}"
   export GOBIN="${SRC}"
-  export PATH=$PATH:$GOPATH/bin
+  export PATH="${PATH}":"${GOPATH}"/bin
 
   go get github.com/laurent22/massren
 
