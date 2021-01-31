@@ -342,9 +342,9 @@ f:d39aac5e3d9ade06dd761d6138aef84f:tuxedo-keyboard-dkms/.footprint
 f:60cb28a71e6adf3d211cd4eb3b637c9b:tuxedo-keyboard-dkms/tuxedo-keys
 f:f1edca37760fb9b5da3bf25eda769616:tuxedo-keyboard-dkms/.signature
 f:5d325e6d81213b0991fdb144221883d1:tuxedo-keyboard-dkms/README
-f:794382ed38be01476fb76e2296aadb59:udiskie/Pkgfile
-f:9aa59eb628c52020d4c8389526e0044a:udiskie/.signature
-f:dd3c87126409fa02f4aa2640311ca270:udiskie/.footprint
+f:86d2db273d8ce17a7f19445821a15773:udiskie/Pkgfile
+f:b3505fb1a233c2d14b3dee7ec882b4dd:udiskie/.signature
+f:fd49fbca43c58ac5f7a283e89f826ea1:udiskie/.footprint
 f:604dec70099e073b0552dcdd30baf271:uhd/.signature
 f:20bf491e73066810c6ea3f7e01ea11ba:uhd/Pkgfile
 f:4a98a4a3ec9c8bcf58af7ea6a0c03658:uhd/.footprint
