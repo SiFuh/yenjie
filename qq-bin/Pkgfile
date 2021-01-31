@@ -1,22 +1,28 @@
 # Description:  QQ Instant Messenger Client for Linux
 # URL:          https://im.qq.com/linuxqq/index.html
-# Packager:
 # Maintainer:   Lin SiFuh, #crux at freenode dot net
 # Depends on:
 
 name=qq-bin
-version=2.0.0
+version=2.0.0-b2-1084
 release=1
-source=(http://down.qq.com/qqweb/LinuxQQ_1/linuxqq_${version}-b2-1082_x86_64.pkg.tar.xz)
+source=(http://down.qq.com/qqweb/LinuxQQ/linuxqq_${version}_x86_64.sh)
 
 build() {
 
+  cp "${PKGMK_SOURCE_DIR}"/linuxqq_"${version}"_x86_64.sh linuxqq_"${version}"_x86_64.tar.gz 
+
+  sed -i 1,32d linuxqq_"${version}"_x86_64.tar.gz
+
+  tar -zxf linuxqq_"${version}"_x86_64.tar.gz
+
   mkdir -p "${PKG}/opt/bin"
-  cp -r "${SRC}/usr/local/share/tencent-qq" "${PKG}/opt/"
-  cp "${SRC}/usr/local/bin/qq" "${PKG}/opt/tencent-qq/"
 
-  ln -s "/opt/tencent-qq/qq" "${PKG}/opt/bin/qq"
+  cp -r "${SRC}"/linuxqq/usr/local/share/tencent-qq "${PKG}"/opt/
+  cp    "${SRC}"/linuxqq/usr/local/bin/qq "${PKG}"/opt/tencent-qq/
 
-  rm ${PKG}/opt/tencent-qq/{CHANGELOG.txt,credits.html}
+  ln -s /opt/tencent-qq/qq "${PKG}"/opt/bin/qq
+
+  rm "${PKG}"/opt/tencent-qq/{CHANGELOG.txt,credits.html}
 
 }
