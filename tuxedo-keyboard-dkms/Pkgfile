@@ -6,7 +6,7 @@
 
 name=tuxedo-keyboard-dkms
 _name=${name//-dkms}
-version=2.0.6
+version=3.0.2
 release=1
 source=(https://github.com/tuxedocomputers/${_name}/archive/v${version}/${name}-${version}.tar.gz \
         tuxedo_keyboard_conf.patch tuxedo-keys dkms.conf)
