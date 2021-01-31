@@ -1,8 +1,8 @@
-# Description: 	Xcursors for HDPI screens
-# URL: 		Vanilla-DMZ
+# Description:  Xcursors for HDPI screens
+# URL:          Vanilla-DMZ
 # Packager:	
-# Maintainer:	Lin SiFuh, #crux at freenode dot net 	
-# Depends on:  	git
+# Maintainer:   Lin SiFuh, #crux at freenode dot net 	
+# Depends on:   git
 
 name=dmz-cursors
 version=1.0
@@ -11,10 +11,10 @@ source=(https://github.com/ganwell/${name}/archive/v${version}/${name}-${version
 	
 build () {
 
-	cd ${name}-${version}
+	cd "${name}"-"${version}"
 
-	mkdir -p ${PKG}/usr/share/icons/
-	cp -rf black ${PKG}/usr/share/icons/DMZ-Black
-  cp -rf white ${PKG}/usr/share/icons/DMZ-White
+	mkdir -p "${PKG}"/usr/share/icons/
+	cp -rf black "${PKG}"/usr/share/icons/DMZ-Black
+  cp -rf white "${PKG}"/usr/share/icons/DMZ-White
 
 }
