@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uNnQffQa3KINHDvbl9tj5TSF4WTrVAVCwGGJuhvJqG3KOCchhs8kw+72xowrU8PfxpOnAr9usCFKsmExluGJFQc=
-SHA256 (Pkgfile) = a3ec6e76675713eb0ee22ea4029ced778a4faac39583ab251237f1e97080c7f1
+RWQ0NN0w0eo0uO60jhMjaqImPIArP8kIPm3fxDqXQrtGk1E0OECYE/VLuUlktwOcAgA5CqwTriN0uwrTj78xfrREXcM+lGC9kAA=
+SHA256 (Pkgfile) = 4d9728646a9b5b654ae38a4b2b78f71bf2c7306dde90aee2dcfc8cd758ce37b5
 SHA256 (.footprint) = 0d8f3af5b0120a2525f4c8b1476e05e75310673ef33e5e687aa2e649f71e3d45
-SHA256 (telegram-purple_1.4.4.orig.tar.gz) = 86da1d0adf8abac84ca0c5eee6882ec1eccf6f0758d61a65683b059a4f9812b2
+SHA256 (telegram-purple_1.4.6.orig.tar.gz) = 68f97a170611f0030b426f9772c382eb4cee9381d24ca32ab254efd0b7970d1b

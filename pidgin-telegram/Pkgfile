@@ -1,11 +1,11 @@
-# Description:  Telegram for Pidgin
+# Description:  Telegram for Pidgin (Purple and Adium Bundle)
 # URL:          https://github.com/majn/telegram-purple
 # Maintainer:   Lin SiFuh, #crux at freenode dot net
 # Depends on:   glib libgcrypt libwebp pidgin
 
 name=pidgin-telegram
 _name=telegram-purple
-version=1.4.4
+version=1.4.6
 release=1
 source=(https://github.com/majn/${_name}/releases/download/v${version}/${_name}_${version}.orig.tar.gz)
 
