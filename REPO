@@ -68,7 +68,6 @@ d:tuxedo-keyboard-dkms
 d:udiskie
 d:uhd
 d:usbpicprog
-d:utox
 d:v4l-utils
 d:vanilla-dmz
 d:virtualbox-bin
@@ -349,13 +348,10 @@ f:604dec70099e073b0552dcdd30baf271:uhd/.signature
 f:20bf491e73066810c6ea3f7e01ea11ba:uhd/Pkgfile
 f:4a98a4a3ec9c8bcf58af7ea6a0c03658:uhd/.footprint
 f:4552250f6475de2962b35715fe5d877f:usbpicprog/.footprint
-f:450435c093bbb101013b688714ae3734:usbpicprog/Pkgfile
+f:71dca7644b516044f7c0b11840332a37:usbpicprog/Pkgfile
 f:2bc55f84db0cc96670b44cf58b3150ae:usbpicprog/.signature
-f:1bb313f25f801c6f706378c28430feaa:utox/.footprint
-f:cc8b51e7a1fb0675daa57df14960f6f6:utox/.signature
-f:678fdb417b8dedfdc7f09cf65d268674:utox/Pkgfile
-f:7f4e39430b7b45972a3fb8d5261968ac:v4l-utils/Pkgfile
-f:1c6f15fbc77d701fc75a15de9a46a89e:v4l-utils/.signature
+f:72dcb2202ecb847c1a676115171b67b0:v4l-utils/Pkgfile
+f:5a7eb80ffcccd3e262e9b3c564d6fe26:v4l-utils/.signature
 f:b04095dd33a0f4a02b5675a1838d535f:v4l-utils/.footprint
 f:97aeb1eb8e916473a27af61c91d7cd74:vanilla-dmz/.footprint
 f:2f024c9e9c20289c9fffd0101e2d22cb:vanilla-dmz/Pkgfile

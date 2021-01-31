@@ -10,12 +10,12 @@ source=(http://linuxtv.org/downloads/${name}/${name}-${version}.tar.bz2)
 
 build(){
 
-  cd ${name}-${version}
+  cd "${name}"-"${version}"
 
   ./configure --prefix=/usr \
               --disable-nls
 
   make -j1
-  make -j1 DESTDIR=${PKG} install
+  make -j1 DESTDIR="${PKG}" install
 
 }
