@@ -295,9 +295,9 @@ f:30b20b49e6e296ea3c2215a355f780b5:ratpoison/.signature
 f:465a4c132585687b1aca56023735db37:reaver/.signature
 f:43b3440d1487f9740ff46d44319c6806:reaver/.footprint
 f:9f8df6657a12b30ed97aad462aef7398:reaver/Pkgfile
-f:faafc7bc21530ff395449e6cc277f6eb:rtaudio/.signature
+f:b9b26d9cc2e7096ac60b73f1d09e43c6:rtaudio/.signature
 f:9bd28e266271d48653d9414576ca6c49:rtaudio/.footprint
-f:2d8ee3d3de94a3f4a2dc0ed681edfad1:rtaudio/Pkgfile
+f:5f95535135f70200f5d103b3911fe8b2:rtaudio/Pkgfile
 f:dd54f376b1b173b61c015ac026f020f1:python3-pybind11/Pkgfile
 f:5d6e24ac849cfb72fd5a7240ce3c9b45:python3-pybind11/.footprint
 f:09ca76ee49dbca03e943cd15a3d6be87:python3-pybind11/.signature
