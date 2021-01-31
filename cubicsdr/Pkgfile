@@ -6,13 +6,14 @@
 # Optional:     pulseaudio
 
 name=cubicsdr
-version=0.2.5
-sversion=9c32b9791097044938fc4aa6976a3c7526520ce4
+version=0.2.5-0b2b908
+sversion=0b2b90848de229b926703e18b53b3b9e5cd7c147
 release=1
 source=(https://github.com/cjcliffe/CubicSDR/archive/${sversion}/${name}-${version}.tar.gz)
 
 build() {
 
+echo $source
   cmake -S CubicSDR-"${sversion}" -B build -G Ninja         \
         -D USE_AUDIO_OSS=no                                 \
         -D USE_AUDIO_PULSE=no                               \
