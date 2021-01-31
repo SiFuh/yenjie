@@ -1,6 +1,0 @@
-untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uE1wGp7BvaKbjwpwoFzFRjfQkxKoEjF13e+J4L2xdn0aRr8z1v6+hyQZ3j9ZZONft0wZbQPjO/suPa/Sgsl4Cgg=
-SHA256 (Pkgfile) = d5d35e02229c89e6f45b0aebb4930540fe687bc4be0bb3816664cd6523d2584a
-SHA256 (.footprint) = 33e94bce8c0b66091b4de268125bbf13f3c9688bc60505d764dbb47a38904547
-SHA256 (libmp4v2-4.1.3.tar.gz) = e3ad6c2dc451b0875dbe34bfe7f51f4fe278b391434c886083e6d3ecd5fa08c2
-SHA256 (libmp4v2-c++11.patch) = 946a1c9c8a927d2739248aa1164591de08507152c856f88e8c5d759c213871ee

@@ -16,8 +16,8 @@ drwxr-xr-x	root/root	usr/include/libnftnl/
 -rw-r--r--	root/root	usr/include/libnftnl/udata.h
 drwxr-xr-x	root/root	usr/lib/
 -rwxr-xr-x	root/root	usr/lib/libnftnl.la
-lrwxrwxrwx	root/root	usr/lib/libnftnl.so -> libnftnl.so.11.4.0
-lrwxrwxrwx	root/root	usr/lib/libnftnl.so.11 -> libnftnl.so.11.4.0
--rwxr-xr-x	root/root	usr/lib/libnftnl.so.11.4.0
+lrwxrwxrwx	root/root	usr/lib/libnftnl.so -> libnftnl.so.11.5.0
+lrwxrwxrwx	root/root	usr/lib/libnftnl.so.11 -> libnftnl.so.11.5.0
+-rwxr-xr-x	root/root	usr/lib/libnftnl.so.11.5.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libnftnl.pc

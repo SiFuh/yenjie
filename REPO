@@ -24,7 +24,6 @@ d:gr-osmosdr
 d:hidapi
 d:hping3
 d:kismet-2016
-d:libmp4v2
 d:libnftnl
 d:libopenshot
 d:libopenshot-audio
@@ -199,13 +198,9 @@ f:7c0d81000debcc9b6a7123e53b1e073a:kismet-2016/README
 f:2d5898367b9936830ddba6bc2277da4a:kismet-2016/ipc_remote_cc.patch
 f:24456a2518e0befeea873b3ddccbeafb:kismet-2016/aircrack_crypto_cc.patch
 f:0f34200e0384f4da0c6c8ab0839a28ca:kismet-2016/Pkgfile
-f:9718d6d636e6af9464deb304cca1017e:libmp4v2/.footprint
-f:51d1b107fa0d31cbb10f6692654f2e3f:libmp4v2/Pkgfile
-f:3c0ff22babf46e560a45f18b497469ce:libmp4v2/.signature
-f:4bc0e7288c60bce839799b14a76d47b8:libmp4v2/libmp4v2-c++11.patch
-f:0c1531f53c8bf908df833e033450c67f:libnftnl/.footprint
-f:de0f58605719878f53fe9d9e1deb1340:libnftnl/.signature
-f:af570592abe8ad0414d626a9b1ac6aee:libnftnl/Pkgfile
+f:19394a9096237889e92d9e7dec90a436:libnftnl/.footprint
+f:c58728b6710f6b4d7ba31b07f155c795:libnftnl/.signature
+f:e489c30fe36f5eedb9f296b1b0c8ee5d:libnftnl/Pkgfile
 f:161a06c5a60ef96c8d7536b2aafb31c6:libopenshot/Pkgfile
 f:a54fe8064ae0a259bfff308543f9aebe:libopenshot/.footprint
 f:1f42fc0055e679c1e80a28a83c93a3f4:libopenshot/.signature
