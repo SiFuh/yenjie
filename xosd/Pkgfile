@@ -1,23 +1,26 @@
-# Description: 	X11 Onscreen Display
-# URL: 		http://sourceforge.net/projects/libxosd/files/libxosd
-# Packager:	
-# Maintainer:	Lin SiFuh, #crux at freenode dot net 	 
-# Depends on: 	xorg-libx11 xorg-libxext
+# Description:  X11 Onscreen Display
+# URL:          https://sourceforge.net/projects/libxosd/files/libxosd
+# Maintainer:   Lin SiFuh, #crux at freenode dot net 	 
+# Depends on:   xorg-libx11 xorg-libxext
 
 name=xosd
+_name=lib${name}
 version=2.2.14
 release=1
-source=(http://downloads.sourceforge.net/project/libxosd/libxosd/$name-$version/$name-$version.tar.gz	\
-	libxosd_m4.patch)
+source=(https://downloads.sourceforge.net/project/${_name}/${_name}/${name}-${version}/${name}-${version}.tar.gz
+        ${_name}_m4.patch)
 
 build() {
 
-	cd $name-$version
+  cd "${name}"-"${version}"
 
-	patch -p1 -i $SRC/libxosd_m4.patch
-	./configure --prefix=/usr --mandir=/usr/share/man --disable-nls
+  patch -p1 -i "${SRC}"/"${_name}"_m4.patch
 
-	make
-	make DESTDIR=$PKG install
+  ./configure --disable-nls           \
+              --prefix=/usr           \
+              --mandir=/usr/share/man 
+
+  make
+  make DESTDIR="${PKG}" install
 
 }
