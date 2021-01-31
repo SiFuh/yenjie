@@ -1,6 +1,5 @@
 # Description:  A cross-platform GUI Library
 # URL:          http://www.wxwidgets.org/
-# Packager:
 # Maintainer:   Lin SiFuh, #crux at freenode dot net
 # Depends on:   gtk3 glu gst-plugins-base gconf
 
@@ -12,7 +11,7 @@ source=(https://github.com/${_name}/${_name}/archive/v${version}/${name}-${versi
 
 build() {
 
-  cd ${_name}-${version}
+  cd "${_name}"-"${version}"
 
   ./configure \
     --prefix=/usr \
@@ -30,13 +29,13 @@ build() {
     --disable-precomp-headers
 
   make
-  make prefix=${PKG}/usr install
+  make prefix="${PKG}"/usr install
 
-  rm -rf ${PKG}/usr/share/{locale,bakefile}
-  rm ${PKG}/usr/bin/{wxrc,wx-config}
+  rm -rf "${PKG}"/usr/share/{locale,bakefile}
+  rm "${PKG}"/usr/bin/{wxrc,wx-config}
 
-  mv ${PKG}/usr/share/aclocal/wxwin.m4 ${PKG}/usr/share/aclocal/wxwin-${version%.*}.m4
+  mv "${PKG}"/usr/share/aclocal/wxwin.m4 "${PKG}"/usr/share/aclocal/wxwin-"${version%.*}".m4
 
-  ln -s /usr/lib/wx/config/gtk3-unicode-${version%.*} ${PKG}/usr/bin/wx-config-${version%.*}
+  ln -s /usr/lib/wx/config/gtk3-unicode-"${version%.*}" "${PKG}"/usr/bin/wx-config-"${version%.*}"
 
 }
