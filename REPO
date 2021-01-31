@@ -91,9 +91,9 @@ d:libopenshot-git
 d:openshot-qt-git
 d:libdc1394
 d:rtl8814au-dkms
-f:75f342e59b378d3bdbabf0e9edf3c653:lshw/.signature
+f:e46a71890e9af53cc069b1c1442b35c7:lshw/.signature
 f:143d2604bf77fb4c9de17df37d92ed29:lshw/.footprint
-f:9863400b25b92424d5f3b0a88cdeab15:lshw/Pkgfile
+f:39f2f873d0ba02fa29236e4cba30eecc:lshw/Pkgfile
 f:ba1b3279be1b261d92986f862d58f90a:luakit/Pkgfile
 f:2259230bb090ef0a44614e7f3dd577b7:luakit/.footprint
 f:744458d7be38a0ce1ce50bb329c9b4d8:luakit/.signature
