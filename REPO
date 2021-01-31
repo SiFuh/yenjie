@@ -184,9 +184,9 @@ f:90417dd3b0cd3e7c2152de7639ecae56:hidapi/.footprint
 f:556ec7ef925f8c0e180f6cb26afbba40:hidapi/Pkgfile
 f:ada653921ff5b8cf38b34096232560ae:hidapi/.signature
 f:b4fe16c240d4883114f5158645491999:hidapi/configure_ac.patch
-f:9edf210d94b939848d53f889c771c8aa:hping3/Pkgfile
+f:91b134659386d3ec8307c5c0a2208d7d:hping3/Pkgfile
 f:83922f9f1b60fa015459c03b8ea7ca4c:hping3/Makefile.patch
-f:db928eb499315f6fb55a82358dafaf82:hping3/.signature
+f:c729a3574f00fd2793c52b5a8cff277a:hping3/.signature
 f:5de961907a4a371d644982e65aa29506:hping3/.footprint
 f:5d6e6a8c59549f7c1841b5fb92b89287:hping3/libpcap_stuff_c.patch
 f:8e067f8b3f3e007d0d4c121f30b0fb32:hping3/bytesex_h.patch

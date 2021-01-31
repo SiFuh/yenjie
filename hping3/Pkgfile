@@ -13,22 +13,22 @@ source=(http://www.hping.org/${name}-${version}.tar.gz	\
 
 build() {
 	
-  export MANPATH=${PKG}/usr/share/man
-  mkdir -p ${PKG}/usr/{sbin,share/man/man8}
+  export MANPATH="${PKG}"/usr/share/man
+  mkdir -p "${PKG}"/usr/{sbin,share/man/man8}
 
-  cd ${name}-${version}
+  cd "${name}"-"${version}"
 	
-  patch -p0 -i ${SRC}/bytesex_h.patch
-  patch -p0 -i ${SRC}/libpcap_stuff_c.patch
-  patch -p0 -i ${SRC}/script_c.patch
-  patch -p0 -i ${SRC}/hping2_h.patch
+  patch -p0 -i "${SRC}"/bytesex_h.patch
+  patch -p0 -i "${SRC}"/libpcap_stuff_c.patch
+  patch -p0 -i "${SRC}"/script_c.patch
+  patch -p0 -i "${SRC}"/hping2_h.patch
 
   ./configure --prefix=/usr 
 	
-  patch -p0 -i ${SRC}/Makefile.patch
+  patch -p0 -i "${SRC}"/Makefile.patch
 
   make
   make strip
-  make DESTDIR=${PKG} install
+  make DESTDIR="${PKG}" install
 
 }
