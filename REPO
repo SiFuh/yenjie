@@ -245,8 +245,8 @@ f:067582f48dd8689e8f2af2e870b9b672:nvidia-dkms/Pkgfile
 f:2097834b5b5f1fca0b82dd5518e11cb6:nvidia-dkms/10-nvidia-drm-outputclass.conf
 f:4511024cc556d0c6e7c467b6789524e2:nvidia-dkms/90-nvidia-uvm.rules
 f:3ca819d35e1ac98b4c9a0faab393b1a0:openocd/.footprint
-f:a60228b079eee8d116db273a34f2cc75:openocd/.signature
-f:a2af3f765657e65614272844759fa510:openocd/Pkgfile
+f:9b2c6042799bafce0d443f4cb6980c3c:openocd/.signature
+f:9a3dfa4fde6669e4b605b502c39fa201:openocd/Pkgfile
 f:c692af40f01083c7811e5a8d08d2939b:openshot-qt/README
 f:a4a71013f09e8ae3a722e87fe5d71435:openshot-qt/.signature
 f:faf458e10381ce78937fcc9bc2304f2d:openshot-qt/Pkgfile

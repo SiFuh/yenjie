@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uKsfdxty92Uy663XDkXUxlqkzbdDVoeeeRHFTnXAmZTU0crobXjvpoOCMdinHyxhCR697TDSpL8bmlFaThrusgg=
-SHA256 (Pkgfile) = 3ae498c273555d1e19f7274391fff34095ee33a8f643f96b8e2aad5e6a84c968
+RWQ0NN0w0eo0uHjmq1BjWlEwJEGeNdN06OMb2xiRN1fEQa2B9yDoIOeW/jXfUJbkPVa75wOGI5DanzGtnbu9PzGCzjRuNI02LAU=
+SHA256 (Pkgfile) = 86086c05dd5c7ce61232b078ac317c855e534f6a6ce04aa0354d196c1900839b
 SHA256 (.footprint) = e1b59fed6869c1f20d4b1091e9259f9b7d8382296747e5678bd3ee18d9fd21e2
 SHA256 (openocd-0.10.0.tar.bz2) = 7312e7d680752ac088b8b8f2b5ba3ff0d30e0a78139531847be4b75c101316ae

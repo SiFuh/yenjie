@@ -10,7 +10,7 @@ source=(https://sourceforge.net/projects/${name}/files/${name}/${version}/${name
 
 build() {
 
-  cd ${name}-${version}
+  cd "${name}"-"${version}"
 
   libtoolize -vif
   autoreconf -vif
@@ -58,9 +58,9 @@ build() {
               --enable-dependency-tracking
 
   make
-  make DESTDIR=${PKG} install
+  make DESTDIR="${PKG}" install
 
-  rm -rf ${PKG}/usr/share/info/
-  rm ${PKG}/usr/share/openocd/contrib/libdcc/README
+  rm -rf "${PKG}"/usr/share/info/
+  rm "${PKG}"/usr/share/openocd/contrib/libdcc/README
 
 }
