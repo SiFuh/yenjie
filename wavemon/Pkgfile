@@ -1,20 +1,16 @@
 # Description:  Ncurses-based monitoring for wireless network devices
 # URL:          https://github.com/uoaerg/wavemon
-# Packager:
 # Maintainer:   Lin SiFuh, #crux at freenode dot net
 # Depends on:   ncurses libcap libnl
 
 name=wavemon
-version=0.9.2
+version=0.9.3
 release=1
-source=(https://github.com/uoaerg/${name}/archive/v${version}/${name}-${version}.tar.gz \
-        ${name}_h.patch )
+source=(https://github.com/uoaerg/${name}/archive/v${version}/${name}-${version}.tar.gz)
 
 build() {
 
-  cd ${name}-${version}
-
-  patch -i ../${name}_h.patch
+  cd "${name}"-"${version}"
 
   sed -e '/^CFLAGS=/d' -i configure.ac
   sed -r 's|(/share)|\1/doc|g' -i Makefile.in

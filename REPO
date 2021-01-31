@@ -388,10 +388,10 @@ f:a1cf27c362a9e28d5ec55abd890d8a56:warmux/return-null.patch
 f:5d164ef5159227840312cd0618835c25:warmux/.signature
 f:94cdcb45c2e6c34c368d34bb15ca69c4:warmux/curl-ptr.patch
 f:c8285955e880f80e3c68312715a3061c:warmux/include-zlib.patch
-f:10cc663a3ee4ee1e04ea2c157eb1818e:wavemon/.signature
+f:6e55491c3783768b143a92aa8b162146:wavemon/.signature
 f:a286114b733a8b08100796cc891a3c93:wavemon/wavemon_h.patch
 f:f3758ef9b6bd2671d2e0803fb5482be7:wavemon/.footprint
-f:b6b564ec8b2815a10739390bc7716fa3:wavemon/Pkgfile
+f:c76010e9d80a7f85f8c826f0a757064b:wavemon/Pkgfile
 f:e2c2c379c47f3f614806774c3d134e83:whowatch/.signature
 f:b705c0f9511277842c931983e9ff31f6:whowatch/.footprint
 f:e498befa2932a2b8254e00defa975fd6:whowatch/Pkgfile
