@@ -10,17 +10,17 @@ source=(ftp://xmlsoft.org/${name//-python}/${name//-python}-${version}.tar.gz \
         ${name}-config.patch)
 
 build () {
-    cd ${name//-python}-${version}
+    cd "${name//-python}"-"${version}"
     
-    patch -p1 -i ${SRC}/${name}-config.patch
+    patch -p1 -i "${SRC}"/"${name}"-config.patch
     
     ./configure --prefix=/usr
     cd python
     make
-    make DESTDIR=${PKG} install
+    make DESTDIR="${PKG}" install
 
-    python -m compileall ${PKG}/usr/lib/python2.7/
+    python -m compileall "${PKG}"/usr/lib/python2.7/
 
-    rm ${PKG}/usr/lib/python2.7/site-packages/libxml2mod.{a,la}
-    rm -r ${PKG}/usr/share
+    rm "${PKG}"/usr/lib/python2.7/site-packages/libxml2mod.{a,la}
+    rm -r "${PKG}"/usr/share
 }
