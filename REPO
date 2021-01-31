@@ -119,9 +119,9 @@ f:911794afd45bf04c68312d852c2175c1:chirp/Pkgfile
 f:7e835ee3ffa1833277ab59a24fafce34:circuit-simulator/circuit-simulator
 f:80b397dfd265978a0bd325f2667182ed:circuit-simulator/circuit_simulator.patch
 f:deaff8b1646089d6c2c737dcbc540255:circuit-simulator/circuit.desktop
-f:c3be130ab1500f49fa12483927ba1437:circuit-simulator/.signature
+f:477e1aa54df9af8935f13768957faeca:circuit-simulator/.signature
 f:5525332e65354c72c704893a0db917c8:circuit-simulator/.footprint
-f:dc71128493ef4b71332ed25b88ad4237:circuit-simulator/Pkgfile
+f:8ad77613b10cf0a591486c9438f529ce:circuit-simulator/Pkgfile
 f:d970b7c6dd5ee3eb6f8802c3bd1f53d1:ckut/.signature
 f:a59f97f4b807deba4dd6f622df67f0e6:ckut/ckut.conf
 f:5d89a7f8aa9a4ca20bdfc6cae372116e:ckut/ckut-1.6.bash

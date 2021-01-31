@@ -2,11 +2,11 @@
 # URL:          http://www.falstad.com/circuit-java
 # Packager:
 # Maintainer:   Lin SiFuh, #crux at freenode dot net
-# Depends on:   unzip imagemagick jdk8-bin hicolor-icon-theme fftw
+# Depends on:   unzip graphicsmagick jdk8-bin hicolor-icon-theme fftw
 
 name=circuit-simulator
 version=1.6
-release=4
+release=5
 source=(http://www.falstad.com/circuit-java/circuit.zip \
         circuit-simulator \
         circuit.desktop \
