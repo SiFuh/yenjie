@@ -118,6 +118,8 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/__pycac
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/__pycache__/assets.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/__pycache__/conversion.cpython-39.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/__pycache__/conversion.cpython-39.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/__pycache__/effect_init.cpython-39.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/__pycache__/effect_init.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/__pycache__/exceptions.cpython-39.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/__pycache__/exceptions.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/__pycache__/image_types.cpython-39.opt-1.pyc
@@ -126,6 +128,8 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/__pycac
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/__pycache__/info.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/__pycache__/json_data.cpython-39.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/__pycache__/json_data.cpython-39.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/__pycache__/keyframe_scaler.cpython-39.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/__pycache__/keyframe_scaler.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/__pycache__/language.cpython-39.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/__pycache__/language.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/__pycache__/logger.cpython-39.opt-1.pyc
@@ -144,6 +148,8 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/__pycac
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/__pycache__/query.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/__pycache__/settings.cpython-39.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/__pycache__/settings.cpython-39.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/__pycache__/style_tools.cpython-39.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/__pycache__/style_tools.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/__pycache__/thumbnail.cpython-39.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/__pycache__/thumbnail.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/__pycache__/time_parts.cpython-39.opt-1.pyc
@@ -161,6 +167,7 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/__pycac
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/app.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/assets.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/conversion.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/effect_init.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/exceptions.py
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/exporters/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/exporters/__init__.py (EMPTY)
@@ -187,6 +194,7 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/importe
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/importers/final_cut_pro.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/info.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/json_data.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/keyframe_scaler.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/language.py
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/legacy/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/legacy/__init__.py (EMPTY)
@@ -241,6 +249,7 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/legacy/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/qt_types.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/query.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/settings.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/style_tools.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/thumbnail.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/time_parts.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/classes/timeline.py
@@ -2281,6 +2290,7 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/boxes_9.png
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/brightness.png
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/bubbles.png
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/caption.png
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/central_mozaic.png
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/checked_1.png
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/checked_2.png
@@ -2488,6 +2498,7 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/mozaic_barr_left.png
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/mozaic_barr_right.png
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/negate.png
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/objectdetector.png
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/ondulation_1.png
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/openshot_logo.png
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/pixelate.png
@@ -2562,6 +2573,7 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/square_middle_left_barr.png
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/square_middle_right_barr.png
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/square_right_barr.png
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/stabilizer.png
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/stain_1.png
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/stain_2.png
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/star_1.png
@@ -2578,6 +2590,7 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/sunlight_2.png
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/sunlight_3.png
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/sunlight_4.png
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/tracker.png
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/triangle_1.png
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/triangle_2.png
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/images/cache/triangle_3.png
@@ -3489,8 +3502,12 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/__pycac
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/__pycache__/preferences.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/__pycache__/preview_thread.cpython-39.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/__pycache__/preview_thread.cpython-39.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/__pycache__/process_effect.cpython-39.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/__pycache__/process_effect.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/__pycache__/profile.cpython-39.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/__pycache__/profile.cpython-39.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/__pycache__/region.cpython-39.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/__pycache__/region.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/__pycache__/title_editor.cpython-39.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/__pycache__/title_editor.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/__pycache__/video_widget.cpython-39.opt-1.pyc
@@ -3541,7 +3558,9 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/models/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/models/transition_model.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/preferences.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/preview_thread.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/process_effect.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/profile.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/region.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/title_editor.py
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/ui/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/ui/about.ui
@@ -3556,7 +3575,9 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/ui/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/ui/license.ui
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/ui/main-window.ui
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/ui/preferences.ui
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/ui/process-effect.ui
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/ui/profile.ui
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/ui/region.ui
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/ui/title-editor.ui
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/video_widget.py
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/openshot_qt/windows/views/
