@@ -65,6 +65,7 @@ d:soapy-rtlsdr
 d:soapy-sdr
 d:supertuxkart-bin
 d:telegram-bin
+d:rxvt-unicode
 d:tuxedo-keyboard-dkms
 d:udiskie
 d:uhd
@@ -338,6 +339,9 @@ f:1acfc2c9de32ba3614fd6db118d08533:supertuxkart-bin/.signature
 f:e68d4127f847e2c03e473364b8da0e1f:telegram-bin/Pkgfile
 f:51ee9b11b51467edc91f48f112312261:telegram-bin/.footprint
 f:4e111547a54b2906071699e29691ccfe:telegram-bin/.signature
+f:d48ca8fe2ffc06a261e0bd0e8316b49c:rxvt-unicode/.footprint
+f:a7ffcb58a16b7d0562a37674cad3708d:rxvt-unicode/.signature
+f:8912b9d6366a6964e4fa065997990cfc:rxvt-unicode/Pkgfile
 f:dae9c6c9a55b4bb613c4829246e09c53:tuxedo-keyboard-dkms/tuxedo_keyboard_conf.patch
 f:ab3e15de07f2a21dfd1c9a4b34af5b43:tuxedo-keyboard-dkms/dkms.conf
 f:deb9926e801d21148c2c9c548b7e4092:tuxedo-keyboard-dkms/Pkgfile
