@@ -3,6 +3,7 @@ d:luakit
 d:android-tools
 d:cmus
 d:artwiz-aleczapka-fonts
+d:xpdf
 d:blender
 d:bluefish
 d:chirp
@@ -109,6 +110,13 @@ f:aec6b6217bce04bdf9847e5634223d9f:artwiz-aleczapka-fonts/.signature
 f:86c3361a6284f5be956c2f8721097a33:artwiz-aleczapka-fonts/Pkgfile
 f:cc8ced517148927d00993eaff74cfecd:artwiz-aleczapka-fonts/post-install
 f:009a9a8dc936eef264415338b6f39316:artwiz-aleczapka-fonts/.footprint
+f:e9cd6eee5cb68bd0ba87a301b27af47c:xpdf/xpdf-automagic.patch
+f:971f5323ce438d958be2a4072310182a:xpdf/.footprint
+f:a1b7cf48908eb4387b88b8573c7d520f:xpdf/xpdf-shared-libs.patch
+f:bd52d71cd51e2997a4f361622e1a2e1c:xpdf/README
+f:2c870cbaae1479360eb8b33d5c040e43:xpdf/xpdf-visibility.patch
+f:51683876e91b3f324d6f901ce7edbdba:xpdf/.signature
+f:9ab3499a610553f3213548389f7312d5:xpdf/Pkgfile
 f:a01fbb73079a17bcbf6daac99a8ff97a:blender/.signature
 f:425ee60bca49007a2dd58c6f4e9dd4b5:blender/Pkgfile
 f:9c20f7f03dd846c6827f09b048744650:blender/.footprint

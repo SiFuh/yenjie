@@ -1,0 +1,8 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uN5+fQTbxsQE5I1feNu2el+60G3GaUivHgecyY1UhdrDTS2h5cBS8PhCiC6CkNIGQyvaZ/QBu90OVQaFIhSU0QQ=
+SHA256 (Pkgfile) = e45e72d9eaed8a00b60102872d9b5d079661d99217a27fb7398e816e8005ef54
+SHA256 (.footprint) = b04fc4d3a62e3311e32f9350e044e905495c74101132621641fe2088f7248bdc
+SHA256 (xpdf-4.03.tar.gz) = 0fe4274374c330feaadcebb7bd7700cb91203e153b26aa95952f02bf130be846
+SHA256 (xpdf-automagic.patch) = 3cf7b618a90e39891b140978c9147e7b8edfd39666f11c9eb11bfe8727241cd9
+SHA256 (xpdf-visibility.patch) = 4dfde83375f344c724cb51cf7d2e0fef726ef7617be36d4a0570980917f68ead
+SHA256 (xpdf-shared-libs.patch) = e48d08c44dffb9367ec2cfe31823a44549cbd4ff00b10317c14a8d5225cde82f
