@@ -12,16 +12,16 @@ build() {
 
  cd "${name}"-"${version}"
 
- ./configure --prefix=/usr \
-             --enable-utmp \
-             --enable-wtmp \
-             --enable-transparency \
-             --enable-fading \
-             --enable-mousewheel \
-             --enable-256-color \
-             --enable-xft \
+ ./configure --enable-xft         \
+             --prefix=/usr        \
+             --enable-utmp        \
+             --enable-wtmp        \
+             --enable-fading      \
+             --enable-unicode3    \
+             --enable-256-color   \
+             --enable-mousewheel  \
              --enable-font-styles \
-             --enable-unicode3
+             --enable-transparency 
 
    make
 
