@@ -1,7 +1,9 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uA536PDDcxS2NLssGda29QM8TEYtCqAN7XI8xcl8Fb84UUIUYuLG3JTabpgHkTZOf6/fqVbXVTyrZ/+6KbAoiAw=
-SHA256 (Pkgfile) = 3eb1aed0027eca16a081ff4c39e518a38a02daebb08075f464b8109fb15147ef
+RWQ0NN0w0eo0uHkCkTUbAl9RMREYGksPn64HPtp9oT9X/s/ebSZBLcD3bZAzzFWAn0zskFOOpZ3SDlewfIrM9vi8HMQuWP2l4AI=
+SHA256 (Pkgfile) = 768abf1f665413f915cfd554a67ffcc3947cf99f548bc4a6dd10a96cdd6ecf8b
 SHA256 (.footprint) = 5eda23c2677a3be48d8c66d33669ba23392d07773e6336e8c74846c7b66e1507
 SHA256 (vlc-3.0.12.tar.xz) = eff458f38a92126094f44f2263c2bf2c7cdef271b48192d0fe7b1726388cf879
-SHA256 (srt_c.patch) = 88dea1fbb75f62d72f9482cda3b097cb6249fe83f27dc803904f31bfa7d305bd
-SHA256 (0001-lua-Make-scripts-compatible-to-lua-5.4.patch) = ade6a7eb28453188189b75567f8574c0d5f58041ed2fe09f1d93aae6f2f4c071
+SHA256 (0001-freerdp-2.patch) = 526c272edadf2e0a190c38c656e804d7980582231481b37ee687706c59328479
+SHA256 (0002-fdk-aac-2.0.0.patch) = d1dbaaa9db499adb81e8465c0c30a4c0e4a076cb18b25c2f743c36720a1da719
+SHA256 (0003-lua-script-compatibility-to-lua-5.4.patch) = ade6a7eb28453188189b75567f8574c0d5f58041ed2fe09f1d93aae6f2f4c071
+SHA256 (0004-srt_c.patch) = 88dea1fbb75f62d72f9482cda3b097cb6249fe83f27dc803904f31bfa7d305bd

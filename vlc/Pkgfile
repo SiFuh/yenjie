@@ -6,17 +6,24 @@
 
 name=vlc
 version=3.0.12
-release=3
+release=4
 source=(https://download.videolan.org/pub/videolan/${name}/${version}/${name}-${version}.tar.xz
-        srt_c.patch
-        0001-lua-Make-scripts-compatible-to-lua-5.4.patch)
+        0001-freerdp-2.patch
+        0002-fdk-aac-2.0.0.patch
+        0003-lua-script-compatibility-to-lua-5.4.patch
+        0004-srt_c.patch)
 
 build() {
 
   cd "${name}"-"${version}"
 
-  patch -Np1 < "${SRC}"/srt_c.patch
-  patch -Np1 < "${SRC}"/0001-lua-Make-scripts-compatible-to-lua-5.4.patch
+  # https://bugs.gentoo.org/590164
+  patch -Np1 < "${SRC}"/0001-freerdp-2.patch
+  # https://bugs.gentoo.org/672290
+  patch -Np1 < "${SRC}"/0002-fdk-aac-2.0.0.patch
+  patch -Np1 < "${SRC}"/0003-lua-script-compatibility-to-lua-5.4.patch
+  # https://bugs.gentoo.org/758062
+  patch -Np1 < "${SRC}"/0004-srt_c.patch
 
   [[ -z $(pkg-config --libs --static libavutil | grep -- '-lvdpau') ]] && \
     PKGMK_VLC+=' --disable-vdpau'
