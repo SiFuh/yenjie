@@ -24,7 +24,7 @@ build() {
   autoreconf -fi
 
 #  export LUAC=/usr/bin/luac5.2
-# export LUA_LIBS="$(pkg-config --libs lua5.2)"
+#  export LUA_LIBS="$(pkg-config --libs lua5.2)"
   export RCC=/usr/bin/rcc-qt5
   eval PKGMK_VLC="($PKGMK_VLC)"
 
