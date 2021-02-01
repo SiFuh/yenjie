@@ -1,115 +1,49 @@
 # Description:  The cross-platform media player and streaming server
 # URL:          https://www.videolan.org/vlc/
 # Maintainer:   Lin SiFuh, #crux at freenode dot net
-# Depends on:   ffmpeg liba52 libdvdnav libgcrypt libmad qt5 opus libvorbis x264 libogg libmtp libtheora flac libvdpau libdc1394 libavc1394 libraw1394 freerdp2 dav1d libupnp lua libbluray samba libssh2 libnfs libshout libebml libmatroska libmodplug mpg123 libva libvpx twolame libdca libmpeg2 schroedinger x265 librsvg pulseaudio jack-audio-connection-kit libsoxr chromaprint protobuf freetype xorg-libxpm xorg-libxext xorg-libxinerama avahi libsecret libnotify gtk3 libplacebo libidn2 brotli
+# Depends on:   ffmpeg liba52 libdvdnav libgcrypt libmad qt5 lua52
+# Nice to have: opus libvorbis x264 libogg libmtp libtheora flac libvdpau
 
 name=vlc
 version=3.0.12
-release=4
-source=(https://download.videolan.org/pub/videolan/${name}/${version}/${name}-${version}.tar.xz)
+release=2
+source=(https://download.videolan.org/pub/videolan/${name}/${version}/${name}-${version}.tar.xz
+        srt_c.patch)
 
 build() {
 
   cd "${name}"-"${version}"
 
-  [ -z "$(pkg-config --libs --static libavutil | grep -- '-lvdpau')" ] && PKGMK_VLC=' --disable-vdpau'
+  patch -Np1 < "${SRC}"/srt_c.patch
+
+  [[ -z $(pkg-config --libs --static libavutil | grep -- '-lvdpau') ]] && \
+    PKGMK_VLC+=' --disable-vdpau'
 
   autoreconf -fi
 
+  export LUAC=/usr/bin/luac5.2
+  export LUA_LIBS="$(pkg-config --libs lua5.2)"
   export RCC=/usr/bin/rcc-qt5
+  eval PKGMK_VLC="($PKGMK_VLC)"
+
   sed -e 's|-Werror-implicit-function-declaration||g' -i configure
 
-  BUILDCC="gcc -std=gnu11"             \
-  ./configure "${PKGMK_VLC}"           \
-              --prefix=/usr            \
-              --sysconfdir=/etc        \
-              --enable-aa              \
-              --enable-qt              \
-              --enable-a52             \
-              --enable-dca             \
-              --enable-mad             \
-              --enable-mod             \
-              --enable-mpc             \
-              --enable-mtp             \
-              --enable-nfs             \
-              --enable-ogg             \
-              --enable-png             \
-              --enable-svg             \
-              --enable-vlc             \
-              --enable-vpx             \
-              --enable-alsa            \
-              --enable-faad            \
-              --enable-flac            \
-              --enable-jack            \
-              --enable-jpeg            \
-              --enable-lirc            \
-              --disable-nls            \
-              --enable-opus            \
-              --enable-sftp            \
-              --enable-soxr            \
-              --enable-upnp            \
-              --enable-x264            \
-              --enable-x265            \
-              --enable-avahi           \
-              --enable-dav1d           \
-              --disable-dbus           \
-              --enable-libva           \
-              --enable-pulse           \
-              --enable-shout           \
-              --enable-speex           \
-              --enable-vdpau           \
-              --enable-bluray          \
-              --enable-dv1394          \
-              --enable-dvdnav          \
-              --enable-gnutls          \
-              --enable-libass          \
-              --enable-libtar          \
-              --enable-mpg123          \
-              --enable-notify          \
-              --disable-rpath          \
-              --enable-secret          \
-              --enable-skins2          \
-              --enable-svgdec          \
-              --enable-taglib          \
-              --enable-vorbis          \
-              --enable-archive         \
-              --enable-aribsub         \
-              --enable-avcodec         \
-              --enable-dvdread         \
-              --disable-fdkaac         \
-              --enable-fribidi         \
-              --enable-libxml2         \
-              --enable-ncurses         \
-              --disable-opencv         \
-              --enable-twolame         \
-              --enable-avformat        \
-              --enable-freetype        \
-              --enable-harfbuzz        \
-              --enable-libmpeg2        \
-              --enable-matroska        \
-              --enable-oggspots        \
-              --enable-postproc        \
-              --enable-projectm        \
-              --enable-realrtsp        \
-              --enable-libgcrypt       \
-              --enable-sdl-image       \
-              --enable-smbclient       \
-              --enable-chromecast      \
-              --enable-fontconfig      \
-              --enable-gst-decode      \
-              --enable-libplacebo      \
-              --enable-samplerate      \
-              --enable-chromaprint     \
-              --enable-schroedinger    \
-              --disable-update-check
+  BUILDCC="gcc -std=gnu11"          \
+  ./configure "${PKGMK_VLC[@]}"     \
+              --prefix=/usr         \
+              --disable-nls         \
+              --enable-alsa         \
+              --disable-dbus        \
+              --disable-fribidi     \
+              --disable-update-check 
 
   V=1 ./compile
+
   make DESTDIR="${PKG}" install
 
-  rm -rf "${PKG}"/usr/share/doc
-  rm -rf "${PKG}"/usr/share/kde4 
-  rm "${PKG}"/usr/share/vlc/lua/http/requests/README.txt
+  rm -rf "${PKG}"/usr/share/{doc,kde4}
 
-  sed -i 's/--started-from-file//g' "${PKG}"/usr/share/applications/vlc.desktop
+  sed -i 's/--started-from-file//g'                 \
+         "${PKG}"/usr/share/applications/vlc.desktop
 
 }

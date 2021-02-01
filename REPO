@@ -26,6 +26,7 @@ d:gr-osmosdr
 d:hidapi
 d:hping3
 d:kismet-2016
+d:vlc
 d:libnftnl
 d:libopenshot
 d:libopenshot-audio
@@ -75,7 +76,6 @@ d:v4l-utils
 d:vanilla-dmz
 d:virtualbox-bin
 d:virtualbox-extpack
-d:vlc
 d:vokoscreen
 d:volk
 d:warmux
@@ -210,6 +210,12 @@ f:7c0d81000debcc9b6a7123e53b1e073a:kismet-2016/README
 f:2d5898367b9936830ddba6bc2277da4a:kismet-2016/ipc_remote_cc.patch
 f:24456a2518e0befeea873b3ddccbeafb:kismet-2016/aircrack_crypto_cc.patch
 f:0f34200e0384f4da0c6c8ab0839a28ca:kismet-2016/Pkgfile
+f:9f0055a3b9e456af7e0f2beb0d13b942:vlc/post-install
+f:1846e67d38256e8eb8b04e7edf7e22ac:vlc/srt_c.patch
+f:2831dec0838cfc0882faa35e0938fa8c:vlc/Pkgfile
+f:def2f63fe48825f0a49d2631ffd58268:vlc/README
+f:a16a411de228eb236d48f2d4a65c9fba:vlc/.footprint
+f:12ac978e56c9c6a804ca5fef0c136943:vlc/.signature
 f:19394a9096237889e92d9e7dec90a436:libnftnl/.footprint
 f:c58728b6710f6b4d7ba31b07f155c795:libnftnl/.signature
 f:e489c30fe36f5eedb9f296b1b0c8ee5d:libnftnl/Pkgfile
@@ -386,12 +392,6 @@ f:b5737eeb92560ec20c8a2f170b3176ad:virtualbox-extpack/.signature
 f:d15e56a7d8f9d5e0d04ee5979c7372af:virtualbox-extpack/pre-install
 f:775e7ee8af02049ebeae35d4be08fef8:virtualbox-extpack/post-install
 f:d0a2840654b669e56808b3fbd1447ec8:virtualbox-extpack/README
-f:def2f63fe48825f0a49d2631ffd58268:vlc/README
-f:2b350d14cb1e25f2bc12cc87824aed87:vlc/.footprint
-f:894050e93dce0b74d23ff06ef3c4fb9f:vlc/Pkgfile-alsa
-f:9f0055a3b9e456af7e0f2beb0d13b942:vlc/post-install
-f:0c1ac26c897640f066d1377d3663e457:vlc/Pkgfile
-f:2ca8b6c3e5a63e4e94a4dfbdcdc820ca:vlc/.signature
 f:e9a7fc048c528aa1783fb12d57a2d3a3:vokoscreen/.footprint
 f:685eac732404efa084e1d6c7eedd7df2:vokoscreen/.signature
 f:f783cd318c03f6a0b917395e8deadec1:vokoscreen/Pkgfile
