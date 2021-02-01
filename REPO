@@ -212,10 +212,11 @@ f:24456a2518e0befeea873b3ddccbeafb:kismet-2016/aircrack_crypto_cc.patch
 f:0f34200e0384f4da0c6c8ab0839a28ca:kismet-2016/Pkgfile
 f:9f0055a3b9e456af7e0f2beb0d13b942:vlc/post-install
 f:1846e67d38256e8eb8b04e7edf7e22ac:vlc/srt_c.patch
-f:2831dec0838cfc0882faa35e0938fa8c:vlc/Pkgfile
+f:96bd8e5e6a0017c2286a1cb510bcc39b:vlc/Pkgfile
 f:def2f63fe48825f0a49d2631ffd58268:vlc/README
 f:a16a411de228eb236d48f2d4a65c9fba:vlc/.footprint
-f:12ac978e56c9c6a804ca5fef0c136943:vlc/.signature
+f:b6790f34b2f53d362c18136c00449157:vlc/.signature
+f:afff5d88a49157aba773bbde71b75c26:vlc/0001-lua-Make-scripts-compatible-to-lua-5.4.patch
 f:19394a9096237889e92d9e7dec90a436:libnftnl/.footprint
 f:c58728b6710f6b4d7ba31b07f155c795:libnftnl/.signature
 f:e489c30fe36f5eedb9f296b1b0c8ee5d:libnftnl/Pkgfile

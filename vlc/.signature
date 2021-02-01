@@ -1,6 +1,7 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uJ0EhNwTga2MdLQPG+dBhAUSBcEbSTt4HeOMmAj5wNv2hAOHX4M6w/x2aY5TiPV5ubBMOFNoQqrw36Gl+own2Qs=
-SHA256 (Pkgfile) = 22b5d37c0a53810b4c435b65e1325a17433bd561d85b8cfd8168ac1a36042df0
+RWQ0NN0w0eo0uL+pSBOj4RXGxys0XPAGJIFFcvdeFaaXA3APdq7tsReEc8eLisM9F+MonjSkCleMXPQq5TKcDKSmXxCTfeI3+g8=
+SHA256 (Pkgfile) = af2f7e9499139ec8081744855de96518ffba259ca2ce70fe09cfcf7931269cb3
 SHA256 (.footprint) = 5eda23c2677a3be48d8c66d33669ba23392d07773e6336e8c74846c7b66e1507
 SHA256 (vlc-3.0.12.tar.xz) = eff458f38a92126094f44f2263c2bf2c7cdef271b48192d0fe7b1726388cf879
 SHA256 (srt_c.patch) = 88dea1fbb75f62d72f9482cda3b097cb6249fe83f27dc803904f31bfa7d305bd
+SHA256 (0001-lua-Make-scripts-compatible-to-lua-5.4.patch) = ade6a7eb28453188189b75567f8574c0d5f58041ed2fe09f1d93aae6f2f4c071

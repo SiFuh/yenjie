@@ -1,0 +1,345 @@
+From 478efd8bdabce8717b5649386563344552da8d4e Mon Sep 17 00:00:00 2001
+From: Benjamin Robin <dev@benjarobin.fr>
+Date: Fri, 14 Aug 2020 21:47:12 +0200
+Subject: [PATCH] lua: Make scripts compatible to lua 5.4
+
+Fix: Error loading script ... attempt to call a nil value (global 'module')
+---
+ share/lua/http/custom.lua               |  1 -
+ share/lua/http/requests/browse.json     |  2 +-
+ share/lua/http/requests/browse.xml      |  2 +-
+ share/lua/http/requests/playlist.json   |  2 +-
+ share/lua/http/requests/playlist.xml    |  2 +-
+ share/lua/http/requests/status.json     |  2 +-
+ share/lua/http/requests/status.xml      |  2 +-
+ share/lua/intf/cli.lua                  |  4 ++--
+ share/lua/intf/http.lua                 |  2 --
+ share/lua/intf/luac.lua                 |  4 ++--
+ share/lua/intf/modules/host.lua         |  8 ++++++--
+ share/lua/intf/modules/httprequests.lua | 13 +++++++++++--
+ share/lua/modules/common.lua            | 20 +++++++++++++++++++-
+ share/lua/modules/sandbox.lua           |  6 ++++--
+ share/lua/modules/simplexml.lua         |  8 ++++++--
+ share/lua/playlist/jamendo.lua          |  2 +-
+ share/lua/sd/fmc.lua                    |  2 +-
+ share/lua/sd/icecast.lua                |  8 ++++----
+ 20 files changed, 64 insertions(+), 30 deletions(-)
+
+diff --git a/share/lua/http/custom.lua b/share/lua/http/custom.lua
+index d1551f53dd..509d415402 100644
+--- a/share/lua/http/custom.lua
++++ b/share/lua/http/custom.lua
+@@ -2,7 +2,6 @@
+ function gettext(text) print(vlc.gettext._(text)) end
+
+ local _G = _G
+-module("custom",package.seeall)
+
+ local dialogs = setmetatable({}, {
+ __index = function(self, name)
+diff --git a/share/lua/http/requests/browse.json b/share/lua/http/requests/browse.json
+index 39fb9b54d0..e1026a90e1 100644
+--- a/share/lua/http/requests/browse.json
++++ b/share/lua/http/requests/browse.json
+@@ -27,7 +27,7 @@ vim:syntax=lua
+ <?vlc
+
+ --package.loaded.httprequests = nil --uncomment to debug changes
+-require "httprequests"
++local httprequests = require("httprequests")
+
+ httprequests.processcommands()
+
+diff --git a/share/lua/http/requests/browse.xml b/share/lua/http/requests/browse.xml
+index 0afff8f090..223768c7ec 100644
+--- a/share/lua/http/requests/browse.xml
++++ b/share/lua/http/requests/browse.xml
+@@ -28,7 +28,7 @@ vim:syntax=lua
+ <?vlc
+
+ --package.loaded.httprequests = nil --uncomment to debug changes
+-require "httprequests"
++local httprequests = require("httprequests")
+
+ httprequests.processcommands()
+
+diff --git a/share/lua/http/requests/playlist.json b/share/lua/http/requests/playlist.json
+index 7f531f3d70..4bbab2a4ec 100644
+--- a/share/lua/http/requests/playlist.json
++++ b/share/lua/http/requests/playlist.json
+@@ -27,7 +27,7 @@ vim:syntax=lua
+ <?vlc
+
+ --package.loaded.httprequests = nil --uncomment to debug changes
+-require "httprequests"
++local httprequests = require("httprequests")
+
+ httprequests.processcommands()
+
+diff --git a/share/lua/http/requests/playlist.xml b/share/lua/http/requests/playlist.xml
+index 8b8930b657..bfca494665 100644
+--- a/share/lua/http/requests/playlist.xml
++++ b/share/lua/http/requests/playlist.xml
+@@ -29,7 +29,7 @@ vim:syntax=lua
+ <?vlc
+
+ --package.loaded.httprequests = nil --uncomment to debug changes
+-require "httprequests"
++local httprequests = require("httprequests")
+
+ local printleaf = function(item)
+ 	print ("\n<leaf")
+diff --git a/share/lua/http/requests/status.json b/share/lua/http/requests/status.json
+index d44615865b..e97f7a53a6 100644
+--- a/share/lua/http/requests/status.json
++++ b/share/lua/http/requests/status.json
+@@ -27,7 +27,7 @@ vim:syntax=lua
+ <?vlc
+
+ --package.loaded.httprequests = nil --uncomment to debug changes
+-require "httprequests"
++local httprequests = require("httprequests")
+
+ httprequests.processcommands()
+
+diff --git a/share/lua/http/requests/status.xml b/share/lua/http/requests/status.xml
+index d3e468d798..0a713a94d7 100644
+--- a/share/lua/http/requests/status.xml
++++ b/share/lua/http/requests/status.xml
+@@ -29,7 +29,7 @@ vim:syntax=lua
+ <?vlc
+
+ --package.loaded.httprequests = nil --uncomment to debug changes
+-require "httprequests"
++local httprequests = require("httprequests")
+
+ httprequests.processcommands()
+
+diff --git a/share/lua/intf/cli.lua b/share/lua/intf/cli.lua
+index a6ea382606..5062f210ca 100644
+--- a/share/lua/intf/cli.lua
++++ b/share/lua/intf/cli.lua
+@@ -58,7 +58,7 @@ description=
+     * flatplaylist: 0 to disable, 1 to enable.
+ ]============================================================================]
+
+-require("common")
++local common = require("common")
+ skip = common.skip
+ skip2 = function(foo) return skip(skip(foo)) end
+ setarg = common.setarg
+@@ -799,7 +799,7 @@ function on_write( client )
+ end
+
+ --[[ Setup host ]]
+-require("host")
++local host = require("host")
+ h = host.host()
+
+ h.status_callbacks[host.status.password] = on_password
+diff --git a/share/lua/intf/http.lua b/share/lua/intf/http.lua
+index 1cf8946126..b35ef9dd25 100644
+--- a/share/lua/intf/http.lua
++++ b/share/lua/intf/http.lua
+@@ -30,8 +30,6 @@ Configuration options:
+ --]==========================================================================]
+
+
+-require "common"
+-
+ vlc.msg.info("Lua HTTP interface")
+
+ open_tag = "<?vlc"
+diff --git a/share/lua/intf/luac.lua b/share/lua/intf/luac.lua
+index bd5c2e5afc..5fe9577e72 100644
+--- a/share/lua/intf/luac.lua
++++ b/share/lua/intf/luac.lua
+@@ -29,8 +29,8 @@ Output will be similar to that of the luac command line tool provided with lua w
+   luac -o file.luac file.lua
+ ]]
+
+-require "string"
+-require "io"
++local string = require("string")
++local io = require("io")
+
+ function compile()
+     vlc.msg.info("About to compile lua file")
+diff --git a/share/lua/intf/modules/host.lua b/share/lua/intf/modules/host.lua
+index b0a4983e2f..87231695b1 100644
+--- a/share/lua/intf/modules/host.lua
++++ b/share/lua/intf/modules/host.lua
+@@ -62,8 +62,6 @@ Example use:
+ For complete examples see existing VLC Lua interface modules (ie cli.lua)
+ --]==========================================================================]
+
+-module("host",package.seeall)
+-
+ status = { init = 0, read = 1, write = 2, password = 3 }
+ client_type = { net = 1, stdio = 2, fifo = 3, telnet = 4 }
+
+@@ -363,3 +361,9 @@ function host()
+               })
+     return h
+ end
++
++return {
++    client_type = client_type,
++    host = host,
++    status = status
++}
+diff --git a/share/lua/intf/modules/httprequests.lua b/share/lua/intf/modules/httprequests.lua
+index 094bf3baa0..2842a2e302 100644
+--- a/share/lua/intf/modules/httprequests.lua
++++ b/share/lua/intf/modules/httprequests.lua
+@@ -22,8 +22,6 @@
+  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
+ --]==========================================================================]
+
+-module("httprequests",package.seeall)
+-
+ local common = require ("common")
+ local dkjson = require ("dkjson")
+
+@@ -550,3 +548,14 @@ getstatus = function (includecategories)
+     return s
+ end
+
++return {
++    getbrowsetable = getbrowsetable,
++    getstatus = getstatus,
++    playlisttable = playlisttable,
++    parseplaylist = parseplaylist,
++    getplaylist = getplaylist,
++    printTableAsJson = printTableAsJson,
++    printTableAsXml = printTableAsXml,
++    processcommands = processcommands,
++    xmlString = xmlString,
++}
+diff --git a/share/lua/modules/common.lua b/share/lua/modules/common.lua
+index 8c49c713e5..f3d86e7ac2 100644
+--- a/share/lua/modules/common.lua
++++ b/share/lua/modules/common.lua
+@@ -1,6 +1,5 @@
+ --[[ This code is public domain (since it really isn't very interesting) ]]--
+
+-module("common",package.seeall)
+
+ -- Iterate over a table in the keys' alphabetical order
+ function pairs_sorted(t)
+@@ -175,3 +174,22 @@ function volume(value)
+         vlc.volume.set(tostring(value))
+     end
+ end
++
++return {
++    pairs_sorted = pairs_sorted,
++    skip = skip,
++    setarg = setarg,
++    hotkey = hotkey,
++    snapshot = snapshot,
++    table_copy = table_copy,
++    us_tonumber = us_tonumber,
++    us_tostring = us_tostring,
++    strip = strip,
++    table_print = table_print,
++    print_callbacks = print_callbacks,
++    durationtostring = durationtostring,
++    realpath = realpath,
++    parsetime = parsetime,
++    seek = seek,
++    volume = volume
++}
+diff --git a/share/lua/modules/sandbox.lua b/share/lua/modules/sandbox.lua
+index 8aba61f7ea..388ee7c219 100644
+--- a/share/lua/modules/sandbox.lua
++++ b/share/lua/modules/sandbox.lua
+@@ -21,8 +21,6 @@
+  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
+ --]==========================================================================]
+
+-module("sandbox",package.seeall)
+-
+ -- See Programming in Lua (second edition) for sandbox examples
+ -- See http://lua-users.org/wiki/SandBoxes for a list of SAFE/UNSAFE variables
+
+@@ -121,3 +119,7 @@ function sandbox(func,override)
+         return unpack(ret)
+     end
+ end
++
++return {
++    sandbox = sandbox
++}
+diff --git a/share/lua/modules/simplexml.lua b/share/lua/modules/simplexml.lua
+index 36971a59df..207d6d7941 100644
+--- a/share/lua/modules/simplexml.lua
++++ b/share/lua/modules/simplexml.lua
+@@ -21,8 +21,6 @@
+  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
+ --]==========================================================================]
+
+-module("simplexml",package.seeall)
+-
+ --[[ Returns the xml tree structure
+ --   Each node is of one of the following types:
+ --     { name (string), attributes (key->value map), children (node array) }
+@@ -111,3 +109,9 @@ function add_name_maps(tree)
+     end
+ end
+
++return {
++    parse_url = parse_url,
++    parse_stream = parse_stream,
++    parse_string = parse_string,
++    add_name_maps = add_name_maps
++}
+diff --git a/share/lua/playlist/jamendo.lua b/share/lua/playlist/jamendo.lua
+index 7fae91411a..a84b88f91f 100644
+--- a/share/lua/playlist/jamendo.lua
++++ b/share/lua/playlist/jamendo.lua
+@@ -20,7 +20,7 @@
+  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
+ --]]
+
+-require "simplexml"
++local simplexml = require("simplexml")
+
+ -- Probe function.
+ function probe()
+diff --git a/share/lua/sd/fmc.lua b/share/lua/sd/fmc.lua
+index 830a022054..a8b7dc2704 100644
+--- a/share/lua/sd/fmc.lua
++++ b/share/lua/sd/fmc.lua
+@@ -19,7 +19,7 @@
+  along with this program; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
+ --]]
+-require "simplexml"
++local simplexml = require("simplexml")
+
+ function descriptor()
+     return { title="Free Music Charts" }
+diff --git a/share/lua/sd/icecast.lua b/share/lua/sd/icecast.lua
+index 5ad183b704..ff2c203be1 100644
+--- a/share/lua/sd/icecast.lua
++++ b/share/lua/sd/icecast.lua
+@@ -20,12 +20,12 @@
+  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
+ --]]
+
+-lazily_loaded = false
++local simplexml = nil
+
+ function lazy_load()
+-    if lazily_loaded then return nil end
+-    require "simplexml"
+-    lazily_loaded = true
++    if simplexml ~= nil then return nil end
++
++    simplexml = require("simplexml")
+ end
+
+ function descriptor()
+2.28.0
+

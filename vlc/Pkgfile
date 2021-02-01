@@ -1,28 +1,30 @@
 # Description:  The cross-platform media player and streaming server
 # URL:          https://www.videolan.org/vlc/
 # Maintainer:   Lin SiFuh, #crux at freenode dot net
-# Depends on:   ffmpeg liba52 libdvdnav libgcrypt libmad qt5 lua52
+# Depends on:   ffmpeg liba52 libdvdnav libgcrypt libmad qt5 lua
 # Nice to have: opus libvorbis x264 libogg libmtp libtheora flac libvdpau
 
 name=vlc
 version=3.0.12
-release=2
+release=3
 source=(https://download.videolan.org/pub/videolan/${name}/${version}/${name}-${version}.tar.xz
-        srt_c.patch)
+        srt_c.patch
+        0001-lua-Make-scripts-compatible-to-lua-5.4.patch)
 
 build() {
 
   cd "${name}"-"${version}"
 
   patch -Np1 < "${SRC}"/srt_c.patch
+  patch -Np1 < "${SRC}"/0001-lua-Make-scripts-compatible-to-lua-5.4.patch
 
   [[ -z $(pkg-config --libs --static libavutil | grep -- '-lvdpau') ]] && \
     PKGMK_VLC+=' --disable-vdpau'
 
   autoreconf -fi
 
-  export LUAC=/usr/bin/luac5.2
-  export LUA_LIBS="$(pkg-config --libs lua5.2)"
+#  export LUAC=/usr/bin/luac5.2
+# export LUA_LIBS="$(pkg-config --libs lua5.2)"
   export RCC=/usr/bin/rcc-qt5
   eval PKGMK_VLC="($PKGMK_VLC)"
 
