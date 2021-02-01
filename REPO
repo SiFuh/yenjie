@@ -91,6 +91,7 @@ d:libopenshot-git
 d:openshot-qt-git
 d:libdc1394
 d:rtl8814au-dkms
+d:win32-essential-codecs
 f:e46a71890e9af53cc069b1c1442b35c7:lshw/.signature
 f:143d2604bf77fb4c9de17df37d92ed29:lshw/.footprint
 f:39f2f873d0ba02fa29236e4cba30eecc:lshw/Pkgfile
@@ -443,3 +444,6 @@ f:655b5de4ae6e59e14fe78d01fe311793:rtl8814au-dkms/Pkgfile
 f:657809584b57dc40be0ca4da67bed627:rtl8814au-dkms/.SRCINFO
 f:068dfd40ed8226f98e146a65bac63788:rtl8814au-dkms/.footprint
 f:8bbba1ca7d67ab3c06337ac5753d2b7b:rtl8814au-dkms/.signature
+f:aa319c53b9f1f498a2c9f7d2f635d35b:win32-essential-codecs/.footprint
+f:c18e86a2a82f9ec6b1904ad4512de11f:win32-essential-codecs/.signature
+f:4e5db618b0372a0841977dc0a1b7f252:win32-essential-codecs/Pkgfile
