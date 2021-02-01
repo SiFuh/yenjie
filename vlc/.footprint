@@ -169,9 +169,6 @@ drwxr-xr-x	root/root	usr/lib/vlc/lua/playlist/
 -rw-r--r--	root/root	usr/lib/vlc/lua/playlist/vimeo.luac
 -rw-r--r--	root/root	usr/lib/vlc/lua/playlist/vocaroo.luac
 -rw-r--r--	root/root	usr/lib/vlc/lua/playlist/youtube.luac
-drwxr-xr-x	root/root	usr/lib/vlc/lua/sd/
--rw-r--r--	root/root	usr/lib/vlc/lua/sd/icecast.luac
--rw-r--r--	root/root	usr/lib/vlc/lua/sd/jamendo.luac
 drwxr-xr-x	root/root	usr/lib/vlc/plugins/
 drwxr-xr-x	root/root	usr/lib/vlc/plugins/access/
 -rwxr-xr-x	root/root	usr/lib/vlc/plugins/access/libaccess_alsa_plugin.la
