@@ -55,6 +55,7 @@ build() {
   sed -i 's/--started-from-file//g'                 \
          "${PKG}"/usr/share/applications/vlc.desktop
 
-  rmdir "${PKG}"/usr/lib/vlc/lua/sd
+  # Remove broken modules
+  rm -r "${PKG}"/usr/lib/vlc/lua/sd
 
 }
