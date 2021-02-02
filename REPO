@@ -34,6 +34,7 @@ d:libressl
 d:libxml2-python
 d:liquid-dsp
 d:log4cpp
+d:dosbox
 d:massren
 d:motion
 d:nftables
@@ -243,6 +244,9 @@ f:3b818b24966ef06bd92f4e8e9cf2808e:log4cpp/.footprint
 f:5815be2f8df4d355c51a26bbe2196539:log4cpp/config.h
 f:56d61d789d31ce333629431bd93c7dbc:log4cpp/Pkgfile
 f:6ed550da38e21e5765d4bdd1a018633f:log4cpp/.signature
+f:6ac7cc406ab9046d49bf3826ff37509e:dosbox/.footprint
+f:f0e9530d39e6e5f2cd76c5be353ec71a:dosbox/.signature
+f:00070164ce0d1118d99c2c2b1b331cdc:dosbox/Pkgfile
 f:31e28fdba8d411bcee07459351c8b544:massren/Pkgfile
 f:f2c2e5b961bf0c154d95fba759384096:massren/.footprint
 f:41a87a3dc11b7f39cfd2516ca3cfed7f:massren/.signature
