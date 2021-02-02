@@ -1,0 +1,25 @@
+# Description:  A collection of performance monitoring tools
+# URL:          http://perso.orange.fr/sebastien.godard/
+# Maintainer:   in SiFuh, #crux at freenode dot net
+# Depends on:
+
+name=sysstat
+version=12.5.2
+release=1
+source=(http://pagesperso-orange.fr/sebastien.godard/${name}-${version}.tar.xz)
+
+build() {
+
+  cd "${name}"-"${version}"
+
+  ./configure --prefix=/usr --disable-nls
+
+  sed -i "/^SA_LIB_DIR/s/lib64/lib/" Makefile
+
+  make
+  make DESTDIR="${PKG}" install
+
+  rm -rf "${PKG}"/etc/sysconfig
+  rm -rf "${PKG}"/usr/{doc,share/doc}
+
+}

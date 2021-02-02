@@ -73,6 +73,7 @@ d:tuxedo-keyboard-dkms
 d:udiskie
 d:uhd
 d:usbpicprog
+d:sysstat
 d:v4l-utils
 d:vanilla-dmz
 d:virtualbox-bin
@@ -380,6 +381,9 @@ f:4a98a4a3ec9c8bcf58af7ea6a0c03658:uhd/.footprint
 f:4552250f6475de2962b35715fe5d877f:usbpicprog/.footprint
 f:71dca7644b516044f7c0b11840332a37:usbpicprog/Pkgfile
 f:2bc55f84db0cc96670b44cf58b3150ae:usbpicprog/.signature
+f:8e1f2b29f5a8efbbd2cc21cc69a13563:sysstat/.footprint
+f:3763db13c21bea629b7d7f9b9cc4b437:sysstat/.signature
+f:5e0947746cd32a04183c229355f01832:sysstat/Pkgfile
 f:72dcb2202ecb847c1a676115171b67b0:v4l-utils/Pkgfile
 f:5a7eb80ffcccd3e262e9b3c564d6fe26:v4l-utils/.signature
 f:b04095dd33a0f4a02b5675a1838d535f:v4l-utils/.footprint
