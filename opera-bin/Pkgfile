@@ -5,10 +5,8 @@
 
 name=opera-bin
 version=73.0.3856.344
-release=1
-source=(https://get.geo.opera.com/pub/${name%-bin}/desktop/$version/linux/${name%-bin}-stable_${version}_amd64.deb
-        opera
-        opera.default)
+release=2
+source=(https://get.geo.opera.com/pub/${name%-bin}/desktop/$version/linux/${name%-bin}-stable_${version}_amd64.deb)
 
 build() {
 
@@ -17,20 +15,22 @@ build() {
       -i "$SRC"/"${name%-bin}"
 
   bsdtar -xf "${name%-bin}"-stable_"${version}"_amd64.deb
-  tar -xf data.tar.xz --exclude=usr/share/{lintian,menu} -C "${PKG}"
+  tar -xf data.tar.xz --exclude=usr/share/{lintian,menu,doc} -C "${PKG}"
 
-  ( cd "${PKG}"/usr/lib/*-linux-gnu/ && mv "${name%-bin}" ../ )
-  rm -rf "${PKG}"/usr/lib/*-linux-gnu
+  ( cd "${PKG}"/usr/lib/x86_64-linux-gnu/ && mv "${name%-bin}" ../ )
+  rmdir "${PKG}"/usr/lib/x86_64-linux-gnu
 
   mv "${PKG}"/usr/ "${PKG}"/opt/
 
   chmod 4755 "${PKG}"/opt/lib/"${name%-bin}"/"${name%-bin}"_sandbox
 
-  sed -e '/\[/a\ \ "/usr/lib/chromium/WidevineCdm",' \
-      -i "${PKG}"/opt/lib/"${name%-bin}"/resources/widevine_config.json
+  rm "${PKG}"/opt/lib/"${name%-bin}"/resources/widevine_config.json
+
+  prt-get isinst widevine &&                                           \
+    echo "/usr/lib/chromium/WidevineCdm" >                             \
+         "${PKG}"/opt/lib/"${name%-bin}"/resources/widevine_config.json
 
   rm "${PKG}"/opt/bin/"${name%-bin}"
-  install -Dm755 "${SRC}"/"${name%-bin}" "${PKG}"/opt/bin/"${name%-bin}"
-  install -Dm644 "${SRC}"/"${name%-bin}".default "${PKG}"/opt/etc/"${name%-bin}"/default
+  ln -s ../../opt/lib/"${name%-bin}"/"${name%-bin}" "${PKG}"/opt/bin/
 
 }
