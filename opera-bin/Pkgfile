@@ -10,10 +10,6 @@ source=(https://get.geo.opera.com/pub/${name%-bin}/desktop/$version/linux/${name
 
 build() {
 
-  sed -e "s/%name%/$name/g" -i "${SRC}"/"${name%-bin}"
-  sed -e "s/%operabin%/$name\/$name/g" \
-      -i "$SRC"/"${name%-bin}"
-
   bsdtar -xf "${name%-bin}"-stable_"${version}"_amd64.deb
   tar -xf data.tar.xz --exclude=usr/share/{lintian,menu,doc} -C "${PKG}"
 

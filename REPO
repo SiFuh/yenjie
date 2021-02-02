@@ -330,9 +330,9 @@ f:a12b54acd726669d30f1f7857ef11ab6:sabnzbd/sabnzbd
 f:545093234d26e3efb38981491d751b2e:sabnzbd/.footprint
 f:f568a5dd87b6ff2900c52df5156e7f9e:sabnzbd/Pkgfile
 f:e27a5f0c41957c351aeded5d2be272e0:sabnzbd/.signature
+f:dc02560ae85f4758fd37dcc5d8760925:opera-bin/Pkgfile
 f:ee2acc94dae75f09f2b232b36fafefdc:opera-bin/.footprint
-f:fe515e92c08d5a1acd8df11930ab7e36:opera-bin/Pkgfile
-f:0158da51c7d081476ea32ca3f6cece39:opera-bin/.signature
+f:5d18bb7585d0966279ca6dd6d507b4fe:opera-bin/.signature
 f:267a56579846feb293446f319f04efe8:opera-bin/.md5sum
 f:ceb74bd5e8ed08670dc31a0f08c780fa:secure-delete/Pkgfile
 f:0b8fb618edd01dda3d4e88d02da0571e:secure-delete/.signature
