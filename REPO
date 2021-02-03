@@ -388,13 +388,13 @@ f:b04095dd33a0f4a02b5675a1838d535f:v4l-utils/.footprint
 f:97aeb1eb8e916473a27af61c91d7cd74:vanilla-dmz/.footprint
 f:ae21bdd786a7a839b42df2f27587ae66:vanilla-dmz/Pkgfile
 f:6d357e93c43d8c42884ab844f8562ec8:vanilla-dmz/.signature
-f:09af141f0e3ab08517637eccc86fcd84:virtualbox-bin/.footprint
+f:a86ee2b8b954916c5056521c5571d838:virtualbox-bin/.footprint
 f:3ce33328d23bf16bf9589fa36aa010cd:virtualbox-bin/60-vboxdrv.rules
-f:277148c788f013eba2fdc32c24548fd1:virtualbox-bin/.signature
+f:9e409ca75f40f29e84b138602895bb57:virtualbox-bin/.signature
 f:12de69e08886e6b357d148d6ccf6f44a:virtualbox-bin/README
 f:98992c8d5afd80557dac447b8fb39a82:virtualbox-bin/post-install
 f:6eb0e0557be887166c444d30fe6b74d9:virtualbox-bin/vbox_build_module
-f:3f781e7a86087b46fd5c9bcc9ff46250:virtualbox-bin/Pkgfile
+f:6762dc2411281060df6f7e9dce7dd7ee:virtualbox-bin/Pkgfile
 f:7177031e8ec0a8f84a494224088f0807:virtualbox-extpack/.footprint
 f:3c40e146b145f630a32971c445afe42c:virtualbox-extpack/Pkgfile
 f:b5737eeb92560ec20c8a2f170b3176ad:virtualbox-extpack/.signature

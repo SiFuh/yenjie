@@ -677,9 +677,6 @@ lrwxrwxrwx	root/root	opt/bin/VirtualBoxVM -> /opt/VirtualBox/VBox.sh
 lrwxrwxrwx	root/root	opt/bin/vbox-img -> /opt/VirtualBox/vbox-img
 -rwxr-xr-x	root/root	opt/bin/vbox_build_module
 lrwxrwxrwx	root/root	opt/bin/vboxwebsrv -> /opt/VirtualBox/VBox.sh
-drwxr-xr-x	root/root	opt/lib/
-lrwxrwxrwx	root/root	opt/lib/libpython2.6.so.1.0 -> /usr/lib/libpython2.7.so.1.0
-lrwxrwxrwx	root/root	opt/lib/libpython3.4m.so.1.0 -> /usr/lib/libpython3.7m.so.1.0
 drwxr-xr-x	root/root	opt/share/
 drwxr-xr-x	root/root	opt/share/applications/
 drwxr-xr-x	root/root	opt/share/icons/
