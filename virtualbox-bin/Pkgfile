@@ -7,7 +7,7 @@
 name=virtualbox-bin
 version=6.1.18
 sversion=142142
-release=2
+release=3
 source=(https://download.virtualbox.org/${name::-4}/$version/VirtualBox-${version}-${sversion}-Linux_amd64.run \
         vbox_build_module 60-vboxdrv.rules)
 
@@ -88,9 +88,9 @@ build () {
   cd $cur
 
   # Fix python
-#  mkdir -p ${PKG}/opt/lib
-#  ln -s /usr/lib/libpython3.so ${PKG}/opt/lib/libpython3.so
-#  ln -s /usr/lib/libpython2.7.so ${PKG}/opt/lib/libpython2.7.so
+  mkdir -p ${PKG}/opt/lib
+ # ln -s /usr/lib/libpython3.7m.so.1.0 ${PKG}/opt/lib/libpython3.4m.so.1.0
+  ln -s /usr/lib/libpython2.7.so.1.0 ${PKG}/opt/lib/libpython2.6.so.1.0
 
   # Remove junk
   find nls -type f ! -name '*en*' -exec rm -f {} \; 
