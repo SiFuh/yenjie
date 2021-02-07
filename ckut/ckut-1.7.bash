@@ -16,7 +16,7 @@
 #   **** USE AT YOUR OWN RISK ****
 #
 
-VERSION="v1.6"
+VERSION="v1.7"
 TITLE="CRUX Kernel Update Tool ${VERSION}    ${MESSAGE}"
 CONFIG="/etc/ckut.conf"
 KERNEL_OLD="$(uname -r)"
@@ -515,12 +515,26 @@ while true; do
             if [[ -x /usr/bin/dracut ]]; then
               clear
               check_localversion
-              dracut --kver "${KERNEL}${LOCALVERSION}"                      \
-                "${KERNEL_LOCATION}/initramfs-${KERNEL}${LOCALVERSION}.img"
-              read -n 1 -r -s -p $'Press enter to continue...'
-              { echo -ne "dracut --kver ${KERNEL}${LOCALVERSION}"
-                echo -e " ${KERNEL_LOCATION}/initramfs-${KERNEL}${LOCALVERSION}.img"
-              } >> "${TMPDIR}/ckut.log"
+              unset skip
+              if [[ -f "${KERNEL_LOCATION}/initramfs-${KERNEL}${LOCALVERSION}.img" ]]; then
+                MESSAGE="The image exists already. Would you like to skip this step?"
+                dialog --yesno "${MESSAGE}"  "${HEIGHT}" "${WIDTH}" && skip=1
+                if [[ ! "${skip}" -eq 1  ]]; then
+                  dracut --force --kver "${KERNEL}${LOCALVERSION}"              \
+                    "${KERNEL_LOCATION}/initramfs-${KERNEL}${LOCALVERSION}.img"
+                  read -n 1 -r -s -p $'Press enter to continue...'
+                  { echo -ne "dracut --force --kver ${KERNEL}${LOCALVERSION}"
+                    echo -e " ${KERNEL_LOCATION}/initramfs-${KERNEL}${LOCALVERSION}.img"
+                  } >> "${TMPDIR}/ckut.log"
+                fi
+              else
+                dracut --kver "${KERNEL}${LOCALVERSION}"                      \
+                  "${KERNEL_LOCATION}/initramfs-${KERNEL}${LOCALVERSION}.img"
+                read -n 1 -r -s -p $'Press enter to continue...'
+                { echo -ne "dracut --kver ${KERNEL}${LOCALVERSION}"
+                  echo -e " ${KERNEL_LOCATION}/initramfs-${KERNEL}${LOCALVERSION}.img"
+                } >> "${TMPDIR}/ckut.log"
+              fi
             fi
           ;;
           # Edit the configuration file for ckut
