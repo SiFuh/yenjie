@@ -78,6 +78,7 @@ d:v4l-utils
 d:vanilla-dmz
 d:virtualbox-bin
 d:virtualbox-extpack
+d:olive
 d:vokoscreen
 d:volk
 d:warmux
@@ -94,6 +95,7 @@ d:libopenshot-git
 d:openshot-qt-git
 d:libdc1394
 d:rtl8814au-dkms
+d:otter-browser
 d:win32-essential-codecs
 f:e46a71890e9af53cc069b1c1442b35c7:lshw/.signature
 f:143d2604bf77fb4c9de17df37d92ed29:lshw/.footprint
@@ -338,8 +340,8 @@ f:ceb74bd5e8ed08670dc31a0f08c780fa:secure-delete/Pkgfile
 f:0b8fb618edd01dda3d4e88d02da0571e:secure-delete/.signature
 f:7efc27ea342b0fa44500967da1c6c986:secure-delete/.footprint
 f:3bdad15da3c00e5ff67e28788a46667a:skypeforlinux-bin/.footprint
-f:fe78a1c834eeba003d6229fe48c5d37f:skypeforlinux-bin/.signature
-f:78e39cdc39bbb5e13e16c042da0de213:skypeforlinux-bin/Pkgfile
+f:481051ebcdcb1053a0195cf94dc25a06:skypeforlinux-bin/.signature
+f:b3541daf969d833387c312af8cfad80f:skypeforlinux-bin/Pkgfile
 f:ce166d5524eea83ef45ee64a3ee8e0d8:skypeforlinux-bin/README
 f:85f8aa655b22975f71d6c263b8d8c648:smplayer/.signature
 f:90d93dd8ff85ffba45390a0dc09195ee:smplayer/.footprint
@@ -401,6 +403,16 @@ f:b5737eeb92560ec20c8a2f170b3176ad:virtualbox-extpack/.signature
 f:d15e56a7d8f9d5e0d04ee5979c7372af:virtualbox-extpack/pre-install
 f:775e7ee8af02049ebeae35d4be08fef8:virtualbox-extpack/post-install
 f:d0a2840654b669e56808b3fbd1447ec8:virtualbox-extpack/README
+f:a38cf6d3b8054dbf425b0a40d88b3c3e:olive/olive-0.1.2-cacher.patch
+f:412c6453ecf2bfa5059d1f7fea824bac:olive/olive-0.1.2-clickablelabel.patch
+f:0bad8dfde00831f5b6d3896501658bab:olive/olive-0.1.2-FlowLayout.patch
+f:70328fdd275004fff606ef51fb1c37bf:olive/olive-0.1.2-proxygenerator.patch
+f:6bb4b749ae847883e237ae698adf59a3:olive/olive-0.1.2-QFontMetrics.patch
+f:fbaea64d8949a18b4141600aabc8f5c6:olive/olive-0.1.2-QPainterPath.patch
+f:11435d330c386e193b79f8e10a95f60a:olive/olive-0.1.2-QWheelEvent.patch
+f:dbed3b1d8b7cff7f34aad14c132e401b:olive/olive-0.1.2-appdata-desktop.patch
+f:97c8a105c8b7a1335dd10fecb1a7f700:olive/Pkgfile
+f:f24ae61a4a443b482c273ef92f2a1c35:olive/.footprint
 f:e9a7fc048c528aa1783fb12d57a2d3a3:vokoscreen/.footprint
 f:685eac732404efa084e1d6c7eedd7df2:vokoscreen/.signature
 f:f783cd318c03f6a0b917395e8deadec1:vokoscreen/Pkgfile
@@ -461,6 +473,8 @@ f:655b5de4ae6e59e14fe78d01fe311793:rtl8814au-dkms/Pkgfile
 f:657809584b57dc40be0ca4da67bed627:rtl8814au-dkms/.SRCINFO
 f:068dfd40ed8226f98e146a65bac63788:rtl8814au-dkms/.footprint
 f:8bbba1ca7d67ab3c06337ac5753d2b7b:rtl8814au-dkms/.signature
+f:46df66c17b70fd49d244fa1202b71a04:otter-browser/.footprint
+f:e22f9de7417f9a10d06f10287586b00e:otter-browser/Pkgfile
 f:aa319c53b9f1f498a2c9f7d2f635d35b:win32-essential-codecs/.footprint
 f:c18e86a2a82f9ec6b1904ad4512de11f:win32-essential-codecs/.signature
 f:4e5db618b0372a0841977dc0a1b7f252:win32-essential-codecs/Pkgfile

@@ -4,7 +4,7 @@
 # Depends on:   cups gconf libidl orbit libsecret speexdsp pulseaudio-alsa alsa-plugins
 
 name=skypeforlinux-bin
-version=8.69.76.21
+version=8.69.76.49
 release=1
 source=(https://repo.skype.com/deb/pool/main/s/${name//-bin}/${name//-bin}_${version}\_amd64.deb)
 

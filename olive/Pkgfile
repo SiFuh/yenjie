@@ -1,0 +1,44 @@
+# Description:   Free non-linear video editor
+# URL:           https://www.olivevideoeditor.org/
+# Maintainer:    Lin SiFuh, #crux at freenode dot net
+# Depends on:    cmake qt5 ffmpeg
+
+name=olive
+version=0.1.2
+release=1
+source=(https://github.com/olive-editor/olive/archive/${version}/${name}-${version}.tar.gz
+        olive-0.1.2-appdata-desktop.patch
+        olive-0.1.2-cacher.patch
+        olive-0.1.2-clickablelabel.patch
+        olive-0.1.2-FlowLayout.patch
+        olive-0.1.2-proxygenerator.patch
+        olive-0.1.2-QFontMetrics.patch
+        olive-0.1.2-QPainterPath.patch
+        olive-0.1.2-QWheelEvent.patch)
+
+build() {
+
+  cd "${name}"-"${version}"
+
+  patch --forward --strip=1 --input="${SRC}"/olive-0.1.2-appdata-desktop.patch
+  patch --forward --strip=1 --input="${SRC}"/olive-0.1.2-cacher.patch
+  patch --forward --strip=1 --input="${SRC}"/olive-0.1.2-clickablelabel.patch
+  patch --forward --strip=1 --input="${SRC}"/olive-0.1.2-FlowLayout.patch
+  patch --forward --strip=1 --input="${SRC}"/olive-0.1.2-proxygenerator.patch
+  patch --forward --strip=1 --input="${SRC}"/olive-0.1.2-QFontMetrics.patch
+  patch --forward --strip=1 --input="${SRC}"/olive-0.1.2-QPainterPath.patch
+  patch --forward --strip=1 --input="${SRC}"/olive-0.1.2-QWheelEvent.patch
+
+  cd "${SRC}"
+
+  cmake -S "${name}"-"${version}" -B build             \
+        -D CMAKE_BUILD_TYPE=Release                    \
+        -D CMAKE_INSTALL_PREFIX:PATH=/usr              \
+        -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"    \
+        -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -DNDEBUG"
+
+  cmake --build build
+
+  DESTDIR="${PKG}" cmake --install build
+
+}
