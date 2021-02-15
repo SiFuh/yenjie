@@ -527,9 +527,9 @@ f:4610810b3c1fe09f942fd0d1f9e4ffdd:sasquatch/read_fragment_table_n_stack_overflo
 f:c68e069988f6ce8c62f9c9900727f056:xxhash/.footprint
 f:a05600f6b1a02c110a7ab47b691bc647:xxhash/.signature
 f:4c24887bcb574460297c693d134f35cb:xxhash/Pkgfile
-f:4745dfe601d50a85ad76cf6a7cd4592d:aircrack-ng/.signature
+f:ea817eff72d93760fdd0a41bcbe5213b:aircrack-ng/.signature
 f:be5c64860019f2312902f6f9ef5da38b:aircrack-ng/.footprint
-f:12417e0844431025b18c0d7fe5201d2b:aircrack-ng/Pkgfile
+f:96c0dcd9ef8c63c6ccab4598f0a6254f:aircrack-ng/Pkgfile
 f:a05295caf55f992a461bd0f8e4cbb2a4:arpspoof/Pkgfile
 f:89da057368dfa97495d13f4b6766df0e:arpspoof/0001-arpspoof.py-show-help-without-root-privileges.patch
 f:891f2749589d6799b2ff7c9c14f1cdb5:arpspoof/arpspoof.sh

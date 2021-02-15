@@ -13,7 +13,7 @@ build() {
 
   export CFLAGS+=" -fcommon"
 
-	cd "${name}"-"${version}"
+  cd "${name}"-"${version}"
 
   echo "${version}" > ./VERSION
   NOCONFIGURE=1 ./autogen.sh
@@ -25,7 +25,7 @@ build() {
     sed -i  -e '/CFLAGS =/s/-O3 //g'    \
         -e '/CXXFLAGS =/s/-O3 //g' {} \;
 
-	make V=1
-	make DESTDIR="${PKG}" install
+  make V=1
+  make DESTDIR="${PKG}" install
 
 }
