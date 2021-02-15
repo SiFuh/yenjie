@@ -106,6 +106,7 @@ d:hcxtools
 d:hcxtools-35
 d:ncrack
 d:sasquatch
+d:xxhash
 f:e46a71890e9af53cc069b1c1442b35c7:lshw/.signature
 f:143d2604bf77fb4c9de17df37d92ed29:lshw/.footprint
 f:39f2f873d0ba02fa29236e4cba30eecc:lshw/Pkgfile
@@ -517,3 +518,6 @@ f:849eb44eacbe2605c7ee2f27d1d4c529:sasquatch/.footprint
 f:3e01aeaf357273f0068bb1e2d77ed176:sasquatch/.signature
 f:587864f3c1f4d8f23ed016aafa19e186:sasquatch/Pkgfile
 f:4610810b3c1fe09f942fd0d1f9e4ffdd:sasquatch/read_fragment_table_n_stack_overflow-fix.patch
+f:c68e069988f6ce8c62f9c9900727f056:xxhash/.footprint
+f:a05600f6b1a02c110a7ab47b691bc647:xxhash/.signature
+f:4c24887bcb574460297c693d134f35cb:xxhash/Pkgfile
