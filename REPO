@@ -109,6 +109,7 @@ d:sasquatch
 d:xxhash
 d:aircrack-ng
 d:arpspoof
+d:dhcp-spoof
 f:e46a71890e9af53cc069b1c1442b35c7:lshw/.signature
 f:143d2604bf77fb4c9de17df37d92ed29:lshw/.footprint
 f:39f2f873d0ba02fa29236e4cba30eecc:lshw/Pkgfile
@@ -532,3 +533,6 @@ f:891f2749589d6799b2ff7c9c14f1cdb5:arpspoof/arpspoof.sh
 f:0242447ce0ae2f81d6869ce526b11739:arpspoof/.footprint
 f:9c6b1a9e3f058df83a849a1896213895:arpspoof/.signature
 f:613225b3b9fb18c82ca1f65145de3df5:arpspoof/README
+f:8e5cb541f01f80b8abf14740c55a2712:dhcp-spoof/Pkgfile
+f:daa45c555738619aec5b9b683d5bd823:dhcp-spoof/.signature
+f:4ec9b87d050f5aea690d6a8082dd65f1:dhcp-spoof/.footprint
