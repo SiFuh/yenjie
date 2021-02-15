@@ -7,12 +7,12 @@
 name=ntop
 version=1.2a2
 release=1
-source=(https://raw.githubusercontent.com/SiFuh/yenjie/master/$name/$name-$version.tar.gz)
+source=(https://raw.githubusercontent.com/SiFuh/yenjie/master/${name}/${name}-${version}.tar.gz)
 
 build() {
 
-	cd $name-$version
-  mkdir -p $PKG/usr/sbin
+	cd "${name}"-"${version}"
+  mkdir -p "${PKG}"/usr/sbin
 
   ./configure --prefix=/usr     \
               --enable-threads  \
@@ -21,8 +21,8 @@ build() {
               --enable-neped
 
   make
-  make DESTDIR=$PKG install
+  make DESTDIR="${PKG}" install
 
- chmod 4755 $PKG/usr/sbin/ntop
+  chmod 4755 "${PKG}"/usr/sbin/ntop
 
 }
