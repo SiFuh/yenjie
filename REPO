@@ -111,6 +111,7 @@ d:aircrack-ng
 d:arpspoof
 d:dhcp-spoof
 d:macchanger
+d:masscan
 f:e46a71890e9af53cc069b1c1442b35c7:lshw/.signature
 f:143d2604bf77fb4c9de17df37d92ed29:lshw/.footprint
 f:39f2f873d0ba02fa29236e4cba30eecc:lshw/Pkgfile
@@ -541,3 +542,7 @@ f:efbe2bc899b28d1433179116f4d22ed8:macchanger/Pkgfile
 f:616ff467ca29c921428d6b7558348148:macchanger/.signature
 f:80a9fd9a670422a79333b8b3275ddaf4:macchanger/.footprint
 f:b66e44db66cdb91cd5ea197503e1c4a4:macchanger/macchanger.rc
+f:d69d95b968ae81f64b144d048f5ec264:masscan/Pkgfile
+f:6c63aa6ff4bba166ab1983e005d1d662:masscan/.footprint
+f:37257ba66c0cb1dbfc250683c02e07bb:masscan/README
+f:47399df952e4a34f9dad208787c26bbc:masscan/.signature

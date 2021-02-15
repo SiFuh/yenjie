@@ -1,0 +1,27 @@
+# Description: Fast scan of the Internet
+# URL:         https://github.com/robertdavidgraham/masscan
+# Maintainer:  Lin SiFuh, #crux at freenode dot net
+# Depends on:  libpcap
+
+name=masscan
+version=1.3.2
+release=1
+source=(https://github.com/robertdavidgraham/${name}/archive/${version}/${name}-${version}.tar.gz)
+
+build() {
+
+  cd "${name}"-"${version}"
+
+  sed -i -e '/^CC =/d'                                \
+      -e '/^SYS/s|gcc|$(CC)|g'                        \
+      -e '/^GITVER :=/s!= .(.*!=!g'                   \
+      -e '/$(CC)/s!$(CFLAGS)!$(LDFLAGS) $(CFLAGS)!g'  \
+      -e '/^CFLAGS =/{s,=,+=,;s,-g -ggdb,,;s,-O.,,;}' \
+      Makefile
+
+  make
+  make DESTDIR="${PKG}" install
+
+  install -Dm644 doc/"${name}".8 -t "${PKG}"/usr/share/man/man8
+
+}

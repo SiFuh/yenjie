@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uMkQGLxrDd1tHyfJKmFXQ3Kr1kphwOmC+iY2sZqqrXERCIEXcFs86vMtDYth+gpAO56D+ZfRW9ORQnqG2Z9xMgM=
+SHA256 (Pkgfile) = 601006301528ff1e516b0fa3bdeb8758d868208dcc2566898c8a42b69f74664d
+SHA256 (.footprint) = 2d96074301a7cf53f19ea0ff3f5ecc6935a9f4385c02cc1f34c9e1fcfd0421ea
+SHA256 (masscan-1.3.2.tar.gz) = 0363e82c07e6ceee68a2da48acd0b2807391ead9a396cf9c70b53a2a901e3d5f
