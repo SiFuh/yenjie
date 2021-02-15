@@ -905,7 +905,6 @@ drwxr-xr-x	root/root	usr/share/vlc/lua/http/js/
 -rw-r--r--	root/root	usr/share/vlc/lua/http/mobile_equalizer.html
 -rw-r--r--	root/root	usr/share/vlc/lua/http/mobile_view.html
 drwxr-xr-x	root/root	usr/share/vlc/lua/http/requests/
--rw-r--r--	root/root	usr/share/vlc/lua/http/requests/README.txt
 -rw-r--r--	root/root	usr/share/vlc/lua/http/requests/browse.json
 -rw-r--r--	root/root	usr/share/vlc/lua/http/requests/browse.xml
 -rw-r--r--	root/root	usr/share/vlc/lua/http/requests/playlist.json

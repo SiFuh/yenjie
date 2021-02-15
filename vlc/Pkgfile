@@ -6,7 +6,7 @@
 
 name=vlc
 version=3.0.12
-release=4
+release=5
 source=(https://download.videolan.org/pub/videolan/${name}/${version}/${name}-${version}.tar.xz
         0001-freerdp-2.patch
         0002-fdk-aac-2.0.0.patch
@@ -51,6 +51,7 @@ build() {
   make DESTDIR="${PKG}" install
 
   rm -rf "${PKG}"/usr/share/{doc,kde4}
+  rm "${PKG}"/usr/share/vlc/lua/http/requests/README.txt
 
   sed -i 's/--started-from-file//g'                 \
          "${PKG}"/usr/share/applications/vlc.desktop
