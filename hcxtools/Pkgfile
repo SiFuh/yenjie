@@ -1,0 +1,18 @@
+# Description:  Tools to convert captured packets for hashcat or John the Ripper
+# URL:          https://github.com/ZerBea/hcxtools
+# Packager:
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:
+
+name=hcxtools
+version=6.1.5
+release=1
+source=(https://github.com/ZerBea/${name}/archive/${version}/${name}-${version}.tar.gz)
+
+build() {
+
+  cd "${name}"-"${version}"
+
+  make PREFIX=/usr DESTDIR="${PKG}" install
+
+}
