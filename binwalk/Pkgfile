@@ -1,0 +1,19 @@
+# Description:   A tool for searching a given binary image for embedded files
+# URL:           https://github.com/ReFirmLabs/binwalk
+# Maintainer:    Lin SiFuh, #crux at freenode dot net
+# Depends on:    python3-opengl cabextract p7zip sasquatch unrar
+
+name=binwalk
+version=2.2.0
+release=1
+source=(https://github.com/ReFirmLabs/${name}/archive/v${version}/${name}-${version}.tar.gz)
+
+build() {
+
+  cd "${name}"-"${version}"
+
+  python3 setup.py build
+
+  python3 setup.py install -O1 --prefix="${PKG}/usr" --skip-build
+
+}

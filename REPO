@@ -97,6 +97,7 @@ d:openshot-qt-git
 d:libdc1394
 d:rtl8814au-dkms
 d:otter-browser
+d:binwalk
 d:win32-essential-codecs
 f:e46a71890e9af53cc069b1c1442b35c7:lshw/.signature
 f:143d2604bf77fb4c9de17df37d92ed29:lshw/.footprint
@@ -480,6 +481,9 @@ f:8bbba1ca7d67ab3c06337ac5753d2b7b:rtl8814au-dkms/.signature
 f:46df66c17b70fd49d244fa1202b71a04:otter-browser/.footprint
 f:e22f9de7417f9a10d06f10287586b00e:otter-browser/Pkgfile
 f:559fcc37274ffb37be5cc8d49610c0cb:otter-browser/.signature
+f:f493aa63155eac74dd8f9b7ad72c40ce:binwalk/.footprint
+f:06163c04055acc42b0f4343bc465f7f8:binwalk/.signature
+f:da3b5371ccb5bfd934a69ae3f14d6ee1:binwalk/Pkgfile
 f:aa319c53b9f1f498a2c9f7d2f635d35b:win32-essential-codecs/.footprint
 f:c18e86a2a82f9ec6b1904ad4512de11f:win32-essential-codecs/.signature
 f:4e5db618b0372a0841977dc0a1b7f252:win32-essential-codecs/Pkgfile
