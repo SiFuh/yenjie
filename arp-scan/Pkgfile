@@ -1,0 +1,23 @@
+# Description:  The ARP Scanner	
+# URL:          https://github.com/royhills/arp-scan
+# Packager:	
+# Maintainer:   Lin SiFuh, #crux at freenode dot net 	
+# Depends on:   libpcap p5-lwp-protocol-https p5-http-message 
+
+name=arp-scan
+version=1.9.7
+release=3
+source=(https://github.com/royhills/${name}/archive/${version}/${name}-${version}.tar.gz)
+
+build() {
+
+  cd "${name}"-"${version}"
+  autoreconf --install
+  ./configure --prefix=/usr
+	
+  make
+  make DESTDIR="${PKG}" install
+
+  chmod 4755 "${PKG}"/usr/bin/arp-scan
+
+}
