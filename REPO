@@ -98,6 +98,7 @@ d:libdc1394
 d:rtl8814au-dkms
 d:otter-browser
 d:binwalk
+d:hashcat
 d:win32-essential-codecs
 f:e46a71890e9af53cc069b1c1442b35c7:lshw/.signature
 f:143d2604bf77fb4c9de17df37d92ed29:lshw/.footprint
@@ -484,6 +485,9 @@ f:559fcc37274ffb37be5cc8d49610c0cb:otter-browser/.signature
 f:f493aa63155eac74dd8f9b7ad72c40ce:binwalk/.footprint
 f:06163c04055acc42b0f4343bc465f7f8:binwalk/.signature
 f:da3b5371ccb5bfd934a69ae3f14d6ee1:binwalk/Pkgfile
+f:53405d7c8c90cb40d7a9e29d6a790a57:hashcat/.signature
+f:decb610afdc4d66839cb7ec734bd54ba:hashcat/.footprint
+f:6efd3029d711e8c1f30f59ed21edc608:hashcat/Pkgfile
 f:aa319c53b9f1f498a2c9f7d2f635d35b:win32-essential-codecs/.footprint
 f:c18e86a2a82f9ec6b1904ad4512de11f:win32-essential-codecs/.signature
 f:4e5db618b0372a0841977dc0a1b7f252:win32-essential-codecs/Pkgfile

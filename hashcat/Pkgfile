@@ -1,0 +1,31 @@
+# Description:  Hashcat password cracker for GPU
+# URL:          https://hashcat.net/
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   opencl-headers xxhash
+
+name=hashcat
+version=6.1.1
+release=1
+source=(https://hashcat.net/files/${name}-${version}.tar.gz)
+
+build() {
+
+  export PREFIX="/usr"
+  PATH="/usr/lib/ccache/:/bin:/sbin:/usr/bin:/usr/sbin"
+
+  cd "${name}"-"${version}"
+
+  # remove hardcoded optimization flags
+  sed -i  -e '/^CFLAGS/s/+= -O2/+= /' \
+      -e '/^CFLAGS/s/+= -pipe /+= /' src/Makefile
+
+  make SHARED=1            \
+       PREFIX=/usr         \
+       USE_SYSTEM_OPENCL=1 \
+       USE_SYSTEM_XXHASH=1
+
+  make DESTDIR="${PKG}" install
+
+  rm -rf "${PKG}"/usr/share/doc
+
+}
