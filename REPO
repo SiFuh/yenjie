@@ -105,6 +105,7 @@ d:hcxdumptool
 d:hcxtools
 d:hcxtools-35
 d:ncrack
+d:sasquatch
 f:e46a71890e9af53cc069b1c1442b35c7:lshw/.signature
 f:143d2604bf77fb4c9de17df37d92ed29:lshw/.footprint
 f:39f2f873d0ba02fa29236e4cba30eecc:lshw/Pkgfile
@@ -512,3 +513,7 @@ f:2244b0c34ad8445386d8aea743a6fe2f:ncrack/.signature
 f:8113d2f3445d5af4b032a904bd3152c0:ncrack/.footprint
 f:f7103c4fbb82ab396589ad483d9860e7:ncrack/Pkgfile
 f:5dad55b601497bf2be4434f56155558c:ncrack/fix-spelling-errors.patch
+f:849eb44eacbe2605c7ee2f27d1d4c529:sasquatch/.footprint
+f:3e01aeaf357273f0068bb1e2d77ed176:sasquatch/.signature
+f:587864f3c1f4d8f23ed016aafa19e186:sasquatch/Pkgfile
+f:4610810b3c1fe09f942fd0d1f9e4ffdd:sasquatch/read_fragment_table_n_stack_overflow-fix.patch
