@@ -1,0 +1,31 @@
+# Description:  Aircrack Wifi cracking tool kit
+# URL:          https://www.aircrack-ng.org/
+# Packager:	
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   libgcrypt libgpg-error ethtool libnl lz4 sqlite3 libpcap 
+
+name=aircrack-ng
+version=1.6
+release=2
+source=(https://download.aircrack-ng.org/${name}-${version}.tar.gz)
+
+build() {
+
+  export CFLAGS+=" -fcommon"
+
+	cd "${name}"-"${version}"
+
+  echo "${version}" > ./VERSION
+  NOCONFIGURE=1 ./autogen.sh
+
+  ./configure --prefix=/usr --libexecdir=/usr/lib
+
+  # Remove default optimization flags
+  find . -name Makefile -exec           \
+    sed -i  -e '/CFLAGS =/s/-O3 //g'    \
+        -e '/CXXFLAGS =/s/-O3 //g' {} \;
+
+	make V=1
+	make DESTDIR="${PKG}" install
+
+}
