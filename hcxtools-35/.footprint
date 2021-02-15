@@ -1,0 +1,17 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/pwhash35
+-rwxr-xr-x	root/root	usr/bin/whoismac35
+-rwxr-xr-x	root/root	usr/bin/wlancap2hcx35
+-rwxr-xr-x	root/root	usr/bin/wlancapinfo35
+-rwxr-xr-x	root/root	usr/bin/wlandump-sts35
+-rwxr-xr-x	root/root	usr/bin/wlandump35
+-rwxr-xr-x	root/root	usr/bin/wlanhc2hcx35
+-rwxr-xr-x	root/root	usr/bin/wlanhcx2cap35
+-rwxr-xr-x	root/root	usr/bin/wlanhcx2essid35
+-rwxr-xr-x	root/root	usr/bin/wlanhcx2john35
+-rwxr-xr-x	root/root	usr/bin/wlanhcx2ssid35
+-rwxr-xr-x	root/root	usr/bin/wlanhcxinfo35
+-rwxr-xr-x	root/root	usr/bin/wlanhcxmnc35
+-rwxr-xr-x	root/root	usr/bin/wlanscan-sts35
+-rwxr-xr-x	root/root	usr/bin/wlanscan35
