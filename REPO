@@ -110,6 +110,7 @@ d:xxhash
 d:aircrack-ng
 d:arpspoof
 d:dhcp-spoof
+d:macchanger
 f:e46a71890e9af53cc069b1c1442b35c7:lshw/.signature
 f:143d2604bf77fb4c9de17df37d92ed29:lshw/.footprint
 f:39f2f873d0ba02fa29236e4cba30eecc:lshw/Pkgfile
@@ -536,3 +537,7 @@ f:613225b3b9fb18c82ca1f65145de3df5:arpspoof/README
 f:8e5cb541f01f80b8abf14740c55a2712:dhcp-spoof/Pkgfile
 f:daa45c555738619aec5b9b683d5bd823:dhcp-spoof/.signature
 f:4ec9b87d050f5aea690d6a8082dd65f1:dhcp-spoof/.footprint
+f:efbe2bc899b28d1433179116f4d22ed8:macchanger/Pkgfile
+f:616ff467ca29c921428d6b7558348148:macchanger/.signature
+f:80a9fd9a670422a79333b8b3275ddaf4:macchanger/.footprint
+f:b66e44db66cdb91cd5ea197503e1c4a4:macchanger/macchanger.rc
