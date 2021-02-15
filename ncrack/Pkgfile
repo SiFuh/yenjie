@@ -1,0 +1,35 @@
+# Description:  Ncrack is a high-speed network authentication cracking tool
+# URL:          https://nmap.org/ncrack/
+# Packager:	
+# Maintainer:   Lin SiFuh, #crux at freenode dot net 	
+# Depends on:
+
+name=ncrack
+version=0.7
+release=2
+source=(https://nmap.org/ncrack/dist/${name}-${version}.tar.gz
+        fix-spelling-errors.patch)
+
+build() {
+
+  cd "${name}"-"${version}"
+
+  patch -p1 -i "${SRC}"/fix-spelling-errors.patch
+
+  export CFLAGS+=" -fcommon"
+
+  # Remove default debug and optimization flags
+  sed -i -e '/CFLAGS\s*=\s*/s/-g//;s/-O2//'   \
+      -e '/CXXFLAGS\s*=\s*/s/-g//;s/-O2//'    \
+      nsock/src/configure                     \
+      nbase/configure                         \
+      opensshlib/configure                    \
+      configure.ac                            \
+      configure
+
+  ./configure --prefix=/usr 
+
+  make
+  make DESTDIR="${PKG}" install
+
+}

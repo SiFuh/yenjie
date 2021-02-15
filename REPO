@@ -104,6 +104,7 @@ d:hashcat-utils
 d:hcxdumptool
 d:hcxtools
 d:hcxtools-35
+d:ncrack
 f:e46a71890e9af53cc069b1c1442b35c7:lshw/.signature
 f:143d2604bf77fb4c9de17df37d92ed29:lshw/.footprint
 f:39f2f873d0ba02fa29236e4cba30eecc:lshw/Pkgfile
@@ -507,3 +508,7 @@ f:0468aabfccbd3a2b2066d078033ad058:hcxtools/Pkgfile
 f:bc27c2fd94ede74f442a43d3e003d3f2:hcxtools-35/.signature
 f:b967b7168fed78bd0f65e11441665bba:hcxtools-35/Pkgfile
 f:5723a1bc2207994ac0fe91d31224cbaa:hcxtools-35/.footprint
+f:2244b0c34ad8445386d8aea743a6fe2f:ncrack/.signature
+f:8113d2f3445d5af4b032a904bd3152c0:ncrack/.footprint
+f:f7103c4fbb82ab396589ad483d9860e7:ncrack/Pkgfile
+f:5dad55b601497bf2be4434f56155558c:ncrack/fix-spelling-errors.patch

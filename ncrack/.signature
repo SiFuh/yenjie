@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uLd4Dplarpkpw/N4QeI9Z7FknW+3BB6i2Bp4OcY+wHODMk+X4MrOFbLRxBDd/hfXggmEZbrck5pfrxBviUlnOAE=
+SHA256 (Pkgfile) = bfaecc8e9e57c1cedb28a4658fe8c5d7b60d358cb68da1c1afe4216a1cf1bf76
+SHA256 (.footprint) = 6750b13f257789ef912611c76cf8b63915e5f8b624a6c0270a181810b93a7b56
+SHA256 (ncrack-0.7.tar.gz) = f3f971cd677c4a0c0668cb369002c581d305050b3b0411e18dd3cb9cc270d14a
+SHA256 (fix-spelling-errors.patch) = ab5345a0e619cea52837300c1f233c33509940eebc5576854bfee799b4bda195
