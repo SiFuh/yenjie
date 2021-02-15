@@ -1,0 +1,23 @@
+# Description:  Hashcat password cracker for GPU
+# URL:          https://hashcat.net/
+# Packager: 
+# Maintainer:   Lin SiFuh, #crux at freenode dot net 	 
+# Depends on:   hashcat
+
+name=hashcat-utils
+version=1.9
+release=3
+source=(https://github.com/hashcat/${name}/archive/v${version}/${name}-${version}.tar.gz)
+
+build() {
+
+  cd "${name}"-"${version}"/src
+
+  # remove hardcoded optimization flags
+  sed -i -e '/CFLAGS +=/s/-pipe -O2//' Makefile
+
+  make
+	
+  install -Dm755 *.bin -t "${PKG}"/usr/bin/
+
+}

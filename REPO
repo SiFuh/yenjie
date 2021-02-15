@@ -100,6 +100,7 @@ d:otter-browser
 d:binwalk
 d:hashcat
 d:win32-essential-codecs
+d:hashcat-utils
 f:e46a71890e9af53cc069b1c1442b35c7:lshw/.signature
 f:143d2604bf77fb4c9de17df37d92ed29:lshw/.footprint
 f:39f2f873d0ba02fa29236e4cba30eecc:lshw/Pkgfile
@@ -491,3 +492,6 @@ f:6efd3029d711e8c1f30f59ed21edc608:hashcat/Pkgfile
 f:aa319c53b9f1f498a2c9f7d2f635d35b:win32-essential-codecs/.footprint
 f:c18e86a2a82f9ec6b1904ad4512de11f:win32-essential-codecs/.signature
 f:4e5db618b0372a0841977dc0a1b7f252:win32-essential-codecs/Pkgfile
+f:af70bf411e725167d9ba7fd0dd63943f:hashcat-utils/.footprint
+f:aa25d630cd236663afae9526538ba815:hashcat-utils/Pkgfile
+f:5dbee4661fe98c200e3040a035aeb7a8:hashcat-utils/.signature
