@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uF/T3fKjuscaWEkrSkcoi2sckJ04WpLm+JKg2/vn8Q1C8dW51a3J6a+x2RY2h2NzxWKkqXJcp7J2Pq+5JcRmtAw=
+SHA256 (Pkgfile) = acbb4b960c38ae142a9e30fdd4f6452b6a3fdf991b7b5cebb13e67e756b86aea
+SHA256 (.footprint) = 2c32e707c912ffff85cb551e618476adb705ac4a872e677c642768987d988dde
+SHA256 (hcxdumptool-6.1.5.tar.gz) = 6a2697b871778a9ef21ea0922445d532109c3fc95af08474673044d43b090c6c
