@@ -16,7 +16,13 @@
 #   **** USE AT YOUR OWN RISK ****
 #
 
-VERSION="v1.7"
+# To use this script the following programs need to be installed
+# dialog (display dialog boxes from shell scripts)
+# pv     (monitor the progress of data through a pipe)
+# lynx   (text based web browser)
+# curl   (tool for transfering files with URL synta)
+
+VERSION="v1.8"
 TITLE="CRUX Kernel Update Tool ${VERSION}    ${MESSAGE}"
 CONFIG="/etc/ckut.conf"
 KERNEL_OLD="$(uname -r)"
@@ -81,6 +87,15 @@ check_archive() {
   fi
 }
 
+# Check to see if it downloaded to /usr/src
+check_download () {
+  unset error
+  if [[ ! -f "/usr/src/linux-${KERNEL}.tar.xz" ]]; then
+    MESSAGE="Error! linux-${KERNEL}.tar.xz is missing or invalid"
+    error_message
+  fi
+}
+
 # See if the archive has already been extracted to /usr/src
 check_folder() {
   unset error
@@ -95,6 +110,118 @@ check_localversion() {
   unset LOCALVERSION
   cd "/usr/src/linux-${KERNEL}" || return
   LOCALVERSION=$(grep "CONFIG_LOCALVERSION=" .config | cut -d \" -f 2)
+}
+
+# Try to find an old kernel configuration file
+check_kernelconfig() {
+  if [[ -f "${KERNEL_LOCATION}/config-${KERNEL_OLD}" ]]; then
+    cp "${KERNEL_LOCATION}/config-${KERNEL_OLD}" .config
+    { echo -ne "cp ${KERNEL_LOCATION}/config-${KERNEL_OLD}"
+      echo -e " /usr/src/linux-${KERNEL}/.config"
+    }>> "${TMPDIR}/ckut.log"
+  elif [[ -f "/usr/src/linux-${KERNEL_OLD}/.config" ]]; then
+    cp  "/usr/src/linux-${KERNEL_OLD}/.config" .config
+    { echo -ne "cp /usr/src/linux-${KERNEL_OLD}/.config"
+      echo -e " /usr/src/linux-${KERNEL}/.config"
+    }>> "${TMPDIR}/ckut.log"
+  else
+    missing_message
+    error_message
+    unset error
+  fi
+}
+
+# Message informing that an old .config cannot be found
+missing_message(){
+  MESSAGE="  Could not find an old configuration file for ${KERNEL_OLD}.\n
+  Either find it and copy it to /usr/src/linux-${KERNEL}/.config\n
+  or run menuconfig to create and configure a new .config file\n\n
+  Continuing without it..."
+}
+
+# Download the kernel
+download_kernel() {
+  if [[ -f "/usr/src/linux-${KERNEL}.tar.xz" ]]; then
+    MESSAGE="Already downloaded. Would you like to skip this step?"
+    dialog --yesno "${MESSAGE}"  "${HEIGHT}" "${WIDTH}" && skip=1
+  fi
+  if  [[ -z "${manual}" ]]; then
+    URL=$(awk '/'"${KERNEL}"'/ { print $2 }' < "${TMPDIR}/ckut.list")
+  else
+    URL="https://cdn.kernel.org/pub/linux/kernel/v${KERNEL:0:1}.x/linux-${KERNEL}.tar.xz"
+  fi
+  if [[ "${skip}" -eq 1  ]]; then
+    unset skip
+  else
+    cd "${DOWNLOAD_LOCATION}" || return
+    "${DOWNLOAD[@]}" "${URL}" 2>&1 |                              \
+      grep "%" | sed -u -e "s,\.,,g" | awk '{print $2}' |         \
+      sed -u -e "s,\%,,g" | dialog --backtitle "${TITLE}" --title \
+      "Downloading linux-${KERNEL} to ${DOWNLOAD_LOCATION}"       \
+      --gauge "Linux ${KERNEL}" "${HEIGHT}" "${WIDTH}"
+    echo "${DOWNLOAD[*]} ${URL}" >> "${TMPDIR}/ckut.log"
+  fi
+}
+
+# Extract the kernel
+extract_kernel() {
+  if [[ -d ${DOWNLOAD_LOCATION}/linux-${KERNEL} ]]; then
+    MESSAGE="Already extracted. Would you like to skip this step? Warning: \
+      selecting [ No ] will cause the removal of the existing folder"
+    dialog --yesno "${MESSAGE}"  "${HEIGHT}" "${WIDTH}" && skip=1
+    if [[ "${skip}" -eq 1  ]]; then
+      :
+    else
+      rm -r ${DOWNLOAD_LOCATION}/linux-${KERNEL} &&                              \
+      echo "rm -rf ${DOWNLOAD_LOCATION}/linux-${KERNEL}" >> "${TMPDIR}/ckut.log"
+      cd /usr/src/ || return
+      MESSAGE4="Extracting linux-${KERNEL} to ${DOWNLOAD_LOCATION}"
+      (pv -n "${DOWNLOAD_LOCATION}/linux-${KERNEL}.tar.xz" |                              \
+        tar -J -xf -)2>&1 | dialog --backtitle "${TITLE}"                                 \
+                                   --title "${MESSAGE4}"                                  \
+                                   --gauge "Please wait..." 10 70 0 &&                    \
+        echo "tar -xf ${DOWNLOAD_LOCATION}/linux-${KERNEL}.tar.xz" >> "${TMPDIR}/ckut.log"
+    fi
+  else
+    cd /usr/src/ || return
+    MESSAGE4="Extracting linux-${KERNEL} to ${DOWNLOAD_LOCATION}"
+    (pv -n "${DOWNLOAD_LOCATION}/linux-${KERNEL}.tar.xz" |        \
+      tar -J -xf -)2>&1 | dialog --backtitle "${TITLE}"           \
+                                 --title "${MESSAGE4}"            \
+                                 --gauge "Please wait..." 10 70 0 
+      echo "tar -xf ${DOWNLOAD_LOCATION}/linux-${KERNEL}.tar.xz" >> "${TMPDIR}/ckut.log"
+  fi
+}
+
+# Compile the kernel
+compile_kernel() {
+  cd "/usr/src/linux-${KERNEL}" || return
+  clear
+  make "${MAKEFLAGS[@]}" all
+  { echo -e "make ${MAKEFLAGS[*]} all"
+  } >> "${TMPDIR}/ckut.log"
+  read -n 1 -r -s -p $'Press enter to continue...'
+}
+
+# Install the kernel
+install_kernel() {
+  cd "/usr/src/linux-${KERNEL}" || return
+  clear
+  make "${MAKEFLAGS[@]}" modules_install
+  { echo -e "make ${MAKEFLAGS[*]} modules_install"
+  } >> "${TMPDIR}/ckut.log"
+  read -n 1 -r -s -p $'Press enter to continue...'
+  check_localversion 
+  dialog --prgbox "cp -v arch/$(uname -m)/boot/bzImage                 \
+          \"${KERNEL_LOCATION}/vmlinuz-${KERNEL}${LOCALVERSION}\" ;    \
+          cp -v System.map                                             \
+          \"${KERNEL_LOCATION}/System.map-${KERNEL}${LOCALVERSION}\" ; \
+          cp -v .config                                                \
+          \"${KERNEL_LOCATION}/config-${KERNEL}${LOCALVERSION}\"" 10 90
+  { echo -e "cp bzImage ${KERNEL_LOCATION}/vmlinuz-${KERNEL}${LOCALVERSION}"
+    echo -e "cp System.map ${KERNEL_LOCATION}/System.map-${KERNEL}${LOCALVERSION}"
+    echo -e "cp .config ${KERNEL_LOCATION}/config-${KERNEL}${LOCALVERSION}"
+  } >> "${TMPDIR}/ckut.log"
 }
 
 # Download the web-page https://www.kernel.org then pipe the latest versions
@@ -238,26 +365,7 @@ while true; do
       if check_kernel && [[ "${error}" -eq 1 ]]; then
         :
       else
-        if [[ -f "/usr/src/linux-${KERNEL}.tar.xz" ]]; then
-          MESSAGE="Already downloaded. Would you like to skip this step?"
-          dialog --yesno "${MESSAGE}"  "${HEIGHT}" "${WIDTH}" && skip=1
-        fi
-        if  [[ -z "${manual}" ]]; then
-          URL=$(awk '/'"${KERNEL}"'/ { print $2 }' < "${TMPDIR}/ckut.list")
-        else
-          URL="https://cdn.kernel.org/pub/linux/kernel/v${KERNEL:0:1}.x/linux-${KERNEL}.tar.xz"
-        fi
-        if [[ "${skip}" -eq 1  ]]; then
-          unset skip
-        else
-          cd "${DOWNLOAD_LOCATION}" || return
-          "${DOWNLOAD[@]}" "${URL}" 2>&1 |                              \
-            grep "%" | sed -u -e "s,\.,,g" | awk '{print $2}' |         \
-            sed -u -e "s,\%,,g" | dialog --backtitle "${TITLE}" --title \
-            "Downloading linux-${KERNEL} to ${DOWNLOAD_LOCATION}"       \
-            --gauge "Linux ${KERNEL}" "${HEIGHT}" "${WIDTH}"
-          echo "${DOWNLOAD[*]} ${URL}" >> "${TMPDIR}/ckut.log"
-        fi
+        download_kernel && check_download
       fi
     ;;
     # Extract the kernel if it exists
@@ -269,32 +377,7 @@ while true; do
           :
       else
         unset skip
-        if [[ -d ${DOWNLOAD_LOCATION}/linux-${KERNEL} ]]; then
-          MESSAGE="Already extracted. Would you like to skip this step? Warning: \
-            selecting [ No ] will cause the removal of the existing folder"
-          dialog --yesno "${MESSAGE}"  "${HEIGHT}" "${WIDTH}" && skip=1
-          if [[ "${skip}" -eq 1  ]]; then
-            :
-          else
-            rm -r ${DOWNLOAD_LOCATION}/linux-${KERNEL} &&                              \
-              echo "rm -rf ${DOWNLOAD_LOCATION}/linux-${KERNEL}" >> "${TMPDIR}/ckut.log"
-            cd /usr/src/ || return
-            MESSAGE4="Extracting linux-${KERNEL} to ${DOWNLOAD_LOCATION}"
-            (pv -n "${DOWNLOAD_LOCATION}/linux-${KERNEL}.tar.xz" |                           \
-              tar -J -xf -)2>&1 | dialog --backtitle "${TITLE}"                              \
-                                         --title "${MESSAGE4}"                               \
-                                         --gauge "Please wait..." 10 70 0 &&                 \
-            echo "tar -xf ${DOWNLOAD_LOCATION}/linux-${KERNEL}.tar.xz" >> "${TMPDIR}/ckut.log"
-          fi
-        else
-          cd /usr/src/ || return
-          MESSAGE4="Extracting linux-${KERNEL} to ${DOWNLOAD_LOCATION}"
-          (pv -n "${DOWNLOAD_LOCATION}/linux-${KERNEL}.tar.xz" |        \
-            tar -J -xf -)2>&1 | dialog --backtitle "${TITLE}"           \
-                                       --title "${MESSAGE4}"            \
-                                       --gauge "Please wait..." 10 70 0
-          echo "tar -xf ${DOWNLOAD_LOCATION}/linux-${KERNEL}.tar.xz" >> "${TMPDIR}/ckut.log"
-        fi
+        extract_kernel
       fi
     ;;
     # Prepare the kernel as in make mrproper and if exists copy the appropriate
@@ -306,22 +389,7 @@ while true; do
         check_folder && [[  "${error}" -eq 1 ]]; then
           :
       else
-        cd "/usr/src/linux-${KERNEL}" || return
-        clear
-        make "${MAKEFLAGS[@]}" mrproper
-        echo -e "make ${MAKEFLAGS[*]} mrproper" >> "${TMPDIR}/ckut.log"
-        if [[ -f "${KERNEL_LOCATION}/config-${KERNEL_OLD}" ]]; then
-          cp "${KERNEL_LOCATION}/config-${KERNEL_OLD}" .config
-          echo -e "${KERNEL_LOCATION}/config-${KERNEL_OLD} .config" >> "${TMPDIR}/ckut.log"
-        elif [[ -f "/usr/src/linux-${KERNEL_OLD}/.config" ]]; then
-          cp  "/usr/src/linux-${KERNEL_OLD}/.config" .config
-        else
-          MESSAGE="Could not find a configuration file for ${KERNEL_OLD}.                    \
-            Either find it and copy it to /usr/src/linux-${KERNEL}/.config or run menuconfig \
-            to create and configure a new .config\n\nContinuing without it"
-          error_kernel
-          unset error
-        fi
+        check_kernelconfig
       fi
     ;;
     # The option to run make menuconfig in the case that the kernel may need
@@ -347,12 +415,7 @@ while true; do
         check_folder && [[  "${error}" -eq 1 ]]; then
         :
       else
-        cd "/usr/src/linux-${KERNEL}" || return
-        clear
-        make "${MAKEFLAGS[@]}" all
-        { echo -e "make ${MAKEFLAGS[*]} all"
-        } >> "${TMPDIR}/ckut.log"
-        read -n 1 -r -s -p $'Press enter to continue...'
+        compile_kernel
       fi
     ;;
     # Attempt to install the modules, kernel, System.map and configuration
@@ -364,23 +427,7 @@ while true; do
         check_folder && [[  "${error}" -eq 1 ]]; then
         :
       else
-        cd "/usr/src/linux-${KERNEL}" || return
-        clear
-        make "${MAKEFLAGS[@]}" modules_install
-        { echo -e "make ${MAKEFLAGS[*]} modules_install"
-        } >> "${TMPDIR}/ckut.log"
-        read -n 1 -r -s -p $'Press enter to continue...'
-        check_localversion
-        dialog --prgbox "cp -v arch/$(uname -m)/boot/bzImage                 \
-                \"${KERNEL_LOCATION}/vmlinuz-${KERNEL}${LOCALVERSION}\" ;    \
-                cp -v System.map                                             \
-                \"${KERNEL_LOCATION}/System.map-${KERNEL}${LOCALVERSION}\" ; \
-                cp -v .config                                                \
-                \"${KERNEL_LOCATION}/config-${KERNEL}${LOCALVERSION}\"" 10 90
-        { echo -e "cp bzImage ${KERNEL_LOCATION}/vmlinuz-${KERNEL}${LOCALVERSION}"
-          echo -e "cp System.map ${KERNEL_LOCATION}/System.map-${KERNEL}${LOCALVERSION}"
-          echo -e "cp .config ${KERNEL_LOCATION}/config-${KERNEL}${LOCALVERSION}"
-        } >> "${TMPDIR}/ckut.log"
+        install_kernel
       fi
     ;;
     # Show a list of all the commands that were run during the install
@@ -433,81 +480,15 @@ while true; do
             if [[ "${error}" -eq 1 ]]; then
               :
             else
-              if [[ -f "/usr/src/linux-${KERNEL}.tar.xz" ]]; then
-                MESSAGE="Already downloaded. Would you like to skip this step?"
-                dialog --yesno "${MESSAGE}"  "${HEIGHT}" "${WIDTH}" && skip=1
-              fi
-              if  [[ -z "${manual}" ]]; then
-                URL=$(awk '/'"${KERNEL}"'/ { print $2 }' < "${TMPDIR}/ckut.list")
-              else
-                URL="https://cdn.kernel.org/pub/linux/kernel/v${KERNEL:0:1}.x/linux-${KERNEL}.tar.xz"
-              fi
-              if [[ "${skip}" -eq 1  ]]; then
-                unset skip
-              else
-                cd "${DOWNLOAD_LOCATION}" || return
-                "${DOWNLOAD[@]}" "${URL}" 2>&1 |                              \
-                  grep "%" | sed -u -e "s,\.,,g" | awk '{print $2}' |         \
-                  sed -u -e "s,\%,,g" | dialog --backtitle "${TITLE}" --title \
-                  "Downloading linux-${KERNEL} to ${DOWNLOAD_LOCATION}"       \
-                  --gauge "Linux ${KERNEL}" "${HEIGHT}" "${WIDTH}"
-                echo "${DOWNLOAD[*]} ${URL}" >> "${TMPDIR}/ckut.log"
-              fi
-              if [[ -d ${DOWNLOAD_LOCATION}/linux-${KERNEL} ]]; then
-                MESSAGE="Already extracted. Would you like to skip this step? Warning: \
-                  selecting [ No ] will cause the removal of the existing folder"
-                dialog --yesno "${MESSAGE}"  "${HEIGHT}" "${WIDTH}" && skip=1
-                if [[ "${skip}" -eq 1  ]]; then
-                  :
-                else
-                  rm -r ${DOWNLOAD_LOCATION}/linux-${KERNEL} &&                              \
-                    echo "rm -rf ${DOWNLOAD_LOCATION}/linux-${KERNEL}" >> "${TMPDIR}/ckut.log"
-                  cd /usr/src/ || return
-                  MESSAGE4="Extracting linux-${KERNEL} to ${DOWNLOAD_LOCATION}"
-                  (pv -n "${DOWNLOAD_LOCATION}/linux-${KERNEL}.tar.xz" |                           \
-                    tar -J -xf -)2>&1 | dialog --backtitle "${TITLE}"                              \
-                                               --title "${MESSAGE4}"                               \
-                                               --gauge "Please wait..." 10 70 0 &&                 \
-                  echo "tar -xf ${DOWNLOAD_LOCATION}/linux-${KERNEL}.tar.xz" >> "${TMPDIR}/ckut.log"
-                fi
-              else
-                cd "${DOWNLOAD_LOCATION}" || return
-                MESSAGE4="Extracting linux-${KERNEL} to ${DOWNLOAD_LOCATION}"
-                (pv -n "${DOWNLOAD_LOCATION}/linux-${KERNEL}.tar.xz" |        \
-                  tar -J -xf -)2>&1 | dialog --backtitle "${TITLE}"           \
-                                             --title "${MESSAGE4}"            \
-                                             --gauge "Please wait..." 10 70 0
-                echo "tar -xf ${DOWNLOAD_LOCATION}/linux-${KERNEL}.tar.xz" >> "${TMPDIR}/ckut.log"
-              fi
+              download_kernel && check_download
+              extract_kernel
               cd "/usr/src/linux-${KERNEL}" || return
               clear
               make "${MAKEFLAGS[@]}" mrproper
               echo -e "make ${MAKEFLAGS[*]} mrproper" >> "${TMPDIR}/ckut.log"
-              if [[ -f "${KERNEL_LOCATION}/config-${KERNEL_OLD}" ]]; then
-                cp "${KERNEL_LOCATION}/config-${KERNEL_OLD}" .config
-                echo -e "${KERNEL_LOCATION}/config-${KERNEL_OLD} .config" >> "${TMPDIR}/ckut.log"
-              elif [[ -f "/usr/src/linux-${KERNEL_OLD}/.config" ]]; then
-                cp  "/usr/src/linux-${KERNEL_OLD}/.config" .config
-              else
-                :
-              fi
+              check_kernelconfig
               make "${MAKEFLAGS[@]}" menuconfig
-              make "${MAKEFLAGS[@]}" all && make "${MAKEFLAGS[@]}" modules_install
-              { echo -e "make ${MAKEFLAGS[*]} all"
-                echo -e "make ${MAKEFLAGS[*]} modules_install"
-              } >> "${TMPDIR}/ckut.log"
-              read -n 1 -r -s -p $'Press enter to continue...'
-              check_localversion
-              dialog --prgbox "cp -v arch/$(uname -m)/boot/bzImage                 \
-                      \"${KERNEL_LOCATION}/vmlinuz-${KERNEL}${LOCALVERSION}\" ;    \
-                      cp -v System.map                                             \
-                      \"${KERNEL_LOCATION}/System.map-${KERNEL}${LOCALVERSION}\" ; \
-                      cp -v .config                                                \
-                      \"${KERNEL_LOCATION}/config-${KERNEL}${LOCALVERSION}\"" 10 90
-              { echo -e "cp bzImage ${KERNEL_LOCATION}/vmlinuz-${KERNEL}${LOCALVERSION}"
-                echo -e "cp System.map ${KERNEL_LOCATION}/System.map-${KERNEL}${LOCALVERSION}"
-                echo -e "cp .config ${KERNEL_LOCATION}/config-${KERNEL}${LOCALVERSION}"
-              } >> "${TMPDIR}/ckut.log"
+                compile_kernel && install_kernel
             fi
           ;;
           # Run dracut to create an initrd if used
@@ -613,11 +594,10 @@ while true; do
                         fi
                       ;;
                       g )
-                        dialog --clear                              \
-                               --backtitle "${TITLE}"               \
-                               --title "Please wait ..."            \
-                               --prgbox "/usr/sbin/grub-mkconfig -o \
-                                         /boot/grub/grub.cfg" 30 90
+                        dialog --clear                                                         \
+                               --backtitle "${TITLE}"                                          \
+                               --title "Please wait ..."                                       \
+                               --prgbox "/usr/sbin/grub-mkconfig -o /boot/grub/grub.cfg" 30 90
                         echo "/usr/sbin/grub-mkconfig -o \
                               /boot/grub/grub.cfg" >> "${TMPDIR}/ckut.log"
                       ;;
@@ -691,5 +671,3 @@ while true; do
     ;;
   esac
 done
-
-
