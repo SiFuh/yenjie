@@ -1,32 +1,31 @@
 # Description:  GTK+ text editor targeted towards programmers and web designers
 # URL:          http://bluefish.openoffice.nl/
-# Packager:	
 # Maintainer:   Lin SiFuh, #crux at freenode dot net, #crux at freenode dot net
 # Depends on:   gtk3
 
 name=bluefish
 version=2.2.12
 release=1
-source=(https://www.bennewitz.com/$name/stable/source/$name-$version.tar.gz)
+source=(https://www.bennewitz.com/${name}/stable/source/${name}-${version}.tar.gz)
 
 build() {
 
-	export PYTHON_CONFIG=/usr/bin/python3-config 
-	export PYTHON=/usr/bin/python3
+  export PYTHON_CONFIG=/usr/bin/python3-config 
+  export PYTHON=/usr/bin/python3
 
-	cd $name-$version
-	
-	./configure --with-gtk3 		              \
+  cd "${name}"-"${version}"
+
+  ./configure --with-gtk3                   \
               --disable-nls                 \
               --prefix=/usr                 \
               --disable-spell-check         \
               --mandir=/usr/share/man       \
-              --disable-update-databases 		\
-              --disable-xml-catalog-update 	
+              --disable-update-databases    \
+              --disable-xml-catalog-update
 
-	make
-	make DESTDIR=$PKG install
+  make
+  make DESTDIR="${PKG}" install
 
-	rm -r $PKG/usr/share/{doc,xml}
+  rm -r "${PKG}"/usr/share/{doc,xml}
 
 }
