@@ -108,6 +108,12 @@ drwxr-xr-x	root/root	opt/lib/opera/resources/promotion_extension_1/_locales/en/
 drwxr-xr-x	root/root	opt/lib/opera/resources/standard_themes/
 -rw-r--r--	root/root	opt/lib/opera/resources/standard_themes/default_dark_theme.zip
 -rw-r--r--	root/root	opt/lib/opera/resources/standard_themes/default_theme.zip
+drwxr-xr-x	root/root	opt/lib/opera/resources/virtual_card/
+drwxr-xr-x	root/root	opt/lib/opera/resources/virtual_card/_locales/
+drwxr-xr-x	root/root	opt/lib/opera/resources/virtual_card/_locales/en/
+-rw-r--r--	root/root	opt/lib/opera/resources/virtual_card/_locales/en/messages.json
+drwxr-xr-x	root/root	opt/lib/opera/resources/virtual_card/_locales/fr/
+-rw-r--r--	root/root	opt/lib/opera/resources/virtual_card/_locales/fr/messages.json
 -rw-r--r--	root/root	opt/lib/opera/snapshot_blob.bin
 drwxr-xr-x	root/root	opt/lib/opera/swiftshader/
 -rw-r--r--	root/root	opt/lib/opera/swiftshader/libEGL.so
