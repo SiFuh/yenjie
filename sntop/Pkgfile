@@ -9,10 +9,19 @@ release=2
 source=(http://download.sourceforge.net/${name}/${name}-${version}.tar.gz)
 
 build () {
-   cd ${name}-${version}
-   ./configure --prefix=/usr
-   sed -i "/^CFLAGS/s/-O2 -pipe/$CFLAGS/" Makefile
-   make
-   mkdir -p ${PKG}/usr/{bin,share/man/man1,etc}
-   make prefix=${PKG}/usr MANDIR=${PKG}/usr/share/man/man1 install
+
+  cd "${name}"-"${version}"
+
+  ./configure --prefix=/usr
+
+  sed -i "/^CFLAGS/s/-O2 -pipe/$CFLAGS/" Makefile
+
+  make
+
+  mkdir -p "${PKG}"/usr/{bin,share/man/man1,etc}
+
+  make prefix="${PKG}"/usr              \
+       MANDIR=${PKG}/usr/share/man/man1 \
+       install
+
 }
