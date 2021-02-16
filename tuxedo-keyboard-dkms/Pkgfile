@@ -5,7 +5,6 @@
 # Depends on:   dkms git
 
 name=tuxedo-keyboard-dkms
-_name=${name//-dkms}
 version=3.0.2
 release=1
 source=(https://github.com/tuxedocomputers/${_name}/archive/v${version}/${name}-${version}.tar.gz \
@@ -13,26 +12,27 @@ source=(https://github.com/tuxedocomputers/${_name}/archive/v${version}/${name}-
 
 build() {
 
-  cd ${_name}-${version}
-  patch -p0 -i ${SRC}/tuxedo_keyboard_conf.patch
+  cd "${name//-dkms}"-"${version}"
+  patch -p0 -i "${SRC}"/tuxedo_keyboard_conf.patch
 
-  mkdir -p ${PKG}/usr/src/${_name}-${version}
-  cp -pr * ${PKG}/usr/src/${_name}-${version}
-  cp ${SRC}/dkms.conf ${PKG}/usr/src/${_name}-${version}
+  mkdir -p "${PKG}"/usr/src/"${name//-dkms}"-"${version}"
+  cp -pr * "${PKG}"/usr/src/"${name//-dkms}"-"${version}"
+  cp "${SRC}"/dkms.conf "${PKG}"/usr/src/"${name//-dkms}"-"${version}"
 
-  install -D -m 644 tuxedo_keyboard.conf ${PKG}/etc/modprobe.d/tuxedo_keyboard.conf
-  install -D -m 755 ${SRC}/tuxedo-keys ${PKG}/usr/bin/tuxedo-keys
+  install -D -m 644 tuxedo_keyboard.conf "${PKG}"/etc/modprobe.d/tuxedo_keyboard.conf
+  install -D -m 755 "${SRC}"/tuxedo-keys "${PKG}"/usr/bin/tuxedo-keys
 
-  mkdir -p ${PKG}/var/lib/dkms/${_name}/${version}/build
-  ln -s /usr/src/${_name}-${version}                    \
-        ${PKG}/var/lib/dkms/${_name}/${version}/source 
+  mkdir -p "${PKG}"/var/lib/dkms/"${name//-dkms}"/"${version}"/build
+
+  ln -s /usr/src/"${name//-dkms}"-"${version}"                    \
+        "${PKG}"/var/lib/dkms/"${name//-dkms}"/"${version}"/source 
  
-  sed -e "s/@_PKGBASE@/${_name}/"                       \
-      -e "s/@PKGVER@/${version}/"                             \
-      -i "${PKG}"/usr/src/${_name}-${version}/dkms.conf
+  sed -e "s/@_PKGBASE@/${_name}/"                                 \
+      -e "s/@PKGVER@/${version}/"                                 \
+      -i "${PKG}"/usr/src/"${name//-dkms}"-"${version}"/dkms.conf
 
-  rm ${PKG}/usr/src/${_name}-${version}/{README.md,LICENSE}
-  rm ${PKG}/usr/src/${_name}-${version}/tuxedo_keyboard.conf
-  rm -rf ${PKG}/usr/src/${_name}-${version}/{deb,trans_pkg_from_dkms,src_pkg}
+  rm "${PKG}"/usr/src/"${name//-dkms}"-"${version}"/{README.md,LICENSE}
+  rm "${PKG}"/usr/src/"${name//-dkms}"-"${version}"/tuxedo_keyboard.conf
+  rm -rf "${PKG}"/usr/src/"${name//-dkms}"-"${version}"/{deb,trans_pkg_from_dkms,src_pkg}
 
 }
