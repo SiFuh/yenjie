@@ -240,8 +240,7 @@ download_list() {
 failsafe_editor() {
 if [[ ! -x "${EDITOR}" ]]; then
   echo "ERROR: Selected editor doesn't exist" >> "${TMPDIR}/ckut.log"
-  E="vim vi nano emacs ed"
-  eval E="($E)"
+  E=(vim vi nano emacs ed)
   for i in "${E[@]}";do
     if [ -n "$(command -v ${i})" ];then
       EDITOR="$(which ${i})"

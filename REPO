@@ -152,11 +152,11 @@ f:deaff8b1646089d6c2c737dcbc540255:circuit-simulator/circuit.desktop
 f:eca82df325357ba7f61f4a370e26bebe:circuit-simulator/.signature
 f:5525332e65354c72c704893a0db917c8:circuit-simulator/.footprint
 f:15396ac993dc06963b97b9c803478f36:circuit-simulator/Pkgfile
-f:c75a4e8b1905fd2cf7aad25b7f1c1a3e:ckut/.signature
+f:2d22f4ec3c125ddcf76870e9007073fa:ckut/.signature
 f:a59f97f4b807deba4dd6f622df67f0e6:ckut/ckut.conf
 f:5ddb4b35e245589f9b3a78430381ee5a:ckut/Pkgfile
 f:15ae4f716f065adfcf345ae8038c1d47:ckut/.footprint
-f:82ad0f6a12b69ab560a640ad048d7098:ckut/ckut-1.9.bash
+f:b1eaf442297398686bdc374de8cbe963:ckut/ckut-1.9.bash
 f:3a0315f7f4cb00f3e10352101cc5593b:cppzmq/.footprint
 f:937c09f8e1efd8ef22dab11db22220f5:cppzmq/Pkgfile
 f:f8a814933a461f701c742993e6b7f58d:cppzmq/.signature
