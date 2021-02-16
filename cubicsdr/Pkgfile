@@ -1,6 +1,5 @@
 # Description:  Cross-Platform and Opensource Software-Defined Radio Application
 # URL:          https://cubicsdr.com/
-# Packager:
 # Maintainer:   Lin SiFuh, #crux at freenode dot net
 # Depends on:   git cmake libglvnd rtaudio liquid-dsp soapy-sdr wxgtk3-dev hamlib fftw
 # Optional:     pulseaudio
@@ -13,7 +12,6 @@ source=(https://github.com/cjcliffe/CubicSDR/archive/${sversion}/${name}-${versi
 
 build() {
 
-echo $source
   cmake -S CubicSDR-"${sversion}" -B build -G Ninja         \
         -D USE_AUDIO_OSS=no                                 \
         -D USE_AUDIO_PULSE=no                               \
