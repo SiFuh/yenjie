@@ -1,6 +1,5 @@
 # Description:  Electronic circuit simulator written by Paul Falstad
 # URL:          http://www.falstad.com/circuit-java
-# Packager:
 # Maintainer:   Lin SiFuh, #crux at freenode dot net
 # Depends on:   unzip imagemagick jdk8-bin hicolor-icon-theme fftw
 
@@ -10,25 +9,25 @@ release=4
 source=(http://www.falstad.com/circuit-java/circuit.zip \
         circuit-simulator \
         circuit.desktop \
-        circuit_simulator.patch )
+        circuit_simulator.patch)
 
 build() {
 
-  mkdir -pm 755 ${PKG}/opt/${name}
-  unzip ${PKGMK_SOURCE_DIR}/circuit.zip -d ${PKG}/opt/${name}
-  chmod -R 644 ${PKG}/opt/${name}
-  chmod -R +X ${PKG}/opt/${name}
+  mkdir -pm 755 "${PKG}"/opt/"${name}"
+  unzip "${PKGMK_SOURCE_DIR}"/circuit.zip -d "${PKG}"/opt/"${name}"
+  chmod -R 644 "${PKG}"/opt/"${name}"
+  chmod -R +X "${PKG}"/opt/"${name}"
 
-  install -D -m755 circuit-simulator ${PKG}/opt/bin/circuit-simulator
-  install -D -m644 circuit.desktop ${PKG}/opt/share/applications/circuit.desktop
+  install -D -m755 circuit-simulator "${PKG}"/opt/bin/circuit-simulator
+  install -D -m644 circuit.desktop "${PKG}"/opt/share/applications/circuit.desktop
 
-  cd ${PKG}/opt/
-  patch -p0 -i ${PKGMK_WORK_DIR}/src/circuit_simulator.patch
+  cd "${PKG}"/opt/
+  patch -p0 -i "${PKGMK_WORK_DIR}"/src/circuit_simulator.patch
 
-  mkdir -pm 755 ${PKG}/opt/share/icons/hicolor/16x16/apps
-  convert ${PKG}/opt/${name}/favicon.ico ${PKG}/opt/share/icons/hicolor/16x16/apps/circuit.png
+  mkdir -pm 755 "${PKG}"/opt/share/icons/hicolor/16x16/apps
+  convert "${PKG}"/opt/"${name}"/favicon.ico "${PKG}"/opt/share/icons/hicolor/16x16/apps/circuit.png
 
-  rm ${PKG}/opt/${name}/src.zip
-  find ${PKG} -name "*.html" -delete
+  rm "${PKG}"/opt/"${name}"/src.zip
+  find "${PKG}" -name "*.html" -delete
 
 }
