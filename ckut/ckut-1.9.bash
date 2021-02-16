@@ -22,7 +22,7 @@
 # lynx   (text based web browser)
 # curl   (tool for transfering files with URL synta)
 
-VERSION="v1.8"
+VERSION="v1.9"
 TITLE="CRUX Kernel Update Tool ${VERSION}    ${MESSAGE}"
 CONFIG="/etc/ckut.conf"
 KERNEL_OLD="$(uname -r)"
@@ -236,11 +236,21 @@ download_list() {
 }
 
 # If the editor in the configuration file doesn't exist 
-# then fall back to the systems vi as a failsafe
-if [[ ! -x ${EDITOR} ]]; then
+# then fall back to one that does exist as a failsafe
+failsafe_editor() {
+if [[ ! -x "${EDITOR}" ]]; then
   echo "ERROR: Selected editor doesn't exist" >> "${TMPDIR}/ckut.log"
-  EDITOR="/bin/vi"
+  E="vim vi nano emacs ed"
+  eval E="($E)"
+  for i in "${E[@]}";do
+    if [ -n "$(command -v ${i})" ];then
+      EDITOR="$(which ${i})"
+      break
+    fi
+  done
 fi
+}
+failsafe_editor
 
 # Have a look to see what programs the system may have installed
 # This way the menu informs the user if a program is not installed
@@ -532,12 +542,7 @@ while true; do
               # Convert MAKEFLAGS and DOWNLOAD into an array
               eval MAKEFLAGS="($MAKEFLAGS)"
               eval DOWNLOAD="(${DOWNLOAD_PROG} ${DOWNLOAD_FLAGS})"
-              # If the editor in the configuration file doesn't exist
-              # then fall back to the systems vi as a failsafe
-              if [[ ! -x ${EDITOR} ]]; then
-                echo "ERROR: Selected editor doesn't exist" >> "${TMPDIR}/ckut.log"
-                EDITOR="/bin/vi"
-              fi
+              failsafe_editor
             else
               :
             fi
