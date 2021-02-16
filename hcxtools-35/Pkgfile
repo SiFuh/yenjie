@@ -17,6 +17,6 @@ build() {
   make CFLAGS="${CFLAGS}" INSTALLDIR="${PKG}"/usr/bin install
 
   # Aappend '35' to all binaries
-  find $PKG/usr/bin -type f -print | xargs -I % mv % %35
+  find "${PKG}"/usr/bin -type f -print | xargs -I % mv % %35
 
 }
