@@ -1,24 +1,23 @@
 # Description:  Dynamic Kernel Modules System
 # URL:          https://github.com/dell/dkms
-# Packager:
 # Maintainer:   Lin SiFuh, #crux at freenode dot net
-# Depends on:
 
 name=dkms
 version=2.8.4
 release=2
 source=(https://github.com/dell/${name}/archive/v${version}/${name}-${version}.tar.gz \
-        dkms-remove)
+        ${name}-remove)
 
 build() {
 
-  cd ${name}-${version}
+  cd "${name}"-"${version}"
   
-  make DESTDIR=${PKG} \
-    SBIN=${PKG}/usr/sbin \
-    BASHDIR=${PKG}/usr/share/bash-completion/completions \
-    KCONF=${SRC}/kconf install
+  make DESTDIR="${PKG}"                                       \
+       SBIN="${PKG}"/usr/sbin                                 \
+       KCONF="${SRC}"/kconf install                           \
+       BASHDIR="${PKG}"/usr/share/bash-completion/completions
 
-  install -m 755 ${SRC}/dkms-remove ${PKG}/usr/sbin/dkms-remove
+  install -m 755 "${SRC}"/dkms-remove   \
+          "${PKG}"/usr/sbin/dkms-remove
 
 }
