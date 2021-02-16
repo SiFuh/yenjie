@@ -1,6 +1,5 @@
 # Description:  Set of tools to capture packets from WLAN devices for hashcat
 # URL:          https://github.com/wi-fi-analyzer/hcxtools
-# Packager:
 # Maintainer:   Lin SiFuh, #crux at freenode dot net
 # Depends on:   git libpcap
 

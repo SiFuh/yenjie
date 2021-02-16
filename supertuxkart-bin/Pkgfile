@@ -1,6 +1,5 @@
 # Description:  SuperTuxKart is a 3D open-source arcade racer
 # URL:          https://supertuxkart.net/Main_Page
-# Packager:
 # Maintainer:   Lin SiFuh, #crux at freenode dot net
 # Depends on:   xorg-libxrandr libglvnd xorg-libx11 
 
@@ -12,25 +11,23 @@ run_game.patch)
 
 build() {
 
-  cd SuperTuxKart-${version}-linux
+  cd SuperTuxKart-"${version}"-linux
 
-#  patch -i ../run_game.patch
+  mkdir -p "${PKG}"/opt/bin
+  install -D -m 755 run_game.sh "${PKG}"/opt/bin/"${name//-bin}"
 
-  mkdir -p ${PKG}/opt/bin
-  install -D -m 755 run_game.sh ${PKG}/opt/bin/${name//-bin}
+  mkdir -p "${PKG}"/opt/"${name//-bin}"
 
-  mkdir -p ${PKG}/opt/${name//-bin}
+  cp -rf bin-64 "${PKG}"/opt/"${name//-bin}"/bin
+  cp -rf data "${PKG}"/opt/"${name//-bin}"/
+  cp -rf lib-64 "${PKG}"/opt/"${name//-bin}"/lib
 
-  cp -rf bin-64 ${PKG}/opt/${name//-bin}/bin
-  cp -rf data ${PKG}/opt/${name//-bin}/
-  cp -rf lib-64 ${PKG}/opt/${name//-bin}/lib
+  find "${PKG}" -name licenses.txt -delete
+  find "${PKG}" -name License.txt -delete
+  rm "${PKG}"/opt/"${name//-bin}"/data/shaders/MLAA_COPYING
+  rm "${PKG}"/opt/"${name//-bin}"/data/CREDITS
 
-  find ${PKG} -name licenses.txt -delete
-  find ${PKG} -name License.txt -delete
-  rm ${PKG}/opt/supertuxkart/data/shaders/MLAA_COPYING
-  rm ${PKG}/opt/supertuxkart/data/CREDITS
-
-  install -d ${PKG}/etc/revdep.d
-  echo "/opt/${name//-bin}/lib" > ${PKG}/etc/revdep.d/${name}
+  install -d "${PKG}"/etc/revdep.d
+  echo "/opt/${name//-bin}/lib" > "${PKG}"/etc/revdep.d/"${name}"
 
 }
