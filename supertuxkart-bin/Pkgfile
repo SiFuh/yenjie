@@ -7,7 +7,7 @@ name=supertuxkart-bin
 version=1.2
 release=2
 source=(https://jaist.dl.sourceforge.net/project/${name//-bin}/SuperTuxKart/${version}/SuperTuxKart-${version}-linux.tar.xz \
-run_game.patch)
+        run_game.patch)
 
 build() {
 

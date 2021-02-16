@@ -372,8 +372,8 @@ f:6761ba4afa2ae3bdf403774ea1ee152e:soapy-sdr/.footprint
 f:3382aefeaab471be737aba36ba7c8b9b:soapy-sdr/Pkgfile
 f:f17a39804d0c930b8060830ce5c1960a:supertuxkart-bin/run_game.patch
 f:ffb40b51df7c8b2fa3b4db0bb006a1a8:supertuxkart-bin/.footprint
-f:2886f2d33118c9144efbb3bc64301f9b:supertuxkart-bin/Pkgfile
-f:2164fa1b99717a100a5c5b7d6055815f:supertuxkart-bin/.signature
+f:271aed4374771cd9f7731f8452bec47e:supertuxkart-bin/Pkgfile
+f:2bad8cfc7f95523936ac857567011a03:supertuxkart-bin/.signature
 f:e68d4127f847e2c03e473364b8da0e1f:telegram-bin/Pkgfile
 f:51ee9b11b51467edc91f48f112312261:telegram-bin/.footprint
 f:4e111547a54b2906071699e29691ccfe:telegram-bin/.signature
