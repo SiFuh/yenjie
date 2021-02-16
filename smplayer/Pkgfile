@@ -1,6 +1,6 @@
 # Description:  Mplayer frontend
 # URL:          http://smplayer.sf.net/
-# Maintainer:   Lin SiFuh, #crux at freenode dot net 		
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
 # Depends on:   mplayer qt5
 
 name=smplayer
@@ -12,7 +12,9 @@ build() {
 
   cd "${name}"-"${version}"
 
-  make DESTDIR=$PKG PREFIX=/usr QMAKE_OPTS=DEFINES+=NO_DEBUG_ON_CONSOLE install
+  make DESTDIR="${PKG}" PREFIX=/usr            \
+       QMAKE_OPTS=DEFINES+=NO_DEBUG_ON_CONSOLE \
+       install
 
   rm -rf "${PKG}"/usr/share/doc
   rm -rf "${PKG}"/usr/share/smplayer/translations
