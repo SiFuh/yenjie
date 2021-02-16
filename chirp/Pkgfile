@@ -11,11 +11,11 @@ source=(https://trac.chirp.danplanet.com/${name}_daily/daily-${version}/${name}-
 
 build() {
 
-  cd ${name}-daily-${version}
+  cd "${name}"-daily-"${version}"
 
   python setup.py install --prefix=/usr --root="${PKG}/"
  
-  rm -rf ${PKG}/usr/share/chirp/locale
-  rm -rf ${PKG}/usr/share/doc
+  rm -rf "${PKG}"/usr/share/chirp/locale
+  rm -rf "${PKG}"/usr/share/doc
 
 }
