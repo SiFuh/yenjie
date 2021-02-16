@@ -1,24 +1,22 @@
 # Description:  Improved set of atwiz fonts
 # URL:          http://artwizaleczapka.sourceforge.net/
-# Packager:
 # Maintainer:   Lin SiFuh, #crux at freenode dot net
-# Depends on:
 
 name=artwiz-aleczapka-fonts
 version=1.3
 release=2
-source=(https://jaist.dl.sourceforge.net/project/artwizaleczapka/iso-8859-1/${version}/${name//-fonts}-en-$version.tar.bz2)
+source=(https://jaist.dl.sourceforge.net/project/artwizaleczapka/iso-8859-1/${version}/${name//-fonts}-en-${version}.tar.bz2)
 
 build() {
 
-  cd ${name//-fonts}-en-${version}
+  cd "${name//-fonts}"-en-"${version}"
 
   if [ -e cursor.pcf ]; then
     mv cursor.pcf artwiz-cursor.pcf
   fi
 
   gzip -9 *.pcf
-  mkdir -p ${PKG}/usr/share/fonts/misc
-  cp -a *.pcf.gz ${PKG}/usr/share/fonts/misc
+  mkdir -p "${PKG}"/usr/share/fonts/misc
+  cp -a *.pcf.gz "${PKG}"/usr/share/fonts/misc
 
 }
