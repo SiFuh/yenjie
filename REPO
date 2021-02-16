@@ -407,11 +407,11 @@ f:ae21bdd786a7a839b42df2f27587ae66:vanilla-dmz/Pkgfile
 f:6d357e93c43d8c42884ab844f8562ec8:vanilla-dmz/.signature
 f:69f8a826a4b5d92ecc08939b2f0900a9:virtualbox-bin/.footprint
 f:3ce33328d23bf16bf9589fa36aa010cd:virtualbox-bin/60-vboxdrv.rules
-f:5217fdc1c672c2fee344aa1a4ca9e1d8:virtualbox-bin/.signature
+f:2f200399ba4d9f639aba88ed1927b287:virtualbox-bin/.signature
 f:12de69e08886e6b357d148d6ccf6f44a:virtualbox-bin/README
 f:98992c8d5afd80557dac447b8fb39a82:virtualbox-bin/post-install
 f:6eb0e0557be887166c444d30fe6b74d9:virtualbox-bin/vbox_build_module
-f:4eccdf7a318a72d78624af08ad8925ad:virtualbox-bin/Pkgfile
+f:e3737b7e319e5e3de6a75916f9d8fcc8:virtualbox-bin/Pkgfile
 f:7177031e8ec0a8f84a494224088f0807:virtualbox-extpack/.footprint
 f:3c40e146b145f630a32971c445afe42c:virtualbox-extpack/Pkgfile
 f:b5737eeb92560ec20c8a2f170b3176ad:virtualbox-extpack/.signature
