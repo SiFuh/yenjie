@@ -6,7 +6,7 @@
 
 name=tuxedo-keyboard-dkms
 version=3.0.2
-release=1
+release=2
 source=(https://github.com/tuxedocomputers/${_name}/archive/v${version}/${name}-${version}.tar.gz \
         tuxedo_keyboard_conf.patch tuxedo-keys dkms.conf)
 
@@ -27,8 +27,7 @@ build() {
   ln -s /usr/src/"${name//-dkms}"-"${version}"                    \
         "${PKG}"/var/lib/dkms/"${name//-dkms}"/"${version}"/source 
  
-  sed -e "s/@_PKGBASE@/${_name}/"                                 \
-      -e "s/@PKGVER@/${version}/"                                 \
+  sed -e "s/@PKGVER@/${version}/"                                 \
       -i "${PKG}"/usr/src/"${name//-dkms}"-"${version}"/dkms.conf
 
   rm "${PKG}"/usr/src/"${name//-dkms}"-"${version}"/{README.md,LICENSE}
