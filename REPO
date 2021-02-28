@@ -137,9 +137,9 @@ f:bd52d71cd51e2997a4f361622e1a2e1c:xpdf/README
 f:2c870cbaae1479360eb8b33d5c040e43:xpdf/xpdf-visibility.patch
 f:51683876e91b3f324d6f901ce7edbdba:xpdf/.signature
 f:9ab3499a610553f3213548389f7312d5:xpdf/Pkgfile
-f:a01fbb73079a17bcbf6daac99a8ff97a:blender/.signature
-f:425ee60bca49007a2dd58c6f4e9dd4b5:blender/Pkgfile
-f:9c20f7f03dd846c6827f09b048744650:blender/.footprint
+f:b368cc3e48a5d91a3ccad0e2727638aa:blender/.signature
+f:44c0838b7c7b490689bc9b6fda3c2edd:blender/Pkgfile
+f:8cc696057ed8975bbce08cbdf89e178d:blender/.footprint
 f:06f41a9b5b481be478256a12fa2e4bdf:bluefish/Pkgfile
 f:894f593b8b2dca89180e3b02caf52d11:bluefish/.footprint
 f:8e8c7c7b897aed8643b73e6d1e4587bf:bluefish/.signature
