@@ -5,7 +5,7 @@
 
 name=tuxedo-keyboard-dkms
 version=3.0.3
-release=1
+release=2
 source=(https://github.com/tuxedocomputers/${name//-dkms}/archive/v${version}/${name}-${version}.tar.gz \
         tuxedo_keyboard_conf.patch tuxedo-keys dkms.conf)
 
@@ -16,7 +16,7 @@ build() {
 
   mkdir -p "${PKG}"/usr/src/"${name//-dkms}"-"${version}"
   cp -pr * "${PKG}"/usr/src/"${name//-dkms}"-"${version}"
-  cp "${SRC}"/dkms.conf "${PKG}"/usr/src/"${name//-dkms}"-"${version}"
+  cp dkms.conf "${PKG}"/usr/src/"${name//-dkms}"-"${version}"
 
   install -D -m 644 tuxedo_keyboard.conf "${PKG}"/etc/modprobe.d/tuxedo_keyboard.conf
   install -D -m 755 "${SRC}"/tuxedo-keys "${PKG}"/usr/bin/tuxedo-keys
