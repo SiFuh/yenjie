@@ -383,10 +383,10 @@ f:cde0eae2e334cb0725cc7f4a84f17d75:rxvt-unicode/.signature
 f:baf72ebd79dfaeaa18bcb331246b27d8:rxvt-unicode/Pkgfile
 f:dae9c6c9a55b4bb613c4829246e09c53:tuxedo-keyboard-dkms/tuxedo_keyboard_conf.patch
 f:5190744e3b1a8eee339f6ebf1833bd43:tuxedo-keyboard-dkms/dkms.conf
-f:69bf3e2e2e071fddffd46e3155ed1623:tuxedo-keyboard-dkms/Pkgfile
+f:1420052d053274ab18a1d9f96d564b6c:tuxedo-keyboard-dkms/Pkgfile
 f:d39aac5e3d9ade06dd761d6138aef84f:tuxedo-keyboard-dkms/.footprint
 f:60cb28a71e6adf3d211cd4eb3b637c9b:tuxedo-keyboard-dkms/tuxedo-keys
-f:80a13ec974f3e2de09c8d9f4ac43ef45:tuxedo-keyboard-dkms/.signature
+f:4c9e73d499faaa2e4e10e6d72b7bedc7:tuxedo-keyboard-dkms/.signature
 f:5d325e6d81213b0991fdb144221883d1:tuxedo-keyboard-dkms/README
 f:86d2db273d8ce17a7f19445821a15773:udiskie/Pkgfile
 f:b3505fb1a233c2d14b3dee7ec882b4dd:udiskie/.signature

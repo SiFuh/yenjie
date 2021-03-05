@@ -5,9 +5,9 @@
 # Depends on:   dkms git
 
 name=tuxedo-keyboard-dkms
-version=3.0.2
-release=2
-source=(https://github.com/tuxedocomputers/${_name}/archive/v${version}/${name}-${version}.tar.gz \
+version=3.0.3
+release=1
+source=(https://github.com/tuxedocomputers/${name//-dkms}/archive/v${version}/${name}-${version}.tar.gz \
         tuxedo_keyboard_conf.patch tuxedo-keys dkms.conf)
 
 build() {
