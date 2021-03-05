@@ -4,7 +4,7 @@
 # Depends on:   dkms gtk gtk3 libglvnd
 
 name=nvidia-dkms
-version=460.39
+version=460.56
 release=1
 source=(http://us.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version.run \
   90-nvidia-uvm.rules 10-nvidia-drm-outputclass.conf)
