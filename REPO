@@ -281,8 +281,8 @@ f:4a28373ca2954d1607790a489c85f92b:nftables/.signature
 f:50420c3a4de10a8e3a7f1dc2f3bb2daa:ntop/.footprint
 f:ac69eb191cd328ad0116c2b969c66158:ntop/Pkgfile
 f:ef6a3569db43dcac87b4f55e77d43638:ntop/.signature
-f:a7622d5063b2926cc72c61da2e6248d9:nvidia-dkms/.signature
-f:d356b3201cfa691e0df51d06546ffab6:nvidia-dkms/.footprint
+f:0673d65baeb864113a535719ae9587fd:nvidia-dkms/.signature
+f:5ee37484831e71783d26a9c26a1b455e:nvidia-dkms/.footprint
 f:4f8b72915c1f46bc2f93d5003dbd54a3:nvidia-dkms/pre-install
 f:9ec4dca5eb08cfa66a3b4ffd125bca93:nvidia-dkms/README
 f:426b9f7739cb74655d6c4d6099977a82:nvidia-dkms/Pkgfile
