@@ -113,6 +113,7 @@ d:dhcp-spoof
 d:macchanger
 d:masscan
 d:seamonkey
+d:geoip
 f:e46a71890e9af53cc069b1c1442b35c7:lshw/.signature
 f:143d2604bf77fb4c9de17df37d92ed29:lshw/.footprint
 f:39f2f873d0ba02fa29236e4cba30eecc:lshw/Pkgfile
@@ -550,3 +551,6 @@ f:47399df952e4a34f9dad208787c26bbc:masscan/.signature
 f:a1bdeb73754253838937f564a3c18992:seamonkey/Pkgfile
 f:e53cafd5beee8877665f8344ca03120e:seamonkey/.footprint
 f:017dfc5c063bf177d81cf5dd48e5aac3:seamonkey/.signature
+f:a4acc0800d67da3cd941c9234e744db8:geoip/.signature
+f:742962a69bd846184a4b73baa12b34ca:geoip/Pkgfile
+f:11c43eae6f22472ba255c6916fe32775:geoip/.footprint

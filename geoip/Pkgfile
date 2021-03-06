@@ -1,0 +1,37 @@
+# Description:   Non-DNS IP-to-country resolver C library & utils
+# URL:           https://www.maxmind.com/app/c
+# Maintainer:    Lin SiFuh, #crux at freenode dot net
+# Depends on:    geoip-database
+
+name=geoip
+version=1.6.12
+release=1
+source=(https://github.com/maxmind/${name}-api-c/archive/v${version}/${name}-${version}.tar.gz)
+
+build() {
+
+  cd "${name}"-api-c-"${version}"
+
+  autoreconf -vi
+
+  ./configure              \
+    --prefix=/usr          \
+    --mandir=/usr/man      \
+    --sysconfdir=/etc/geoip
+
+  make
+  make DESTDIR="${PKG}" install
+
+#  [[ -e '/usr/bin/ninja' ]] && NINJA=' -G Ninja'
+
+#  cmake -S "${name}"-"${version}" -B build "${NINJA}"  \
+#        -D CMAKE_BUILD_TYPE=Release                    \
+#        -D CMAKE_INSTALL_PREFIX:PATH=/usr              \
+#        -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"    \
+#        -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -DNDEBUG"
+#
+#  cmake --build build
+#
+#  DESTDIR="${PKG}" cmake --install build
+
+}
