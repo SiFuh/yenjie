@@ -2,11 +2,11 @@
 # URL:          https://www.ettercap-project.org/
 # Packager:
 # Maintainer:   Lin SiFuh, #crux at freenode dot net
-# Depends on:   libnet libgeoip geoip-database cmake ghostscript libpcap
+# Depends on:   libnet geoip geoip-database cmake ghostscript libpcap
 
 name=ettercap
 version=0.8.3.1
-release=1
+release=2
 source=(https://github.com/Ettercap/${name}/archive/v${version}/${name}-${version}.tar.gz)
 
 build() {
