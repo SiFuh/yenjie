@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uGJWkKEC8YuVBohlYofryx6+cM2KiA7aY5LcMFjbD7ejbO5WCeC/G2n3GdsP3T0dmn4cPnPPm7G1tbJggHiudwI=
+SHA256 (Pkgfile) = 2577c1896694ac160d6ce032800f3df1f82a994b9aa08320f65773083dab2272
+SHA256 (.footprint) = 47fae6b0fabaa4b3ff0c1da63359f8be63dbe21eeac32133f71ef816775ee6a7
+SHA256 (iotop-0.6.tar.bz2) = 3adea2a24eda49bbbaeb4e6ed2042355b441dbd7161e883067a02bfc8dcef75b
+SHA256 (0001-Make-setp.py-compatible-with-python3.patch) = 1f1eb0cfde45911de9429771d90c9a282f5fed23455a9678a8e44e205f4103a3

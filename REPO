@@ -115,6 +115,7 @@ d:masscan
 d:seamonkey
 d:geoip
 d:fluxbox
+d:iotop
 f:e46a71890e9af53cc069b1c1442b35c7:lshw/.signature
 f:143d2604bf77fb4c9de17df37d92ed29:lshw/.footprint
 f:39f2f873d0ba02fa29236e4cba30eecc:lshw/Pkgfile
@@ -559,3 +560,8 @@ f:333dcd72db5d3243122e7330982a1aad:fluxbox/.footprint
 f:469e54d37fc08e31ab6697997af232cd:fluxbox/.signature
 f:c290e7d925cb5b9e591bc37e8c00beff:fluxbox/Pkgfile
 f:2286690d2f2154e5cee72dd40306b039:fluxbox/README
+f:68935933fe9b27a9b889d0166e5b8ed2:iotop/README
+f:190e68a42a02fcb5d09a5cd3ade9aa32:iotop/0001-Make-setp.py-compatible-with-python3.patch
+f:b443e5e943af06fda5f2448507e0fd16:iotop/.signature
+f:f84847f6121478874b7c97ffbb304ec3:iotop/.footprint
+f:5db309c3cd277e869a3fc5cfacec3436:iotop/Pkgfile
