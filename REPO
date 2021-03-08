@@ -114,6 +114,7 @@ d:macchanger
 d:masscan
 d:seamonkey
 d:geoip
+d:fluxbox
 f:e46a71890e9af53cc069b1c1442b35c7:lshw/.signature
 f:143d2604bf77fb4c9de17df37d92ed29:lshw/.footprint
 f:39f2f873d0ba02fa29236e4cba30eecc:lshw/Pkgfile
@@ -554,3 +555,7 @@ f:017dfc5c063bf177d81cf5dd48e5aac3:seamonkey/.signature
 f:a4acc0800d67da3cd941c9234e744db8:geoip/.signature
 f:742962a69bd846184a4b73baa12b34ca:geoip/Pkgfile
 f:11c43eae6f22472ba255c6916fe32775:geoip/.footprint
+f:333dcd72db5d3243122e7330982a1aad:fluxbox/.footprint
+f:469e54d37fc08e31ab6697997af232cd:fluxbox/.signature
+f:c290e7d925cb5b9e591bc37e8c00beff:fluxbox/Pkgfile
+f:2286690d2f2154e5cee72dd40306b039:fluxbox/README
