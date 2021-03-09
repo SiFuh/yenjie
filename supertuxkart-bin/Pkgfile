@@ -6,7 +6,7 @@
 name=supertuxkart-bin
 version=1.2
 release=2
-source=(https://jaist.dl.sourceforge.net/project/${name//-bin}/SuperTuxKart/${version}/SuperTuxKart-${version}-linux.tar.xz \
+source=(https://jaist.dl.sourceforge.net/project/${name%-*}/SuperTuxKart/${version}/SuperTuxKart-${version}-linux.tar.xz \
         run_game.patch)
 
 build() {
@@ -14,20 +14,20 @@ build() {
   cd SuperTuxKart-"${version}"-linux
 
   mkdir -p "${PKG}"/opt/bin
-  install -D -m 755 run_game.sh "${PKG}"/opt/bin/"${name//-bin}"
+  install -D -m 755 run_game.sh "${PKG}"/opt/bin/"${name%-*}"
 
-  mkdir -p "${PKG}"/opt/"${name//-bin}"
+  mkdir -p "${PKG}"/opt/"${name%-*}"
 
-  cp -rf bin-64 "${PKG}"/opt/"${name//-bin}"/bin
-  cp -rf data "${PKG}"/opt/"${name//-bin}"/
-  cp -rf lib-64 "${PKG}"/opt/"${name//-bin}"/lib
+  cp -rf bin-64 "${PKG}"/opt/"${name%-*}"/bin
+  cp -rf data "${PKG}"/opt/"${name%-*}"/
+  cp -rf lib-64 "${PKG}"/opt/"${name%-*}"/lib
 
   find "${PKG}" -name licenses.txt -delete
   find "${PKG}" -name License.txt -delete
-  rm "${PKG}"/opt/"${name//-bin}"/data/shaders/MLAA_COPYING
-  rm "${PKG}"/opt/"${name//-bin}"/data/CREDITS
+  rm "${PKG}"/opt/"${name%-*}"/data/shaders/MLAA_COPYING
+  rm "${PKG}"/opt/"${name%-*}"/data/CREDITS
 
   install -d "${PKG}"/etc/revdep.d
-  echo "/opt/${name//-bin}/lib" > "${PKG}"/etc/revdep.d/"${name}"
+  echo "/opt/${name%-*}/lib" > "${PKG}"/etc/revdep.d/"${name}"
 
 }
