@@ -7,7 +7,7 @@ name=hcxtools-35
 version=3.5.0
 sversion=e4b60f45a1765c745c7acd6098145df167e13a1f
 release=1
-source=(https://github.com/wi-fi-analyzer/${name//-35}/archive/${sversion}/${name}-${version}.tar.gz)
+source=(https://github.com/wi-fi-analyzer/${name%-*}/archive/${sversion}/${name}-${version}.tar.gz)
 
 build() {
 
@@ -15,7 +15,7 @@ build() {
 
   make CFLAGS="${CFLAGS}" INSTALLDIR="${PKG}"/usr/bin install
 
-  # Aappend '35' to all binaries
+  # Append '35' to all binaries
   find "${PKG}"/usr/bin -type f -print | xargs -I % mv % %35
 
 }
