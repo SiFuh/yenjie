@@ -6,31 +6,31 @@
 name=tuxedo-keyboard-dkms
 version=3.0.3
 release=2
-source=(https://github.com/tuxedocomputers/${name//-dkms}/archive/v${version}/${name}-${version}.tar.gz \
+source=(https://github.com/tuxedocomputers/${name%-*}/archive/v${version}/${name}-${version}.tar.gz \
         tuxedo_keyboard_conf.patch tuxedo-keys)
 
 build() {
 
-  cd "${name//-dkms}"-"${version}"
+  cd "${name%-*}"-"${version}"
   patch -p0 -i "${SRC}"/tuxedo_keyboard_conf.patch
 
-  mkdir -p "${PKG}"/usr/src/"${name//-dkms}"-"${version}"
-  cp -pr * "${PKG}"/usr/src/"${name//-dkms}"-"${version}"
-  cp dkms.conf "${PKG}"/usr/src/"${name//-dkms}"-"${version}"
+  mkdir -p "${PKG}"/usr/src/"${name%-*}"-"${version}"
+  cp -pr * "${PKG}"/usr/src/"${name%-*}"-"${version}"
+  cp dkms.conf "${PKG}"/usr/src/"${name%-*}"-"${version}"
 
   install -D -m 644 tuxedo_keyboard.conf "${PKG}"/etc/modprobe.d/tuxedo_keyboard.conf
   install -D -m 755 "${SRC}"/tuxedo-keys "${PKG}"/usr/bin/tuxedo-keys
 
-  mkdir -p "${PKG}"/var/lib/dkms/"${name//-dkms}"/"${version}"/build
+  mkdir -p "${PKG}"/var/lib/dkms/"${name%-*}"/"${version}"/build
 
-  ln -s /usr/src/"${name//-dkms}"-"${version}"                    \
-        "${PKG}"/var/lib/dkms/"${name//-dkms}"/"${version}"/source 
+  ln -s /usr/src/"${name%-*}"-"${version}"                    \
+        "${PKG}"/var/lib/dkms/"${name%-*}"/"${version}"/source 
  
   sed -e "s/@PKGVER@/${version}/"                                 \
-      -i "${PKG}"/usr/src/"${name//-dkms}"-"${version}"/dkms.conf
+      -i "${PKG}"/usr/src/"${name%-*}"-"${version}"/dkms.conf
 
-  rm "${PKG}"/usr/src/"${name//-dkms}"-"${version}"/{README.md,LICENSE}
-  rm "${PKG}"/usr/src/"${name//-dkms}"-"${version}"/tuxedo_keyboard.conf
-  rm -rf "${PKG}"/usr/src/"${name//-dkms}"-"${version}"/{deb,trans_pkg_from_dkms,src_pkg}
+  rm "${PKG}"/usr/src/"${name%-*}"-"${version}"/{README.md,LICENSE}
+  rm "${PKG}"/usr/src/"${name%-*}"-"${version}"/tuxedo_keyboard.conf
+  rm -rf "${PKG}"/usr/src/"${name%-*}"-"${version}"/{deb,trans_pkg_from_dkms,src_pkg}
 
 }
