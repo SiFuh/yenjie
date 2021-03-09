@@ -5,11 +5,11 @@
 name=artwiz-aleczapka-fonts
 version=1.3
 release=2
-source=(https://jaist.dl.sourceforge.net/project/artwizaleczapka/iso-8859-1/${version}/${name//-fonts}-en-${version}.tar.bz2)
+source=(https://jaist.dl.sourceforge.net/project/artwizaleczapka/iso-8859-1/${version}/${name%-*}-en-${version}.tar.bz2)
 
 build() {
 
-  cd "${name//-fonts}"-en-"${version}"
+  cd "${name%-*}"-en-"${version}"
 
   if [ -e cursor.pcf ]; then
     mv cursor.pcf artwiz-cursor.pcf
