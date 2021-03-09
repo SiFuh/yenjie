@@ -1,6 +1,5 @@
 # Description:  A wireless network sniffer (Ncurses Based)
 # URL:          https://www.kismetwireless.net/
-# Packager:
 # Maintainer:   Lin SiFuh, #crux at freenode dot net
 # Depends on:   libpcap libnl libusb-compat bluez
 # Optional:     sox
@@ -8,12 +7,12 @@
 name=kismet-2016
 version=2016-07-R1
 release=2
-source=(https://www.kismetwireless.net/code/${name//-2016/}-${version}.tar.xz \
+source=(https://www.kismetwireless.net/code/${name%-*}-${version}.tar.xz \
         aircrack_crypto_cc.patch ipc_remote_cc.patch)
 
 build() {
 
-  export KIS_SRC_DIR="${SRC}"/"${name//-2016/}"-"${version}"
+  export KIS_SRC_DIR="${SRC}"/"${name%-*}"-"${version}"
 
   PLUGINS="plugin-btscan            \
            plugin-syslog            \
@@ -23,7 +22,7 @@ build() {
            disable-plugin-dot15d4   \
            restricted-plugin-autowep"
 
-  cd "${name//-2016/}"-"${version}"
+  cd "${name%-*}"-"${version}"
 
   patch -p0 -i "${SRC}"/ipc_remote_cc.patch
 
