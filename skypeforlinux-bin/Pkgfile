@@ -6,7 +6,7 @@
 name=skypeforlinux-bin
 version=8.69.76.76
 release=1
-source=(https://repo.skype.com/deb/pool/main/s/${name//-bin}/${name//-bin}_${version}_amd64.deb)
+source=(https://repo.skype.com/deb/pool/main/s/${name%-*}/${name%-*}_${version}_amd64.deb)
 
 # https://repo.skype.com/deb/pool/main/s/skypeforlinux/
 
@@ -14,20 +14,20 @@ build(){
 
   cd "${SRC}"
   mkdir -p "${PKG}"/opt/{bin,share}
-  ar -xv "${PKGMK_SOURCE_DIR}"/"${name//-bin/}"_"${version}"_amd64.deb
+  ar -xv "${PKGMK_SOURCE_DIR}"/"${name%-*}"_"${version}"_amd64.deb
   tar -xpvf data.tar.xz
 
-  cp "${SRC}"/usr/bin/"${name//-bin/}" "${PKG}"/opt/bin
-  chmod 0755 "${PKG}"/opt/bin/"${name//-bin/}"
-#  chmod 4755 ${PKG}/opt/share/${name//-bin/}/chrome-sandbox
+  cp "${SRC}"/usr/bin/"${name%-*}" "${PKG}"/opt/bin
+  chmod 0755 "${PKG}"/opt/bin/"${name%-*}"
+#  chmod 4755 ${PKG}/opt/share/${name%-*}/chrome-sandbox
 
   cp -rf "${SRC}"/usr/share/* "${PKG}"/opt/share/ 
 
-  sed -i 's|usr/bin|opt/bin|g' "${PKG}"/opt/share/applications/"${name//-bin/}"-share.desktop
-  sed -i 's|usr/bin|opt/bin|g' "${PKG}"/opt/share/applications/"${name//-bin/}".desktop
+  sed -i 's|usr/bin|opt/bin|g' "${PKG}"/opt/share/applications/"${name%-*}"-share.desktop
+  sed -i 's|usr/bin|opt/bin|g' "${PKG}"/opt/share/applications/"${name%-*}".desktop
 
   rm -rf "${PKG}"/opt/share/{doc,kservices5}
-  rm -rf "${PKG}"/opt/share/"${name//-bin/}"/locales
-  rm "${PKG}"/opt/share/"${name//-bin/}"/LICENSES.chromium.html
+  rm -rf "${PKG}"/opt/share/"${name%-*}"/locales
+  rm "${PKG}"/opt/share/"${name%-*}"/LICENSES.chromium.html
 
 }
