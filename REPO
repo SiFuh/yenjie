@@ -188,9 +188,9 @@ f:462f2dc70f629d98a9948a18158acd98:fcitx/.signature
 f:8d99d2351ba559dc91e167775c370aae:fcitx/Pkgfile
 f:986158eb1ad482e885a34981f0d3b010:fcitx/README
 f:592a01b014b8212b0ef6484e2b8183f8:fcitx/post-install
-f:3dadc400427250479e8ac0de10e9f834:fcitx-configtool-gtk3/Pkgfile
+f:0b31a10cef20b19ff4fe28a216c59775:fcitx-configtool-gtk3/Pkgfile
 f:89f0ec72fe9c4a0c467ee8142f3b27df:fcitx-configtool-gtk3/.footprint
-f:4dd3655da402fd4e88249f476cc32653:fcitx-configtool-gtk3/.signature
+f:36c67e750c3f6a67095831fe1f47f2b1:fcitx-configtool-gtk3/.signature
 f:df530f3b3e161d4b77008af54b02a0a5:fcitx-qt5/Pkgfile
 f:c6d5d895872a8e5fdcab059492398e88:fcitx-qt5/.footprint
 f:f72e913526824fde4446f648cef476fc:fcitx-qt5/.signature
