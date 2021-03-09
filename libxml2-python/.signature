@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uLhgKOMl6wKHejY0ZPFOZdGhcASTjxPQAq/xcQLjXS8OewV11/Q6O1Rnm1Rzm6eWjRyLPWjLwlkDTiSHBlMSygU=
-SHA256 (Pkgfile) = b0239407ab524f8a690e5699d27ca63adc5dd5e325eb10b719307354d692315f
+RWQ0NN0w0eo0uNdMiMbJVSVsI4eG5VmbhRr+0MiEy9Ad8qjVX9t4PxAq8ninVOG9wf4L0a2Kl+CQE5r2rZreJPHb9s/0bb+JUQA=
+SHA256 (Pkgfile) = c5a1b03fb508748f58bf7e1312a0fbeb2f95f09a6f8988b1c9a2434f95b66274
 SHA256 (.footprint) = 73d3d6093bbec225c90f39dcd85f9a56caa55daff311efa0fad3bd6e3cf1cb44
 SHA256 (libxml2-2.9.10.tar.gz) = aafee193ffb8fe0c82d4afef6ef91972cbaf5feea100edc2f262750611b4be1f
 SHA256 (libxml2-python-config.patch) = da00a6e596cdf32dc7b2c99a629a9389ea47672706ad6c8005cad88553d6d009

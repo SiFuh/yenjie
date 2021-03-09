@@ -6,11 +6,12 @@
 name=libxml2-python
 version=2.9.10
 release=1
-source=(ftp://xmlsoft.org/${name//-python}/${name//-python}-${version}.tar.gz \
+source=(ftp://xmlsoft.org/${name//-python}/${name%-*}-${version}.tar.gz \
         ${name}-config.patch)
 
 build () {
-    cd "${name//-python}"-"${version}"
+
+    cd "${name%-*}"-"${version}"
     
     patch -p1 -i "${SRC}"/"${name}"-config.patch
     
@@ -23,4 +24,5 @@ build () {
 
     rm "${PKG}"/usr/lib/python2.7/site-packages/libxml2mod.{a,la}
     rm -r "${PKG}"/usr/share
+
 }
