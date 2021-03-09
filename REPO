@@ -116,6 +116,7 @@ d:seamonkey
 d:geoip
 d:fluxbox
 d:iotop
+d:lumina-desktop
 f:e46a71890e9af53cc069b1c1442b35c7:lshw/.signature
 f:143d2604bf77fb4c9de17df37d92ed29:lshw/.footprint
 f:39f2f873d0ba02fa29236e4cba30eecc:lshw/Pkgfile
@@ -565,3 +566,6 @@ f:190e68a42a02fcb5d09a5cd3ade9aa32:iotop/0001-Make-setp.py-compatible-with-pytho
 f:b443e5e943af06fda5f2448507e0fd16:iotop/.signature
 f:f84847f6121478874b7c97ffbb304ec3:iotop/.footprint
 f:5db309c3cd277e869a3fc5cfacec3436:iotop/Pkgfile
+f:796de05975f8ca5a02282ba37416893f:lumina-desktop/Pkgfile
+f:cbfc414cc5f29935a297c990f10682b7:lumina-desktop/.footprint
+f:73ca44193e94ebf5d550925a1a6970e2:lumina-desktop/.signature

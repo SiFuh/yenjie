@@ -1,0 +1,33 @@
+# Description:   A Lightweight QT5 Desktop for FreeBSD
+# URL:           https://github.com/trueos/lumina
+# Maintainer:    Lin SiFuh, #crux at freenode dot net
+# Depends on:    qt5
+# Optional:      xorg-xbacklight alsa-utils acpi numlockx pavucontrol network-manager-applet xterm fluxbox
+
+name=lumina-desktop
+version=1.6.0
+release=1
+source=(https://github.com/trueos/${name%-*}/archive/v${version}/${name}-${version}.tar.gz)
+
+build() {
+
+  cd "${name%-*}"-"${version}"
+
+  find . -name *.desktop -exec sed -i 's/usr\/local/usr/' {} \;
+
+  qmake QMAKE_CFLAGS_ISYSTEM=  \
+        PREFIX="/usr"          \
+        L_ETCDIR="/etc"        \
+        CONFIG+=WITH_I18N      \
+        LIBPREFIX=/usr/lib     \
+        QT5LIBDIR=/usr/lib/qt  \
+        L_MANDIR=/usr/share/man
+
+  make
+
+  make INSTALL_ROOT="${PKG}" install
+
+  rm "${PKG}"/usr/share/icons/material-design-{dark,light}/LICENSE
+  rm "${PKG}"/usr/share/lumina-desktop/{menu-scripts,syntax_rules}/README.md
+
+}
