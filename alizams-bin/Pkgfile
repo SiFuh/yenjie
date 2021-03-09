@@ -5,25 +5,24 @@
 
 name=alizams-bin
 version=1.3.0
-_name=${name//-bin}
 _version=${version}_linux
 release=1
-source=(https://github.com/AlizaMedicalImaging/AlizaMS/releases/download/v${version}/${_name}-${_version}.tar.gz \
-        ${_name}_sh.patch)
+source=(https://github.com/AlizaMedicalImaging/AlizaMS/releases/download/v${version}/${name%-*}-${_version}.tar.gz \
+        ${name%-*}_sh.patch)
 
 build() { 
 
-  cd "${_name}"-"${_version}"
+  cd "${name%-*}"-"${_version}"
 
-  patch -i "${SRC}"/"${_name}"_sh.patch
+  patch -i "${SRC}"/"${name%-*}"_sh.patch
 
-  install -D -m 755 "${_name}".sh "${PKG}"/opt/bin/"${_name}"
-  mkdir -p  "${PKG}"/opt/"${_name}"
-  mv {bin,lib,plugins} "${PKG}"/opt/"${_name}"
+  install -D -m 755 "${name%-*}".sh "${PKG}"/opt/bin/"${name%-*}"
+  mkdir -p  "${PKG}"/opt/"${name%-*}"
+  mv {bin,lib,plugins} "${PKG}"/opt/"${name%-*}"
 
   mkdir -p "${PKG}"/etc/ld.so.conf.d
-  echo "/opt/alizams/lib/" > "${PKG}"/etc/ld.so.conf.d/"${_name}".conf
+  echo "/opt/${name%-*}/lib/" > "${PKG}"/etc/ld.so.conf.d/"${name%-*}".conf
 
-  ln -s /usr/lib/libQt5Xml.so "${PKG}"/opt/"${_name}"/lib/libQtXml.so.4
+  ln -s /usr/lib/libQt5Xml.so "${PKG}"/opt/"${name%-*}"/lib/libQtXml.so.4
 
 }

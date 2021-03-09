@@ -360,8 +360,8 @@ f:ceb74bd5e8ed08670dc31a0f08c780fa:secure-delete/Pkgfile
 f:0b8fb618edd01dda3d4e88d02da0571e:secure-delete/.signature
 f:7efc27ea342b0fa44500967da1c6c986:secure-delete/.footprint
 f:3bdad15da3c00e5ff67e28788a46667a:skypeforlinux-bin/.footprint
-f:1a145cd78a373de5c50895c9b62066c4:skypeforlinux-bin/.signature
-f:d1d6de27bd23cf0e95157e7cb17283f8:skypeforlinux-bin/Pkgfile
+f:f37f7b2d55b340c49691f8239e1478ea:skypeforlinux-bin/.signature
+f:da6b2d3342c294af265f250e211a9e6f:skypeforlinux-bin/Pkgfile
 f:ce166d5524eea83ef45ee64a3ee8e0d8:skypeforlinux-bin/README
 f:19f09c78bec2828cfb97b002bcf29f18:smplayer/.signature
 f:90d93dd8ff85ffba45390a0dc09195ee:smplayer/.footprint
@@ -377,8 +377,8 @@ f:6761ba4afa2ae3bdf403774ea1ee152e:soapy-sdr/.footprint
 f:3382aefeaab471be737aba36ba7c8b9b:soapy-sdr/Pkgfile
 f:f17a39804d0c930b8060830ce5c1960a:supertuxkart-bin/run_game.patch
 f:ffb40b51df7c8b2fa3b4db0bb006a1a8:supertuxkart-bin/.footprint
-f:271aed4374771cd9f7731f8452bec47e:supertuxkart-bin/Pkgfile
-f:2bad8cfc7f95523936ac857567011a03:supertuxkart-bin/.signature
+f:242aa87d99d45857c72475274e5f0034:supertuxkart-bin/Pkgfile
+f:c4f61bec7d7d7372dc81ff5f39a3e44e:supertuxkart-bin/.signature
 f:5ec2ca8a4c47a273ae0580723fda467d:telegram-bin/Pkgfile
 f:51ee9b11b51467edc91f48f112312261:telegram-bin/.footprint
 f:54ca26fb302590dee5e22c3724d090ec:telegram-bin/.signature
@@ -389,8 +389,8 @@ f:5d325e6d81213b0991fdb144221883d1:tuxedo-keyboard-dkms/README
 f:60cb28a71e6adf3d211cd4eb3b637c9b:tuxedo-keyboard-dkms/tuxedo-keys
 f:dae9c6c9a55b4bb613c4829246e09c53:tuxedo-keyboard-dkms/tuxedo_keyboard_conf.patch
 f:3600542bf13621407b558b62d72d8aa0:tuxedo-keyboard-dkms/.footprint
-f:9a0b5b8bc3b5774b1339f520edb7325e:tuxedo-keyboard-dkms/.signature
-f:5a8821693fed1c2b44a988291469c360:tuxedo-keyboard-dkms/Pkgfile
+f:1634dadac3028fcf8ad3bac5ee5a2cf4:tuxedo-keyboard-dkms/.signature
+f:0d0e1c62075e027a77c3d18e71ca79c5:tuxedo-keyboard-dkms/Pkgfile
 f:86d2db273d8ce17a7f19445821a15773:udiskie/Pkgfile
 f:b3505fb1a233c2d14b3dee7ec882b4dd:udiskie/.signature
 f:fd49fbca43c58ac5f7a283e89f826ea1:udiskie/.footprint
@@ -476,8 +476,8 @@ f:13ef7ee3c43b07a87c9fce2d1b745a11:zeromq/Pkgfile
 f:365c168edf622d05211d92a382f55032:yenjie.httpup
 f:6bbec22c453cce2269312934c1e2fbb5:alizams-bin/alizams_sh.patch
 f:1ed99cac256d4291f06a0a57edce0896:alizams-bin/.footprint
-f:ead00fa0a69a993bd90d4d756853015d:alizams-bin/.signature
-f:055079dbb4078007c098e868cf15d3f7:alizams-bin/Pkgfile
+f:57d443662063378682a0f3cf8a6f5447:alizams-bin/.signature
+f:7e8a28eb1b90a1cf8efe9fa60d0f5c29:alizams-bin/Pkgfile
 f:fb1bed63121bdb6882f0e0ee62b0c8cb:libopenshot-audio-git/.footprint
 f:9cd09a6523bb6726fcb093dc600f18e0:libopenshot-audio-git/Pkgfile
 f:cd0ea4f1d4297ccb7e841ae0c5fa4511:libopenshot-audio-git/.signature
