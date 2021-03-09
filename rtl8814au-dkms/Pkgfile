@@ -5,40 +5,39 @@
 # Depends on:   dkms
 
 name=rtl8814au-dkms
-_name=${name//-dkms}
 version=5.8.5.1-27d2344
 sversion="27d2344264f774dd2add19d4139dfc07985d6ada"
 release=1
-source=(https://github.com/aircrack-ng/${_name}/archive/${sversion}/${_name}-${version}.tar.gz)
+source=(https://github.com/aircrack-ng/${name%-*}/archive/${sversion}/${name%-*}-${version}.tar.gz)
 
 build() {
 
-  cd "${_name}"-"${sversion}"
+  cd "${name%-*}"-"${sversion}"
 
-  mkdir -p "${PKG}"/usr/src/"${_name}"-"${version}"
-  cp -pr * "${PKG}"/usr/src/"${_name}"-"${version}"
+  mkdir -p "${PKG}"/usr/src/"${name%-*}"-"${version}"
+  cp -pr * "${PKG}"/usr/src/"${name%-*}"-"${version}"
 
-  mkdir -p "${PKG}"/var/lib/dkms/"${_name}"/"${version}"/build
-  ln -s /usr/src/"${_name}"-"${version}" \
-        "${PKG}"/var/lib/dkms/"${_name}"/"${version}"/source
+  mkdir -p "${PKG}"/var/lib/dkms/"${name%-*}"/"${version}"/build
+  ln -s /usr/src/"${name%-*}"-"${version}" \
+        "${PKG}"/var/lib/dkms/"${name%-*}"/"${version}"/source
  
-  sed -e "s/@_PKGBASE@/${_name}/" \
+  sed -e "s/@_PKGBASE@/${name%-*}/" \
       -e "s/@PKGVER@/${version}/" \
-      -i "${PKG}"/usr/src/"${_name}"-"${version}"/dkms.conf
+      -i "${PKG}"/usr/src/"${name%-*}"-"${version}"/dkms.conf
 
-  mv "${PKG}"/usr/src/"${_name}"-"${version}"/platform \
-     "${PKG}"/usr/src/"${_name}"-"${version}"/platform.old
+  mv "${PKG}"/usr/src/"${name%-*}"-"${version}"/platform \
+     "${PKG}"/usr/src/"${name%-*}"-"${version}"/platform.old
 
-  mkdir -p "${PKG}"/usr/src/"${_name}"-"${version}"/platform
+  mkdir -p "${PKG}"/usr/src/"${name%-*}"-"${version}"/platform
 
-  mv "${PKG}"/usr/src/"${_name}"-"${version}"/platform.old/*ops* \
-     "${PKG}"/usr/src/"${_name}"-"${version}"/platform
+  mv "${PKG}"/usr/src/"${name%-*}"-"${version}"/platform.old/*ops* \
+     "${PKG}"/usr/src/"${name%-*}"-"${version}"/platform
 
   find "${PKG}" -name '*.txt' -delete
 
-  rm -rf "${PKG}"/usr/src/"${_name}"-"${version}"/platform.old
-  rm -rf "${PKG}"/usr/src/"${_name}"-"${version}"/{docs,android,tools,openwrt,debian}
-  rm "${PKG}"/usr/src/"${_name}"-"${version}"/{README.md,LICENSE}
-  rm "${PKG}"/usr/src/"${_name}"-"${version}"/build-deb.sh
+  rm -rf "${PKG}"/usr/src/"${name%-*}"-"${version}"/platform.old
+  rm -rf "${PKG}"/usr/src/"${name%-*}"-"${version}"/{docs,android,tools,openwrt,debian}
+  rm "${PKG}"/usr/src/"${name%-*}"-"${version}"/{README.md,LICENSE}
+  rm "${PKG}"/usr/src/"${name%-*}"-"${version}"/build-deb.sh
 
 }
