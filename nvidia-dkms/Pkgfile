@@ -148,10 +148,10 @@ DEST_MODULE_LOCATION[2]="/kernel/drivers/video"\
 BUILT_MODULE_NAME[3]="nvidia-drm"\
 DEST_MODULE_LOCATION[3]="/kernel/drivers/video"' dkms.conf)
   install -dm 755 "${PKG}"/usr/src
-  cp -dr --no-preserve='ownership' kernel "${PKG}/usr/src/${name//-dkms}-${version}"
+  cp -dr --no-preserve='ownership' kernel "${PKG}/usr/src/${name%-*}-${version}"
 
-  mkdir -p ${PKG}/var/lib/dkms/${name//-dkms}/${version}/build
-  ln -s /usr/src/${name//-dkms}-${version}                    \
-        ${PKG}/var/lib/dkms/${name//-dkms}/${version}/source
+  mkdir -p ${PKG}/var/lib/dkms/${name%-*}/${version}/build
+  ln -s /usr/src/${name%-*}-${version}                    \
+        ${PKG}/var/lib/dkms/${name%-*}/${version}/source
 
 }
