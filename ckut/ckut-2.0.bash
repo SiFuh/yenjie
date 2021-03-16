@@ -22,7 +22,7 @@
 # lynx   (text based web browser)
 # curl   (tool for transfering files with URL synta)
 
-VERSION="v1.9"
+VERSION="v2.0"
 TITLE="CRUX Kernel Update Tool ${VERSION}    ${MESSAGE}"
 CONFIG="/etc/ckut.conf"
 KERNEL_OLD="$(uname -r)"
@@ -252,21 +252,25 @@ fi
 failsafe_editor
 
 # Have a look to see what programs the system may have installed
-# This way the menu informs the user if a program is not installed
-if [[ ! -x /usr/bin/dracut ]]; then
-  DRACUT="(not installed)"
+# This way the menu doesn't display the missing program features
+if [[ -x /usr/bin/dracut ]]; then
+  DRACUT_MENU="d Dracut"
 fi
 
-if [[ ! -x /usr/sbin/grub-mkconfig ]]; then
-  GRUB="(not installed)"
+if [[ -x /usr/sbin/grub-mkconfig ]]; then
+  GRUB_MENU="g Grub"
 fi
 
-if [[ ! -x /sbin/lilo ]]; then
-  LILO="(not installed)"
+if [[ -x /sbin/lilo ]]; then
+  LILO_MENU="l Lilo"
 fi
 
-if [[ ! -x /usr/bin/syslinux ]]; then
-  SYSLINUX="(not installed)"
+if [[ -x /usr/bin/syslinux ]]; then
+  SYSLINUX_MENU="s Syslinux"
+fi
+
+if [[ -x /usr/bin/lynx ]]; then
+  LYNX_MENU="w www.kernel.org"
 fi
 
 # First menu the main page
@@ -459,11 +463,11 @@ while true; do
                            --menu "\n${MESSAGE1} [${KERNEL}]" "${HEIGHT}" "${WIDTH}" 9 \
                            e "Run Everything"                                          \
                            b "Boot Loader Menu"                                        \
-                           d "Dracut ${DRACUT}"                                        \
+                           ${DRACUT_MENU}                                              \
                            l "Command Log"                                             \
                            c "Configure CKUT"                                          \
                            r "Reload Configuration"                                    \
-                           w "Visit www.kernel.org"                                    \
+                           ${LYNX_MENU}                                                \
                            2>&1 1>&3)
         exec 3>&-
         case ${selection} in
@@ -572,9 +576,9 @@ while true; do
                                  --title "${KERNEL_OLD} - Boot Loader Menu"                  \
                                  --cancel-label "Exit"                                       \
                                  --menu "\n${MESSAGE1} [${KERNEL}]" "${HEIGHT}" "${WIDTH}" 9 \
-                                 g "Grub ${GRUB}"                                            \
-                                 l "Lilo ${LILO}"                                            \
-                                 s "Syslinux ${SYSLINUX}"                                    \
+                                 ${GRUB_MENU}                                                \
+                                 ${LILO_MENU}                                                \
+                                 ${SYSLINUX_MENU}                                            \
                                2>&1 1>&3)
               exec 3>&-
               case ${selection} in
@@ -587,15 +591,17 @@ while true; do
                                        --cancel-label "Exit"                                      \
                                        --menu "\n${MESSAGE} [${KERNEL}]" "${HEIGHT}" "${WIDTH}" 9 \
                                        b "Edit /boot/grub/grub.cfg"                               \
-                                       g "Run grub-mkconfig ${GRUB}"                              \
+                                       g "Run grub-mkconfig"                                      \
                                        2>&1 1>&3)
                     exec 3>&-
                     case ${selection} in
                       b )
-                        if [[ -f /boot/grub/grub.cfg ]]; then
+                        if [[ ! -d /boot/grub ]]; then
+                          mkdir -p /boot/grub
+                          echo "mkdir -p /boot/grub" >> "${TMPDIR}/ckut.log"
+                        fi
                           "${EDITOR}" /boot/grub/grub.cfg
                           echo "${EDITOR} /boot/grub/grub.cfg" >> "${TMPDIR}/ckut.log"
-                        fi
                       ;;
                       g )
                         dialog --clear                                                         \
@@ -622,7 +628,7 @@ while true; do
                                        --cancel-label "Exit"                                      \
                                        --menu "\n${MESSAGE} [${KERNEL}]" "${HEIGHT}" "${WIDTH}" 9 \
                                        e "Edit /etc/lilo.conf"                                    \
-                                       l "Run lilo ${LILO}"                                       \
+                                       l "Run lilo"                                               \
                                        2>&1 1>&3)
                      exec 3>&-
                      case ${selection} in
@@ -648,10 +654,12 @@ while true; do
                   done
                 ;;
                 s )
-                  if [[ -f ${SYSLINUX_LOCATION}/syslinux.cfg ]]; then
+                  if [[ ! -d "${SYSLINUX_LOCATION}" ]]; then
+                    mkdir -p "${SYSLINUX_LOCATION}"
+                    echo "mkdir -p ${SYSLINUX_LOCATION}" >> "${TMPDIR}/ckut.log"
+                  fi
                     "${EDITOR}" ${SYSLINUX_LOCATION}/syslinux.cfg
                     echo "${EDITOR} ${SYSLINUX_LOCATION}/syslinux.cfg" >> "${TMPDIR}/ckut.log"
-                  fi
                 ;;
                 * )
                   if [[ -z "${selection}" ]]; then
