@@ -6,8 +6,8 @@
 
 name=openshot-qt-git
 _name=openshot-qt
-version=2.5.1-14ecc51
-sversion=14ecc519d8390d6fa76cdc03e0d79a0fb5ca12a7
+version=2.5.1-13ddbc4
+sversion=13ddbc49ec0684c981e35f0cdfd52db502d663c4
 release=2
 source=()
 gsource=(https://github.com/OpenShot/${_name}/)
