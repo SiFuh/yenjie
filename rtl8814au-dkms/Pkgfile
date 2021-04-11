@@ -5,8 +5,8 @@
 # Depends on:   dkms
 
 name=rtl8814au-dkms
-version=5.8.5.1-27d2344
-sversion="27d2344264f774dd2add19d4139dfc07985d6ada"
+version=5.8.5.1-bdf80b5
+sversion=bdf80b5a932d5267cd1aff66fee8ac244cd38777
 release=1
 source=(https://github.com/aircrack-ng/${name%-*}/archive/${sversion}/${name%-*}-${version}.tar.gz)
 
