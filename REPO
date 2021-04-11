@@ -500,8 +500,8 @@ f:46df66c17b70fd49d244fa1202b71a04:otter-browser/.footprint
 f:e22f9de7417f9a10d06f10287586b00e:otter-browser/Pkgfile
 f:559fcc37274ffb37be5cc8d49610c0cb:otter-browser/.signature
 f:f493aa63155eac74dd8f9b7ad72c40ce:binwalk/.footprint
-f:06163c04055acc42b0f4343bc465f7f8:binwalk/.signature
-f:da3b5371ccb5bfd934a69ae3f14d6ee1:binwalk/Pkgfile
+f:d9782fb21f464a7f251234114ba5606a:binwalk/.signature
+f:a295fc99f4f73391abcf45ed6de653c5:binwalk/Pkgfile
 f:53405d7c8c90cb40d7a9e29d6a790a57:hashcat/.signature
 f:decb610afdc4d66839cb7ec734bd54ba:hashcat/.footprint
 f:6efd3029d711e8c1f30f59ed21edc608:hashcat/Pkgfile
