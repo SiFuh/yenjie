@@ -4,7 +4,7 @@
 # Depends on:   cups gconf libidl orbit libsecret speexdsp pulseaudio-alsa alsa-plugins
 
 name=skypeforlinux-bin
-version=8.69.76.76
+version=8.71.76.31
 release=1
 source=(https://repo.skype.com/deb/pool/main/s/${name%-*}/${name%-*}_${version}_amd64.deb)
 
@@ -15,7 +15,7 @@ build(){
   cd "${SRC}"
   mkdir -p "${PKG}"/opt/{bin,share}
   ar -xv "${PKGMK_SOURCE_DIR}"/"${name%-*}"_"${version}"_amd64.deb
-  tar -xpvf data.tar.xz
+  tar -zxpvf data.tar.gz
 
   cp "${SRC}"/usr/bin/"${name%-*}" "${PKG}"/opt/bin
   chmod 0755 "${PKG}"/opt/bin/"${name%-*}"
