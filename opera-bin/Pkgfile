@@ -4,7 +4,7 @@
 # Depends on:   gtk3 alsa-lib libnotify nss cups desktop-file-utils hicolor-icon-theme shared-mime-info xorg-font-msttcorefonts
 
 name=opera-bin
-version=74.0.3911.107
+version=75.0.3969.149
 release=1
 source=(https://get.geo.opera.com/pub/${name%-bin}/desktop/$version/linux/${name%-bin}-stable_${version}_amd64.deb)
 
@@ -19,8 +19,6 @@ build() {
   mv "${PKG}"/usr/ "${PKG}"/opt/
 
   chmod 4755 "${PKG}"/opt/lib/"${name%-bin}"/"${name%-bin}"_sandbox
-
-  rm "${PKG}"/opt/lib/"${name%-bin}"/resources/widevine_config.json
 
   prt-get isinst widevine &&                                           \
     echo "/usr/lib/chromium/WidevineCdm" >                             \
