@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uKP9KiLKLks2ecoLthzHr0E/1/+DNcsCTNg1JX6mIxxv/0orJxjObRifs94u0VQcpTR/BGkqEZOfp3wjvmL5vgk=
-SHA256 (Pkgfile) = fe98ad75421ca25b4717c006c23845a7068b1935c4929ecae80fc44f7ab51dd7
-SHA256 (.footprint) = 00cc42efa7733cf0f0a03e3d0f74df24bc93f28c9f9e8009aa682dd5f783a598
-SHA256 (udiskie-2.3.2.tar.gz) = 86dbff51740cb2fa2b7b6950d22adc2ac266146a328d3f3b252fb359a6a8ca30
+RWQ0NN0w0eo0uA8wXLv6B/lwXzMumZYSOWMTAydeQA2XnXfs7gzmJPW7tJ7maSCC7cai2l+KK+rGShHtDoG4r2fmzcJM1uJ96wk=
+SHA256 (Pkgfile) = 90bb8ed84982ed9f4fe916120150123f5f5ebd8b4c40d7bb796bf5d802ed8bea
+SHA256 (.footprint) = c6ac388a9bc000ce62c70c4424e38470e370271a467e618b56ca8bff31873738
+SHA256 (udiskie-2.3.3.tar.gz) = cebb758dbc8123ca945d5e135d85008aa51a10ac2fb3fa3f2fac12fc8a2663b5

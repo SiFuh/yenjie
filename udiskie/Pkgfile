@@ -4,7 +4,7 @@
 # Depends on:   udisks2 python3 keyutils python3-setuptools libnotify gtk3 python3-gobject python3-docopt asciidoc
 
 name=udiskie
-version=2.3.2
+version=2.3.3
 release=1
 source=(https://github.com/coldfix/${name}/archive/v${version}/${name}-${version}.tar.gz)
 
