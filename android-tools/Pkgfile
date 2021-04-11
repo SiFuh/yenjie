@@ -4,7 +4,7 @@
 # Maintainer:   Lin SiFuh, #crux at freenode dot net
 
 name=android-tools
-version=r30.0.5
+version=r31.0.1
 release=1
 source=(http://dl-ssl.google.com/android/repository/platform-tools_${version}-linux.zip)
 

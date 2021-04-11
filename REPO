@@ -124,8 +124,8 @@ f:ba1b3279be1b261d92986f862d58f90a:luakit/Pkgfile
 f:2259230bb090ef0a44614e7f3dd577b7:luakit/.footprint
 f:744458d7be38a0ce1ce50bb329c9b4d8:luakit/.signature
 f:88fe8c197d6bf57699b27d4625a81e24:android-tools/.footprint
-f:b562db681fad40c2d3de118f181acb2f:android-tools/Pkgfile
-f:b7074611d5264ab900ea532070f98f4d:android-tools/.signature
+f:362d5fbefa3816a235ff28863fe3a78c:android-tools/Pkgfile
+f:10c6d1d0a3cddd3a0c2399d77c6dd855:android-tools/.signature
 f:88ab5a807bf699df4d0ec87912b2c510:yenjie.pub
 f:a4c584d97d34ead049e2225be6885a06:cmus/.signature
 f:d8271c877122481fe1392912c00ef241:cmus/.footprint
