@@ -7,7 +7,7 @@
 #cbindgen clang libidl libnotify libxkbcommon nodejs nss 
 
 name=seamonkey
-version=2.53.6
+version=2.53.7
 release=1
 source=(https://archive.mozilla.org/pub/$name/releases/$version/source/$name-$version.source.tar.xz)
         
