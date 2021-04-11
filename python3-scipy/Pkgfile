@@ -5,7 +5,7 @@
 
 name=python3-scipy
 _name=${name//python3-}
-version=1.6.0
+version=1.6.2
 release=1
 source=(https://github.com/${_name}/${_name}/archive/v${version}/${name}-${version}.tar.gz)
 
