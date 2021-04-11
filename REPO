@@ -481,9 +481,9 @@ f:39fd7382ebbc1a51849ab16a41c6ce3b:alizams-bin/Pkgfile
 f:fb1bed63121bdb6882f0e0ee62b0c8cb:libopenshot-audio-git/.footprint
 f:9cd09a6523bb6726fcb093dc600f18e0:libopenshot-audio-git/Pkgfile
 f:cd0ea4f1d4297ccb7e841ae0c5fa4511:libopenshot-audio-git/.signature
-f:1ae68dfe58ab4fdf3720a4ad03f5717b:libopenshot-git/.footprint
-f:10ab1b680813dc73661ebdd9c20062b0:libopenshot-git/Pkgfile
-f:40e75cd2204fb35b469d807d0c7e5aa1:libopenshot-git/.signature
+f:a54fe8064ae0a259bfff308543f9aebe:libopenshot-git/.footprint
+f:4c868c3c4c030a12f43956f806a869d2:libopenshot-git/Pkgfile
+f:7a55d97728bd4f190da2778c545678aa:libopenshot-git/.signature
 f:a386c96c39beb41cf88a636172caa236:openshot-qt-git/.footprint
 f:c692af40f01083c7811e5a8d08d2939b:openshot-qt-git/README
 f:aa0243988e4cfb5662526239c535ed2e:openshot-qt-git/Pkgfile

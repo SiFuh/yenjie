@@ -6,8 +6,8 @@
 
 name=libopenshot-git
 _name=libopenshot
-version=0.2.5-0d522e1
-sversion=0d522e1d7dc4c37491b65619ab5f6d0552c9246e
+version=0.2.5-d0e884d
+sversion=d0e884df7805085297157fb4e9f30cd98c270a55
 release=1
 source=()
 gsource=(https://github.com/OpenShot/${_name}/)
