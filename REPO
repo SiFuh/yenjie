@@ -120,9 +120,9 @@ d:lumina-desktop
 f:e46a71890e9af53cc069b1c1442b35c7:lshw/.signature
 f:143d2604bf77fb4c9de17df37d92ed29:lshw/.footprint
 f:39f2f873d0ba02fa29236e4cba30eecc:lshw/Pkgfile
-f:ba1b3279be1b261d92986f862d58f90a:luakit/Pkgfile
-f:2259230bb090ef0a44614e7f3dd577b7:luakit/.footprint
-f:744458d7be38a0ce1ce50bb329c9b4d8:luakit/.signature
+f:ef76dd637dacb87ba362b07d05350573:luakit/Pkgfile
+f:5027bfeb1f820f67ca72476e39d919b2:luakit/.footprint
+f:b27d7ba145d5c63c50f2f4c98761a775:luakit/.signature
 f:88fe8c197d6bf57699b27d4625a81e24:android-tools/.footprint
 f:362d5fbefa3816a235ff28863fe3a78c:android-tools/Pkgfile
 f:10c6d1d0a3cddd3a0c2399d77c6dd855:android-tools/.signature

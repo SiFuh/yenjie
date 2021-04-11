@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uKWkmcoQlu/CTg1MVVFvXjd+38KTs3egygu6+XSWBZ2EUb371ySyLjJ+B+SVW4KtFcw9RuuE6LwbK6rT9hRVTgE=
-SHA256 (Pkgfile) = 5cce2b9e2aa37e2e3f22f00dd4a6dbac8b9c746aac7b8c6a18dea7f155b024ac
-SHA256 (.footprint) = 22dd8ccd7116261f0441fb90c9f32b6aa9194f44de93d50f44b27a1dee5a77cd
-SHA256 (luakit-2.2.tar.gz) = 704929a324984afe246c63263667eb1d64c060b4f7f74ced59fec5d402c377dc
+RWQ0NN0w0eo0uLOpE25/81EmWaCtNMW+13p9vOGdkBkEqRggyDoJfwep/5yHRg7vQJ9PIs6jOxCDKwaTpan89PIGahQ3Ou99EgE=
+SHA256 (Pkgfile) = 0b0b67f3605101faaa025b77adac796aa8da7f11bc0b7ed379c68d8b039d0b23
+SHA256 (.footprint) = ad4cfa62157a6e43d120944ade4c7365b46e60026819b175bd7e9e5573cc947c
+SHA256 (luakit-2.3.tar.gz) = e574a112ba246d3ff8aa2584e20fdad66a8caf53d9372a7f4d681741a31cff14

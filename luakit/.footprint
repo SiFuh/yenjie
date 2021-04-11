@@ -23,6 +23,7 @@ drwxr-xr-x	root/root	usr/share/luakit/lib/
 -rw-r--r--	root/root	usr/share/luakit/lib/bookmarks_chrome.lua
 -rw-r--r--	root/root	usr/share/luakit/lib/chrome.lua
 -rw-r--r--	root/root	usr/share/luakit/lib/chrome_wm.lua
+-rw-r--r--	root/root	usr/share/luakit/lib/clear_data.lua
 -rw-r--r--	root/root	usr/share/luakit/lib/cmdhist.lua
 -rw-r--r--	root/root	usr/share/luakit/lib/completion.lua
 -rw-r--r--	root/root	usr/share/luakit/lib/domain_props.lua
@@ -40,6 +41,7 @@ drwxr-xr-x	root/root	usr/share/luakit/lib/
 -rw-r--r--	root/root	usr/share/luakit/lib/go_input.lua
 -rw-r--r--	root/root	usr/share/luakit/lib/go_next_prev.lua
 -rw-r--r--	root/root	usr/share/luakit/lib/go_up.lua
+-rw-r--r--	root/root	usr/share/luakit/lib/gopher.lua
 -rw-r--r--	root/root	usr/share/luakit/lib/help_chrome.lua
 -rw-r--r--	root/root	usr/share/luakit/lib/hide_scrollbars.lua
 -rw-r--r--	root/root	usr/share/luakit/lib/history.lua
@@ -91,6 +93,7 @@ drwxr-xr-x	root/root	usr/share/luakit/lib/lousy/widget/
 -rw-r--r--	root/root	usr/share/luakit/lib/styles.lua
 -rw-r--r--	root/root	usr/share/luakit/lib/tab_favicons.lua
 -rw-r--r--	root/root	usr/share/luakit/lib/tabhistory.lua
+-rw-r--r--	root/root	usr/share/luakit/lib/tabmenu.lua
 -rw-r--r--	root/root	usr/share/luakit/lib/taborder.lua
 -rw-r--r--	root/root	usr/share/luakit/lib/undoclose.lua
 -rw-r--r--	root/root	usr/share/luakit/lib/unique_instance.lua
