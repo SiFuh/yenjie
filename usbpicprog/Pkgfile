@@ -4,23 +4,19 @@
 # Depends on:   libusb wxgtk3
 
 name=usbpicprog
-version=0.6.0
-release=1
-source=(https://sourceforge.net/projects/${name}/files/${name}-software/${name}-${version}-software/${name}-${version}.tar.gz
-https://sourceforge.net/projects/${name}/files/${name}-firmware/firmware-${version}.zip)
+version=1.0.8
+release=3
+source=(https://launchpad.net/~fransschreuder1/+archive/ubuntu/${name}-stable/+sourcefiles/${name}/${version}-${release}/${name}_${version}.orig.tar.gz
+)
 
 build() {
 
   cd "${name}"-"${version}"
 
-  sed -i 's/if (fp==NULL)/if (!fp.is_open())/' src/hexfile.cpp
-
   ./configure --prefix=/usr
 
   make 
   make DESTDIR="${PKG}" install
-
-  cp "${SRC}"/*.hex  "${PKG}"/usr/share/usbpicprog/
 
   rm -rf "${PKG}"/usr/share/locale
   rm -rf "${PKG}"/usr/doc
