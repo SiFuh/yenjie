@@ -4,7 +4,7 @@
 # Depends on:  libusb-compat libftdi hidapi
 
 name=openocd
-version=0.10.0
+version=0.11.0
 release=1
 source=(https://sourceforge.net/projects/${name}/files/${name}/${version}/${name}-${version}.tar.bz2)
 
@@ -12,50 +12,12 @@ build() {
 
   cd "${name}"-"${version}"
 
-  libtoolize -vif
-  autoreconf -vif
+#  libtoolize -vif
+#  autoreconf -vif
 
   ./configure --prefix=/usr               \
               --disable-werror            \
-              --mandir=/usr/share/man     \
-              --enable-ftdi               \
-              --enable-aice               \
-              --enable-dummy              \
-              --enable-ulink              \
-              --enable-osbdm              \
-              --enable-rlink              \
-              --enable-jlink              \
-              --enable-stlink             \
-              --enable-ep93xx             \
-              --enable-presto             \
-              --enable-verbose            \
-              --enable-parport            \
-              --enable-ti-icdi            \
-              --enable-gw16012            \
-              --enable-vsllink            \
-              --enable-usbprog            \
-              --enable-jtag_vpi           \
-              --enable-openjtag           \
-              --enable-opendous           \
-              --enable-buspirate          \
-              --enable-sysfsgpio          \
-              --enable-cmsis-dap          \
-              --enable-armjtagew          \
-              --enable-at91rm9200         \
-              --enable-doxygen-pdf        \
-              --enable-bcm2835gpio        \
-              --enable-usb-blaster        \
-              --enable-amtjtagaccel       \
-              --enable-silent-rules       \
-              --enable-usb-blaster-2      \
-              --enable-zy1000-master      \
-              --enable-remote-bitbang     \
-              --enable-parport-giveio     \
-              --enable-malloc-logging     \
-              --enable-verbose-usb-io     \
-              --enable-verbose-jtag-io    \
-              --enable-verbose-usb-comms  \
-              --enable-dependency-tracking
+              --mandir=/usr/share/man     
 
   make
   make DESTDIR="${PKG}" install
