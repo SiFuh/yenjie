@@ -499,8 +499,8 @@ f:f34fc2cc6efdf9f2415bd02bfcedaa6d:rtl8814au-dkms/.signature
 f:46df66c17b70fd49d244fa1202b71a04:otter-browser/.footprint
 f:e22f9de7417f9a10d06f10287586b00e:otter-browser/Pkgfile
 f:559fcc37274ffb37be5cc8d49610c0cb:otter-browser/.signature
-f:f493aa63155eac74dd8f9b7ad72c40ce:binwalk/.footprint
-f:d9782fb21f464a7f251234114ba5606a:binwalk/.signature
+f:40e1d9e127ab0a5439b83b94b5b086ec:binwalk/.footprint
+f:75d1105e3ba7d0330ac057ecc132838e:binwalk/.signature
 f:a295fc99f4f73391abcf45ed6de653c5:binwalk/Pkgfile
 f:53405d7c8c90cb40d7a9e29d6a790a57:hashcat/.signature
 f:decb610afdc4d66839cb7ec734bd54ba:hashcat/.footprint
