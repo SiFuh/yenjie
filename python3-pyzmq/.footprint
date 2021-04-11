@@ -2,16 +2,17 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python3.9/
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/
-drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/pyzmq-20.0.0-py3.9.egg-info/
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/pyzmq-20.0.0-py3.9.egg-info/PKG-INFO
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/pyzmq-20.0.0-py3.9.egg-info/SOURCES.txt
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/pyzmq-20.0.0-py3.9.egg-info/dependency_links.txt
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/pyzmq-20.0.0-py3.9.egg-info/not-zip-safe
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/pyzmq-20.0.0-py3.9.egg-info/requires.txt
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/pyzmq-20.0.0-py3.9.egg-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/pyzmq-22.0.3-py3.9.egg-info/
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/pyzmq-22.0.3-py3.9.egg-info/PKG-INFO
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/pyzmq-22.0.3-py3.9.egg-info/SOURCES.txt
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/pyzmq-22.0.3-py3.9.egg-info/dependency_links.txt
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/pyzmq-22.0.3-py3.9.egg-info/not-zip-safe
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/pyzmq-22.0.3-py3.9.egg-info/requires.txt
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/pyzmq-22.0.3-py3.9.egg-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/zmq/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/__init__.pxd
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/__init__.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/__init__.pyi
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/zmq/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/__pycache__/__init__.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/__pycache__/_future.cpython-39.pyc
@@ -36,6 +37,7 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/zmq/auth/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/auth/thread.py
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/zmq/backend/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/backend/__init__.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/backend/__init__.pyi
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/zmq/backend/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/backend/__pycache__/__init__.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/backend/__pycache__/select.cpython-39.pyc
@@ -43,7 +45,6 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/zmq/backend/cffi/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/backend/cffi/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/zmq/backend/cffi/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/backend/cffi/__pycache__/__init__.cpython-39.pyc
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/backend/cffi/__pycache__/_cffi.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/backend/cffi/__pycache__/_poll.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/backend/cffi/__pycache__/constants.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/backend/cffi/__pycache__/context.cpython-39.pyc
@@ -53,9 +54,7 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/zmq/backend/cffi/__pycache_
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/backend/cffi/__pycache__/socket.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/backend/cffi/__pycache__/utils.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/backend/cffi/_cdefs.h
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/backend/cffi/_cffi.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/backend/cffi/_poll.py
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/backend/cffi/_verify.c
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/backend/cffi/constants.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/backend/cffi/context.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/backend/cffi/devices.py
@@ -63,6 +62,7 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/zmq/backend/cffi/__pycache_
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/backend/cffi/message.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/backend/cffi/socket.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/backend/cffi/utils.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/backend/constants.pyi
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/zmq/backend/cython/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/backend/cython/__init__.pxd
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/backend/cython/__init__.py
@@ -170,6 +170,7 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/zmq/log/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/log/__pycache__/__main__.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/log/__pycache__/handlers.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/log/handlers.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/py.typed (EMPTY)
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/zmq/ssh/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/ssh/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/zmq/ssh/__pycache__/
@@ -180,6 +181,7 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/zmq/ssh/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/ssh/tunnel.py
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/zmq/sugar/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/sugar/__init__.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/sugar/__init__.pyi
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/zmq/sugar/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/sugar/__pycache__/__init__.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/sugar/__pycache__/attrsettr.cpython-39.pyc
@@ -193,6 +195,7 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/zmq/sugar/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/sugar/__pycache__/version.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/sugar/attrsettr.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/sugar/constants.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/sugar/constants.pyi
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/sugar/context.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/sugar/frame.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/sugar/poll.py
@@ -225,6 +228,7 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/zmq/tests/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/tests/__pycache__/test_monitor.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/tests/__pycache__/test_monqueue.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/tests/__pycache__/test_multipart.cpython-39.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/tests/__pycache__/test_mypy.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/tests/__pycache__/test_pair.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/tests/__pycache__/test_poll.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/tests/__pycache__/test_proxy_steerable.cpython-39.pyc
@@ -259,6 +263,7 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/zmq/tests/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/tests/test_monitor.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/tests/test_monqueue.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/tests/test_multipart.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/tests/test_mypy.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/tests/test_pair.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/tests/test_poll.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/tests/test_proxy_steerable.py
@@ -281,7 +286,6 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/zmq/utils/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/utils/__pycache__/interop.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/utils/__pycache__/jsonapi.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/utils/__pycache__/monitor.cpython-39.pyc
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/utils/__pycache__/sixcerpt.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/utils/__pycache__/strtypes.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/utils/__pycache__/win32.cpython-39.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/utils/__pycache__/z85.cpython-39.pyc
@@ -297,7 +301,6 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/zmq/utils/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/utils/monitor.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/utils/mutex.h
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/utils/pyversion_compat.h
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/utils/sixcerpt.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/utils/strtypes.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/utils/win32.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/zmq/utils/z85.py
