@@ -476,8 +476,8 @@ f:13ef7ee3c43b07a87c9fce2d1b745a11:zeromq/Pkgfile
 f:365c168edf622d05211d92a382f55032:yenjie.httpup
 f:6bbec22c453cce2269312934c1e2fbb5:alizams-bin/alizams_sh.patch
 f:1ed99cac256d4291f06a0a57edce0896:alizams-bin/.footprint
-f:57d443662063378682a0f3cf8a6f5447:alizams-bin/.signature
-f:7e8a28eb1b90a1cf8efe9fa60d0f5c29:alizams-bin/Pkgfile
+f:95c500569711e423fca48a209d49984d:alizams-bin/.signature
+f:39fd7382ebbc1a51849ab16a41c6ce3b:alizams-bin/Pkgfile
 f:fb1bed63121bdb6882f0e0ee62b0c8cb:libopenshot-audio-git/.footprint
 f:9cd09a6523bb6726fcb093dc600f18e0:libopenshot-audio-git/Pkgfile
 f:cd0ea4f1d4297ccb7e841ae0c5fa4511:libopenshot-audio-git/.signature
