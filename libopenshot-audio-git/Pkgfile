@@ -6,8 +6,8 @@
 
 name=libopenshot-audio-git
 _name=libopenshot-audio
-version=0.2.0-d333715
-sversion=d333715410d3f717122b6feaed4a9e8e13cf85ee
+version=0.2.0-ad14457
+sversion=ad1445750b544c91c04b1d27d312abe1a414e58a
 release=1
 source=()
 gsource=(https://github.com/OpenShot/${_name}/)
