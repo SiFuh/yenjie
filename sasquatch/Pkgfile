@@ -5,7 +5,7 @@
 
 name=sasquatch
 version=4.3
-sversion=3e0cc40fc6dbe32bd3a5e6c553b3320d5d91ceed
+sversion=bd864a1b037bf57ca7d64a292a60ba0d6459611f
 release=1
 source=(https://downloads.sourceforge.net/project/squashfs/squashfs/squashfs4.3/squashfs4.3.tar.gz \
         read_fragment_table_n_stack_overflow-fix.patch)
