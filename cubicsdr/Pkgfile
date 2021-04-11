@@ -5,8 +5,8 @@
 # Optional:     pulseaudio
 
 name=cubicsdr
-version=0.2.5-0b2b908
-sversion=0b2b90848de229b926703e18b53b3b9e5cd7c147
+version=0.2.5-19b1ecd
+sversion=19b1ecd7c26f2311dd883b62a8b9c2dfca9ec31b
 release=1
 source=(https://github.com/cjcliffe/CubicSDR/archive/${sversion}/${name}-${version}.tar.gz)
 
