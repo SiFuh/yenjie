@@ -4,7 +4,7 @@
 # Depends on:   dkms git
 
 name=tuxedo-keyboard-dkms
-version=3.0.3
+version=3.0.4
 release=2
 source=(https://github.com/tuxedocomputers/${name%-*}/archive/v${version}/${name}-${version}.tar.gz \
         tuxedo_keyboard_conf.patch tuxedo-keys)
