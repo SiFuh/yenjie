@@ -205,7 +205,7 @@ f:e7a54b3346a7fdd8bd19bbfc1baed293:gnuradio/.signature
 f:5357cdc299522d7eb13caa6e54c874c9:gnuradio/.footprint
 f:87ce7dc428ed7a028db5c7ec1ebfc95d:gnuradio/README
 f:d7dd136f670f4cdfd669df8d24ddbc2d:gnuradio/gnuradio_boost.patch
-f:59a9ecbc754a587df0c95791bb38b131:gnuradio/Pkgfile
+f:b5da5e9ee36fbbe4b422d8ff3e2b77fe:gnuradio/Pkgfile
 f:7ebbd145c8442f524fe3ef59972ce288:gqrx/gqrx_boost.patch
 f:23c323924559f7d190f8ee641fae287c:gqrx/.signature
 f:72d4acb2dfc4a12c7f008f6794dfab05:gqrx/Pkgfile-pulseaudio
@@ -379,9 +379,9 @@ f:f17a39804d0c930b8060830ce5c1960a:supertuxkart-bin/run_game.patch
 f:ffb40b51df7c8b2fa3b4db0bb006a1a8:supertuxkart-bin/.footprint
 f:242aa87d99d45857c72475274e5f0034:supertuxkart-bin/Pkgfile
 f:c4f61bec7d7d7372dc81ff5f39a3e44e:supertuxkart-bin/.signature
-f:fd3279180b22b877685b3d5884d0abfc:telegram-bin/Pkgfile
+f:d5dce3bc89d816800dd1ad08cf499561:telegram-bin/Pkgfile
 f:51ee9b11b51467edc91f48f112312261:telegram-bin/.footprint
-f:7b98efc5677d9c96f4e04a1cc447aed6:telegram-bin/.signature
+f:2b373a6cd1f98c22a7b47be99e4a6b9c:telegram-bin/.signature
 f:d48ca8fe2ffc06a261e0bd0e8316b49c:rxvt-unicode/.footprint
 f:cde0eae2e334cb0725cc7f4a84f17d75:rxvt-unicode/.signature
 f:baf72ebd79dfaeaa18bcb331246b27d8:rxvt-unicode/Pkgfile
