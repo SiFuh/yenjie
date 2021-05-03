@@ -5,8 +5,8 @@
 # Depends on:  	virtualbox-bin
 
 name=virtualbox-extpack
-version=6.1.18
-sversion=142142
+version=6.1.22
+sversion=144080
 release=1
 source=(https://download.virtualbox.org/virtualbox/$version/Oracle_VM_VirtualBox_Extension_Pack-$version-$sversion.vbox-extpack)
 
