@@ -205,7 +205,7 @@ f:e7a54b3346a7fdd8bd19bbfc1baed293:gnuradio/.signature
 f:5357cdc299522d7eb13caa6e54c874c9:gnuradio/.footprint
 f:87ce7dc428ed7a028db5c7ec1ebfc95d:gnuradio/README
 f:d7dd136f670f4cdfd669df8d24ddbc2d:gnuradio/gnuradio_boost.patch
-f:59a9ecbc754a587df0c95791bb38b131:gnuradio/Pkgfile
+f:822f8050f534ed69b2fe7eec72abf23f:gnuradio/Pkgfile
 f:7ebbd145c8442f524fe3ef59972ce288:gqrx/gqrx_boost.patch
 f:23c323924559f7d190f8ee641fae287c:gqrx/.signature
 f:72d4acb2dfc4a12c7f008f6794dfab05:gqrx/Pkgfile-pulseaudio
