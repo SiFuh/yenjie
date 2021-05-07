@@ -554,9 +554,9 @@ f:47399df952e4a34f9dad208787c26bbc:masscan/.signature
 f:293e879e3b0a235b9e860c814ccb4d9d:seamonkey/Pkgfile
 f:65df2d27446f73bcd02f28a08da1ec9d:seamonkey/.footprint
 f:7aad795abc0be8cd29ea39ace787b1d9:seamonkey/.signature
-f:a4acc0800d67da3cd941c9234e744db8:geoip/.signature
-f:742962a69bd846184a4b73baa12b34ca:geoip/Pkgfile
-f:11c43eae6f22472ba255c6916fe32775:geoip/.footprint
+f:70149de892c3a162e2e6664e214651cb:geoip/.signature
+f:f4a64028c448cbbcb6b3306802905f63:geoip/Pkgfile
+f:b18908ca6dd8b8cf88ec6498b04400ac:geoip/.footprint
 f:333dcd72db5d3243122e7330982a1aad:fluxbox/.footprint
 f:469e54d37fc08e31ab6697997af232cd:fluxbox/.signature
 f:c290e7d925cb5b9e591bc37e8c00beff:fluxbox/Pkgfile

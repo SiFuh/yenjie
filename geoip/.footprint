@@ -13,7 +13,8 @@ lrwxrwxrwx	root/root	usr/lib/libGeoIP.so.1 -> libGeoIP.so.1.6.12
 -rwxr-xr-x	root/root	usr/lib/libGeoIP.so.1.6.12
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/geoip.pc
-drwxr-xr-x	root/root	usr/man/
-drwxr-xr-x	root/root	usr/man/man1/
--rw-r--r--	root/root	usr/man/man1/geoiplookup.1.gz
--rw-r--r--	root/root	usr/man/man1/geoiplookup6.1.gz
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/geoiplookup.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/geoiplookup6.1.gz
