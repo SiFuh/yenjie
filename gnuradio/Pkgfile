@@ -5,23 +5,21 @@
 # Depends on:   git cmake boost cppunit python3-mako log4cpp python3 swig python3-numpy python3-scipy cheetah-template pygtk fftw gsl qt5 qwt python3-pyqt5 python3-lxml portaudio jack python3-yaml python3-gobject python3-cairo python3-click gsm libsdl gtk3 uhd volk zstd
 
 name=gnuradio
-version=3.9.0.0-ffe8c74
-sversion=ffe8c748077b33d9dd908f487572c2cc08d46bcf
+version=3.9.1.0-b5c56ff
+sversion=b5c56ff4ccf9bf39fad8c54a9b00b56b118f01d4
 release=1
-source=(https://github.com/${name}/${name}/archive/${sversion}/${name}-${version}.tar.gz
-        FindQwt_cmake.patch
-        ${name}_boost.patch)
+source=(https://github.com/${name}/${name}/archive/${sversion}/${name}-${version}.tar.gz)
 
 build() {
 
-  patch -p0 -d "${name}"-"${sversion}" -i "${SRC}"/FindQwt_cmake.patch
-  patch -p2 -d "${name}"-"${sversion}" -i "${SRC}"/"${name}"_boost.patch
+  # Disabled GR_UHD due to compilation failure against boost 1.76.0
 
   cmake -S "${name}"-"${sversion}" -B build -G Ninja \
         -D ENABLE_GRC=ON                             \
+        -D ENABLE_GR_UHD=OFF                         \
         -D GENERATE_LATEX=NO                         \
         -D ENABLE_DOXYGEN=OFF                        \
-        -D ENABLE_GR_QTGUI=ON                        \
+        -D ENABLE_GR_QTGUI=OFF                       \
         -D ENABLE_GR_TRELLIS=OFF                     \
         -D ENABLE_GR_DOXYGEN=OFF                     \
         -D CMAKE_BUILD_TYPE=Release                  \
@@ -29,7 +27,8 @@ build() {
         -D ENABLE_GR_CTRLPORT=OFF                    \
         -D CMAKE_INSTALL_PREFIX:PATH=/usr            \
         -D PYTHON_EXECUTABLE=/usr/bin/python3        \
-        -D GR_PKG_LIBEXEC_DIR=/usr/lib/"${name}" 
+        -D GR_PKG_LIBEXEC_DIR=/usr/lib/"${name}"     \
+        -D pybind11_DIR=/usr/lib/python3.9/site-packages/pybind11/share/cmake/pybind11/
 
   cmake --build build
 

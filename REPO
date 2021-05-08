@@ -200,12 +200,12 @@ f:6be6d5bca974a155f989a3fe94828042:flashrom/.footprint
 f:8e68bff996887cddd15f715b9bbfdc9a:fping/.signature
 f:2a540487658c78f914aae1b16588269d:fping/.footprint
 f:9b1d9a9341cf15a79794d0d4747b6d02:fping/Pkgfile
-f:d7dd136f670f4cdfd669df8d24ddbc2d:gnuradio/gnuradio_boost.patch
-f:5357cdc299522d7eb13caa6e54c874c9:gnuradio/.footprint
 f:0fc83c222264fff789d3d99b15440b80:gnuradio/FindQwt_cmake.patch
-f:e7a54b3346a7fdd8bd19bbfc1baed293:gnuradio/.signature
-f:59a9ecbc754a587df0c95791bb38b131:gnuradio/Pkgfile
+f:883c524cdea68e2f3702a9b34b9bad84:gnuradio/.signature
+f:1fe2fe529004099ad9cc6079c56c5183:gnuradio/.footprint
 f:87ce7dc428ed7a028db5c7ec1ebfc95d:gnuradio/README
+f:d7dd136f670f4cdfd669df8d24ddbc2d:gnuradio/gnuradio_boost.patch
+f:c6126e370538857e3ca9869254933f16:gnuradio/Pkgfile
 f:2322cd49f933c4e0588083b4d18b2566:gqrx/.footprint
 f:23c323924559f7d190f8ee641fae287c:gqrx/.signature
 f:3c21388120e68fa3979218bf76de5435:gqrx/Pkgfile
