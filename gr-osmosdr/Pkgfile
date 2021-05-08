@@ -5,23 +5,24 @@
 # Depends on:   gnuradio volk rtl-sdr cmake boost swig
 
 name=gr-osmosdr
-version=0.2.0-af2fda2
-sversion=af2fda22b3b3745520ef38e9aaa757484871ee0c
-release=3
+version=0.2.3-a100eb0
+sversion=a100eb024c0210b95e4738b6efd836d48225bd03
+release=1
 source=(https://github.com/osmocom/${name}/archive/${sversion}/${name}-${version}.tar.gz
         gr-osmosdr_boost.patch)
 
 build () {
 
-  patch -p2 -d "${name}"-"${sversion}" -i "${SRC}"/gr-osmosdr_boost.patch
+#  patch -p2 -d "${name}"-"${sversion}" -i "${SRC}"/gr-osmosdr_boost.patch
 
-  cmake -S "${name}"-"${sversion}" -B build -G Ninja   \
-        -D Boost_NO_BOOST_CMAKE=ON                     \
-        -D CMAKE_BUILD_TYPE=Release                    \
-        -D CMAKE_INSTALL_PREFIX:PATH=/usr              \
-        -D PYTHON_EXECUTABLE=/usr/bin/python3          \
-        -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"    \
-        -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -DNDEBUG"
+  cmake -S "${name}"-"${sversion}" -B build -G Ninja    \
+        -D Boost_NO_BOOST_CMAKE=ON                      \
+        -D CMAKE_BUILD_TYPE=Release                     \
+        -D CMAKE_INSTALL_PREFIX:PATH=/usr               \
+        -D PYTHON_EXECUTABLE=/usr/bin/python3           \
+        -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"     \
+        -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -DNDEBUG" \
+        -D pybind11_DIR=/usr/lib/python3.9/site-packages/pybind11/share/cmake/pybind11/
 
   cmake --build build
 

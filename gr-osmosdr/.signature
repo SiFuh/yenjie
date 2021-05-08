@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uM/rGAs8lC6umwfh3Mubr635LUJaSYmBOWBpjuRziNIzi7gLvDYB99eqVEl40bZcA8hkPRd9bpc3IzkyuFt6QAI=
-SHA256 (Pkgfile) = 67e69f3165d4996b701ef5942be6ce55b893a56380f260d167c62747e16e32d1
-SHA256 (.footprint) = e5b325595851abb94c547d2d2d89dbfae12afe4fadae4d7500f2b542e8d96542
-SHA256 (gr-osmosdr-0.2.0-af2fda2.tar.gz) = fa30343a92f483dd136e927e044bb4704261021a76ad13543c4c4038a9775686
+RWQ0NN0w0eo0uPksbihRwbqe/r17ecK6JntRywKwE9Vgvxusa8DQHMG7tgYo+gGJSgEcglwIHOTfDy1DxN1VY+/DCHgw/txOZQk=
+SHA256 (Pkgfile) = 57dc5467d7594a16e0406793dbed5ca7b1dab318554439e7469e968e2a1518ec
+SHA256 (.footprint) = 59fa21dac6d3b30dda6d8bba9aeb5162c6fbbcc09d7b8de0fb7f8fdd55ddb5fb
+SHA256 (gr-osmosdr-0.2.3-a100eb0.tar.gz) = a3cc85dd708d06d234ff4ab7f274a4a49db6427eed1e7e58711a1b61a4fa4de1
 SHA256 (gr-osmosdr_boost.patch) = c84e8a3586a17799b78efe5c400e7d0bf3bda6feb6ae001439fc969cafe20c49
