@@ -462,8 +462,8 @@ while true; do
                            --cancel-label "Exit"                                       \
                            --menu "\n${MESSAGE1} [${KERNEL}]" "${HEIGHT}" "${WIDTH}" 9 \
                            e "Run Everything"                                          \
-                           b "Boot Loader Menu"                                        \
                            ${DRACUT_MENU}                                              \
+                           b "Boot Loader Menu"                                        \
                            l "Command Log"                                             \
                            c "Configure CKUT"                                          \
                            r "Reload Configuration"                                    \

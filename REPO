@@ -157,11 +157,11 @@ f:deaff8b1646089d6c2c737dcbc540255:circuit-simulator/circuit.desktop
 f:eca82df325357ba7f61f4a370e26bebe:circuit-simulator/.signature
 f:5525332e65354c72c704893a0db917c8:circuit-simulator/.footprint
 f:15396ac993dc06963b97b9c803478f36:circuit-simulator/Pkgfile
-f:7dfd3d17fc36f342a458c0d88b89cd9d:ckut/.signature
+f:0140c7c8a9978b4a8edb35a4e90d6506:ckut/.signature
 f:a59f97f4b807deba4dd6f622df67f0e6:ckut/ckut.conf
-f:0470897319555664ed637da94d43d215:ckut/Pkgfile
+f:bfa07b29207273501e4c2a41a1777bd0:ckut/Pkgfile
 f:15ae4f716f065adfcf345ae8038c1d47:ckut/.footprint
-f:a12d83acfe46f599aa2193f341d847c3:ckut/ckut-2.0.bash
+f:ed6c0748ab873b409bae58c0d1f292f0:ckut/ckut-2.0.bash
 f:3a0315f7f4cb00f3e10352101cc5593b:cppzmq/.footprint
 f:937c09f8e1efd8ef22dab11db22220f5:cppzmq/Pkgfile
 f:f8a814933a461f701c742993e6b7f58d:cppzmq/.signature
@@ -394,9 +394,9 @@ f:28f6a167e6eb0d5b1f0c8f73b65faab5:tuxedo-keyboard-dkms/Pkgfile
 f:c5d0c716ae5720a3cd7464a9f7aa49da:udiskie/Pkgfile
 f:b22bdedc59ec3773a4758e4cbd8c88d0:udiskie/.signature
 f:45d5023f897c9089e9981fe7319991ae:udiskie/.footprint
+f:4a98a4a3ec9c8bcf58af7ea6a0c03658:uhd/.footprint
 f:604dec70099e073b0552dcdd30baf271:uhd/.signature
 f:20bf491e73066810c6ea3f7e01ea11ba:uhd/Pkgfile
-f:4a98a4a3ec9c8bcf58af7ea6a0c03658:uhd/.footprint
 f:b2fea6e7f8d587d7365b8eb451033cf2:usbpicprog/.footprint
 f:5f90048e4e3e96319c9cdaf459612984:usbpicprog/Pkgfile
 f:ae5d3c9aab2b1f1fd361d992a3444815:usbpicprog/.signature
