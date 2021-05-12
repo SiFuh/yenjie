@@ -285,11 +285,11 @@ f:4a28373ca2954d1607790a489c85f92b:nftables/.signature
 f:50420c3a4de10a8e3a7f1dc2f3bb2daa:ntop/.footprint
 f:ac69eb191cd328ad0116c2b969c66158:ntop/Pkgfile
 f:ef6a3569db43dcac87b4f55e77d43638:ntop/.signature
-f:8a2974ed60512d77a08455e2cf1d6c8a:nvidia-dkms/.signature
-f:8a28130056a304bbd5ad9b9471093caa:nvidia-dkms/.footprint
+f:c3c03739d5ff146d00afced0fba67a19:nvidia-dkms/.signature
+f:8eff2eea817b6b5ab51779a7aa621baa:nvidia-dkms/.footprint
 f:4f8b72915c1f46bc2f93d5003dbd54a3:nvidia-dkms/pre-install
 f:9ec4dca5eb08cfa66a3b4ffd125bca93:nvidia-dkms/README
-f:d4db02999dda70895ba08ce745df1161:nvidia-dkms/Pkgfile
+f:b8a1c9a8349019e4f63639e435a508e7:nvidia-dkms/Pkgfile
 f:2097834b5b5f1fca0b82dd5518e11cb6:nvidia-dkms/10-nvidia-drm-outputclass.conf
 f:4511024cc556d0c6e7c467b6789524e2:nvidia-dkms/90-nvidia-uvm.rules
 f:d5516971ee9fa02ae478dc0af6f28d6e:openocd/.footprint
