@@ -1,0 +1,22 @@
+# Description:  Realtek 8812au USB Wireless Driver (Aircrack Mod)
+# URL:          https://github.com/aircrack-ng/rtl8812au
+# Packager:
+# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Depends on:   dkms git
+
+name=rtl8812au
+version=5.6.4.2-3a64331
+release=1
+sversion=3a64331a1c809bbbc21eca63b825970f213ec5ac
+source=(https://github.com/aircrack-ng/${name}/archive/${sversion}/${name}-${version}.tar.gz)
+
+build() {
+
+  cd "${name}"-"${sversion}"  
+
+  make
+
+  mkdir -p "${PKG}"/lib/modules/`uname -r`/kernel/drivers/net/wireless/
+  install -p -m 644 88XXau.ko -t "${PKG}"/lib/modules/`uname -r`/kernel/drivers/net/wireless/
+
+}

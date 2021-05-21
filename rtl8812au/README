@@ -1,0 +1,62 @@
+NOTE
+
+  Use "ip" and "iw" instead of "ifconfig" and "iwconfig"
+
+  For setting monitor mode
+
+      1. Fix problematic interference in monitor mode.
+
+      $ airmon-ng check kill
+
+  You may also uncheck the box "Automatically connect to this network when it is 
+  avaiable" in nm-connection-editor. This only works if you have a saved wifi 
+  connection.
+
+      2. Set interface down
+
+      $ sudo ip link set wlan0 down
+
+      3. Set monitor mode
+
+      $ sudo iw dev wlan0 set type monitor
+
+      4. Set interface up
+
+      $ sudo ip link set wlan0 up
+
+  For setting TX power
+
+      $ sudo iw wlan0 set txpower fixed 3000
+
+
+  LED control, statically by module parameter in /etc/modprobe.d/8812au.conf or 
+  wherever, value can be 0 or 1, for example:
+
+      options 88XXau rtw_led_ctrl=0
+
+  Or dynamically by writing to /proc/net/rtl8812au/$(interface name)/led_ctrl, 
+  value can be 0 or 1, for example:
+
+      $ echo "0" > /proc/net/rtl8812au/$(your interface name)/led_ctrl
+
+
+  Check current value:
+
+      $ cat /proc/net/rtl8812au/$(your interface name)/led_ctrl
+
+
+  USB Mode Switch, 0: doesn't switch, 1: switch from usb2.0 to usb 3.0 2: switch 
+  from usb3.0 to usb 2.0
+
+      $ rmmod 88XXau
+      $ modprobe 88XXau rtw_switch_usb_mode=<int> 
+
+
+  NetworkManager, newer versions of NetworkManager switches to random MAC address. 
+  Some users would prefer to use a fixed address. Simply add these lines below at
+  the end of file /etc/NetworkManager/NetworkManager.conf and restart 
+  NetworkManager.
+
+      [device]
+          wifi.scan-rand-mac-address=no
+
