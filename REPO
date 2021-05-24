@@ -118,6 +118,7 @@ d:fluxbox
 d:iotop
 d:lumina-desktop
 d:rtl8812au
+d:emacs
 f:e46a71890e9af53cc069b1c1442b35c7:lshw/.signature
 f:143d2604bf77fb4c9de17df37d92ed29:lshw/.footprint
 f:39f2f873d0ba02fa29236e4cba30eecc:lshw/Pkgfile
@@ -575,3 +576,6 @@ f:7d0034e9aabd0a6cf3511e1b81d65ce6:rtl8812au/Pkgfile
 f:ee5bda8d281abaf82ea474589e408eb4:rtl8812au/post-install
 f:c6642c6540cec6bf620c3e059e08fb42:rtl8812au/.footprint
 f:d4eaf5261687f8307206afbc180dc751:rtl8812au/.signature
+f:e5d0f16e03fe2f439853e53faff23275:emacs/.footprint
+f:69c7a2650751703f85da36a2697bfafa:emacs/Pkgfile
+f:722086dba475d1906d5b5e4b622e148e:emacs/.signature

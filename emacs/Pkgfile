@@ -1,0 +1,44 @@
+# Description:   GNU emacs - an extensible text editor (No X11)
+# URL:           https://gnu.org/software/emacs/
+# Maintainer:    Lin SiFuh, #crux at freenode dot net
+# Depends on:
+
+name=emacs
+version=27.1
+release=1
+source=(http://ftpmirror.gnu.org/${name}/${name}-${version}.tar.xz)
+
+build() {
+
+  cd "${name}"-"${version}"
+
+  ./configure --without-x                                     \
+              --prefix=/usr                                   \
+              --with-module                                   \
+              --without-gconf                                 \
+              --without-libotf                                \
+              --without-selinux                               \
+              --without-m17n-flt                              \
+              --without-gsettings                             \
+              --disable-libsystemd                            \
+              --with-gnutls=ifavailable                       \
+              --libexecdir=/usr/lib/"${name}"                 \
+              --infodir=/usr/share/"${name}"/"${version}"/info
+
+  make
+  make DESTDIR="${PKG}" install
+
+  find "${PKG}"/usr/share/"${name}"/"${version}" -exec chown root:root '{}' \;
+
+  find "${PKG}" \(\
+       -name AUTHORS  -o \
+       -name COPYING  -o \
+       -name '*NEWS*' -o \
+       -name '*TODO*' -o \
+       -name '*README*'  \
+       \) -exec rm -rf '{}' \; || true
+
+  rm -rf "${PKG}"/usr/share/doc # \
+         # "${PKG}"/usr/share/info
+
+}
