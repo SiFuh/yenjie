@@ -385,8 +385,8 @@ f:433d558c648b797afc570748c0af62fd:telegram-bin/Pkgfile
 f:51ee9b11b51467edc91f48f112312261:telegram-bin/.footprint
 f:a0927cced3bb4b9920d4299111cffea2:telegram-bin/.signature
 f:d48ca8fe2ffc06a261e0bd0e8316b49c:rxvt-unicode/.footprint
-f:cde0eae2e334cb0725cc7f4a84f17d75:rxvt-unicode/.signature
-f:baf72ebd79dfaeaa18bcb331246b27d8:rxvt-unicode/Pkgfile
+f:76d39ad40cc94ffb6d251a2a768b73ed:rxvt-unicode/.signature
+f:f919e12ec1341ce8d91e5e0e274b6430:rxvt-unicode/Pkgfile
 f:5d325e6d81213b0991fdb144221883d1:tuxedo-keyboard-dkms/README
 f:60cb28a71e6adf3d211cd4eb3b637c9b:tuxedo-keyboard-dkms/tuxedo-keys
 f:dae9c6c9a55b4bb613c4829246e09c53:tuxedo-keyboard-dkms/tuxedo_keyboard_conf.patch
