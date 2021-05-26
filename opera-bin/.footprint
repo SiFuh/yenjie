@@ -193,6 +193,7 @@ drwxr-xr-x	root/root	opt/lib/opera/resources/promotion_extension_1/_locales/zh-T
 drwxr-xr-x	root/root	opt/lib/opera/resources/standard_themes/
 -rw-r--r--	root/root	opt/lib/opera/resources/standard_themes/default_dark_theme.zip
 -rw-r--r--	root/root	opt/lib/opera/resources/standard_themes/default_theme.zip
+-rw-r--r--	root/root	opt/lib/opera/resources/video_conference_popout.json
 drwxr-xr-x	root/root	opt/lib/opera/resources/virtual_card/
 drwxr-xr-x	root/root	opt/lib/opera/resources/virtual_card/_locales/
 drwxr-xr-x	root/root	opt/lib/opera/resources/virtual_card/_locales/en/
