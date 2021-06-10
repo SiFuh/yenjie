@@ -362,8 +362,8 @@ f:ceb74bd5e8ed08670dc31a0f08c780fa:secure-delete/Pkgfile
 f:0b8fb618edd01dda3d4e88d02da0571e:secure-delete/.signature
 f:7efc27ea342b0fa44500967da1c6c986:secure-delete/.footprint
 f:3bdad15da3c00e5ff67e28788a46667a:skypeforlinux-bin/.footprint
-f:328a51867200ab1e8738249a52a32249:skypeforlinux-bin/.signature
-f:be16e5c9e735c534e750b6c5be46e92a:skypeforlinux-bin/Pkgfile
+f:b5c1bcd0c5fa65bde565bf033096e534:skypeforlinux-bin/.signature
+f:eba3a80b97e0ce9f392e49332b524b92:skypeforlinux-bin/Pkgfile
 f:ce166d5524eea83ef45ee64a3ee8e0d8:skypeforlinux-bin/README
 f:19f09c78bec2828cfb97b002bcf29f18:smplayer/.signature
 f:90d93dd8ff85ffba45390a0dc09195ee:smplayer/.footprint
@@ -553,7 +553,7 @@ f:d69d95b968ae81f64b144d048f5ec264:masscan/Pkgfile
 f:6c63aa6ff4bba166ab1983e005d1d662:masscan/.footprint
 f:37257ba66c0cb1dbfc250683c02e07bb:masscan/README
 f:47399df952e4a34f9dad208787c26bbc:masscan/.signature
-f:293e879e3b0a235b9e860c814ccb4d9d:seamonkey/Pkgfile
+f:28cdb0e3860e5bd9c88cb2da8d840576:seamonkey/Pkgfile
 f:65df2d27446f73bcd02f28a08da1ec9d:seamonkey/.footprint
 f:7aad795abc0be8cd29ea39ace787b1d9:seamonkey/.signature
 f:70149de892c3a162e2e6664e214651cb:geoip/.signature
