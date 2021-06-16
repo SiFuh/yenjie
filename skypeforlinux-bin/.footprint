@@ -33,7 +33,7 @@ drwxr-xr-x	root/root	opt/share/skypeforlinux/
 -rwxr-xr-x	root/root	opt/share/skypeforlinux/libGLESv2.so
 -rwxr-xr-x	root/root	opt/share/skypeforlinux/libffmpeg.so
 -rwxr-xr-x	root/root	opt/share/skypeforlinux/libvk_swiftshader.so
--rwxr-xr-x	root/root	opt/share/skypeforlinux/libvulkan.so
+-rwxr-xr-x	root/root	opt/share/skypeforlinux/libvulkan.so.1
 -rw-r--r--	root/root	opt/share/skypeforlinux/resources.pak
 drwxr-xr-x	root/root	opt/share/skypeforlinux/resources/
 -rw-r--r--	root/root	opt/share/skypeforlinux/resources/app.asar
