@@ -96,7 +96,6 @@ d:libopenshot-git
 d:openshot-qt-git
 d:libdc1394
 d:rtl8814au-dkms
-d:otter-browser
 d:binwalk
 d:hashcat
 d:win32-essential-codecs
@@ -112,7 +111,6 @@ d:arpspoof
 d:dhcp-spoof
 d:macchanger
 d:masscan
-d:seamonkey
 d:geoip
 d:fluxbox
 d:iotop
@@ -499,9 +497,6 @@ f:9690e352a2bae9aa8b42f86ded7435c3:rtl8814au-dkms/Pkgfile
 f:657809584b57dc40be0ca4da67bed627:rtl8814au-dkms/.SRCINFO
 f:2d7893fd8605aa9bcb9446b577d8b1f6:rtl8814au-dkms/.footprint
 f:81f1ab4b2e6d4de317dd928df180b867:rtl8814au-dkms/.signature
-f:46df66c17b70fd49d244fa1202b71a04:otter-browser/.footprint
-f:e22f9de7417f9a10d06f10287586b00e:otter-browser/Pkgfile
-f:559fcc37274ffb37be5cc8d49610c0cb:otter-browser/.signature
 f:40e1d9e127ab0a5439b83b94b5b086ec:binwalk/.footprint
 f:75d1105e3ba7d0330ac057ecc132838e:binwalk/.signature
 f:a295fc99f4f73391abcf45ed6de653c5:binwalk/Pkgfile
@@ -554,9 +549,6 @@ f:d69d95b968ae81f64b144d048f5ec264:masscan/Pkgfile
 f:6c63aa6ff4bba166ab1983e005d1d662:masscan/.footprint
 f:37257ba66c0cb1dbfc250683c02e07bb:masscan/README
 f:47399df952e4a34f9dad208787c26bbc:masscan/.signature
-f:a1bdeb73754253838937f564a3c18992:seamonkey/Pkgfile
-f:65df2d27446f73bcd02f28a08da1ec9d:seamonkey/.footprint
-f:1e926a52b4db4eb197af57c92ea678d7:seamonkey/.signature
 f:70149de892c3a162e2e6664e214651cb:geoip/.signature
 f:f4a64028c448cbbcb6b3306802905f63:geoip/Pkgfile
 f:b18908ca6dd8b8cf88ec6498b04400ac:geoip/.footprint
