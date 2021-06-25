@@ -1,0 +1,21 @@
+# Description:   GKrellM is a single process stack of system monitors
+# URL:           http://gkrellm.srcbox.net/
+# Maintainer:    Lin SiFuh, #crux at freenode dot net
+# Depends on:    gtk lm_sensors
+
+name=gkrellm
+version=2.3.11
+release=1
+source=(http://gkrellm.srcbox.net/releases/${name}-${version}.tar.bz2)
+
+build() {
+
+  cd "${name}"-"${version}"
+
+  make
+  make DESTDIR="${PKG}" PREFIX=/usr install
+  install -Dm644 server/gkrellmd.conf "${PKG}"/etc/gkrellmd.conf
+
+  rm -rf "${PKG}"/usr/share/locale
+
+}

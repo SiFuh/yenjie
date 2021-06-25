@@ -119,6 +119,7 @@ d:iotop
 d:lumina-desktop
 d:rtl8812au
 d:emacs
+d:gkrellm
 f:e46a71890e9af53cc069b1c1442b35c7:lshw/.signature
 f:143d2604bf77fb4c9de17df37d92ed29:lshw/.footprint
 f:39f2f873d0ba02fa29236e4cba30eecc:lshw/Pkgfile
@@ -579,3 +580,6 @@ f:d4eaf5261687f8307206afbc180dc751:rtl8812au/.signature
 f:e5d0f16e03fe2f439853e53faff23275:emacs/.footprint
 f:69c7a2650751703f85da36a2697bfafa:emacs/Pkgfile
 f:722086dba475d1906d5b5e4b622e148e:emacs/.signature
+f:7bc3b4830e3d4e9f35fa34a6afbb15aa:gkrellm/.footprint
+f:5f522ba3e6f2eb274a56784489ba45c0:gkrellm/.signature
+f:d0cba35ce90c5396c3ca10da8e8391a3:gkrellm/Pkgfile
