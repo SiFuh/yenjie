@@ -395,8 +395,8 @@ f:28f6a167e6eb0d5b1f0c8f73b65faab5:tuxedo-keyboard-dkms/Pkgfile
 f:c5d0c716ae5720a3cd7464a9f7aa49da:udiskie/Pkgfile
 f:b22bdedc59ec3773a4758e4cbd8c88d0:udiskie/.signature
 f:45d5023f897c9089e9981fe7319991ae:udiskie/.footprint
-f:d412e7cba2329e9a261dc380b13d4a28:uhd/.signature
-f:ba0a0d651f073990ea9e4a763311aa3b:uhd/Pkgfile
+f:fe18b220e954b8cc44f8bd8cdf93b4cb:uhd/.signature
+f:ea059da9a9043986f4727e3b6c509d92:uhd/Pkgfile
 f:37216d95c6456b68631f50883158e573:uhd/.footprint
 f:455a7ae0197eed8929cfd7f0c0714b2c:uhd/boost.patch
 f:b2fea6e7f8d587d7365b8eb451033cf2:usbpicprog/.footprint

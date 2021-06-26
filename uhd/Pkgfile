@@ -19,11 +19,9 @@ build() {
   eval NINJA="($NINJA)"
 
   cmake -S "${name}"-"${sversion}"/host -B build "${NINJA[@]}" \
-        -D ENABLE_E100=ON                                      \
         -D ENABLE_E300=ON                                      \
         -D ENABLE_UTILS=ON                                     \
         -D ENABLE_TESTS=OFF                                    \
-        -D ENABLE_PYTHON3=ON                                   \
         -D ENABLE_EXAMPLES=OFF                                 \
         -D CMAKE_BUILD_TYPE=Release                            \
         -D CMAKE_INSTALL_PREFIX:PATH=/usr                      \
