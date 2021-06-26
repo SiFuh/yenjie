@@ -24,6 +24,11 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/gr_read_file_metadata
 -rwxr-xr-x	root/root	usr/bin/grcc
 -rwxr-xr-x	root/root	usr/bin/polar_channel_construction
+-rwxr-xr-x	root/root	usr/bin/uhd_fft
+-rwxr-xr-x	root/root	usr/bin/uhd_rx_cfile
+-rwxr-xr-x	root/root	usr/bin/uhd_rx_nogui
+-rwxr-xr-x	root/root	usr/bin/uhd_siggen
+-rwxr-xr-x	root/root	usr/bin/uhd_siggen_gui
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/gnuradio/
 drwxr-xr-x	root/root	usr/include/gnuradio/analog/
@@ -254,11 +259,11 @@ drwxr-xr-x	root/root	usr/include/gnuradio/digital/
 -rw-r--r--	root/root	usr/include/gnuradio/digital/correlate_access_code_tag_ff.h
 -rw-r--r--	root/root	usr/include/gnuradio/digital/costas_loop_cc.h
 -rw-r--r--	root/root	usr/include/gnuradio/digital/cpmmod_bc.h
--rw-r--r--	root/root	usr/include/gnuradio/digital/crc32.h
 -rw-r--r--	root/root	usr/include/gnuradio/digital/crc32_async_bb.h
 -rw-r--r--	root/root	usr/include/gnuradio/digital/crc32_bb.h
 -rw-r--r--	root/root	usr/include/gnuradio/digital/decision_feedback_equalizer.h
 -rw-r--r--	root/root	usr/include/gnuradio/digital/descrambler_bb.h
+-rw-r--r--	root/root	usr/include/gnuradio/digital/diff_coding_type.h
 -rw-r--r--	root/root	usr/include/gnuradio/digital/diff_decoder_bb.h
 -rw-r--r--	root/root	usr/include/gnuradio/digital/diff_encoder_bb.h
 -rw-r--r--	root/root	usr/include/gnuradio/digital/diff_phasor_cc.h
@@ -559,7 +564,21 @@ drwxr-xr-x	root/root	usr/include/gnuradio/thread/
 -rw-r--r--	root/root	usr/include/gnuradio/top_block.h
 -rw-r--r--	root/root	usr/include/gnuradio/tpb_detail.h
 -rw-r--r--	root/root	usr/include/gnuradio/types.h
--rw-r--r--	root/root	usr/include/gnuradio/unittests.h
+drwxr-xr-x	root/root	usr/include/gnuradio/uhd/
+-rw-r--r--	root/root	usr/include/gnuradio/uhd/amsg_source.h
+-rw-r--r--	root/root	usr/include/gnuradio/uhd/api.h
+-rw-r--r--	root/root	usr/include/gnuradio/uhd/rfnoc_block.h
+-rw-r--r--	root/root	usr/include/gnuradio/uhd/rfnoc_block_generic.h
+-rw-r--r--	root/root	usr/include/gnuradio/uhd/rfnoc_ddc.h
+-rw-r--r--	root/root	usr/include/gnuradio/uhd/rfnoc_duc.h
+-rw-r--r--	root/root	usr/include/gnuradio/uhd/rfnoc_graph.h
+-rw-r--r--	root/root	usr/include/gnuradio/uhd/rfnoc_rx_radio.h
+-rw-r--r--	root/root	usr/include/gnuradio/uhd/rfnoc_rx_streamer.h
+-rw-r--r--	root/root	usr/include/gnuradio/uhd/rfnoc_tx_radio.h
+-rw-r--r--	root/root	usr/include/gnuradio/uhd/rfnoc_tx_streamer.h
+-rw-r--r--	root/root	usr/include/gnuradio/uhd/usrp_block.h
+-rw-r--r--	root/root	usr/include/gnuradio/uhd/usrp_sink.h
+-rw-r--r--	root/root	usr/include/gnuradio/uhd/usrp_source.h
 drwxr-xr-x	root/root	usr/include/gnuradio/video_sdl/
 -rw-r--r--	root/root	usr/include/gnuradio/video_sdl/api.h
 -rw-r--r--	root/root	usr/include/gnuradio/video_sdl/sink_s.h
@@ -630,6 +649,8 @@ drwxr-xr-x	root/root	usr/lib/cmake/gnuradio/
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/FindTHRIFT.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/FindUHD.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/FindZeroMQ.cmake
+-rw-r--r--	root/root	usr/lib/cmake/gnuradio/Findlibad9361.cmake
+-rw-r--r--	root/root	usr/lib/cmake/gnuradio/Findlibiio.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/Findlibunwind.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/GnuradioConfig.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/GnuradioConfigVersion.cmake
@@ -685,6 +706,9 @@ drwxr-xr-x	root/root	usr/lib/cmake/gnuradio/
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/gnuradio-soapyConfig.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/gnuradio-soapyTargets-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/gnuradio-soapyTargets.cmake
+-rw-r--r--	root/root	usr/lib/cmake/gnuradio/gnuradio-uhdConfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/gnuradio/gnuradio-uhdTargets-release.cmake
+-rw-r--r--	root/root	usr/lib/cmake/gnuradio/gnuradio-uhdTargets.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/gnuradio-video-sdlConfig.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/gnuradio-video-sdlTargets-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/gnuradio/gnuradio-video-sdlTargets.cmake
@@ -741,6 +765,9 @@ lrwxrwxrwx	root/root	usr/lib/libgnuradio-runtime.so.3.10.0git -> libgnuradio-run
 lrwxrwxrwx	root/root	usr/lib/libgnuradio-soapy.so -> libgnuradio-soapy.so.3.10.0git
 lrwxrwxrwx	root/root	usr/lib/libgnuradio-soapy.so.3.10.0git -> libgnuradio-soapy.so.v3.10-compat-xxx-xunknown
 -rwxr-xr-x	root/root	usr/lib/libgnuradio-soapy.so.v3.10-compat-xxx-xunknown
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-uhd.so -> libgnuradio-uhd.so.3.10.0git
+lrwxrwxrwx	root/root	usr/lib/libgnuradio-uhd.so.3.10.0git -> libgnuradio-uhd.so.v3.10-compat-xxx-xunknown
+-rwxr-xr-x	root/root	usr/lib/libgnuradio-uhd.so.v3.10-compat-xxx-xunknown
 lrwxrwxrwx	root/root	usr/lib/libgnuradio-video-sdl.so -> libgnuradio-video-sdl.so.3.10.0git
 lrwxrwxrwx	root/root	usr/lib/libgnuradio-video-sdl.so.3.10.0git -> libgnuradio-video-sdl.so.v3.10-compat-xxx-xunknown
 -rwxr-xr-x	root/root	usr/lib/libgnuradio-video-sdl.so.v3.10-compat-xxx-xunknown
@@ -767,6 +794,7 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/gnuradio-pdu.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/gnuradio-runtime.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/gnuradio-soapy.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/gnuradio-uhd.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/gnuradio-video-sdl.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/gnuradio-vocoder.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/gnuradio-wavelet.pc
@@ -920,9 +948,6 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/cpm.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/cpm.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/cpm.pyo
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/crc.py
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/crc.pyc
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/crc.pyo
 -rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/digital_python.cpython-39-x86_64-linux-gnu.so
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/generic_mod_demod.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/digital/generic_mod_demod.pyc
@@ -1517,6 +1542,20 @@ drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/soapy/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/soapy/__init__.pyc
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/soapy/__init__.pyo
 -rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/soapy/soapy_python.cpython-39-x86_64-linux-gnu.so
+drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/__init__.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/__init__.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/__init__.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/msgq_runner.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/msgq_runner.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/msgq_runner.pyo
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/uhd_app.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/uhd_app.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/uhd_app.pyo
+-rwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/uhd_python.cpython-39-x86_64-linux-gnu.so
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/uhd_siggen_base.py
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/uhd_siggen_base.pyc
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/uhd/uhd_siggen_base.pyo
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gnuradio/video_sdl/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/video_sdl/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gnuradio/video_sdl/__init__.pyc
@@ -1795,6 +1834,15 @@ drwxr-xr-x	root/root	usr/share/gnuradio/examples/tags/
 -rwxr-xr-x	root/root	usr/share/gnuradio/examples/tags/test_file_tags.py
 -rw-r--r--	root/root	usr/share/gnuradio/examples/tags/test_tag_prop.grc
 -rwxr-xr-x	root/root	usr/share/gnuradio/examples/tags/uhd_burst_detector.py
+drwxr-xr-x	root/root	usr/share/gnuradio/examples/uhd/
+-rwxr-xr-x	root/root	usr/share/gnuradio/examples/uhd/tags_demo
+-rw-r--r--	root/root	usr/share/gnuradio/examples/uhd/uhd_const_wave.grc
+-rw-r--r--	root/root	usr/share/gnuradio/examples/uhd/uhd_fft.grc
+-rw-r--r--	root/root	usr/share/gnuradio/examples/uhd/uhd_msg_tune.grc
+-rw-r--r--	root/root	usr/share/gnuradio/examples/uhd/uhd_normalized_gain.grc
+-rw-r--r--	root/root	usr/share/gnuradio/examples/uhd/uhd_siggen_gui.grc
+-rw-r--r--	root/root	usr/share/gnuradio/examples/uhd/uhd_two_tone_loopback.grc
+-rw-r--r--	root/root	usr/share/gnuradio/examples/uhd/uhd_wbfm_receive.grc
 drwxr-xr-x	root/root	usr/share/gnuradio/examples/vocoder/
 -rwxr-xr-x	root/root	usr/share/gnuradio/examples/vocoder/alaw_audio_loopback.py
 -rwxr-xr-x	root/root	usr/share/gnuradio/examples/vocoder/cvsd_audio_loopback.py
@@ -2226,6 +2274,7 @@ drwxr-xr-x	root/root	usr/share/gnuradio/grc/blocks/
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/pdu_random_pdu.block.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/pdu_tagged_stream_to_pdu.block.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/pdu_time_delta.block.yml
+-rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/rfnoc.domain.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/snippet.block.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/soapy.tree.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/soapy_airspyhf_source.block.yml
@@ -2246,6 +2295,30 @@ drwxr-xr-x	root/root	usr/share/gnuradio/grc/blocks/
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/stream.domain.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/tpc_decoder_def_list.block.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/tpc_encoder_def_list.block.yml
+-rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/uhd.tree.yml
+-rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/uhd_amsg_source.block.yml
+-rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/uhd_fpga_clk.domain.yml
+-rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/uhd_fpga_ctrl.domain.yml
+-rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/uhd_fpga_data.domain.yml
+-rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/uhd_fpga_ddc.block.yml
+-rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/uhd_fpga_duc.block.yml
+-rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/uhd_fpga_fft.block.yml
+-rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/uhd_fpga_io_ctrl_port.domain.yml
+-rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/uhd_fpga_io_radio.domain.yml
+-rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/uhd_fpga_io_time_keeper.domain.yml
+-rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/uhd_fpga_radio.block.yml
+-rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/uhd_fpga_sep.block.yml
+-rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/uhd_fpga_x310.block.yml
+-rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/uhd_rfnoc_ddc.block.yml
+-rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/uhd_rfnoc_duc.block.yml
+-rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/uhd_rfnoc_fft.block.yml
+-rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/uhd_rfnoc_graph.block.yml
+-rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/uhd_rfnoc_rx_radio.block.yml
+-rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/uhd_rfnoc_rx_streamer.block.yml
+-rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/uhd_rfnoc_tx_radio.block.yml
+-rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/uhd_rfnoc_tx_streamer.block.yml
+-rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/uhd_usrp_sink.block.yml
+-rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/uhd_usrp_source.block.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/variable.block.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/variable_band_pass_filter_taps.block.yml
 -rw-r--r--	root/root	usr/share/gnuradio/grc/blocks/variable_band_reject_filter_taps.block.yml
