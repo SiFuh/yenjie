@@ -378,9 +378,9 @@ f:f17a39804d0c930b8060830ce5c1960a:supertuxkart-bin/run_game.patch
 f:ffb40b51df7c8b2fa3b4db0bb006a1a8:supertuxkart-bin/.footprint
 f:242aa87d99d45857c72475274e5f0034:supertuxkart-bin/Pkgfile
 f:c4f61bec7d7d7372dc81ff5f39a3e44e:supertuxkart-bin/.signature
-f:3e0693ef75d12de8e492cdbd51b67847:telegram-bin/Pkgfile
+f:9c2dcb11b6d568fa8e08ae106c85b429:telegram-bin/Pkgfile
 f:51ee9b11b51467edc91f48f112312261:telegram-bin/.footprint
-f:89232693acc68f5017e3564759868659:telegram-bin/.signature
+f:682ba4bb97e702049b07453223bdd81e:telegram-bin/.signature
 f:d48ca8fe2ffc06a261e0bd0e8316b49c:rxvt-unicode/.footprint
 f:76d39ad40cc94ffb6d251a2a768b73ed:rxvt-unicode/.signature
 f:f919e12ec1341ce8d91e5e0e274b6430:rxvt-unicode/Pkgfile
