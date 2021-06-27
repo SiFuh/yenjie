@@ -2,26 +2,28 @@
 # URL:          http://gqrx.dk/
 # Packager:
 # Maintainer:   Lin SiFuh, #crux at freenode dot net
-# Depends on:   gnuradio gr-osmosdr alsa-plugins
-# Optional:     pulseaudio
+# Depends on:   gnuradio gr-osmosdr pulseaudio
 
 name=gqrx
-version=2.14.4-490ee3b
-sversion=490ee3be4f1c5e0319b7610912104e2d0a47fd4e
-release=2
+version=2.14.4-272bd75
+sversion=272bd75e8cb33ff54d2d8f71295295dcdbf4b962
+release=1
 source=(https://github.com/csete/${name}/archive/${sversion}/${name}-${version}.tar.gz
-        gqrx_boost.patch)
+        udp_sink.patch)
 
 build() {
 
-  patch -p2 -d "${name}"-"${sversion}" -i "${SRC}"/gqrx_boost.patch
+  patch -p2 -i "${SRC}"/udp_sink.patch -d "${name}"-"${sversion}"
+  
+  mkdir -p build/src/
 
-  cmake -S "${name}"-"${sversion}" -B build -G Ninja   \
-        -D LINUX_AUDIO_BACKEND=Gr-audio                \
-        -D CMAKE_BUILD_TYPE=Release                    \
-        -D CMAKE_INSTALL_PREFIX:PATH=/usr ../          \
-        -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"    \
-        -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -DNDEBUG"
+  cmake -S "${name}"-"${sversion}" -B build -G Ninja    \
+        -D LINUX_AUDIO_BACKEND=Pulseaudio               \
+        -D CMAKE_BUILD_TYPE=Release                     \
+        -D CMAKE_INSTALL_PREFIX:PATH=/usr ../           \
+        -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"     \
+        -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -DNDEBUG" \
+        -Wdeprecated-declarations
 
   cmake --build build
 

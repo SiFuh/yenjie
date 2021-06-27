@@ -205,11 +205,10 @@ f:87ce7dc428ed7a028db5c7ec1ebfc95d:gnuradio/README
 f:12befd1da5151108b62db1b85f6f6f4a:gnuradio/.footprint
 f:46c32e0e1281a187a03ddb3b537e68e2:gnuradio/Pkgfile
 f:fe35cdf88060731338bc35145f872af2:gnuradio/.signature
+f:187416994dc943437a6ba5a61efc8eb8:gqrx/Pkgfile
+f:b52bb069959e08f0492e0e37df830def:gqrx/.signature
 f:2322cd49f933c4e0588083b4d18b2566:gqrx/.footprint
-f:23c323924559f7d190f8ee641fae287c:gqrx/.signature
-f:3c21388120e68fa3979218bf76de5435:gqrx/Pkgfile
-f:72d4acb2dfc4a12c7f008f6794dfab05:gqrx/Pkgfile-pulseaudio
-f:7ebbd145c8442f524fe3ef59972ce288:gqrx/gqrx_boost.patch
+f:37669ddea94148c4d56ac1f51a415d33:gqrx/udp_sink.patch
 f:e4a00d2d4a80e3df582cdaca72d8bf16:gr-osmosdr/.footprint
 f:00ae8064e2b8f255bc8b1f82d371344a:gr-osmosdr/.signature
 f:3ebea8014e79d9630bef7ee7746a2c32:gr-osmosdr/Pkgfile
