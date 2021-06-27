@@ -1,43 +1,52 @@
-# Description:  Realtek 8815au USB Wireless Driver (Aircrack Mod)
-# URL:          https://github.com/aircrack-ng/rtl8812au/
+# Description:  Realtek 8814au USB Wireless Driver
+# URL:          https://github.com/morrownr/8814au 
 # Packager:
 # Maintainer:   Lin SiFuh, #crux at freenode dot net
 # Depends on:   dkms
 
 name=rtl8814au-dkms
-version=5.8.5.1-bdf80b5
-sversion=bdf80b5a932d5267cd1aff66fee8ac244cd38777
+_name=8814au
+version=5.8.5.1-d180855
+sversion=d180855c4331f001dde8fb13eb5763e66d5a999e
 release=1
-source=(https://github.com/aircrack-ng/${name%-*}/archive/${sversion}/${name%-*}-${version}.tar.gz)
+source=(https://github.com/morrownr/${_name}/archive/${sversion}/${name}-${version}.tar.gz)
 
 build() {
 
-  cd "${name%-*}"-"${sversion}"
+  mkdir -p "${PKG}"/usr/src/
+  mv "${_name}"-"${sversion}" "${PKG}"/usr/src/"${name%-*}"-"${version%-*}"
 
-  mkdir -p "${PKG}"/usr/src/"${name%-*}"-"${version}"
-  cp -pr * "${PKG}"/usr/src/"${name%-*}"-"${version}"
+  mkdir -p "${PKG}"/var/lib/dkms/"${name%-*}"/"${version%-*}"/build
+  ln -s /usr/src/"${name%-*}"-"${version%-*}" \
+        "${PKG}"/var/lib/dkms/"${name%-*}"/"${version%-*}"/source
 
-  mkdir -p "${PKG}"/var/lib/dkms/"${name%-*}"/"${version}"/build
-  ln -s /usr/src/"${name%-*}"-"${version}" \
-        "${PKG}"/var/lib/dkms/"${name%-*}"/"${version}"/source
+  mkdir -p "${PKG}"/etc/modprobe.d/
+  install -m 644 "${PKG}"/usr/src/"${name%-*}"-"${version%-*}"/8814au.conf \
+                 "${PKG}"/etc/modprobe.d/
  
-  sed -e "s/@_PKGBASE@/${name%-*}/" \
-      -e "s/@PKGVER@/${version}/" \
-      -i "${PKG}"/usr/src/"${name%-*}"-"${version}"/dkms.conf
+  mv "${PKG}"/usr/src/"${name%-*}"-"${version%-*}"/platform \
+     "${PKG}"/usr/src/"${name%-*}"-"${version%-*}"/platform.old
 
-  mv "${PKG}"/usr/src/"${name%-*}"-"${version}"/platform \
-     "${PKG}"/usr/src/"${name%-*}"-"${version}"/platform.old
+  install -m 775 -d "${PKG}"/usr/src/"${name%-*}"-"${version%-*}"/platform
 
-  mkdir -p "${PKG}"/usr/src/"${name%-*}"-"${version}"/platform
-
-  mv "${PKG}"/usr/src/"${name%-*}"-"${version}"/platform.old/*ops* \
-     "${PKG}"/usr/src/"${name%-*}"-"${version}"/platform
+  mv "${PKG}"/usr/src/"${name%-*}"-"${version%-*}"/platform.old/*ops* \
+     "${PKG}"/usr/src/"${name%-*}"-"${version%-*}"/platform
 
   find "${PKG}" -name '*.txt' -delete
 
-  rm -rf "${PKG}"/usr/src/"${name%-*}"-"${version}"/platform.old
-  rm -rf "${PKG}"/usr/src/"${name%-*}"-"${version}"/{docs,android,tools,openwrt,debian}
-  rm "${PKG}"/usr/src/"${name%-*}"-"${version}"/{README.md,LICENSE}
-  rm "${PKG}"/usr/src/"${name%-*}"-"${version}"/build-deb.sh
+  cd  "${PKG}"/usr/src/"${name%-*}"-"${version%-*}"
+  rm -rf docs         \
+         tools        \
+         debian       \
+         openwrt      \
+         android      \
+         platform.old
+
+  rm LICENSE                         \
+     README.md                       \
+     raspi32.sh                      \
+     raspi64.sh                      \
+     remove-driver.sh                \
+     Bridged_Wireless_Access_Point.md
 
 }

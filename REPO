@@ -492,10 +492,10 @@ f:c9b582f1d46a2c71d0595d5d73cb0936:libdc1394/Pkgfile
 f:42ed059c66734b844bbab284ac74b055:libdc1394/.footprint
 f:1b23237551932b2069611a350d99ac33:libdc1394/.signature
 f:5d325e6d81213b0991fdb144221883d1:rtl8814au-dkms/README
-f:9690e352a2bae9aa8b42f86ded7435c3:rtl8814au-dkms/Pkgfile
 f:657809584b57dc40be0ca4da67bed627:rtl8814au-dkms/.SRCINFO
-f:2d7893fd8605aa9bcb9446b577d8b1f6:rtl8814au-dkms/.footprint
-f:81f1ab4b2e6d4de317dd928df180b867:rtl8814au-dkms/.signature
+f:dec10fa399bb0af5e204ce60d38ff0ca:rtl8814au-dkms/.footprint
+f:d4c40776e988f9374c96a7ccfc9636dd:rtl8814au-dkms/Pkgfile
+f:9166a03e1486bf406a244cd1b2d888c7:rtl8814au-dkms/.signature
 f:40e1d9e127ab0a5439b83b94b5b086ec:binwalk/.footprint
 f:75d1105e3ba7d0330ac057ecc132838e:binwalk/.signature
 f:a295fc99f4f73391abcf45ed6de653c5:binwalk/Pkgfile
