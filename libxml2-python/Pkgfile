@@ -1,6 +1,6 @@
 # Description: Python bindings for the XML library version 2
 # URL:         http://xmlsoft.org/
-# Maintainer:  Lin SiFuh, #crux at freenode dot net
+# Maintainer:  Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:  python libxml2
 
 name=libxml2-python
