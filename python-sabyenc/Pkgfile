@@ -1,6 +1,6 @@
 # Description:  Python2 yEnc package optimized for use within SABnzbd
 # URL:          https://github.com/sabnzbd/sabyenc
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   python python-setuptools
 
 name=python-sabyenc
