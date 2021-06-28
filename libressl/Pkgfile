@@ -1,7 +1,7 @@
 # Description:  Free version of the TLS/crypto stack forked from OpenSSL
 # URL:          https://www.libressl.org/
 # Packager:
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   glibc
 # Optional:     ca-certificates
 
