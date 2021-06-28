@@ -1,6 +1,6 @@
 # Description:  Xorg's xconsole
 # URL:          https://www.x.org/
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   xorg-libxaw xorg-libxmu xorg-libxt xorg-libx11 xorg-xorgproto
 
 name=xconsole
