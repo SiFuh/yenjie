@@ -1,6 +1,6 @@
 # Description:   Free non-linear video editor
 # URL:           https://www.olivevideoeditor.org/
-# Maintainer:    Lin SiFuh, #crux at freenode dot net
+# Maintainer:    Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:    cmake qt5 ffmpeg
 
 name=olive
