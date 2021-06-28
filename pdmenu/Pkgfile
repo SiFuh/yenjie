@@ -1,6 +1,6 @@
 # Description:  A simple full screen menu program
 # URL:          https://joeyh.name/code/pdmenu/ 
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   slang gpm
 
 name=pdmenu
