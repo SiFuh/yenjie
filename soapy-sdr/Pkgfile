@@ -1,7 +1,7 @@
 # Description:   An opensource API and runtime library for interfacing with SDR devices
 # URL:           http://www.pothosware.com/
 # Packager:
-# Maintainer:    Lin SiFuh, #crux at freenode dot net
+# Maintainer:    Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:    cmake
 
 name=soapy-sdr
