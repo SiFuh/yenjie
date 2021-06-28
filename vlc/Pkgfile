@@ -1,6 +1,6 @@
 # Description:  The cross-platform media player and streaming server
 # URL:          https://www.videolan.org/vlc/
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   ffmpeg liba52 libdvdnav libgcrypt libmad qt5 lua
 # Nice to have: opus libvorbis x264 libogg libmtp libtheora flac libvdpau
 
