@@ -1,6 +1,6 @@
 # Description:  Virtualisation software for x86 hardware (binary version, non-GPL)
 # URL:          http://www.virtualbox.org
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   libidl libxslt xorg-libxinerama xorg-libxcursor
 
 name=virtualbox-bin
