@@ -1,6 +1,6 @@
 # Description:  Software that monitors video from many types of cameras.
 # URL:          https://motion-project.github.io/index.html
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   ffmpeg libjpeg-turbo v4l-utils libmicrohttpd
 
 name=motion
