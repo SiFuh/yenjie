@@ -1,6 +1,6 @@
 # Description:  A lightweight input method framework
 # URL:          http://fcitx-im.org/
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   xorg dbus cairo iso-codes extra-cmake-modules libxkbcommon json-c gobject-introspection gtk gtk3
 # Optional:     icu libxml2 opencc pango qt4 pinyin presage snooper
 
