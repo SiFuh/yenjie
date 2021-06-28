@@ -112,6 +112,7 @@ d:arpspoof
 d:dhcp-spoof
 d:macchanger
 d:masscan
+d:seamonkey
 d:geoip
 d:fluxbox
 d:iotop
@@ -552,6 +553,10 @@ f:1a78df215e66c2bca30c69cd30a64394:masscan/Pkgfile
 f:6c63aa6ff4bba166ab1983e005d1d662:masscan/.footprint
 f:37257ba66c0cb1dbfc250683c02e07bb:masscan/README
 f:7954ac7bb098c214744f5bec6f798f53:masscan/.signature
+f:56043c5f3cac75010dbf81858ea74f0d:seamonkey/Pkgfile
+f:435cef6579c8bf163f452f94dcf071cf:seamonkey/.footprint
+f:985dbe26a31f4c41a8d3fd3d0aba9076:seamonkey/.signature
+f:e8007db546d04bc35faad014ae42cbef:seamonkey/seamonkey-rust-1.52.patch
 f:25460d953656c23670f64a2fd5c820de:geoip/.signature
 f:3731408ed5f0956b7a180cb4e550aa2e:geoip/Pkgfile
 f:b18908ca6dd8b8cf88ec6498b04400ac:geoip/.footprint

@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uCHW3LWkU+uhh77VOq4nruWVq6oZ7xnmSA6lDr9fJ3y9zRGZOiTB7tz2uLvcmHTwLGWf6R3YWrXoQBpe47loPgw=
+SHA256 (Pkgfile) = 797f680e46950e1bbca983a3ca99581e09754f500ba66ff672123e724b425c7c
+SHA256 (.footprint) = a032f2e784963de51afe32ea04ad102f955b66f2b3149a2873643547b55bb04d
+SHA256 (seamonkey-2.53.7.1.source.tar.xz) = 432206fe787ffb560e811d32103658d676dccb012fc7092d2071bb59729603ea
+SHA256 (seamonkey-rust-1.52.patch) = 6c4db819efacef515fa6459788e69f0def98f9766e37579ff08735caaab869cc
