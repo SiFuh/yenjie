@@ -1,7 +1,7 @@
 # Description:  Android SDK Platform-Tools
 # URL:          https://developer.android.com/studio/releases/platform-tools
 # Packager:
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 
 name=android-tools
 version=r31.0.1
