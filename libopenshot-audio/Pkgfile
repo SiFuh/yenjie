@@ -1,7 +1,7 @@
 # Description:  Audio library for openshot-qt
 # URL:          https://launchpad.net/libopenshot-audio
 # Packager:
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   cmake alsa-lib
 
 name=libopenshot-audio
