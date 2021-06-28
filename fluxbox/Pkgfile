@@ -1,6 +1,6 @@
 # Description: A blackbox based windowmanager
 # URL:         http://fluxbox.sf.net
-# Maintainer:  Lin SiFuh, #crux at freenode dot net
+# Maintainer:  Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:  xorg imlib2
 
 name=fluxbox
