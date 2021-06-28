@@ -1,6 +1,6 @@
 # Description:  Telegram Instant Messenger Client for Linux 
 # URL:          https://desktop.telegram.org
-# Maintainer:   Lin SiFuh, #crux at freenode dot net 	 	 
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat 	 	 
 # Depends on:   libdrm xorg-libice xorg-libsm fontconfig freetype xorg-libxcb xorg-libx11 glib dbus libpng expat xorg-libxau xorg-libxdmcp 
 
 name=telegram-bin
