@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uLTIwHS7Nbrwv0vGdQYqYzwBKnpbEHf9hMEZJst1QbpOvXqv9+XMW0xmQnsljWOH6BCa3L9FpjMiujvmHMlWfQk=
-SHA256 (Pkgfile) = 26358d97f8036c0dd921361c0c899df8631a95bd48a9677a063c806ef1cafb00
+RWQ0NN0w0eo0uP+NhfW6ekQWyCZ3g2l+Rp/OXY5nGmjcFK2h0nca/5Oa3EP6kmdc4z1H/e3PjFVte+XCObXAPfEO3OxraKEQcQg=
+SHA256 (Pkgfile) = e5f49abd1516b12686eb829cc5e7fe4d16f99099c2528e11e608ff6443f7b674
 SHA256 (.footprint) = 7a7d0b447bdca7673982c34ebcd683d899b42f5fe94369c4a50ab97a62a00206
 SHA256 (blender-2.92.0.tar.xz) = e791cfc403292383577c3c8ce2cd34e5aa2cd8da0a7483041049a1609ddb4595

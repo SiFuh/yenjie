@@ -1,7 +1,7 @@
 # Description:  A fully integrated 3D graphics creation suite.
 # URL:          http://blender.org/
 # Packager: 
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   boost cmake desktop-file-utils ffmpeg fftw glew glu python3 git openjpeg freetype intel-tbb opus libtheora alsa-lib python3-numpy icu libsdl2
 
 name=blender
