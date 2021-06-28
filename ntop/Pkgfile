@@ -1,7 +1,7 @@
 # Description:  Ntop is a network watcher (OLD VERSION)
 # URL:          https://www.ntop.org/
 # Packager:	
-# Maintainer:	  Lin SiFuh, #crux at freenode dot net
+# Maintainer:	  Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:	  libpcap
 
 name=ntop
