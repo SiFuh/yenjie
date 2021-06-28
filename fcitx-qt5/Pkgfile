@@ -1,6 +1,6 @@
 # Description: Qt5 module for fcitx input framework
 # URL:         http://fcitx-im.org/
-# Maintainer:  Lin SiFuh, #crux at freenode dot net
+# Maintainer:  Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:  fcitx qt5 icu zstd
 
 name=fcitx-qt5
