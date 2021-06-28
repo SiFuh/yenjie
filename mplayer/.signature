@@ -1,7 +1,7 @@
-untrusted comment: verify with /etc/ports/opt.pub
-RWSE3ohX2g5d/R/8tt9oX5nY/eW65hFaiL6CHQB7qQVWSsjkJXaLBXbYzPxJoM9C3SALCX4vv/KHe28y5b/MNQZc3OtJNXaESQw=
-SHA256 (Pkgfile) = bdaba0427b916ab6f9333e595345708806a746165f01d1b452298c11f6de3dba
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uAEPcsySNydWzvId6y+HhKeJNSuigm2npc45suXIoZTSCOKPU4XkFozWmz/DUWs9VmwdP1WAZnCubTvS3ZQ0bwk=
+SHA256 (Pkgfile) = d0f8ca65ef460baaeb6456c36772d0eb1a95497846e35b69198e35035fc83d52
 SHA256 (.footprint) = c4022a781b4eed8125c34441be6094deda7e20f9463587f6d17478545820f566
-SHA256 (mplayer-2020-10-05.tar.xz) = 4eb3894d80a005cb657a64fa5b6b0f759c6d593a069fd82389efbf97e2524154
+SHA256 (mplayer-2021-06-27.tar.bz2) = bd752d3fb0caadbf228179ff35d164bc34b4431dd197c419e8c8d9c03c6e0bd3
 SHA256 (font-arial-iso-8859-1.tar.bz2) = 9730f481764f367c9089d0166fb6ccf9148808ffbbfeca635cf0e6db75765d29
 SHA256 (mplayer.conf) = ea4cdab97915490376653b1be791306b641429a5cee24f5c1fbe4ef07fcc20d1
