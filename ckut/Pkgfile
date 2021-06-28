@@ -1,6 +1,6 @@
 # Description:  A simple utility for updating the linux kernel
 # URL:          https://github.com/SiFuh/yenjie/ckut
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   pv dialog
 # Optional:     lynx
 
