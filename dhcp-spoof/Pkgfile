@@ -1,6 +1,6 @@
 # Description:  DHCP spoofing attack tool
 # URL:          https://github.com/emanuele-f/dhcp-spoof
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   libpcap
 
 name=dhcp-spoof
