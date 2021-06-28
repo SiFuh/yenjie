@@ -1,6 +1,6 @@
 # Description:  Xdialog is designed to be a replacement for dialog or cdialog
 # URL:          http://xdialog.free.fr/
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   gtk
 
 name=xdialog
