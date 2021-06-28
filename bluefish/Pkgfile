@@ -1,6 +1,6 @@
 # Description:  GTK+ text editor targeted towards programmers and web designers
 # URL:          http://bluefish.openoffice.nl/
-# Maintainer:   Lin SiFuh, #crux at freenode dot net, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat, #crux at irc dot libera dot chat
 # Depends on:   gtk3
 
 name=bluefish
