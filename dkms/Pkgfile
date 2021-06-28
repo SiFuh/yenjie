@@ -1,6 +1,6 @@
 # Description:  Dynamic Kernel Modules System
 # URL:          https://github.com/dell/dkms
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 
 name=dkms
 version=2.8.4
