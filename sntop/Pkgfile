@@ -1,6 +1,6 @@
 # Description: Curses based tool to monitor connectivity of network hosts.
 # URL:         http://sntop.sourceforge.net/
-# Maintainer:  Lin SiFuh, #crux at freenode dot net
+# Maintainer:  Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:  fping
 
 name=sntop
