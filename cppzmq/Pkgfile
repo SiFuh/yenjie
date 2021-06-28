@@ -1,7 +1,7 @@
 # Description:  Header-only C++ binding for libzmq
 # URL:          http://www.zeromq.org
 # Packager:
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   cmake
 
 name=cppzmq
