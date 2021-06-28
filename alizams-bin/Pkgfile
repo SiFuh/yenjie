@@ -1,6 +1,6 @@
 # Description:   Medical Imaging. Open 2D, 3D and 4D images in DICOM
 # URL:           http://www.aliza-dicom-viewer.com
-# Maintainer:    Lin SiFuh, #crux at freenode dot net
+# Maintainer:    Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:    hicolor-icon-theme qt5
 
 name=alizams-bin
