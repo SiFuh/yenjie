@@ -1,6 +1,6 @@
 # Description:  SuperTuxKart is a 3D open-source arcade racer
 # URL:          https://supertuxkart.net/Main_Page
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   xorg-libxrandr libglvnd xorg-libx11 
 
 name=supertuxkart-bin
