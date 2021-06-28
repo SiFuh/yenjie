@@ -1,6 +1,6 @@
-# Description:   GNU emacs - an extensible text editor (No X11)
-# URL:           https://gnu.org/software/emacs/
-# Maintainer:    Lin SiFuh, #crux at irc dot libera dot chat
+# Description:  GNU emacs - an extensible text editor (No X11)
+# URL:          https://gnu.org/software/emacs/
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:
 
 name=emacs
