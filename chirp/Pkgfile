@@ -1,7 +1,7 @@
 # Description:  A free, open-source tool for programming your amateur radio.
 # URL:          https://chirp.danplanet.com/
 # Packager:
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   pyserial libxml2-python pygtk python-future
 
 name=chirp
