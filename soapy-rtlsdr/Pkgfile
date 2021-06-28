@@ -1,7 +1,7 @@
 # Description:  A plugin module to use the RTL-SDR dongle within the SoapySDR API
 # URL:          https://github.com/pothosware/SoapyRTLSDR/wiki
 # Packager:
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   rtl-sdr
 
 name=soapy-rtlsdr
