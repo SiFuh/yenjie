@@ -1,6 +1,6 @@
 # Description:  Multiplatform Serial Port Module for Python
 # URL:          https://pypi.org/project/pyserial/
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   python3
 
 name=python3-pyserial
