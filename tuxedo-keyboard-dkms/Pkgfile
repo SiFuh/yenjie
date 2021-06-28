@@ -1,6 +1,6 @@
 # Description:  TUXEDO Computers Kernel Module for keyboard backlightin
 # URL:          https://github.com/tuxedocomputers/tuxedo-keyboard
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   dkms git
 
 name=tuxedo-keyboard-dkms
