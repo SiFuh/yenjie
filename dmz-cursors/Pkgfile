@@ -1,8 +1,8 @@
-# Description:  Xcursors for HDPI screens
-# URL:          Vanilla-DMZ
+# Description:   Xcursors for HDPI screens
+# URL:           Vanilla-DMZ
 # Packager:	
-# Maintainer:   Lin SiFuh, #crux at freenode dot net 	
-# Depends on:   git
+# Maintainer:    Lin SiFuh, #crux at irc dot libera dot chat 	
+# Depends on:    git
 
 name=dmz-cursors
 version=1.0
