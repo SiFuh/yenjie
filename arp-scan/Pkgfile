@@ -1,7 +1,7 @@
 # Description:  The ARP Scanner	
 # URL:          https://github.com/royhills/arp-scan
 # Packager:	
-# Maintainer:   Lin SiFuh, #crux at freenode dot net 	
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat 	
 # Depends on:   libpcap p5-lwp-protocol-https p5-http-message 
 
 name=arp-scan
