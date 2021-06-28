@@ -1,7 +1,7 @@
 # Description:  The Vector Optimized Library of Kernels
 # URL:          www.libvolk.org
 # Packager:
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   neon git python3 python3-mako orc python3-six cmake
 
 name=volk
