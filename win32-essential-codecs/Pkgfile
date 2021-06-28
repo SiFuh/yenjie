@@ -1,6 +1,6 @@
 # Description: "Essential" win32 binary codecs for mplayer, xine, etc.
 # URL:         http://www.mplayerhq.hu/DOCS/codecs-status.html
-# Maintainer:  Lin SiFuh, #crux at freenode dot net
+# Maintainer:  Lin SiFuh, #crux at irc dot libera dot chat
 
 name=win32-essential-codecs
 version=20110131
