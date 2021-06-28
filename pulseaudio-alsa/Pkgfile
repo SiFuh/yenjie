@@ -1,6 +1,6 @@
 # Description:  ALSA Configuration for PulseAudio
 # URL:          http://www.pulseaudio.org
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   pulseaudio alsa-plugins
 
 name=pulseaudio-alsa
