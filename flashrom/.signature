@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uMQmUXNQjYW8PB82Y/Muu9n8yIxuenvYCN95QfFxFYot8WZamAyOEQNtxkYEHOIVBz0MfegBawxsGnTfBW6riQs=
-SHA256 (Pkgfile) = 29d9b9a9eb5d7891c62857e10282a4215019051f54dfa0023440ca3d58cd374b
+RWQ0NN0w0eo0uCRkZBUeNayYdCM8Gaeo9wbYiCedVkazVb5Q/rwHPQuC0zIg2e6eaN1rax5n0zqaxRmQJbFy67s7pB4yph1wmwM=
+SHA256 (Pkgfile) = 805237fe2279a8bf6860bfe8b2c08e79e36a8f2914e6276435c9d0f3b099fe1d
 SHA256 (.footprint) = 50cf0b4c44c286bfed4adbe21c915ca2758128ea74c6e5a27532e0354803e863
 SHA256 (flashrom-v1.2.tar.bz2) = e1f8d95881f5a4365dfe58776ce821dfcee0f138f75d0f44f8a3cd032d9ea42b
