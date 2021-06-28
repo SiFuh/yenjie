@@ -1,7 +1,7 @@
 # Description:  Nftables Linux firewall
 # URL:          http://www.nftables.org
 # Packager:    
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   libmnl libnftnl asciidoc
 
 name=nftables
