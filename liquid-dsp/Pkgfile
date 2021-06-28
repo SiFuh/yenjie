@@ -1,6 +1,6 @@
 # Description: 	Opensource signal processing library for software-defined radios
 # URL:          http://liquidsdr.org/
-# Maintainer:   Lin SiFuh, #crux at freenode dot net 	
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat 	
 # Depends on:
 
 name=liquid-dsp
