@@ -1,7 +1,7 @@
 # Description: Video Desktop Screen Recorder
 # URL:         http://linuxecke.volkoh.de/vokoscreen/vokoscreen.html
 # Packager:    
-# Maintainer:  Lin SiFuh, #crux at freenode dot net
+# Maintainer:  Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:  git qt5 alsa-lib alsa-utils xorg-libx11 v4l-utils lame xdg-utils lsof ffmpeg pulseaudio
 
 name=vokoscreen
