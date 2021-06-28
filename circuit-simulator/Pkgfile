@@ -1,6 +1,6 @@
 # Description:  Electronic circuit simulator written by Paul Falstad
 # URL:          http://www.falstad.com/circuit-java
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   unzip imagemagick jdk8-bin hicolor-icon-theme fftw
 
 name=circuit-simulator
