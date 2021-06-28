@@ -1,7 +1,7 @@
 # Description:  A web-interface based binary newsgrabber with NZB file support
 # URL:          http://www.sabnzbd.org
 # Packager:
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   curl par2cmdline python cheetah-template python-sabyenc sqlite3 unrar unzip p7zip feedparser 
 
 name=sabnzbd
