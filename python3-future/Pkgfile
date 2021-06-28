@@ -1,7 +1,7 @@
 # Description:  Clean single-source support for Python 3
 # URL:          https://python-future.org/
 # Packager:
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   python3 python3-setuptools
 
 name=python3-future
