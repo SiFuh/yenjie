@@ -1,6 +1,6 @@
 # Description:  X11 Onscreen Display
 # URL:          https://sourceforge.net/projects/libxosd/files/libxosd
-# Maintainer:   Lin SiFuh, #crux at freenode dot net 	 
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat 	 
 # Depends on:   xorg-libx11 xorg-libxext
 
 name=xosd

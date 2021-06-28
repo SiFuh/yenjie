@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uIlRi8ws6GSEyyWejR4LhcA4fcQfRWOV1fLSyjqCn6iZCyNFf4HHFX12Td9CiRq1XSfIhB2h3KeHVCdZxgbW4wM=
-SHA256 (Pkgfile) = 3f27e5532f07d3ad8b22392aadc0e529084ebb221c8223433c0d913785dbc9f5
+RWQ0NN0w0eo0uH5NGUo6WtjrOtTEfansyCtRal466KFYPU3N58TnySxrI4L+19wIlM7e3LIjsZey09pJRShQGTriGebM5klXhAo=
+SHA256 (Pkgfile) = ea9011d9fdbd2b834463ca62224039b458e3b17aa38a8fd4cedaeb4ce4874495
 SHA256 (.footprint) = bf2e8cfe7f674dd48add18d74f0eedd9e857afcf7edfd68c7bf7a47648395877
 SHA256 (xosd-2.2.14.tar.gz) = 4f1fa96f4895baee6a3cba40f188a0da23bbac9d68e8c326d749e084143cb508
 SHA256 (libxosd_m4.patch) = e3bc41c04db4a84bdf36329475572d7e029cc173243a01566b1ebe0fe0e869f0
