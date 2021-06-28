@@ -4,7 +4,7 @@
 # Depends on:   gtk3 alsa-lib libnotify nss cups desktop-file-utils hicolor-icon-theme shared-mime-info xorg-font-msttcorefonts
 
 name=opera-bin
-version=76.0.4017.123
+version=77.0.4054.146
 release=1
 source=(https://get.geo.opera.com/pub/${name%-bin}/desktop/$version/linux/${name%-bin}-stable_${version}_amd64.deb)
 

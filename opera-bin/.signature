@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uDUZ0i5O/YXyl29ZvKrbx01oGpbgLbPDdyExspEbUvHqfq1tuEb2CVvsPOVuvBgP1cbcMZWMbx0SzAr5jh7jCAU=
-SHA256 (Pkgfile) = 8f868a85138f5ce4315dd77fc812b0392a43e664f12c1e2a18f95a0d2f97f52f
+RWQ0NN0w0eo0uJSDaU77StuaAoJkt2MFsflpbA2Qjw2V4mzBhwti/nZyyQzQcLffA5a+rPuIOAoNNcLDqsmG0QCzxJfuc4zcAgg=
+SHA256 (Pkgfile) = f06a7663f761bec2a8d02261afdbf801054763e1c1259b834a64ab9b5ba8eac3
 SHA256 (.footprint) = d2cd9fd146281750c840a5abc6bdecb890896e8c57ea21812ccc39939a08c78f
-SHA256 (opera-stable_76.0.4017.123_amd64.deb) = 8c3ddb304bf9f0a149228daef454904d89eba7019a5a013f38da361350daec77
+SHA256 (opera-stable_77.0.4054.146_amd64.deb) = 36f0dd259cad4a62e0b29f13757e315c55eb3898cf43cc5aea45df1306938c81
