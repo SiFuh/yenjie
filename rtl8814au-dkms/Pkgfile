@@ -1,7 +1,7 @@
 # Description:  Realtek 8814au USB Wireless Driver
 # URL:          https://github.com/morrownr/8814au 
 # Packager:
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   dkms
 
 name=rtl8814au-dkms
