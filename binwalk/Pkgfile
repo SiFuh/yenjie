@@ -1,6 +1,6 @@
 # Description:   A tool for searching a given binary image for embedded files
 # URL:           https://github.com/ReFirmLabs/binwalk
-# Maintainer:    Lin SiFuh, #crux at freenode dot net
+# Maintainer:    Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:    python3-opengl cabextract p7zip sasquatch unrar
 
 name=binwalk
