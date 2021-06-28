@@ -1,7 +1,7 @@
 # Description:  Osmocom Gnu Radio Blocks
 # URL:          http://osmocom.org/projects/osmosdr
 # Packager:
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   gnuradio volk rtl-sdr cmake boost swig
 
 name=gr-osmosdr
