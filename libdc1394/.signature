@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uNfetHHBFEY+cANo4AvObmzgdulwoQCwrI/RCPly/ev3e3hWTZ8BtiXgmqrptoKOs2rPYmTDvCPcG3pjd1OLFwo=
-SHA256 (Pkgfile) = 66f0f336d2326f58ce2e2cc517d53d4ecb8213a587381f0adf1737e623e01e28
+RWQ0NN0w0eo0uCZtA+RnKi6w4vwMPA5cWPP6L74rIv6Ws34UFYNNMEvTcmi7jXUY2PFe1uND8UE0IcDYgc9h98lgTIHcN8LTAAo=
+SHA256 (Pkgfile) = f57b5c7c4346df1ad483d5a0c7380d3b6ff8e99c4d8202bc74dedcc81c8bd7a5
 SHA256 (.footprint) = c3380be150161daf55520517155d073a4e3036aa71184426d89016032129b9f5
 SHA256 (libdc1394-2.2.6.tar.gz) = 2b905fc9aa4eec6bdcf6a2ae5f5ba021232739f5be047dec8fe8dd6049c10fed
