@@ -1,7 +1,7 @@
 # Description:  Aircrack Wifi cracking tool kit
 # URL:          https://www.aircrack-ng.org/
 # Packager:	
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   libgcrypt libgpg-error ethtool libnl lz4 sqlite3 libpcap 
 
 name=aircrack-ng
