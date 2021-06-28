@@ -1,6 +1,6 @@
 # Description:  SciPy is open-source software for mathematics, science, and engineering.
 # URL:          http://www.scipy.org/
-# Maintainer:   Lin SiFuh, #crux at freenode dot net 	 	
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat 	 	
 # Depends on:   gcc-fortran python3-numpy python3-setuptools openblas python3-pybind11
 
 name=python3-scipy
