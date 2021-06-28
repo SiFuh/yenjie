@@ -1,6 +1,6 @@
 # Description:  Brute force attack against Wifi Protected Setup (WPS) 
 # URL:          https://code.google.com/archive/p/reaver-wps/
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   libpcap sqlite3
 
 name=reaver
