@@ -1,6 +1,6 @@
 # Description:  Secure file, disk, swap, memory erasure utilities(Fork of THC util)
 # URL:          https://github.com/GIJack/secure_delete
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:
 
 name=secure-delete
