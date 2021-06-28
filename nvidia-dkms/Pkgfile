@@ -1,6 +1,6 @@
 # Description:  NVIDIA Linux Display Driver (long lived branch, DKMS)
 # URL:          http://www.nvidia.com/
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   dkms gtk gtk3 libglvnd
 
 name=nvidia-dkms
