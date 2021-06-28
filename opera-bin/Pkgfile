@@ -1,6 +1,6 @@
 # Description:  A fast and secure web browser
 # URL:          https://www.opera.com/
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   gtk3 alsa-lib libnotify nss cups desktop-file-utils hicolor-icon-theme shared-mime-info xorg-font-msttcorefonts
 
 name=opera-bin
