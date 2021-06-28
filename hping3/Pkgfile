@@ -1,7 +1,7 @@
 # Description:  A command-line oriented TCP/IP packet assembler/analyzer
 # URL:          http://www.hping.org/
 # Packager:	
-# Maintainer:   Lin SiFuh, #crux at freenode dot net 	
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat 	
 # Depends on:   libpcap tcl
 
 name=hping3
