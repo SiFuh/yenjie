@@ -1,6 +1,6 @@
 # Description:  Removable disk automounter using udisks
 # URL:          https://pypi.python.org/pypi/udiskie
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   udisks2 python3 keyutils python3-setuptools libnotify gtk3 python3-gobject python3-docopt asciidoc
 
 name=udiskie
