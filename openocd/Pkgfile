@@ -1,6 +1,6 @@
 # Description: Free and Open On-Chip programming and debugging software
 # URL:         http://openocd.org/
-# Maintainer:  Lin SiFuh, #crux at freenode dot net
+# Maintainer:  Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:  libusb-compat libftdi hidapi
 
 name=openocd
