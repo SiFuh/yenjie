@@ -1,7 +1,7 @@
 # Description:  Small tool to capture packets from wlan devices
 # URL:          https://github.com/ZerBea/hcxdumptool
 # Packager:
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:
 
 name=hcxdumptool
