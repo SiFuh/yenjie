@@ -1,7 +1,7 @@
 # Description:  An open source software defined radio receiver (SDR)
 # URL:          http://gqrx.dk/
 # Packager:
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   gnuradio gr-osmosdr pulseaudio
 
 name=gqrx
