@@ -1,7 +1,7 @@
 # Description:  Whowatch - Monitor Linux Users and Processes in Real Time
 # URL:          http://whowatch.sourceforge.net/
 # Packager:
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:
 
 name=whowatch
