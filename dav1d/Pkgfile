@@ -1,6 +1,6 @@
 # Description:  AV1 cross-platform decoder
 # URL:          https://www.videolan.org/projects/dav1d.html
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   meson ninja
 
 name=dav1d
