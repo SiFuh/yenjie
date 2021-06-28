@@ -1,7 +1,7 @@
 # Description:  Ncrack is a high-speed network authentication cracking tool
 # URL:          https://nmap.org/ncrack/
 # Packager:	
-# Maintainer:   Lin SiFuh, #crux at freenode dot net 	
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat 	
 # Depends on:
 
 name=ncrack
