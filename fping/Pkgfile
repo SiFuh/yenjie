@@ -1,7 +1,7 @@
 # Description:  A program to send ICMP echo probes to network hosts
 # URL:          https://fping.org/
 # Packager:	
-# Maintainer:   Lin SiFuh, #crux at freenode dot net 	
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat 	
 # Depends on:
 
 name=fping
