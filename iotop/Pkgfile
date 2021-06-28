@@ -1,6 +1,6 @@
 # Description:  Top like program to display I/O load.
 # URL:          http://guichaz.free.fr/iotop/
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   python3
 
 name=iotop
