@@ -1,6 +1,6 @@
 # Description:   A Lightweight QT5 Desktop for FreeBSD
 # URL:           https://github.com/trueos/lumina
-# Maintainer:    Lin SiFuh, #crux at freenode dot net
+# Maintainer:    Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:    qt5
 # Optional:      xorg-xbacklight alsa-utils acpi numlockx pavucontrol network-manager-applet xterm fluxbox
 
