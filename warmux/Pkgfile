@@ -1,7 +1,7 @@
 # Description:  Clone of turn-based artillery games like Scorched Earth or Worms (formerly known as Wormux)
 # URL:          http://gna.org/projects/warmux/
 # Packager:
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   git libsdl libpng sdl_gfx sdl_image sdl_net sdl_mixer sdl_ttf curl libxml2
 
 name=warmux
