@@ -1,6 +1,6 @@
 # Description:  rxvt fork with unicode and xft support
 # URL:          http://software.schmorp.de/pkg/rxvt-unicode.html
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   xorg-libxft, xorg-libxpm, perl
 
 name=rxvt-unicode
