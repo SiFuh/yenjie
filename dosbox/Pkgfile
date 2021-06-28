@@ -1,6 +1,6 @@
 # Description:  SDL-based DOS emulator for classic games
 # URL:          http://dosbox.sourceforge.net
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   libsdl glu
 
 name=dosbox
