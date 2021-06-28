@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uGBEISfEPwC5vqPhB2CfBjTXQeh4wAutXT4d6PQFmvC6yFfrZfDS4Dk/hJoI2Vc0r2TFD9fcBugQTQtkPVO0aws=
-SHA256 (Pkgfile) = 43478c1268aab59fdf23dc9e5f15f4bd7ec8c68d6fdc0b1a16bc10334029eddb
+RWQ0NN0w0eo0uG8Vb+BlQJBWQmSGKHPIR0+eGugMe9OmT8PuQ/jLJy9PrllqK3NuvuQ58fmrkMvpphHxqn+sE4PuJg3KGXipQwQ=
+SHA256 (Pkgfile) = aa68dea859bdf97b0ecc364d7ea5a774b47b650b2898a9ebdf585555f588791e
 SHA256 (.footprint) = 44727ad76fe1d529c6bbd9f2f0e9107493e42647e0bac548b9a0d8c3e90fbb37
 SHA256 (kismet-2016-07-R1.tar.xz) = bdb21f153311f1ff3b16621bf0d6740f66369bf0982b0a289c9a12af8847e237
 SHA256 (aircrack_crypto_cc.patch) = 519ffa7e7bc32e3201c97305ee3bd006616e50bd6e66528e6bd8147dfd03df90
