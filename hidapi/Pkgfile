@@ -1,7 +1,7 @@
 # Description:  Library for communicating with USB and Bluetooth HID devices
 # URL:          https://github.com/libusb/hidapi
 # Packager:
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   libusb
 
 name=hidapi

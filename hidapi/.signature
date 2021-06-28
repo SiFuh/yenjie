@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uF03cR4Nq2UPEdPDBlAMbiEPzMsU/aoAmv7U6Q4n1G9w4uSc4HFO+4vMo8k++PgjPNIlHBoOyKGDulApxasm6QM=
-SHA256 (Pkgfile) = 0bda56fedaac733c7cb54b19fd6ad3d07f071822708db25b01f2d02a9957b678
+RWQ0NN0w0eo0uBCLLaitmTAA+9wmkhGolIJ+bc48r4bb79zPN4vshj9tdQmevJY3kvdQ/H5FhZbeqYaRtcGNYqUz4NTLSa74Ogg=
+SHA256 (Pkgfile) = ee2a6325d7cebe942f155de741ed7111f9d46b3d896a52f2cbcbf70045e5602a
 SHA256 (.footprint) = acc4db33a6b3b9f6c5e1bc9766c8cfd8a2dbe2e44e764f8007791e5f3628df15
 SHA256 (hidapi-0.10.1.tar.gz) = f71dd8a1f46979c17ee521bc2117573872bbf040f8a4750e492271fc141f2644
 SHA256 (configure_ac.patch) = 992c367ab9b6e84031db7804e6915f896b6f1566f035157475933327150dea4c
