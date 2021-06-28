@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uOgGGjaoG/HTbEceZataxye67wttmVawYIx4XDAYJpZNGSfDHxzmsm9qo5v6WrFhm7DqePpwqIj6nHCZQJjo3Q0=
-SHA256 (Pkgfile) = 4a243d89bde3646125d9dda2c97f491c031449c8dd9325296f522fac2b582a97
+RWQ0NN0w0eo0uG2TSO138V9DslGFlPDUOp4sYsEPXxzx6Z++7qB1SSiN02NVCJy4DS1hUI9CakGFiMwrwX4Oqdu7NEv4PyZsJwA=
+SHA256 (Pkgfile) = 372e1900cf11bcdf7eadcbe13f140fb546b9b04f4929e9b0c0e083dcbda4476b
 SHA256 (.footprint) = 2d62bf8bfc8925d3f9d633f2c08cd0722d4d4ea985f67153568c229c7c1f212c
 SHA256 (usbpicprog_1.0.8.orig.tar.gz) = 7deaed1bd2338c2a9b6b5167c2860d4175c4eabeb64c637a1273ff7627037666
