@@ -1,6 +1,6 @@
 # Description:  Hashcat password cracker for GPU
 # URL:          https://hashcat.net/
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   opencl-headers xxhash
 
 name=hashcat
