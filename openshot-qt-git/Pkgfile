@@ -1,7 +1,7 @@
 # Description:  Free, simple, open-source video editor for Linux
 # URL:          https://www.openshot.org/
 # Packager:    
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   libopenshot-audio-git libopenshot-git python3-pyqt5 python3-pyzmq
 
 name=openshot-qt-git
