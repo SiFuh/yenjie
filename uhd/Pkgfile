@@ -1,7 +1,7 @@
 # Description:  Linux driver for USRP
 # URL:          https://www.ettus.com/
 # Packager:
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   git cmake boost python3-mako
 
 name=uhd
