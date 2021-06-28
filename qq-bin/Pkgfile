@@ -1,6 +1,6 @@
 # Description:  QQ Instant Messenger Client for Linux
 # URL:          https://im.qq.com/linuxqq/index.html
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:
 
 name=qq-bin
