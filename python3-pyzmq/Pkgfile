@@ -1,6 +1,6 @@
 # Description:  Python bindings for zeromq
 # URL:          https://pypi.org/project/pyzmq/
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:
 
 name=python3-pyzmq
