@@ -1,6 +1,6 @@
 # Description:  Ncurses-based monitoring for wireless network devices
 # URL:          https://github.com/uoaerg/wavemon
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   ncurses libcap libnl
 
 name=wavemon
