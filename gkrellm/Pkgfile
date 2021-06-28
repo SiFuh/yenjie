@@ -1,6 +1,6 @@
 # Description:   GKrellM is a single process stack of system monitors
 # URL:           http://gkrellm.srcbox.net/
-# Maintainer:    Lin SiFuh, #crux at freenode dot net
+# Maintainer:    Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:    gtk lm_sensors
 
 name=gkrellm
