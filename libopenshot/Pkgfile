@@ -1,7 +1,7 @@
 # Description:  Libraries for Openshot-qt
 # URL:          https://launchpad.net/libopenshot
 # Packager:
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   libopenshot-audio qt5 ffmpeg zeromq swig cppzmq zstd
 
 name=libopenshot
