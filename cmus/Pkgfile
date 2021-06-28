@@ -1,6 +1,6 @@
 # Description:  Small and fast music player using the ncurses library
 # URL:          https://cmus.github.io/
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Optional:     alsa-lib flac libao libid3tag libmad libmodplug libmpcdec libvorbis
 
 name=cmus
