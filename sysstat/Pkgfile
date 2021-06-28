@@ -1,6 +1,6 @@
 # Description:  A collection of performance monitoring tools
 # URL:          http://perso.orange.fr/sebastien.godard/
-# Maintainer:   in SiFuh, #crux at freenode dot net
+# Maintainer:   in SiFuh, #crux at irc dot libera dot chat
 # Depends on:
 
 name=sysstat
