@@ -1,6 +1,6 @@
 # Description:   A fast, extensible, and customizable web browser.
 # URL:           http://aidanholm.github.io/luakit/
-# Maintainer:    Lin SiFuh, #crux at freenode dot net
+# Maintainer:    Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:    vala lua51 lua51-filesystem luajit webkitgtk gst-libav
 
 name=luakit
