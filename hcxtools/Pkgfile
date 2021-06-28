@@ -1,7 +1,7 @@
 # Description:  Tools to convert captured packets for hashcat or John the Ripper
 # URL:          https://github.com/ZerBea/hcxtools
 # Packager:
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:
 
 name=hcxtools
