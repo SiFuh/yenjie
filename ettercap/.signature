@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uEcLUR+N9Kw9xWRgniK5+wkuAnPS/ItrsNpE/9FRW/mIzL4krYqrA6Z2Dk36ICPEgds6n6dZMUscheOUTcPyNg8=
-SHA256 (Pkgfile) = 07a3adc4aed3d6252ee2b1aa28fb0e537026dbc0b00bf203f3629a20c0f49c5b
+RWQ0NN0w0eo0uChB2j9304EtOz+cJ8E4T9CSX/C19lbjSRkWkeMzZ/U6Y9ZE5puh/pWw1vK577XPXnmI9J2wnStdnWQiLiJZqgE=
+SHA256 (Pkgfile) = f9ee628adaae58f6f3b06b029de8d3766c93f645c41dda4145b9da7f0c697e18
 SHA256 (.footprint) = 88e2054c09e013b2c4a4c4b95d2fd55f3569cd4a2895aa84d745f00b3e691892
 SHA256 (ettercap-0.8.3.1.tar.gz) = d0c3ef88dfc284b61d3d5b64d946c1160fd04276b448519c1ae4438a9cdffaf3
