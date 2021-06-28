@@ -1,6 +1,6 @@
 # Description:  Extremely fast non-cryptographic hash algorithm
 # URL:          https://cyan4973.github.io/xxHash/
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   
 
 name=xxhash
