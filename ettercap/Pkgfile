@@ -1,8 +1,8 @@
-# Description:  Ettercap is a comprehensive suite for man in the middle attacks
-# URL:          https://www.ettercap-project.org/
+# Description:   Ettercap is a comprehensive suite for man in the middle attacks
+# URL:           https://www.ettercap-project.org/
 # Packager:
-# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
-# Depends on:   libnet geoip geoip-database cmake ghostscript libpcap
+# Maintainer:    Lin SiFuh, #crux at irc dot libera dot chat
+# Depends on:    libnet geoip geoip-database cmake ghostscript libpcap
 
 name=ettercap
 version=0.8.3.1
