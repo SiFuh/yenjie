@@ -1,6 +1,6 @@
 # Description: Fast scan of the Internet
 # URL:         https://github.com/robertdavidgraham/masscan
-# Maintainer:  Lin SiFuh, #crux at freenode dot net
+# Maintainer:  Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:  libpcap
 
 name=masscan
