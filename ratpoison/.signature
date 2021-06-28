@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uKVuCp1Ol/lB3B2ygAUJEfmZxxKVuTR5yHnPRm7pCHx+/+Svi6xKwKh81kuxCjKU3vKYLgKxUCY9T79tzd3xagg=
-SHA256 (Pkgfile) = ea04e624a3b717228e6d73de78cb242f4341ec64068b48f89315cb1e0fa3221e
+RWQ0NN0w0eo0uI/CWYBz0POJNCdho/PkhqLMMdxkBjkNAOKYTd5G8AGy4lsGqSk0Yu0m2cEFyaqerbIb1ic8gCGFWqvrOzAe9Ag=
+SHA256 (Pkgfile) = ae5fff6555842f4126cfe691744aec2548702c0abf093fe600486aa312c9f918
 SHA256 (.footprint) = 773e6ad4d386d47a2cbaf118c4907ca6671a53bd436c08a05579029123510c59
 SHA256 (ratpoison-1.4.9.tar.xz) = d98fa4be025ecca453c407ff311ab3949f29f20d6d8abedf8f0716b85fc8d1f1

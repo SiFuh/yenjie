@@ -1,6 +1,6 @@
 # Description:   A simple keystroke-driven window manager
 # URL:           https://www.nongnu.org/ratpoison/
-# Maintainer:    Lin SiFuh, #crux at freenode dot net
+# Maintainer:    Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:    xorg-libxft xorg-libxinerama xorg-libxrandr xorg-libxtst texinfo
 
 name=ratpoison
