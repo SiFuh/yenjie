@@ -1,6 +1,6 @@
 # Description:   Easily rename multiple files using your text editor
 # URL:           https://github.com/laurent22/massren
-# Maintainer:    Lin SiFuh, #crux at freenode dot net
+# Maintainer:    Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:    go
 
 name=massren
