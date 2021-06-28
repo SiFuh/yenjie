@@ -1,6 +1,6 @@
 # Description: GTK3 configuration tool for the fcitx input framework
 # URL:         http://fcitx-im.org/
-# Maintainer:  Lin SiFuh, #crux at freenode dot net
+# Maintainer:  Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:  fcitx gtk3
 
 name=fcitx-configtool-gtk3
