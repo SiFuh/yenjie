@@ -1,6 +1,6 @@
 # Description:  Mplayer frontend
 # URL:          http://smplayer.sf.net/
-# Maintainer:   Lin SiFuh, #crux at freenode dot net
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:   mplayer qt5
 
 name=smplayer
