@@ -1,6 +1,6 @@
 # Description:   Tools for squashfs, a highly compressed read-only filesystem for Linux
 # URL:           https://github.com/devttys0/sasquatch
-# Maintainer:    Lin SiFuh, #crux at freenode dot net
+# Maintainer:    Lin SiFuh, #crux at irc dot libera dot chat
 # Depends on:    squashfs-tools
 
 name=sasquatch
