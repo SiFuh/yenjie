@@ -1,6 +1,6 @@
 # Description:  Set of C++ classes that provide a common API for realtime audio input/output
 # URL:          http://www.music.mcgill.ca/~gary/rtaudio/
-# Maintainer:   Lin SiFuh, #crux at freenode dot net 	
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat 	
 # Depends on:   alsa-lib
 
 name=rtaudio
