@@ -4,7 +4,7 @@
 # Depends on:
 
 name=python3-pyzmq
-version=22.0.3
+version=22.1.0
 release=1
 source=(https://files.pythonhosted.org/packages/source/p/${name//python3-}/${name//python3-}-${version}.tar.gz)
 
