@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uE87hSR8rV+e5vY+6xapbitSbZJR2nNbSMMFw7086G2roQ0bx9/jAvaxFW+xTkAsWOG/NLp+guizcEOFDmpbuAk=
-SHA256 (Pkgfile) = 563227583a41798f655f7c01e29caf75442d203be8916eaef03ed8f63066ef3c
-SHA256 (.footprint) = 588d2c7acfeef4b5bdfecc9568400a3fb07272b79b87251457eb66c849edb042
-SHA256 (hcxtools-6.1.5.tar.gz) = 6229e46a1298ee6f883e25dafbf837fe6314476d4b3201e1ba63645569c862c7
+RWQ0NN0w0eo0uL4iq//omThIXE4+AyB+dU73jv+dTnuZvV/MnDzwpQyjN3y7LAp/0JaFPeXUJcAgXaoJRc7omohosVLAxZnVzQM=
+SHA256 (Pkgfile) = 581fb6d7a59b186c5966bbe328978c0e81274592842ab8963af6fc163994d3c7
+SHA256 (.footprint) = 3e35afb1aee5aee074df61ed609b3586fb02b68b441ed64613c29d33fcbc09be
+SHA256 (hcxtools-6.2.0.tar.gz) = 34435b08385ee23dbc1054e92e5b1a1637b352aa73fed301ef94b4b40a6165a1

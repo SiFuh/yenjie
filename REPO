@@ -496,9 +496,9 @@ f:9de2778a9f4237f68e1783dbf4e207a6:hashcat-utils/.signature
 f:d6dbafe8392ba29837693370f67b3f18:hcxdumptool/Pkgfile
 f:cc06598a863a9c372698779b479a7dba:hcxdumptool/.footprint
 f:be5844adc2389eab6855c987fbe7526b:hcxdumptool/.signature
-f:c8d53f082eee81ddb1bf984b4e7e860a:hcxtools/.signature
-f:c5e2cf18f19f460097a480476b34a8bc:hcxtools/.footprint
-f:86a208ed8d2e12d3f73cda8787100329:hcxtools/Pkgfile
+f:b2b347aef62cede979372a8de0542070:hcxtools/.signature
+f:cbc90115cebade3ee67e6b9cd80cccae:hcxtools/.footprint
+f:ee10d7b604aa44110c5eab2bb6d12f35:hcxtools/Pkgfile
 f:97743fe4af3877b7d1306027612c0c5b:hcxtools-35/.signature
 f:a377dd373c8674a09e7cdc4db6ac948f:hcxtools-35/Pkgfile
 f:5723a1bc2207994ac0fe91d31224cbaa:hcxtools-35/.footprint
