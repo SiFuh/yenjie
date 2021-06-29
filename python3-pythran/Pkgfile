@@ -1,5 +1,5 @@
 # Description:  Ahead of Time compiler for numeric kernels
-# URL:          https://pypi.org/project/pythran/
+# URL:          https://pythran.readthedocs.io/
 # Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat 	 	
 # Depends on:   python3-numpy python3-setuptools boost python3-six
 
@@ -7,24 +7,16 @@ name=python3-pythran
 _name=${name//python3-}
 version=0.9.11
 release=1
-source=(https://github.com/serge-sans-paille/${_name}/archive/${version}/${name}-${version}.tar.gz)
+source=(https://files.pythonhosted.org/packages/source/p/${_name}/${_name}-${version}.tar.gz)
 
 build() {
-
-  export LDFLAGS="-Wall -shared"
 
   cd "${_name}"-"${version}"
 
   python3 ./setup.py install --prefix=/usr --root="${PKG}" --optimize=1
 
-  find "${PKG}" \(\
-       -name  'INSTALL*' -o \
-       -iname 'LICENSE*' -o \
-       -name  'THANKS*'  -o \
-       -name  'README*'  -o \
-       -name  'COPYING*'    \
-       \) -exec rm -rf '{}' \; || true
-
+  rm -r "${PKG}"/usr/lib/python*/site-packages/pythran/{boost,xsimd}
+  rm "${PKG}"/usr/lib/python3.9/site-packages/pythran/pythonic/patch/README.rst
   find "${PKG}" -type d -empty -delete
 
 }

@@ -91,6 +91,7 @@ d:xosd
 d:arp-scan
 d:zeromq
 d:alizams-bin
+d:python3-pythran
 d:libdc1394
 d:rtl8814au-dkms
 d:mplayer
@@ -323,7 +324,7 @@ f:f8815d7204467a967b289a0e88955815:python3-pyzmq/.signature
 f:056e3b7be78f1ff4b7d8298e17a31bf0:python3-pyzmq/.footprint
 f:66896e4baa59a13785212b180a1a2c01:python3-pyzmq/Pkgfile
 f:11456565b635b271bef10c25461a09ef:python3-scipy/.signature
-f:21d9a20b38cc5f3c5f8e97e5668da00d:python3-scipy/Pkgfile
+f:500c2a4c5d93388841ffd3c48bf993d8:python3-scipy/Pkgfile
 f:99391dc6a99527e572faac3efc8bd57a:python3-scipy/.footprint
 f:9aa10f01dd66a4b7964fa994ea79cb0f:python-future/.signature
 f:95ed21a024388f2bb057e504b11263e2:python-future/.footprint
@@ -469,6 +470,9 @@ f:6bbec22c453cce2269312934c1e2fbb5:alizams-bin/alizams_sh.patch
 f:1ed99cac256d4291f06a0a57edce0896:alizams-bin/.footprint
 f:9e7f9642492aede92503c45ca78a2676:alizams-bin/.signature
 f:8de8f78f6c03c54ddf7063277935ac05:alizams-bin/Pkgfile
+f:83849f3cd5127563233c15da8d7dd860:python3-pythran/.footprint
+f:e2f77f03ade2382f9c47103b7b926ffd:python3-pythran/.signature
+f:3b140f99c2e728fb0ac6771c74da2d9e:python3-pythran/Pkgfile
 f:813b07a3d9b8fbaae54045fcecfa8cc1:libdc1394/Pkgfile
 f:42ed059c66734b844bbab284ac74b055:libdc1394/.footprint
 f:002022d13d471209711932787f5a6304:libdc1394/.signature
