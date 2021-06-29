@@ -4,7 +4,7 @@
 # Depends on:   opencl-headers xxhash
 
 name=hashcat
-version=6.1.1
+version=6.2.2
 release=1
 source=(https://hashcat.net/files/${name}-${version}.tar.gz)
 

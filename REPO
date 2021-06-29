@@ -484,9 +484,9 @@ f:5afb114c52e3cc4f1288754d250c7284:mplayer/mplayer.conf
 f:40e1d9e127ab0a5439b83b94b5b086ec:binwalk/.footprint
 f:8d083a29d1d2bb5296768a7aaf12995d:binwalk/.signature
 f:a990e716a13804844d7f888e3dd48e29:binwalk/Pkgfile
-f:0a24d66ed002f3b8aaa3e817eee84a0e:hashcat/.signature
+f:4642a36b6102c85074c19e959e01c2cd:hashcat/.signature
 f:decb610afdc4d66839cb7ec734bd54ba:hashcat/.footprint
-f:f569a1d65372f59b0214f3a696c794a6:hashcat/Pkgfile
+f:d65ed52734ea4b87db4208580a34f165:hashcat/Pkgfile
 f:aa319c53b9f1f498a2c9f7d2f635d35b:win32-essential-codecs/.footprint
 f:0f5d651576e1dc762d4470b38aeb22fb:win32-essential-codecs/.signature
 f:ed844fad903ae12cb5a9956e727b8d55:win32-essential-codecs/Pkgfile
