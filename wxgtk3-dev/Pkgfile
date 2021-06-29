@@ -5,7 +5,7 @@
 
 name=wxgtk3-dev
 _name=wxWidgets
-version=3.1.3
+version=3.1.5
 release=1
 source=(https://github.com/${_name}/${_name}/archive/v${version}/${name}-${version}.tar.gz)
 
@@ -13,19 +13,20 @@ build() {
 
   cd "${_name}"-"${version}"
 
-  ./configure \
-    --prefix=/usr \
-    --with-gtk=3 \
-    --with-opengl \
-    --enable-unicode \
-    --enable-graphics_ctx \
-    --enable-mediactrl \
-    --enable-webview \
-    --with-regex=builtin \
-    --with-libpng=sys \
-    --with-libxpm=sys \
-    --with-libjpeg=sys \
-    --with-libtiff=sys \
+  ./configure                \
+    --with-gtk=3             \
+    --with-opengl            \
+    --prefix=/usr            \
+    --disable-tests          \
+    --enable-unicode         \
+    --enable-webview         \
+    --with-libpng=sys        \
+    --with-libxpm=sys        \
+    --enable-mediactrl       \
+    --with-libjpeg=sys       \
+    --with-libtiff=sys       \
+    --with-regex=builtin     \
+    --enable-graphics_ctx    \
     --disable-precomp-headers
 
   make
