@@ -332,9 +332,9 @@ f:b729ac66c6c445c6a697b43451ce210e:python-future/Pkgfile
 f:31df0bdeaf32dafea752c2467ba8993a:python-sabyenc/.footprint
 f:197dcb90ce7e12cc4b96f9a1507307fe:python-sabyenc/Pkgfile
 f:c3b0b548bf168c48fd3aa33e18e5f858:python-sabyenc/.signature
-f:245a4e769a4b5479ce30a28b7a5e16b7:qq-bin/Pkgfile
+f:9da896e349fd86f68203f3b790294434:qq-bin/Pkgfile
 f:08a8c5e34a98df301c5f6e97ba959ec6:qq-bin/.footprint
-f:57ef627242deee0626cd741e9fdf33a6:qq-bin/.signature
+f:dbf03e2efedee58b712e6777d704e9a5:qq-bin/.signature
 f:c0792c7281b19229df314e82baaced9e:ratpoison/Pkgfile
 f:f523550bcdef2d0d45eefb45959a8243:ratpoison/.footprint
 f:ba8e121d3304daec866c534546008c05:ratpoison/.signature
