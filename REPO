@@ -148,10 +148,10 @@ f:28fed35872987fda1d0a39c59891ade9:blender/.footprint
 f:1a6225642746618ba112ac957417dabc:bluefish/Pkgfile
 f:894f593b8b2dca89180e3b02caf52d11:bluefish/.footprint
 f:a690cebf5a240a506c4e19a6d87afd0c:bluefish/.signature
-f:3023a2870d0fb77e9b1954aa32b89d60:chirp/.signature
+f:93eac668525fa0d2f9e8445a1ee2cda7:chirp/.signature
 f:9a5e24b3cddafffe7468c9485e647b7f:chirp/README
-f:25745c1222f4d32631cb21539654b771:chirp/.footprint
-f:078a7165ae86eff42f35c4fd630835b4:chirp/Pkgfile
+f:7bbb4188480ad79d4f81894d8243c845:chirp/.footprint
+f:1f856fc80cfcb3ecd49ae2fcf3f31637:chirp/Pkgfile
 f:7e835ee3ffa1833277ab59a24fafce34:circuit-simulator/circuit-simulator
 f:80b397dfd265978a0bd325f2667182ed:circuit-simulator/circuit_simulator.patch
 f:deaff8b1646089d6c2c737dcbc540255:circuit-simulator/circuit.desktop

@@ -5,7 +5,7 @@
 # Depends on:   pyserial libxml2-python pygtk python-future
 
 name=chirp
-version=20210406
+version=20210618
 release=1
 source=(https://trac.chirp.danplanet.com/${name}_daily/daily-${version}/${name}-daily-${version}.tar.gz)
 
