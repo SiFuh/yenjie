@@ -467,8 +467,8 @@ f:863ca9329e495ce89778ca05fdfce7a2:zeromq/Pkgfile
 f:365c168edf622d05211d92a382f55032:yenjie.httpup
 f:6bbec22c453cce2269312934c1e2fbb5:alizams-bin/alizams_sh.patch
 f:1ed99cac256d4291f06a0a57edce0896:alizams-bin/.footprint
-f:2893395294439b0d906ddcacc8526b9f:alizams-bin/.signature
-f:706c44497476eb91c02d9d37d42a00a2:alizams-bin/Pkgfile
+f:9e7f9642492aede92503c45ca78a2676:alizams-bin/.signature
+f:8de8f78f6c03c54ddf7063277935ac05:alizams-bin/Pkgfile
 f:813b07a3d9b8fbaae54045fcecfa8cc1:libdc1394/Pkgfile
 f:42ed059c66734b844bbab284ac74b055:libdc1394/.footprint
 f:002022d13d471209711932787f5a6304:libdc1394/.signature
