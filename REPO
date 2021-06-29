@@ -400,9 +400,9 @@ f:455a7ae0197eed8929cfd7f0c0714b2c:uhd/boost.patch
 f:b2fea6e7f8d587d7365b8eb451033cf2:usbpicprog/.footprint
 f:4d25eaadbe9da133b4f81854aef4b07b:usbpicprog/Pkgfile
 f:8677f80f9b8e864ac6d70e4b2bb63a4b:usbpicprog/.signature
-f:cf9abc3bfc02ba7d014dd883bc00e051:sysstat/Pkgfile
+f:21c883ee45afb84ff1d1e85b08dadf9d:sysstat/Pkgfile
 f:8e1f2b29f5a8efbbd2cc21cc69a13563:sysstat/.footprint
-f:696df7be8214ff7207cb6b0a01672813:sysstat/.signature
+f:59534bf609288131e33ffcabe6146a98:sysstat/.signature
 f:85d7ea8c73a8c8b79285609f85bec6a0:v4l-utils/Pkgfile
 f:5c92aac7119a846b6f6501ce84e37bfe:v4l-utils/.signature
 f:b04095dd33a0f4a02b5675a1838d535f:v4l-utils/.footprint

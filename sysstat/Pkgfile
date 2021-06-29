@@ -4,7 +4,7 @@
 # Depends on:
 
 name=sysstat
-version=12.5.3
+version=12.5.4
 release=1
 source=(http://pagesperso-orange.fr/sebastien.godard/${name}-${version}.tar.xz)
 

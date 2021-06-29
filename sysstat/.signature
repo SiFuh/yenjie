@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uFsVBuHf8mX6bQbHr+eFan0QhN7F7BKAP1au+luH1SJD1LmZh8WP6znRES5spuCm7tNdI9682VoYWbnreTMidww=
-SHA256 (Pkgfile) = 5b76415e54e189188916e082e7775fad271a7633d63821f9a69f2f51da679fa2
+RWQ0NN0w0eo0uDap4kKarlhRRfklj4B73T128/ERB/LT5CKd/9pz/8XJf3H0cr0kmNjbmytqnpHq2gkajOobBy35Z5GlTfpUtgs=
+SHA256 (Pkgfile) = 3140b1173bd3cd9bcde770f31f2c9777d7d6d98da24c3d42305c841696fbabc0
 SHA256 (.footprint) = 6d2dd84d70532b12624a57b9439f5b67ea561b31d1f53a85ca713370a178a119
-SHA256 (sysstat-12.5.3.tar.xz) = 646f0620e944be28036c9b7807dc0c66be704626adfacf064286aaa1abd50967
+SHA256 (sysstat-12.5.4.tar.xz) = 4ef07d7db2fd86fb04a31871882f368c547abd463c29133faaaead059902f0b8
