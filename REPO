@@ -170,9 +170,9 @@ f:aa6d3341b6ef40a309a9078b90fa848c:cubicsdr/Pkgfile
 f:65a98ea106e5b50f62f81b893354cacc:cubicsdr/.footprint
 f:e8ff22ffae90a19e61e7aeab265dd51b:cubicsdr/Pkgfile-pulseaudio
 f:4967d645472245f908631ec60ea76e08:cubicsdr/.signature
-f:62e25270c30cec56debf68834462c973:dav1d/Pkgfile
-f:5dbb3a33b912ac790c599dacdf8744f7:dav1d/.signature
-f:50d4563f1ce75f673ab79ff288921cf0:dav1d/.footprint
+f:1c3d6d14166100941d6e455a6e1033a2:dav1d/Pkgfile
+f:4604c84ff693ef4a856f8c3ee1c3fe92:dav1d/.signature
+f:244cd2b674a79b1d150b0a183db7e342:dav1d/.footprint
 f:6a099ab490f712bd9e16cbfe1cd57d1d:dkms/.signature
 f:5d325e6d81213b0991fdb144221883d1:dkms/README
 f:f72f5730732cbc23a1b608ce4b367a35:dkms/Pkgfile

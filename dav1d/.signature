@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uF/CeB22dGVmobhT6LP+W38kLmef8GrSnNAySrzbCZwLzCwKFKf2rFismgTy/T/mOJ7p6mwvELwTzq5+wbYSbAQ=
-SHA256 (Pkgfile) = 8bbf8ffd431849da2eafda1bfd5c737f53ccaf8abd67ec01d2813db4b78f651d
-SHA256 (.footprint) = 7fbd129cddb11f292552d160b8910bf78708166e89a885a67f05749d2db87aec
-SHA256 (dav1d-0.8.2.tar.xz) = 3dd91d96b44e9d8ba7e82ad9e730d6c579ab5e19edca0db857a60f5ae6a0eb13
+RWQ0NN0w0eo0uGqfQ8Ij4nmfLG+aOi0KDUkj26pE1B1Z+Rpo8WbrRygtjwTScHLTDMzacj1HrG4QAMTkYYFdEpY537ZRezFNLAo=
+SHA256 (Pkgfile) = 01b191a7e2eefcc044af9ede3c57f5092e024943fc8473c5e3e1ab0614b3b26e
+SHA256 (.footprint) = 93384350cba9a0fcf1783b97de582d13d2f248b7a43616cd5355bb9ea3d6fde3
+SHA256 (dav1d-0.9.0.tar.xz) = cfae88e8067c9b2e5b96d95a7a00155c353376fe9b992a96b4336e0eab19f9f6
