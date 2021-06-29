@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uFZD8klWXZcPar8/7+CcLrWIOGGJsZkgpyeFD6fG+AsWQU09lMydg1vAckSi43CIM8Am3RSUkSP78ODzkLUuhAI=
-SHA256 (Pkgfile) = 98e178c135bc4b281ac1318fd8771280dd11cf712df1c3316b4d7e7aaf93fda5
+RWQ0NN0w0eo0uDx+8bk1QhmRtc5cq8LHGfSp2GvRE62TwWPZ9EyiXCQmldNGLWJKd1NdJCOwnacLy2gdNCCLlG8aheAiZ9v/cQA=
+SHA256 (Pkgfile) = f93c2d470f3b210dd5d431a9db3068a45c7bff636d827cf8e5c90ec3251dfa87
 SHA256 (.footprint) = 9b62a7423e48ac75eaf5243b41fcd0dc3bfc9d8511907b1501067f2d97d901c4
-SHA256 (fcitx-qt5-1.2.5.tar.xz) = e5c3ccdf406c19bde48ab5f59ac208967c3ca4f520626cdb66baf63f6160d946
+SHA256 (fcitx-qt5-1.2.6.tar.xz) = ef3f5d76d34f62aa4e5ad906a2497ee16a4fdfabf9b99a91bdb5548762336077

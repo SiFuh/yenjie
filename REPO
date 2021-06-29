@@ -192,9 +192,9 @@ f:592a01b014b8212b0ef6484e2b8183f8:fcitx/post-install
 f:7840c3c0fcc331b47d21c04f3750bfc6:fcitx-configtool-gtk3/Pkgfile
 f:89f0ec72fe9c4a0c467ee8142f3b27df:fcitx-configtool-gtk3/.footprint
 f:ecc0f790c6ea95c1a4816b116f0115c5:fcitx-configtool-gtk3/.signature
-f:a46dbba436b936bd19220fbd1350b3d9:fcitx-qt5/Pkgfile
+f:b7296b2432c28e38b435d2763280a6d9:fcitx-qt5/Pkgfile
 f:c6d5d895872a8e5fdcab059492398e88:fcitx-qt5/.footprint
-f:d72ff23eea8807bb842f0bc93d6c236c:fcitx-qt5/.signature
+f:5c0f03e4f39d107e0bdc64b8f5caa186:fcitx-qt5/.signature
 f:a7d9132dbb82e36b257aca6c6b619bb5:flashrom/.signature
 f:9c9c46b55fb2e603240c69bbed994a3b:flashrom/Pkgfile
 f:6be6d5bca974a155f989a3fe94828042:flashrom/.footprint
