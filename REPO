@@ -120,6 +120,7 @@ d:lumina-desktop
 d:rtl8812au
 d:emacs
 d:gkrellm
+d:frei0r-plugins
 f:0870fafeb2131a1268f2fc4a8b7209fe:lshw/.signature
 f:143d2604bf77fb4c9de17df37d92ed29:lshw/.footprint
 f:82b95e3ef71abd3b284eaa99678cf0bb:lshw/Pkgfile
@@ -583,3 +584,6 @@ f:3ffcd1667d1535f9f25fca76d8682b4a:emacs/.signature
 f:7bc3b4830e3d4e9f35fa34a6afbb15aa:gkrellm/.footprint
 f:1da697090ab93cb27a3c34cb52132f5f:gkrellm/.signature
 f:8016a9bf18ed913021945167cef432ec:gkrellm/Pkgfile
+f:9d02ae45a36114f48b168b5941b49712:frei0r-plugins/Pkgfile
+f:aacffada327eb086046428dabafb9d7c:frei0r-plugins/.footprint
+f:3ea73790b9a7d07f2f221d284eb07d9c:frei0r-plugins/.signature

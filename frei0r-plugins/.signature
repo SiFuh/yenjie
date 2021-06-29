@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uFSyYEoa/BRDiVyDWloGZQR7KiCNiMuNKphePVV60kxnJvoKvLpVMK+vJp07F81zRpJSrf08b4eaKKb5lzBCHgY=
+SHA256 (Pkgfile) = d8de2854659913b1b813b4f132458763a2fef9633279fb521ab5dfae63da13e5
+SHA256 (.footprint) = 580fd250661ba3c01437e492c34889ed9717b0b1f86b59271f28bdedb6228a1a
+SHA256 (frei0r-plugins-1.7.0.tar.gz) = 1b1ff8f0f9bc23eed724e94e9a7c1d8f0244bfe33424bb4fe68e6460c088523a

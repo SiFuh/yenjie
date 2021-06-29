@@ -1,0 +1,24 @@
+# Description:  Minimalistic plugin API for video effects
+# URL:          https://frei0r.dyne.org/
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
+# Depends on:   cairo
+
+name=frei0r-plugins
+version=1.7.0
+release=1
+source=(https://files.dyne.org/${name%-*}/${name}-${version}.tar.gz)
+
+build() {
+
+
+  cmake -S "${name}"-"${version}" -B build             \
+        -D CMAKE_BUILD_TYPE=Release                    \
+        -D CMAKE_INSTALL_PREFIX:PATH=/usr              \
+        -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"    \
+        -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -DNDEBUG"
+
+  cmake --build build
+
+  DESTDIR="${PKG}" cmake --install build
+
+}
