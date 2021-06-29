@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uDJWZNZC+8ed5OfVHeKGFlZSMcdWvbl4tf3tpV1UrgG1jr3FN0ZNx1CAKt/U+s33l6kXROqmTt65bHalT7rdLQE=
-SHA256 (Pkgfile) = 736fd0c033723edd6c4fb2c7902877b91029a7fa36b17d087a3136a964929df7
-SHA256 (.footprint) = 3459b6a73cc01ae3da0b25ffc7857fb431055affcdb4c0143206e9801718b9fd
-SHA256 (volk-2.4.1.tar.gz) = 016e47c851c4e0d6cb115dc8125960cd05cefbf0d52aed7df8d3553bcd7a19e6
+RWQ0NN0w0eo0uPzdvmQNXIWI1veMH/zPH0030nqjOvPrrQ0S5D4ZJmZIkfXdjshBn6TQ2q93ogpn94/r+LipOp+lewmGrQMFPQs=
+SHA256 (Pkgfile) = 37675a1fb025e5bfd4c44cfc9656cc3e820d311f1cd2af58098221d5be90e456
+SHA256 (.footprint) = 339d86f904d767e8509e54e7e1ba6f06329a47fd191579669cc1214ea1b5cf3e
+SHA256 (volk-2.5.0.tar.gz) = 468bebdb8c2ae9b82837ad08abd146dd9a9a48d3de7bea2d0095e4b1557b5299
 SHA256 (cpu_features-0.6.0.tar.gz) = 95a1cf6f24948031df114798a97eea2a71143bd38a4d07d9a758dda3924c1932

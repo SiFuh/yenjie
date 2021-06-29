@@ -89,6 +89,7 @@ drwxr-xr-x	root/root	usr/include/volk/asm/orc/
 -rw-r--r--	root/root	usr/include/volk/volk_32fc_32f_add_32fc.h
 -rw-r--r--	root/root	usr/include/volk/volk_32fc_32f_dot_prod_32fc.h
 -rw-r--r--	root/root	usr/include/volk/volk_32fc_32f_multiply_32fc.h
+-rw-r--r--	root/root	usr/include/volk/volk_32fc_accumulator_s32fc.h
 -rw-r--r--	root/root	usr/include/volk/volk_32fc_conjugate_32fc.h
 -rw-r--r--	root/root	usr/include/volk/volk_32fc_convert_16ic.h
 -rw-r--r--	root/root	usr/include/volk/volk_32fc_deinterleave_32f_x2.h
@@ -190,7 +191,8 @@ drwxr-xr-x	root/root	usr/lib64/cmake/volk/
 -rw-r--r--	root/root	usr/lib64/cmake/volk/VolkTargets-release.cmake
 -rw-r--r--	root/root	usr/lib64/cmake/volk/VolkTargets.cmake
 -rw-r--r--	root/root	usr/lib64/libcpu_features.a
-lrwxrwxrwx	root/root	usr/lib64/libvolk.so -> libvolk.so.2.4
--rwxr-xr-x	root/root	usr/lib64/libvolk.so.2.4
+lrwxrwxrwx	root/root	usr/lib64/libvolk.so -> libvolk.so.2.5
+lrwxrwxrwx	root/root	usr/lib64/libvolk.so.2.5 -> libvolk.so.2.5.0
+-rwxr-xr-x	root/root	usr/lib64/libvolk.so.2.5.0
 drwxr-xr-x	root/root	usr/lib64/pkgconfig/
 -rw-r--r--	root/root	usr/lib64/pkgconfig/volk.pc

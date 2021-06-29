@@ -5,7 +5,7 @@
 # Depends on:   neon git python3 python3-mako orc python3-six cmake
 
 name=volk
-version=2.4.1
+version=2.5.0
 cversion=0.6.0
 release=1
 source=(https://github.com/gnuradio/${name}/archive/v${version}/${name}-${version}.tar.gz
