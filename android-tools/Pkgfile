@@ -4,7 +4,7 @@
 # Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
 
 name=android-tools
-version=r31.0.1
+version=r31.0.2
 release=1
 source=(http://dl-ssl.google.com/android/repository/platform-tools_${version}-linux.zip)
 
