@@ -5,7 +5,7 @@
 # Nice to have: opus libvorbis x264 libogg libmtp libtheora flac libvdpau
 
 name=vlc
-version=3.0.14
+version=3.0.16
 release=1
 source=(https://download.videolan.org/pub/videolan/${name}/${version}/${name}-${version}.tar.xz
         0001-freerdp-2.patch
@@ -25,6 +25,8 @@ build() {
   # https://bugs.gentoo.org/758062
   patch -Np1 < "${SRC}"/0004-srt_c.patch
 
+#  ./bootstrap
+
   [[ -z $(pkg-config --libs --static libavutil | grep -- '-lvdpau') ]] && \
     PKGMK_VLC+=' --disable-vdpau'
 
@@ -37,7 +39,9 @@ build() {
 
   sed -e 's|-Werror-implicit-function-declaration||g' -i configure
 
-  BUILDCC="gcc -std=gnu11"          \
+  rm -rf src/contrib/fribidi
+
+  BUILDCC="gcc -std=c++11"          \
   ./configure "${PKGMK_VLC[@]}"     \
               --prefix=/usr         \
               --disable-nls         \
@@ -46,8 +50,9 @@ build() {
               --disable-fribidi     \
               --disable-update-check 
 
-  V=1 ./compile
+#  V=1 ./compile
 
+  make
   make DESTDIR="${PKG}" install
 
   rm -rf "${PKG}"/usr/share/{doc,kde4}
