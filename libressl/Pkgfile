@@ -6,7 +6,7 @@
 # Optional:     ca-certificates
 
 name=libressl
-version=3.3.1
+version=3.3.3
 release=1
 source=(https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/${name}-${version}.tar.gz)
 
