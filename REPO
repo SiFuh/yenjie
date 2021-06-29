@@ -242,8 +242,8 @@ f:2f2b4eb8fda38ea2fe10d49fd7ab7d7d:vlc/.signature
 f:72ce6ef477acf116ad7728eafc047529:vlc/0002-fdk-aac-2.0.0.patch
 f:afff5d88a49157aba773bbde71b75c26:vlc/0003-lua-script-compatibility-to-lua-5.4.patch
 f:19394a9096237889e92d9e7dec90a436:libnftnl/.footprint
-f:7ec301ae3f021b5882c681a0f9c4f26f:libnftnl/.signature
-f:429d5c6ce8250831952780d86c21f857:libnftnl/Pkgfile
+f:c052cb545a77da4e7e4d49497959cbdb:libnftnl/.signature
+f:b2c2adc0ca9cc9b6b5e431c16fa7a9a9:libnftnl/Pkgfile
 f:7aa46b9472abe75d735515cde63c0437:libopenshot/Pkgfile
 f:a54fe8064ae0a259bfff308543f9aebe:libopenshot/.footprint
 f:e805430d6694bc4b9819b88e0b428194:libopenshot/.signature

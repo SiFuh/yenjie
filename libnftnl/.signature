@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uEjg5KkoDWjRZSoH3CPt2iSJj50sgEHDH3r15RZl88f7pcKmvOTBxjprUTwAAc3r/COKb6dGqmVM02Lbt/MqOww=
-SHA256 (Pkgfile) = 3f831e1b046026e2a888ed5148795c463994783b158dbef8613b3fe96b504d9e
+RWQ0NN0w0eo0uK2+ZWaeCY1uGnN0Cz48xonhhDBPkgS3lGNOzHEUwuNHnORce1Zbe+tpe2APuX1uZsyQncoW6l11xdToWFcKWQ8=
+SHA256 (Pkgfile) = fde2310ec910da99f6fb628a13e797bad00a20d16e13c0b91d20bb7a80f8a05e
 SHA256 (.footprint) = 381adc013c561f1f42d9bfad05f38561bb1571a69e17039676bb878764f9ad9d
-SHA256 (libnftnl-1.1.9.tar.bz2) = e9b21a6f9a41f9e72aff696cc842e4a9a78ec8d281aec188f3e2b7a21db94b9a
+SHA256 (libnftnl-1.2.0.tar.bz2) = 90b01fddfe9be8c3245c3ba5ff5a4424a8df708828f92b2b361976b658c074f5

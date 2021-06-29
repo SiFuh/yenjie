@@ -5,7 +5,7 @@
 # Depends on:   libmnl
 
 name=libnftnl
-version=1.1.9
+version=1.2.0
 release=1
 source=(https://www.netfilter.org/pub/${name}/${name}-${version}.tar.bz2)
 
