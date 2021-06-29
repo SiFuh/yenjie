@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uBbyDMNq7doncJjFW2S6963tibDYT3HdnfEeeXg3NdJwaE+10ixM2x/Z2d8tLAfO4cHBXkjXcfwPde6UxVzjCgI=
+SHA256 (Pkgfile) = 870221d82220c7657c0ce06920a6af948c75e7ff37383e6a0f3be25b0881c430
+SHA256 (.footprint) = 238501166454168ce30add156e259bc26af6d32ae09201ca3e5c7c3bdb3124c5
+SHA256 (python3-pythran-0.9.11.tar.gz) = af7b09e5cac01f7500e7bada6942e14fab4ed1d8825e3f716126cebb7d1aa8a3
