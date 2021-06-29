@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uPdqIO2EU2Zcs/5JtmBwpprMV7YVve7kSkPM6Z51XncFJ0CVlTDhZeWWSHLKU8YLkTiaJAzr/XhIoj+X713P5gc=
-SHA256 (Pkgfile) = 129d609d43fe7289b1414d758d9a54908da07d9434b2bed80cadab2d3104d54e
-SHA256 (.footprint) = a05cfaade704cf6d1f50503ed645007f8cd52f4663dde6897dca402d9fd16f0b
-SHA256 (emacs-27.1.tar.xz) = 4a4c128f915fc937d61edfc273c98106711b540c9be3cd5d2e2b9b5b2f172e41
+RWQ0NN0w0eo0uJHXup5TDzCl4ox5erX92/txVDAlokiduUNKcrNf/mRS2OyyTb+qElna69e0cVip7BN/fjtek4GXKy8tGZrHxwk=
+SHA256 (Pkgfile) = 11638d5264d40e65b9b3aebd62c293deba9e4bc6b399f9a166f376427634fcc9
+SHA256 (.footprint) = 7be4e06746c67eba059ba3e79ddbe5f73cff52044a8c465a17e63b5793868f23
+SHA256 (emacs-27.2.tar.xz) = b4a7cc4e78e63f378624e0919215b910af5bb2a0afc819fad298272e9f40c1b9

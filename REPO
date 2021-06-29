@@ -557,9 +557,9 @@ f:149843434d0550fb0ead1a8264928b0c:rtl8812au/Pkgfile
 f:ee5bda8d281abaf82ea474589e408eb4:rtl8812au/post-install
 f:c6642c6540cec6bf620c3e059e08fb42:rtl8812au/.footprint
 f:1567903838bc43e57be42be837075e00:rtl8812au/.signature
-f:e5d0f16e03fe2f439853e53faff23275:emacs/.footprint
-f:ce814379e5259e18451153f3074a156d:emacs/Pkgfile
-f:3ffcd1667d1535f9f25fca76d8682b4a:emacs/.signature
+f:31346da7578fe78ed03172fa56d50f5f:emacs/.footprint
+f:b5b663c5b4fdc4fc44020c2ff8d47439:emacs/Pkgfile
+f:5d0f1e45699da874281755781346043c:emacs/.signature
 f:7bc3b4830e3d4e9f35fa34a6afbb15aa:gkrellm/.footprint
 f:1da697090ab93cb27a3c34cb52132f5f:gkrellm/.signature
 f:8016a9bf18ed913021945167cef432ec:gkrellm/Pkgfile
