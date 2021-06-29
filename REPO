@@ -557,10 +557,10 @@ f:d6e1d9a8edb8562dc2482fabef3689b8:lumina-desktop/Pkgfile
 f:cbfc414cc5f29935a297c990f10682b7:lumina-desktop/.footprint
 f:820edad37f04b4a1b3f9220b357f580f:lumina-desktop/.signature
 f:d50d67fdf20679059f1a34a55c004ad3:rtl8812au/README
-f:149843434d0550fb0ead1a8264928b0c:rtl8812au/Pkgfile
+f:cabaa99a9c0c7a941946da1da1ae3aff:rtl8812au/Pkgfile
 f:ee5bda8d281abaf82ea474589e408eb4:rtl8812au/post-install
 f:c6642c6540cec6bf620c3e059e08fb42:rtl8812au/.footprint
-f:1567903838bc43e57be42be837075e00:rtl8812au/.signature
+f:c8a48a276e01854874e6a08cff760515:rtl8812au/.signature
 f:31346da7578fe78ed03172fa56d50f5f:emacs/.footprint
 f:b5b663c5b4fdc4fc44020c2ff8d47439:emacs/Pkgfile
 f:5d0f1e45699da874281755781346043c:emacs/.signature
