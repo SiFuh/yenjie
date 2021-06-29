@@ -511,8 +511,8 @@ f:8113d2f3445d5af4b032a904bd3152c0:ncrack/.footprint
 f:f730257886e0e4fc9cedfa27a5bdec09:ncrack/Pkgfile
 f:5dad55b601497bf2be4434f56155558c:ncrack/fix-spelling-errors.patch
 f:849eb44eacbe2605c7ee2f27d1d4c529:sasquatch/.footprint
-f:7f848d3098f2de49ac8d6060fa11f1aa:sasquatch/.signature
-f:e7f11c0970e5ddd549fb8fff30f248dd:sasquatch/Pkgfile
+f:ee0dc5c322a0deef8f521e88ab524eca:sasquatch/.signature
+f:f312b816869163e99d307dda5d64dbf3:sasquatch/Pkgfile
 f:4610810b3c1fe09f942fd0d1f9e4ffdd:sasquatch/read_fragment_table_n_stack_overflow-fix.patch
 f:c68e069988f6ce8c62f9c9900727f056:xxhash/.footprint
 f:47b73d7de70a25a56585d7fa72d9cbe8:xxhash/.signature

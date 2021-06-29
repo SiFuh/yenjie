@@ -7,7 +7,7 @@ name=sasquatch
 version=4.3
 sversion=bd864a1b037bf57ca7d64a292a60ba0d6459611f
 release=1
-source=(https://downloads.sourceforge.net/project/squashfs/squashfs/squashfs4.3/squashfs4.3.tar.gz \
+source=(https://downloads.sourceforge.net/project/squashfs/squashfs/squashfs${version}/squashfs${version}.tar.gz \
         read_fragment_table_n_stack_overflow-fix.patch)
 gsource=(https://github.com/devttys0/sasquatch)
 
@@ -32,7 +32,7 @@ build() {
 
   cd "${name}"
 
-  mv "${SRC}"/squashfs4.3 . 
+  mv "${SRC}"/squashfs"${version}" . 
   cd squashfs*
   patch -p0 < ../patches/patch0.txt
 
