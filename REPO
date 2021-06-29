@@ -493,9 +493,9 @@ f:ed844fad903ae12cb5a9956e727b8d55:win32-essential-codecs/Pkgfile
 f:af70bf411e725167d9ba7fd0dd63943f:hashcat-utils/.footprint
 f:211132be56a1c8cce3e99d3e9065ff2c:hashcat-utils/Pkgfile
 f:9de2778a9f4237f68e1783dbf4e207a6:hashcat-utils/.signature
-f:caa088cd7df13a36dcd0e0502644c33a:hcxdumptool/Pkgfile
+f:d6dbafe8392ba29837693370f67b3f18:hcxdumptool/Pkgfile
 f:cc06598a863a9c372698779b479a7dba:hcxdumptool/.footprint
-f:2248c26bce44aea258a7c7cfe9e51932:hcxdumptool/.signature
+f:be5844adc2389eab6855c987fbe7526b:hcxdumptool/.signature
 f:c8d53f082eee81ddb1bf984b4e7e860a:hcxtools/.signature
 f:c5e2cf18f19f460097a480476b34a8bc:hcxtools/.footprint
 f:86a208ed8d2e12d3f73cda8787100329:hcxtools/Pkgfile
