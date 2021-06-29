@@ -359,8 +359,8 @@ f:96c7b322db68faf47fd9806b31ce604d:secure-delete/Pkgfile
 f:dfa5d42714b644ec11e70bbd3c92b290:secure-delete/.signature
 f:7efc27ea342b0fa44500967da1c6c986:secure-delete/.footprint
 f:ed2a9b7f90bf98dbd8fa67f2f2e1e540:skypeforlinux-bin/.footprint
-f:3207355f0ae5fc5af7f5f850ab5836c1:skypeforlinux-bin/.signature
-f:b42aef58a795cd89dd7df0f73c9d767b:skypeforlinux-bin/Pkgfile
+f:1ae12f832e34ce966ba0b3d3edcadfcd:skypeforlinux-bin/.signature
+f:4daca3afe4732d4e8fd8ba6b621bd9c8:skypeforlinux-bin/Pkgfile
 f:ce166d5524eea83ef45ee64a3ee8e0d8:skypeforlinux-bin/README
 f:abc6f9377d8b3dd63187fd9799ed5a64:smplayer/.signature
 f:90d93dd8ff85ffba45390a0dc09195ee:smplayer/.footprint
