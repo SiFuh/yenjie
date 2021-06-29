@@ -166,10 +166,10 @@ f:ed6c0748ab873b409bae58c0d1f292f0:ckut/ckut-2.0.bash
 f:3a0315f7f4cb00f3e10352101cc5593b:cppzmq/.footprint
 f:9d56681d1161b30a81117486b3646ef4:cppzmq/Pkgfile
 f:ea35d965d4e5b69ddc7c6cacb38ec9be:cppzmq/.signature
-f:f8a3e7205e5b8ec578e63dd939786737:cubicsdr/Pkgfile
+f:aa6d3341b6ef40a309a9078b90fa848c:cubicsdr/Pkgfile
 f:65a98ea106e5b50f62f81b893354cacc:cubicsdr/.footprint
 f:e8ff22ffae90a19e61e7aeab265dd51b:cubicsdr/Pkgfile-pulseaudio
-f:11f2c8e6b6831698c06b7167173a43e9:cubicsdr/.signature
+f:4967d645472245f908631ec60ea76e08:cubicsdr/.signature
 f:62e25270c30cec56debf68834462c973:dav1d/Pkgfile
 f:5dbb3a33b912ac790c599dacdf8744f7:dav1d/.signature
 f:50d4563f1ce75f673ab79ff288921cf0:dav1d/.footprint
