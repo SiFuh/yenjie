@@ -5,8 +5,8 @@
 # Depends on:   git cmake boost cppunit python3-mako log4cpp python3 swig python3-numpy python3-scipy cheetah-template pygtk fftw gsl qt5 qwt python3-pyqt5 python3-lxml portaudio jack python3-yaml python3-gobject python3-cairo python3-click gsm libsdl gtk3 uhd volk zstd
 
 name=gnuradio
-version=3.9.2.0-5ed43ed
-sversion=5ed43ed63b20d74a2641c8d1e547f84cd98179e4
+version=3.9.2.0-078d40d
+sversion=078d40ddeab957fcc91060131a4b3a1dfe9df676
 release=1
 source=(https://github.com/${name}/${name}/archive/${sversion}/${name}-${version}.tar.gz)
 
