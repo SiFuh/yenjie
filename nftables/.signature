@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/yenjie.pub
-RWQ0NN0w0eo0uLxzpzbYv3+z4jEfURHCVuX6v/swqS/AhWxQBxgP6cEPQbjVjPIVazfi3j+FKsm+R6vsEdYNr8YxZrnPGnOglQ0=
-SHA256 (Pkgfile) = 00f589fc46ca5e0a8be38aeac881a96977a305eb99f0c7f6a6463837974b40f1
-SHA256 (.footprint) = 932589a337c68e2645e06c4f0d82bbea96065755c007397745867391fcac8bb6
-SHA256 (nftables-0.9.8.tar.bz2) = 60fc004656dae4fefc4901c939c9d64120b4dedb49738e420a9a34989f108fe4
+RWQ0NN0w0eo0uPnknSdg9hQVcjDCuWKA03b/F2c1sQvebHFZO5ONIQ8qT3RS+P3zaLuxsdrci7IieMGdrQIKzUVw0s54nDe0UQM=
+SHA256 (Pkgfile) = 6d564f99502f3d26dde1039dab7c63be5fa64f1bbf729b8a1f6a8a024c827b9f
+SHA256 (.footprint) = b693677224f3fcb2a31cb4f2457c9cb343ee5b6dedd38c4e230fd19b2c07857e
+SHA256 (nftables-0.9.9.tar.bz2) = 76ef2dc7fd0d79031a8369487739a217ca83996b3a746cec5bda79da11e3f1b4
 SHA256 (nft) = a00bb10b9f4e36376d3591c158f0c58cc266c1a671e8d18cf002ac134cd1af7e
 SHA256 (nftables.conf.example) = 955f8454b7395b3af93057998c8df56dfba546aa124c2157ed1615af24aec9dd

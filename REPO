@@ -276,10 +276,10 @@ f:c6d8434cb9031e2c7e6a1fab99cdd3f1:motion/motion
 f:7e4618a7d176bd8dd4309417c517208d:motion/.signature
 f:88e5b4b11c82a77a7491d63824e91a98:motion/.footprint
 f:9c214c815911b4fc3e747ed761ca9055:nftables/nft
-f:42bf03c0cbfdc99693563e3a8afcdf29:nftables/.footprint
-f:125437e55898d8971a062f91e2a2187f:nftables/Pkgfile
+f:f23c0ef420e78a606accbcd8c5d80c78:nftables/.footprint
+f:b5328c0c1ce6ee7540bd6f47d365895b:nftables/Pkgfile
 f:330dd7a3153b5884331157fe3bf119df:nftables/nftables.conf.example
-f:0f376cc055330e1d7499778dbe2a7258:nftables/.signature
+f:5595bab1eb2b93c31feb2ff4d50a8e93:nftables/.signature
 f:50420c3a4de10a8e3a7f1dc2f3bb2daa:ntop/.footprint
 f:0ffe501e4f209cef390c778ad74b3437:ntop/Pkgfile
 f:ac5faa04b7a9edf1cbb07b72f79e3276:ntop/.signature
