@@ -1,0 +1,23 @@
+# Description:   An open source multimedia framework
+# URL:           https://www.mltframework.org
+# Maintainer:    Lin SiFuh, #crux at freenode dot net
+# Depends on:    ladspa libdv sdl_image libsamplerate sox ffmpeg vid.stab qt5 jack libexif python3 swig eigen3 rubberband gdk-pixbuf pango rtaudio imagemagick 
+
+name=mlt
+version=7.0.1
+release=1
+source=(https://github.com/mltframework/${name}/releases/download/v${version}/${name}-${version}.tar.gz)
+
+build() {
+
+  cmake -S "${name}"-"${version}" -B build             \
+        -D CMAKE_BUILD_TYPE=Release                    \
+        -D CMAKE_INSTALL_PREFIX:PATH=/usr              \
+        -D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"    \
+        -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -DNDEBUG"
+
+  cmake --build build
+
+  DESTDIR="${PKG}" cmake --install build
+
+}

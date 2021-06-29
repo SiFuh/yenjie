@@ -78,6 +78,7 @@ d:v4l-utils
 d:vanilla-dmz
 d:virtualbox-bin
 d:virtualbox-extpack
+d:mlt
 d:vokoscreen
 d:volk
 d:warmux
@@ -420,6 +421,9 @@ f:cd8760da361c8ea9ea4c24599cd2bb79:virtualbox-extpack/.signature
 f:d15e56a7d8f9d5e0d04ee5979c7372af:virtualbox-extpack/pre-install
 f:775e7ee8af02049ebeae35d4be08fef8:virtualbox-extpack/post-install
 f:d0a2840654b669e56808b3fbd1447ec8:virtualbox-extpack/README
+f:3fef474905c093ad0b94b859839bd983:mlt/.footprint
+f:078fb6936130262c1501308687f08345:mlt/Pkgfile
+f:383c994d344048bc3529e39ed1b2b772:mlt/.signature
 f:e9a7fc048c528aa1783fb12d57a2d3a3:vokoscreen/.footprint
 f:491ebea59dd8dcf810829a03ef771f13:vokoscreen/.signature
 f:ce3a2b6652c922e327948c03806f374c:vokoscreen/Pkgfile
