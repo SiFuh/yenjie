@@ -1,0 +1,22 @@
+# Description:  Python Decorator module
+# URL:          https://pypi.python.org/pypi/decorator
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat 	 	
+# Depends on:   python3-setuptools
+
+name=python3-decorator
+_name=${name//python3-}
+version=4.3.0
+release=1
+source=(https://files.pythonhosted.org/packages/source/d/${_name}/${_name}-${version}.tar.gz)
+
+build() {
+
+  cd "${_name}"-"${version}"
+
+  python3 setup.py build
+
+  python3 ./setup.py install --prefix=/usr --root="${PKG}" --optimize=1
+
+  find "${PKG}" -type d -empty -delete
+
+}

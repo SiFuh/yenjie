@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uOdYTfkwiC8w5aQNFUJdW8XM2/CI2o1pE1gsaPJt6GsCOhAwZCrt85C0f1JbIUbV/ctmBs48tTlgB/bqmCvxAws=
+SHA256 (Pkgfile) = b6662069a6165eca8f19faba66c46fbd9e120e04e447685d9ad7a6a09f21530b
+SHA256 (.footprint) = 25ad228bb165b8a747fbe8420fab6375f61e1d8fc74e822880d49f8a56c1a200
+SHA256 (decorator-4.3.0.tar.gz) = c39efa13fbdeb4506c476c9b3babf6a718da943dab7811c206005a4a956c080c
