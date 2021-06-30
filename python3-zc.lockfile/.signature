@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uIlAd2z3jzdinOBSGX0+TMEQCo1sHGJJ3PfbZ1BBsxmG58/1B9OfSArFE7d0i6W/YO5gHelo28PtT9hRVWFg2QM=
+SHA256 (Pkgfile) = b395a21efa267c087fae6476f172721fa3b79517604f6f3f61a6e87039e1c7e4
+SHA256 (.footprint) = 2dc566dd4f64c28ff63f014e1ebcde3b912c06286a77be2b3cdb7727188e230c
+SHA256 (zc.lockfile-2.0.tar.gz) = 307ad78227e48be260e64896ec8886edc7eae22d8ec53e4d528ab5537a83203b
