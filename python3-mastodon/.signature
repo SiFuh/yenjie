@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uN3mCgv8YPx6lc9ChBgVROqT+MtblhJGYU16dfJGVX3fyrgHZHzwWrRfrBqr2K+s21O26I/+ByCNxYGJUzOAyAU=
+SHA256 (Pkgfile) = d3cddefb8dcf48595693652a48cbe24b3156a5d9895facf8aa22b3b000090f11
+SHA256 (.footprint) = 117324fc0b776b0a76bf402429d5f1454255a4c826c740eb211893965843dc52
+SHA256 (Mastodon.py-1.1.0.tar.gz) = 3d7d2b3d5a8d5c93c14def9fe41f77bb6bb2e8174f71bb54285c521a4964e81d

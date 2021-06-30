@@ -1,0 +1,29 @@
+# Description:  Python bindings for the Mastodon RPC API
+# URL:          https://github.com/halcy/Mastodon.py
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat 	 	
+# Depends on:   python3-setuptools python3-dateutil
+
+name=python3-mastodon
+_name=Mastodon.py
+version=1.1.0
+release=1
+source=(https://files.pythonhosted.org/packages/source/M/${_name}/${_name}-${version}.tar.gz)
+
+build() {
+
+  cd "${_name}"-"${version}"
+
+  python3 setup.py build
+
+  python3 ./setup.py install --prefix=/usr --root="${PKG}" --optimize=1
+
+  chmod 755 "${PKG}"/usr/lib/python3.9/site-packages/Mastodon.py-1.1.0-py3.9.egg-info/*
+
+  find "${PKG}" -type d -empty -delete
+
+}
+#usr/lib/python3.9/site-packages/Mastodon.py-1.1.0-py3.9.egg-info/PKG-INFO
+#usr/lib/python3.9/site-packages/Mastodon.py-1.1.0-py3.9.egg-info/SOURCES.txt
+#usr/lib/python3.9/site-packages/Mastodon.py-1.1.0-py3.9.egg-info/dependency_links.txt
+#usr/lib/python3.9/site-packages/Mastodon.py-1.1.0-py3.9.egg-info/requires.txt
+#usr/lib/python3.9/site-packages/Mastodon.py-1.1.0-py3.9.egg-info/top_level.txt
