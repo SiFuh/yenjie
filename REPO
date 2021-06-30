@@ -52,6 +52,7 @@ d:python3-pyserial
 d:python3-pyzmq
 d:intel-mkl
 d:python-future
+d:python3-notify2
 d:qq-bin
 d:ratpoison
 d:reaver
@@ -353,6 +354,9 @@ f:401bc7e0f5f3db8a04e2504fe554bebc:intel-mkl/.signature
 f:9aa10f01dd66a4b7964fa994ea79cb0f:python-future/.signature
 f:95ed21a024388f2bb057e504b11263e2:python-future/.footprint
 f:b729ac66c6c445c6a697b43451ce210e:python-future/Pkgfile
+f:506d2b2c86c07ba6bd710a2393471793:python3-notify2/.footprint
+f:08006c6fa94636298e40bb666688932e:python3-notify2/Pkgfile
+f:83ac0011942337a91a2f34ef7444fae8:python3-notify2/.signature
 f:9da896e349fd86f68203f3b790294434:qq-bin/Pkgfile
 f:08a8c5e34a98df301c5f6e97ba959ec6:qq-bin/.footprint
 f:dbf03e2efedee58b712e6777d704e9a5:qq-bin/.signature
