@@ -2,7 +2,7 @@
 # URL:          http://www.gnuradio.org
 # Packager:
 # Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
-# Depends on:   git cmake boost cppunit python3-mako log4cpp python3 swig python3-numpy python3-scipy cheetah-template pygtk fftw gsl qt5 qwt python3-pyqt5 python3-lxml portaudio jack python3-yaml python3-gobject python3-cairo python3-click gsm libsdl gtk3 uhd volk zstd
+# Depends on:   git cmake boost cppunit python3-mako log4cpp python3 swig python3-numpy python3-scipy python3-cheetah3 pygtk fftw gsl qt5 qwt python3-pyqt5 python3-lxml portaudio jack python3-yaml python3-gobject python3-cairo python3-click gsm libsdl gtk3 uhd volk zstd
 
 name=gnuradio
 version=3.9.2.0-078d40d
