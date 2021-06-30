@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uOL7C5jpw8UEoEDokGr6rXPa8Rz3yIiE4WJoKAJpv2+bGppI2Dl6Elb0aVyXXf2SW62BM8jxAuxBzdDjPU/7LAU=
+SHA256 (Pkgfile) = 65ed88979db30dc699abcee7c0dfeeca16218432d9a90030f485e6a1aa6bb207
+SHA256 (.footprint) = 2a9b1a4534b439a3afaae524b4345ec4bfc720da051b40921feeb4f5aa3091f3
+SHA256 (feedparser-6.0.8.tar.gz) = 5ce0410a05ab248c8c7cfca3a0ea2203968ee9ff4486067379af4827a59f9661
