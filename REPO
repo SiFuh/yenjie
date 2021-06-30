@@ -124,6 +124,7 @@ d:frei0r-plugins
 d:python3-numpy
 d:python3-networkx
 d:python3-pybind11
+d:python3-pythran
 f:0870fafeb2131a1268f2fc4a8b7209fe:lshw/.signature
 f:143d2604bf77fb4c9de17df37d92ed29:lshw/.footprint
 f:82b95e3ef71abd3b284eaa99678cf0bb:lshw/Pkgfile
@@ -593,3 +594,6 @@ f:ac25129d49aee14bf25f31a47b35d0c2:python3-networkx/Pkgfile
 f:5d6e24ac849cfb72fd5a7240ce3c9b45:python3-pybind11/.footprint
 f:69da14aee108d13977bdd5b36a976c61:python3-pybind11/.signature
 f:3269dd7ef1f9b8220e1783648c9f7a12:python3-pybind11/Pkgfile
+f:821b4c6e61614e8392ca532fd360cf45:python3-pythran/.footprint
+f:f677f460277787a187a9afe20aaeb188:python3-pythran/.signature
+f:561b7c910a26bf5f30b4e100c2edaf01:python3-pythran/Pkgfile

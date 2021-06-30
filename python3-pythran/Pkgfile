@@ -1,0 +1,22 @@
+# Description:  Ahead of Time compiler for numeric kernels
+# URL:          https://pythran.readthedocs.io/
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat 	 	
+# Depends on:   python3-setuptools python3-pip
+
+name=python3-pythran
+_name=${name//python3-}
+version=0.9.11
+release=1
+source=(https://files.pythonhosted.org/packages/source/p/${_name}/${_name}-${version}.tar.gz)
+
+build() {
+
+  cd "${_name}"-"${version}"
+
+  python3 ./setup.py install --prefix=/usr --root="${PKG}" --optimize=1
+
+#  rm -r "${PKG}"/usr/lib/python*/site-packages/pythran/{boost,xsimd}
+  rm "${PKG}"/usr/lib/python3.9/site-packages/pythran/pythonic/patch/README.rst
+  find "${PKG}" -type d -empty -delete
+
+}
