@@ -121,6 +121,7 @@ d:rtl8812au
 d:emacs
 d:gkrellm
 d:frei0r-plugins
+d:python3-numpy
 d:python3-networkx
 f:0870fafeb2131a1268f2fc4a8b7209fe:lshw/.signature
 f:143d2604bf77fb4c9de17df37d92ed29:lshw/.footprint
@@ -582,6 +583,9 @@ f:8016a9bf18ed913021945167cef432ec:gkrellm/Pkgfile
 f:9d02ae45a36114f48b168b5941b49712:frei0r-plugins/Pkgfile
 f:aacffada327eb086046428dabafb9d7c:frei0r-plugins/.footprint
 f:3ea73790b9a7d07f2f221d284eb07d9c:frei0r-plugins/.signature
+f:9edbb36b41cd8a15b4f0cc675d8f9508:python3-numpy/.footprint
+f:cbdbe7a317a8680b3b2e0b20826faf5b:python3-numpy/.signature
+f:5b0742f6a1fa8feab3cc429d7993596b:python3-numpy/Pkgfile
 f:3ea10f080656352408354f0270315731:python3-networkx/.footprint
 f:117a82c6903524c0fb2c488c2387fcf5:python3-networkx/.signature
 f:ac25129d49aee14bf25f31a47b35d0c2:python3-networkx/Pkgfile
