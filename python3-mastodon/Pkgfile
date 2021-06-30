@@ -20,7 +20,7 @@ build() {
   local pyv="$(python3 -c 'import sys; print (sys.version_info[0], sys.version_info[1])')"
   pyv="${pyv/ /.}"
 
-  chmod 755 "${PKG}"/usr/lib/python"${pyv}"/site-packages/Mastodon.py-1.1.0-py"${pyv}".egg-info/*
+  chmod 755 "${PKG}"/usr/lib/python"${pyv}"/site-packages/"${_name}"-"${version}"-py"${pyv}".egg-info/*
 
   find "${PKG}" -type d -empty -delete
 
