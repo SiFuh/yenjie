@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uEl/I9Cd3hn+6QLbqFEIsZY/TKIITkKJj0rtqiO6o7tty6taNet48hxPUaT8T69tTMKt3XPayeXwWJ+tLufzhwc=
+SHA256 (Pkgfile) = ea16d88629d60f7c93423b5241e06bce7e510eaba9b0253aa3b447674ff7f50b
+SHA256 (.footprint) = 7ad4a6cc93f357856347955a4062b8712a4fe9188af18e9a21c1fa89ad819f2e
+SHA256 (portend-2.7.1.tar.gz) = 986ed9a278e64a87b5b5f4c21e61c25bebdce9919a92238d9c14c37a7416482b
