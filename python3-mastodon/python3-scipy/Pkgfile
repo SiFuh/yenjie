@@ -1,0 +1,34 @@
+# Description:  SciPy is open-source software for mathematics, science, and engineering.
+# URL:          http://www.scipy.org/
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat 	 	
+# Depends on:   python3-numpy python3-pybind11 python3-pythran python3-gast python3-beniget python3-six python3-networkx python3-decorator python3-ply python3-boost
+
+#gcc-fortran python3-numpy python3-setuptools openblas python3-pybind11 python3-decorator python3-networkx python3-gast python3-beniget python3-boost
+
+name=python3-scipy
+_name=${name//python3-}
+version=1.7.0
+release=1
+source=(https://github.com/${_name}/${_name}/archive/v${version}/${name}-${version}.tar.gz)
+
+build() {
+
+  export MKLROOT=/opt/intel/mkl
+
+  cd "${_name}"-"${version}"
+
+  # Comment out line 25 so it doesn't fail searching for boost
+  sed -i '25 s/^/#/' scipy/_lib/setup.py
+
+  python3 ./setup.py config_fc --fcompiler=gnu95 install --prefix=/usr --root="${PKG}" --optimize=1
+
+  find "${PKG}" \(         \
+       -name 'README*'  -o \
+       -name 'LICENSE*' -o \
+       -name 'COPYING*' -o \
+       -name 'INSTALL*'    \
+       \) -delete
+
+  find "${PKG}" -type d -empty -delete
+
+}

@@ -126,6 +126,7 @@ d:python3-networkx
 d:python3-pybind11
 d:python3-pythran
 d:python3-mastodon
+d:python3-mastodon/python3-scipy
 f:0870fafeb2131a1268f2fc4a8b7209fe:lshw/.signature
 f:143d2604bf77fb4c9de17df37d92ed29:lshw/.footprint
 f:82b95e3ef71abd3b284eaa99678cf0bb:lshw/Pkgfile
@@ -600,4 +601,7 @@ f:f677f460277787a187a9afe20aaeb188:python3-pythran/.signature
 f:561b7c910a26bf5f30b4e100c2edaf01:python3-pythran/Pkgfile
 f:29a227e2eaf0dd0a192ce49ffa1ff397:python3-mastodon/.footprint
 f:27f5870f2a7bbd726b7aa271e89ba464:python3-mastodon/.signature
+f:2a367982cea5fed5579538109ec85449:python3-mastodon/python3-scipy/.footprint
+f:aed218b5a182714194ba369ce3262b56:python3-mastodon/python3-scipy/.signature
+f:e7ee3dea208f6a87a7776f36929798c2:python3-mastodon/python3-scipy/Pkgfile
 f:78034f16d9c50f42e9721ea008bc313d:python3-mastodon/Pkgfile
