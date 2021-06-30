@@ -1,7 +1,7 @@
 # Description:  Python interface to DBus notifications
 # URL:          https://bitbucket.org/takluyver/pynotify2
 # Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat 	 	
-# Depends on:   
+# Depends on:   python3-setuptools dbus-python3
 
 name=python3-notify2
 _name=${name//python3-}
