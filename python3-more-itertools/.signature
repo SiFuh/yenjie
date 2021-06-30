@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uAfwbYg3ySN4VPiJL6vflNlE0pR0rKsRFOx5E+uoEK7E+VDlLy8jPQBBUNMiPFJHG9jFCioItsgyTBPpQIpaZgc=
+SHA256 (Pkgfile) = 5787d0dac66ef09ca69781fc712972cc1c4660705ba668a8409b12bf3ff95a8a
+SHA256 (.footprint) = 91538a66412a42900ed52cf97c363f01f88ed31e53e40bdd932d1ba93ec78889
+SHA256 (more-itertools-8.7.0.tar.gz) = c5d6da9ca3ff65220c3bfd2a8db06d698f05d4d2b9be57e1deb2be5a45019713
