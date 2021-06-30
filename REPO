@@ -627,8 +627,8 @@ f:3507ae373899b6e524c0f3d76489c6b1:python3-cheroot/Pkgfile
 f:d592a7cc8432c70b3d4155767bfb6ed3:python3-cheroot/.footprint
 f:efb37c622cb60d78bcca3a8acf70b30b:python3-cheroot/.signature
 f:632f75870c7a8b65b049c087739234f2:python3-cherrypy/.footprint
-f:efe827f9e4a1524471154c7dfb7b85de:python3-cherrypy/Pkgfile
-f:98d92d9a7e854b6d9a5104fb125e1bfb:python3-cherrypy/.signature
+f:15a911c1fb240287b562af03c6355e4f:python3-cherrypy/Pkgfile
+f:3006ecf6991274ecea1cd1dcb212e8bd:python3-cherrypy/.signature
 f:7bbeef443fbe58fbe6712a2615e3946c:python3-feedparser/Pkgfile
 f:89b1f9c6a4cbcb4bee779d173578750d:python3-feedparser/.footprint
 f:8b3de752d7d7f8b6965eac948611f169:python3-feedparser/.signature

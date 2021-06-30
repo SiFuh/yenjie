@@ -1,7 +1,7 @@
 # Description:  A pythonic, object-oriented web development framework
 # URL:          https://cherrypy.org
 # Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat 	 	
-# Depends on:   python3-setuptools python3-pip python3-wheel python3-setuptools-scm python3-cheroot python3-portend python3-jaraco python3-more-itertools python3-zc.lockfile python3-six python-tempora python-pytz
+# Depends on:   python3-setuptools python3-pip python3-wheel python3-setuptools-scm python3-cheroot python3-portend python3-jaraco python3-more-itertools python3-zc.lockfile python3-six python3-tempora python3-pytz
 
 name=python3-cherrypy
 _name=${name//python3-}
