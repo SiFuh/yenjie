@@ -1,7 +1,7 @@
 # Description:  Boost automatically toots from users of the Mastodon social network
 # URL:          https://pypi.org/project/boost/
 # Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat 	 	
-# Depends on:   boost python3-setuptools python3-mastodon python3-pytz python3-requests
+# Depends on:   boost python3-setuptools python3-mastodon python3-pytz python3-requests python3-sqlalchemy
 
 name=python3-boost
 _name=${name//python3-}
