@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uASrfWwV0SAqwg+TfHSlWuw0MZH9ycFy82ZCppwEcN7rDigGeySuKVhs6CR4/b3ycMthRpWL0DAdAkGmSOQIGAQ=
+SHA256 (Pkgfile) = d1458a7997c54747de9b4282f777c5525dc523606bcb4f43983cfb18e943c42d
+SHA256 (.footprint) = 7648bdd4889945256ded9181ba6277f645cf525dfede6bf907f801f408ea2e58
+SHA256 (cheroot-8.5.2.tar.gz) = f137d03fd5155b1364bea557a7c98168665c239f6c8cedd8f80e81cdfac01567

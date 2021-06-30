@@ -1,0 +1,22 @@
+# Description:  Highly-optimized, pure-python HTTP server
+# URL:          https://github.com/cherrypy/cheroot
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat 	 	
+# Depends on:   python3-setuptools python3-pip python3-six python3-more-itertools python3-jaraco
+
+name=python3-cheroot
+_name=${name//python3-}
+version=8.5.2
+release=1
+source=(https://files.pythonhosted.org/packages/source/c/${_name}/${_name}-${version}.tar.gz)
+
+build() {
+
+  cd "${_name}"-"${version}"
+
+  python3 setup.py build
+
+  python3 ./setup.py install --prefix=/usr --root="${PKG}" --optimize=1
+
+  find "${PKG}" -type d -empty -delete
+
+}
