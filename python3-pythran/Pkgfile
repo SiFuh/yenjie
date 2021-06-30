@@ -1,7 +1,7 @@
 # Description:  Ahead of Time compiler for numeric kernels
 # URL:          https://pythran.readthedocs.io/
 # Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat 	 	
-# Depends on:   python3-setuptools python3-pip
+# Depends on:   python3-setuptools python3-pip python3-numpy
 
 name=python3-pythran
 _name=${name//python3-}

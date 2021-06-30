@@ -599,8 +599,8 @@ f:5d6e24ac849cfb72fd5a7240ce3c9b45:python3-pybind11/.footprint
 f:69da14aee108d13977bdd5b36a976c61:python3-pybind11/.signature
 f:3269dd7ef1f9b8220e1783648c9f7a12:python3-pybind11/Pkgfile
 f:821b4c6e61614e8392ca532fd360cf45:python3-pythran/.footprint
-f:f677f460277787a187a9afe20aaeb188:python3-pythran/.signature
-f:561b7c910a26bf5f30b4e100c2edaf01:python3-pythran/Pkgfile
+f:d82265ff20d5a5e890a0be00e9aeba6f:python3-pythran/.signature
+f:b4a834e211093f6db9e5ef81ee9c6fbb:python3-pythran/Pkgfile
 f:29a227e2eaf0dd0a192ce49ffa1ff397:python3-mastodon/.footprint
 f:27f5870f2a7bbd726b7aa271e89ba464:python3-mastodon/.signature
 f:78034f16d9c50f42e9721ea008bc313d:python3-mastodon/Pkgfile
