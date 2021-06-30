@@ -2,7 +2,11 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python3.9/
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/
--rw-r--r--	root/root	usr/lib/python3.9/site-packages/gast-0.4.0-py3.9.egg-info
+drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gast-0.4.0-py3.9.egg-info/
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gast-0.4.0-py3.9.egg-info/PKG-INFO
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gast-0.4.0-py3.9.egg-info/SOURCES.txt
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gast-0.4.0-py3.9.egg-info/dependency_links.txt
+-rw-r--r--	root/root	usr/lib/python3.9/site-packages/gast-0.4.0-py3.9.egg-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gast/
 -rw-r--r--	root/root	usr/lib/python3.9/site-packages/gast/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.9/site-packages/gast/__pycache__/
