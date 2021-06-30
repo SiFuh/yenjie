@@ -636,7 +636,6 @@ f:3507ae373899b6e524c0f3d76489c6b1:python3-cheroot/Pkgfile
 f:d592a7cc8432c70b3d4155767bfb6ed3:python3-cheroot/.footprint
 f:efb37c622cb60d78bcca3a8acf70b30b:python3-cheroot/.signature
 f:632f75870c7a8b65b049c087739234f2:python3-cherrypy/.footprint
-f:d41d8cd98f00b204e9800998ecf8427e:python3-cherrypy/cherrypy-18.6.0.tar.gz.partial
 f:efe827f9e4a1524471154c7dfb7b85de:python3-cherrypy/Pkgfile
 f:98d92d9a7e854b6d9a5104fb125e1bfb:python3-cherrypy/.signature
 f:7bbeef443fbe58fbe6712a2615e3946c:python3-feedparser/Pkgfile
