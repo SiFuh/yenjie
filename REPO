@@ -129,6 +129,7 @@ d:python3-mastodon
 d:python3-scipy
 d:python3-greenlet
 d:python3-sqlalchemy
+d:otter-browser
 f:0870fafeb2131a1268f2fc4a8b7209fe:lshw/.signature
 f:143d2604bf77fb4c9de17df37d92ed29:lshw/.footprint
 f:82b95e3ef71abd3b284eaa99678cf0bb:lshw/Pkgfile
@@ -613,3 +614,6 @@ f:fccb5cd4c0a83fd0e4358bcf9fa27764:python3-greenlet/Pkgfile
 f:f97c38c562547992a0d50f7acc0b8f3b:python3-sqlalchemy/.footprint
 f:a478bba0d9cb9a6ef21940b92070500d:python3-sqlalchemy/.signature
 f:6ef760cb30b17b508e9194372ef2b045:python3-sqlalchemy/Pkgfile
+f:46df66c17b70fd49d244fa1202b71a04:otter-browser/.footprint
+f:e22f9de7417f9a10d06f10287586b00e:otter-browser/Pkgfile
+f:559fcc37274ffb37be5cc8d49610c0cb:otter-browser/.signature
