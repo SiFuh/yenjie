@@ -17,13 +17,11 @@ build() {
 
   python3 ./setup.py install --prefix=/usr --root="${PKG}" --optimize=1
 
-  chmod 755 "${PKG}"/usr/lib/python3.9/site-packages/Mastodon.py-1.1.0-py3.9.egg-info/*
+  local pyv="$(python3 -c 'import sys; print (sys.version_info[0], sys.version_info[1])')"
+  pyv="${pyv/ /.}"
+
+  chmod 755 "${PKG}"/usr/lib/python"${pyv}"/site-packages/Mastodon.py-1.1.0-py"${pyv}".egg-info/*
 
   find "${PKG}" -type d -empty -delete
 
 }
-#usr/lib/python3.9/site-packages/Mastodon.py-1.1.0-py3.9.egg-info/PKG-INFO
-#usr/lib/python3.9/site-packages/Mastodon.py-1.1.0-py3.9.egg-info/SOURCES.txt
-#usr/lib/python3.9/site-packages/Mastodon.py-1.1.0-py3.9.egg-info/dependency_links.txt
-#usr/lib/python3.9/site-packages/Mastodon.py-1.1.0-py3.9.egg-info/requires.txt
-#usr/lib/python3.9/site-packages/Mastodon.py-1.1.0-py3.9.egg-info/top_level.txt
