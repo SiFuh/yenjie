@@ -1,0 +1,54 @@
+# Description:  Intel Math Kernel Library
+# URL:          https://software.intel.com/en-us/mkl
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
+# Depends on:
+
+name=intel-mkl
+version=2020.4.304
+sversion=16917
+release=1
+source=(http://registrationcenter-download.intel.com/akdlm/irc_nas/tec/${sversion}/l_mkl_${version}.tgz
+         intel-mkl.conf
+         intel-mkl.sh
+         mklvars.sh)
+
+build() {
+
+  cd l_mkl_"${version}"/rpm
+
+  for rpm in *.rpm; do
+    bsdtar -xf "${rpm}"
+  done
+
+  sed -i \
+    -e 's|^prefix=.*|prefix=/opt/intel/mkl|g' \
+    -e 's|${MKLROOT}|/opt/intel/mkl|g' \
+    -e 's|^omplibdir=.*|omplibdir=/opt/intel/mkl/lib/intel64|g' \
+    opt/intel/compilers_and_libraries_"${version}"/linux/mkl/bin/pkgconfig/*.pc
+
+  install -Dm755 "${SRC}"/mklvars.sh "${PKG}"/usr/bin/mklvars.sh
+  mkdir -p "${PKG}/usr/bin"
+  install -Dm755 opt/intel/compilers_and_libraries_${version}/linux/mkl/bin/mkl_link_tool \
+          "${PKG}"/opt/intel/mkl/bin/mkl_link_tool
+  ln -s /opt/intel/mkl/bin/mkl_link_tool "${PKG}"/usr/bin/mkl_link_tool
+
+  mkdir -p "${PKG}/usr/lib/pkgconfig"
+  cp opt/intel/compilers_and_libraries_${version}/linux/mkl/bin/pkgconfig/mkl-dynamic* \
+     "${PKG}/usr/lib/pkgconfig/"
+
+  mkdir -p "${PKG}"/opt/intel/mkl/lib/intel64
+  ln -s intel64 "${PKG}"/opt/intel/mkl/lib/intel64_lin
+
+  cp opt/intel/compilers_and_libraries_"${version}"/linux/mkl/lib/intel64_lin/*.so \
+     "${PKG}"/opt/intel/mkl/lib/intel64
+  cp opt/intel/compilers_and_libraries_"${version}"/linux/compiler/lib/intel64_lin/*.so \
+     "${PKG}"/opt/intel/mkl/lib/intel64
+  cp -r opt/intel/compilers_and_libraries_"${version}"/linux/mkl/include \
+     "${PKG}"/opt/intel/mkl/include
+  cp -r opt/intel/compilers_and_libraries_"${version}"/linux/mkl/lib/intel64_lin/locale \
+     "${PKG}"/opt/intel/mkl/lib/intel64
+
+  install -Dm755 "${SRC}/intel-mkl.sh" "${PKG}/etc/profile.d/intel-mkl.sh"
+  install -Dm644 "${SRC}/intel-mkl.conf" "${PKG}/etc/ld.so.conf.d/intel-mkl.conf"
+
+}
