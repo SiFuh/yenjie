@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uDiyq49D4m7CtbK5C+iWDig3xOSzC9EqlMLoKlSm6ZUXIHhbd/xKbWiOrG5aRFVjGA6TP/ZlzmwXmQ/OnxLJ7ww=
+SHA256 (Pkgfile) = 2e0bd7f80f0ea07470a8c2a96f81dbf4fba8864a28bfce9aa1f3a0428eda5022
+SHA256 (.footprint) = 22a0f034c22f6ed38389e806177797cbcb96b5fa91610c696617e739cdbf03a8
+SHA256 (greenlet-1.1.0.tar.gz) = c87df8ae3f01ffb4483c796fe1b15232ce2b219f0b18126948616224d3f658ee
