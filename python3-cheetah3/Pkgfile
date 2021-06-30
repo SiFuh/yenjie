@@ -1,0 +1,23 @@
+# Description:  A Python powered template engine and code generator
+# URL:          http://www.cheetahtemplate.org
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat
+# Depends on:   python3-setuptools
+
+name=python3-cheetah3
+_name=Cheetah3
+version=3.2.6
+sversion="post2"
+release=1
+source=(https://files.pythonhosted.org/packages/source/${_name::1}/${_name}/${_name}-${version}.${sversion}.tar.gz)
+
+build() {
+
+  cd "${_name}"-"${version}"."${sversion}"
+
+  python3 setup.py build
+
+  python3 setup.py install --prefix=/usr --root="${PKG}" --optimize=1
+  
+  find "${PKG}" -type d -empty -delete
+
+}
