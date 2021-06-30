@@ -3,7 +3,6 @@
 # Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat 	 	
 # Depends on:   python3-numpy python3-pybind11 python3-pythran python3-gast python3-beniget python3-six python3-networkx python3-decorator python3-ply python3-boost
 
-#gcc-fortran python3-numpy python3-setuptools openblas python3-pybind11 python3-decorator python3-networkx python3-gast python3-beniget python3-boost
 
 name=python3-scipy
 _name=${name//python3-}
