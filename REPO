@@ -93,6 +93,7 @@ d:zeromq
 d:alizams-bin
 d:python3-boost
 d:python3-decorator
+d:python3-gast
 d:libdc1394
 d:rtl8814au-dkms
 d:mplayer
@@ -480,6 +481,9 @@ f:482eb7fb8df898c29dfb94fee9bcf422:python3-boost/Pkgfile
 f:354795b0843e7e9f2e322b8e7f65e7f9:python3-decorator/.footprint
 f:cf236dd34036afc2f530e55d0053e14b:python3-decorator/.signature
 f:33894f707eafeb1571396e4015da8637:python3-decorator/Pkgfile
+f:c02c30005bd2471c4b6c930cf5866080:python3-gast/.footprint
+f:96507ef3b76edbf134eb08a37d8ec855:python3-gast/.signature
+f:5056cf42b490f00a31ddb0e67a013909:python3-gast/Pkgfile
 f:813b07a3d9b8fbaae54045fcecfa8cc1:libdc1394/Pkgfile
 f:42ed059c66734b844bbab284ac74b055:libdc1394/.footprint
 f:002022d13d471209711932787f5a6304:libdc1394/.signature

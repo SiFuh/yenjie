@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uF5vLeL5Mv+QjOLUsZSWs07dxp0bHj8AamHPisQD39bZkUvgvFcbXnsX30RdzLj1Rbu/+qfNkFLwFKejA47SfQ0=
+SHA256 (Pkgfile) = 1c4b4b657a9763036376a24c3247e3c812227904290f77c57304b99e4f660bfe
+SHA256 (.footprint) = fbc3fe34245ea7f6f20b6d9cb19ccb6fd20ce7af1d7bdc4831e8c7973d742f44
+SHA256 (gast-0.4.0.tar.gz) = 40feb7b8b8434785585ab224d1568b857edb18297e5a3047f1ba012bc83b42c1
