@@ -1,0 +1,34 @@
+# Description:  A web-interface based binary newsgrabber with NZB file support  
+# URL:          http://www.sabnzbd.org
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat 	 	
+# Depends on:   par2cmdline python3-six python3-cryptography python3-feedparser python3-configobj python3-cherrypy python3-portend python3-chardet python3-notify2 python3-cheetah3 python3-sabyenc3 sqlite unrar unzip python3-pyopenssl p7zip 
+
+name=python3-sabnzbd
+_name=${name//python3-}
+version=3.3.1
+release=1
+source=(https://github.com/${_name}/${_name}/archive/${version}/${name}-${version}.tar.gz
+        ${_name//3})
+
+build() {
+
+  mkdir -p "${PKG}"/opt/"${_name//3}"
+  mkdir -p "${PKG}"/opt/bin
+  cp -rf "${SRC}"/${_name}-${version}/* "${PKG}"/opt/"${_name//3}"
+  cp -r "${SRC}"/"${_name//3}" "${PKG}"/opt/bin/"${_name//3}"
+
+  find "${PKG}"/opt/"${_name//3}" -type d -exec chmod 755 {} \;
+  find "${PKG}"/opt/"${_name//3}" -type f -exec chmod 644 {} \;
+  chmod 755 "${PKG}"/opt/"${_name//3}"/SABnzbd.py
+  chmod 755 "${PKG}"/opt/bin/"${_name//3}"
+
+  rm -rf "${PKG}"/opt/"${_name//3}"/{licenses,win,osx}
+  find "${PKG}" \(         \
+       -name "README*"  -o \
+       -name "ISSUES*"  -o \
+       -name "INSTALL*" -o \
+       -name "LICENSE*" -o \
+       -name "COPYRIGHT*"  \
+       \) -delete
+
+}
