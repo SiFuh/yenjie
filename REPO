@@ -52,13 +52,11 @@ d:python3-pyserial
 d:python3-pyzmq
 d:intel-mkl
 d:python-future
-d:python-sabyenc
 d:qq-bin
 d:ratpoison
 d:reaver
 d:rtaudio
 d:python3-beniget
-d:sabnzbd
 d:opera-bin
 d:secure-delete
 d:skypeforlinux-bin
@@ -355,9 +353,6 @@ f:401bc7e0f5f3db8a04e2504fe554bebc:intel-mkl/.signature
 f:9aa10f01dd66a4b7964fa994ea79cb0f:python-future/.signature
 f:95ed21a024388f2bb057e504b11263e2:python-future/.footprint
 f:b729ac66c6c445c6a697b43451ce210e:python-future/Pkgfile
-f:31df0bdeaf32dafea752c2467ba8993a:python-sabyenc/.footprint
-f:197dcb90ce7e12cc4b96f9a1507307fe:python-sabyenc/Pkgfile
-f:c3b0b548bf168c48fd3aa33e18e5f858:python-sabyenc/.signature
 f:9da896e349fd86f68203f3b790294434:qq-bin/Pkgfile
 f:08a8c5e34a98df301c5f6e97ba959ec6:qq-bin/.footprint
 f:dbf03e2efedee58b712e6777d704e9a5:qq-bin/.signature
@@ -373,10 +368,6 @@ f:c9876300e75e931869c91b11b84be858:rtaudio/Pkgfile
 f:3d6f386ba5a8d1d3f78fb1e18a9e3987:python3-beniget/.signature
 f:c70f072be4aeb3fbf2c56ed8ff4b6f23:python3-beniget/Pkgfile
 f:e8f133e3e0208cc9bd3b57a2adb43ca2:python3-beniget/.footprint
-f:a12b54acd726669d30f1f7857ef11ab6:sabnzbd/sabnzbd
-f:545093234d26e3efb38981491d751b2e:sabnzbd/.footprint
-f:3a22c474808518c11a59e0e36cd2dd80:sabnzbd/Pkgfile
-f:4c52fbe6501ed33080b8b1f4068bbea0:sabnzbd/.signature
 f:a1499e42e3013bcd11f008047a8b6a34:opera-bin/Pkgfile
 f:7adf860ede6a0cec032de241cd69a6ee:opera-bin/.footprint
 f:344ca9533bcba3783ec0a59382b90f5a:opera-bin/.signature
