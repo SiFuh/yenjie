@@ -1,0 +1,11 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uFpGRF/ELE6wyXVQenWTwfFb9pYQv5jZyujCzhqxJE2zARskbn4pgapIjCsb2IyrBJNicpayMo1trTogrhf9GQQ=
+SHA256 (Pkgfile) = 7e81ab42fa0b9d584ff489a8611ada48c7595606c4cbf0d6fe5321d18b3ac93a
+SHA256 (.footprint) = 103853a65fee177bce4b84e133839b41bd9f5c5d125803c47a977414f1c8abd1
+SHA256 (jaraco.text-3.5.0.tar.gz) = f07f1076814a17a98eb915948b9a0dc71b1891c833588066ec1feb04ea4389b1
+SHA256 (jaraco.functools-3.3.0.tar.gz) = bfcf7da71e2a0e980189b0744b59dba6c1dcf66dcd7a30f8a4413e478046b314
+SHA256 (jaraco.collections-3.3.0.tar.gz) = 3662267424b55f10bf15b6f5dee6a6e48a2865c0ec50cc7a16040c81c55a98dc
+SHA256 (jaraco.classes-3.2.1.tar.gz) = ed54b728af1937dc16b7236fbaf34ba561ba1ace572b03fffa5486ed363ecf34
+SHA256 (jaraco.stream-3.0.2.tar.gz) = 86c57fedffd4d5a4b18817f99ddf62ac8ed0a1bc31a1c41b9a88df9c6bb56e0b
+SHA256 (jaraco.logging-3.1.0.tar.gz) = 150dc8701207b28bc65a16f0e91c07250a8d1b9da324ce674c0e375774944f13
+SHA256 (jaraco.itertools-6.0.1.tar.gz) = 6939e47806a39330a9f9772bf9ea910da39abc159ff2579d454a763358553439

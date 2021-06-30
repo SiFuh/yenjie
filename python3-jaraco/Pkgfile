@@ -1,0 +1,57 @@
+# Description:  A gaggle of idiosyncratic and questionable wrappers for the stdlib
+# URL:          https://github.com/jaraco?page=1&tab=repositories&utf8=%E2%9C%93&q=jaraco
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat 	 	
+# Depends on:   python3-pip python3-wheel python3-more-itertools
+
+name=python3-jaraco
+_name=${name//python3-}
+version=2021.03.28
+release=1
+_text=3.5.0
+_functools=3.3.0
+_collections=3.3.0
+_classes=3.2.1
+_stream=3.0.2
+_logging=3.1.0
+_itertools=6.0.1
+_pyhost="https://files.pythonhosted.org/packages/source"
+
+source=($_pyhost/j/jaraco.text/jaraco.text-$_text.tar.gz
+        $_pyhost/j/jaraco.functools/jaraco.functools-$_functools.tar.gz
+        $_pyhost/j/jaraco.collections/jaraco.collections-$_collections.tar.gz
+        $_pyhost/j/jaraco.classes/jaraco.classes-$_classes.tar.gz
+        $_pyhost/j/jaraco.stream/jaraco.stream-$_stream.tar.gz
+        $_pyhost/j/jaraco.logging/jaraco.logging-$_logging.tar.gz
+        $_pyhost/j/jaraco.itertools/jaraco.itertools-$_itertools.tar.gz)
+
+build() {
+
+  cd "${SRC}"/jaraco.itertools-"${_itertools}"
+  sed -i "s/'inflect',//" setup.py
+  sed -i "s/inflect//"    jaraco.itertools.egg-info/requires.txt
+  sed -i "s/inflect//"    setup.cfg
+  sed -i 's/import inflect//' jaraco/itertools.py
+  sed -i 's/ord = .*$/ord = str(self.sliceArgs[2])+"th"/' jaraco/itertools.py
+  
+  cd "${SRC}"/jaraco.text-"${_text}"
+  python3 setup.py install --root="${PKG}"/ --optimize=0
+
+  cd "${SRC}"/jaraco.functools-"${_functools}"
+  python3 setup.py install --root="${PKG}"/ --optimize=0
+
+  cd "${SRC}"/jaraco.collections-"${_collections}"
+  python3 setup.py install --root="${PKG}"/ --optimize=0
+
+  cd "${SRC}"/jaraco.classes-"${_classes}"
+  python3 setup.py install --root="${PKG}"/ --optimize=0
+
+  cd "${SRC}"/jaraco.stream-"${_stream}"
+  python3 setup.py install --root="${PKG}"/ --optimize=0
+
+  cd "${SRC}"/jaraco.logging-"${_logging}"
+  python3 setup.py install --root="${PKG}"/ --optimize=0
+
+  cd "${SRC}"/jaraco.itertools-"${_itertools}"
+  python3 setup.py install --root="${PKG}"/ --optimize=0
+
+}
