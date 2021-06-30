@@ -1,0 +1,22 @@
+# Description:  Objects and routines pertaining to date and time (tempora).
+# URL:          https://github.com/jaraco/tempora
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat 	 	
+# Depends on:   python3-setuptools python3-six python3-pytz python3-jaraco 
+
+name=python3-tempora
+_name=${name//python3-}
+version=1.8
+release=1
+source=(https://files.pythonhosted.org/packages/source/t/${_name}/${_name}-${version}.tar.gz)
+
+build() {
+
+  cd "${_name}"-"${version}"
+
+  python3 setup.py build
+
+  python3 ./setup.py install --prefix=/usr --root="${PKG}" --optimize=1
+
+  find "${PKG}" -type d -empty -delete
+
+}
