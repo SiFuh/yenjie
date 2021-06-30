@@ -57,6 +57,7 @@ d:qq-bin
 d:ratpoison
 d:reaver
 d:rtaudio
+d:python3-beniget
 d:sabnzbd
 d:opera-bin
 d:secure-delete
@@ -345,6 +346,9 @@ f:59404fde63c7ce34ff86d9f219187410:reaver/Pkgfile
 f:1d0c54046c88996ecd5d9922733b6835:rtaudio/.signature
 f:9bd28e266271d48653d9414576ca6c49:rtaudio/.footprint
 f:c9876300e75e931869c91b11b84be858:rtaudio/Pkgfile
+f:d711e26c58c7f08837e9bfcf0138fca3:python3-beniget/.signature
+f:c70f072be4aeb3fbf2c56ed8ff4b6f23:python3-beniget/Pkgfile
+f:1f381396050b48ea93d6d7fec65f0d4d:python3-beniget/.footprint
 f:a12b54acd726669d30f1f7857ef11ab6:sabnzbd/sabnzbd
 f:545093234d26e3efb38981491d751b2e:sabnzbd/.footprint
 f:3a22c474808518c11a59e0e36cd2dd80:sabnzbd/Pkgfile

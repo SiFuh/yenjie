@@ -1,0 +1,22 @@
+# Description:  A static analyzer for Python code
+# URL:          https://github.com/serge-sans-paille/beniget
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat 	 	
+# Depends on: 
+
+name=python3-beniget
+_name=${name//python3-}
+version=0.3.0
+release=1
+source=(https://files.pythonhosted.org/packages/source/b/${_name}/${_name}-${version}.tar.gz)
+
+build() {
+
+  cd "${_name}"-"${version}"
+
+  python3 setup.py build
+
+  python3 ./setup.py install --prefix=/usr --root="${PKG}" --optimize=1
+
+  find "${PKG}" -type d -empty -delete
+
+}
