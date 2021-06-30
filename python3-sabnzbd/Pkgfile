@@ -1,7 +1,7 @@
 # Description:  A web-interface based binary newsgrabber with NZB file support  
 # URL:          http://www.sabnzbd.org
 # Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat 	 	
-# Depends on:   par2cmdline python3-six python3-cryptography python3-feedparser python3-configobj python3-cherrypy python3-portend python3-chardet python3-notify2 python3-cheetah3 python3-sabyenc3 sqlite unrar unzip python3-pyopenssl p7zip 
+# Depends on:   par2cmdline python3-six python3-cryptography python3-feedparser python3-configobj python3-cherrypy python3-portend python3-chardet python3-notify2 python3-cheetah3 python3-sabyenc3 unrar unzip python3-pyopenssl p7zip 
 
 name=python3-sabnzbd
 _name=${name//python3-}
