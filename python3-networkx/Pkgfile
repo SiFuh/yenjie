@@ -1,0 +1,23 @@
+# Description:  Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks
+# URL:          https://networkx.github.io
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat 	 	
+# Depends on:   python3-setuptools
+
+name=python3-networkx
+_name=${name//python3-}
+version=2.5.1
+release=1
+source=(https://files.pythonhosted.org/packages/source/n/${_name}/${_name}-${version}.tar.gz)
+
+build() {
+
+  cd "${_name}"-"${version}"
+
+  python3 setup.py build
+
+  python3 ./setup.py install --prefix=/usr --root="${PKG}" --optimize=1
+
+  find "${PKG}" -name 'README.*' -delete
+  find "${PKG}" -type d -empty -delete
+
+}
