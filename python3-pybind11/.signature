@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/yenjie.pub
+RWQ0NN0w0eo0uM8p8zYPZRzCH/SMYbgzaA8HfTZiHCV6/pUkYnlF65agWBxF+rpYIxwSgSO5gIB5JTWYpMLK/yix8FSIPOY5igs=
+SHA256 (Pkgfile) = 7cb8d704bca791d063aae27b25a9f4ae5c8dd7e92ef103fc0e9fa01c2e3dee14
+SHA256 (.footprint) = 2ea1a4ad24082e7e4b72ce670435bbaaa84a13e77da50c6d7b97714adeafc63c
+SHA256 (pybind11-2.6.2.tar.gz) = 8ff2fff22df038f5cd02cea8af56622bc67f5b64534f1b83b9f133b8366acff2
