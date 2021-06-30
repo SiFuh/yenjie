@@ -1,0 +1,27 @@
+# Description:  yEnc package optimized for use within SABnzbd
+# URL:          https://pypi.org/project/sabyenc3/
+# Maintainer:   Lin SiFuh, #crux at irc dot libera dot chat 	 	
+# Depends on:   python3-setuptools 
+
+name=python3-sabyenc3
+_name=${name#python3-}
+version=4.0.2
+release=1
+source=(https://files.pythonhosted.org/packages/source/${_name::1}/${_name}/${_name}-${version}.tar.gz)
+
+build() {
+
+  cd "${_name}"-"${version}"
+
+  python3 setup.py build
+
+  python3 ./setup.py install --prefix=/usr --root="${PKG}" --optimize=1
+
+  local pyv="$(python3 -c 'import sys; print (sys.version_info[0], sys.version_info[1])')"
+  pyv="${pyv/ /.}"
+
+  chmod 644 "${PKG}"/usr/lib/python"${pyv}"/site-packages/"${_name}"-"${version}"-py"${pyv}".egg-info/*
+
+  find "${PKG}" -type d -empty -delete
+
+}
