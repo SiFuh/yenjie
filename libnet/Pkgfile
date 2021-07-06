@@ -1,0 +1,23 @@
+# Description: Library for constructing and injecting network packets
+# URL:         https://github.com/libnet/libnet
+# Maintainer:  Lin SiFuh, #crux at irc dot libera dot chat
+# Optional:    help2man doxygen
+
+name=libnet
+version=1.2
+release=1
+source=(https://github.com/${name}/${name}/releases/download/v${version}/${name}-${version}.tar.gz)
+
+build() {
+
+  cd "${name}"-"${version}"
+
+  ./configure --prefix=/usr
+
+  make
+  make DESTDIR="${PKG}" install
+
+  rm -r "${PKG}"/usr/share/doc
+  find "${PKG}" -name '*.la' -delete
+
+}

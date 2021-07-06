@@ -58,6 +58,7 @@ d:ratpoison
 d:reaver
 d:rtaudio
 d:python3-beniget
+d:libnet
 d:opera-bin
 d:secure-delete
 d:skypeforlinux-bin
@@ -273,7 +274,7 @@ f:e805430d6694bc4b9819b88e0b428194:libopenshot/.signature
 f:6ffc4ae3316a1284de8921d68a49a7ef:libopenshot-audio/Pkgfile
 f:f7c1a53c1477a821095946df4d5b3f60:libopenshot-audio/.signature
 f:fa9233e48b19cc571e24f0a83746bee1:libopenshot-audio/.footprint
-f:041b34e1a4e510c29cb769a6be12e0bc:libressl/README
+f:1cdeed71eea2c5ea9ea093ac363acdbc:libressl/README
 f:35b94bf68065dbf6a943b65098ff7c2f:libressl/.footprint
 f:68c90df6d9c93e3958394a443fd64e60:libressl/Pkgfile
 f:3193c6aba5c8094dbb438a9bbb4f8bd9:libressl/.signature
@@ -372,6 +373,9 @@ f:c9876300e75e931869c91b11b84be858:rtaudio/Pkgfile
 f:3d6f386ba5a8d1d3f78fb1e18a9e3987:python3-beniget/.signature
 f:c70f072be4aeb3fbf2c56ed8ff4b6f23:python3-beniget/Pkgfile
 f:e8f133e3e0208cc9bd3b57a2adb43ca2:python3-beniget/.footprint
+f:74edd16e9400aa7f7b9684712cba2b2c:libnet/.footprint
+f:e2f7d4ba80595373aae8acab3fc9769a:libnet/.signature
+f:d46cb02a3d67cd479ef68c183b3b6431:libnet/Pkgfile
 f:a1499e42e3013bcd11f008047a8b6a34:opera-bin/Pkgfile
 f:7adf860ede6a0cec032de241cd69a6ee:opera-bin/.footprint
 f:344ca9533bcba3783ec0a59382b90f5a:opera-bin/.signature

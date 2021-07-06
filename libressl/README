@@ -1,7 +1,7 @@
 NOTE: 
 
     If you plan on replacing OpenSSL with LibreSSL, then it is at your 
-    own risk. I have only tested it on a core CRUX system without any
+    own risk. I _HAD_ only tested it on a core CRUX system without any
     of opt or contrib ports installed.
 
     Download all the source files needed. So libressl, wget, exim, 
