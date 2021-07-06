@@ -1,18 +1,14 @@
 NOTE: 
 
     If you plan on replacing OpenSSL with LibreSSL, then it is at your 
-    own risk. I _HAD_ only tested it on a core CRUX system without any
-    of opt or contrib ports installed.
+    own risk. 
 
     Download all the source files needed. So libressl, wget, exim, 
     openssh, curl and bindutils. Edit the Pkgfile for wget and add 
     --with-libressl. Do not remove the line --with-ssl=openssl.
 
-    Edit /var/lib/pkg/prt-get.aliases and add the line: 
+    Edit /etc/prt-get.aliases and add the line: 
     libressl: openssl
-
-    Edit /etc/pkgadd.conf and add the line:
-    UPGRADE   ^var/lib/pkg/prt-get.aliases$ NO
 
     Remove openssl port.
 
